@@ -1,0 +1,109 @@
+{
+  "revision": "E5",
+  "chamfer_mm": 3.0,
+  "body_corner_fillet_mm": 2,
+  "width_mm": 24.0,
+  "face_and_internal_plate_mm": 1.2,
+  "profile_simplification_tolerance_mm": 0.005,
+  "selected_chamfer_edges": 12,
+  "fade_run_mm": 20,
+  "fade_curve": "quintic Bezier; C2 at zero/full depth",
+  "fade_endpoints": [
+    [
+      true,
+      true
+    ],
+    [
+      true,
+      true
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      true
+    ]
+  ],
+  "paired_outline_edges": [
+    [
+      [
+        220.562,
+        -26.0
+      ],
+      [
+        92.4867,
+        -26.0
+      ]
+    ],
+    [
+      [
+        50.6779,
+        33.3336
+      ],
+      [
+        24.0378,
+        113.894
+      ]
+    ],
+    [
+      [
+        23.9742,
+        114.233
+      ],
+      [
+        20.1983,
+        148.215
+      ]
+    ],
+    [
+      [
+        18.3366,
+        149.996
+      ],
+      [
+        0.0,
+        150.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        150.0
+      ],
+      [
+        0.0,
+        -44.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        -44.0
+      ],
+      [
+        223.994,
+        -44.0
+      ]
+    ]
+  ],
+  "bevel_rim_keepout_distance_mm": 4.8,
+  "minimum_design_ligament_mm": 1.2,
+  "rim_guard_extra_mm": 1.8,
+  "valid_brep": true,
+  "solid_count": 1,
+  "material_volume_cm3": 97.82590694655481,
+  "limitations": [
+    "No slicing, print trial, snap-force test, structural load or creep rating.",
+    "Thin snap fingers and small functional edges are excluded from the 3 mm chamfer."
+  ]
+}

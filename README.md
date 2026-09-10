@@ -2,13 +2,43 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E4 — angular body, paired 3 mm face chamfers and smooth runouts before small features.** The finished CAD is one valid solid and its STL passes edge-closure checks. Internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
+**Current prototype: E6 — full-height wall contact and a shorter 100 mm rail span.** For a 200 mm spool, the loaded rack envelope is approximately 233 mm tall, down from 273 mm. The bracket extends 33 mm below the spool and stays below its top. Geometry checks pass; handling, internal roof printing, structural loads and creep remain unvalidated. No safe spool count is assigned.
 
-![E4 finished CAD](designs/closed-wall-e4/progress-exterior.png)
+![E4 and E6 at the same scale](designs/closed-wall-e6/vertical-comparison.png)
 
 ## Design journal
 
-Latest checkpoint: **E4 completes the angular outline and broad-face edge treatment.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. This remains a geometry prototype.
+Latest checkpoint: **E6 saves about 40 mm of loaded rack height by shortening the rail span and using the available height beside the spool for the upper fixing.** Next: check the narrower cradle's handling stability and evaluate the actual arm, snap roots and mounting connection. Resolve internal roof printing before full-bracket printing.
+
+### E6 — shorten the span, retain arm depth, use the upper spool envelope
+
+Moved the rail centers from 76/226 mm to 90/190 mm from the wall, reducing their spacing from 150 to 100 mm. That lets the arm rise under the spool while retaining approximately 28 mm of depth. Rotated both retainers to match the new spool contact directions, keeping their rigid bearing sectors opposite the contact. Minimum nominal flange clearance is 3.48 mm across 180–220 mm spools.
+
+The back now lies in one wall plane from the arm underside at −32 mm to the top at +176 mm. Small square lands at the wall-side ends remove the old clipped toe; the exposed edges keep their finishing treatments where space permits. Chamfers leave an 18 mm-wide central wall-bearing face, interrupted by the screw holes. Actual contact pressure will depend on wall flatness and fastening; geometric contact does not imply uniform bearing.
+
+Raised the upper fixing from +138 to +164 mm. Screw spacing increases from 126 to 152 mm while the bracket remains below the top of even the 180 mm reference flange. This uses otherwise empty space beside the spool to preserve the mounting lever arm. The four continuous 1.2 mm plates and 2.4 mm modeled perimeter remain.
+
+![E6 finished CAD](designs/closed-wall-e6/progress-exterior.png)
+
+| Geometry | E4 | E6 |
+|---|---:|---:|
+| Rail spacing | 150 mm | 100 mm |
+| Bracket height | 239 mm | 208 mm |
+| Bracket projection | 244.24 mm | 206.73 mm |
+| Extension below a 200 mm spool | 72.7 mm | 32.7 mm |
+| Loaded envelope, 200 mm spool | 272.7 mm | 232.7 mm |
+| Screw spacing | 126 mm | 152 mm |
+| Midspan arm depth | 35.2 mm | 27.9 mm |
+
+**Mechanical screening:** E6's midpoint section has 59% of E4's second moment of area, but the span falls to two-thirds. A uniform-beam estimate based on that midpoint section gives approximately twice the forearm stiffness through the `I/L³` relationship. This is a screening comparison, not a prediction of complete-bracket stiffness: the actual varying sections, snap roots, wall leg and mounting connection remain to be analyzed. An idealized upper-screw tension calculation gives approximately 4% lower tension for the same total vertical load.
+
+**Handling tradeoff:** closer rods create a shallower cradle. For the 200 mm reference spool, the ideal center-of-mass rise to pass over one rod falls from approximately 29 to 12 mm. Spools will be easier to rock out fore/aft. The dowel snaps retain the rods, not the spools. Validate insertion, sliding and accidental bumps before accepting this rail spacing.
+
+The final CAD is one valid solid and both delivered STL meshes pass edge-closure checks. [Envelope and section calculations](designs/closed-wall-e6/vertical-verification.json) · [Geometry check](designs/closed-wall-e6/verification.json) · [Finish check](designs/closed-wall-e6/finish-verification.json) · [Mesh check](designs/closed-wall-e6/mesh-verification.json).
+
+### E5 — reject simple arm thinning as an equivalent replacement
+
+First raised the underside by 45 mm while retaining the 150 mm span. That left only an 18 mm-deep arm. Its midspan second moment of area fell to approximately 18% of E4's, with no compensating span reduction. Kept this as an illustrated study and proceeded to E6. [E5 checkpoint](designs/closed-wall-e5/README.md).
 
 ### E4 — angular frame, chamfers that fade into the faces
 
@@ -68,25 +98,27 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric profile source](designs/closed-wall-e4/bracket.scad) and [CAD finishing script](designs/closed-wall-e4/finish_cad.py)
-- [Finished bracket STEP](designs/closed-wall-e4/bracket.step)
-- [Bracket STL — prototype](designs/closed-wall-e4/bracket.stl)
-- [Snap retainer CAD](designs/closed-wall-e4/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e4/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e4/verification.json)
+- [Parametric profile source](designs/closed-wall-e6/bracket.scad) and [CAD finishing script](designs/closed-wall-e6/finish_cad.py)
+- [Finished bracket STEP](designs/closed-wall-e6/bracket.step)
+- [Bracket STL — prototype](designs/closed-wall-e6/bracket.stl)
+- [Snap retainer CAD](designs/closed-wall-e6/retainer.scad)
+- [8 mm wide snap coupon STL](designs/closed-wall-e6/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
+- [Geometric verification](designs/closed-wall-e6/verification.json)
 - [Design decisions and pending work](DESIGN.md)
 - [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E4 value |
+| Feature | E6 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
-| Seat diameter / spacing | 26 / 150 mm |
-| Single-part envelope | approximately 244.24 × 239 × 24 mm |
+| Seat diameter / spacing | 26 / 100 mm |
+| Single-part envelope | approximately 206.73 × 208 × 24 mm |
 | Structural perimeter in print XY | 2.4 mm; locally reinforced behind bevels |
-| Broad-face chamfer / body corner radius | 3 / 2 mm |
+| Broad-face chamfer / body corner radius | 3 / 2 mm where features permit |
+| Full-height wall land | 208 mm |
+| Screw centers above rail datum | 164 and 12 mm |
 | Chamfer runout length | 20 mm |
 | Exterior side plates | 2 × 1.2 mm |
 | Internal continuous plates | 2 × 1.2 mm |
@@ -95,29 +127,30 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 | Rigid seat radial thickness | 6 mm |
 | Nominal capture wrap / throat | 218° / approximately 24.51 mm |
 
-The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 5.34 mm for the complete bracket and 6.91 mm for the rear retainer, with symmetry applying to the front retainer.
+The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 3.48 mm for the complete bracket and 7.45 mm for the rear retainer, with symmetry applying to the front retainer.
 
 ## Build and inspect
 
 Install OpenSCAD and Python with CadQuery 2.7, NumPy, Matplotlib, Pillow and VTK. Run from the repository root:
 
 ```sh
-openscad -o designs/closed-wall-e4/profile.svg -D 'part="profile"' designs/closed-wall-e4/bracket.scad
-openscad -o designs/closed-wall-e4/cavity-profile.svg -D 'part="cavity_profile"' designs/closed-wall-e4/bracket.scad
-openscad -o designs/closed-wall-e4/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e4/retainer.scad
-openscad -o designs/closed-wall-e4/snap-coupon-8mm.stl designs/closed-wall-e4/retainer.scad
-python designs/closed-wall-e4/finish_cad.py
-python designs/closed-wall-e4/check_and_draw.py
-python designs/closed-wall-e4/check_mesh.py
-python designs/closed-wall-e4/render_cpu.py
+openscad -o designs/closed-wall-e6/profile.svg -D 'part="profile"' designs/closed-wall-e6/bracket.scad
+openscad -o designs/closed-wall-e6/cavity-profile.svg -D 'part="cavity_profile"' designs/closed-wall-e6/bracket.scad
+openscad -o designs/closed-wall-e6/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e6/retainer.scad
+openscad -o designs/closed-wall-e6/snap-coupon-8mm.stl designs/closed-wall-e6/retainer.scad
+python designs/closed-wall-e6/finish_cad.py
+python designs/closed-wall-e6/check_and_draw.py
+python designs/closed-wall-e6/check_mesh.py
+python designs/closed-wall-e6/render_cpu.py
+python designs/closed-wall-e6/compare_vertical.py
 ```
 
-`finish_cad.py` creates the authoritative E4 STEP and STL, including the variable chamfers and reinforced cavity rims. Direct bracket STL export from OpenSCAD produces an **unchamfered intermediate**, not finished E4. The script approximates the OpenSCAD contours within 0.005 mm before creating the solid; the chamfer runouts are native Bezier surfaces.
+`finish_cad.py` creates the authoritative E6 STEP and STL, including the variable chamfers and reinforced cavity rims. Direct bracket STL export from OpenSCAD produces an **unchamfered intermediate**, not finished E6. The script approximates the OpenSCAD contours within 0.005 mm before creating the solid; the chamfer runouts are native Bezier surfaces.
 
-The final STL lies broad-side-down in a single-part envelope of approximately 244.24 × 239 × 24 mm. Printer exclusion zones, brim clearance and actual toolpaths still require slicer inspection. The coupon prints flat with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
+The final STL lies broad-side-down in a single-part envelope of approximately 206.73 × 208 × 24 mm. Printer exclusion zones, brim clearance and actual toolpaths still require slicer inspection. The coupon prints flat with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
 
 ## Verification limits
 
 Empty CAD cavities do not receive global slicer infill. Revision D's cavity includes an unsupported region approximately 84 mm across; the thicker perimeter does not resolve this manufacturing problem. Internal plates need a validated printing method before the full bracket is released for printing.
 
-Clearance checks use rigid nominal rods and concentric flanges. They exclude wood tolerances, rod sag, spool wobble, screw heads, and deflected fingers. No slicer or physical insertion test has verified the snap features. Main bracket loads, wall fixings, dowel spans, and long-term polymer creep still require analysis and testing.
+Clearance checks use rigid nominal rods and concentric flanges. They exclude wood tolerances, rod sag, spool wobble, screw heads, and deflected fingers. No slicer or physical insertion test has verified the snap features. The narrower E6 cradle also needs a handling-stability test. Main bracket loads, wall fixings, dowel spans, and long-term polymer creep still require analysis and testing.

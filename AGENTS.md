@@ -6,14 +6,16 @@ Do not commit personal information, private conversation transcripts, credential
 
 Current path is the closed-wall, continuous-plate bracket. Keep the future open-web exploration separate. Preserve full L-shaped internal plates parallel to printer XY and installed bending plane. Do not replace them with transverse grids.
 
-Print assumptions: 0.2 mm layers; 1.2 mm top and bottom; 15% infill gets zero structural credit. E4 uses 2.4 mm modeled structural perimeter, superseding the original three-perimeter assumption locally; verify actual sliced paths. Internal and exterior side plates remain 1.2 mm. Snap fingers are separately dimensioned.
+Print assumptions: 0.2 mm layers; 1.2 mm top and bottom; 15% infill gets zero structural credit. E6 uses 2.4 mm modeled structural perimeter, superseding the original three-perimeter assumption locally; verify actual sliced paths. Internal and exterior side plates remain 1.2 mm. Snap fingers are separately dimensioned.
 
 Do not assign safe spool counts from generic tensile strengths. State limits of geometric checks and distinguish geometry, slicing, mechanical analysis and physical validation. Never label prototype G-code or a geometry-only 3MF as a validated print profile.
 
 Update the README design journal at meaningful checkpoints. Include actual CAD screenshots or drawings, the reason for each change, validation outcomes and the concrete next step. Keep the newest prototype and image prominent so a reader can follow progress by refreshing GitHub. Do not substitute a plan for completing authorized work.
 
-Snap roots must transition smoothly into the bearing seat. Do not use intersecting circles over a stepped profile as a substitute for tangent root blends. Round relief-slot ends and inspect the actual integrated bracket profile, not just an isolated retainer. Current reference is E4.
+Snap roots must transition smoothly into the bearing seat. Do not use intersecting circles over a stepped profile as a substitute for tangent root blends. Round relief-slot ends and inspect the actual integrated bracket profile, not just an isolated retainer. Current reference is E6.
 
 When replacing a feature, remove its obsolete precursor geometry. Do not leave redundant lips, support nodes or prongs behind a new retainer. Inspect the full integrated outline at both seats.
 
-E4 final geometry requires finish_cad.py after profile export. Preserve matching cavity-rim reinforcement behind the mirrored 3 mm broad-face chamfers. Smoothly taper large edge treatments to zero before small features; do not apply their nominal radii to thin snap noses.
+E6 final geometry requires finish_cad.py after profile export. Preserve matching cavity-rim reinforcement behind the mirrored 3 mm broad-face chamfers. Smoothly taper large edge treatments to zero before small features; do not apply their nominal radii to thin snap noses.
+
+E6 uses 100 mm rail spacing, 90/190 mm rail centers, a full wall plane from -32 to +176 mm, and screw centers at 164/12 mm. E5 is a rejected fixed-span thinning study. Preserve the stated handling-stability tradeoff; the I/L^3 comparison is a screening proxy, not whole-bracket stiffness or a load rating.

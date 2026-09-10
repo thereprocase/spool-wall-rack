@@ -1,0 +1,122 @@
+{
+  "status": "Geometric section comparison only; same elastic modulus assumed for EI ratios. No global deflection, allowable load or creep calculation.",
+  "revisions": {
+    "E4": {
+      "bracket_height_mm": 239.0,
+      "back_contact_extent_y_mm": [
+        -64.1655000000001,
+        147.99
+      ],
+      "back_contact_area_mm2": 3771.2824111144655,
+      "upper_screw_to_lowest_back_contact_mm": 202.1655000000001,
+      "sections": [
+        {
+          "x_from_wall_mm": 125,
+          "area_mm2": 275.683931458359,
+          "centroid_y_mm": -50.64411218443736,
+          "depth_mm": 41.188719445114444,
+          "I_about_width_axis_mm4": 56907.555577173756,
+          "minimum_elastic_section_modulus_mm3": 2756.3107187953024
+        },
+        {
+          "x_from_wall_mm": 175,
+          "area_mm2": 220.07258849997987,
+          "centroid_y_mm": -44.845544774960395,
+          "depth_mm": 29.60593821873449,
+          "I_about_width_axis_mm4": 24557.92329985854,
+          "minimum_elastic_section_modulus_mm3": 1654.1131042938391
+        }
+      ],
+      "spool_envelopes": [
+        {
+          "spool_diameter_mm": 180,
+          "spool_bottom_y_mm": -20.280849115899287,
+          "spool_top_y_mm": 159.7191508841007,
+          "extension_below_spool_mm": 68.71915088410071,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 248.7191508841007
+        },
+        {
+          "spool_diameter_mm": 200,
+          "spool_bottom_y_mm": -16.281662701651783,
+          "spool_top_y_mm": 183.71833729834822,
+          "extension_below_spool_mm": 72.71833729834822,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 272.7183372983482
+        },
+        {
+          "spool_diameter_mm": 220,
+          "spool_bottom_y_mm": -13.269653158897427,
+          "spool_top_y_mm": 206.73034684110257,
+          "extension_below_spool_mm": 75.73034684110257,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 295.7303468411026
+        }
+      ]
+    },
+    "E5": {
+      "bracket_height_mm": 194.0,
+      "back_contact_extent_y_mm": [
+        -44.0,
+        150.0
+      ],
+      "back_contact_area_mm2": 3444.483411114454,
+      "upper_screw_to_lowest_back_contact_mm": 182.0,
+      "sections": [
+        {
+          "x_from_wall_mm": 125,
+          "area_mm2": 163.4191324891615,
+          "centroid_y_mm": -35.00084285438316,
+          "depth_mm": 18.000000000000004,
+          "I_about_width_axis_mm4": 6933.079524043846,
+          "minimum_elastic_section_modulus_mm3": 770.2700331744629
+        },
+        {
+          "x_from_wall_mm": 175,
+          "area_mm2": 163.3870576451153,
+          "centroid_y_mm": -35.00213911050921,
+          "depth_mm": 18.000000000000004,
+          "I_about_width_axis_mm4": 6931.680781952318,
+          "minimum_elastic_section_modulus_mm3": 770.0037398733577
+        }
+      ],
+      "spool_envelopes": [
+        {
+          "spool_diameter_mm": 180,
+          "spool_bottom_y_mm": -20.280849115899287,
+          "spool_top_y_mm": 159.7191508841007,
+          "extension_below_spool_mm": 23.719150884100713,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 203.7191508841007
+        },
+        {
+          "spool_diameter_mm": 200,
+          "spool_bottom_y_mm": -16.281662701651783,
+          "spool_top_y_mm": 183.71833729834822,
+          "extension_below_spool_mm": 27.718337298348217,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 227.71833729834822
+        },
+        {
+          "spool_diameter_mm": 220,
+          "spool_bottom_y_mm": -13.269653158897427,
+          "spool_top_y_mm": 206.73034684110257,
+          "extension_below_spool_mm": 30.730346841102573,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 250.73034684110257
+        }
+      ]
+    }
+  },
+  "E5_to_E4_local_EI_ratios": {
+    "125": 0.12183056280886505,
+    "175": 0.2822584262241851
+  },
+  "E5_to_E4_idealized_upper_screw_tension_ratio": 1.1107994505494512,
+  "assumptions": [
+    "Perfectly flat wall. Geometric contact area is not uniformly loaded bearing area.",
+    "Screw-tension ratio uses a point compression reaction at the lowest wall contact and all overturning tension at the upper screw; actual contact and bolt forces require analysis.",
+    "Section properties use 0.2 mm slices of the final CAD with all modeled solid filled and all air volumes empty. Infill gets zero strength credit.",
+    "Local EI ratio is not whole-bracket stiffness; connection compliance, shear, anisotropy, buckling and creep are excluded."
+  ]
+}

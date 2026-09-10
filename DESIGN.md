@@ -6,13 +6,13 @@ The wall mounting leg extends upward. Four continuous planes span the arm, knee 
 
 ## Structural thickness
 
-E4 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
+E6 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
 
 A modeled 2.4 mm wall does not guarantee a particular number of extrusion paths. The original three-wall setting must be revised or verified for the 2.4 mm perimeter. The snap fingers remain 1.35 mm in bending thickness. Their stiffness and strain requirements differ from those of the structural perimeter.
 
 ## Rotated snap seats
 
-The reference geometry uses a 200 mm spool on 25.4 mm rods with 150 mm seat-center spacing. With 0.3 mm radial seat clearance, the rear contact direction is 48.144° from +X; the rigid bearing sector is centered at 228.144°. The front is mirrored. A 218° curved retainer leaves a 142° opening toward the spool. Rounded noses form an approximately 24.51 mm throat. This gives about 0.89 mm nominal diametral interference, shared between the fingers in a symmetric insertion idealization.
+The current E6 geometry uses a 200 mm spool on 25.4 mm rods with 100 mm seat-center spacing. With 0.3 mm radial seat clearance, the rear contact direction is 63.587° from +X; the rigid bearing sector is centered at 243.587°. The front is mirrored. A 218° curved retainer leaves a 142° opening toward the spool. Rounded noses form an approximately 24.51 mm throat, giving about 0.89 mm nominal diametral interference. E1–E5 used 150 mm seat spacing.
 
 The lower/outside bearing sector is 6 mm thick radially. Local relief pockets free the curved fingers from the bracket body. Finger deflection stays in the print layer plane. The ideal seated rod relaxes into the saddle; the design avoids relying on sustained finger clamping.
 
@@ -54,3 +54,15 @@ The large outline uses straight facets with nominal R2 corner blends. Both broad
 The final solid is built from the OpenSCAD profile by `finish_cad.py`. A raw SCAD bracket export omits the finished bevels and their matching internal rim reinforcement. The cavity keepout lies 1.8 mm beyond the bevel in the sum of inward distance and face depth. Including the maximum runout gradient of 0.28125, its normal spacing exceeds 1.2 mm. This retains a conservative solid ligament behind the bevel; it is a geometric design rule, not a load allowable. The middle hollow band and both 1.2 mm internal load-plane plates remain continuous.
 
 The finished CAD passes single-solid validity and STL edge closure. Full-profile nominal clearance is 5.34 mm for 180–220 mm spool flanges. Internal bridge spans, toolpaths, fasteners, snap force, fatigue and creep remain unvalidated.
+
+## E5/E6 vertical efficiency
+
+E5 explored simply raising the arm underside while keeping the old rail spacing. Its 18 mm-deep arm had only 18% of the old midpoint section inertia; it was not selected as an equivalent structural replacement.
+
+E6 moves the seats to X=90 and 190 mm, keeping a roughly 28 mm-deep arm between them. The back is flat at X=0 from Y=−32 to +176 mm. The upper fixing moves to Y=164 mm and the lower remains at Y=12 mm. The central 18 mm of the back width reaches both ends of that height after broad-face chamfering; screw holes interrupt its bearing area. A full-height plane is a fit condition, not a claim of full or uniform contact pressure under load.
+
+For 180/200/220 mm flanges, the bracket extends 31.4/32.7/33.7 mm below the spool and never extends above its top. Loaded rack envelopes are 211.4/232.7/253.7 mm before adding handling space. The 200 mm case saves 40.1 mm over E4. The single bracket occupies approximately 206.73 × 208 × 24 mm on the bed.
+
+The section-property script reads final STEP solids. Its midpoint `I/L³` comparison suggests that the shorter forearm can recover the stiffness lost through reduced depth, but it does not model the complete bracket. The idealized bolt-force screen assumes equal rail loading, a point wall-compression reaction and one upper tension fixing. Neither calculation provides a spool rating.
+
+The 100 mm rail spacing reduces the ideal rise needed to rock the spool over one rod to about 12 mm, from 29 mm in E4. This is the main handling compromise; the rail snap does not restrain the spool. Check bumps, off-center loading and sliding with real spools. The closed-wall internal printing issue remains unresolved. The separate open-web path is unchanged.

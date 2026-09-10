@@ -1,0 +1,156 @@
+{
+  "status": "Geometric section comparison only; same elastic modulus assumed for EI ratios. No global deflection, allowable load or creep calculation.",
+  "revisions": {
+    "E4": {
+      "bracket_height_mm": 239.0,
+      "back_contact_extent_y_mm": [
+        -64.1655000000001,
+        147.99
+      ],
+      "back_contact_area_mm2": 3771.2824111144655,
+      "upper_screw_to_lowest_back_contact_mm": 202.1655000000001,
+      "rail_spacing_mm": 150,
+      "sections": [
+        {
+          "x_from_wall_mm": 151.0,
+          "area_mm2": 246.76603278016603,
+          "centroid_y_mm": -47.629464750936094,
+          "depth_mm": 35.16567320739688,
+          "I_about_width_axis_mm4": 38013.08654502845,
+          "minimum_elastic_section_modulus_mm3": 2156.0316894584353
+        }
+      ],
+      "reference_cradle_escape_rise_mm": 28.758215182172215,
+      "spool_envelopes": [
+        {
+          "spool_diameter_mm": 180,
+          "spool_bottom_y_mm": -20.280849115899287,
+          "spool_top_y_mm": 159.7191508841007,
+          "extension_below_spool_mm": 68.71915088410071,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 248.7191508841007
+        },
+        {
+          "spool_diameter_mm": 200,
+          "spool_bottom_y_mm": -16.281662701651783,
+          "spool_top_y_mm": 183.71833729834822,
+          "extension_below_spool_mm": 72.71833729834822,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 272.7183372983482
+        },
+        {
+          "spool_diameter_mm": 220,
+          "spool_bottom_y_mm": -13.269653158897427,
+          "spool_top_y_mm": 206.73034684110257,
+          "extension_below_spool_mm": 75.73034684110257,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 295.7303468411026
+        }
+      ]
+    },
+    "E5": {
+      "bracket_height_mm": 194.0,
+      "back_contact_extent_y_mm": [
+        -44.0,
+        150.0
+      ],
+      "back_contact_area_mm2": 3444.483411114454,
+      "upper_screw_to_lowest_back_contact_mm": 182.0,
+      "rail_spacing_mm": 150,
+      "sections": [
+        {
+          "x_from_wall_mm": 151.0,
+          "area_mm2": 163.4024526599589,
+          "centroid_y_mm": -35.00151683406424,
+          "depth_mm": 18.000000000000004,
+          "I_about_width_axis_mm4": 6932.352307946607,
+          "minimum_elastic_section_modulus_mm3": 770.1315717938401
+        }
+      ],
+      "reference_cradle_escape_rise_mm": 28.758215182172215,
+      "spool_envelopes": [
+        {
+          "spool_diameter_mm": 180,
+          "spool_bottom_y_mm": -20.280849115899287,
+          "spool_top_y_mm": 159.7191508841007,
+          "extension_below_spool_mm": 23.719150884100713,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 203.7191508841007
+        },
+        {
+          "spool_diameter_mm": 200,
+          "spool_bottom_y_mm": -16.281662701651783,
+          "spool_top_y_mm": 183.71833729834822,
+          "extension_below_spool_mm": 27.718337298348217,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 227.71833729834822
+        },
+        {
+          "spool_diameter_mm": 220,
+          "spool_bottom_y_mm": -13.269653158897427,
+          "spool_top_y_mm": 206.73034684110257,
+          "extension_below_spool_mm": 30.730346841102573,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 250.73034684110257
+        }
+      ]
+    },
+    "E6": {
+      "bracket_height_mm": 208.0,
+      "back_contact_extent_y_mm": [
+        -32.0,
+        176.0
+      ],
+      "back_contact_area_mm2": 3696.4834111144546,
+      "upper_screw_to_lowest_back_contact_mm": 196.0,
+      "rail_spacing_mm": 100,
+      "sections": [
+        {
+          "x_from_wall_mm": 140.0,
+          "area_mm2": 218.34871888840155,
+          "centroid_y_mm": -17.60816488802355,
+          "depth_mm": 27.865721137255406,
+          "I_about_width_axis_mm4": 22260.899612791836,
+          "minimum_elastic_section_modulus_mm3": 1546.772836096921
+        }
+      ],
+      "reference_cradle_escape_rise_mm": 11.764738595248307,
+      "spool_envelopes": [
+        {
+          "spool_diameter_mm": 180,
+          "spool_bottom_y_mm": -0.636920375358585,
+          "spool_top_y_mm": 179.36307962464141,
+          "extension_below_spool_mm": 31.363079624641415,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 211.36307962464141
+        },
+        {
+          "spool_diameter_mm": 200,
+          "spool_bottom_y_mm": 0.6665783664071938,
+          "spool_top_y_mm": 200.66657836640718,
+          "extension_below_spool_mm": 32.666578366407194,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 232.66657836640718
+        },
+        {
+          "spool_diameter_mm": 220,
+          "spool_bottom_y_mm": 1.7217973360615133,
+          "spool_top_y_mm": 221.7217973360615,
+          "extension_below_spool_mm": 33.72179733606151,
+          "extension_above_spool_mm": 0,
+          "combined_rack_height_mm": 253.7217973360615
+        }
+      ]
+    }
+  },
+  "E6_to_E4_midspan_I_ratio": 0.5856114732073299,
+  "E6_to_E4_prismatic_forearm_stiffness_proxy": 1.9764387220747384,
+  "E6_to_E4_idealized_upper_screw_tension_ratio_same_total_vertical_load": 0.9563174077578055,
+  "assumptions": [
+    "Perfectly flat wall. Geometric contact area is not uniformly loaded bearing area.",
+    "Screw-tension ratio assumes equal total vertical loads shared equally between rods, a point compression reaction at the lowest wall contact and all overturning tension at the upper screw. The load arm changes from 151 to 140 mm; actual contact and bolt forces require analysis.",
+    "Section properties use 0.2 mm slices of the final CAD with all modeled solid filled and all air volumes empty. Infill gets zero strength credit.",
+    "The I/L^3 stiffness proxy treats each forearm as a uniform beam with its midpoint section and span equal to rail spacing. Actual sections vary and snap roots, wall leg, connection compliance, shear, anisotropy, buckling and creep are excluded. It is not whole-bracket stiffness.",
+    "Cradle escape rise is the ideal center-of-mass rise to pass vertically above one nominal rod, without friction, finger movement or spool deformation. It indicates reduced rocking resistance, not a handling qualification."
+  ]
+}
