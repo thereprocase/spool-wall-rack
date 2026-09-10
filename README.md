@@ -1,208 +1,243 @@
-# Spool wall rack
+# Spool wall rack — print setup and engineering guide
 
-A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
+**Current printable prototype: E8, with level rails.** Print the bracket on its broad side so the principal bending load stays in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
 
-**Current prototype: E8 — a solid STEP body with two helper solids for 100% infill modifiers.** The user chooses wall count and infill for the body. The slicer generates sparse support between the internal solid bands; no infill grid is modeled in CAD.
+**[Download the STEP assembly](designs/closed-wall-e8/bracket-with-modifier-helpers.step)** · [Aligned STL fallback and rebuild](designs/closed-wall-e8/README.md) · [Solved results and stress images](analysis/e8/RESULTS.md) · [Analysis run](https://github.com/thereprocase/spool-wall-rack/actions/workflows/engineering-analysis.yml)
 
-**[Download the STEP assembly with helpers](designs/closed-wall-e8/bracket-with-modifier-helpers.step)** · [Slicer setup and dimensions](designs/closed-wall-e8/README.md).
+The **front rail raised 12 mm** is a separate statics study, described below. It is not incorporated in this STEP and does not inherit the level-rail FEM results.
 
-![E8 modifier locations](designs/closed-wall-e8/modifier-stack.png)
+![Current E8 CAD](designs/closed-wall-e8/progress-exterior.png)
 
-## Engineering analysis in progress
+## Current engineering decision
 
-The full-bracket 2D/3D stress and creep study now includes the screw landings: rack pull/prying and washer compression from tightening are separate load cases. [Analysis checkpoint](analysis/e8/STATUS.md). The printable E8 geometry remains the current prototype while those results are checked.
+Use **8 walls for the PLA prototype or 10 for the PETG prototype**, plus the four 1.2 mm solid plates described below. At the assumed extrusion widths, these provide about **3.27 and 4.08 mm** of contour wall. These are deliberate prototype settings; they are not material-independent lifetime ratings.
 
-## Design journal
+The initial whole-bracket calculations give approximately **1.2 mm front-seat movement for PLA and 1.6 mm for PETG** at the 12 kg equivalent bracket load. That initial flexibility is acceptable against the project serviceability criteria:
 
-Latest checkpoint: **Prototype wall-count starting points are 8 for PLA and 10 for PETG**, with both helpers at 100% infill. For the assumed 0.42/0.45 mm line widths and 0.2 mm layers, these correspond to approximately 3.3 and 4.1 mm perimeter thickness. They are test settings, not a verified load or creep rating.
+- **5 mm maximum total movement under full load**, including creep.
+- **1 mm maximum change when adding or removing one full spool.**
+- No cracking, loss of rod capture, fastener pull-through or progressive instability. Creep must remain within the movement budget over the chosen service life; an accelerating rate requires investigation.
 
-### Wall counts — map the slicer setting to actual section
+Movement is measured from the unloaded geometry, relative to a stable wall reference. Decorative camber does not erase actual deformation. Measure at the bracket and between supports so dowel sag and wall/fastener movement are included.
 
-Six walls approximately recover the old 2.4 mm nominal perimeter; nine approximate the earlier 3.6 mm proposal. The current body still has the 28 mm arm depth. Selected 8 PLA / 10 PETG as starting settings with additional section margin. A simple local forearm comparison gives about 0.22 / 0.27 mm initial vertical movement respectively at the 12 kg bracket target, using typical reference moduli. That is not a whole-bracket or long-term prediction. Actual sliced thickness and the changed mounting connection still govern.
+**The remaining material question is creep and rupture over time, not whether 1.2 mm of elastic movement looks large.** No retrieved source establishes an indefinite-life rating for the exact printed grades at this rack's temperatures. The calculations below quantify how much compliance growth the design can tolerate instead of assigning an invented creep factor.
 
-[Wall-count mapping, assumptions and limits](designs/closed-wall-e8/WALL-COUNTS.md).
+## Print setup
 
-### E8 — solid body plus modifier helpers
-
-E7's compartment lattice recreated infill in CAD and increased modeled material by 42%. Replaced it with a solid exterior/functional body and two simple helper slabs at print Z = 7.6–8.8 and 15.2–16.4 mm. The user selects body wall count and infill percentage, then changes both helper parts to 100% infill modifiers. With 1.2 mm top/bottom settings, this retains the intended four solid planes while the slicer supplies sparse support between them.
-
-The STEP preserves named component geometry and alignment. It does not carry modifier status or print settings. The helpers extend 2 mm beyond the body projection and must be converted to modifiers before slicing. The final package also includes three aligned STL files as an import fallback.
-
-E7's fastener changes remain: 3.6 mm clamping lands, Ø5.2 mm shank clearance, Ø16 mm nominal access and the raised lower screw axis. The body no longer has a prescribed 2.4 mm CAD shell; actual wall thickness follows the user's slicer settings. Old hollow-section calculations do not establish the capacity of this print setup.
-
-[STEP handoff and setup](designs/closed-wall-e8/README.md) · [Roundtrip and hardware checks](designs/closed-wall-e8/verification.json).
-
-### E7 — compartment the voids and recess the fixings
-
-Added 1.2 mm dividing walls within each air band, retaining all four continuous load-plane plates. Full cells have R2 corners and a 10 × 10 mm clear bounding box, limiting any straight geometric span to 14.14 mm. The three bands contain 106 / 97 / 106 cavities after local keepouts. This gives the internal plates short roofs to bridge; it does not establish actual sliced bridge direction or print quality.
-
-Replaced the long screw bores with flat washer seats 3.6 mm from the wall. Ø5.2 mm clearance accommodates #8/#10 wood screws and nominal M5 shanks; M5 is the tighter printed fit. The Ø16 mm nominal access opening accommodates the checked Ø13 mm washer and a Ø15.8 mm straight driver envelope. Its 45-degree roof shoulders and short rounded cap avoid another long flat internal ceiling.
-
-Raised the lower screw axis from Y = 12 to 40 mm to clear the rear dowel seat during installation. The upper stays at 164 mm. Removed the old projecting lower screw pad. Both washer landings support approximately 99.1% of the checked annulus. The full-height wall contact and compact exterior envelope remain.
-
-![E7 fixing and compartment sections](designs/closed-wall-e7/dfm-engineering.png)
-
-Solid volume increases from 94.3 to 133.8 cm³, approximately 42%, including the compartment walls and access reinforcement. The separate 34 mm arm-depth proposal is not incorporated. E6's load calculations do not validate the changed E7 connection, and the manufacturing dividers receive no assigned strength credit.
-
-[DFM revision, dimensions and rebuild instructions](designs/closed-wall-e7/README.md) · [Actual geometry checks](designs/closed-wall-e7/dfm-verification.json).
-
-### Additional section for PLA or PETG
-
-A thicker perimeter alone gives a modest benefit: increasing 2.4 to 3.6 mm at the original arm depth increases ideal section I by 23%. Pairing that with a depth increase from 28 to 34 mm gives approximately 100% more I. Keep the spool bearing track and flexible fingers fixed, add depth below the arm, and carry the increase smoothly through the knee. The extra depth would cost approximately 6 mm of loaded rack height.
-
-The current PETG reference needs 41% more I to match the original ASA initial bending stiffness. The proposed section exceeds that requirement. PLA already has similar reference stiffness to ASA; added section would reduce working stress and provide deformation margin. The required long-term creep allowance remains unestablished for both. These are section estimates, not whole-bracket stiffness or material-specific spool ratings.
-
-[Sizing comparison, equations and limitations](designs/closed-wall-e6/MATERIAL-SIZING.md) · [Reproducible results](designs/closed-wall-e6/material-sizing.json).
-
-### Material cases — PLA, PETG, ASA and PA6-GF
-
-Expanded the final-CAD section check from the midpoint to ten knee/forearm stations and included outward seat forces for 180–220 mm spools. At the 12 kg design target the largest sampled nominal stress is **3.47 MPa**; linear scaling gives 6.93 MPa at the proposed 24 kg proof load. These are screening stresses, not local peaks or material allowables. The higher knee/near-seat demand supersedes relying on the earlier midpoint figure alone.
-
-| Material | Decision for the 85°F / 100°F cases |
+| Setting | Working value |
 |---|---|
-| PLA | Initially stiff; least thermal headroom among the reference grades. Monitored creep trial before any unattended full-row recommendation. |
-| PETG | Candidate; lower reference bending stiffness. Sustained-load behavior needs measurement. |
-| ASA | **First full-load prototype choice** for thermal headroom and the integrated unfilled snap geometry; not yet creep-qualified. |
-| PA6-GF | Evaluate annealed dry and moisture-conditioned states. Reference wet bending stiffness is about one-third of dry; snap behavior needs separate qualification. |
+| Orientation | Supplied broad side down; bracket width is printer Z |
+| Layer height | 0.20 mm, including the first layer for the stated band alignment |
+| Nozzle used for wall-count mapping | 0.4 mm |
+| Assumed outer / inner line width | 0.42 / 0.45 mm; explicit analysis inputs, not asserted slicer defaults |
+| PLA contour walls | 8 |
+| PETG contour walls | 10 |
+| Body infill | 15%; **zero strength or stiffness credit** in the analysis |
+| Body top / bottom solid thickness | 1.2 / 1.2 mm, six layers each |
+| Helper 1 | 100% infill modifier, print Z = 7.6–8.8 mm |
+| Helper 2 | 100% infill modifier, print Z = 15.2–16.4 mm |
+| Solid infill | A pattern the slicer supports at 100%, with bonded adjoining lines |
+| Filament profile | Exact grade's manufacturer profile, calibrated for the machine |
+| Temperature, cooling and flow | Follow that grade's profile; verify bonding and flow before load testing |
+| Print envelope | Approximately 206.73 × 208 × 24 mm; pair-print constraint removed |
 
-The 12 kg target covers the 10.58 kg continuous-support estimate at 60 mm spool pitch with a 1.42 kg budget for self-weight and variation. This is a target, not a verified capacity or bound on arbitrary installations. Both temperature cases retain full load; the hot hours are not averaged away. The material study includes sourced reference data, a 1,000-hour screening trial, six-hour hot exposure and proposed movement criteria. It does not infer multi-year life or assign safe spool counts from tensile strengths or HDT.
+1. Import the STEP as **one object with three aligned parts**. Do not arrange its components independently.
+2. Keep `MAIN_BODY_SET_WALLS_AND_INFILL` as the printable body. Set its walls, 15% infill and six top/bottom layers.
+3. Convert each named `MODIFIER_…` helper to **modifier geometry** and set its infill to **100%**. A helper is a finite 1.2 mm slab, not a zero-thickness STEP surface.
+4. Inspect the toolpaths at each band. Confirm four continuous solid planes, contour thickness through the knee and beneath both seats, and uninterrupted solid plastic in the screw landings.
+5. Confirm the helpers do not print as extra exterior slabs. Check driver tunnels, screw clearance, thin snap fingers and internal bridging over the sparse infill.
+6. Save the configured slicer project with the filament identity and settings. The STEP itself stores geometry, not these settings.
 
-[Full material assessment and qualification cases](designs/closed-wall-e6/MATERIAL-CASES.md) · [Computed cases](designs/closed-wall-e6/material-work-cases.json) · [Reference data and sources](designs/closed-wall-e6/material-reference-data.json).
+![Solid-band layout](designs/closed-wall-e8/modifier-stack.png)
 
-### 16-inch support spacing — service load case, not a rating
+The body is solid **in CAD** so the slicer can generate its internal structure. It is not an instruction to print the body at 100%. Sparse infill supports the internal bands during printing even though it receives no structural credit. Do not reintroduce modeled hollow bands or an internal grid into the printable STEP.
 
-E6 is not yet cleared for a fully loaded installation. For six full spools per 406.4 mm bay at an assumed gross mass of 1.25 kg each, the bay carries 7.5 kg. Six per bay requires a pitch no greater than 67.7 mm; spools can straddle bracket locations because the bracket does not interrupt the bearing track.
+Use the supplied orientation for all mechanical comparisons. Standing the bracket upright changes the layer-load relationship. A 0.6 mm nozzle may suit abrasive filament, but the wall **count** must then be recalculated to achieve the modeled thickness. Do not silently carry over the 0.4 mm mapping.
 
-An interior support between simply supported bays carries about one bay's load. Continuous dowels across two equal, uniformly loaded bays place 1.25 times one bay's load on the middle bracket: **9.375 kg equivalent**, before dowel weight and handling loads. This factor describes that beam case; it is not a safety factor or a universal maximum. At 60–70 mm spool pitch, the same continuous-span estimate ranges from approximately 9.1 to 10.6 kg at the middle support.
+### Walls versus millimetres
 
-The six-spool example produces approximately 12.9 N·m at the wall and an idealized 66 N upper-screw tension demand. A sampled arm midpoint has approximately 1.85 MPa nominal combined stress, including the outward seat force. Those numbers omit critical local concentrations, other sections and creep; they are not allowable loads. The 1-inch dowel calculation gives approximately 0.22 mm instantaneous resultant deflection using an explicitly assumed 8 GPa wood modulus. Purchased dowel properties remain unidentified.
+A rounded-rectangle bead-spacing estimate at 0.2 mm layers is:
 
-The material study above now specifies the temperature envelope and four reference filament cases. Final grade, actual spool mass/pitch, wall fasteners and rail end conditions still need confirmation for an installation rating. Internal-roof printing remains unresolved. [Inputs, equations and limitations](designs/closed-wall-e6/check_16inch_loading.py) · [Calculated demands](designs/closed-wall-e6/loading-16inch.json).
+`t(n) = 0.42 + (n − 1) × [0.45 − 0.2 × (1 − π/4)] mm`
 
-### E6 — shorten the span, retain arm depth, use the upper spool envelope
+| Walls | Approximate thickness |
+|---:|---:|
+| 3 | 1.23 mm |
+| 5 | 2.05 mm |
+| 6 | 2.46 mm |
+| 8 | 3.27 mm |
+| 9 | 3.68 mm |
+| 10 | 4.08 mm |
+| 12 | 4.90 mm |
 
-Moved the rail centers from 76/226 mm to 90/190 mm from the wall, reducing their spacing from 150 to 100 mm. That lets the arm rise under the spool while retaining approximately 28 mm of depth. Rotated both retainers to match the new spool contact directions, keeping their rigid bearing sectors opposite the contact. Minimum nominal flange clearance is 3.48 mm across 180–220 mm spools.
+Inspect the real slice; variable line width, thin-wall handling and local geometry alter this estimate. The two exterior and two interior plates stay 1.2 mm thick. More perimeters add material near bending-section edges and reduce working stress, but gains diminish. They do not establish a material's creep-rupture law. The main arm remains approximately 28 mm deep; the earlier 34 mm depth proposal has not been implemented.
 
-The back now lies in one wall plane from the arm underside at −32 mm to the top at +176 mm. Small square lands at the wall-side ends remove the old clipped toe; the exposed edges keep their finishing treatments where space permits. Chamfers leave an 18 mm-wide central wall-bearing face, interrupted by the screw holes. Actual contact pressure will depend on wall flatness and fastening; geometric contact does not imply uniform bearing.
+## Material choice at 85°F sustained / 100°F for six hours per year
 
-Raised the upper fixing from +138 to +164 mm. Screw spacing increases from 126 to 152 mm while the bracket remains below the top of even the 180 mm reference flange. This uses otherwise empty space beside the spool to preserve the mounting lever arm. The four continuous 1.2 mm plates and 2.4 mm modeled perimeter remain.
+Both temperature cases retain full load. The following are **reference-grade comparisons**, not universal polymer properties. [Datasheet values, exact sources and hashes](designs/closed-wall-e6/material-reference-data.json).
 
-![E6 finished CAD](designs/closed-wall-e6/progress-exterior.png)
+| Material case | Prototype setup | Engineering implication |
+|---|---|---|
+| PLA | 8 walls; four 1.2 mm plates | Initially stiff. Least thermal headroom of these reference grades. Plausible candidate under the 5 mm criterion, with a grade-specific sustained/hot load trial. |
+| PETG | 10 walls; same plates | More compliant initially, accommodated by thicker walls. A useful candidate; published short-time PETG creep evidence does not determine this grade's multi-year behavior. |
+| ASA | Start with 8-wall geometry for comparison | First higher-temperature prototype choice. Thermal headroom is useful, but ASA is not automatically creep-qualified. |
+| PA6-GF, annealed/dry | Compare the 8-wall effective thickness | High dry stiffness; match the datasheet's conditioning and annealing before using its properties. Integrated snaps need their own insertion/retention check. |
+| PA6-GF, moisture-conditioned | Same geometry, conditioned properties | The reference Young's modulus falls from about 5.36 to 1.79 GPa. Treat this as a separate case, not as dry nylon with a small correction. |
 
-| Geometry | E4 | E6 |
-|---|---:|---:|
-| Rail spacing | 150 mm | 100 mm |
-| Bracket height | 239 mm | 208 mm |
-| Bracket projection | 244.24 mm | 206.73 mm |
-| Extension below a 200 mm spool | 72.7 mm | 32.7 mm |
-| Loaded envelope, 200 mm spool | 272.7 mm | 232.7 mm |
-| Screw spacing | 126 mm | 152 mm |
-| Midspan arm depth | 35.2 mm | 27.9 mm |
+The PA6-GF source specifies 100°C / 16-hour annealing for its reported properties. Its water-conditioned specimens are a deliberate sensitivity case, not a claim about equilibrium moisture in a particular room. Annealing can change fit. Use suitable abrasion-resistant extrusion hardware for glass-filled material and recheck the dowel and screw coupons after conditioning.
 
-**Mechanical screening:** E6's midpoint section has 59% of E4's second moment of area, but the span falls to two-thirds. A uniform-beam estimate based on that midpoint section gives approximately twice the forearm stiffness through the `I/L³` relationship. This is a screening comparison, not a prediction of complete-bracket stiffness: the actual varying sections, snap roots, wall leg and mounting connection remain to be analyzed. An idealized upper-screw tension calculation gives approximately 4% lower tension for the same total vertical load.
+HDT and glass-transition temperature help compare thermal sensitivity; neither is a sustained-load allowable. Generic tensile strength divided by a convenient factor is not a creep design method. “PLA+”, “PETG HF” and other modified products need their own data.
 
-**Handling tradeoff:** closer rods create a shallower cradle. For the 200 mm reference spool, the ideal center-of-mass rise to pass over one rod falls from approximately 29 to 12 mm. Spools will be easier to rock out fore/aft. The dowel snaps retain the rods, not the spools. Validate insertion, sliding and accidental bumps before accepting this rail spacing.
+## Loads and spool count
 
-The final CAD is one valid solid and both delivered STL meshes pass edge-closure checks. [Envelope and section calculations](designs/closed-wall-e6/vertical-verification.json) · [Geometry check](designs/closed-wall-e6/verification.json) · [Finish check](designs/closed-wall-e6/finish-verification.json) · [Mesh check](designs/closed-wall-e6/mesh-verification.json).
+The design case uses 406.4 mm (16-inch) support spacing and an assumed **1.25 kg gross mass per full spool**, including the empty spool.
 
-### E5 — reject simple arm thinning as an equivalent replacement
+Six spools per bay weigh 7.5 kg and require pitch no greater than 67.7 mm. An interior support between simple spans receives about one bay's load. For two equal continuous spans under uniform load, the middle reaction is **1.25 times one bay's load**, or 9.375 kg equivalent before self-weight. At a continuous 60 mm spool pitch, that estimate becomes about 10.58 kg. The **12 kg equivalent / 117.72 N per bracket** analysis target allows additional demand for that example. It is not a universal bound on uneven loading, overhangs or arbitrary continuous spans.
 
-First raised the underside by 45 mm while retaining the 150 mm span. That left only an 18 mm-deep arm. Its midspan second moment of area fell to approximately 18% of E4's, with no compensating span reduction. Kept this as an illustrated study and proceeded to E6. [E5 checkpoint](designs/closed-wall-e5/README.md).
+For the level-rail model, each seat receives 58.86 N downward. The 180 mm spool case adds 32.93 N outward at each seat and produces about 16.48 N·m at the wall. Loads act over bearing arcs, not at the thin finger tips. The older load formula used an effective 12.4 mm rail radius; the separate raised-front statics uses nominal 12.7 mm radius. These are explicitly different inputs.
 
-### E4 — angular frame, chamfers that fade into the faces
+**Six per bay is the full-row test arrangement, not a released safe count.** No maximum safe spool count is yet assigned for PLA, PETG, ASA or PA6-GF. A capacity must satisfy the printed bracket, snaps, dowels, screws and wall, including creep and the specified serviceability limits.
 
-Replaced the main body's sweeping outline with straight facets and R2 corner blends. Both broad faces receive 3 mm chamfers along the large structural edges. Before the retainers and small mounting features, the chamfer depth fades over 20 mm using a quintic curve with zero slope and curvature at both ends. The bevel also fades at the short upper-leg facet junction to avoid a hard termination there. The thin fingers and their small rounded noses keep their functional sections; a blanket R2 treatment would consume them. Integrated concave root blends increase to R2.
+For a tested material with usable creep compliance, scale bracket movement linearly within this small-deflection model:
 
-![Smooth chamfer runout near the rear seat](designs/closed-wall-e4/progress-runout.png)
+`δ(m,t,T) = δ(12 kg,t,T) × m / 12 kg`
 
-The bevels require extra solid material at the cavity rims. A 3 mm bevel over the original 1.2 mm face and 2.4 mm perimeter would leave an inadequate diagonal ligament. Local cavity setbacks now follow each bevel and its runout, preserving a design minimum of 1.2 mm behind the treated surface. The two continuous internal plates remain 1.2 mm, with three hollow bands. This local reinforcement does not solve unsupported internal-roof printing.
+Then check the actual support reactions for the installation. Do not equate “six spools per bay” with “six spools carried solely by one bracket.”
 
-The final STEP is a valid single solid; the final bracket and coupon STL meshes have no boundary or nonmanifold edges. The nominal full-profile spool clearance sweep gives 5.34 mm minimum over 180–220 mm flanges; the 0.005 mm contour simplification tolerance is much smaller than the clearance margin. The finished chamfers only remove exterior material. These checks do not establish insertion force, strength, or creep life.
+## What the FEM resolves
 
-[Finished STEP](designs/closed-wall-e4/bracket.step) · [Final STL](designs/closed-wall-e4/bracket.stl) · [Finish verification](designs/closed-wall-e4/finish-verification.json) · [Mesh verification](designs/closed-wall-e4/mesh-verification.json) · [Seat drawing](designs/closed-wall-e4/retainer-engineering.png)
+The **2D plane-stress model** integrates the ideal printed material across the width. It includes contour walls, the four solid bands and fastener opening effects. It omits broad-face chamfers and projects the mounting restraints onto the wall, so it is a reduced comparison model.
 
-### E3 — remove the vestigial saddle prong
+The **3D model** starts with the actual chamfered E8 exterior and functional holes, then removes an analysis-only sparse core. It retains the ideal contour walls, four continuous plates and tunnel surrounds. These analysis cavities are not printable CAD changes.
 
-The small spur below the snap finger was leftover geometry from the original open saddle. Rounding it in E2 preserved a feature with no retaining function. Removed both the original saddle-lip sectors and their circular support nodes. Rebuilt each connection as a buttress between the arm and the rigid bearing sector, keeping the actual curved snap fingers.
+Both models use compression-only wall contact. Rigid washer patches restrain outward movement and ideal screw shanks carry shear. The wall cannot pull the bracket inward. The 3D material is small-strain, homogeneous and isotropic with Poisson ratio 0.35; the reference solve uses E = 1,000 MPa and scales displacement to each grade's published XY Young's modulus. This does not resolve actual FFF orthotropy, bead defects, layer adhesion, screw/stud compliance or changing snap contact.
 
-![Front seat: the unwanted prong is removed](designs/closed-wall-e3/root-comparison.png)
+![2D solved FEM](analysis/e8/fem-2d.png)
 
-The snap opening, throat, thin finger dimensions and smooth root construction remain the same. The support beneath the retainer changes, so its effective compliance still needs evaluation in the integrated part. The existing 8 mm coupon remains a local retainer fit sample, not a stiffness match for the complete bracket.
+![3D solved FEM](analysis/e8/fem-3d.png)
 
-The full-profile nominal clearance sweep still passes at 5.64 mm minimum over 180–220 mm flanges. The new outline is connected. [Geometric results](designs/closed-wall-e3/verification.json) · [Mesh checks](designs/closed-wall-e3/mesh-verification.json).
+**Takeaways:** the reduced section beneath the rear dowel seat contributes substantial rotation. The earlier 0.22/0.27 mm numbers described only an idealized forearm and must not be used as whole-bracket movement. The first 8-wall 3D solve placed about 48% of the elastic strain energy in the rear-seat region, versus about 14% in the forward arm region. The recessed lower fixing also attracts significant outward reaction; assuming the upper screw alone takes the overturning couple misses that connection behavior.
 
-### E2 — replace abrupt snap roots with smooth transitions
+The initial 8-wall mesh gave a rear-seat regional volume-p99 von Mises stress around 6.3 MPa. Raw constraint-edge peaks depend on mesh and restraint idealization; a separate 10-wall mesh produced a higher raw peak despite its thicker walls. **Neither raw peaks nor percentile summaries are material allowables.** Use the [regenerated results](analysis/e8/RESULTS.md) for current mesh comparisons, actual stress fields, reactions and residuals.
 
-The E1 root treatment was inadequate: adding circles to a stepped profile left abrupt shoulders, and the relief pockets ended in sharp notches. Replaced that construction with a continuous transition from the 1.35 mm finger to the thick bearing sector. The analytic transition matches radius, tangent, and curvature at both ends. Its minimum curvature radius is approximately 6.76 mm before integration into the bracket.
+An affine uniaxial patch test checks stiffness assembly, recovered stress and strain energy. Whole-bracket force/moment balance, residuals and refinement checks accompany the result files. A mesh comparison supports numerical interpretation; it does not validate years of service.
 
-Added R1.5 concave blends at the integrated roots and relief-slot ends, plus R0.45 convex rounds. Enlarged the relief pocket to 17.75 mm radius and increased the local bearing thickness from 5 to 6 mm to preserve a substantial connection to the bracket. The nominal capture throat remains approximately 24.51 mm. The working fingers remain 1.35 mm thick; the thicker roots change their compliance, so insertion force still needs validation.
+## Creep calculation and available margin
 
-![Actual CAD root comparison](designs/closed-wall-e2/root-comparison.png)
+For a constant load and a common linear-viscoelastic compliance throughout a model with unchanged contact state:
 
-The nominal flange sweep passes with 5.64 mm minimum full-bracket clearance and 6.91 mm retainer clearance. A boundary-angle check around the rear seat found no large resolved direction jumps; the maximum was 2.36° after excluding microscopic tessellation edges. This is a geometric check, not a claim of zero stress concentration. [Root verification details](designs/closed-wall-e2/root-verification.json).
+`δ(t,T) = K × J(t,T) = K / Ec(t,T)`
 
-The rebuilt bracket and coupon also pass mesh edge-closure checks. [Mesh verification](designs/closed-wall-e2/mesh-verification.json).
+Here K is the geometry/load coefficient in MPa·mm, J is creep compliance in MPa⁻¹ and Ec is the **secant creep modulus**, not the instantaneous unloading modulus. For the initial level-rail solves:
 
-Slicer paths and physical insertion behavior remain unverified. The full bracket still needs an internal-roof printing solution.
+| Case | K, approximately | Initial movement | Ec needed for 5 mm bracket-only movement | Maximum compliance growth relative to reference E |
+|---|---:|---:|---:|---:|
+| PLA, 8 walls | 3,992 MPa·mm | 1.17 mm | 798 MPa | 4.29× |
+| PETG, 10 walls | 3,630 MPa·mm | 1.57 mm | 726 MPa | 3.18× |
 
-### E1 — align the snap opening with spool contact
+Refinement updates live in [RESULTS.md](analysis/e8/RESULTS.md). These thresholds spend the full 5 mm on the bracket. For the complete rack, use **Ec ≥ K / (5 mm − dowel movement − wall/fastener movement)**. The earlier 1-inch wood-rail example gave about 0.22 mm instantaneous sag with an assumed 8 GPa modulus; wood grade, moisture, defects and long-term behavior remain installation inputs.
 
-Rotated each seat so its opening faces the spool contact and its rigid bearing sector lies directly opposite. Mirrored the two seats. This preserves the exposed track surface while directing the spool reaction into the thick bearing sector. Added separate 1.35 mm curved fingers and rounded noses, with a nominal 24.51 mm throat. A 185° concentric wrap was rejected because its capture disappears within the seat clearance.
+A one-roll change assigning an entire 1.25 kg reaction to one bracket gives approximately **0.12 mm for PLA and 0.16 mm for PETG** with the reference instantaneous modulus. For simple spans and the stated two-equal-span geometry, a single point load's reaction at the relevant support does not exceed the whole load. This estimate excludes overhangs, unusual continuity and handling impact. Fast removal of a roll depends on the aged unloading modulus; it is not correctly modeled by simply reversing all accumulated creep.
 
-The new profile passes the nominal 180–220 mm flange clearance sweep. Minimum retainer clearance is 6.91 mm; minimum full-profile clearance is 5.40 mm. These are seated geometric clearances, not insertion-path or tolerance validation. The thick bearing sector is 5 mm radially; the structural perimeter increases from 1.35 to 2.4 mm. Continuous side and internal plates remain 1.2 mm.
+Even a settled, linear response at the full 5 mm limit gives a proportional one-roll change of about 0.52 mm for this load assumption. The 5 mm full-load criterion is therefore more restrictive than the 1 mm per-roll criterion in that simplified case.
 
-The drawing at the top of this page comes from the current CAD profile. The [8 mm coupon](designs/closed-wall-e1/snap-coupon-8mm.stl) makes the first fit trial smaller than a full bracket. It does not establish the 24 mm-wide bracket's insertion force.
+### Published creep evidence and its limit
 
-### D — verify continuous internal planes
+[Stankevics et al., 2025](https://doi.org/10.3390/polym17152075) tested unidirectional, 100%-filled Devil Design PETG at approximately 21.3°C, with tests extending to 20 hours. Its Figure 26 Prony spectrum provides a short-time benchmark. Graphically transcribed amplitudes are approximately 0.005, 0.010, 0.015, 0.010, 0.020 and 0.080 at time constants 1 through 100,000 seconds in decades.
 
-Established the upward wall leg and four full L-shaped plates. Rebuilt the delivered mesh, checked edge closure and all 120 layer-center sections, and independently checked nominal spool clearance. Found the main manufacturing issue: true empty cavities leave approximately 84 mm of unsupported region near the knee. A global infill percentage does not support those cavities.
+`J(t)/J0 = 1 + Σ Ai[1 − exp(−t/τi)]`
 
-![D continuous-plate section](designs/closed-wall-d/design-section.png)
+That spectrum gives roughly 1.07 at five hours, 1.10 at 20 hours and a formal asymptote of 1.14. **The asymptote is a property of the fitted finite series, not proof that a rack at 85°F stops creeping.** Longer-time mechanisms were not calibrated by that experiment.
 
-[Exterior](designs/closed-wall-d/progress-exterior.png) · [Arm cutaway](designs/closed-wall-d/progress-cutaway.png) · [Separated plate explanation](designs/closed-wall-d/progress-plates.png)
+[Fischbach and Weinberg, 2023](https://arxiv.org/abs/2302.11240) tested a different printed PLA at room temperature. After approximately one week, measured flexural creep modulus was 1,040 MPa, about 56% of its 1,860 MPa datasheet flexural modulus, and deformation was still increasing. That demonstrates meaningful sub-Tg creep; it cannot be transferred unchanged to this PLA grade, temperature or service life.
 
-### Deferred — open-web alternative
+The [calculation file](analysis/e8/engineering-summary.json) reports one-, five- and ten-year **sensitivity cases**, including unmeasured long-time compliance tails of 0, 0.02 and 0.10 per year. These are explicitly assumed continuations of a short-time example, not claimed PLA/PETG forecasts.
 
-Archived the separate reference concept. It has no shared geometry changes or load claims with the current closed-wall path.
+![Creep sensitivity](analysis/e8/creep-sensitivity.png)
 
-## Current files
+A long-time viscous tail can be almost invisible in a 20-hour test yet add appreciable deformation over ten years. Conversely, slow creep that remains inside the movement budget need not make the rack unusable. The release question is whether the grade's measured compliance and creep-rupture behavior support the intended life.
 
-- [STEP assembly: body plus modifier helpers](designs/closed-wall-e8/bracket-with-modifier-helpers.step)
-- [Body-only STEP](designs/closed-wall-e8/body-only.step)
-- [Aligned body STL](designs/closed-wall-e8/body-only.stl), [helper 1](designs/closed-wall-e8/helper-1.stl) and [helper 2](designs/closed-wall-e8/helper-2.stl)
-- [Setup instructions and rebuild](designs/closed-wall-e8/README.md)
-- [Verification](designs/closed-wall-e8/verification.json)
-- [Design decisions](DESIGN.md)
-- [Separate future open-web reference](future/open-web/README.md)
+### Six hot hours each year
 
-## Geometry
+With 85°F as the reference temperature, reduced annual time is:
 
-| Feature | E8 value |
+`ξyear = 8,754 + 6 × Ahot hours`
+
+Ahot is the material's creep-rate shift at 100°F relative to 85°F. It is not known for these print/grade combinations. An **assumed Arrhenius sensitivity**, using activation energies of 50, 100 and 200 kJ/mol, gives Ahot about 1.70, 2.90 and 8.42. The six hot hours then add about 0.048%, 0.130% or 0.508% to annual equivalent time.
+
+Those small percentages do not establish thermal adequacy: the shift law is uncalibrated, reversible hot softening still occurs during the excursion, and nonlinear creep or damage may invalidate simple time shifting. Check loaded movement during the actual hot exposure. Do not replace the cycle with an average temperature or use a universal WLF constant as grade data.
+
+## Screw landings and installation
+
+| Feature | Current design |
 |---|---:|
-| Nominal dowel diameter | 25.4 mm |
-| Seat diameter / spacing | 26 / 100 mm |
-| Single-part envelope | approximately 206.73 × 208 × 24 mm |
-| Structural perimeter | User-selected slicer wall count and extrusion widths |
-| Broad-face chamfer / body corner radius | 3 / 2 mm where features permit |
-| Full-height wall land | 208 mm |
-| Screw centers above rail datum | 164 and 40 mm |
-| Clamping thickness / nominal access diameter | 3.6 / 16 mm |
-| Screw clearance / washer envelope OD | 5.2 / 13 mm |
-| Internal support | User-selected slicer infill; no modeled cell grid |
-| Chamfer runout length | 20 mm |
-| Exterior side plates | Slicer top/bottom layers; 1.2 mm suggested |
-| Internal continuous plates | Two 1.2 mm helper solids converted to 100% infill modifiers |
-| Intervening sparse-infill bands | 3 × 6.4 mm |
-| Snap finger bending thickness | 1.35 mm |
-| Rigid seat radial thickness | 6 mm |
-| Nominal capture wrap / throat | 218° / approximately 24.51 mm |
+| Screw clearance | Nominal Ø5.2 mm with small printable roof relief |
+| Compatible shank envelopes | #8, #10 and nominal M5; printed M5 fit needs confirmation |
+| Washer face to wall | **3.6 mm** |
+| Nominal driver access | Ø16 mm with sloping roof |
+| Checked straight driver envelope | Ø15.8 mm |
+| Analysis washer | Ø13 OD / Ø5.5 ID; 1.2 mm thick for geometric fit |
+| Screw axes | Y = 164 and 40 mm; Z = 12 mm |
 
-The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 3.48 mm for the complete bracket and 7.45 mm for the rear retainer, with symmetry applying to the front retainer.
+Use flat-bearing heads and washers. A countersunk head introduces wedging that these models do not cover. Do not assume every washer sold for M5 has the analyzed outside diameter. For a different washer, check fit and recalculate bearing area.
 
-## Build and inspect
+The actual CAD supports approximately 99.1% of the specified washer annulus. The small loss comes from the printable roof relief in the screw hole. The available bearing area is about **108 mm²**:
 
-Follow the [E8 setup and rebuild instructions](designs/closed-wall-e8/README.md). Import the STEP as one object with three aligned parts. Choose body walls and infill, change the helper parts to modifiers, and set their infill to 100%. Keep the supplied broad-side-down orientation and inspect the two internal solid bands in the sliced preview.
+`A ≈ 0.991 × π/4 × (13² − 5.5²)`
 
-## Verification limits
+| Assumed clamp force per screw | Mean pressure on supported annulus |
+|---:|---:|
+| 250 N | 2.3 MPa |
+| 500 N | 4.6 MPa |
+| 1,000 N | 9.3 MPa |
 
-E8's STEP roundtrip preserves three valid solids, and hardware envelope checks pass. STEP does not encode slicer settings. The helper overlap is intentional and must not become extra printed slabs. Actual walls, solid-band formation, sparse-infill support and physical print quality need slicer/print checks. Previous E6 section properties do not rate arbitrary E8 print settings. Main bracket loads, fasteners, dowels, snaps, handling stability and long-term creep remain unqualified.
+These forces are scenarios. Driving torque into wood does not reliably determine the clamp force because thread cutting and friction consume torque.
+
+![Screw-landing FEM](analysis/e8/fem-landing.png)
+
+The local 3D submodel uses the actual **upper 3.6 mm land**, a 500 N distributed washer force and flat rear support. Refining that submodel from approximately 27,500 to 81,300 tetrahedra changed average axial washer movement from 0.0118 to 0.0121 mm at E = 1,000 MPa; the raw von Mises peak changed from about 4.83 to 4.98 MPa. At the PLA reference modulus that axial movement is about 0.0035 mm; at PETG's, about 0.0052 mm. These are constant-force calculations, not predictions of installed clamp-force retention.
+
+**Retain the 3.6 mm land for now.** The backed compression case does not justify making it thicker. More thickness would add creep compression travel and violate the compact clamp intent without addressing the governing bracket region. This is a reasoned decision to retain the geometry, not a claim that every washer, tightening force or wall surface is acceptable.
+
+The whole-bracket service model checks both fixings. The initial 8-wall solve attracted approximately 182 N outward reaction at the lower washer and 26 N at the upper; those demands depend on wall contact and connection stiffness. They replace the earlier upper-screw-only assumption for this specific model. They do not include an arbitrary tightening preload, and maxima from separate cases cannot simply be added as scalar von Mises stresses.
+
+Mount against a flat, firm surface with full back contact. A gap behind a landing changes it into a bending/punching problem and invalidates the backed compression case. Seat the washer firmly without crushing the print; inspect for embedment and loosening. The load path does not rely on sustained clamp friction alone.
+
+Use screws intended for the actual stud substrate, with manufacturer-specified pilot drilling and embedment. Required length includes the 3.6 mm plastic, washer, wall finish and required stud engagement. M5 **shank clearance** does not mean an M5 machine screw can be driven directly into wood. Install the screws before loading the rack. The checked tool is a straight cylindrical envelope, not an arbitrary drill body.
+
+## Raised-front rail study: +12 mm
+
+Raising the front rail changes support geometry and reactions; it is more than cosmetic camber. For nominal 25.4 mm dowels, 100 mm horizontal spacing, frictionless contacts and a 200 mm spool:
+
+| Quantity | Level rails | Front rail +12 mm |
+|---|---:|---:|
+| Spool center from wall | 140.0 mm | 128.0 mm |
+| Rear / front vertical load fractions | 50% / 50% | 64.8% / 35.2% |
+| Wall moment at 12 kg equivalent | 16.48 N·m | 15.07 N·m |
+| Net moment about rear rail | 5.89 N·m | 4.47 N·m |
+
+This reduces wall moment about **8.6%** and the net moment about the rear rail about **24%**. The front rail still carries roughly 35% of the weight. Across 180–220 mm spools, the wall-moment reduction is about 7.6–9.5%. The front rail also presents a higher obstacle to forward roll-out.
+
+![Raised-front statics study](analysis/e8/raised-front-statics.png)
+
+The cost is greater rear-seat vertical load. That seat is already an important flexible region. Moving the front seat without remaking its supporting arm and rotating both snap openings to the new contact directions would be incomplete. The closer spool also needs a renewed wall-arm clearance sweep over the full diameter range.
+
+**This option is not yet printable or FEM-qualified.** Complete its geometry, contact/clearance checks and load cases as a separate revision before replacing E8. Cosmetic camber remains an optional separate adjustment: half of a defensible one-year **front-minus-rear differential sag**, not half an unsupported life estimate.
+
+## Qualification before assigning a lifetime spool rating
+
+Record the actual filament grade, print settings, dry/conditioned state, washer, screws, dowel diameter/grade, spool mass/pitch and support arrangement. Confirm the slice matches the structural assumptions.
+
+Measure unloaded position, immediate loaded movement and loaded drift at increasing elapsed times, including a sustained 85°F trial and a six-hour loaded 100°F exposure. Log the temperature at the bracket. Track the rear and front seats, span-center rail sag, washer embedment and any movement relative to the wall.
+
+Use **5 mm total full-load movement and 1 mm per-roll change** as the project limits. Compare creep rates over equal time intervals; a plateau should emerge from measurements, not from forcing a finite Prony fit. Inspect for cracks, whitening, layer separation, permanent snap opening, loss of capture and increasing screw embedment. A 24 kg brief proof case is a proposed separate test; passing it does not establish long-term creep life.
+
+A 1,000-hour trial is useful screening and model calibration. It is not automatically a ten-year rating. Extrapolation requires justified temperature/time shifts, the grade's creep behavior and a rupture check.
+
+## Reproduction and design history
+
+[Analysis scripts](analysis/e8) include the material-domain construction, 2D/3D solvers, known-solution verification, stress rendering, creep calculations and raised-front statics. [GitHub Actions](.github/workflows/engineering-analysis.yml) runs and publishes the calculated fields, then repeats the bracket and landing checks with finer meshes. The result JSON files retain force/moment balance, residuals and mesh details. Analysis-only BREP files and base meshes are regenerated; they are not print deliverables.
+
+The CAD geometry verification is separate: [E8 STEP and hardware checks](designs/closed-wall-e8/verification.json). Physical printing and mechanical tests have not been performed in this repository.
+
+[Design journal and superseded calculations](DESIGN-JOURNAL.md) · [Design decisions](DESIGN.md) · [Separate future open-web exploration](future/open-web/README.md)
