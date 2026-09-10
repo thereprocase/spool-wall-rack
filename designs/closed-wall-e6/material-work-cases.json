@@ -1,0 +1,219 @@
+{
+  "status": "Design and proposed qualification cases only; no material has a released load rating.",
+  "service_temperature_F": 85,
+  "service_temperature_C": 29.444444444444443,
+  "hot_temperature_F": 100,
+  "hot_temperature_C": 37.77777777777778,
+  "hot_hours_per_year": 6,
+  "sustained_and_hot_bracket_load_target_kg_equivalent": 12.0,
+  "chosen_short_proof_load_target_kg_equivalent": 24.0,
+  "wall_moment_Nm": 16.480800000000002,
+  "ideal_upper_screw_tension_N": 84.08571428571429,
+  "diameter_cases": [
+    {
+      "spool_diameter_mm": 180,
+      "each_seat_vertical_N": 58.86,
+      "each_seat_outward_N": 32.933063770426315,
+      "sampled_sections": [
+        {
+          "x_mm": 65,
+          "nominal_stress_MPa": 3.0269853692772224
+        },
+        {
+          "x_mm": 68,
+          "nominal_stress_MPa": 3.4602342136616433
+        },
+        {
+          "x_mm": 70,
+          "nominal_stress_MPa": 3.4286389849274985
+        },
+        {
+          "x_mm": 112,
+          "nominal_stress_MPa": 3.466506955263989
+        },
+        {
+          "x_mm": 120,
+          "nominal_stress_MPa": 3.164662520467095
+        },
+        {
+          "x_mm": 130,
+          "nominal_stress_MPa": 2.7872915497411506
+        },
+        {
+          "x_mm": 140,
+          "nominal_stress_MPa": 2.4284026213146106
+        },
+        {
+          "x_mm": 150,
+          "nominal_stress_MPa": 2.0319880293915356
+        },
+        {
+          "x_mm": 160,
+          "nominal_stress_MPa": 1.6542578614163808
+        },
+        {
+          "x_mm": 168,
+          "nominal_stress_MPa": 1.352073703693033
+        }
+      ],
+      "maximum_sampled_nominal_stress_MPa": 3.466506955263989
+    },
+    {
+      "spool_diameter_mm": 200,
+      "each_seat_vertical_N": 58.86,
+      "each_seat_outward_N": 29.23512498148134,
+      "sampled_sections": [
+        {
+          "x_mm": 65,
+          "nominal_stress_MPa": 3.0269853692772224
+        },
+        {
+          "x_mm": 68,
+          "nominal_stress_MPa": 3.4602342136616433
+        },
+        {
+          "x_mm": 70,
+          "nominal_stress_MPa": 3.4286389849274985
+        },
+        {
+          "x_mm": 112,
+          "nominal_stress_MPa": 3.408020345126878
+        },
+        {
+          "x_mm": 120,
+          "nominal_stress_MPa": 3.106168234386312
+        },
+        {
+          "x_mm": 130,
+          "nominal_stress_MPa": 2.7287876657809385
+        },
+        {
+          "x_mm": 140,
+          "nominal_stress_MPa": 2.369370065599363
+        },
+        {
+          "x_mm": 150,
+          "nominal_stress_MPa": 1.9734791944301748
+        },
+        {
+          "x_mm": 160,
+          "nominal_stress_MPa": 1.595749026455015
+        },
+        {
+          "x_mm": 168,
+          "nominal_stress_MPa": 1.293564869431739
+        }
+      ],
+      "maximum_sampled_nominal_stress_MPa": 3.4602342136616433
+    },
+    {
+      "spool_diameter_mm": 220,
+      "each_seat_vertical_N": 58.86,
+      "each_seat_outward_N": 26.342218530081414,
+      "sampled_sections": [
+        {
+          "x_mm": 65,
+          "nominal_stress_MPa": 3.0269853692772224
+        },
+        {
+          "x_mm": 68,
+          "nominal_stress_MPa": 3.4602342136616433
+        },
+        {
+          "x_mm": 70,
+          "nominal_stress_MPa": 3.4286389849274985
+        },
+        {
+          "x_mm": 112,
+          "nominal_stress_MPa": 3.362266128672032
+        },
+        {
+          "x_mm": 120,
+          "nominal_stress_MPa": 3.0604080130221805
+        },
+        {
+          "x_mm": 130,
+          "nominal_stress_MPa": 2.683019935972535
+        },
+        {
+          "x_mm": 140,
+          "nominal_stress_MPa": 2.323188754599353
+        },
+        {
+          "x_mm": 150,
+          "nominal_stress_MPa": 1.927707591441607
+        },
+        {
+          "x_mm": 160,
+          "nominal_stress_MPa": 1.549977423466443
+        },
+        {
+          "x_mm": 168,
+          "nominal_stress_MPa": 1.2477932669908354
+        }
+      ],
+      "maximum_sampled_nominal_stress_MPa": 3.4602342136616433
+    }
+  ],
+  "highest_sampled_service_nominal_stress_MPa": 3.466506955263989,
+  "linear_screen_at_chosen_proof_load_MPa": 6.933013910527978,
+  "material_cases": [
+    {
+      "case": "PLA",
+      "reference_grade": "PolyLite PLA V5.4",
+      "reference_only_vertical_forearm_deflection_mm": 0.2727927196254938,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    },
+    {
+      "case": "PETG",
+      "reference_grade": "Polymaker PETG current formula",
+      "reference_only_vertical_forearm_deflection_mm": 0.3870155522838082,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    },
+    {
+      "case": "PETG legacy sensitivity",
+      "reference_grade": "PolyLite PETG V5.4",
+      "reference_only_vertical_forearm_deflection_mm": 0.4642433488743786,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    },
+    {
+      "case": "ASA",
+      "reference_grade": "PolyLite/Polymaker ASA",
+      "reference_only_vertical_forearm_deflection_mm": 0.2749114154204641,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    },
+    {
+      "case": "PA6-GF dry",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/dry",
+      "reference_only_vertical_forearm_deflection_mm": 0.20429419077418942,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    },
+    {
+      "case": "PA6-GF wet",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/water-conditioned",
+      "reference_only_vertical_forearm_deflection_mm": 0.6086361424197279,
+      "qualified_sustained_capacity_kg": null,
+      "qualified_spools_per_bay": null,
+      "creep_life_hours": null
+    }
+  ],
+  "limitations": [
+    "12 kg is a rounded design target, not an allowable load or universal reaction bound.",
+    "Both service and hot cases carry the full load. Six hot hours are not averaged away.",
+    "All modeled solid assumed fully printed; no infill or empty-cavity strength credit.",
+    "Nominal sections omit local stress concentrations, wall connection, snap-root strain, shear and plate buckling.",
+    "Reference deflection uses published typical flexural modulus, a fixed rear seat and a uniform 100 mm forearm with midpoint inertia. It omits outward load, other bracket compliance, service temperature and creep.",
+    "HDT, Tg, tensile strength and elongation at break do not define long-term allowable loads or snap strain.",
+    "A short proof test and 1000-hour trial do not establish a multi-year creep life."
+  ]
+}

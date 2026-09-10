@@ -19,3 +19,5 @@ When replacing a feature, remove its obsolete precursor geometry. Do not leave r
 E6 final geometry requires finish_cad.py after profile export. Preserve matching cavity-rim reinforcement behind the mirrored 3 mm broad-face chamfers. Smoothly taper large edge treatments to zero before small features; do not apply their nominal radii to thin snap noses.
 
 E6 uses 100 mm rail spacing, 90/190 mm rail centers, a full wall plane from -32 to +176 mm, and screw centers at 164/12 mm. E5 is a rejected fixed-span thinning study. Preserve the stated handling-stability tradeoff; the I/L^3 comparison is a screening proxy, not whole-bracket stiffness or a load rating.
+
+Service envelope: 85°F sustained; 100°F for six hours/year, fully loaded. Work PLA, PETG, ASA and PA6-GF cases. E6 material report selects ASA for the first prototype, not a released rating. The 12 kg sustained/hot and 24 kg brief proof cases are qualification targets. Preserve PA6-GF annealed dry and water-conditioned cases separately; published typical properties and short tests do not establish years of creep life.

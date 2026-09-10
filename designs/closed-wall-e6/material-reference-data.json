@@ -1,0 +1,91 @@
+{
+  "status": "Published typical reference properties; not service-temperature creep allowables.",
+  "retrieved": "2026-09-10",
+  "cases": [
+    {
+      "case": "PLA",
+      "reference_grade": "PolyLite PLA V5.4",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_PLA_TDS_EN_V5.4.pdf?v=1731949179",
+      "source_sha256": "35e6989419080102795d87a6c5c52fd2fc2ad68fd398161d7b255e1965c26387",
+      "young_modulus_XY_MPa": 3426.9,
+      "flexural_modulus_XY_MPa": 3230.9,
+      "tensile_strength_XY_MPa": 52.3,
+      "tensile_strength_Z_MPa": 40.5,
+      "elongation_at_break_XY_percent": 6.3,
+      "Tg_C": 61,
+      "HDT_1p8MPa_C": 58
+    },
+    {
+      "case": "PETG",
+      "reference_grade": "Polymaker PETG current formula",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PETG_TDS_Polymaker_297e875c-5d38-4d2b-ba68-eef8916de183.pdf?v=1761581533",
+      "source_sha256": "de07bbf50eba938f8a544b82bada774d5d27939435e1970674c2bb4269643c0b",
+      "young_modulus_XY_MPa": 2311.11,
+      "flexural_modulus_XY_MPa": 2277.34,
+      "tensile_strength_XY_MPa": 47.96,
+      "tensile_strength_Z_MPa": 45.71,
+      "elongation_at_break_XY_percent": 9.33,
+      "Tg_C": 71.24,
+      "HDT_1p8MPa_C": 65
+    },
+    {
+      "case": "PETG legacy sensitivity",
+      "reference_grade": "PolyLite PETG V5.4",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_PETG_TDS_EN_V5.4.pdf?v=1731954068",
+      "source_sha256": "b12159542c10794d0da3153c9097ba134f4536d0c93e57a2756e1bd0cf5ac48d",
+      "young_modulus_XY_MPa": 2116.8,
+      "flexural_modulus_XY_MPa": 1898.5,
+      "tensile_strength_XY_MPa": 50.8,
+      "tensile_strength_Z_MPa": null,
+      "elongation_at_break_XY_percent": 8.4,
+      "Tg_C": 81,
+      "HDT_1p8MPa_C": 75
+    },
+    {
+      "case": "ASA",
+      "reference_grade": "PolyLite/Polymaker ASA",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_ASA_TDS_EN_V5.4.pdf?v=1731955208",
+      "source_sha256": "325c431fc97df6eccb332d3344c73fd4b4415dddb61b8adb420fab465921a663",
+      "young_modulus_XY_MPa": 2379,
+      "flexural_modulus_XY_MPa": 3206,
+      "tensile_strength_XY_MPa": 43.8,
+      "tensile_strength_Z_MPa": 32,
+      "elongation_at_break_XY_percent": 6.7,
+      "Tg_C": 98,
+      "HDT_1p8MPa_C": 100
+    },
+    {
+      "case": "PA6-GF dry",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/dry",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf",
+      "source_sha256": "90be757860575b59d2c3e70437407b94bf4206445e1302d622530b7e1544ce2a",
+      "young_modulus_XY_MPa": 5356.9,
+      "flexural_modulus_XY_MPa": 4314.2,
+      "tensile_strength_XY_MPa": 80.1,
+      "tensile_strength_Z_MPa": 60.7,
+      "elongation_at_break_XY_percent": 2.4,
+      "Tg_C": 70.4,
+      "HDT_1p8MPa_C": 157
+    },
+    {
+      "case": "PA6-GF wet",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/water-conditioned",
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf",
+      "source_sha256": "90be757860575b59d2c3e70437407b94bf4206445e1302d622530b7e1544ce2a",
+      "young_modulus_XY_MPa": 1793.6,
+      "flexural_modulus_XY_MPa": 1448.1,
+      "tensile_strength_XY_MPa": 40.2,
+      "tensile_strength_Z_MPa": 26.3,
+      "elongation_at_break_XY_percent": 4.2,
+      "Tg_C": null,
+      "HDT_1p8MPa_C": null
+    }
+  ],
+  "source_notes": [
+    "PA6-GF data require 100 C / 16 h annealing. Wet TDS specimens were then immersed at 60 C for 48 h; V1.1 reports 4.57% moisture. This is a water-conditioned sensitivity case, not an assertion of indoor equilibrium moisture.",
+    "The shop FAQ reports 2.57% moisture while the retrieved V1.1 TDS says 4.57%; the TDS governs this study.",
+    "New PETG and legacy PolyLite PETG have different published properties. Neither represents every PETG formulation.",
+    "HDT is a short-duration standardized deflection test, not a maximum continuous service temperature.",
+    "No grade-specific long-duration creep curve at 29.4 / 37.8 C was obtained for these four reference formulations."
+  ]
+}

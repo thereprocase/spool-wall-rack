@@ -71,4 +71,13 @@ The 100 mm rail spacing reduces the ideal rise needed to rock the spool over one
 
 The current load study assumes six 1.25 kg gross spools per 406.4 mm bay. It calculates demands rather than allowable capacities. In the two-equal-span continuous-dowel case, the middle support carries 9.375 kg equivalent before rod self-weight and handling loads. An interior support does not merely carry half one bay. Spool width and weight, continuous versus jointed dowels, end overhangs and support compliance affect the reactions.
 
-See E6's `check_16inch_loading.py` and `loading-16inch.json`. Do not treat the low nominal stress at one sampled section, generic filament tensile strengths, or a brief proof load as a long-term creep qualification. Identify the printing material and service temperature before establishing a sustained-load limit.
+See E6's `check_16inch_loading.py` and `loading-16inch.json`. Do not treat the low nominal stress at one sampled section, generic filament tensile strengths, or a brief proof load as a long-term creep qualification. The material work cases below now define the temperature envelope and reference grades; a sustained-load limit remains unestablished.
+
+
+## Material and temperature cases
+
+Use 85°F (29.4°C) sustained and 100°F (37.8°C) for six hours/year at full load. Evaluate PLA, PETG, ASA and PA6-GF. E6's rounded design/qualification target is 12 kg equivalent per bracket; a proposed 24 kg brief proof case is a chosen test target, not an allowable load or code factor. The ten-station beam screen gives 3.47 MPa maximum sampled nominal stress across 180–220 mm spools; critical local behavior remains outside that model.
+
+ASA is the first prototype selection for thermal headroom and unfilled snap behavior. Reference PA6-GF data require annealing and separate dry/water-conditioned cases; do not apply dry stiffness or dry HDT to wet material. No grade-specific long-term creep allowables have been established. Preserve unknown capacity/life fields as null rather than inventing material-specific spool ratings.
+
+See [the material report](designs/closed-wall-e6/MATERIAL-CASES.md) for primary sources, assumptions, calculations and proposed qualification criteria. Geometry remains E6. Resolving internal roofs and inspecting sliced paths precede full-bracket mechanical testing.

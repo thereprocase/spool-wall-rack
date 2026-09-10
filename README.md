@@ -8,7 +8,22 @@ A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket pri
 
 ## Design journal
 
-Latest checkpoint: **E6 saves about 40 mm of loaded rack height by shortening the rail span and using the available height beside the spool for the upper fixing.** Next: check the narrower cradle's handling stability and evaluate the actual arm, snap roots and mounting connection. Resolve internal roof printing before full-bracket printing.
+Latest checkpoint: **Material cases now cover 85°F sustained storage and 100°F for six hours/year. ASA is the first full-load prototype choice; no material has a verified spool rating.** The full-row qualification target is 12 kg equivalent per interior bracket, with a separate proposed 24 kg short proof case. Resolve internal roof printing, then evaluate the actual snaps, critical regions and time-dependent movement.
+
+### Material cases — PLA, PETG, ASA and PA6-GF
+
+Expanded the final-CAD section check from the midpoint to ten knee/forearm stations and included outward seat forces for 180–220 mm spools. At the 12 kg design target the largest sampled nominal stress is **3.47 MPa**; linear scaling gives 6.93 MPa at the proposed 24 kg proof load. These are screening stresses, not local peaks or material allowables. The higher knee/near-seat demand supersedes relying on the earlier midpoint figure alone.
+
+| Material | Decision for the 85°F / 100°F cases |
+|---|---|
+| PLA | Initially stiff; least thermal headroom among the reference grades. Monitored creep trial before any unattended full-row recommendation. |
+| PETG | Candidate; lower reference bending stiffness. Sustained-load behavior needs measurement. |
+| ASA | **First full-load prototype choice** for thermal headroom and the integrated unfilled snap geometry; not yet creep-qualified. |
+| PA6-GF | Evaluate annealed dry and moisture-conditioned states. Reference wet bending stiffness is about one-third of dry; snap behavior needs separate qualification. |
+
+The 12 kg target covers the 10.58 kg continuous-support estimate at 60 mm spool pitch with a 1.42 kg budget for self-weight and variation. This is a target, not a verified capacity or bound on arbitrary installations. Both temperature cases retain full load; the hot hours are not averaged away. The material study includes sourced reference data, a 1,000-hour screening trial, six-hour hot exposure and proposed movement criteria. It does not infer multi-year life or assign safe spool counts from tensile strengths or HDT.
+
+[Full material assessment and qualification cases](designs/closed-wall-e6/MATERIAL-CASES.md) · [Computed cases](designs/closed-wall-e6/material-work-cases.json) · [Reference data and sources](designs/closed-wall-e6/material-reference-data.json).
 
 ### 16-inch support spacing — service load case, not a rating
 
@@ -18,7 +33,7 @@ An interior support between simply supported bays carries about one bay's load. 
 
 The six-spool example produces approximately 12.9 N·m at the wall and an idealized 66 N upper-screw tension demand. A sampled arm midpoint has approximately 1.85 MPa nominal combined stress, including the outward seat force. Those numbers omit critical local concentrations, other sections and creep; they are not allowable loads. The 1-inch dowel calculation gives approximately 0.22 mm instantaneous resultant deflection using an explicitly assumed 8 GPa wood modulus. Purchased dowel properties remain unidentified.
 
-The next capacity check needs the actual bracket filament, maximum sustained temperature, spool mass/pitch, wall fasteners and rail end conditions. Internal-roof printing remains unresolved. [Inputs, equations and limitations](designs/closed-wall-e6/check_16inch_loading.py) · [Calculated demands](designs/closed-wall-e6/loading-16inch.json).
+The material study above now specifies the temperature envelope and four reference filament cases. Final grade, actual spool mass/pitch, wall fasteners and rail end conditions still need confirmation for an installation rating. Internal-roof printing remains unresolved. [Inputs, equations and limitations](designs/closed-wall-e6/check_16inch_loading.py) · [Calculated demands](designs/closed-wall-e6/loading-16inch.json).
 
 ### E6 — shorten the span, retain arm depth, use the upper spool envelope
 
