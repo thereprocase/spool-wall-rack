@@ -5,3 +5,8 @@ __pycache__/
 
 # E7 editable STEP is distributed in bracket-step.zip; regenerated locally.
 /designs/closed-wall-e7/bracket.step
+
+# Regenerable analysis meshes and CAD (not print deliverables).
+/analysis/e8/*.brep
+/analysis/e8/*w-h*.npz
+!/analysis/e8/*-solution.npz

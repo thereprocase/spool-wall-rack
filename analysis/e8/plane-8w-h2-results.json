@@ -1,0 +1,32 @@
+{
+  "name": "plane-8w-h2",
+  "nodes": 7743,
+  "triangles": 14668,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "contact_iterations": 7,
+  "applied_force_N": [
+    1.4432899320127035e-15,
+    -117.72000000000003
+  ],
+  "reaction_N": [
+    -7.625861053739413e-11,
+    117.72000000072374
+  ],
+  "relative_free_residual": 9.376649051921201e-11,
+  "vm_max_MPa_not_allowable": 8.75598961718506,
+  "patches": {
+    "rear_seat": {
+      "mean_displacement_mm_at_E1000": [
+        0.07241381714667036,
+        -0.2544903275778265
+      ]
+    },
+    "front_seat": {
+      "mean_displacement_mm_at_E1000": [
+        0.35872186975779335,
+        -4.05450297688511
+      ]
+    }
+  }
+}

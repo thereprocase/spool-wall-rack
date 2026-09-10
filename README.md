@@ -8,6 +8,10 @@ A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket pri
 
 ![E8 modifier locations](designs/closed-wall-e8/modifier-stack.png)
 
+## Engineering analysis in progress
+
+The full-bracket 2D/3D stress and creep study now includes the screw landings: rack pull/prying and washer compression from tightening are separate load cases. [Analysis checkpoint](analysis/e8/STATUS.md). The printable E8 geometry remains the current prototype while those results are checked.
+
 ## Design journal
 
 Latest checkpoint: **Prototype wall-count starting points are 8 for PLA and 10 for PETG**, with both helpers at 100% infill. For the assumed 0.42/0.45 mm line widths and 0.2 mm layers, these correspond to approximately 3.3 and 4.1 mm perimeter thickness. They are test settings, not a verified load or creep rating.
