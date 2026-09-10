@@ -8,7 +8,15 @@ A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket pri
 
 ## Design journal
 
-Latest checkpoint: **Material cases now cover 85°F sustained storage and 100°F for six hours/year. ASA is the first full-load prototype choice; no material has a verified spool rating.** The full-row qualification target is 12 kg equivalent per interior bracket, with a separate proposed 24 kg short proof case. Resolve internal roof printing, then evaluate the actual snaps, critical regions and time-dependent movement.
+Latest checkpoint: **A PLA/PETG sizing study proposes 3.6 mm structural perimeters and a 34 mm-deep arm, retaining four 1.2 mm continuous plates.** The ideal straight-arm section approximately doubles I and reduces pure bending stress by 39%, for 33% more local material. E6 CAD remains the current geometry; these proposed dimensions are not yet implemented or load-qualified.
+
+### Additional section for PLA or PETG
+
+A thicker perimeter alone gives a modest benefit: increasing 2.4 to 3.6 mm at the original arm depth increases ideal section I by 23%. Pairing that with a depth increase from 28 to 34 mm gives approximately 100% more I. Keep the spool bearing track and flexible fingers fixed, add depth below the arm, and carry the increase smoothly through the knee. The extra depth would cost approximately 6 mm of loaded rack height.
+
+The current PETG reference needs 41% more I to match the original ASA initial bending stiffness. The proposed section exceeds that requirement. PLA already has similar reference stiffness to ASA; added section would reduce working stress and provide deformation margin. The required long-term creep allowance remains unestablished for both. These are section estimates, not whole-bracket stiffness or material-specific spool ratings.
+
+[Sizing comparison, equations and limitations](designs/closed-wall-e6/MATERIAL-SIZING.md) · [Reproducible results](designs/closed-wall-e6/material-sizing.json).
 
 ### Material cases — PLA, PETG, ASA and PA6-GF
 

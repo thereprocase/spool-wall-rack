@@ -1,0 +1,108 @@
+{
+  "status": "Sizing study only; E6 CAD unchanged and no load rating assigned.",
+  "sections": [
+    {
+      "width_mm": 24,
+      "depth_mm": 28,
+      "perimeter_mm": 2.4,
+      "continuous_plates": 4,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 226.56,
+      "I_mm4": 23924.5312,
+      "S_mm3": 1708.8950857142859,
+      "name": "E6 idealized baseline",
+      "area_mm2_ratio_to_baseline": 1.0,
+      "I_mm4_ratio_to_baseline": 1.0,
+      "S_mm3_ratio_to_baseline": 1.0,
+      "pure_bending_stress_ratio": 1.0
+    },
+    {
+      "width_mm": 24,
+      "depth_mm": 28,
+      "perimeter_mm": 3.6,
+      "continuous_plates": 4,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 272.64,
+      "I_mm4": 29505.7408,
+      "S_mm3": 2107.5529142857145,
+      "name": "Thicker perimeter only",
+      "area_mm2_ratio_to_baseline": 1.2033898305084745,
+      "I_mm4_ratio_to_baseline": 1.233283969217336,
+      "S_mm3_ratio_to_baseline": 1.2332839692173363,
+      "pure_bending_stress_ratio": 0.8108432647791713
+    },
+    {
+      "width_mm": 24.4,
+      "depth_mm": 28,
+      "perimeter_mm": 2.4,
+      "continuous_plates": 5,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 256.32,
+      "I_mm4": 25488.7424,
+      "S_mm3": 1820.6244571428572,
+      "name": "One additional plate only",
+      "area_mm2_ratio_to_baseline": 1.1313559322033897,
+      "I_mm4_ratio_to_baseline": 1.0653810595879094,
+      "S_mm3_ratio_to_baseline": 1.0653810595879094,
+      "pure_bending_stress_ratio": 0.9386312915932644
+    },
+    {
+      "width_mm": 24,
+      "depth_mm": 32,
+      "perimeter_mm": 3.6,
+      "continuous_plates": 4,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 291.84000000000003,
+      "I_mm4": 41131.2128,
+      "S_mm3": 2570.7008,
+      "name": "Moderate depth",
+      "area_mm2_ratio_to_baseline": 1.288135593220339,
+      "I_mm4_ratio_to_baseline": 1.71920663590683,
+      "S_mm3_ratio_to_baseline": 1.5043058064184764,
+      "pure_bending_stress_ratio": 0.664758452525586
+    },
+    {
+      "width_mm": 24,
+      "depth_mm": 34,
+      "perimeter_mm": 3.6,
+      "continuous_plates": 4,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 301.44000000000005,
+      "I_mm4": 47809.8688,
+      "S_mm3": 2812.3452235294117,
+      "name": "Shared PLA PETG study candidate",
+      "area_mm2_ratio_to_baseline": 1.3305084745762714,
+      "I_mm4_ratio_to_baseline": 1.9983617819019164,
+      "S_mm3_ratio_to_baseline": 1.6457097027427547,
+      "pure_bending_stress_ratio": 0.6076405810413531
+    },
+    {
+      "width_mm": 24,
+      "depth_mm": 36,
+      "perimeter_mm": 3.6,
+      "continuous_plates": 4,
+      "plate_thickness_mm": 1.2,
+      "area_mm2": 311.03999999999996,
+      "I_mm4": 55091.4048,
+      "S_mm3": 3060.6335999999997,
+      "name": "Deeper sensitivity",
+      "area_mm2_ratio_to_baseline": 1.3728813559322033,
+      "I_mm4_ratio_to_baseline": 2.3027161677466848,
+      "S_mm3_ratio_to_baseline": 1.791001463802977,
+      "pure_bending_stress_ratio": 0.5583468356729424
+    }
+  ],
+  "candidate_initial_EI_relative_to_ASA_baseline": {
+    "PLA": 2.013882433295977,
+    "PETG": 1.419510050030103,
+    "PETG legacy sensitivity": 1.1833717538804704
+  },
+  "limitations": [
+    "Rectangular straight-arm approximation omits chamfers, cavity-rim reinforcement, local geometry and screw sleeves.",
+    "Ratios describe pure bending and local straight-arm material, not whole-bracket stiffness, combined peak stress or total print mass.",
+    "Section increase must continue through the demanding knee; it is not a retrofit confined to midspan.",
+    "Keep spool track and snap geometry fixed; add depth below the arm and blend the transition.",
+    "No grade-specific creep modulus at the stated temperature and service life is available; these dimensions cannot guarantee creep life.",
+    "More plates alone do not resolve unsupported cavity roofs."
+  ]
+}
