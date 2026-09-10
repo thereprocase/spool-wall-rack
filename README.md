@@ -2,13 +2,25 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E3 — obsolete saddle lips removed; bearing seats connected directly to the arm.** Geometry checked; internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
+**Current prototype: E4 — angular body, paired 3 mm face chamfers and smooth runouts before small features.** The finished CAD is one valid solid and its STL passes edge-closure checks. Internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
 
-![E3 engineering drawing](designs/closed-wall-e3/retainer-engineering.png)
+![E4 finished CAD](designs/closed-wall-e4/progress-exterior.png)
 
 ## Design journal
 
-Latest checkpoint: **E3 removes obsolete saddle geometry and rebuilds the bearing connections.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. Full bracket printing and load ratings remain blocked by those checks.
+Latest checkpoint: **E4 completes the angular outline and broad-face edge treatment.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. This remains a geometry prototype.
+
+### E4 — angular frame, chamfers that fade into the faces
+
+Replaced the main body's sweeping outline with straight facets and R2 corner blends. Both broad faces receive 3 mm chamfers along the large structural edges. Before the retainers and small mounting features, the chamfer depth fades over 20 mm using a quintic curve with zero slope and curvature at both ends. The bevel also fades at the short upper-leg facet junction to avoid a hard termination there. The thin fingers and their small rounded noses keep their functional sections; a blanket R2 treatment would consume them. Integrated concave root blends increase to R2.
+
+![Smooth chamfer runout near the rear seat](designs/closed-wall-e4/progress-runout.png)
+
+The bevels require extra solid material at the cavity rims. A 3 mm bevel over the original 1.2 mm face and 2.4 mm perimeter would leave an inadequate diagonal ligament. Local cavity setbacks now follow each bevel and its runout, preserving a design minimum of 1.2 mm behind the treated surface. The two continuous internal plates remain 1.2 mm, with three hollow bands. This local reinforcement does not solve unsupported internal-roof printing.
+
+The final STEP is a valid single solid; the final bracket and coupon STL meshes have no boundary or nonmanifold edges. The nominal full-profile spool clearance sweep gives 5.34 mm minimum over 180–220 mm flanges; the 0.005 mm contour simplification tolerance is much smaller than the clearance margin. The finished chamfers only remove exterior material. These checks do not establish insertion force, strength, or creep life.
+
+[Finished STEP](designs/closed-wall-e4/bracket.step) · [Final STL](designs/closed-wall-e4/bracket.stl) · [Finish verification](designs/closed-wall-e4/finish-verification.json) · [Mesh verification](designs/closed-wall-e4/mesh-verification.json) · [Seat drawing](designs/closed-wall-e4/retainer-engineering.png)
 
 ### E3 — remove the vestigial saddle prong
 
@@ -56,23 +68,26 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric bracket CAD](designs/closed-wall-e3/bracket.scad)
-- [Bracket STL — prototype](designs/closed-wall-e3/bracket.stl)
-- [Snap retainer CAD](designs/closed-wall-e3/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e3/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e3/verification.json)
+- [Parametric profile source](designs/closed-wall-e4/bracket.scad) and [CAD finishing script](designs/closed-wall-e4/finish_cad.py)
+- [Finished bracket STEP](designs/closed-wall-e4/bracket.step)
+- [Bracket STL — prototype](designs/closed-wall-e4/bracket.stl)
+- [Snap retainer CAD](designs/closed-wall-e4/retainer.scad)
+- [8 mm wide snap coupon STL](designs/closed-wall-e4/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
+- [Geometric verification](designs/closed-wall-e4/verification.json)
 - [Design decisions and pending work](DESIGN.md)
 - [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E3 value |
+| Feature | E4 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
 | Seat diameter / spacing | 26 / 150 mm |
-| Single-part envelope | approximately 244.24 × 240 × 24 mm |
-| Structural perimeter in print XY | 2.4 mm |
+| Single-part envelope | approximately 244.24 × 239 × 24 mm |
+| Structural perimeter in print XY | 2.4 mm; locally reinforced behind bevels |
+| Broad-face chamfer / body corner radius | 3 / 2 mm |
+| Chamfer runout length | 20 mm |
 | Exterior side plates | 2 × 1.2 mm |
 | Internal continuous plates | 2 × 1.2 mm |
 | Intervening air-band height | 3 × 6.4 mm |
@@ -80,21 +95,26 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 | Rigid seat radial thickness | 6 mm |
 | Nominal capture wrap / throat | 218° / approximately 24.51 mm |
 
-The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 5.64 mm for the complete bracket and 6.91 mm for the rear retainer, with symmetry applying to the front retainer.
+The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 5.34 mm for the complete bracket and 6.91 mm for the rear retainer, with symmetry applying to the front retainer.
 
 ## Build and inspect
 
-Install OpenSCAD and Python with NumPy and Matplotlib. Revision D's independent mesh audit also uses VTK and SciPy.
+Install OpenSCAD and Python with CadQuery 2.7, NumPy, Matplotlib, Pillow and VTK. Run from the repository root:
 
 ```sh
-openscad -o designs/closed-wall-e3/bracket.stl designs/closed-wall-e3/bracket.scad
-openscad -o designs/closed-wall-e3/profile.svg -D 'part="profile"' designs/closed-wall-e3/bracket.scad
-openscad -o designs/closed-wall-e3/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e3/retainer.scad
-openscad -o designs/closed-wall-e3/snap-coupon-8mm.stl designs/closed-wall-e3/retainer.scad
-python designs/closed-wall-e3/check_and_draw.py
+openscad -o designs/closed-wall-e4/profile.svg -D 'part="profile"' designs/closed-wall-e4/bracket.scad
+openscad -o designs/closed-wall-e4/cavity-profile.svg -D 'part="cavity_profile"' designs/closed-wall-e4/bracket.scad
+openscad -o designs/closed-wall-e4/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e4/retainer.scad
+openscad -o designs/closed-wall-e4/snap-coupon-8mm.stl designs/closed-wall-e4/retainer.scad
+python designs/closed-wall-e4/finish_cad.py
+python designs/closed-wall-e4/check_and_draw.py
+python designs/closed-wall-e4/check_mesh.py
+python designs/closed-wall-e4/render_cpu.py
 ```
 
-The exported STL already lies broad-side-down. The coupon prints in a different, convenient flat orientation with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
+`finish_cad.py` creates the authoritative E4 STEP and STL, including the variable chamfers and reinforced cavity rims. Direct bracket STL export from OpenSCAD produces an **unchamfered intermediate**, not finished E4. The script approximates the OpenSCAD contours within 0.005 mm before creating the solid; the chamfer runouts are native Bezier surfaces.
+
+The final STL lies broad-side-down in a single-part envelope of approximately 244.24 × 239 × 24 mm. Printer exclusion zones, brim clearance and actual toolpaths still require slicer inspection. The coupon prints flat with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
 
 ## Verification limits
 

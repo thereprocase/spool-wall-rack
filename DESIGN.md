@@ -6,7 +6,7 @@ The wall mounting leg extends upward. Four continuous planes span the arm, knee 
 
 ## Structural thickness
 
-E3 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
+E4 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
 
 A modeled 2.4 mm wall does not guarantee a particular number of extrusion paths. The original three-wall setting must be revised or verified for the 2.4 mm perimeter. The snap fingers remain 1.35 mm in bending thickness. Their stiffness and strain requirements differ from those of the structural perimeter.
 
@@ -46,3 +46,11 @@ The larger roots shorten/change the effective flexible length relative to E1. Va
 The old open-saddle lip sectors and round support nodes remained in the base profile after snap retainers were added. They produced an unnecessary secondary prong beneath the working finger. Removed those old features at both rail locations. A new buttress joins a patch of the rigid bearing sector to a rounded anchor inside the arm. It does not use the old lip as a stop or load-bearing feature.
 
 The complete profile retains the concave and convex blends established in E2. The local retainer coupon is unchanged; the integrated support geometry is different and still requires its own compliance and insertion checks.
+
+## E4 angular outline and smoothly terminating face bevels
+
+The large outline uses straight facets with nominal R2 corner blends. Both broad faces have mirrored 3 mm chamfers on selected structural edges. Their depth falls to zero over 20 mm before small features. The quintic Bezier control values 3, 3, 3, 0, 0, 0 ensure zero slope and curvature at each end; the thin snap noses retain their smaller local rounds. The integrated concave root blends are R2.
+
+The final solid is built from the OpenSCAD profile by `finish_cad.py`. A raw SCAD bracket export omits the finished bevels and their matching internal rim reinforcement. The cavity keepout lies 1.8 mm beyond the bevel in the sum of inward distance and face depth. Including the maximum runout gradient of 0.28125, its normal spacing exceeds 1.2 mm. This retains a conservative solid ligament behind the bevel; it is a geometric design rule, not a load allowable. The middle hollow band and both 1.2 mm internal load-plane plates remain continuous.
+
+The finished CAD passes single-solid validity and STL edge closure. Full-profile nominal clearance is 5.34 mm for 180–220 mm spool flanges. Internal bridge spans, toolpaths, fasteners, snap force, fatigue and creep remain unvalidated.
