@@ -2,13 +2,27 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E1 — rotated snap retainers and a 2.4 mm structural perimeter.** Geometry checked; internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
+**Current prototype: E2 — smooth snap roots, rounded relief slots, and a 2.4 mm structural perimeter.** Geometry checked; internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
 
-![E1 engineering drawing](designs/closed-wall-e1/retainer-engineering.png)
+![E2 engineering drawing](designs/closed-wall-e2/retainer-engineering.png)
 
 ## Design journal
 
-Latest checkpoint: **E1 geometry and snap-seat fit coupon.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. Full bracket printing and load ratings remain blocked by those checks.
+Latest checkpoint: **E2 root correction and rebuilt snap-seat coupon.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. Full bracket printing and load ratings remain blocked by those checks.
+
+### E2 — replace abrupt snap roots with smooth transitions
+
+The E1 root treatment was inadequate: adding circles to a stepped profile left abrupt shoulders, and the relief pockets ended in sharp notches. Replaced that construction with a continuous transition from the 1.35 mm finger to the thick bearing sector. The analytic transition matches radius, tangent, and curvature at both ends. Its minimum curvature radius is approximately 6.76 mm before integration into the bracket.
+
+Added R1.5 concave blends at the integrated roots and relief-slot ends, plus R0.45 convex rounds. Enlarged the relief pocket to 17.75 mm radius and increased the local bearing thickness from 5 to 6 mm to preserve a substantial connection to the bracket. The nominal capture throat remains approximately 24.51 mm. The working fingers remain 1.35 mm thick; the thicker roots change their compliance, so insertion force still needs validation.
+
+![Actual CAD root comparison](designs/closed-wall-e2/root-comparison.png)
+
+The nominal flange sweep passes with 5.64 mm minimum full-bracket clearance and 6.91 mm retainer clearance. A boundary-angle check around the rear seat found no large resolved direction jumps; the maximum was 2.36° after excluding microscopic tessellation edges. This is a geometric check, not a claim of zero stress concentration. [Root verification details](designs/closed-wall-e2/root-verification.json).
+
+The rebuilt bracket and coupon also pass mesh edge-closure checks. [Mesh verification](designs/closed-wall-e2/mesh-verification.json).
+
+Slicer paths and physical insertion behavior remain unverified. The full bracket still needs an internal-roof printing solution.
 
 ### E1 — align the snap opening with spool contact
 
@@ -32,48 +46,48 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric bracket CAD](designs/closed-wall-e1/bracket.scad)
-- [Bracket STL — prototype](designs/closed-wall-e1/bracket.stl)
-- [Snap retainer CAD](designs/closed-wall-e1/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e1/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e1/verification.json)
+- [Parametric bracket CAD](designs/closed-wall-e2/bracket.scad)
+- [Bracket STL — prototype](designs/closed-wall-e2/bracket.stl)
+- [Snap retainer CAD](designs/closed-wall-e2/retainer.scad)
+- [8 mm wide snap coupon STL](designs/closed-wall-e2/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
+- [Geometric verification](designs/closed-wall-e2/verification.json)
 - [Design decisions and pending work](DESIGN.md)
 - [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E1 value |
+| Feature | E2 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
 | Seat diameter / spacing | 26 / 150 mm |
-| Single-part envelope | approximately 243.82 × 240 × 24 mm |
+| Single-part envelope | approximately 244.24 × 240 × 24 mm |
 | Structural perimeter in print XY | 2.4 mm |
 | Exterior side plates | 2 × 1.2 mm |
 | Internal continuous plates | 2 × 1.2 mm |
 | Intervening air-band height | 3 × 6.4 mm |
 | Snap finger bending thickness | 1.35 mm |
-| Rigid seat radial thickness | 5 mm |
+| Rigid seat radial thickness | 6 mm |
 | Nominal capture wrap / throat | 218° / approximately 24.51 mm |
 
-The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 5.40 mm for the complete bracket and 6.91 mm for the rear retainer, with symmetry applying to the front retainer.
+The snap opening faces the spool contact. The thick seat lies 180° opposite that contact for the 200 mm reference spool. Front and rear retainers are mirrored. The contact direction varies with spool diameter; the nominal seated geometry was checked over 180–220 mm. Minimum computed clearance is 5.64 mm for the complete bracket and 6.91 mm for the rear retainer, with symmetry applying to the front retainer.
 
 ## Build and inspect
 
 Install OpenSCAD and Python with NumPy and Matplotlib. Revision D's independent mesh audit also uses VTK and SciPy.
 
 ```sh
-openscad -o designs/closed-wall-e1/bracket.stl designs/closed-wall-e1/bracket.scad
-openscad -o designs/closed-wall-e1/profile.svg -D 'part="profile"' designs/closed-wall-e1/bracket.scad
-openscad -o designs/closed-wall-e1/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e1/retainer.scad
-openscad -o designs/closed-wall-e1/snap-coupon-8mm.stl designs/closed-wall-e1/retainer.scad
-python designs/closed-wall-e1/check_and_draw.py
+openscad -o designs/closed-wall-e2/bracket.stl designs/closed-wall-e2/bracket.scad
+openscad -o designs/closed-wall-e2/profile.svg -D 'part="profile"' designs/closed-wall-e2/bracket.scad
+openscad -o designs/closed-wall-e2/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e2/retainer.scad
+openscad -o designs/closed-wall-e2/snap-coupon-8mm.stl designs/closed-wall-e2/retainer.scad
+python designs/closed-wall-e2/check_and_draw.py
 ```
 
 The exported STL already lies broad-side-down. The coupon prints in a different, convenient flat orientation with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
 
 ## Verification limits
 
-Empty CAD cavities do not receive global slicer infill. Revision D's cavity includes an unsupported region approximately 84 mm across; E1's slightly thicker perimeter does not resolve this manufacturing problem. Internal plates need a validated printing method before the full bracket is released for printing.
+Empty CAD cavities do not receive global slicer infill. Revision D's cavity includes an unsupported region approximately 84 mm across; the thicker perimeter does not resolve this manufacturing problem. Internal plates need a validated printing method before the full bracket is released for printing.
 
 Clearance checks use rigid nominal rods and concentric flanges. They exclude wood tolerances, rod sag, spool wobble, screw heads, and deflected fingers. No slicer or physical insertion test has verified the snap features. Main bracket loads, wall fixings, dowel spans, and long-term polymer creep still require analysis and testing.

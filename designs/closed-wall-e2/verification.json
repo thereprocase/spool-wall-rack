@@ -1,0 +1,39 @@
+{
+  "revision": "E2",
+  "status": "geometry prototype; no slicing, snap-force, fatigue, or strength validation",
+  "reference_spool_diameter_mm": 200,
+  "rear_contact_angle_deg_from_positive_x": 48.14407553227557,
+  "rear_bearing_seat_center_angle_deg": 228.14407553227556,
+  "front_contact_angle_deg_from_positive_x": 131.85592446772444,
+  "reference_contact_rotation_range_deg": [
+    42.91018550978523,
+    48.144075532275316,
+    52.21174280428038
+  ],
+  "root_transition": "C2 quintic radial blend; 25 to 75 degrees from bearing axis",
+  "concave_root_fillet_mm": 1.5,
+  "convex_edge_round_mm": 0.45,
+  "wrap_deg": 218,
+  "seat_diameter_mm": 26,
+  "finger_bending_thickness_mm": 1.35,
+  "bearing_radial_thickness_mm": 6,
+  "throat_mm_analytic_rounded_noses": 24.509933042641315,
+  "nominal_total_throat_interference_mm": 0.8900669573586839,
+  "minimum_full_bracket_spool_clearance_mm": 5.642138401483393,
+  "minimum_retainer_spool_clearance_mm": 6.9119447535871075,
+  "envelope_mm": [
+    244.241,
+    239.9993,
+    24
+  ],
+  "structural_perimeter_mm": 2.4,
+  "outer_faces_mm": 1.2,
+  "internal_plates_mm": 1.2,
+  "assumptions": [
+    "Rigid nominal 25.4 mm rods, equal-radius flanges, 150 mm nominal seat spacing.",
+    "Rod seats 0.3 mm radially away from spool under contact load.",
+    "Reference direction is exact for 200 mm flanges; direction varies with flange diameter.",
+    "8 mm coupon is a fit/behavior sample and has one-third the width of the 24 mm bracket.",
+    "Finger movement and insertion path are not simulated; clearance result is for seated undeformed geometry."
+  ]
+}

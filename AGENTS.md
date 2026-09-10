@@ -11,3 +11,5 @@ Print assumptions: 0.2 mm layers; 1.2 mm top and bottom; 15% infill gets zero st
 Do not assign safe spool counts from generic tensile strengths. State limits of geometric checks and distinguish geometry, slicing, mechanical analysis and physical validation. Never label prototype G-code or a geometry-only 3MF as a validated print profile.
 
 Update the README design journal at meaningful checkpoints. Include actual CAD screenshots or drawings, the reason for each change, validation outcomes and the concrete next step. Keep the newest prototype and image prominent so a reader can follow progress by refreshing GitHub. Do not substitute a plan for completing authorized work.
+
+Snap roots must transition smoothly into the bearing seat. Do not use intersecting circles over a stepped profile as a substitute for tangent root blends. Round relief-slot ends and inspect the actual integrated bracket profile, not just an isolated retainer. Current reference is E2.
