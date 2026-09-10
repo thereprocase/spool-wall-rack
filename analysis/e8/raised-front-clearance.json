@@ -1,0 +1,86 @@
+{
+  "status": "Exact point-to-line-segment clearance on exported E8 side profile; nominal circles; current back arm unchanged; not raised-front CAD",
+  "dowel_diameter_mm": 25.4,
+  "horizontal_spacing_mm": 100,
+  "minimum_nominal_design_clearance_mm": 3,
+  "results": [
+    {
+      "center": [
+        140,
+        89.70668871383003
+      ],
+      "clearance": 3.8306672308915495,
+      "diameter": 180,
+      "frontRise": 0,
+      "nearest": [
+        144.60346449540745,
+        -4.010984260021745
+      ]
+    },
+    {
+      "center": [
+        129.33581053673007,
+        94.8682455272494
+      ],
+      "clearance": 4.645656020111048,
+      "diameter": 180,
+      "frontRise": 12,
+      "nearest": [
+        53.3864,
+        38.3927
+      ]
+    },
+    {
+      "center": [
+        140,
+        101.00143563336118
+      ],
+      "clearance": 5.112383233181859,
+      "diameter": 200,
+      "frontRise": 0,
+      "nearest": [
+        144.811,
+        -4.00079
+      ]
+    },
+    {
+      "center": [
+        127.98741393476145,
+        106.10488387698793
+      ],
+      "clearance": 0.22406048633392572,
+      "diameter": 200,
+      "frontRise": 12,
+      "nearest": [
+        37.38567761283318,
+        63.2541233724169
+      ]
+    },
+    {
+      "center": [
+        140,
+        112.05039045001138
+      ],
+      "clearance": 3.500914901675017,
+      "diameter": 220,
+      "frontRise": 0,
+      "nearest": [
+        26.635712805460333,
+        106.48297880803608
+      ]
+    },
+    {
+      "center": [
+        126.66888497685763,
+        117.09262519285313
+      ],
+      "clearance": -9.447067134799852,
+      "diameter": 220,
+      "frontRise": 12,
+      "nearest": [
+        26.5953,
+        107.286
+      ]
+    }
+  ]
+}
