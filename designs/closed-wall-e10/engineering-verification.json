@@ -1,0 +1,6380 @@
+{
+  "revision": "E10",
+  "front_lift_mm": 12,
+  "rear_center_mm": [
+    90,
+    0
+  ],
+  "front_center_mm": [
+    190,
+    12
+  ],
+  "profile_area_mm2": 10937.550334176907,
+  "minimum_flange_clearance": {
+    "spool_mm": 180.0,
+    "effective_rail_radius_mm": 12.4,
+    "clearance_mm": 3.9272234418537977,
+    "center_mm": [
+      129.37684215264395,
+      94.52631539463371
+    ]
+  },
+  "spool_sweep_cases": 322,
+  "chamfer_mm": 2,
+  "mirrored_chamfer_checks": [
+    {
+      "midpoint_xy_mm": [
+        188.072,
+        -31.99705
+      ],
+      "length_mm": 0.15611153064396574,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        188.23149999999998,
+        -31.984650000000002
+      ],
+      "length_mm": 0.164092077809973,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        188.406,
+        -31.9559
+      ],
+      "length_mm": 0.18996304903849803,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        188.5805,
+        -31.9119
+      ],
+      "length_mm": 0.17032134334839957,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        188.7345,
+        -31.8585
+      ],
+      "length_mm": 0.1559479400312645,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        188.8835,
+        -31.79215
+      ],
+      "length_mm": 0.17052592178318787,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.03050000000002,
+        -31.712049999999998
+      ],
+      "length_mm": 0.16458739319886467,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.15449999999998,
+        -31.63185
+      ],
+      "length_mm": 0.1309551449924728,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.304,
+        -31.51105
+      ],
+      "length_mm": 0.2538763675492519,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.4875,
+        -31.3303
+      ],
+      "length_mm": 0.26230928309915713,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.642,
+        -31.13565
+      ],
+      "length_mm": 0.23569728466829015,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.7695,
+        -30.93085
+      ],
+      "length_mm": 0.2473206218656291,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.8675,
+        -30.76465
+      ],
+      "length_mm": 0.13872234859603072,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        189.9865,
+        -30.60435
+      ],
+      "length_mm": 0.2610444598148033,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.1135,
+        -30.4554
+      ],
+      "length_mm": 0.13083195328357877,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.233,
+        -30.3438
+      ],
+      "length_mm": 0.19646027588293538,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.38400000000001,
+        -30.2241
+      ],
+      "length_mm": 0.18936747344781102,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.517,
+        -30.135350000000003
+      ],
+      "length_mm": 0.13066480015673218,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.661,
+        -30.058300000000003
+      ],
+      "length_mm": 0.1962402609048299,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.8405,
+        -29.980249999999998
+      ],
+      "length_mm": 0.19568211466559127,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        190.9945,
+        -29.92765
+      ],
+      "length_mm": 0.13005310453810728,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        191.21949999999998,
+        -29.8741
+      ],
+      "length_mm": 0.3327077396154337,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        191.55200000000002,
+        -29.7929
+      ],
+      "length_mm": 0.3520190903914196,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        196.60331250000002,
+        -23.4816365625
+      ],
+      "length_mm": 1.8688230609715646,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        207.098,
+        3.88037
+      ],
+      "length_mm": 0.2585186383996301,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        200.2545,
+        4.01307
+      ],
+      "length_mm": 0.5029069182264231,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        192.326,
+        -0.787674
+      ],
+      "length_mm": 0.5082142540464603,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        160.62309375,
+        3.6753264062500004
+      ],
+      "length_mm": 1.991235563060711,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        121.08184375000002,
+        -1.0677923437499999
+      ],
+      "length_mm": 1.9912355630607252,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        111.19653124999999,
+        -2.25357203125
+      ],
+      "length_mm": 1.9912355630607252,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        110.08099999999999,
+        -2.37276
+      ],
+      "length_mm": 0.25400292990436646,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        109.848,
+        -2.36146
+      ],
+      "length_mm": 0.21333399260313715,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        109.62312500000002,
+        -2.3269237499999997
+      ],
+      "length_mm": 0.24201828702857528,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        109.44481250000001,
+        -2.2929843749999996
+      ],
+      "length_mm": 0.12100914351429462,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        109.35565625000001,
+        -2.2760146874999996
+      ],
+      "length_mm": 0.06050457175714731,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        92.16365,
+        -12.8149
+      ],
+      "length_mm": 0.6215609141508139,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        82.6996,
+        -10.754750000000001
+      ],
+      "length_mm": 0.3947384577159914,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        68.8920875,
+        5.44862125
+      ],
+      "length_mm": 1.5639440729390768,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        67.3561625,
+        5.74333375
+      ],
+      "length_mm": 1.563944072939063,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        66.49805,
+        5.917260000000001
+      ],
+      "length_mm": 0.18796794833162628,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        66.34655000000001,
+        5.96739
+      ],
+      "length_mm": 0.13143661742451632,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        66.1652,
+        6.051399999999999
+      ],
+      "length_mm": 0.26873185520143367,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        65.9661,
+        6.163795
+      ],
+      "length_mm": 0.1892627065747453,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        65.8357,
+        6.255660000000001
+      ],
+      "length_mm": 0.13000455992002372,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        65.73255,
+        6.34185
+      ],
+      "length_mm": 0.13898683966477057,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        65.6224,
+        6.44862
+      ],
+      "length_mm": 0.16803737679457317,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        65.01222656249999,
+        7.1529634375
+      ],
+      "length_mm": 1.6959937063914852,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        42.9372890625,
+        32.906700937500005
+      ],
+      "length_mm": 1.6959937063914892,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        31.899820312500005,
+        45.7835696875
+      ],
+      "length_mm": 1.6959937063914923,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        30.7960734375,
+        47.0712565625
+      ],
+      "length_mm": 1.695993706391487,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        30.18725,
+        47.78725
+      ],
+      "length_mm": 0.1838360682782369,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        30.07895,
+        47.9383
+      ],
+      "length_mm": 0.18827673780900356,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        29.99445,
+        48.0787
+      ],
+      "length_mm": 0.13973077685320143,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        29.922600000000003,
+        48.228449999999995
+      ],
+      "length_mm": 0.1927252188998605,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        29.690692187499998,
+        48.842335937499996
+      ],
+      "length_mm": 1.1200399950047109,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        29.3042765625,
+        49.893607812499994
+      ],
+      "length_mm": 1.1200399950047162,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        28.1450296875,
+        53.0474234375
+      ],
+      "length_mm": 1.1200399950047095,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        20.416717187499998,
+        74.0728609375
+      ],
+      "length_mm": 1.1200399950047109,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        18.4846390625,
+        79.32922031250001
+      ],
+      "length_mm": 1.1200399950047109,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        18.098223437499996,
+        80.38049218750001
+      ],
+      "length_mm": 1.1200399950047109,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.7118078125,
+        81.43176406250001
+      ],
+      "length_mm": 1.1200399950047095,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.491799999999998,
+        82.06135
+      ],
+      "length_mm": 0.21469832323518015,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.295668749999997,
+        82.96579062500001
+      ],
+      "length_mm": 1.636408644488847,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.95700625,
+        84.566771875
+      ],
+      "length_mm": 1.6364086444888462,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        13.57038125,
+        100.57658437500001
+      ],
+      "length_mm": 1.6364086444888466,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.554393750000001,
+        105.37952812500001
+      ],
+      "length_mm": 1.636408644488847,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.215731250000001,
+        106.980509375
+      ],
+      "length_mm": 1.6364086444888466,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0278,
+        107.9015
+      ],
+      "length_mm": 0.24385413672931583,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0046,
+        108.126
+      ],
+      "length_mm": 0.20820336212462884,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0,
+        108.84346875
+      ],
+      "length_mm": 1.2269375000000053,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0,
+        110.07040625
+      ],
+      "length_mm": 1.2269374999999911,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0,
+        124.79365625
+      ],
+      "length_mm": 1.2269375000000053,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0,
+        126.02059375
+      ],
+      "length_mm": 1.2269374999999911,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0,
+        127.24753125000001
+      ],
+      "length_mm": 1.2269375000000053,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.003250000000001,
+        127.947
+      ],
+      "length_mm": 0.17212277594785097,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.0957421875,
+        128.747234375
+      ],
+      "length_mm": 1.4395762021670557,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.274226562499999,
+        130.17570312499998
+      ],
+      "length_mm": 1.439576202167028,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        14.9514921875,
+        151.602734375
+      ],
+      "length_mm": 1.4395762021670562,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.628757812499998,
+        173.02976562499998
+      ],
+      "length_mm": 1.4395762021670562,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.725450000000002,
+        173.836
+      ],
+      "length_mm": 0.18460230226083071,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.7325,
+        174.01
+      ],
+      "length_mm": 0.16400195120792055,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.7246,
+        174.1765
+      ],
+      "length_mm": 0.1696643745752012,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.7003,
+        174.3545
+      ],
+      "length_mm": 0.18999463150311488,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.662,
+        174.5265
+      ],
+      "length_mm": 0.16278206289390232,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.6126,
+        174.682
+      ],
+      "length_mm": 0.16379755797935033,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.55055,
+        174.8335
+      ],
+      "length_mm": 0.16390817551299985,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.484949999999998,
+        174.96499999999997
+      ],
+      "length_mm": 0.13020142088318898,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.40885,
+        175.0905
+      ],
+      "length_mm": 0.16353436947626562,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.322200000000002,
+        175.214
+      ],
+      "length_mm": 0.13840520221437827,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.2283,
+        175.3275
+      ],
+      "length_mm": 0.15640792818779245,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        17.11465,
+        175.445
+      ],
+      "length_mm": 0.17081056758877305,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.988950000000003,
+        175.5555
+      ],
+      "length_mm": 0.16421756909661606,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.846600000000002,
+        175.65949999999998
+      ],
+      "length_mm": 0.18870940623084478,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.70825,
+        175.7455
+      ],
+      "length_mm": 0.1373499544958107,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.577399999999997,
+        175.812
+      ],
+      "length_mm": 0.15640728883271493,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.4142,
+        175.8785
+      ],
+      "length_mm": 0.19638268762801075,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.2549,
+        175.93
+      ],
+      "length_mm": 0.13875157656762027,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        16.0462,
+        175.97050000000002
+      ],
+      "length_mm": 0.2869504486840856,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        15.8369,
+        175.9965
+      ],
+      "length_mm": 0.13538109173736326,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        6.89906875,
+        176.0
+      ],
+      "length_mm": 1.9711625000000002,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        2.95674375,
+        176.0
+      ],
+      "length_mm": 1.9711625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.98558125,
+        176.0
+      ],
+      "length_mm": 1.9711625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        175.1875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        173.5625
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        149.1875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        116.6875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        84.1875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        51.6875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        19.1875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        -13.3125
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        -29.5625
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.0,
+        -31.1875
+      ],
+      "length_mm": 1.625,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        0.7343515625,
+        -32.0
+      ],
+      "length_mm": 1.468703125,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": false,
+          "actual_material": false
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        2.2030546875,
+        -32.0
+      ],
+      "length_mm": 1.468703125,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        12.4839765625,
+        -32.0
+      ],
+      "length_mm": 1.4687031249999993,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        41.8580390625,
+        -32.0
+      ],
+      "length_mm": 1.4687031249999976,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        71.23210156249999,
+        -32.0
+      ],
+      "length_mm": 1.4687031250000047,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        100.6061640625,
+        -32.0
+      ],
+      "length_mm": 1.4687031249999905,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        129.9802265625,
+        -32.0
+      ],
+      "length_mm": 1.4687031249999905,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        159.3542890625,
+        -32.0
+      ],
+      "length_mm": 1.4687031249999905,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    },
+    {
+      "midpoint_xy_mm": [
+        187.2596484375,
+        -32.0
+      ],
+      "length_mm": 1.4687031250000189,
+      "face_checks": [
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": false,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": false,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 1.0,
+          "expected_material": false,
+          "actual_material": false
+        },
+        {
+          "top": true,
+          "inset_mm": 0.5,
+          "depth_from_face_mm": 2.0,
+          "expected_material": true,
+          "actual_material": true
+        },
+        {
+          "top": true,
+          "inset_mm": 1.5,
+          "depth_from_face_mm": 0.75,
+          "expected_material": true,
+          "actual_material": true
+        }
+      ]
+    }
+  ],
+  "body_R2_arc_checks": [
+    {
+      "vertex_mm": [
+        30.0,
+        48.0
+      ],
+      "sample_points": 21,
+      "nominal_radius_mm": 2,
+      "unconstrained_fitted_radius_mm": 2.005611442117266,
+      "max_radial_fit_error_mm": 0.00010457459239088251,
+      "max_deviation_from_nominal_R2_mm": 0.00044190340885252866
+    },
+    {
+      "vertex_mm": [
+        17.5,
+        82.0
+      ],
+      "sample_points": 10,
+      "nominal_radius_mm": 2,
+      "unconstrained_fitted_radius_mm": 2.0829454900813897,
+      "max_radial_fit_error_mm": 0.00011793677897298238,
+      "max_deviation_from_nominal_R2_mm": 0.0005787614379713091
+    },
+    {
+      "vertex_mm": [
+        12.0,
+        108.0
+      ],
+      "sample_points": 13,
+      "nominal_radius_mm": 2,
+      "unconstrained_fitted_radius_mm": 2.038353196104519,
+      "max_radial_fit_error_mm": 0.00010303156418123294,
+      "max_deviation_from_nominal_R2_mm": 0.0005656252778953874
+    },
+    {
+      "vertex_mm": [
+        12.0,
+        128.0
+      ],
+      "sample_points": 8,
+      "nominal_radius_mm": 2,
+      "unconstrained_fitted_radius_mm": 2.1009437047110047,
+      "max_radial_fit_error_mm": 5.576597760681423e-05,
+      "max_deviation_from_nominal_R2_mm": 0.0003382236953706208
+    },
+    {
+      "vertex_mm": [
+        18.0,
+        176.0
+      ],
+      "sample_points": 205,
+      "nominal_radius_mm": 2,
+      "unconstrained_fitted_radius_mm": 1.9998681729430876,
+      "max_radial_fit_error_mm": 0.0005579991632245207,
+      "max_deviation_from_nominal_R2_mm": 0.0007321159412789768
+    }
+  ],
+  "structural_junctions_full_chamfer": [
+    [
+      0,
+      176
+    ],
+    [
+      0,
+      -32
+    ],
+    [
+      190,
+      -32
+    ],
+    [
+      110,
+      -2.4
+    ],
+    [
+      66,
+      6
+    ],
+    [
+      30,
+      48
+    ],
+    [
+      17.5,
+      82
+    ],
+    [
+      12,
+      108
+    ],
+    [
+      12,
+      128
+    ],
+    [
+      18,
+      176
+    ]
+  ],
+  "finger_material_checks": [
+    {
+      "xy_mm": [
+        78.37453254046076,
+        7.200981276686831
+      ],
+      "print_z_mm": 0.3,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        78.37453254046076,
+        7.200981276686831
+      ],
+      "print_z_mm": 23.7,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        103.54929594196523,
+        -1.8499201272067365
+      ],
+      "print_z_mm": 0.3,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        103.54929594196523,
+        -1.8499201272067365
+      ],
+      "print_z_mm": 23.7,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        177.2730626479975,
+        6.996931877517141
+      ],
+      "print_z_mm": 0.3,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        177.2730626479975,
+        6.996931877517141
+      ],
+      "print_z_mm": 23.7,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        199.59170467440558,
+        21.74704193276022
+      ],
+      "print_z_mm": 0.3,
+      "material_preserved": true
+    },
+    {
+      "xy_mm": [
+        199.59170467440558,
+        21.74704193276022
+      ],
+      "print_z_mm": 23.7,
+      "material_preserved": true
+    }
+  ],
+  "washer_landings": [
+    {
+      "y_mm": 164,
+      "support_fraction": 0.9908180681862991,
+      "clamping_mm": 3.6
+    },
+    {
+      "y_mm": 40,
+      "support_fraction": 0.9908180681862777,
+      "clamping_mm": 3.6
+    }
+  ],
+  "limitations": [
+    "Nominal seated 2D flange sweep; not insertion or loaded/deformed contact validation.",
+    "Thin snap noses retain their separately dimensioned radii, not a blanket R2.",
+    "The wall contact strip ends retain square contact corners; exposed body-facet transitions are R2.",
+    "E9 FEM is a prior-finish baseline, not an exact solve of E10."
+  ]
+}

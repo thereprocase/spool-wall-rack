@@ -1,24 +1,24 @@
 # Spool wall rack — print setup and engineering guide
 
-**Work in progress:** E10 changes the finish to continuous 2 mm chamfers after filleting, with runouts only at the thin retainers. The E9 downloads below remain the last verified export while E10 is checked. The [new dowel fit review](fit/README.md) confirms catalog diameter but finds no published numeric supplier tolerance; physical rod fit remains unverified.
+**Current prototype: E10, with the front rail raised 12 mm. Both broad faces have 2 mm chamfers; exposed wall-facet direction changes have nominal R2 fillets. Fillets precede the chamfers; the bevel stays continuous around the main body and tapers only at thin dowel-retainer regions.** Print on the broad side so principal bending loads stay in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
 
-**Current prototype: E9, with the front rail raised 12 mm. Both broad faces have 2 mm chamfers; exposed wall-facet direction changes have nominal R2 fillets.** Print on the broad side so principal bending loads stay in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
+**[Download the current STEP](designs/closed-wall-e10/bracket-with-modifier-helpers.step)** · [Aligned STL fallback and rebuild](designs/closed-wall-e10/README.md) · [Solved E9 stress fields and results](analysis/e9/RESULTS.md) · [Archived level-rail E8 guide](E8-ENGINEERING-GUIDE.md)
 
-**[Download the current STEP](designs/closed-wall-e9/bracket-with-modifier-helpers.step)** · [Aligned STL fallback and rebuild](designs/closed-wall-e9/README.md) · [Solved E9 stress fields and results](analysis/e9/RESULTS.md) · [Archived level-rail E8 guide](E8-ENGINEERING-GUIDE.md)
+![Current E10 CAD](designs/closed-wall-e10/progress-exterior.png)
 
-![Current E9 CAD](designs/closed-wall-e9/progress-exterior.png)
-
-![E9 profile and actual finished section](designs/closed-wall-e9/engineering-drawing.png)
+![E10 profile and actual finished section](designs/closed-wall-e10/engineering-drawing.png)
 
 The back arm is reshaped inward for the rearward-shifted spool. A 322-case sweep across 180–220 mm spool diameters and two effective dowel radii gives **3.93 mm minimum nominal clearance**. Both retainers follow the new contact directions. The raised seat connects continuously to the original arm base.
 
-Direct material-presence probes verify **2 mm chamfers on both faces of nine structural edges**. Chamfers smoothly fade before small features. Exposed wall facets use nominal R2 blends; sampled exported arcs differ from their nominal construction by less than 0.001 mm. Thin snap noses retain smaller working radii, and the wall-contact strip retains square end contact corners. [Finish verification](designs/closed-wall-e9/engineering-verification.json).
+The new finish removes the individual bevel stop/start patches at structural joints. E9's load calculations remain the **prior-finish baseline** below; its coefficients are not a new FEM solve of E10. The 12 mm rail lift, side profile, fasteners and helper positions remain the same.
+
+**Dowel fit remains provisional.** Lowe's lists Madison Mill poplar and oak rods as 1 inch actual diameter, but no numeric diameter/ovality tolerance was found on the checked listings or manufacturer pages. The 26.0 mm seat was designed around nominal 25.4 mm stock; it has not been qualified against measured rods. [Source check, fit conditions and coupons](fit/README.md).
 
 ## Current engineering decision
 
 Use **8 walls for the PLA prototype or 10 for the PETG prototype**, plus the four 1.2 mm solid plates described below. At the assumed extrusion widths, these provide about **3.27 and 4.08 mm** of contour wall. These are deliberate prototype settings; they are not material-independent lifetime ratings.
 
-The initial whole-bracket calculations give approximately **1.01 mm front-seat movement for PLA and 1.37 mm for PETG** at the 12 kg equivalent bracket load. That initial flexibility is acceptable against the project serviceability criteria:
+The prior-finish E9 whole-bracket calculations give approximately **1.01 mm front-seat movement for PLA and 1.37 mm for PETG** at the 12 kg equivalent bracket load. That initial flexibility is acceptable against the project serviceability criteria:
 
 - **5 mm maximum total movement under full load**, including creep.
 - **1 mm maximum change when adding or removing one full spool.**
@@ -54,7 +54,7 @@ Movement is measured from the unloaded geometry, relative to a stable wall refer
 5. Confirm the helpers do not print as extra exterior slabs. Check driver tunnels, screw clearance, thin snap fingers and internal bridging over the sparse infill.
 6. Save the configured slicer project with the filament identity and settings. The STEP itself stores geometry, not these settings.
 
-![Solid-band layout](designs/closed-wall-e9/modifier-stack.png)
+![Solid-band layout](designs/closed-wall-e10/modifier-stack.png)
 
 The body is solid **in CAD** so the slicer can generate its internal structure. It is not an instruction to print the body at 100%. Sparse infill supports the internal bands during printing even though it receives no structural credit. Do not reintroduce modeled hollow bands or an internal grid into the printable STEP.
 
@@ -110,7 +110,7 @@ For a tested material with usable creep compliance, scale bracket movement linea
 
 Then check the actual support reactions for the installation. Do not equate “six spools per bay” with “six spools carried solely by one bracket.”
 
-## What the FEM resolves
+## E9 baseline: what the FEM resolves
 
 The **2D plane-stress model** integrates the ideal printed material across the width. It includes contour walls, the four solid bands and fastener opening effects. It omits broad-face chamfers and projects the mounting restraints onto the wall, so it is a reduced comparison model.
 
@@ -260,6 +260,6 @@ A 1,000-hour trial is useful screening and model calibration. It is not automati
 
 [E9 analysis scripts and reproduction commands](analysis/e9/README.md) include material-domain construction, 2D/3D solvers, known-solution verification, stress rendering and conditional creep calculations. The existing [GitHub Actions workflow](.github/workflows/engineering-analysis.yml) reproduces the archived E8 baseline; E9 results shown here were generated with the checked-in E9 scripts. Result JSON files retain force/moment balance, residuals and mesh details. Analysis-only BREP files and base meshes are regenerated, not print deliverables.
 
-The CAD geometry verification is separate: [E9 STEP and hardware checks](designs/closed-wall-e9/verification.json). Physical printing and mechanical tests have not been performed in this repository.
+The current CAD geometry verification is separate: [E10 STEP and hardware checks](designs/closed-wall-e10/verification.json). Physical printing and mechanical tests have not been performed in this repository.
 
 [Design journal and superseded calculations](DESIGN-JOURNAL.md) · [Design decisions](DESIGN.md) · [Separate future open-web exploration](future/open-web/README.md)

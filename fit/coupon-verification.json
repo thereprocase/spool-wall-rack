@@ -1,0 +1,52 @@
+[
+  {
+    "coupon": "rear",
+    "valid_solid": true,
+    "width_print_Z_mm": 24,
+    "source": "E10 finished body",
+    "mesh": {
+      "file": "rear-fit-coupon.stl",
+      "tiny_loops_closed": [],
+      "triangles_added": 0,
+      "closed_after_roundtrip": true,
+      "STEP_modified": false
+    },
+    "helper_bands_mm": [
+      [
+        7.6,
+        8.8
+      ],
+      [
+        15.2,
+        16.4
+      ]
+    ],
+    "purpose": "Local fit only; cut boundaries do not reproduce whole-bracket restraint",
+    "STEP_assembly_roundtrip_valid_solids": 3
+  },
+  {
+    "coupon": "front",
+    "valid_solid": true,
+    "width_print_Z_mm": 24,
+    "source": "E10 finished body",
+    "mesh": {
+      "file": "front-fit-coupon.stl",
+      "tiny_loops_closed": [],
+      "triangles_added": 0,
+      "closed_after_roundtrip": true,
+      "STEP_modified": false
+    },
+    "helper_bands_mm": [
+      [
+        7.6,
+        8.8
+      ],
+      [
+        15.2,
+        16.4
+      ]
+    ],
+    "purpose": "Local fit only; cut boundaries do not reproduce whole-bracket restraint",
+    "STEP_assembly_roundtrip_valid_solids": 3
+  }
+]

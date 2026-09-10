@@ -2,6 +2,16 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## E10 — continuous chamfers after filleting
+
+Replaced the repeated stop/start bevel patches with continuous 2 mm chamfers around the pre-filleted body. Only the thin dowel-retainer regions use runouts. Mirroring the finished half makes the two broad-face treatments identical. The source profile, 12 mm rail lift, fasteners and modifier bands remain unchanged; E9 FEM is explicitly a prior-finish baseline.
+
+The exported STEP contains three valid solids and passes hardware clearance. Verification includes 726 chamfer material probes over 121 representative segments, full depth at ten structural junctions and eight finger-material checks. The STL exporter omitted four microscopic tessellation triangles; closing those pinholes yields closed meshes and does not alter the STEP.
+
+The supplier audit confirms Lowe's publishes 1-inch actual diameter for the Madison Mill poplar/oak rods, but the checked retailer and manufacturer pages give no numeric diameter or ovality tolerance. The 26 mm seat remains provisional. Added full-width rear/front fit coupons, each with aligned helper modifiers, and a measurement/fit plan. No physical measurements or fit tests have been performed.
+
+![E10 continuous finish](designs/closed-wall-e10/progress-exterior.png)
+
 ## E9 — raised-front running prototype
 
 Adopted the +12 mm front rail as the current prototype. The rear center stays at (90, 0), front center becomes (190, 12), and both retainers rotate to the new contact directions. The back arm moves inward while retaining full-height wall contact; the front buttress meets the original base rather than leaving a stub.

@@ -1,0 +1,57 @@
+{
+  "revision": "E10",
+  "valid_body": false,
+  "body_solid_count": 1,
+  "assembly_body_count": 3,
+  "body_CAD_envelope_volume_cm3": 249.39595401087087,
+  "body_print_bounds_mm": [
+    42.4909998999998,
+    5.9999998999998185,
+    -4.512219652995468e-07,
+    250.00000010000016,
+    214.00000010000025,
+    24.000000451221965
+  ],
+  "helpers": [
+    {
+      "name": "MODIFIER_1_100_PERCENT_INFILL_Z_7.6_TO_8.8_MM",
+      "z_min_mm": 7.6,
+      "z_max_mm": 8.799999999999999,
+      "thickness_mm": 1.2,
+      "xy_bounds_mm": [
+        40.4909998999998,
+        3.9999998999998185,
+        252.00000010000016,
+        216.00000010000025
+      ]
+    },
+    {
+      "name": "MODIFIER_2_100_PERCENT_INFILL_Z_15.2_TO_16.4_MM",
+      "z_min_mm": 15.2,
+      "z_max_mm": 16.4,
+      "thickness_mm": 1.2,
+      "xy_bounds_mm": [
+        40.4909998999998,
+        3.9999998999998185,
+        252.00000010000016,
+        216.00000010000025
+      ]
+    }
+  ],
+  "default_layer_mm": 0.2,
+  "default_outer_top_bottom_mm": 1.2,
+  "front_rail_lift_mm": 12,
+  "broad_face_chamfer_mm": 2,
+  "body_angular_fillet_mm": 2,
+  "default_body_infill_percent": 15,
+  "helper_infill_percent": 100,
+  "body_wall_count": "User-selected; confirm actual sliced wall thickness.",
+  "fastener_geometry": "Retained from E7; no modeled infill cells or large internal void bands.",
+  "limitations": [
+    "STEP carries geometry and component names, not slicer modifier settings.",
+    "Import as one object with aligned parts; change both helper parts to modifiers before slicing.",
+    "100% modifier infill sets internal plates; the slicer generates supporting sparse infill.",
+    "CAD envelope volume is not printed plastic volume or print mass.",
+    "Previous hollow-CAD section properties do not rate a user-selected slicing setup."
+  ]
+}

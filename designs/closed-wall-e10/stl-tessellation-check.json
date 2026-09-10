@@ -1,0 +1,50 @@
+[
+  {
+    "file": "body-only.stl",
+    "tiny_loops_closed": [
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.00022217132209334522
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.06051446124911308
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.06051446124911308
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.00022217132209334522
+      }
+    ],
+    "triangles_added": 4,
+    "closed_after_roundtrip": true,
+    "STEP_modified": false
+  },
+  {
+    "file": "body-mounted.stl",
+    "tiny_loops_closed": [
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.00022277036623563617
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.06050679087638855
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.06050679087638855
+      },
+      {
+        "vertices": 3,
+        "bounding_diagonal_mm": 0.00022277036623563617
+      }
+    ],
+    "triangles_added": 4,
+    "closed_after_roundtrip": true,
+    "STEP_modified": false
+  }
+]
