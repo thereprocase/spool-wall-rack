@@ -1,0 +1,48 @@
+{
+  "STEP_roundtrip_valid_solids": 3,
+  "one_body_plus_two_overlapping_helpers": true,
+  "helpers_thickness_mm": 1.2,
+  "helpers_z_intervals_mm": [
+    [
+      7.6,
+      8.8
+    ],
+    [
+      15.2,
+      16.4
+    ]
+  ],
+  "fasteners": [
+    {
+      "axis_y_mm": 164,
+      "driver_15p8_mm_collision_mm3": 0,
+      "washer_13_mm_collision_mm3": 0,
+      "M5_shank_collision_mm3": 0
+    },
+    {
+      "axis_y_mm": 40,
+      "driver_15p8_mm_collision_mm3": 0,
+      "washer_13_mm_collision_mm3": 0,
+      "M5_shank_collision_mm3": 0
+    }
+  ],
+  "meshes": {
+    "body-only.stl": {
+      "triangles": 14416,
+      "nonmanifold_or_boundary_edges": 0
+    },
+    "helper-1.stl": {
+      "triangles": 12,
+      "nonmanifold_or_boundary_edges": 0
+    },
+    "helper-2.stl": {
+      "triangles": 12,
+      "nonmanifold_or_boundary_edges": 0
+    }
+  },
+  "limitations": [
+    "Helper overlap is intentional; convert helpers to modifiers, never fuse or print them as extra parts.",
+    "STEP does not encode infill or wall settings; user configures them in the slicer.",
+    "Geometric envelope volume does not describe printed mass or strength."
+  ]
+}

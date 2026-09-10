@@ -1,2 +1,3 @@
 # Preserve the exact delivered CAD bytes used by E11 source-hash audits.
 /designs/closed-wall-e11/*.step binary
+/designs/closed-wall-e12/*.step binary

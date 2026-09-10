@@ -1,0 +1,93 @@
+{
+  "cases": [
+    {
+      "revision": "E10",
+      "walls": 8,
+      "near_seat_p99_MPa": 6.506212010492956,
+      "front_mm_at_E1000": 3.557325193571639,
+      "coarse_to_fine_stress_percent": 1.581186368115417,
+      "coarse_to_fine_movement_percent": 0.7061178083187292,
+      "fine_residual": 1.0623950567647493e-10
+    },
+    {
+      "revision": "E11",
+      "walls": 8,
+      "near_seat_p99_MPa": 4.072740720574144,
+      "front_mm_at_E1000": 2.2936698736849372,
+      "coarse_to_fine_stress_percent": 0.7070644181613073,
+      "coarse_to_fine_movement_percent": 0.31869404208668684,
+      "fine_residual": 7.725129641546241e-11
+    },
+    {
+      "revision": "E12",
+      "walls": 8,
+      "near_seat_p99_MPa": 4.441224941241787,
+      "front_mm_at_E1000": 2.4573477835183652,
+      "coarse_to_fine_stress_percent": 0.2000484184819129,
+      "coarse_to_fine_movement_percent": 0.2676825534894345,
+      "fine_residual": 7.733992977318766e-11
+    },
+    {
+      "revision": "E10",
+      "walls": 10,
+      "near_seat_p99_MPa": 6.12843923007882,
+      "front_mm_at_E1000": 3.2423766646696226,
+      "coarse_to_fine_stress_percent": 1.3729388010055965,
+      "coarse_to_fine_movement_percent": 0.8565040469836749,
+      "fine_residual": 1.0791431966277201e-10
+    },
+    {
+      "revision": "E11",
+      "walls": 10,
+      "near_seat_p99_MPa": 3.821700418207161,
+      "front_mm_at_E1000": 2.1047288765913903,
+      "coarse_to_fine_stress_percent": 1.0161373655068973,
+      "coarse_to_fine_movement_percent": 0.4262181976339319,
+      "fine_residual": 7.254618097903005e-11
+    },
+    {
+      "revision": "E12",
+      "walls": 10,
+      "near_seat_p99_MPa": 4.136288930635667,
+      "front_mm_at_E1000": 2.222830499890766,
+      "coarse_to_fine_stress_percent": 0.25829861489718997,
+      "coarse_to_fine_movement_percent": 0.4434360425953354,
+      "fine_residual": 7.409113290440473e-11
+    }
+  ],
+  "E12_comparisons": [
+    {
+      "walls": 8,
+      "E12_stress_reduction_vs_E10_percent": 31.738699352570155,
+      "E12_movement_reduction_vs_E10_percent": 30.921474709172436,
+      "E12_stress_increase_vs_E11_percent": 9.047573758039196,
+      "E12_movement_increase_vs_E11_percent": 7.1360709625778895
+    },
+    {
+      "walls": 10,
+      "E12_stress_reduction_vs_E10_percent": 32.50665013802432,
+      "E12_movement_reduction_vs_E10_percent": 31.444408537980316,
+      "E12_stress_increase_vs_E11_percent": 8.231637177256435,
+      "E12_movement_increase_vs_E11_percent": 5.611251150344909
+    }
+  ],
+  "outer_only_8wall": [
+    {
+      "revision": "E10",
+      "near_seat_p99_MPa": 6.611467847544399,
+      "front_mm_at_E1000": 3.2929177313104763
+    },
+    {
+      "revision": "E11",
+      "near_seat_p99_MPa": 3.7324209698965602,
+      "front_mm_at_E1000": 2.004451486988464
+    },
+    {
+      "revision": "E12",
+      "near_seat_p99_MPa": 4.282240762778678,
+      "front_mm_at_E1000": 2.184945331856542
+    }
+  ],
+  "E12_outer_only_stress_reduction_vs_E10_percent": 35.230105303027855,
+  "scope": "Matched ideal printed-material plane stress; actual 120-layer finished STL outlines. Same loads and restraints, zero sparse-infill credit. Near-seat volume-weighted p99 uses fixed X75..110,Y-24..0."
+}

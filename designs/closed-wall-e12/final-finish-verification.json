@@ -1,0 +1,332 @@
+{
+  "delivered_body_valid": true,
+  "delivered_assembly_valid": true,
+  "finger_comparisons": [
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 0.1,
+      "reference_area_mm2": 20.463416612491994,
+      "E12_area_mm2": 20.474342441892695,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 0.7,
+      "reference_area_mm2": 20.463420883475987,
+      "E12_area_mm2": 20.474343593419615,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 1.7,
+      "reference_area_mm2": 20.463423190746624,
+      "E12_area_mm2": 20.47434800241372,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 3.0,
+      "reference_area_mm2": 20.46342609248458,
+      "E12_area_mm2": 20.4743432417272,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 12.0,
+      "reference_area_mm2": 20.463422412271925,
+      "E12_area_mm2": 20.474333498618584,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 21.0,
+      "reference_area_mm2": 20.463418897433932,
+      "E12_area_mm2": 20.474345096937217,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 22.3,
+      "reference_area_mm2": 20.463421741351752,
+      "E12_area_mm2": 20.47434026236298,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 23.3,
+      "reference_area_mm2": 20.463423892218472,
+      "E12_area_mm2": 20.474344709089603,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "left",
+      "print_z_mm": 23.9,
+      "reference_area_mm2": 20.463428147108875,
+      "E12_area_mm2": 20.474345684939827,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 0.1,
+      "reference_area_mm2": 37.283102035664434,
+      "E12_area_mm2": 37.2783909017426,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 0.7,
+      "reference_area_mm2": 37.28309932171909,
+      "E12_area_mm2": 37.278395523815185,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 1.7,
+      "reference_area_mm2": 37.28309883006975,
+      "E12_area_mm2": 37.278391592035156,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 3.0,
+      "reference_area_mm2": 37.2831034798215,
+      "E12_area_mm2": 37.27839311646226,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 12.0,
+      "reference_area_mm2": 37.28309882122108,
+      "E12_area_mm2": 37.27839143124207,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 21.0,
+      "reference_area_mm2": 37.283096196093084,
+      "E12_area_mm2": 37.27838713628832,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 22.3,
+      "reference_area_mm2": 37.28310115449242,
+      "E12_area_mm2": 37.27838863561462,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 23.3,
+      "reference_area_mm2": 37.28310041842055,
+      "E12_area_mm2": 37.27838470513243,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "inner",
+      "finger": "right",
+      "print_z_mm": 23.9,
+      "reference_area_mm2": 37.28309887610407,
+      "E12_area_mm2": 37.27838928421258,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 0.1,
+      "reference_area_mm2": 35.00685635736845,
+      "E12_area_mm2": 35.00720096565689,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 0.7,
+      "reference_area_mm2": 35.00685311511286,
+      "E12_area_mm2": 35.007197979422465,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 1.7,
+      "reference_area_mm2": 35.00685679319921,
+      "E12_area_mm2": 35.00719614416256,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 3.0,
+      "reference_area_mm2": 35.006854420913584,
+      "E12_area_mm2": 35.007203488588814,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 12.0,
+      "reference_area_mm2": 35.00685007933211,
+      "E12_area_mm2": 35.00720203823279,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 21.0,
+      "reference_area_mm2": 35.00685027279753,
+      "E12_area_mm2": 35.00718563852882,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 22.3,
+      "reference_area_mm2": 35.006848273601506,
+      "E12_area_mm2": 35.00719506879044,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 23.3,
+      "reference_area_mm2": 35.00685171817566,
+      "E12_area_mm2": 35.00719310614074,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "left",
+      "print_z_mm": 23.9,
+      "reference_area_mm2": 35.00684867560521,
+      "E12_area_mm2": 35.0071902515935,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 0.1,
+      "reference_area_mm2": 0.0,
+      "E12_area_mm2": 0.0,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 0.7,
+      "reference_area_mm2": 11.668455451546055,
+      "E12_area_mm2": 11.666958129196738,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 1.7,
+      "reference_area_mm2": 11.668446327612099,
+      "E12_area_mm2": 11.66695390465252,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 3.0,
+      "reference_area_mm2": 11.668444793307613,
+      "E12_area_mm2": 11.666955551034036,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 12.0,
+      "reference_area_mm2": 11.668451513399626,
+      "E12_area_mm2": 11.666954400314506,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 21.0,
+      "reference_area_mm2": 11.668452302362672,
+      "E12_area_mm2": 11.66695969117659,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 22.3,
+      "reference_area_mm2": 11.668449566155273,
+      "E12_area_mm2": 11.666961711517938,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 23.3,
+      "reference_area_mm2": 11.668440820770742,
+      "E12_area_mm2": 11.666959331677765,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    },
+    {
+      "seat": "outer",
+      "finger": "right",
+      "print_z_mm": 23.9,
+      "reference_area_mm2": 0.0,
+      "E12_area_mm2": 0.0,
+      "missing_beyond_0p025mm_mm2": 0.0,
+      "added_beyond_0p025mm_mm2": 0.0
+    }
+  ],
+  "comparison_tolerance_mm": 0.025,
+  "scope": "Complete flexible-finger sectors at nine depths through the delivered STL, compared with E10. Rigid bearing/chamfer sectors are outside this preservation mask. Physical insertion and fatigue are untested."
+}

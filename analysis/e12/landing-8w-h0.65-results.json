@@ -1,0 +1,75 @@
+{
+  "name": "landing-8w-h0.65",
+  "nodes": 20312,
+  "tetrahedra": 83876,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "contact_converged": true,
+  "linear_iterations": [
+    -2
+  ],
+  "volume_mm3": 3693.4863647123702,
+  "applied_force_N": [
+    -500.0000000000003,
+    0.0,
+    0.0
+  ],
+  "reaction_N": [
+    500.00000000000034,
+    -4.955760953340662e-13,
+    -4.794192062840995e-13
+  ],
+  "applied_moment_Nmm": [
+    0.0,
+    -5980.919768982008,
+    82002.19022672088
+  ],
+  "reaction_moment_Nmm": [
+    -7.93810545623028e-11,
+    5980.919768982017,
+    -82002.19022672107
+  ],
+  "relative_free_residual": 1.31562189860235e-13,
+  "max_displacement_mm_at_E1000": 0.018253538769231574,
+  "vm_max_MPa_not_allowable": 4.996893062748296,
+  "vm_volume_p99_MPa": 4.161863373359715,
+  "vm_volume_p999_MPa": 4.578595689625569,
+  "patches": {
+    "washer": {
+      "area_mm2": 108.03887122705856,
+      "facets": 650,
+      "force_N": [
+        -500.0,
+        0.0,
+        0.0
+      ],
+      "mean_displacement_mm_at_E1000": [
+        -0.012074564885465197,
+        0.005598352941636386,
+        -5.106403458300239e-06
+      ]
+    }
+  },
+  "relative_force_balance_error": 1.3837190695924085e-15,
+  "linear_solver": "PARDISO with five residual-correction solves",
+  "relative_moment_balance_error": 2.4976437764382782e-15,
+  "wall_minimum_gap_mm": 0.0,
+  "wall_contact_nodes": 1390,
+  "head_164_reaction_N": [
+    -1.0922898001452952e-13,
+    -9.64753268078588e-15,
+    8.034493751730987e-15
+  ],
+  "head_40_reaction_N": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "regions": {
+    "upper_landing": {
+      "vm_p99_MPa": 4.242348714885092,
+      "vm_max_MPa": 4.996893062748296,
+      "max_principal_MPa": 1.9897959934902474
+    }
+  }
+}

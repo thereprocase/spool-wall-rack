@@ -1,166 +1,156 @@
-# Spool wall rack — E11 print and engineering guide
+# Spool wall rack — E12 print and engineering guide
 
-**Current prototype: E11 — reinforced inner seat, smooth rigid-shoulder blends,
-and mirrored 50° broad-face chamfers.** The inner-seat section now exceeds both
-adjacent plain-arm reference bands in local bending stiffness and elastic
-section modulus. The flexible fingers, rail centers and hardware geometry are
-preserved.
+**Current prototype: E12 — a shallow, smooth inner-seat reinforcement with
+one-quarter of E11's protrusion.** Added depth is **9.5 mm**, down from 38 mm,
+meeting the preferred quarter-depth target and the 12.67 mm maximum.
 
-**[Download E11 STEP with aligned helpers](designs/closed-wall-e11/bracket-with-modifier-helpers.step)** ·
-[STL fallback and CAD checks](designs/closed-wall-e11/README.md) ·
-[New E11 FEA and material results](analysis/e11/RESULTS.md) ·
-[Design journal](DESIGN-JOURNAL.md)
+**[Download E12 STEP with aligned helpers](designs/closed-wall-e12/bracket-with-modifier-helpers.step)** ·
+[CAD and print checks](designs/closed-wall-e12/README.md) ·
+[Updated FEA and material results](analysis/e12/RESULTS.md) · [Design journal](DESIGN-JOURNAL.md)
 
-![Current finished E11 CAD](designs/closed-wall-e11/progress-exterior.png)
+![Current E12 finished CAD](designs/closed-wall-e12/progress-exterior.png)
 
-## What E11 improves
+## Smaller shape, measured tradeoff
 
-- Added **38 mm of smoothly blended underside depth** beneath the inner rod.
-  The center section is approximately **57 mm deep**, up from 19 mm in E10.
-- Across the seat band, the finished ideal printed section has at least
-  **54% more bending I and 28% more elastic section modulus** than the stronger
-  adjacent plain-arm reference band. The comparison includes the new runouts
-  in those adjacent bands; it is not a solid-envelope-only calculation.
-- Applied **R6 blends to the rigid rear shoulders**, retaining the relief
-  pockets, functional finger roots and smaller nose radii. Other exposed
-  body-facet joins keep their nominal R2 finish.
-- Kept the **2 mm face inset** and changed the chamfer rise to **2.384 mm**:
-  **50° above the bed plane**, mirrored on the opposite face. At 0.2 mm layers,
-  nominal lateral growth is 0.168 mm per layer. Runouts occur only near the
-  thin retainers.
+The added underside depth is **75% smaller**, blended across a broader span.
+The inner center section is approximately **28.5 mm deep**, compared with 19 mm
+in E10 and 57 mm in E11. The finished body envelope is now approximately
+**207.51 × 217.50 × 24 mm**.
 
-![E11 profile and actual finished section](designs/closed-wall-e11/engineering-drawing.png)
+![E12 and E11 depth comparison](designs/closed-wall-e12/depth-comparison.png)
 
-[Section-property comparison](designs/closed-wall-e11/section-comparison.png) ·
-[Inner-seat close-up](designs/closed-wall-e11/finish-inner-front.png) ·
-[Opposite face](designs/closed-wall-e11/finish-inner-reverse.png) ·
-[Outer retainer](designs/closed-wall-e11/finish-outer-front.png)
+The matched reduced-model comparison gives **31.7–32.5% lower near-seat stress
+than E10**, compared with E11's 37.4–37.6%. Front movement is only **5.6–7.1%
+higher than E11**. With only the outer rod loaded, E12's near-seat stress
+statistic is about **35% lower than E10**. No relief holes were added: the
+continuous shallow blend already retains most of the measured benefit.
+[Exact three-revision comparison](analysis/e12/COMPARISON.md).
 
-The rear/front rail centers remain **(90, 0) / (190, 12) mm**. The nominal
-180–220 mm spool sweep retains **3.93 mm minimum clearance** across 322 cases.
-Complete flexible-finger sectors match E10 at nine depths through the exported
-part. This preserves geometry; physical insertion and retention still need
-the measured rods and intended filament.
+The finished ideal printed section has at least **2.77× E10's minimum
+seat-band bending I** and **1.85× its elastic section modulus**. It **does
+not exceed both adjacent arms**. The explicit depth cap supersedes that E11
+margin target; the adjacent arms were not weakened to force a favorable ratio.
+[Section comparison and ratios](designs/closed-wall-e12/section-verification.json).
+
+The R6 rigid shoulder blends, functional fingers and relief pockets are
+preserved. Both broad-face chamfers retain **2 mm face inset, 2.384 mm rise and
+50° above the bed**, mirrored on the reverse face. Other exposed body corners
+retain their smaller finish, with smooth chamfer runouts at thin retainers.
+
+![Profile and finished section](designs/closed-wall-e12/engineering-drawing.png)
+
+[Inner-seat close-up](designs/closed-wall-e12/finish-inner-front.png) ·
+[Reverse face](designs/closed-wall-e12/finish-inner-reverse.png) ·
+[Outer fingers](designs/closed-wall-e12/finish-outer-front.png).
+
+The rear/front rail centers stay at (90,0)/(190,12) mm. The 322-case nominal
+180–220 mm spool sweep retains **3.927 mm minimum clearance**. All four flexible
+finger sectors match E10 at nine print depths; this checks geometry, not
+physical insertion force, fatigue or rod tolerance.
 
 ## Print setup
 
-Print on the supplied broad side so the principal bending load stays in the
-layer plane. Import the STEP as **one object with three aligned parts**.
+Print on the supplied broad side. Import the STEP as **one object with three
+aligned parts**, so the main bending load stays in the layer plane.
 
 | Setting | Working value |
 |---|---|
-| Body footprint / height | Approximately **207.51 × 246.00 × 24 mm**; check bed exclusions |
-| Layer height, including first | **0.20 mm** |
+| Body footprint / height | **207.51 × 217.50 × 24 mm**; check bed exclusions |
+| Layer / first layer | **0.20 / 0.20 mm** |
 | Reference nozzle | 0.4 mm |
-| Outer / inner line-width assumptions | 0.42 / 0.45 mm |
+| Outer / inner nominal line widths | 0.42 / 0.45 mm |
 | Wall generator / solid-region gap fill | **Arachne / Everywhere** |
-| PLA prototype walls | **8**, approximately 3.27 mm contour thickness |
-| PETG prototype walls | **10**, approximately 4.08 mm contour thickness |
-| Body infill | **15%**, with zero stiffness/strength credit in analysis |
+| PLA prototype walls | **8**, about 3.27 mm ideal contour thickness |
+| PETG prototype walls | **10**, about 4.08 mm ideal contour thickness |
+| Body infill | **15%**, zero structural credit |
 | Exterior top / bottom | **1.2 / 1.2 mm**, six layers each |
-| Helper 1 | **100% infill modifier**, Z = 7.6–8.8 mm |
-| Helper 2 | **100% infill modifier**, Z = 15.2–16.4 mm |
-| Solid infill | A bonded, fully dense pattern supported by the slicer |
-| Filament process | Exact grade's calibrated temperature, cooling, flow and bonding settings |
+| Helper 1 | **100% infill modifier**, Z=7.6–8.8 mm |
+| Helper 2 | **100% infill modifier**, Z=15.2–16.4 mm |
+| Filament process | Exact grade's calibrated temperature, cooling, flow and bonding |
 
-1. Keep the main body printable and set its walls, 15% infill and six top/bottom layers.
-2. Convert both named helper parts to **modifiers** and set their infill to 100%.
-   Keep their supplied positions. They must not print as extra exterior slabs.
-3. Inspect all four solid bands, the continuous perimeter below the inner seat,
-   both fingers, the screw landings and the printable access roofs.
-4. Save the configured project with the actual machine and filament identity.
-   STEP stores geometry and alignment, not modifier status or print settings.
+1. Keep the main body printable with the selected walls, 15% infill and six
+   top/bottom layers.
+2. Convert both named helpers to **100% infill modifiers** in their supplied
+   positions. They must not print as extra exterior slabs.
+3. Inspect all four solid bands, seat perimeters, fingers, screw lands and
+   access roofs; then save the configured machine/filament project.
 
-![Solid-band locations](designs/closed-wall-e11/modifier-stack.png)
+STEP stores geometry and alignment, not modifier status or print settings.
+[STL fallback and detailed handoff](designs/closed-wall-e12/README.md).
 
-![Actual OrcaSlicer paths through E11](designs/closed-wall-e11/toolpath-sections.png)
+![Modifier stack](designs/closed-wall-e12/modifier-stack.png)
 
-**Actual OrcaSlicer 2.4.2 audits pass for 8 and 10 walls.** Both slices have 120
-layers. Every intended solid-band layer passes the inner-seat footprint check;
-the minimum nominal coverage is **99.79%**, and sampled seat-wall coverage is
-above **99.99%**, using a documented 0.03 mm geometry/rounding allowance. Sampled
-full L-planes exceed 99.96% coverage, and sampled flexible fingers exceed 99.84%.
-The final audit uses Arachne variable-width walls: the initial classic-wall
-slice left a small pocket inside one finger nose on an exterior solid layer.
-[Toolpath evidence](designs/closed-wall-e11/toolpath-verification.json).
-These are neutral geometry audits, not calibrated print profiles or proof of
-bonding, bridge quality or absence of curling.
+![Actual E12 OrcaSlicer paths](designs/closed-wall-e12/toolpath-sections.png)
 
-The contour estimate is
+**Both OrcaSlicer 2.4.2 audits pass:** 120 layers, all 24 intended solid-band
+layers checked around the inner seat, plus sampled full L-planes, walls and
+fingers. Minimum nominal footprint coverage is **99.82% in the seat bands,
+99.99% in sampled seat walls and 99.84% in sampled fingers**, with a
+0.03 mm tessellation/rounding allowance. These neutral slices do not qualify
+bonding, bridging, curling or an actual filament process.
+[Toolpath evidence](designs/closed-wall-e12/toolpath-verification.json).
+
+The contour estimate remains
 `t(n) = 0.42 + (n − 1) × [0.45 − 0.2 × (1 − π/4)] mm`.
-Actual line width and thin-wall handling govern the slice. Recalculate the wall
-count for another nozzle; keep the four 1.2 mm plates. Sparse infill supports
-those plates during printing even though it receives no structural credit.
+Arachne varies thin-feature widths; actual paths govern. Keep the four 1.2 mm
+plates if changing nozzle or wall count. Sparse infill supports the plates
+during printing while receiving zero structural credit in the analysis.
 
-## New stress results
+## Updated stress and material results
 
-The matched E10/E11 reduced-model comparison gives **37.4–37.6% lower near-seat
-stress** and **35.1–35.5% less front movement** at the same load and wall count.
-With **only the outer rod loaded**, near-seat stress falls **43.5%**, supporting
-the reduced-section bending diagnosis. The same fixed stress window is used
-in both designs, so added underside volume does not dilute that statistic.
-[Matched comparison and mesh checks](analysis/e11/COMPARISON.md).
+![Matched E10/E11/E12 stress](analysis/e12/seat-stress-comparison.png)
 
-![Matched E10/E11 inner-seat stress comparison](analysis/e11/seat-stress-comparison.png)
+New E12 3D solves include the finished exterior, ideal contour walls, four
+continuous plates, fastener openings, compression-only wall contact, rigid
+washer axial restraints and rigid shank shear restraints. No clamp friction or
+arbitrary preload is credited. Sparse core is removed only in the analysis.
 
-The **new E11 3D solves** include the actual finished exterior, ideal contour
-walls, four continuous plates, fastener openings, compression-only wall contact,
-rigid washer axial restraints and rigid shank shear restraints. Sparse core
-material is removed only in the analysis domain. No clamp friction or arbitrary
-preload is credited.
+![E12 3D stress and cutaway](analysis/e12/fem-3d.png)
 
-![E11 3D stress and cutaway](analysis/e11/fem-3d.png)
+![E12 stress sections](analysis/e12/fem-sections.png)
 
-![E11 in-plane and transverse stress sections](analysis/e11/fem-sections.png)
-
-[10-wall 3D stress view](analysis/e11/fem-3d-10w.png).
-
-| Walls | Tetrahedra, coarse → fine | Front movement refinement change | Near-seat p99, coarse → fine |
+| Walls | Tetrahedra, coarse → fine | Movement refinement change | Near-seat p99, coarse → fine |
 |---:|---:|---:|---:|
-| 8 | 180,806 → 235,089 | 2.56% | 3.56 → 3.79 MPa |
-| 10 | 149,156 → 242,810 | 2.27% | 3.79 → 3.79 MPa |
+| 8 | 136,844 → 209,627 | 2.35% | 3.99 → 4.34 MPa |
+| 10 | 159,490 → 211,444 | 1.43% | 3.94 → 4.10 MPa |
 
-All published 3D fields pass independently recomputed residual, force and moment
-balance gates below 1e-6. The refined 2D/3D front-movement coefficients agree
-within 0.55%. This is numerical screening, not independent physical validation.
-The meshes do not establish asymptotic convergence. **Raw refined peaks are
-37.9 / 51.1 MPa** for 8/10 walls and remain sensitive to small cells at geometric
-and analysis-core intersections; neither those peaks nor percentiles are
-allowables. [Raw fields, peak locations, rejected runs and numerical audits](analysis/e11/RESULTS.md).
+All six published 3D fields pass independently recomputed residual, force and
+moment balance below 1e-6. The refined reduced and 3D movement coefficients
+agree within 0.85%. These are numerical checks, not independent physical
+validation or proof of asymptotic convergence. Raw refined peaks are
+**35.2 / 38.9 MPa** for 8/10 walls and are not rupture allowables.
+[Raw fields, rejected mesh attempts and full results](analysis/e12/RESULTS.md).
 
-## Material movement and creep margin
+The criteria remain **5 mm total loaded movement**, including dowels and
+mounts, and **1 mm change when adding/removing one full spool**. At the 12 kg
+reference load, the new front coefficients are **K=2472.5 MPa·mm for 8 walls**
+and **2241.9 for 10 walls**.
 
-The project criteria remain **5 mm total loaded movement**, including creep,
-dowels and mounts, and **1 mm change when adding/removing one full spool**.
-The new refined geometry coefficients are **K = 2306.3 MPa·mm for 8 walls** and
-**2098.2 MPa·mm for 10 walls**, at 12 kg equivalent load per bracket.
+| Reference material | Walls | Initial front movement | One 1.25 kg roll | Ec for 5 mm bracket-only |
+|---|---:|---:|---:|---:|
+| PLA | 8 | 0.722 mm | 0.075 mm | 495 MPa |
+| PETG | 10 | 0.970 mm | 0.101 mm | 448 MPa |
+| ASA | 8 | 1.039 mm | 0.108 mm | 495 MPa |
+| PA6-GF dry | 8 | 0.462 mm | 0.048 mm | 495 MPa |
+| PA6-GF wet | 8 | 1.379 mm | 0.144 mm | 495 MPa |
 
-| Reference material | Walls | Initial front movement | One 1.25 kg roll | Ec for 5 mm bracket-only | Compliance growth limit |
-|---|---:|---:|---:|---:|---:|
-| PLA | 8 | 0.673 mm | 0.070 mm | 461 MPa | 7.43× |
-| PETG | 10 | 0.908 mm | 0.095 mm | 420 MPa | 5.51× |
-| ASA | 8 | 0.969 mm | 0.101 mm | 461 MPa | 5.16× |
-| PA6-GF annealed/dry | 8 | 0.431 mm | 0.045 mm | 461 MPa | 11.61× |
-| PA6-GF water-conditioned | 8 | 1.286 mm | 0.134 mm | 461 MPa | 3.89× |
+These are retained grade-specific room-temperature XY moduli, not measured hot
+or aged properties. [Exact grades, conditions, sources and hashes](designs/closed-wall-e6/material-reference-data.json).
+The [updated material report](analysis/e12/RESULTS.md) includes 24 kg linear
+proof scaling, landing checks and explicit one-, five- and ten-year creep
+sensitivities. No lifetime safe spool count is assigned.
 
-These use the retained grade-specific room-temperature XY moduli, not measured
-hot or aged properties. [Exact reference grades, conditions, sources and hashes](designs/closed-wall-e6/material-reference-data.json).
-PLA/PETG remain prototype options; ASA is the higher-temperature comparison.
-PA6-GF conditioning and annealing must match its source, and can alter fit.
-HDT and generic tensile strength do not establish a sustained-load rating.
-
-For common linear-viscoelastic compliance with unchanged contact:
+For common linear-viscoelastic compliance with unchanged contact,
 `δ(t,T) = K × J(t,T) = K / Ec(t,T)`.
-For the complete rack use **Ec ≥ K / (5 mm − dowel movement − wall/fastener movement)**.
-Retain the project screening target of **at least 1.0 GPa effective creep modulus**
-at the intended age and loaded temperature history; this is not a grade allowable.
+The complete rack requires **Ec ≥ K / (5 mm − dowel movement − mount movement)**.
+Keep the project screening target of **at least 1.0 GPa effective creep modulus**
+at the intended age and temperature history. It is not a grade allowable.
 
-The service envelope is **85°F sustained, plus 100°F for six loaded hours/year**.
-The [updated material report](analysis/e11/RESULTS.md) recalculates one-, five-
-and ten-year sensitivity cases using E11's coefficients. Published short-time
-creep examples do not establish a multi-year law for the printed grades. Thermal
-shifts and long-time tails remain explicit assumptions. Fast spool removal uses
-aged instantaneous unloading modulus, not reversed accumulated creep.
+The service envelope stays **85°F sustained and 100°F for six loaded hours/year**.
+Short-time creep examples, assumed long-time tails, HDT and generic tensile
+strength do not establish multi-year performance. PA6-GF dry/wet conditioning
+and annealing remain separate; fast spool unloading uses aged instantaneous
+modulus rather than reversal of accumulated creep.
 
 ## Loads, rods and installation
 
@@ -181,7 +171,7 @@ test arrangement, not a released safe count.**
 The **24 kg brief proof scenario** doubles the linear fields with unchanged
 contact; it is neither a damage simulation nor a performed proof test.
 
-| Hardware feature | E11 geometry |
+| Hardware feature | E12 geometry |
 |---|---:|
 | Nominal screw clearance | Ø5.2 mm, with printable roof relief |
 | Washer face to wall | 3.6 mm |
@@ -189,12 +179,12 @@ contact; it is neither a damage simulation nor a performed proof test.
 | Checked washer | Ø13 OD / Ø5.5 ID |
 | Screw axes in installed coordinates | Y = 164 / 40 mm, Z = 12 mm |
 
-The global model attracts about **208 N outward demand at the lower washer**
-and **15–16 N at the upper**, excluding tightening preload. The new 500 N
+The global model attracts about **203–208 N outward demand at the lower washer**
+and **15 N at the upper**, excluding tightening preload. The new 500 N
 upper-landing submodel gives **0.01207 mm** mean compression at E1000 and a
-**5.00 MPa** raw peak; its movement changes 1.66% on refinement.
+**5.00 MPa** raw peak; its movement changes 1.68% on refinement.
 
-![E11 screw-landing stress](analysis/e11/fem-landing.png)
+![E12 screw-landing stress](analysis/e12/fem-landing.png)
 
 Retain the backed 3.6 mm land. Mount against a flat, firm surface; a gap changes
 the land into a bending/punching problem. Use flat-bearing heads and washers,
@@ -218,11 +208,11 @@ wall/washer movement. Include the sustained 85°F condition and a six-hour loade
 snap opening and progressive embedment. A proof test or 1,000-hour trial alone
 does not establish ten-year creep-rupture life.
 
-[CAD rebuild and verification](designs/closed-wall-e11/README.md) ·
-[Analysis reproduction and solver checks](analysis/e11/README.md) ·
-[Machine-readable engineering summary](analysis/e11/engineering-summary.json).
+[CAD rebuild and verification](designs/closed-wall-e12/README.md) ·
+[Analysis reproduction and solver checks](analysis/e12/README.md) ·
+[Machine-readable engineering summary](analysis/e12/engineering-summary.json).
 
-The [E10 guide](E10-ENGINEERING-GUIDE.md), [E9 analysis](analysis/e9/RESULTS.md)
+The [deeper E11 guide](E11-ENGINEERING-GUIDE.md), [E10 guide](E10-ENGINEERING-GUIDE.md), [E9 analysis](analysis/e9/RESULTS.md)
 and [level-rail E8 guide](E8-ENGINEERING-GUIDE.md) are preserved as earlier
 baselines. [Design journal](DESIGN-JOURNAL.md) · [Design decisions](DESIGN.md) ·
 [Separate future open-web exploration](future/open-web/README.md).

@@ -1,0 +1,26 @@
+{
+  "model": "Plane stress, constant 2 mm thickness",
+  "patch_displacement_error_mm": 6.938893903907228e-18,
+  "patch_stress_error_MPa": 1.0658141036401503e-14,
+  "FE_energy_Nmm": 0.16000000000000036,
+  "analytic_energy_Nmm": 0.16,
+  "beam_analytic_bending_plus_shear_mm": 2.0162,
+  "beam_mesh_checks": [
+    {
+      "nx": 80,
+      "ny": 8,
+      "triangles": 1280,
+      "tip_mean_mm": 1.9043290338948418,
+      "relative_error": 0.05548604607933649,
+      "relative_free_residual": 9.190303375151772e-11
+    },
+    {
+      "nx": 320,
+      "ny": 32,
+      "triangles": 20480,
+      "tip_mean_mm": 2.004211019768119,
+      "relative_error": 0.005946324884377074,
+      "relative_free_residual": 9.609692038584607e-10
+    }
+  ]
+}

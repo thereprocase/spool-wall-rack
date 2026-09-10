@@ -2,6 +2,36 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## E12 — one-quarter protrusion, most of the measured benefit
+
+Reduced the added underside depth from 38 to 9.5 mm, meeting the preferred
+one-quarter target and the one-third maximum. A broader smooth blend produces
+an approximately 28.5 mm inner-center section and 207.51 x 217.50 mm print
+footprint. The fingers, relief pockets, R6 rigid shoulders, 50-degree mirrored
+finish, hardware and four continuous plates remain. No relief holes were added.
+
+![Quarter-depth E12](designs/closed-wall-e12/progress-exterior.png)
+
+![Depth tradeoff](designs/closed-wall-e12/depth-comparison.png)
+
+The explicit compactness requirement supersedes E11's adjacent-section margin
+criterion. The finished seat still improves over E10, but no longer exceeds
+both neighboring reference bands. Matched near-seat stress is 31.7-32.5% lower
+than E10 and front movement is only 5.6-7.1% higher than E11. The outer-only
+near-seat statistic improves about 35% over E10.
+
+All E12 3D/material/landing results were rerun. Fine front coefficients are
+K=2472.537 MPa mm (8 walls) and 2241.876 (10 walls). The accepted fields pass
+independent residual/force/moment gates; rejected 10-wall mesh attempts are
+recorded. Both OrcaSlicer audits pass the solid-band, wall and finger checks.
+
+![Updated E12 stress sections](analysis/e12/fem-sections.png)
+
+Next: configure the aligned helpers for the intended filament, verify actual
+rod fit and print the prototype, then measure immediate/sustained/hot movement.
+No physical or lifetime rating is claimed. [E12 guide](README.md) and
+[complete numerical results](analysis/e12/RESULTS.md).
+
 ## E11 — strong inner seat, 50° chamfers and refreshed FEA
 
 Deepened the underside beneath the inner rod by 38 mm, giving approximately
@@ -36,7 +66,7 @@ not calibrated printer profiles. The new print footprint is approximately
 207.51 × 246.00 mm. The concrete next step is to configure the delivered helpers
 in the intended filament profile, check measured rod fit, print the prototype
 and run the stated immediate/sustained/hot movement checks. No lifetime spool
-rating is assigned. [Current E11 guide](README.md) and [full results](analysis/e11/RESULTS.md).
+rating is assigned. [Archived E11 guide](E11-ENGINEERING-GUIDE.md) and [full results](analysis/e11/RESULTS.md).
 
 ## E10 — continuous chamfers after filleting
 

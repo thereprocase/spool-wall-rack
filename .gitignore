@@ -21,3 +21,10 @@ __pycache__/
 /analysis/e11/*.brep
 /analysis/e11/*w-h*.npz
 !/analysis/e11/*-solution.npz
+
+# E12 local generation caches; retain solved fields and the final CAD handoff.
+/analysis/e12/.work/
+/designs/closed-wall-e12/.work/
+/analysis/e12/*.brep
+/analysis/e12/*w-h*.npz
+!/analysis/e12/*-solution.npz

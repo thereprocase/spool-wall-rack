@@ -1,0 +1,8 @@
+{
+  "patch_displacement_error_mm": 2.2551405187698492e-17,
+  "patch_stress_error_MPa": 1.687538997430238e-14,
+  "FE_energy_Nmm": 0.23999999999999805,
+  "analytic_energy_Nmm": 0.24,
+  "PARDISO_affine_displacement_error_mm": 2.0816681711721685e-17,
+  "PARDISO_vs_SuperLU_displacement_difference_mm": 5.204170427930421e-18
+}

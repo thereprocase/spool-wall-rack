@@ -1,0 +1,86 @@
+{
+  "name": "e12-10w-h1-full",
+  "revision": "E12",
+  "walls": 10,
+  "mesh_h_mm": 1,
+  "load_case": "full",
+  "finished_STL_sha256": "4bcd52195fb359808f4af0fb59d35818cc3b70b76e66a36990e2f9bf204dc3eb",
+  "nodes": 23504,
+  "triangles": 45790,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "relative_free_residual": 7.409113290440473e-11,
+  "contact_iterations": 10,
+  "applied_force_N": [
+    -1.887379141862766e-15,
+    -117.71999999999997
+  ],
+  "reaction_N": [
+    4.113751468106091e-10,
+    117.72000000016101
+  ],
+  "applied_moment_Nmm": -15223.829837285342,
+  "reaction_moment_Nmm": 15223.829837286079,
+  "raw_vm_max_MPa_not_allowable": 5.68083970451087,
+  "regions": {
+    "near_rear_seat_fixed_window": {
+      "vm_volume_p99_MPa": 4.136288930635667,
+      "raw_vm_max_MPa": 4.680420323494777,
+      "max_principal_p99_MPa": 4.052701465784611,
+      "peak_xy_mm": [
+        80.60905927469308,
+        -9.216658157018498
+      ]
+    },
+    "reinforced_zone": {
+      "vm_volume_p99_MPa": 3.839490417693846,
+      "raw_vm_max_MPa": 5.68083970451087,
+      "max_principal_p99_MPa": 3.6577392892174005,
+      "peak_xy_mm": [
+        72.71567678570342,
+        -0.6550306537080522
+      ]
+    },
+    "forearm": {
+      "vm_volume_p99_MPa": 1.648137140692034,
+      "raw_vm_max_MPa": 2.075506009577882,
+      "max_principal_p99_MPa": 1.3804637086077114,
+      "peak_xy_mm": [
+        115.54589052434297,
+        -34.81347431901412
+      ]
+    },
+    "knee": {
+      "vm_volume_p99_MPa": 3.4814994657021407,
+      "raw_vm_max_MPa": 5.68083970451087,
+      "max_principal_p99_MPa": 3.109253419519457,
+      "peak_xy_mm": [
+        72.71567678570342,
+        -0.6550306537080522
+      ]
+    }
+  },
+  "patches": {
+    "rear_seat": {
+      "force_N": [
+        -31.293062243765473,
+        -75.1207488871594
+      ],
+      "mean_displacement_mm_at_E1000": [
+        0.03654035048377726,
+        -0.2768042695159059
+      ]
+    },
+    "front_seat": {
+      "force_N": [
+        31.293062243765473,
+        -42.59925111284059
+      ],
+      "mean_displacement_mm_at_E1000": [
+        0.42678148931788606,
+        -2.222830499890766
+      ]
+    }
+  },
+  "limitations": "Comparative plane-stress screen with finished layer-integrated print material.\n\nReuses the repository's plane-stress constitutive law and unilateral wall\ncontact. Thickness is integrated from actual chamfered STL layer outlines,\nwith 8/10 contour walls, four solid plates, and zero sparse-infill credit.\nWasher/shank restraints are projected onto the wall, as in the prior 2D model.\nThis cannot resolve through-width contact stresses, FFF orthotropy or creep.\n"
+}
