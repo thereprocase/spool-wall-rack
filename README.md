@@ -220,7 +220,9 @@ This reduces wall moment about **8.6%** and the net moment about the rear rail a
 
 ![Raised-front statics study](analysis/e8/raised-front-statics.png)
 
-The cost is greater rear-seat vertical load. That seat is already an important flexible region. Moving the front seat without remaking its supporting arm and rotating both snap openings to the new contact directions would be incomplete. The closer spool also needs a renewed wall-arm clearance sweep over the full diameter range.
+**The unmodified back arm fails the raised-front clearance check.** With the front rail +12 mm, nominal clearance is about 4.65 mm for a 180 mm spool, only 0.22 mm for a 200 mm spool, and **−9.45 mm (interference)** for a 220 mm spool. These values come from point-to-segment distances on the exported E8 profile, using nominal dowel geometry. [Clearance results](analysis/e8/raised-front-clearance.json). Reshape the back arm toward the wall or move the rails outward before adopting this option; moving the rails outward returns some of the moment reduction.
+
+The cost also includes greater rear-seat vertical load. That seat is already an important flexible region. Moving the front seat without remaking its supporting arm and rotating both snap openings to the new contact directions would be incomplete. The closer spool also needs a renewed wall-arm clearance sweep over the full diameter range.
 
 **This option is not yet printable or FEM-qualified.** Complete its geometry, contact/clearance checks and load cases as a separate revision before replacing E8. Cosmetic camber remains an optional separate adjustment: half of a defensible one-year **front-minus-rear differential sag**, not half an unsupported life estimate.
 
