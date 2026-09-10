@@ -28,7 +28,7 @@ def render3(name,output,landing=False):
  fig=plt.figure(figsize=(12,8),layout='constrained');ax=fig.add_subplot(111,projection='3d');cap=6 if landing else 8;norm=Normalize(0,cap);cmap=plt.get_cmap('turbo')
  c=Poly3DCollection(xyz[faces],facecolors=cmap(norm(values)),edgecolors='none',antialiased=False,rasterized=True);ax.add_collection3d(c);lo=xyz.min(0);hi=xyz.max(0)
  ax.set(xlim=(lo[0],hi[0]),ylim=(lo[1],hi[1]),zlim=(lo[2],hi[2]));ax.set_box_aspect(hi-lo);ax.view_init(elev=20,azim=-35 if landing else -60)
- ax.set_xlabel('Projection X (mm)',labelpad=10);ax.set_ylabel('Width (mm)',labelpad=12);ax.set_zlabel('Height Y (mm)',labelpad=10);ax.set_yticks([0,12,24])
+ ax.set_xlabel('Projection X (mm)',labelpad=2 if landing else 10);ax.set_ylabel('Width (mm)',labelpad=12);ax.set_zlabel('Height Y (mm)',labelpad=10);ax.set_yticks([0,12,24])
  fig.colorbar(plt.cm.ScalarMappable(norm=norm,cmap=cmap),ax=ax,shrink=.65,pad=.04,label='Element von Mises stress (MPa)')
  fig.suptitle('3D landing FEM • 500 N washer compression' if landing else '3D bracket FEM • 12 kg equivalent load',fontsize=17,fontweight='bold')
  fig.supxlabel('Actual 3.6 mm land with flat rear support; nominal Ø13 / Ø5.5 washer patch.\nConstant force scenario; installed preload can relax.' if landing else 'Actual chamfered exterior, ideal contour walls and four 1.2 mm plates; sparse infill removed.\nCompression-only wall; rigid washer and shank restraints. Undeformed geometry. Peaks are not allowables.',fontsize=9)
@@ -62,7 +62,7 @@ def main():
   coarse=f'print-material-{n}w-h3';fine=f'print-material-{n}w-h2'
   if (D/f'{fine}-results.json').exists():
    a=read(coarse);b=read(fine);da=-a['patches']['front_seat']['mean_displacement_mm_at_E1000'][1];db=-b['patches']['front_seat']['mean_displacement_mm_at_E1000'][1]
-   summary['mesh_checks'].append({'walls':n,'coarse_tets':a['tetrahedra'],'fine_tets':b['tetrahedra'],'front_displacement_change_percent':100*(db/da-1),'coarse_VM_p99_MPa':a['vm_volume_p99_MPa'],'fine_VM_p99_MPa':b['vm_volume_p99_MPa'],'coarse_VM_max_MPa':a['vm_max_MPa_not_allowable'],'fine_VM_max_MPa':b['vm_max_MPa_not_allowable']})
+   summary['mesh_checks'].append({'rear_seat_p99_coarse_MPa':a['regions']['rear_seat']['vm_p99_MPa'],'rear_seat_p99_fine_MPa':b['regions']['rear_seat']['vm_p99_MPa'],'walls':n,'coarse_tets':a['tetrahedra'],'fine_tets':b['tetrahedra'],'front_displacement_change_percent':100*(db/da-1),'coarse_VM_p99_MPa':a['vm_volume_p99_MPa'],'fine_VM_p99_MPa':b['vm_volume_p99_MPa'],'coarse_VM_max_MPa':a['vm_max_MPa_not_allowable'],'fine_VM_max_MPa':b['vm_max_MPa_not_allowable']})
  # Figure 26 visually transcribed spectrum, seconds; normalized example only.
  tau=np.array([1,10,100,1000,10000,100000.]);A=np.array([.005,.010,.015,.010,.020,.080])
  def G(t):return 1+np.sum(A*(1-np.exp(-np.asarray(t)[...,None]/tau)),axis=-1)
@@ -95,7 +95,7 @@ def main():
  text+='## Numerical checks\n\n'
  for c in summary['mesh_checks']:text+=f'- {c["walls"]} walls: {c["coarse_tets"]:,} → {c["fine_tets"]:,} tetrahedra; front movement changes {c["front_displacement_change_percent"]:.2f}%. Volume p99 stress: {c["coarse_VM_p99_MPa"]:.2f} → {c["fine_VM_p99_MPa"]:.2f} MPa. Raw peak: {c["coarse_VM_max_MPa"]:.2f} → {c["fine_VM_max_MPa"]:.2f} MPa.\n'
  if not summary['mesh_checks']:text+='Whole-bracket refinement is pending.\n'
- text+='\nA percentile is a field summary, not a stress allowable. Restraint-edge peaks and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.\n\n![2D FEM](fem-2d.png)\n\n![3D FEM](fem-3d.png)\n\n![Landing FEM](fem-landing.png)\n\n![Creep sensitivity](creep-sensitivity.png)\n\n![Raised-front study](raised-front-statics.png)\n\n'
+ text+='\nA percentile is a field summary, not a stress allowable. Global displacement changes by about 5–6% in this comparison; this is not proof of asymptotic convergence. Rear-seat regional p99 stresses change more than global percentiles. Tiny cells at tunnel/chamfer intersections, sharp analysis-core transitions and restraint edges affect peaks; actual sliced radii and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.\n\n![2D FEM](fem-2d.png)\n\n![3D FEM](fem-3d.png)\n\n![Landing FEM](fem-landing.png)\n\n![Creep sensitivity](creep-sensitivity.png)\n\n![Raised-front study](raised-front-statics.png)\n\n'
  text+='## Conditional one-, five- and ten-year calculation\n\n| Years | Assumed extra compliance / year | Total compliance multiplier | PLA movement (mm) | PETG movement (mm) |\n|---:|---:|---:|---:|---:|\n'
  for c in summary['planning_scenarios']:text+=f'| {c["years"]} | {c["assumed_unmeasured_linear_compliance_tail_per_year"]:.2f} | {c["G"]:.2f} | {c["PLA_front_mm"]:.2f} | {c["PETG_front_mm"]:.2f} |\n'
  text+='\nThese curves intentionally demonstrate different long-term continuations that a short test cannot distinguish. They are neither PLA nor PETG life predictions at 85°F. No creep-rupture allowable is inferred.\n'

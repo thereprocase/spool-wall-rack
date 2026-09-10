@@ -75,6 +75,8 @@
   ],
   "mesh_checks": [
     {
+      "rear_seat_p99_coarse_MPa": 6.391514736523677,
+      "rear_seat_p99_fine_MPa": 7.591877688179682,
       "walls": 8,
       "coarse_tets": 119893,
       "fine_tets": 203934,
@@ -85,6 +87,8 @@
       "fine_VM_max_MPa": 25.45455050663992
     },
     {
+      "rear_seat_p99_coarse_MPa": 6.283150393628056,
+      "rear_seat_p99_fine_MPa": 7.043575744246467,
       "walls": 10,
       "coarse_tets": 116335,
       "fine_tets": 203893,

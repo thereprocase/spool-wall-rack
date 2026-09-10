@@ -17,7 +17,7 @@ Moduli are room-temperature reference values. The creep-modulus limits apply to 
 - 8 walls: 119,893 → 203,934 tetrahedra; front movement changes 4.92%. Volume p99 stress: 5.18 → 5.25 MPa. Raw peak: 21.79 → 25.45 MPa.
 - 10 walls: 116,335 → 203,893 tetrahedra; front movement changes 6.07%. Volume p99 stress: 4.56 → 4.61 MPa. Raw peak: 11.57 → 27.26 MPa.
 
-A percentile is a field summary, not a stress allowable. Restraint-edge peaks and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.
+A percentile is a field summary, not a stress allowable. Global displacement changes by about 5–6% in this comparison; this is not proof of asymptotic convergence. Rear-seat regional p99 stresses change more than global percentiles. Tiny cells at tunnel/chamfer intersections, sharp analysis-core transitions and restraint edges affect peaks; actual sliced radii and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.
 
 ![2D FEM](fem-2d.png)
 

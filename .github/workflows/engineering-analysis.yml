@@ -8,7 +8,6 @@ on:
       - '.github/workflows/engineering-analysis.yml'
 permissions:
   contents: write
-  actions: read
 concurrency:
   group: e8-engineering
   cancel-in-progress: false
@@ -32,23 +31,22 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y libglu1-mesa libxft2 libxrender1 libxext6
           python -m pip install -r analysis/e8/requirements.txt
-      - name: Recover completed coarse solution checkpoint
-        uses: actions/download-artifact@v4
-        with:
-          name: e8-analysis-diagnostics
-          run-id: 34511340122
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path: ${{ runner.temp }}/e8-coarse
-      - name: Restore numerical outputs
-        run: |
-          cp "${{ runner.temp }}/e8-coarse/"*results.json analysis/e8/
-          cp "${{ runner.temp }}/e8-coarse/"*solution.npz analysis/e8/
-          cp "${{ runner.temp }}/e8-coarse/"*.png analysis/e8/
       - name: Build analysis-only material domains
         run: python analysis/e8/build_analysis_geometry.py
       - name: Solve reduced and coarse 3D models
         run: |
           python analysis/e8/verify_solver.py
+          python analysis/e8/solve2d.py 8 2
+          python analysis/e8/solve2d.py 10 2
+          python analysis/e8/solve2d.py 8 1
+          python analysis/e8/solve2d.py 6 2
+          python analysis/e8/solve2d.py 12 2
+          python analysis/e8/mesh_model.py print-material 8 3
+          python analysis/e8/solve3d.py print-material-8w-h3
+          python analysis/e8/mesh_model.py print-material 10 3
+          python analysis/e8/solve3d.py print-material-10w-h3
+          python analysis/e8/mesh_model.py landing 8 1
+          python analysis/e8/solve3d.py landing-8w-h1
           python analysis/e8/report.py
       - name: Publish solved coarse checkpoint
         run: |

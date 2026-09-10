@@ -12,7 +12,7 @@ The **front rail raised 12 mm** is a separate statics study, described below. It
 
 Use **8 walls for the PLA prototype or 10 for the PETG prototype**, plus the four 1.2 mm solid plates described below. At the assumed extrusion widths, these provide about **3.27 and 4.08 mm** of contour wall. These are deliberate prototype settings; they are not material-independent lifetime ratings.
 
-The initial whole-bracket calculations give approximately **1.2 mm front-seat movement for PLA and 1.6 mm for PETG** at the 12 kg equivalent bracket load. That initial flexibility is acceptable against the project serviceability criteria:
+The initial whole-bracket calculations give approximately **1.2 mm front-seat movement for PLA and 1.7 mm for PETG** at the 12 kg equivalent bracket load. That initial flexibility is acceptable against the project serviceability criteria:
 
 - **5 mm maximum total movement under full load**, including creep.
 - **1 mm maximum change when adding or removing one full spool.**
@@ -118,7 +118,7 @@ Both models use compression-only wall contact. Rigid washer patches restrain out
 
 **Takeaways:** the reduced section beneath the rear dowel seat contributes substantial rotation. The earlier 0.22/0.27 mm numbers described only an idealized forearm and must not be used as whole-bracket movement. The first 8-wall 3D solve placed about 48% of the elastic strain energy in the rear-seat region, versus about 14% in the forward arm region. The recessed lower fixing also attracts significant outward reaction; assuming the upper screw alone takes the overturning couple misses that connection behavior.
 
-The initial 8-wall mesh gave a rear-seat regional volume-p99 von Mises stress around 6.3 MPa. Raw constraint-edge peaks depend on mesh and restraint idealization; a separate 10-wall mesh produced a higher raw peak despite its thicker walls. **Neither raw peaks nor percentile summaries are material allowables.** Use the [regenerated results](analysis/e8/RESULTS.md) for current mesh comparisons, actual stress fields, reactions and residuals.
+The refined rear-seat regional volume-p99 von Mises stresses are approximately **7.6 MPa for 8 walls and 7.0 MPa for 10 walls**. Refinement increased these regional values by about 19% and 12%, while front movement increased about 5% and 6%. Global field percentiles changed less. The stress field is not demonstrated to be asymptotically converged. Raw peaks depend on tiny mesh cells at tool-tunnel/chamfer intersections as well as idealized restraint edges. For example, the regenerated 8-wall coarse maximum sits in a roughly 0.0000046 mm³ element at a tunnel-mouth intersection; that value is not a reliable rupture demand. The refined maxima move into the analysis-only inner-wall transitions beneath the rear seat, reaching approximately 25–27 MPa in very small cells. Those sharp core transitions approximate slicer-generated geometry; this analysis neither resolves their physical printed radii nor establishes a notch/rupture allowable. Different meshes can reverse the ranking of raw peak stress between the 8- and 10-wall cases. **Neither raw peaks nor percentile summaries are material allowables.** Use the [regenerated results](analysis/e8/RESULTS.md) for current mesh comparisons, actual stress fields, reactions and residuals.
 
 An affine uniaxial patch test checks stiffness assembly, recovered stress and strain energy. Whole-bracket force/moment balance, residuals and refinement checks accompany the result files. A mesh comparison supports numerical interpretation; it does not validate years of service.
 
@@ -128,16 +128,20 @@ For a constant load and a common linear-viscoelastic compliance throughout a mod
 
 `δ(t,T) = K × J(t,T) = K / Ec(t,T)`
 
-Here K is the geometry/load coefficient in MPa·mm, J is creep compliance in MPa⁻¹ and Ec is the **secant creep modulus**, not the instantaneous unloading modulus. For the initial level-rail solves:
+Here K is the geometry/load coefficient in MPa·mm, J is creep compliance in MPa⁻¹ and Ec is the **secant creep modulus**, not the instantaneous unloading modulus. For the refined level-rail solves:
 
 | Case | K, approximately | Initial movement | Ec needed for 5 mm bracket-only movement | Maximum compliance growth relative to reference E |
 |---|---:|---:|---:|---:|
-| PLA, 8 walls | 3,992 MPa·mm | 1.17 mm | 798 MPa | 4.29× |
-| PETG, 10 walls | 3,630 MPa·mm | 1.57 mm | 726 MPa | 3.18× |
+| PLA, 8 walls | 4,226 MPa·mm | 1.23 mm | 845 MPa | 4.05× |
+| PETG, 10 walls | 3,839 MPa·mm | 1.66 mm | 768 MPa | 3.01× |
 
 Refinement updates live in [RESULTS.md](analysis/e8/RESULTS.md). These thresholds spend the full 5 mm on the bracket. For the complete rack, use **Ec ≥ K / (5 mm − dowel movement − wall/fastener movement)**. The earlier 1-inch wood-rail example gave about 0.22 mm instantaneous sag with an assumed 8 GPa modulus; wood grade, moisture, defects and long-term behavior remain installation inputs.
 
-A one-roll change assigning an entire 1.25 kg reaction to one bracket gives approximately **0.12 mm for PLA and 0.16 mm for PETG** with the reference instantaneous modulus. For simple spans and the stated two-equal-span geometry, a single point load's reaction at the relevant support does not exceed the whole load. This estimate excludes overhangs, unusual continuity and handling impact. Fast removal of a roll depends on the aged unloading modulus; it is not correctly modeled by simply reversing all accumulated creep.
+For a material-data screening target, use **at least 1.0 GPa effective creep modulus at the intended age and loaded temperature history**. This rounds above the bracket-only thresholds and preserves some movement budget for the dowels, mounting and reaction redistribution. It is a project screening target, not a published grade allowable or a rupture criterion.
+
+The tabulated correspondence calculation keeps the original seat reactions. Deformation changes those reactions: with a 200 mm spool and the front seat 4.65 mm lower relative to the rear, the front vertical load share rises from 50% to about 55.8%. That modest positive feedback needs a deformed-contact check near the movement limit; do not treat the linear threshold as an exact nonlinear capacity.
+
+A one-roll change assigning an entire 1.25 kg reaction to one bracket gives approximately **0.13 mm for PLA and 0.17 mm for PETG** with the reference instantaneous modulus. For simple spans and the stated two-equal-span geometry, a single point load's reaction at the relevant support does not exceed the whole load. This estimate excludes overhangs, unusual continuity and handling impact. Fast removal of a roll depends on the aged unloading modulus; it is not correctly modeled by simply reversing all accumulated creep.
 
 Even a settled, linear response at the full 5 mm limit gives a proportional one-roll change of about 0.52 mm for this load assumption. The 5 mm full-load criterion is therefore more restrictive than the 1 mm per-roll criterion in that simplified case.
 
@@ -199,7 +203,7 @@ The local 3D submodel uses the actual **upper 3.6 mm land**, a 500 N distributed
 
 **Retain the 3.6 mm land for now.** The backed compression case does not justify making it thicker. More thickness would add creep compression travel and violate the compact clamp intent without addressing the governing bracket region. This is a reasoned decision to retain the geometry, not a claim that every washer, tightening force or wall surface is acceptable.
 
-The whole-bracket service model checks both fixings. The initial 8-wall solve attracted approximately 182 N outward reaction at the lower washer and 26 N at the upper; those demands depend on wall contact and connection stiffness. They replace the earlier upper-screw-only assumption for this specific model. They do not include an arbitrary tightening preload, and maxima from separate cases cannot simply be added as scalar von Mises stresses.
+The whole-bracket service model checks both fixings. The refined 8-wall solve attracted approximately 187 N outward reaction at the lower washer and 25 N at the upper; those demands depend on wall contact and connection stiffness. They replace the earlier upper-screw-only assumption for this specific model. They do not include an arbitrary tightening preload, and maxima from separate cases cannot simply be added as scalar von Mises stresses.
 
 Mount against a flat, firm surface with full back contact. A gap behind a landing changes it into a bending/punching problem and invalidates the backed compression case. Seat the washer firmly without crushing the print; inspect for embedment and loosening. The load path does not rely on sustained clamp friction alone.
 
