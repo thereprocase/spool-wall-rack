@@ -2,6 +2,31 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## E13 — angular reinforcement and finer stress meshes
+
+Replaced the broad curved underside with straight 11 mm-deep flanks into a
+short flat, 1.5 mm deeper than E12. Small corner blends keep the faceted look.
+The 207.51 × 219 mm body retains the fingers, relief pockets, rigid shoulders,
+mirrored 50-degree finish, screw geometry and four continuous plates.
+
+![Angular E13](designs/closed-wall-e13/progress-exterior.png)
+
+![Outline change](designs/closed-wall-e13/depth-comparison.png)
+
+The matched reduced model improves near-seat stress by 12–13% versus E12,
+40–41% versus E10, with about 16% less movement than E12. Three new global mesh
+levels per wall count and two new fine E12 baselines assess the rest of the
+stress field. Raw peaks and their cell locations/volumes are retained; the
+package does not claim all stress concentrations have disappeared.
+
+![Refined stress sections](analysis/e13/fem-sections.png)
+
+Current front coefficients are K=2147.972 MPa mm (8 walls) and 1936.610 (10).
+All ten 3D fields pass independent residual, force and moment checks; geometry
+and both OrcaSlicer path audits pass. Physical fit, insertion, loaded movement
+and sustained/hot qualification are the next steps. No lifetime rating is
+assigned. [Current guide](README.md) · [Hotspot evidence](analysis/e13/HOTSPOTS.md).
+
 ## E12 — one-quarter protrusion, most of the measured benefit
 
 Reduced the added underside depth from 38 to 9.5 mm, meeting the preferred
@@ -29,7 +54,7 @@ recorded. Both OrcaSlicer audits pass the solid-band, wall and finger checks.
 
 Next: configure the aligned helpers for the intended filament, verify actual
 rod fit and print the prototype, then measure immediate/sustained/hot movement.
-No physical or lifetime rating is claimed. [E12 guide](README.md) and
+No physical or lifetime rating is claimed. [E12 guide](E12-ENGINEERING-GUIDE.md) and
 [complete numerical results](analysis/e12/RESULTS.md).
 
 ## E11 — strong inner seat, 50° chamfers and refreshed FEA

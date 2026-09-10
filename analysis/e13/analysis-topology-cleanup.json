@@ -1,0 +1,24 @@
+[
+  {
+    "walls": 8,
+    "before_faces": 8459,
+    "after_faces": 6289,
+    "before_edges": 24863,
+    "after_edges": 18929,
+    "before_volume_mm3": 107887.08102064802,
+    "after_volume_mm3": 107887.08102157766,
+    "valid": true,
+    "solid_count": 1
+  },
+  {
+    "walls": 10,
+    "before_faces": 8134,
+    "after_faces": 6052,
+    "before_edges": 23900,
+    "after_edges": 18219,
+    "before_volume_mm3": 119957.80113486761,
+    "after_volume_mm3": 119957.80113581031,
+    "valid": true,
+    "solid_count": 1
+  }
+]

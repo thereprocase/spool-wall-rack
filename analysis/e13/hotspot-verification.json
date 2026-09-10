@@ -1,0 +1,1202 @@
+{
+  "scope": "Matched fine-mesh stress comparison, raw peaks and three-level refinement.\n\nAll finite elements are retained, including tiny cells and restraint-edge peaks.\nRegion percentiles and overstress volumes are diagnostics, not allowables.\n",
+  "reference_load_kg_equivalent": 12,
+  "matched_comparison_h_mm": 1,
+  "comparisons": [
+    {
+      "walls": 8,
+      "region": "whole_body",
+      "E12_p99_MPa": 3.1647670249923165,
+      "E13_p99_MPa": 2.8406855897993832,
+      "p99_change_percent": -10.240293602456251,
+      "E12_raw_peak_MPa": 16.540390754728985,
+      "E13_raw_peak_MPa": 25.54816991884095,
+      "E12_volume_above_6MPa_mm3": 0.7473372680682373,
+      "E13_volume_above_6MPa_mm3": 1.6070647343943563
+    },
+    {
+      "walls": 8,
+      "region": "inner_seat",
+      "E12_p99_MPa": 4.38545297176777,
+      "E13_p99_MPa": 3.80291242651921,
+      "p99_change_percent": -13.283474911229954,
+      "E12_raw_peak_MPa": 10.135059244351368,
+      "E13_raw_peak_MPa": 16.674991735820853,
+      "E12_volume_above_6MPa_mm3": 0.003887677964109384,
+      "E13_volume_above_6MPa_mm3": 0.0016063870972049781
+    },
+    {
+      "walls": 8,
+      "region": "knee",
+      "E12_p99_MPa": 3.71154956165464,
+      "E13_p99_MPa": 3.3660233613926898,
+      "p99_change_percent": -9.309486362022646,
+      "E12_raw_peak_MPa": 16.540390754728985,
+      "E13_raw_peak_MPa": 25.54816991884095,
+      "E12_volume_above_6MPa_mm3": 0.09499268391306978,
+      "E13_volume_above_6MPa_mm3": 0.007858935167446391
+    },
+    {
+      "walls": 8,
+      "region": "outer_arm",
+      "E12_p99_MPa": 2.106801500177001,
+      "E13_p99_MPa": 1.6978860493460493,
+      "p99_change_percent": -19.409301293766745,
+      "E12_raw_peak_MPa": 3.230612603385918,
+      "E13_raw_peak_MPa": 4.1277822130887305,
+      "E12_volume_above_6MPa_mm3": 0.0,
+      "E13_volume_above_6MPa_mm3": 0.0
+    },
+    {
+      "walls": 8,
+      "region": "upper_landing",
+      "E12_p99_MPa": 0.9463839844705405,
+      "E13_p99_MPa": 0.9574138976000818,
+      "p99_change_percent": 1.165479690118798,
+      "E12_raw_peak_MPa": 3.6709046958703624,
+      "E13_raw_peak_MPa": 1.829319299300073,
+      "E12_volume_above_6MPa_mm3": 0.0,
+      "E13_volume_above_6MPa_mm3": 0.0
+    },
+    {
+      "walls": 8,
+      "region": "lower_landing",
+      "E12_p99_MPa": 3.920480882601445,
+      "E13_p99_MPa": 3.9139986840609526,
+      "p99_change_percent": -0.16534192448838247,
+      "E12_raw_peak_MPa": 10.93071602479607,
+      "E13_raw_peak_MPa": 9.620821157086858,
+      "E12_volume_above_6MPa_mm3": 0.6174755677708536,
+      "E13_volume_above_6MPa_mm3": 1.5659424959045067
+    },
+    {
+      "walls": 10,
+      "region": "whole_body",
+      "E12_p99_MPa": 2.8562870536532023,
+      "E13_p99_MPa": 2.5732081746094755,
+      "p99_change_percent": -9.91072933939423,
+      "E12_raw_peak_MPa": 26.89599272142722,
+      "E13_raw_peak_MPa": 24.156638040338986,
+      "E12_volume_above_6MPa_mm3": 1.578729704094923,
+      "E13_volume_above_6MPa_mm3": 1.7268008944652744
+    },
+    {
+      "walls": 10,
+      "region": "inner_seat",
+      "E12_p99_MPa": 4.10854314607802,
+      "E13_p99_MPa": 3.5654570641947476,
+      "p99_change_percent": -13.218458771735131,
+      "E12_raw_peak_MPa": 12.777938771739633,
+      "E13_raw_peak_MPa": 13.337775380670431,
+      "E12_volume_above_6MPa_mm3": 0.0031618696777265323,
+      "E13_volume_above_6MPa_mm3": 0.000711393249006679
+    },
+    {
+      "walls": 10,
+      "region": "knee",
+      "E12_p99_MPa": 3.3349888385161766,
+      "E13_p99_MPa": 2.989062316055772,
+      "p99_change_percent": -10.372644083999882,
+      "E12_raw_peak_MPa": 26.89599272142722,
+      "E13_raw_peak_MPa": 24.156638040338986,
+      "E12_volume_above_6MPa_mm3": 0.0409704494554694,
+      "E13_volume_above_6MPa_mm3": 0.024938019065542525
+    },
+    {
+      "walls": 10,
+      "region": "outer_arm",
+      "E12_p99_MPa": 1.9125842656528618,
+      "E13_p99_MPa": 1.5255674441365796,
+      "p99_change_percent": -20.23528209797196,
+      "E12_raw_peak_MPa": 4.269623812023626,
+      "E13_raw_peak_MPa": 2.60667601180263,
+      "E12_volume_above_6MPa_mm3": 0.0,
+      "E13_volume_above_6MPa_mm3": 0.0
+    },
+    {
+      "walls": 10,
+      "region": "upper_landing",
+      "E12_p99_MPa": 0.9853051650876451,
+      "E13_p99_MPa": 0.9742233019827914,
+      "p99_change_percent": -1.1247137940120222,
+      "E12_raw_peak_MPa": 1.8623869580468604,
+      "E13_raw_peak_MPa": 1.955919458579657,
+      "E12_volume_above_6MPa_mm3": 0.0,
+      "E13_volume_above_6MPa_mm3": 0.0
+    },
+    {
+      "walls": 10,
+      "region": "lower_landing",
+      "E12_p99_MPa": 3.8834387362594347,
+      "E13_p99_MPa": 3.919514029534146,
+      "p99_change_percent": 0.9289522952397489,
+      "E12_raw_peak_MPa": 11.176377808895031,
+      "E13_raw_peak_MPa": 11.412894125040536,
+      "E12_volume_above_6MPa_mm3": 1.503592406419037,
+      "E13_volume_above_6MPa_mm3": 1.670170143730521
+    }
+  ],
+  "fine_fields": [
+    {
+      "mesh": "baseline-e12-print-material-8w-h1",
+      "gmsh_3d_algorithm": 10,
+      "nodes": 204266,
+      "tetrahedra": 679700,
+      "front_mm_at_E1000": 2.5480614739504923,
+      "relative_free_residual": 3.9677186178262324e-08,
+      "solution_sha256": "9bb998b7a10dbc292e020fefcac4136921d17a2937ebc23c5c374dd8e1a8f251",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 3.1647670249923165,
+          "p999_MPa": 4.449839730913115,
+          "raw_peak_MPa": 16.540390754728985,
+          "raw_peak_cell_center_mm": [
+            74.63192357078903,
+            -7.442381350402296,
+            1.421946268081571
+          ],
+          "raw_peak_cell_volume_mm3": 3.955002952451293e-05,
+          "total_region_volume_mm3": 106132.61351493653,
+          "volume_above_6MPa_mm3": 0.7473372680682373,
+          "fraction_above_6MPa": 7.041542117146311e-06
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 4.38545297176777,
+          "p999_MPa": 4.8742349297283125,
+          "raw_peak_MPa": 10.135059244351368,
+          "raw_peak_cell_center_mm": [
+            96.69970657802209,
+            -11.468067560938156,
+            1.9562203165990677
+          ],
+          "raw_peak_cell_volume_mm3": 0.00022742198342156776,
+          "total_region_volume_mm3": 5586.277009245084,
+          "volume_above_6MPa_mm3": 0.003887677964109384,
+          "fraction_above_6MPa": 6.959336169107653e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.71154956165464,
+          "p999_MPa": 4.738116388754089,
+          "raw_peak_MPa": 16.540390754728985,
+          "raw_peak_cell_center_mm": [
+            74.63192357078903,
+            -7.442381350402296,
+            1.421946268081571
+          ],
+          "raw_peak_cell_volume_mm3": 3.955002952451293e-05,
+          "total_region_volume_mm3": 18339.925773788862,
+          "volume_above_6MPa_mm3": 0.09499268391306978,
+          "fraction_above_6MPa": 5.179556617880747e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 2.106801500177001,
+          "p999_MPa": 2.4212696206994995,
+          "raw_peak_MPa": 3.230612603385918,
+          "raw_peak_cell_center_mm": [
+            114.38444191962121,
+            -35.25425400566762,
+            2.3048390709921254
+          ],
+          "raw_peak_cell_volume_mm3": 7.429586161709217e-06,
+          "total_region_volume_mm3": 16941.566381899407,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9463839844705405,
+          "p999_MPa": 1.1677739165509926,
+          "raw_peak_MPa": 3.6709046958703624,
+          "raw_peak_cell_center_mm": [
+            3.4521183288016424,
+            156.3889271618907,
+            9.284126592845073
+          ],
+          "raw_peak_cell_volume_mm3": 0.0004258935963366049,
+          "total_region_volume_mm3": 2587.943702179852,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.920480882601445,
+          "p999_MPa": 5.543639974299978,
+          "raw_peak_MPa": 10.93071602479607,
+          "raw_peak_cell_center_mm": [
+            3.4121721492349844,
+            32.29974967633295,
+            13.790732086263757
+          ],
+          "raw_peak_cell_volume_mm3": 0.0004489360042734443,
+          "total_region_volume_mm3": 2573.2572291336887,
+          "volume_above_6MPa_mm3": 0.6174755677708536,
+          "fraction_above_6MPa": 0.00023995874208764296
+        }
+      ]
+    },
+    {
+      "mesh": "print-material-8w-h1",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 211253,
+      "tetrahedra": 757028,
+      "front_mm_at_E1000": 2.14797177826963,
+      "relative_free_residual": 6.803743728856396e-09,
+      "solution_sha256": "449a568d6182c8a546b2ddcaeb7714c3d17debe44dc1571a69c41f57f9a2bf7a",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.8406855897993832,
+          "p999_MPa": 3.960324803209849,
+          "raw_peak_MPa": 25.54816991884095,
+          "raw_peak_cell_center_mm": [
+            70.98581328980883,
+            1.4864236212724853,
+            1.6234950997773623
+          ],
+          "raw_peak_cell_volume_mm3": 2.3719255136021096e-05,
+          "total_region_volume_mm3": 107887.08103133051,
+          "volume_above_6MPa_mm3": 1.6070647343943563,
+          "fraction_above_6MPa": 1.4895803269787817e-05
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.80291242651921,
+          "p999_MPa": 4.184279320817714,
+          "raw_peak_MPa": 16.674991735820853,
+          "raw_peak_cell_center_mm": [
+            108.21662860683645,
+            -5.880308768874441,
+            22.593246920782256
+          ],
+          "raw_peak_cell_volume_mm3": 2.0514054846089164e-05,
+          "total_region_volume_mm3": 5587.0962520725,
+          "volume_above_6MPa_mm3": 0.0016063870972049781,
+          "fraction_above_6MPa": 2.875173479621187e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.3660233613926898,
+          "p999_MPa": 4.203256946223105,
+          "raw_peak_MPa": 25.54816991884095,
+          "raw_peak_cell_center_mm": [
+            70.98581328980883,
+            1.4864236212724853,
+            1.6234950997773623
+          ],
+          "raw_peak_cell_volume_mm3": 2.3719255136021096e-05,
+          "total_region_volume_mm3": 19052.224452432183,
+          "volume_above_6MPa_mm3": 0.007858935167446391,
+          "fraction_above_6MPa": 4.1249436185616264e-07
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.6978860493460493,
+          "p999_MPa": 1.9366675405120717,
+          "raw_peak_MPa": 4.1277822130887305,
+          "raw_peak_cell_center_mm": [
+            144.92935667658458,
+            -31.769898894811725,
+            2.0813503434876415
+          ],
+          "raw_peak_cell_volume_mm3": 3.8955465803158254e-05,
+          "total_region_volume_mm3": 17548.98856980788,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9574138976000818,
+          "p999_MPa": 1.2233936545895128,
+          "raw_peak_MPa": 1.829319299300073,
+          "raw_peak_cell_center_mm": [
+            0.2250000000000187,
+            161.7082324110873,
+            13.29999999999965
+          ],
+          "raw_peak_cell_volume_mm3": 0.0036103272568217964,
+          "total_region_volume_mm3": 2591.0697177519473,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.9139986840609526,
+          "p999_MPa": 5.500994489029671,
+          "raw_peak_MPa": 9.620821157086858,
+          "raw_peak_cell_center_mm": [
+            3.410278066971901,
+            32.025636578034096,
+            11.54373456038039
+          ],
+          "raw_peak_cell_volume_mm3": 0.0005526039952687144,
+          "total_region_volume_mm3": 2569.4977245456553,
+          "volume_above_6MPa_mm3": 1.5659424959045067,
+          "fraction_above_6MPa": 0.0006094352530245578
+        }
+      ]
+    },
+    {
+      "mesh": "baseline-e12-print-material-10w-h1",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 217503,
+      "tetrahedra": 800500,
+      "front_mm_at_E1000": 2.3123508103707096,
+      "relative_free_residual": 3.251159043634497e-08,
+      "solution_sha256": "88ede2661c3305747acdf53eb78f6a8e12b922a6ecb49e488cc532970f5e4395",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.8562870536532023,
+          "p999_MPa": 4.1187057433154015,
+          "raw_peak_MPa": 26.89599272142722,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387298,
+            1.8201464890396886
+          ],
+          "raw_peak_cell_volume_mm3": 1.6980214762349475e-05,
+          "total_region_volume_mm3": 118194.6943255082,
+          "volume_above_6MPa_mm3": 1.578729704094923,
+          "fraction_above_6MPa": 1.3357026836983911e-05
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 4.10854314607802,
+          "p999_MPa": 4.535909251188869,
+          "raw_peak_MPa": 12.777938771739633,
+          "raw_peak_cell_center_mm": [
+            108.10284830992121,
+            -6.476911291532566,
+            22.346787616433815
+          ],
+          "raw_peak_cell_volume_mm3": 3.92070423862121e-05,
+          "total_region_volume_mm3": 6260.425145724168,
+          "volume_above_6MPa_mm3": 0.0031618696777265323,
+          "fraction_above_6MPa": 5.050567020813387e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.3349888385161766,
+          "p999_MPa": 4.282812440739359,
+          "raw_peak_MPa": 26.89599272142722,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387298,
+            1.8201464890396886
+          ],
+          "raw_peak_cell_volume_mm3": 1.6980214762349475e-05,
+          "total_region_volume_mm3": 20095.01850015566,
+          "volume_above_6MPa_mm3": 0.0409704494554694,
+          "fraction_above_6MPa": 2.0388361152865835e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.9125842656528618,
+          "p999_MPa": 2.2063406201707427,
+          "raw_peak_MPa": 4.269623812023626,
+          "raw_peak_cell_center_mm": [
+            110.38894413286741,
+            -7.283691300852628,
+            1.3482987656594345
+          ],
+          "raw_peak_cell_volume_mm3": 9.544629959455046e-06,
+          "total_region_volume_mm3": 18827.74052788847,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9853051650876451,
+          "p999_MPa": 1.2400379852726788,
+          "raw_peak_MPa": 1.8623869580468604,
+          "raw_peak_cell_center_mm": [
+            0.2250000000000187,
+            161.7082324110873,
+            13.299999999999653
+          ],
+          "raw_peak_cell_volume_mm3": 0.0036103272568217964,
+          "total_region_volume_mm3": 2726.3625816413623,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.8834387362594347,
+          "p999_MPa": 5.490789779478093,
+          "raw_peak_MPa": 11.176377808895031,
+          "raw_peak_cell_center_mm": [
+            3.345691470383829,
+            33.74052215514365,
+            16.88307332396063
+          ],
+          "raw_peak_cell_volume_mm3": 4.277973779256687e-06,
+          "total_region_volume_mm3": 2693.637448093525,
+          "volume_above_6MPa_mm3": 1.503592406419037,
+          "fraction_above_6MPa": 0.0005582014786300339
+        }
+      ]
+    },
+    {
+      "mesh": "print-material-10w-h1",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 212790,
+      "tetrahedra": 787137,
+      "front_mm_at_E1000": 1.936610123634336,
+      "relative_free_residual": 5.457568311505301e-09,
+      "solution_sha256": "656a62e5932bd1c197c69d8dfcb9479968d8e1e0f7e5d2934aa89a4b68de328a",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.5732081746094755,
+          "p999_MPa": 3.663474807582403,
+          "raw_peak_MPa": 24.156638040338986,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387291,
+            22.179853510960314
+          ],
+          "raw_peak_cell_volume_mm3": 1.698021476238025e-05,
+          "total_region_volume_mm3": 119957.80114574436,
+          "volume_above_6MPa_mm3": 1.7268008944652744,
+          "fraction_above_6MPa": 1.4395069582571576e-05
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.5654570641947476,
+          "p999_MPa": 3.902800916394181,
+          "raw_peak_MPa": 13.337775380670431,
+          "raw_peak_cell_center_mm": [
+            108.15800650750329,
+            -6.4089642396747895,
+            22.172077106356717
+          ],
+          "raw_peak_cell_volume_mm3": 2.418031928299716e-05,
+          "total_region_volume_mm3": 6261.96606140303,
+          "volume_above_6MPa_mm3": 0.000711393249006679,
+          "fraction_above_6MPa": 1.136054143428697e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 2.989062316055772,
+          "p999_MPa": 3.8136342222603994,
+          "raw_peak_MPa": 24.156638040338986,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387291,
+            22.179853510960314
+          ],
+          "raw_peak_cell_volume_mm3": 1.698021476238025e-05,
+          "total_region_volume_mm3": 20813.738894492548,
+          "volume_above_6MPa_mm3": 0.024938019065542525,
+          "fraction_above_6MPa": 1.1981518165456226e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.5255674441365796,
+          "p999_MPa": 1.7867529539841338,
+          "raw_peak_MPa": 2.60667601180263,
+          "raw_peak_cell_center_mm": [
+            144.9998375396715,
+            -31.56761774400991,
+            1.854047270343746
+          ],
+          "raw_peak_cell_volume_mm3": 2.562285072642467e-05,
+          "total_region_volume_mm3": 19446.568606588382,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9742233019827914,
+          "p999_MPa": 1.2561898272092455,
+          "raw_peak_MPa": 1.955919458579657,
+          "raw_peak_cell_center_mm": [
+            0.1553114549729149,
+            162.33214549158828,
+            14.141814160594725
+          ],
+          "raw_peak_cell_volume_mm3": 0.03368403530324111,
+          "total_region_volume_mm3": 2725.737740993812,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.919514029534146,
+          "p999_MPa": 5.536938783496581,
+          "raw_peak_MPa": 11.412894125040536,
+          "raw_peak_cell_center_mm": [
+            3.6546223122235255,
+            32.893565595642265,
+            15.941989272004589
+          ],
+          "raw_peak_cell_volume_mm3": 0.0004295018436821607,
+          "total_region_volume_mm3": 2696.406469586532,
+          "volume_above_6MPa_mm3": 1.670170143730521,
+          "fraction_above_6MPa": 0.0006194059250965325
+        }
+      ]
+    }
+  ],
+  "E13_refinement": [
+    {
+      "walls": 8,
+      "h_mm": 2,
+      "mesh": "print-material-8w-h2",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 60800,
+      "tetrahedra": 192633,
+      "front_mm_at_E1000": 2.0672883873641017,
+      "relative_free_residual": 9.849877324858881e-09,
+      "solution_sha256": "1d0dd88d744eb2e40f2102207804efa81b8ecec6d7f6c7957989fb9cada5cd60",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.7643650447960155,
+          "p999_MPa": 3.8162615829329267,
+          "raw_peak_MPa": 34.997341768225525,
+          "raw_peak_cell_center_mm": [
+            3.1525107660791827,
+            45.63758884773199,
+            17.493766532760898
+          ],
+          "raw_peak_cell_volume_mm3": 6.271926547278027e-07,
+          "total_region_volume_mm3": 107887.08103133301,
+          "volume_above_6MPa_mm3": 0.2886719532088009,
+          "fraction_above_6MPa": 2.675686008456968e-06
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.813221623373089,
+          "p999_MPa": 4.473380633695813,
+          "raw_peak_MPa": 29.780876399453557,
+          "raw_peak_cell_center_mm": [
+            78.05727955115754,
+            -9.295913243532222,
+            1.788475817421767
+          ],
+          "raw_peak_cell_volume_mm3": 6.798115567095234e-06,
+          "total_region_volume_mm3": 5579.87796587851,
+          "volume_above_6MPa_mm3": 0.014991266777575979,
+          "fraction_above_6MPa": 2.6866657065349847e-06
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.168583989635461,
+          "p999_MPa": 3.9612790782023075,
+          "raw_peak_MPa": 25.369684659762804,
+          "raw_peak_cell_center_mm": [
+            64.65567794766389,
+            3.0361564001828234,
+            22.00797768617514
+          ],
+          "raw_peak_cell_volume_mm3": 3.096579525143702e-05,
+          "total_region_volume_mm3": 19069.33717333089,
+          "volume_above_6MPa_mm3": 0.005941013084725031,
+          "fraction_above_6MPa": 3.1154795946624395e-07
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.684383911894377,
+          "p999_MPa": 1.8484359320148356,
+          "raw_peak_MPa": 6.610480130966765,
+          "raw_peak_cell_center_mm": [
+            144.9259393521504,
+            -31.154038225529316,
+            1.352029398650283
+          ],
+          "raw_peak_cell_volume_mm3": 0.00011640085483088212,
+          "total_region_volume_mm3": 17540.94810293344,
+          "volume_above_6MPa_mm3": 0.00011640085483088212,
+          "fraction_above_6MPa": 6.635950015234123e-09
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9378920920913053,
+          "p999_MPa": 1.1165403200948245,
+          "raw_peak_MPa": 1.9473875007201422,
+          "raw_peak_cell_center_mm": [
+            0.45000000000001816,
+            162.09685151044113,
+            10.190964295911183
+          ],
+          "raw_peak_cell_volume_mm3": 0.005527754493893455,
+          "total_region_volume_mm3": 2586.8698086405275,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.673269843637676,
+          "p999_MPa": 4.982476715304374,
+          "raw_peak_MPa": 34.997341768225525,
+          "raw_peak_cell_center_mm": [
+            3.1525107660791827,
+            45.63758884773199,
+            17.493766532760898
+          ],
+          "raw_peak_cell_volume_mm3": 6.271926547278027e-07,
+          "total_region_volume_mm3": 2545.259031641044,
+          "volume_above_6MPa_mm3": 0.2094170778635615,
+          "fraction_above_6MPa": 8.227731451306973e-05
+        }
+      ]
+    },
+    {
+      "walls": 8,
+      "h_mm": 1.5,
+      "mesh": "print-material-8w-h1.5",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 98571,
+      "tetrahedra": 323629,
+      "front_mm_at_E1000": 2.109084100058139,
+      "relative_free_residual": 6.507271077625143e-09,
+      "solution_sha256": "390120d24cd96b90b7c4e8f495ef4bc78c03502a1c3e6530ec8cb7fadd86754a",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.7552603699713627,
+          "p999_MPa": 3.9261871175844627,
+          "raw_peak_MPa": 17.482476006008852,
+          "raw_peak_cell_center_mm": [
+            73.73687419202652,
+            -0.3547486026490143,
+            21.04
+          ],
+          "raw_peak_cell_volume_mm3": 0.00023414351523153866,
+          "total_region_volume_mm3": 107887.081031331,
+          "volume_above_6MPa_mm3": 0.5897489117400538,
+          "fraction_above_6MPa": 5.4663533956284115e-06
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.816015283420077,
+          "p999_MPa": 4.188231074106897,
+          "raw_peak_MPa": 14.154305747745102,
+          "raw_peak_cell_center_mm": [
+            76.17936467648897,
+            -8.578769102411046,
+            20.800803210636598
+          ],
+          "raw_peak_cell_volume_mm3": 0.0002997114877504048,
+          "total_region_volume_mm3": 5585.55552513429,
+          "volume_above_6MPa_mm3": 0.008666138194440192,
+          "fraction_above_6MPa": 1.5515266396410653e-06
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.252701975153252,
+          "p999_MPa": 4.1047811177194875,
+          "raw_peak_MPa": 17.482476006008852,
+          "raw_peak_cell_center_mm": [
+            73.73687419202652,
+            -0.3547486026490143,
+            21.04
+          ],
+          "raw_peak_cell_volume_mm3": 0.00023414351523153866,
+          "total_region_volume_mm3": 19067.010217517818,
+          "volume_above_6MPa_mm3": 0.04687753331191209,
+          "fraction_above_6MPa": 2.45856758753102e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.686076411533235,
+          "p999_MPa": 1.8752150252261595,
+          "raw_peak_MPa": 5.251229634750854,
+          "raw_peak_cell_center_mm": [
+            144.94306742549384,
+            -31.235969757467412,
+            1.4517824265044883
+          ],
+          "raw_peak_cell_volume_mm3": 0.0001543925454325666,
+          "total_region_volume_mm3": 17545.881625236085,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9351955185704528,
+          "p999_MPa": 1.1574976206721435,
+          "raw_peak_MPa": 1.6268645965086952,
+          "raw_peak_cell_center_mm": [
+            0.16893727467095396,
+            162.38118648384096,
+            14.234623686989487
+          ],
+          "raw_peak_cell_volume_mm3": 0.07308408972079192,
+          "total_region_volume_mm3": 2580.741211620274,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 4.117483013186916,
+          "p999_MPa": 5.457293550251487,
+          "raw_peak_MPa": 14.67085733050864,
+          "raw_peak_cell_center_mm": [
+            3.3656383712024027,
+            34.48286399023366,
+            6.206814608422204
+          ],
+          "raw_peak_cell_volume_mm3": 3.942427336322636e-06,
+          "total_region_volume_mm3": 2576.2013752626976,
+          "volume_above_6MPa_mm3": 0.5147937623238563,
+          "fraction_above_6MPa": 0.00019982667786261945
+        }
+      ],
+      "front_change_percent": 2.0217649820656547,
+      "region_p99_changes_percent": {
+        "whole_body": -0.3293586294542572,
+        "inner_seat": 0.07326246210983545,
+        "knee": 2.6547500647905675,
+        "outer_arm": 0.10048182168602704,
+        "upper_landing": -0.28751426135171787,
+        "lower_landing": 12.093126518288422
+      }
+    },
+    {
+      "walls": 8,
+      "h_mm": 1,
+      "mesh": "print-material-8w-h1",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 211253,
+      "tetrahedra": 757028,
+      "front_mm_at_E1000": 2.14797177826963,
+      "relative_free_residual": 6.803743728856396e-09,
+      "solution_sha256": "449a568d6182c8a546b2ddcaeb7714c3d17debe44dc1571a69c41f57f9a2bf7a",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.8406855897993832,
+          "p999_MPa": 3.960324803209849,
+          "raw_peak_MPa": 25.54816991884095,
+          "raw_peak_cell_center_mm": [
+            70.98581328980883,
+            1.4864236212724853,
+            1.6234950997773623
+          ],
+          "raw_peak_cell_volume_mm3": 2.3719255136021096e-05,
+          "total_region_volume_mm3": 107887.08103133051,
+          "volume_above_6MPa_mm3": 1.6070647343943563,
+          "fraction_above_6MPa": 1.4895803269787817e-05
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.80291242651921,
+          "p999_MPa": 4.184279320817714,
+          "raw_peak_MPa": 16.674991735820853,
+          "raw_peak_cell_center_mm": [
+            108.21662860683645,
+            -5.880308768874441,
+            22.593246920782256
+          ],
+          "raw_peak_cell_volume_mm3": 2.0514054846089164e-05,
+          "total_region_volume_mm3": 5587.0962520725,
+          "volume_above_6MPa_mm3": 0.0016063870972049781,
+          "fraction_above_6MPa": 2.875173479621187e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 3.3660233613926898,
+          "p999_MPa": 4.203256946223105,
+          "raw_peak_MPa": 25.54816991884095,
+          "raw_peak_cell_center_mm": [
+            70.98581328980883,
+            1.4864236212724853,
+            1.6234950997773623
+          ],
+          "raw_peak_cell_volume_mm3": 2.3719255136021096e-05,
+          "total_region_volume_mm3": 19052.224452432183,
+          "volume_above_6MPa_mm3": 0.007858935167446391,
+          "fraction_above_6MPa": 4.1249436185616264e-07
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.6978860493460493,
+          "p999_MPa": 1.9366675405120717,
+          "raw_peak_MPa": 4.1277822130887305,
+          "raw_peak_cell_center_mm": [
+            144.92935667658458,
+            -31.769898894811725,
+            2.0813503434876415
+          ],
+          "raw_peak_cell_volume_mm3": 3.8955465803158254e-05,
+          "total_region_volume_mm3": 17548.98856980788,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9574138976000818,
+          "p999_MPa": 1.2233936545895128,
+          "raw_peak_MPa": 1.829319299300073,
+          "raw_peak_cell_center_mm": [
+            0.2250000000000187,
+            161.7082324110873,
+            13.29999999999965
+          ],
+          "raw_peak_cell_volume_mm3": 0.0036103272568217964,
+          "total_region_volume_mm3": 2591.0697177519473,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.9139986840609526,
+          "p999_MPa": 5.500994489029671,
+          "raw_peak_MPa": 9.620821157086858,
+          "raw_peak_cell_center_mm": [
+            3.410278066971901,
+            32.025636578034096,
+            11.54373456038039
+          ],
+          "raw_peak_cell_volume_mm3": 0.0005526039952687144,
+          "total_region_volume_mm3": 2569.4977245456553,
+          "volume_above_6MPa_mm3": 1.5659424959045067,
+          "fraction_above_6MPa": 0.0006094352530245578
+        }
+      ],
+      "front_change_percent": 1.84381828161424,
+      "region_p99_changes_percent": {
+        "whole_body": 3.1004409150961143,
+        "inner_seat": -0.3433648957800739,
+        "knee": 3.4839154372296566,
+        "outer_arm": 0.7004212698803691,
+        "upper_landing": 2.3758004169643687,
+        "lower_landing": -4.94195916471959
+      }
+    },
+    {
+      "walls": 10,
+      "h_mm": 2,
+      "mesh": "print-material-10w-h2",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 60903,
+      "tetrahedra": 195838,
+      "front_mm_at_E1000": 1.8822157208558132,
+      "relative_free_residual": 9.589655609869862e-09,
+      "solution_sha256": "b8a88a8365b9fec542078a59b534508c5669bfa875ab9378dad2decba5114fc8",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.4722144722783344,
+          "p999_MPa": 3.531737655586188,
+          "raw_peak_MPa": 26.891240524623193,
+          "raw_peak_cell_center_mm": [
+            70.93917955137971,
+            0.8065391843414744,
+            2.06145719481385
+          ],
+          "raw_peak_cell_volume_mm3": 5.170126397639151e-06,
+          "total_region_volume_mm3": 119957.8011457469,
+          "volume_above_6MPa_mm3": 0.18820468280390537,
+          "fraction_above_6MPa": 1.5689240800207697e-06
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.5236635924429978,
+          "p999_MPa": 3.955281142894717,
+          "raw_peak_MPa": 15.881832375239519,
+          "raw_peak_cell_center_mm": [
+            75.62483269131678,
+            -10.209963504533818,
+            22.27198071304379
+          ],
+          "raw_peak_cell_volume_mm3": 0.00014906488855285366,
+          "total_region_volume_mm3": 6257.498729734254,
+          "volume_above_6MPa_mm3": 0.001044688418432245,
+          "fraction_above_6MPa": 1.669498410711801e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 2.814907632666325,
+          "p999_MPa": 3.5825979677047077,
+          "raw_peak_MPa": 26.891240524623193,
+          "raw_peak_cell_center_mm": [
+            70.93917955137971,
+            0.8065391843414744,
+            2.06145719481385
+          ],
+          "raw_peak_cell_volume_mm3": 5.170126397639151e-06,
+          "total_region_volume_mm3": 20804.905029969188,
+          "volume_above_6MPa_mm3": 0.005842733374023843,
+          "fraction_above_6MPa": 2.808344169611668e-07
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.5133375451165954,
+          "p999_MPa": 1.7245291350410796,
+          "raw_peak_MPa": 16.82627770401417,
+          "raw_peak_cell_center_mm": [
+            144.96011768489709,
+            -30.232280608412143,
+            0.26374191310226713
+          ],
+          "raw_peak_cell_volume_mm3": 1.299615059239956e-08,
+          "total_region_volume_mm3": 19448.170193087637,
+          "volume_above_6MPa_mm3": 1.299615059239956e-08,
+          "fraction_above_6MPa": 6.6824541658005e-13
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.8918331683102639,
+          "p999_MPa": 1.1738087967401398,
+          "raw_peak_MPa": 3.390573015338204,
+          "raw_peak_cell_center_mm": [
+            3.1448701133921535,
+            158.54972590260738,
+            17.73646205311425
+          ],
+          "raw_peak_cell_volume_mm3": 6.379016439932004e-07,
+          "total_region_volume_mm3": 2760.0152364508876,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.6195306854791105,
+          "p999_MPa": 4.770173198198879,
+          "raw_peak_MPa": 6.360203138553681,
+          "raw_peak_cell_center_mm": [
+            0.6749999999999936,
+            38.09998517270647,
+            14.01287457093662
+          ],
+          "raw_peak_cell_volume_mm3": 0.13012788946936374,
+          "total_region_volume_mm3": 2709.3795790287736,
+          "volume_above_6MPa_mm3": 0.13012788946936374,
+          "fraction_above_6MPa": 4.802866695998737e-05
+        }
+      ]
+    },
+    {
+      "walls": 10,
+      "h_mm": 1.5,
+      "mesh": "print-material-10w-h1.5",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 97311,
+      "tetrahedra": 328179,
+      "front_mm_at_E1000": 1.900465903583853,
+      "relative_free_residual": 7.984879129003207e-09,
+      "solution_sha256": "cc654e1ef310145b1e236e0706202b25f5717f22fd32b2e5c42f1d2be13b0d85",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.519643057383109,
+          "p999_MPa": 3.6386329884752624,
+          "raw_peak_MPa": 15.050714472054482,
+          "raw_peak_cell_center_mm": [
+            3.380169478779978,
+            34.38545452712687,
+            17.610499793107728
+          ],
+          "raw_peak_cell_volume_mm3": 3.0811040298596975e-07,
+          "total_region_volume_mm3": 119957.8011457449,
+          "volume_above_6MPa_mm3": 0.8574929850069836,
+          "fraction_above_6MPa": 7.1482886216391795e-06
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.6046127552112366,
+          "p999_MPa": 3.9660969570064415,
+          "raw_peak_MPa": 9.621428262736133,
+          "raw_peak_cell_center_mm": [
+            75.61521543485816,
+            -9.21080274221124,
+            14.400000000000002
+          ],
+          "raw_peak_cell_volume_mm3": 0.0003466006891721801,
+          "total_region_volume_mm3": 6266.652717115268,
+          "volume_above_6MPa_mm3": 0.0036837045288182877,
+          "fraction_above_6MPa": 5.878264992661041e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 2.9074709021897864,
+          "p999_MPa": 3.7099418224987097,
+          "raw_peak_MPa": 14.946905744953995,
+          "raw_peak_cell_center_mm": [
+            72.94736171346186,
+            -0.986084873266199,
+            17.2
+          ],
+          "raw_peak_cell_volume_mm3": 0.00031782346635637226,
+          "total_region_volume_mm3": 20824.979503150156,
+          "volume_above_6MPa_mm3": 0.032110715389813964,
+          "fraction_above_6MPa": 1.5419326287911417e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.5162017676169453,
+          "p999_MPa": 1.7432406938977316,
+          "raw_peak_MPa": 3.6372725472865652,
+          "raw_peak_cell_center_mm": [
+            144.94306742549384,
+            -31.235969757467412,
+            1.4517824265044883
+          ],
+          "raw_peak_cell_volume_mm3": 0.0001543925454325666,
+          "total_region_volume_mm3": 19437.59043520918,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9689360171448946,
+          "p999_MPa": 1.2277365869398897,
+          "raw_peak_MPa": 1.6742411207965824,
+          "raw_peak_cell_center_mm": [
+            0.16893727467095396,
+            162.38118648384096,
+            14.234623686989487
+          ],
+          "raw_peak_cell_volume_mm3": 0.07308408972079192,
+          "total_region_volume_mm3": 2735.0085346823216,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.8031098374970695,
+          "p999_MPa": 5.427373863472161,
+          "raw_peak_MPa": 15.050714472054482,
+          "raw_peak_cell_center_mm": [
+            3.380169478779978,
+            34.38545452712687,
+            17.610499793107728
+          ],
+          "raw_peak_cell_volume_mm3": 3.0811040298596975e-07,
+          "total_region_volume_mm3": 2701.1439942960997,
+          "volume_above_6MPa_mm3": 0.8033612757365387,
+          "fraction_above_6MPa": 0.00029741519794315496
+        }
+      ],
+      "front_change_percent": 0.969611640462853,
+      "region_p99_changes_percent": {
+        "whole_body": 1.9184656362384755,
+        "inner_seat": 2.297301108478278,
+        "knee": 3.2883235119080645,
+        "outer_arm": 0.18926527724052455,
+        "upper_landing": 8.645434098477821,
+        "lower_landing": 5.071904839885599
+      }
+    },
+    {
+      "walls": 10,
+      "h_mm": 1,
+      "mesh": "print-material-10w-h1",
+      "gmsh_3d_algorithm": 1,
+      "nodes": 212790,
+      "tetrahedra": 787137,
+      "front_mm_at_E1000": 1.936610123634336,
+      "relative_free_residual": 5.457568311505301e-09,
+      "solution_sha256": "656a62e5932bd1c197c69d8dfcb9479968d8e1e0f7e5d2934aa89a4b68de328a",
+      "regions": [
+        {
+          "region": "whole_body",
+          "p99_MPa": 2.5732081746094755,
+          "p999_MPa": 3.663474807582403,
+          "raw_peak_MPa": 24.156638040338986,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387291,
+            22.179853510960314
+          ],
+          "raw_peak_cell_volume_mm3": 1.698021476238025e-05,
+          "total_region_volume_mm3": 119957.80114574436,
+          "volume_above_6MPa_mm3": 1.7268008944652744,
+          "fraction_above_6MPa": 1.4395069582571576e-05
+        },
+        {
+          "region": "inner_seat",
+          "p99_MPa": 3.5654570641947476,
+          "p999_MPa": 3.902800916394181,
+          "raw_peak_MPa": 13.337775380670431,
+          "raw_peak_cell_center_mm": [
+            108.15800650750329,
+            -6.4089642396747895,
+            22.172077106356717
+          ],
+          "raw_peak_cell_volume_mm3": 2.418031928299716e-05,
+          "total_region_volume_mm3": 6261.96606140303,
+          "volume_above_6MPa_mm3": 0.000711393249006679,
+          "fraction_above_6MPa": 1.136054143428697e-07
+        },
+        {
+          "region": "knee",
+          "p99_MPa": 2.989062316055772,
+          "p999_MPa": 3.8136342222603994,
+          "raw_peak_MPa": 24.156638040338986,
+          "raw_peak_cell_center_mm": [
+            70.76600855924923,
+            0.7327313675387291,
+            22.179853510960314
+          ],
+          "raw_peak_cell_volume_mm3": 1.698021476238025e-05,
+          "total_region_volume_mm3": 20813.738894492548,
+          "volume_above_6MPa_mm3": 0.024938019065542525,
+          "fraction_above_6MPa": 1.1981518165456226e-06
+        },
+        {
+          "region": "outer_arm",
+          "p99_MPa": 1.5255674441365796,
+          "p999_MPa": 1.7867529539841338,
+          "raw_peak_MPa": 2.60667601180263,
+          "raw_peak_cell_center_mm": [
+            144.9998375396715,
+            -31.56761774400991,
+            1.854047270343746
+          ],
+          "raw_peak_cell_volume_mm3": 2.562285072642467e-05,
+          "total_region_volume_mm3": 19446.568606588382,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "upper_landing",
+          "p99_MPa": 0.9742233019827914,
+          "p999_MPa": 1.2561898272092455,
+          "raw_peak_MPa": 1.955919458579657,
+          "raw_peak_cell_center_mm": [
+            0.1553114549729149,
+            162.33214549158828,
+            14.141814160594725
+          ],
+          "raw_peak_cell_volume_mm3": 0.03368403530324111,
+          "total_region_volume_mm3": 2725.737740993812,
+          "volume_above_6MPa_mm3": 0.0,
+          "fraction_above_6MPa": 0.0
+        },
+        {
+          "region": "lower_landing",
+          "p99_MPa": 3.919514029534146,
+          "p999_MPa": 5.536938783496581,
+          "raw_peak_MPa": 11.412894125040536,
+          "raw_peak_cell_center_mm": [
+            3.6546223122235255,
+            32.893565595642265,
+            15.941989272004589
+          ],
+          "raw_peak_cell_volume_mm3": 0.0004295018436821607,
+          "total_region_volume_mm3": 2696.406469586532,
+          "volume_above_6MPa_mm3": 1.670170143730521,
+          "fraction_above_6MPa": 0.0006194059250965325
+        }
+      ],
+      "front_change_percent": 1.9018610111511736,
+      "region_p99_changes_percent": {
+        "whole_body": 2.1259010108360066,
+        "inner_seat": -1.0862662281789115,
+        "knee": 2.806267598569412,
+        "outer_arm": 0.6177064767807661,
+        "upper_landing": 0.5456794612173077,
+        "lower_landing": 3.0607633492301556
+      }
+    }
+  ],
+  "interpretation": "Stable region statistics and movement can be compared; a raw peak that moves or grows on refinement remains unresolved. Small cell volume alone does not prove an artifact. Six MPa is a display/diagnostic threshold, not a material allowable."
+}

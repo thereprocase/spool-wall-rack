@@ -1,0 +1,24 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows x86-64",
+  "packages": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "vtk": "9.3.1",
+    "gmsh": "4.15.2",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-fem": "12.0.2",
+    "shapely": "2.1.2",
+    "matplotlib": "3.11.1",
+    "pyamg": "5.3.0",
+    "pypardiso": "0.4.7",
+    "mkl": "2026.1.0"
+  },
+  "slicer": "OrcaSlicer 2.4.2, Linux portable CLI under WSL",
+  "notes": [
+    "No system/account-specific paths recorded.",
+    "PARDISO used for published direct solves; OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1, MKL_NUM_THREADS=8.",
+    "Native Windows CAD checks completed and wrote valid artifacts but encountered a heap/access fault during interpreter teardown. The final rechecks retained runpy globals and exited the local worker only after all assertions and writes completed; exceptions still propagated. CAD reimports, files and all numerical fields were independently checked."
+  ]
+}

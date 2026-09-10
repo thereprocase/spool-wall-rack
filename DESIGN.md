@@ -1,13 +1,12 @@
 # Design decisions
 
-**Current implementation: [E12](README.md).** The underside reinforcement is
-9.5 mm deep, one-quarter of E11's 38 mm, with a broader smooth blend. The
-explicit 12.67 mm maximum supersedes the earlier requirement to exceed both
-adjacent arms in section properties. E12 retains R6 rigid shoulder blends,
-50-degree mirrored chamfers, fingers and relief pockets. Matched near-seat
-stress is about 32% lower than E10 with only 6-7% more movement than E11; no
-relief holes were needed for that measured improvement. Current results are in
-[analysis/e12](analysis/e12/RESULTS.md).
+**Current implementation: [E13](README.md).** An 11 mm underside reinforcement
+uses long straight flanks and a short flat, with small corner blends. It stays
+within the 12.67 mm cap, which supersedes E11's adjacent-section superiority
+target. Fingers, relief pockets, R6 rigid shoulders, 50-degree mirrored bevels
+and hardware are retained. New global meshes at h=2/1.5/1 and matched h1 E12
+baselines assess the other hotspots without suppressing finite stress cells.
+[Current results](analysis/e13/RESULTS.md) and [hotspot audit](analysis/e13/HOTSPOTS.md).
 
 Current printable CAD is a solid envelope with two aligned 100% infill modifier
 helpers; wall count is slicer-controlled. Four continuous 1.2 mm planes remain
@@ -16,7 +15,7 @@ physical fit, extrusion and sustained/hot qualification remain outstanding.
 
 The sections below retain historical E6 reasoning and dimensions. Where they
 describe modeled hollow bands, level rails, coupons or next work, use the
-current E12 guide and [design journal](DESIGN-JOURNAL.md) for their successors.
+current E13 guide and [design journal](DESIGN-JOURNAL.md) for their successors.
 
 ## Closed-wall load path
 

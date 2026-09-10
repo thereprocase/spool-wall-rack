@@ -1,0 +1,1064 @@
+{
+  "method": "Inspect actual OrcaSlicer G-code footprints; no printer connection.\n\nNominal bead footprints and path continuity do not validate adhesion, bridging,\ncurling, or a calibrated material process. Sparse infill receives no credit.\n",
+  "footprint_rounding_allowance_mm": 0.03,
+  "seat_ROI_mm": [
+    55,
+    -75,
+    125,
+    22
+  ],
+  "cases": [
+    {
+      "walls": 8,
+      "gcode_sha256": "d251c4659dc83c27eec6549d9697bfc9c51b6e13b28d3431da8c90b1db006880",
+      "body_STL_sha256": "13efd0718c46972dcd884e1d79a4b8c093bb4fc04ac85b0a2ce8bcf39950bec8",
+      "slicer": "OrcaSlicer 2.4.2",
+      "layer_count": 120,
+      "extrusion_segment_count": 697649,
+      "solid_band_layer_count": 24,
+      "slice_transform": [
+        [
+          -2.22044605e-16,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -2.22044605e-16,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          12.5,
+          274.246476,
+          0.0
+        ]
+      ],
+      "seat_region_checks": [
+        {
+          "layer_number": 1,
+          "z_mid_mm": 0.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9999407826741236,
+          "center_X90_extruded_length_mm": 26.1690807757759,
+          "center_X90_envelope_depth_mm": 26.1690807757759,
+          "extrusion_roles": [
+            "Bottom surface",
+            "Gap infill",
+            "Inner wall",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 2,
+          "z_mid_mm": 0.30000000000000004,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.999841074769817,
+          "center_X90_extruded_length_mm": 26.504731021872487,
+          "center_X90_envelope_depth_mm": 26.504731021872487,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 3,
+          "z_mid_mm": 0.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998678393347634,
+          "center_X90_extruded_length_mm": 26.840381336078007,
+          "center_X90_envelope_depth_mm": 26.840381336078007,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 4,
+          "z_mid_mm": 0.7000000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998565100837348,
+          "center_X90_extruded_length_mm": 27.176031378796033,
+          "center_X90_envelope_depth_mm": 27.176031378796033,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 5,
+          "z_mid_mm": 0.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998691922791053,
+          "center_X90_extruded_length_mm": 27.51168165891787,
+          "center_X90_envelope_depth_mm": 27.51168165891787,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 6,
+          "z_mid_mm": 1.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998514287507135,
+          "center_X90_extruded_length_mm": 27.84733201912362,
+          "center_X90_envelope_depth_mm": 27.84733201912362,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 39,
+          "z_mid_mm": 7.7,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9991768699276933,
+          "center_X90_extruded_length_mm": 30.001381295620643,
+          "center_X90_envelope_depth_mm": 30.001381295620643,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 40,
+          "z_mid_mm": 7.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998755894110726,
+          "center_X90_extruded_length_mm": 30.0013815719473,
+          "center_X90_envelope_depth_mm": 30.0013815719473,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 41,
+          "z_mid_mm": 8.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998918685217602,
+          "center_X90_extruded_length_mm": 30.001381260135442,
+          "center_X90_envelope_depth_mm": 30.001381260135442,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 42,
+          "z_mid_mm": 8.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998564076559242,
+          "center_X90_extruded_length_mm": 30.0013815606019,
+          "center_X90_envelope_depth_mm": 30.0013815606019,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 43,
+          "z_mid_mm": 8.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998871594354136,
+          "center_X90_extruded_length_mm": 30.001381269548695,
+          "center_X90_envelope_depth_mm": 30.001381269548695,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 44,
+          "z_mid_mm": 8.700000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998732049841331,
+          "center_X90_extruded_length_mm": 30.00138151169518,
+          "center_X90_envelope_depth_mm": 30.00138151169518,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 77,
+          "z_mid_mm": 15.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.998217726549721,
+          "center_X90_extruded_length_mm": 30.00138143957969,
+          "center_X90_envelope_depth_mm": 30.00138143957969,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 78,
+          "z_mid_mm": 15.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998823835159804,
+          "center_X90_extruded_length_mm": 30.001381553582114,
+          "center_X90_envelope_depth_mm": 30.001381553582114,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 79,
+          "z_mid_mm": 15.700000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998777688579764,
+          "center_X90_extruded_length_mm": 30.00138142002183,
+          "center_X90_envelope_depth_mm": 30.00138142002183,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 80,
+          "z_mid_mm": 15.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998621760445575,
+          "center_X90_extruded_length_mm": 30.001381549160037,
+          "center_X90_envelope_depth_mm": 30.001381549160037,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 81,
+          "z_mid_mm": 16.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.99988248674598,
+          "center_X90_extruded_length_mm": 30.001381419557823,
+          "center_X90_envelope_depth_mm": 30.001381419557823,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 82,
+          "z_mid_mm": 16.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.999877752179545,
+          "center_X90_extruded_length_mm": 30.001381527293812,
+          "center_X90_envelope_depth_mm": 30.001381527293812,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 115,
+          "z_mid_mm": 22.900000000000002,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9987529884925849,
+          "center_X90_extruded_length_mm": 27.84733201912362,
+          "center_X90_envelope_depth_mm": 27.84733201912362,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 116,
+          "z_mid_mm": 23.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998261757326222,
+          "center_X90_extruded_length_mm": 27.51168165891787,
+          "center_X90_envelope_depth_mm": 27.51168165891787,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 117,
+          "z_mid_mm": 23.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998637435106648,
+          "center_X90_extruded_length_mm": 27.176031378796033,
+          "center_X90_envelope_depth_mm": 27.176031378796033,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 118,
+          "z_mid_mm": 23.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998481135781387,
+          "center_X90_extruded_length_mm": 26.840381336078007,
+          "center_X90_envelope_depth_mm": 26.840381336078007,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 119,
+          "z_mid_mm": 23.700000000000003,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998663201883724,
+          "center_X90_extruded_length_mm": 26.504731021872487,
+          "center_X90_envelope_depth_mm": 26.504731021872487,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 120,
+          "z_mid_mm": 23.900000000000002,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9999815656117276,
+          "center_X90_extruded_length_mm": 26.1690807757759,
+          "center_X90_envelope_depth_mm": 26.1690807757759,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Outer wall",
+            "Top surface"
+          ]
+        },
+        {
+          "layer_number": 20,
+          "z_mid_mm": 3.9000000000000004,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999264502801173,
+          "center_X90_extruded_length_mm": 6.632419852479224,
+          "center_X90_envelope_depth_mm": 30.00138115314854,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 30,
+          "z_mid_mm": 5.9,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999262190312979,
+          "center_X90_extruded_length_mm": 6.630941160171261,
+          "center_X90_envelope_depth_mm": 30.00138180752487,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 60,
+          "z_mid_mm": 11.9,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999262190317106,
+          "center_X90_extruded_length_mm": 6.6309407246514205,
+          "center_X90_envelope_depth_mm": 30.001381372005028,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 90,
+          "z_mid_mm": 17.900000000000002,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999262190324051,
+          "center_X90_extruded_length_mm": 6.63094083549678,
+          "center_X90_envelope_depth_mm": 30.001381482850388,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 100,
+          "z_mid_mm": 19.900000000000002,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999262190333245,
+          "center_X90_extruded_length_mm": 6.630940798390398,
+          "center_X90_envelope_depth_mm": 30.001381445744006,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        }
+      ],
+      "full_L_plane_checks": [
+        {
+          "layer_number": 4,
+          "coverage_fraction": 0.9997811075533214
+        },
+        {
+          "layer_number": 42,
+          "coverage_fraction": 0.999810017122666
+        },
+        {
+          "layer_number": 80,
+          "coverage_fraction": 0.9998105765597014
+        },
+        {
+          "layer_number": 118,
+          "coverage_fraction": 0.9997751393780421
+        }
+      ],
+      "minimum_seat_band_coverage": 0.998217726549721,
+      "minimum_seat_wall_coverage": 0.9999262190312979,
+      "finger_checks": [
+        {
+          "seat": "inner",
+          "layer_number": 4,
+          "flexible_finger_footprint_coverage": 0.9983790948896372
+        },
+        {
+          "seat": "inner",
+          "layer_number": 20,
+          "flexible_finger_footprint_coverage": 0.9984819087950546
+        },
+        {
+          "seat": "inner",
+          "layer_number": 42,
+          "flexible_finger_footprint_coverage": 0.9984768762333109
+        },
+        {
+          "seat": "inner",
+          "layer_number": 60,
+          "flexible_finger_footprint_coverage": 0.9984768760103345
+        },
+        {
+          "seat": "inner",
+          "layer_number": 80,
+          "flexible_finger_footprint_coverage": 0.9984768762582954
+        },
+        {
+          "seat": "inner",
+          "layer_number": 100,
+          "flexible_finger_footprint_coverage": 0.998476875584629
+        },
+        {
+          "seat": "inner",
+          "layer_number": 118,
+          "flexible_finger_footprint_coverage": 0.998448157150158
+        },
+        {
+          "seat": "outer",
+          "layer_number": 4,
+          "flexible_finger_footprint_coverage": 0.9993646540233102
+        },
+        {
+          "seat": "outer",
+          "layer_number": 20,
+          "flexible_finger_footprint_coverage": 0.9993643553137652
+        },
+        {
+          "seat": "outer",
+          "layer_number": 42,
+          "flexible_finger_footprint_coverage": 0.9993643689908106
+        },
+        {
+          "seat": "outer",
+          "layer_number": 60,
+          "flexible_finger_footprint_coverage": 0.999364347353915
+        },
+        {
+          "seat": "outer",
+          "layer_number": 80,
+          "flexible_finger_footprint_coverage": 0.9993643642828323
+        },
+        {
+          "seat": "outer",
+          "layer_number": 100,
+          "flexible_finger_footprint_coverage": 0.9993643590588492
+        },
+        {
+          "seat": "outer",
+          "layer_number": 118,
+          "flexible_finger_footprint_coverage": 0.9993601475863763
+        }
+      ],
+      "wall_generator": "arachne",
+      "gap_fill_target": "everywhere",
+      "minimum_finger_coverage": 0.9983790948896372
+    },
+    {
+      "walls": 10,
+      "gcode_sha256": "3c0cfe2dfaca1c15aa056e8ab717db41c5d0f8b2951a80af0796d223c6cfc760",
+      "body_STL_sha256": "13efd0718c46972dcd884e1d79a4b8c093bb4fc04ac85b0a2ce8bcf39950bec8",
+      "slicer": "OrcaSlicer 2.4.2",
+      "layer_count": 120,
+      "extrusion_segment_count": 697962,
+      "solid_band_layer_count": 24,
+      "slice_transform": [
+        [
+          -2.22044605e-16,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -2.22044605e-16,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          12.5,
+          274.246476,
+          0.0
+        ]
+      ],
+      "seat_region_checks": [
+        {
+          "layer_number": 1,
+          "z_mid_mm": 0.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9999304483358552,
+          "center_X90_extruded_length_mm": 26.1690807757759,
+          "center_X90_envelope_depth_mm": 26.1690807757759,
+          "extrusion_roles": [
+            "Bottom surface",
+            "Gap infill",
+            "Inner wall",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 2,
+          "z_mid_mm": 0.30000000000000004,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998306263801289,
+          "center_X90_extruded_length_mm": 26.504731021872487,
+          "center_X90_envelope_depth_mm": 26.504731021872487,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 3,
+          "z_mid_mm": 0.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998707420476145,
+          "center_X90_extruded_length_mm": 26.840381336078007,
+          "center_X90_envelope_depth_mm": 26.840381336078007,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 4,
+          "z_mid_mm": 0.7000000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.999855948584308,
+          "center_X90_extruded_length_mm": 27.176031378796033,
+          "center_X90_envelope_depth_mm": 27.176031378796033,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 5,
+          "z_mid_mm": 0.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998229180536979,
+          "center_X90_extruded_length_mm": 27.51168165891787,
+          "center_X90_envelope_depth_mm": 27.51168165891787,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 6,
+          "z_mid_mm": 1.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998595081700047,
+          "center_X90_extruded_length_mm": 27.84733201912362,
+          "center_X90_envelope_depth_mm": 27.84733201912362,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 39,
+          "z_mid_mm": 7.7,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9990872186232753,
+          "center_X90_extruded_length_mm": 30.001381295620643,
+          "center_X90_envelope_depth_mm": 30.001381295620643,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 40,
+          "z_mid_mm": 7.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998742382048856,
+          "center_X90_extruded_length_mm": 30.0013815719473,
+          "center_X90_envelope_depth_mm": 30.0013815719473,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 41,
+          "z_mid_mm": 8.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998755079278058,
+          "center_X90_extruded_length_mm": 30.001381260135442,
+          "center_X90_envelope_depth_mm": 30.001381260135442,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 42,
+          "z_mid_mm": 8.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998754624280434,
+          "center_X90_extruded_length_mm": 29.98872490045745,
+          "center_X90_envelope_depth_mm": 30.0013815606019,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 43,
+          "z_mid_mm": 8.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998754645576998,
+          "center_X90_extruded_length_mm": 30.001381269548695,
+          "center_X90_envelope_depth_mm": 30.001381269548695,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 44,
+          "z_mid_mm": 8.700000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998780623202937,
+          "center_X90_extruded_length_mm": 30.00138151169518,
+          "center_X90_envelope_depth_mm": 30.00138151169518,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 77,
+          "z_mid_mm": 15.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9983162308862737,
+          "center_X90_extruded_length_mm": 30.00138143957969,
+          "center_X90_envelope_depth_mm": 30.00138143957969,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 78,
+          "z_mid_mm": 15.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998700089150496,
+          "center_X90_extruded_length_mm": 30.001381553582114,
+          "center_X90_envelope_depth_mm": 30.001381553582114,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 79,
+          "z_mid_mm": 15.700000000000001,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998801480079513,
+          "center_X90_extruded_length_mm": 30.00138142002183,
+          "center_X90_envelope_depth_mm": 30.00138142002183,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 80,
+          "z_mid_mm": 15.9,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998780090606026,
+          "center_X90_extruded_length_mm": 30.001381549160037,
+          "center_X90_envelope_depth_mm": 30.001381549160037,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 81,
+          "z_mid_mm": 16.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998797926381544,
+          "center_X90_extruded_length_mm": 30.001381419557823,
+          "center_X90_envelope_depth_mm": 30.001381419557823,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 82,
+          "z_mid_mm": 16.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998748160369206,
+          "center_X90_extruded_length_mm": 30.001381527293812,
+          "center_X90_envelope_depth_mm": 30.001381527293812,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 115,
+          "z_mid_mm": 22.900000000000002,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9987962587339361,
+          "center_X90_extruded_length_mm": 27.830801592695927,
+          "center_X90_envelope_depth_mm": 27.84733201912362,
+          "extrusion_roles": [
+            "Inner wall",
+            "Internal Bridge",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 116,
+          "z_mid_mm": 23.1,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998503228038859,
+          "center_X90_extruded_length_mm": 27.51168165891787,
+          "center_X90_envelope_depth_mm": 27.51168165891787,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 117,
+          "z_mid_mm": 23.3,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998675096489423,
+          "center_X90_extruded_length_mm": 27.176031378796033,
+          "center_X90_envelope_depth_mm": 27.176031378796033,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 118,
+          "z_mid_mm": 23.5,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9998266491783502,
+          "center_X90_extruded_length_mm": 26.840381336078007,
+          "center_X90_envelope_depth_mm": 26.840381336078007,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 119,
+          "z_mid_mm": 23.700000000000003,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9997747887216943,
+          "center_X90_extruded_length_mm": 26.504731021872487,
+          "center_X90_envelope_depth_mm": 26.504731021872487,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Internal solid infill",
+            "Outer wall"
+          ]
+        },
+        {
+          "layer_number": 120,
+          "z_mid_mm": 23.900000000000002,
+          "solid_band": true,
+          "seat_region_nominal_footprint_coverage": 0.9999792474524629,
+          "center_X90_extruded_length_mm": 26.1690807757759,
+          "center_X90_envelope_depth_mm": 26.1690807757759,
+          "extrusion_roles": [
+            "Gap infill",
+            "Inner wall",
+            "Outer wall",
+            "Top surface"
+          ]
+        },
+        {
+          "layer_number": 20,
+          "z_mid_mm": 3.9000000000000004,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999406849876568,
+          "center_X90_extruded_length_mm": 8.259380153148534,
+          "center_X90_envelope_depth_mm": 30.00138115314854,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 30,
+          "z_mid_mm": 5.9,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999404991640622,
+          "center_X90_extruded_length_mm": 8.258100929957298,
+          "center_X90_envelope_depth_mm": 30.00138180752487,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 60,
+          "z_mid_mm": 11.9,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999404985271685,
+          "center_X90_extruded_length_mm": 8.258100494437457,
+          "center_X90_envelope_depth_mm": 30.001381372005028,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 90,
+          "z_mid_mm": 17.900000000000002,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999404985276559,
+          "center_X90_extruded_length_mm": 8.258100605282817,
+          "center_X90_envelope_depth_mm": 30.001381482850388,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        },
+        {
+          "layer_number": 100,
+          "z_mid_mm": 19.900000000000002,
+          "solid_band": false,
+          "seat_region_nominal_footprint_coverage": 0.9999404985290081,
+          "center_X90_extruded_length_mm": 8.258100568176435,
+          "center_X90_envelope_depth_mm": 30.001381445744006,
+          "extrusion_roles": [
+            "Inner wall",
+            "Outer wall",
+            "Sparse infill"
+          ]
+        }
+      ],
+      "full_L_plane_checks": [
+        {
+          "layer_number": 4,
+          "coverage_fraction": 0.9997377236562123
+        },
+        {
+          "layer_number": 42,
+          "coverage_fraction": 0.9998125366214093
+        },
+        {
+          "layer_number": 80,
+          "coverage_fraction": 0.9998116334813233
+        },
+        {
+          "layer_number": 118,
+          "coverage_fraction": 0.9997642774931123
+        }
+      ],
+      "minimum_seat_band_coverage": 0.9983162308862737,
+      "minimum_seat_wall_coverage": 0.9999404985271685,
+      "finger_checks": [
+        {
+          "seat": "inner",
+          "layer_number": 4,
+          "flexible_finger_footprint_coverage": 0.9983790948611844
+        },
+        {
+          "seat": "inner",
+          "layer_number": 20,
+          "flexible_finger_footprint_coverage": 0.9984819087950548
+        },
+        {
+          "seat": "inner",
+          "layer_number": 42,
+          "flexible_finger_footprint_coverage": 0.9984768762333109
+        },
+        {
+          "seat": "inner",
+          "layer_number": 60,
+          "flexible_finger_footprint_coverage": 0.9984768760103347
+        },
+        {
+          "seat": "inner",
+          "layer_number": 80,
+          "flexible_finger_footprint_coverage": 0.9984768762867485
+        },
+        {
+          "seat": "inner",
+          "layer_number": 100,
+          "flexible_finger_footprint_coverage": 0.9984768755846293
+        },
+        {
+          "seat": "inner",
+          "layer_number": 118,
+          "flexible_finger_footprint_coverage": 0.998448157150158
+        },
+        {
+          "seat": "outer",
+          "layer_number": 4,
+          "flexible_finger_footprint_coverage": 0.9993646540233102
+        },
+        {
+          "seat": "outer",
+          "layer_number": 20,
+          "flexible_finger_footprint_coverage": 0.9993643553137652
+        },
+        {
+          "seat": "outer",
+          "layer_number": 42,
+          "flexible_finger_footprint_coverage": 0.9993643689908106
+        },
+        {
+          "seat": "outer",
+          "layer_number": 60,
+          "flexible_finger_footprint_coverage": 0.999364347353915
+        },
+        {
+          "seat": "outer",
+          "layer_number": 80,
+          "flexible_finger_footprint_coverage": 0.9993643642828323
+        },
+        {
+          "seat": "outer",
+          "layer_number": 100,
+          "flexible_finger_footprint_coverage": 0.9993643590588492
+        },
+        {
+          "seat": "outer",
+          "layer_number": 118,
+          "flexible_finger_footprint_coverage": 0.9993601475863763
+        }
+      ],
+      "wall_generator": "arachne",
+      "gap_fill_target": "everywhere",
+      "minimum_finger_coverage": 0.9983790948611844
+    }
+  ]
+}

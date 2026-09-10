@@ -28,3 +28,10 @@ __pycache__/
 /analysis/e12/*.brep
 /analysis/e12/*w-h*.npz
 !/analysis/e12/*-solution.npz
+
+/analysis/e13/.work/
+/.work/
+/designs/closed-wall-e13/.work/
+/analysis/e13/*.brep
+/analysis/e13/*w-h*.npz
+!/analysis/e13/*-solution.npz
