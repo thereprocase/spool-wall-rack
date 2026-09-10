@@ -97,3 +97,8 @@ See [E7](designs/closed-wall-e7/README.md) for dimensions, actual CAD sections, 
 Supersedes E7's modeled grid. Deliver a solid bracket envelope and two separate overlapping helper slabs in STEP. The user sets the body's walls and infill, converts the helper parts to modifier geometry and sets those regions to 100% infill. Slabs occupy print Z=7.6–8.8 and 15.2–16.4 mm. Suggested top/bottom solid thickness remains 1.2 mm; sparse body infill remains 15% as the working assumption and receives zero strength credit. These settings are not encoded by STEP.
 
 E7's fastener geometry remains. Actual structural perimeter thickness now follows the selected slicer wall settings. The grid, hollow bands and 2.4 mm modeled shell are not present in E8. Do not infer printed mass from the solid CAD volume or carry the earlier hollow-CAD capacity calculations across arbitrary print settings. See [the E8 handoff](designs/closed-wall-e8/README.md).
+
+
+## E8 prototype wall-count selection
+
+Use 8 walls for the PLA prototype and 10 for PETG, with both 1.2 mm helpers at 100% infill. Under the explicit 0.42 mm outer / 0.45 mm inner line-width and 0.2 mm layer assumptions, approximate perimeters are 3.27 and 4.08 mm. Six walls approximate the old 2.4 mm shell; nine approximate 3.6 mm. Counts are prototype choices rather than proven minimums. See [wall-count assumptions and screen](designs/closed-wall-e8/WALL-COUNTS.md). CAD remains unchanged and no capacity is released.

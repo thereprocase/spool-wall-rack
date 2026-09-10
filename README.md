@@ -10,7 +10,13 @@ A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket pri
 
 ## Design journal
 
-Latest checkpoint: **E8 removes the modeled grid and hands infill generation back to the slicer.** The STEP contains exactly three aligned solids: the body and two 1.2 mm helper slabs. Set the body's walls/infill, convert the helpers to modifiers, and set their infill to 100%. The STEP roundtrip and retained hardware clearance checks pass; sliced paths and physical performance remain unverified.
+Latest checkpoint: **Prototype wall-count starting points are 8 for PLA and 10 for PETG**, with both helpers at 100% infill. For the assumed 0.42/0.45 mm line widths and 0.2 mm layers, these correspond to approximately 3.3 and 4.1 mm perimeter thickness. They are test settings, not a verified load or creep rating.
+
+### Wall counts — map the slicer setting to actual section
+
+Six walls approximately recover the old 2.4 mm nominal perimeter; nine approximate the earlier 3.6 mm proposal. The current body still has the 28 mm arm depth. Selected 8 PLA / 10 PETG as starting settings with additional section margin. A simple local forearm comparison gives about 0.22 / 0.27 mm initial vertical movement respectively at the 12 kg bracket target, using typical reference moduli. That is not a whole-bracket or long-term prediction. Actual sliced thickness and the changed mounting connection still govern.
+
+[Wall-count mapping, assumptions and limits](designs/closed-wall-e8/WALL-COUNTS.md).
 
 ### E8 — solid body plus modifier helpers
 

@@ -4,6 +4,8 @@
 
 ![Modifier locations](modifier-stack.png)
 
+**Prototype starting wall counts: PLA 8; PETG 10.** These are test settings, not a verified capacity. See [the thickness mapping and limitations](WALL-COUNTS.md).
+
 ## Slicer setup
 
 1. Import the STEP while preserving its three aligned components as parts of one object. Keep the supplied orientation and relative positions; do not arrange the helper parts separately.
