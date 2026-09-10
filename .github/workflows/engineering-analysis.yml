@@ -1,0 +1,83 @@
+name: E8 engineering analysis
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'analysis/e8/*.py'
+      - 'analysis/e8/requirements.txt'
+      - '.github/workflows/engineering-analysis.yml'
+permissions:
+  contents: write
+concurrency:
+  group: e8-engineering
+  cancel-in-progress: false
+jobs:
+  solve:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: analysis/e8/requirements.txt
+      - name: Install solver dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libglu1-mesa libxft2 libxrender1 libxext6
+          python -m pip install -r analysis/e8/requirements.txt
+      - name: Build analysis-only material domains
+        run: python analysis/e8/build_analysis_geometry.py
+      - name: Solve reduced and coarse 3D models
+        run: |
+          python analysis/e8/verify_solver.py
+          python analysis/e8/solve2d.py 8 2
+          python analysis/e8/solve2d.py 10 2
+          python analysis/e8/solve2d.py 8 1
+          python analysis/e8/solve2d.py 6 2
+          python analysis/e8/solve2d.py 12 2
+          python analysis/e8/mesh_model.py print-material 8 3
+          python analysis/e8/solve3d.py print-material-8w-h3
+          python analysis/e8/mesh_model.py print-material 10 3
+          python analysis/e8/solve3d.py print-material-10w-h3
+          python analysis/e8/mesh_model.py landing 8 1
+          python analysis/e8/solve3d.py landing-8w-h1
+          python analysis/e8/report.py
+      - name: Publish solved coarse checkpoint
+        run: |
+          git config user.name "Rack Engineering"
+          git config user.email "rack-engineering@users.noreply.github.com"
+          git add analysis/e8
+          git diff --cached --quiet || git commit -m "Publish solved E8 stress fields and engineering calculations [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Refine global and landing meshes
+        run: |
+          python analysis/e8/mesh_model.py print-material 8 2
+          python analysis/e8/solve3d.py print-material-8w-h2
+          python analysis/e8/mesh_model.py print-material 10 2
+          python analysis/e8/solve3d.py print-material-10w-h2
+          python analysis/e8/mesh_model.py landing 8 0.65
+          python analysis/e8/solve3d.py landing-8w-h0.65
+          python analysis/e8/report.py
+      - name: Publish refinement results
+        run: |
+          git add analysis/e8
+          git diff --cached --quiet || git commit -m "Publish E8 mesh refinement and updated creep margins [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Preserve diagnostic results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e8-analysis-diagnostics
+          path: |
+            analysis/e8/*results.json
+            analysis/e8/*solution.npz
+            analysis/e8/*.png
+            analysis/e8/*.md

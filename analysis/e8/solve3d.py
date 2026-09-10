@@ -49,6 +49,14 @@ base=np.unique(fix).astype(int);active=wall.copy();u=np.zeros(3*N)
 # Rigid modes improve algebraic multigrid on an unconstrained elasticity operator.
 B=np.zeros((3*N,6));B[0::3,0]=1;B[1::3,1]=1;B[2::3,2]=1
 q=p-p.mean(0);B[1::3,3]=-q[:,2];B[2::3,3]=q[:,1];B[0::3,4]=q[:,2];B[2::3,4]=-q[:,0];B[0::3,5]=-q[:,1];B[1::3,5]=q[:,0]
+# Warm-start refined contact from the converged coarse mesh, if available.
+coarse=D/(name.split('-h')[0]+'-h3-solution.npz')
+if contact and not name.endswith('-h3') and coarse.exists():
+ from scipy.spatial import cKDTree
+ old=np.load(coarse)
+ if 'active_wall' in old:
+  ow=old['wall_nodes'];oi=cKDTree(old['p'][ow]).query(p[wall])[1]
+  active=wall[np.isin(ow[oi],old['active_wall'])]
 its=[];converged=False
 for it in range(30):
  fixed=np.union1d(base,3*active) if contact else base;free=np.setdiff1d(np.arange(3*N),fixed)
@@ -82,5 +90,5 @@ regions={'rear_seat':(tc[:,0]>75)&(tc[:,0]<110)&(tc[:,1]<0),'forearm':(tc[:,0]>1
 res['regions']={}
 for key,mask in regions.items():
  if mask.any():res['regions'][key]={'vm_p99_MPa':weighted_quantile(vm[mask],vol[mask],.99),'vm_max_MPa':float(vm[mask].max()),'max_principal_MPa':float(principal[mask,2].max())}
-np.savez_compressed(D/f'{name}-solution.npz',p=p,t=t,u=U,vm=vm,stress=stress,volume=vol)
+np.savez_compressed(D/f'{name}-solution.npz',p=p,t=t,u=U,vm=vm,stress=stress,volume=vol,wall_nodes=wall,active_wall=active)
 (D/f'{name}-results.json').write_text(json.dumps(res,indent=2));print(json.dumps(res,indent=2),flush=True)
