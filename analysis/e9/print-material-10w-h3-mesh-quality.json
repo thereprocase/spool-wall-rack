@@ -1,0 +1,8 @@
+{
+  "input_tetrahedra": 103938,
+  "removed_numerically_degenerate_cells": 0,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 0.0,
+  "total_absolute_volume_mm3": 117345.44078023669,
+  "minimum_retained_normalized_determinant": 1.224216202448293e-07
+}

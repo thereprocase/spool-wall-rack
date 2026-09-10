@@ -45,7 +45,7 @@ If STEP components do not import correctly, use [body-only.stl](body-only.stl), 
 
 ## Engineering status
 
-E9 is the running prototype. The level-rail E8 FEM and creep guide remain a historical baseline; E9 changes the load split, back arm and finishing geometry, so it does not inherit E8's results. Current E9 calculations are being added under [analysis/e9](../../analysis/e9).
+E9 is the running prototype. The level-rail E8 FEM and creep guide remain a historical baseline; E9 changes the load split, back arm and finishing geometry, so it does not inherit E8's results. New E9 2D/3D fields, refined 8/10-wall results and a screw-landing submodel are published under [analysis/e9](../../analysis/e9/RESULTS.md). See the [current full engineering guide](../../README.md) for material comparisons and conditional creep margins.
 
 Serviceability criteria remain **5 mm total movement at full load and 1 mm change per full spool added or removed**. The 12 kg equivalent per-bracket case and 85°F sustained / 100°F for six hours per year remain analysis targets, not a released load rating.
 

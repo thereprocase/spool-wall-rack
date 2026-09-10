@@ -75,6 +75,8 @@ for it in range(30):
  if np.array_equal(new,active):converged=True;break
  print('contact',len(active),'->',len(new),'min gap',u[3*wall].min(),'min R',r[3*wall].min(),flush=True);active=new
 assert converged,'Contact active set failed'
+true_residual=float(np.linalg.norm(r[free])/np.linalg.norm(f[free]))
+assert true_residual < 1e-6, f'Independent assembled residual failed: {true_residual}'
 U=u.reshape(-1,3);field=basis.interpolate(u);grad=field.grad.mean(axis=-1);strain=(grad+grad.transpose(1,0,2))/2
 stress=2*mu*strain+lam*np.einsum('iie->e',strain)[None,None,:]*np.eye(3)[:,:,None]
 dev=stress-np.einsum('iie->e',stress)[None,None,:]*np.eye(3)[:,:,None]/3;vm=np.sqrt(1.5*np.einsum('ije,ije->e',dev,dev))

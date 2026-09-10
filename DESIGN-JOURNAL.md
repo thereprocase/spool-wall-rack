@@ -2,6 +2,18 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## E9 — raised-front running prototype
+
+Adopted the +12 mm front rail as the current prototype. The rear center stays at (90, 0), front center becomes (190, 12), and both retainers rotate to the new contact directions. The back arm moves inward while retaining full-height wall contact; the front buttress meets the original base rather than leaving a stub.
+
+Reduced both broad-face chamfers to 2 mm and verified them on nine structural edges using mirrored material-presence probes. Kept nominal R2 exposed wall-facet blends and smooth chamfer runouts before small features. The 322-case 180–220 mm spool sweep gives 3.93 mm minimum nominal clearance. STEP, closed meshes and fastener access checks pass.
+
+Rebuilt the analysis material domain from the finished E9 CAD, including matching chamfer reinforcement, four 1.2 mm plates and zero sparse-infill credit. New 2D/3D fields and a 500 N upper screw-landing submodel are under [analysis/e9](analysis/e9). The main README holds current calculated margins; the [E8 guide](E8-ENGINEERING-GUIDE.md) remains an explicitly archived level-rail baseline.
+
+![E9 verified drawing](designs/closed-wall-e9/engineering-drawing.png)
+
+Physical slicing, fit and sustained/hot load qualification remain necessary before assigning lifetime spool ratings.
+
 # Spool wall rack
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.

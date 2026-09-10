@@ -1,6 +1,8 @@
-# Spool wall rack — print setup and engineering guide
+# Archived E8 level-rail engineering guide
 
-**Current printable prototype: E8, with level rails.** Print the bracket on its broad side so the principal bending load stays in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
+**Historical baseline. E9 is the running prototype; use the [current guide](README.md) and its downloads.**
+
+**This archived revision is E8, with level rails.** Print the bracket on its broad side so the principal bending load stays in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
 
 **[Download the STEP assembly](designs/closed-wall-e8/bracket-with-modifier-helpers.step)** · [Aligned STL fallback and rebuild](designs/closed-wall-e8/README.md) · [Solved results and stress images](analysis/e8/RESULTS.md) · [Analysis run](https://github.com/thereprocase/spool-wall-rack/actions/workflows/engineering-analysis.yml)
 

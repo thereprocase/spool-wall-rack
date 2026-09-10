@@ -29,6 +29,8 @@ python solve3d.py landing-8w-h0.65
 python report.py
 ```
 
+Before assembly, numerically zero-volume tetrahedra are removed using a normalized determinant threshold of 1e-12. This removed one coarse and six fine 8-wall cells, with total removed volume below 1.4e-12 mm³; finite-volume low-quality cells are retained. The initial uncleaned 8-wall result failed the independent residual check and was rejected. Mesh audits are stored alongside results. Both solver and report now require an independently recomputed relative free residual below 1e-6.
+
 The fine models warm-start wall contact from the corresponding converged coarse solution. Gmsh uses Delaunay meshing; element ordering and algebraic multigrid can vary slightly between installations. The existing automated workflow targets the archived E8 baseline.
 
 ## Model limits

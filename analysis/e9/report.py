@@ -11,7 +11,10 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from skfem import MeshTet
 D=Path(__file__).resolve().parent
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'figure.facecolor':'#f7f7f3','axes.facecolor':'#f7f7f3'})
-def read(name):return json.loads((D/f'{name}-results.json').read_text())
+def read(name):
+ r=json.loads((D/f'{name}-results.json').read_text())
+ assert r['relative_free_residual'] < 1e-6, f'Rejected residual: {name}'
+ return r
 def best(n):
  fine=f'print-material-{n}w-h2'
  return fine if (D/f'{fine}-results.json').exists() else f'print-material-{n}w-h3'
@@ -63,6 +66,12 @@ def main():
   if (D/f'{fine}-results.json').exists():
    a=read(coarse);b=read(fine);da=-a['patches']['front_seat']['mean_displacement_mm_at_E1000'][1];db=-b['patches']['front_seat']['mean_displacement_mm_at_E1000'][1]
    summary['mesh_checks'].append({'rear_seat_p99_coarse_MPa':a['regions']['rear_seat']['vm_p99_MPa'],'rear_seat_p99_fine_MPa':b['regions']['rear_seat']['vm_p99_MPa'],'walls':n,'coarse_tets':a['tetrahedra'],'fine_tets':b['tetrahedra'],'front_displacement_change_percent':100*(db/da-1),'coarse_VM_p99_MPa':a['vm_volume_p99_MPa'],'fine_VM_p99_MPa':b['vm_volume_p99_MPa'],'coarse_VM_max_MPa':a['vm_max_MPa_not_allowable'],'fine_VM_max_MPa':b['vm_max_MPa_not_allowable']})
+ summary['peak_diagnostics']=[]
+ for n,h in itertools.product([8,10],[3,2]):
+  name=f'print-material-{n}w-h{h}'
+  if (D/f'{name}-results.json').exists():
+   d=np.load(D/f'{name}-solution.npz');i=int(d['vm'].argmax())
+   summary['peak_diagnostics'].append({'mesh':name,'raw_vm_peak_MPa':float(d['vm'][i]),'cell_center_mm':d['p'][d['t'][i]].mean(0).tolist(),'cell_volume_mm3':float(d['volume'][i])})
  # Figure 26 visually transcribed spectrum, seconds; normalized example only.
  tau=np.array([1,10,100,1000,10000,100000.]);A=np.array([.005,.010,.015,.010,.020,.080])
  def G(t):return 1+np.sum(A*(1-np.exp(-np.asarray(t)[...,None]/tau)),axis=-1)
@@ -78,6 +87,8 @@ def main():
    for c in summary['cases'][:2]:row[c['material']+'_front_mm']=row['G']*c['initial_front_mm']
    summary['planning_scenarios'].append(row)
  summary['raised_front_statics']=raised_front()
+ summary['two_dimensional_refinement']={'coarse':read('plane-8w-h2'),'fine':read('plane-8w-h1')}
+ summary['landing_case']=read('landing-8w-h0.65')
  # Creep graph distinguishes observed range from unmeasured continuation.
  fig,ax=plt.subplots(1,2,figsize=(12,5),layout='constrained');hours=np.geomspace(.001,20,240);ax[0].semilogx(hours,G(hours*3600),color='#187d83',lw=2);ax[0].set(xlabel='Hours',ylabel='Normalized compliance J / J0',title='Published PETG spectrum • tested time range')
  years=np.linspace(0,10,300)
@@ -93,6 +104,7 @@ def main():
  text+='| Material | Walls | Reference E (MPa) | Initial front movement (mm) | One 1.25 kg roll (mm) | Creep modulus needed for 5 mm (MPa) | Compliance limit |\n|---|---:|---:|---:|---:|---:|---:|\n'+'\n'.join(rows)
  text+='\n\nModuli are room-temperature reference values. The creep-modulus limits apply to bracket movement alone; subtract dowel and wall movement from the 5 mm system allowance. The one-roll column assigns the entire roll reaction to one bracket, for the stated simple/two-equal-span arrangement, and uses the reference instantaneous modulus. It is not a measured aged unloading modulus.\n\n'
  text+='## Numerical checks\n\n'
+ text+='The initial 8-wall mesh contained numerically zero-volume cells and failed its independently recomputed residual check; that result was rejected. The published 8-wall meshes remove one coarse and six fine degenerate cells, totaling less than 1.4e-12 mm³. The corrected 8/10-wall solves have relative free residuals below 4e-9. See the mesh-quality JSON files and peak_diagnostics in engineering-summary.json for the audit and raw-peak cell locations.\n\n'
  for c in summary['mesh_checks']:text+=f'- {c["walls"]} walls: {c["coarse_tets"]:,} → {c["fine_tets"]:,} tetrahedra; front movement changes {c["front_displacement_change_percent"]:.2f}%. Volume p99 stress: {c["coarse_VM_p99_MPa"]:.2f} → {c["fine_VM_p99_MPa"]:.2f} MPa. Raw peak: {c["coarse_VM_max_MPa"]:.2f} → {c["fine_VM_max_MPa"]:.2f} MPa.\n'
  if not summary['mesh_checks']:text+='Whole-bracket refinement is pending.\n'
  text+='\nA percentile is a field summary, not a stress allowable. The refinement changes listed above do not establish asymptotic convergence. Regional stress changes must also be considered; global percentiles can hide local changes. Tiny cells at tunnel/chamfer intersections, sharp analysis-core transitions and restraint edges affect peaks; actual sliced radii and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.\n\n![2D FEM](fem-2d.png)\n\n![3D FEM](fem-3d.png)\n\n![Landing FEM](fem-landing.png)\n\n![Creep sensitivity](creep-sensitivity.png)\n\n![Raised-front study](raised-front-statics.png)\n\n'
