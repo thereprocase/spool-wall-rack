@@ -1,0 +1,8 @@
+cadquery==2.7.0
+gmsh==4.15.2
+scikit-fem==12.0.2
+numpy<3
+scipy<2
+matplotlib<4
+shapely<3
+pyamg<6

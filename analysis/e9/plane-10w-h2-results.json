@@ -1,0 +1,32 @@
+{
+  "name": "plane-10w-h2",
+  "nodes": 7365,
+  "triangles": 13900,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "contact_iterations": 10,
+  "applied_force_N": [
+    -5.440092820663267e-15,
+    -117.71999999999998
+  ],
+  "reaction_N": [
+    -3.9131611319354054e-10,
+    117.71999999980711
+  ],
+  "relative_free_residual": 7.388780263443775e-11,
+  "vm_max_MPa_not_allowable": 6.559095770747833,
+  "patches": {
+    "rear_seat": {
+      "mean_displacement_mm_at_E1000": [
+        0.05393183695754827,
+        -0.2523533134947258
+      ]
+    },
+    "front_seat": {
+      "mean_displacement_mm_at_E1000": [
+        0.5924409823340187,
+        -3.071618769416361
+      ]
+    }
+  }
+}

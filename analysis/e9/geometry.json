@@ -1,0 +1,14 @@
+[
+  {
+    "walls": 8,
+    "effective_wall_mm": 3.2695574287564275,
+    "volume_mm3": 105297.61553827157,
+    "valid": true
+  },
+  {
+    "walls": 10,
+    "effective_wall_mm": 4.083716694115407,
+    "volume_mm3": 117346.20587424719,
+    "valid": true
+  }
+]
