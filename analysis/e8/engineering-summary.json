@@ -10,70 +10,91 @@
     {
       "material": "PLA",
       "walls": 8,
-      "source_mesh": "print-material-8w-h3",
+      "source_mesh": "print-material-8w-h2",
       "reference_E_MPa": 3426.9,
-      "front_K_MPa_mm": 4028.090281237579,
-      "rear_K_MPa_mm": 283.57786811262764,
-      "initial_front_mm": 1.175432688796749,
-      "one_roll_initial_mm_upper_simple_case": 0.1224409050829947,
-      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 805.6180562475158,
-      "compliance_multiplier_limit_bracket_only": 4.25375272242797,
+      "front_K_MPa_mm": 4226.308913595819,
+      "rear_K_MPa_mm": 287.4858601151945,
+      "initial_front_mm": 1.2332746545261954,
+      "one_roll_initial_mm_upper_simple_case": 0.1284661098464787,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 845.2617827191638,
+      "compliance_multiplier_limit_bracket_only": 4.054246944628016,
       "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_PLA_TDS_EN_V5.4.pdf?v=1731949179"
     },
     {
       "material": "PETG",
       "walls": 10,
-      "source_mesh": "print-material-10w-h3",
+      "source_mesh": "print-material-10w-h2",
       "reference_E_MPa": 2311.11,
-      "front_K_MPa_mm": 3619.6055433647107,
-      "rear_K_MPa_mm": 251.3032807109543,
-      "initial_front_mm": 1.5661762284636864,
-      "one_roll_initial_mm_upper_simple_case": 0.163143357131634,
-      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 723.9211086729422,
-      "compliance_multiplier_limit_bracket_only": 3.1924887564566498,
+      "front_K_MPa_mm": 3839.3562359719704,
+      "rear_K_MPa_mm": 257.6043810043291,
+      "initial_front_mm": 1.6612607084785969,
+      "one_roll_initial_mm_upper_simple_case": 0.1730479904665205,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 767.8712471943941,
+      "compliance_multiplier_limit_bracket_only": 3.009762389781109,
       "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PETG_TDS_Polymaker_297e875c-5d38-4d2b-ba68-eef8916de183.pdf?v=1761581533"
     },
     {
       "material": "ASA",
       "walls": 8,
-      "source_mesh": "print-material-8w-h3",
+      "source_mesh": "print-material-8w-h2",
       "reference_E_MPa": 2379,
-      "front_K_MPa_mm": 4028.090281237579,
-      "rear_K_MPa_mm": 283.57786811262764,
-      "initial_front_mm": 1.6931863309111304,
-      "one_roll_initial_mm_upper_simple_case": 0.1763735761365761,
-      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 805.6180562475158,
-      "compliance_multiplier_limit_bracket_only": 2.9530122637532874,
+      "front_K_MPa_mm": 4226.308913595819,
+      "rear_K_MPa_mm": 287.4858601151945,
+      "initial_front_mm": 1.776506479023043,
+      "one_roll_initial_mm_upper_simple_case": 0.18505275823156697,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 845.2617827191638,
+      "compliance_multiplier_limit_bracket_only": 2.8145126736321604,
       "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_ASA_TDS_EN_V5.4.pdf?v=1731955208"
     },
     {
       "material": "PA6-GF dry",
       "walls": 8,
-      "source_mesh": "print-material-8w-h3",
+      "source_mesh": "print-material-8w-h2",
       "reference_E_MPa": 5356.9,
-      "front_K_MPa_mm": 4028.090281237579,
-      "rear_K_MPa_mm": 283.57786811262764,
-      "initial_front_mm": 0.7519442739714348,
-      "one_roll_initial_mm_upper_simple_case": 0.07832752853869113,
-      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 805.6180562475158,
-      "compliance_multiplier_limit_bracket_only": 6.649428917906677,
+      "front_K_MPa_mm": 4226.308913595819,
+      "rear_K_MPa_mm": 287.4858601151945,
+      "initial_front_mm": 0.7889467627911327,
+      "one_roll_initial_mm_upper_simple_case": 0.08218195445740965,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 845.2617827191638,
+      "compliance_multiplier_limit_bracket_only": 6.337563237234183,
       "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf"
     },
     {
       "material": "PA6-GF wet",
       "walls": 8,
-      "source_mesh": "print-material-8w-h3",
+      "source_mesh": "print-material-8w-h2",
       "reference_E_MPa": 1793.6,
-      "front_K_MPa_mm": 4028.090281237579,
-      "rear_K_MPa_mm": 283.57786811262764,
-      "initial_front_mm": 2.2458130470771516,
-      "one_roll_initial_mm_upper_simple_case": 0.2339388590705366,
-      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 805.6180562475158,
-      "compliance_multiplier_limit_bracket_only": 2.2263651938915077,
+      "front_K_MPa_mm": 4226.308913595819,
+      "rear_K_MPa_mm": 287.4858601151945,
+      "initial_front_mm": 2.356327449596242,
+      "one_roll_initial_mm_upper_simple_case": 0.24545077599960852,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 845.2617827191638,
+      "compliance_multiplier_limit_bracket_only": 2.121946167056176,
       "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf"
     }
   ],
-  "mesh_checks": [],
+  "mesh_checks": [
+    {
+      "walls": 8,
+      "coarse_tets": 119893,
+      "fine_tets": 203934,
+      "front_displacement_change_percent": 4.920908383844358,
+      "coarse_VM_p99_MPa": 5.179634239961558,
+      "fine_VM_p99_MPa": 5.2523560170853125,
+      "coarse_VM_max_MPa": 21.78994305832036,
+      "fine_VM_max_MPa": 25.45455050663992
+    },
+    {
+      "walls": 10,
+      "coarse_tets": 116335,
+      "fine_tets": 203893,
+      "front_displacement_change_percent": 6.071122667222584,
+      "coarse_VM_p99_MPa": 4.558195003170649,
+      "fine_VM_p99_MPa": 4.612138756748089,
+      "coarse_VM_max_MPa": 11.574716958281124,
+      "fine_VM_max_MPa": 27.26183220868654
+    }
+  ],
   "published_PETG_example": {
     "source": "https://doi.org/10.3390/polym17152075",
     "tau_seconds": [
@@ -123,64 +144,64 @@
       "years": 1,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0,
       "G": 1.1400000000000001,
-      "PLA_front_mm": 1.339993265228294,
-      "PETG_front_mm": 1.7854409004486027
+      "PLA_front_mm": 1.405933106159863,
+      "PETG_front_mm": 1.8938372076656007
     },
     {
       "years": 1,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.02,
       "G": 1.1600000000000001,
-      "PLA_front_mm": 1.363501919004229,
-      "PETG_front_mm": 1.8167644250178765
+      "PLA_front_mm": 1.430598599250387,
+      "PETG_front_mm": 1.9270624218351726
     },
     {
       "years": 1,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.1,
       "G": 1.2400000000000002,
-      "PLA_front_mm": 1.457536534107969,
-      "PETG_front_mm": 1.9420585232949714
+      "PLA_front_mm": 1.5292605716124825,
+      "PETG_front_mm": 2.0599632785134605
     },
     {
       "years": 5,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0,
       "G": 1.1400000000000001,
-      "PLA_front_mm": 1.339993265228294,
-      "PETG_front_mm": 1.7854409004486027
+      "PLA_front_mm": 1.405933106159863,
+      "PETG_front_mm": 1.8938372076656007
     },
     {
       "years": 5,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.02,
       "G": 1.2400000000000002,
-      "PLA_front_mm": 1.457536534107969,
-      "PETG_front_mm": 1.9420585232949714
+      "PLA_front_mm": 1.5292605716124825,
+      "PETG_front_mm": 2.0599632785134605
     },
     {
       "years": 5,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.1,
       "G": 1.6400000000000001,
-      "PLA_front_mm": 1.9277096096266686,
-      "PETG_front_mm": 2.568529014680446
+      "PLA_front_mm": 2.0225704334229606,
+      "PETG_front_mm": 2.7244675619048992
     },
     {
       "years": 10,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0,
       "G": 1.1400000000000001,
-      "PLA_front_mm": 1.339993265228294,
-      "PETG_front_mm": 1.7854409004486027
+      "PLA_front_mm": 1.405933106159863,
+      "PETG_front_mm": 1.8938372076656007
     },
     {
       "years": 10,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.02,
       "G": 1.34,
-      "PLA_front_mm": 1.5750798029876438,
-      "PETG_front_mm": 2.09867614614134
+      "PLA_front_mm": 1.652588037065102,
+      "PETG_front_mm": 2.22608934936132
     },
     {
       "years": 10,
       "assumed_unmeasured_linear_compliance_tail_per_year": 0.1,
       "G": 2.14,
-      "PLA_front_mm": 2.515425954025043,
-      "PETG_front_mm": 3.3516171289122894
+      "PLA_front_mm": 2.6392077606860584,
+      "PETG_front_mm": 3.5550979161441973
     }
   ],
   "raised_front_statics": [
