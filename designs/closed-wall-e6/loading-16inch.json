@@ -1,0 +1,54 @@
+{
+  "status": "SERVICE DEMAND ONLY \u2014 no safe spool count or creep rating",
+  "bracket_spacing_mm": 406.4,
+  "spools_per_bay_assumed": 6,
+  "gross_mass_per_spool_kg_assumed": 1.25,
+  "maximum_spool_pitch_for_six_per_bay_mm": 67.73333333333333,
+  "bay_spool_mass_kg": 7.5,
+  "isolated_single_bay_end_support_mass_equivalent_kg": 3.75,
+  "interior_support_adjacent_simple_spans_mass_equivalent_kg": 7.5,
+  "two_equal_continuous_spans_middle_support_mass_equivalent_kg": 9.375,
+  "two_span_middle_wall_moment_Nm": 12.875625000000001,
+  "two_span_middle_idealized_upper_screw_tension_N": 65.69196428571429,
+  "two_span_middle_each_seat_vertical_N": 45.984375,
+  "two_span_middle_each_seat_outward_N": 22.839941391782297,
+  "two_span_middle_midpoint_nominal_extreme_stress_screen_MPa": 1.851070363749502,
+  "wood_rod_simple_span_screen": {
+    "elastic_modulus_assumed_MPa": 8000,
+    "combined_bending_stress_MPa": 1.297011859296525,
+    "instantaneous_resultant_deflection_mm": 0.21962734150754493
+  },
+  "dense_row_mass_sensitivity": [
+    {
+      "spool_pitch_mm": 60,
+      "gross_mass_kg_per_spool": 1.25,
+      "tributary_mass_kg": 8.466666666666665,
+      "two_span_middle_mass_equivalent_kg": 10.583333333333334
+    },
+    {
+      "spool_pitch_mm": 65,
+      "gross_mass_kg_per_spool": 1.25,
+      "tributary_mass_kg": 7.815384615384615,
+      "two_span_middle_mass_equivalent_kg": 9.769230769230768
+    },
+    {
+      "spool_pitch_mm": 70,
+      "gross_mass_kg_per_spool": 1.25,
+      "tributary_mass_kg": 7.257142857142856,
+      "two_span_middle_mass_equivalent_kg": 9.071428571428571
+    }
+  ],
+  "assumptions": [
+    "Uniformly distributed spool weight and equal vertical load sharing between two rods. Six discrete spools and clustered loading will differ.",
+    "The 1.25 factor is the elastic reaction for two equal continuous beam spans under equal uniform loads. It is not a universal reaction bound or safety factor.",
+    "No rail overhangs, support settlement, dowel self-weight, accidental loads or dynamic amplification included.",
+    "The printed bracket midpoint stress includes bending from vertical/outward front-seat forces and axial stress, using final CAD section properties. It excludes stress concentrations, snap roots, the knee, shear, buckling and time-dependent behavior.",
+    "Wood modulus is an explicit 8 GPa calculation assumption, not a measured property or a grade/species assignment for the purchased dowels.",
+    "The screw-force estimate assumes one upper tension screw and a compression point at the bottom of the wall face. It is a demand estimate, not a fastener capacity check."
+  ],
+  "release_gates": [
+    "Identify bracket filament, temperature, duration and required spool loading.",
+    "Resolve the unsupported internal roofs and inspect actual sliced solid paths.",
+    "Analyze critical bracket sections and mounting fasteners; verify creep behavior and handling with representative prints."
+  ]
+}

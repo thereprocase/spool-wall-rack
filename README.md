@@ -10,6 +10,16 @@ A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket pri
 
 Latest checkpoint: **E6 saves about 40 mm of loaded rack height by shortening the rail span and using the available height beside the spool for the upper fixing.** Next: check the narrower cradle's handling stability and evaluate the actual arm, snap roots and mounting connection. Resolve internal roof printing before full-bracket printing.
 
+### 16-inch support spacing — service load case, not a rating
+
+E6 is not yet cleared for a fully loaded installation. For six full spools per 406.4 mm bay at an assumed gross mass of 1.25 kg each, the bay carries 7.5 kg. Six per bay requires a pitch no greater than 67.7 mm; spools can straddle bracket locations because the bracket does not interrupt the bearing track.
+
+An interior support between simply supported bays carries about one bay's load. Continuous dowels across two equal, uniformly loaded bays place 1.25 times one bay's load on the middle bracket: **9.375 kg equivalent**, before dowel weight and handling loads. This factor describes that beam case; it is not a safety factor or a universal maximum. At 60–70 mm spool pitch, the same continuous-span estimate ranges from approximately 9.1 to 10.6 kg at the middle support.
+
+The six-spool example produces approximately 12.9 N·m at the wall and an idealized 66 N upper-screw tension demand. A sampled arm midpoint has approximately 1.85 MPa nominal combined stress, including the outward seat force. Those numbers omit critical local concentrations, other sections and creep; they are not allowable loads. The 1-inch dowel calculation gives approximately 0.22 mm instantaneous resultant deflection using an explicitly assumed 8 GPa wood modulus. Purchased dowel properties remain unidentified.
+
+The next capacity check needs the actual bracket filament, maximum sustained temperature, spool mass/pitch, wall fasteners and rail end conditions. Internal-roof printing remains unresolved. [Inputs, equations and limitations](designs/closed-wall-e6/check_16inch_loading.py) · [Calculated demands](designs/closed-wall-e6/loading-16inch.json).
+
 ### E6 — shorten the span, retain arm depth, use the upper spool envelope
 
 Moved the rail centers from 76/226 mm to 90/190 mm from the wall, reducing their spacing from 150 to 100 mm. That lets the arm rise under the spool while retaining approximately 28 mm of depth. Rotated both retainers to match the new spool contact directions, keeping their rigid bearing sectors opposite the contact. Minimum nominal flange clearance is 3.48 mm across 180–220 mm spools.

@@ -66,3 +66,9 @@ For 180/200/220 mm flanges, the bracket extends 31.4/32.7/33.7 mm below the spoo
 The section-property script reads final STEP solids. Its midpoint `I/L³` comparison suggests that the shorter forearm can recover the stiffness lost through reduced depth, but it does not model the complete bracket. The idealized bolt-force screen assumes equal rail loading, a point wall-compression reaction and one upper tension fixing. Neither calculation provides a spool rating.
 
 The 100 mm rail spacing reduces the ideal rise needed to rock the spool over one rod to about 12 mm, from 29 mm in E4. This is the main handling compromise; the rail snap does not restrain the spool. Check bumps, off-center loading and sliding with real spools. The closed-wall internal printing issue remains unresolved. The separate open-web path is unchanged.
+
+## Full-row service case at 16 inches on center
+
+The current load study assumes six 1.25 kg gross spools per 406.4 mm bay. It calculates demands rather than allowable capacities. In the two-equal-span continuous-dowel case, the middle support carries 9.375 kg equivalent before rod self-weight and handling loads. An interior support does not merely carry half one bay. Spool width and weight, continuous versus jointed dowels, end overhangs and support compliance affect the reactions.
+
+See E6's `check_16inch_loading.py` and `loading-16inch.json`. Do not treat the low nominal stress at one sampled section, generic filament tensile strengths, or a brief proof load as a long-term creep qualification. Identify the printing material and service temperature before establishing a sustained-load limit.
