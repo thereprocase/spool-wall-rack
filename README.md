@@ -12,7 +12,13 @@
 
 E9 passes its STEP, hardware-clearance, mesh-closure and finish checks. The 180–220 mm spool sweep has **3.93 mm minimum nominal clearance**. Direct material probes verify both mirrored 2 mm face chamfers along nine structural edges. The exposed wall direction changes follow nominal R2 arcs. The raised seat connects continuously to the arm base without the bottom stub from the first lift attempt.
 
-The new 2D and 3D structural models are being solved against this exact revision. E8 results stay separately identified until those calculations are published.
+The revised 2D model and the 10-wall 3D refinement are complete. At 12 kg equivalent bracket load, the 10-wall model predicts **1.37 mm initial front-seat movement** using the PETG reference modulus, versus 1.66 mm for E8. The 500 N screw-landing model still supports retaining the 3.6 mm clamping thickness. The 8-wall whole-bracket solve is finishing; its E9 material and creep table will be published after verification.
+
+![E9 2D stress field](analysis/e9/fem-2d.png)
+
+![E9 10-wall 3D stress field](analysis/e9/fem-3d-10w.png)
+
+These are isotropic numerical screening models with zero sparse-infill credit, not tested lifetime ratings.
 
 ## Printing
 

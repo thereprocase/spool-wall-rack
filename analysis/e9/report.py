@@ -30,7 +30,7 @@ def render3(name,output,landing=False):
  ax.set(xlim=(lo[0],hi[0]),ylim=(lo[1],hi[1]),zlim=(lo[2],hi[2]));ax.set_box_aspect(hi-lo);ax.view_init(elev=20,azim=-35 if landing else -60)
  ax.set_xlabel('Projection X (mm)',labelpad=2 if landing else 10);ax.set_ylabel('Width (mm)',labelpad=12);ax.set_zlabel('Height Y (mm)',labelpad=10);ax.set_yticks([0,12,24])
  fig.colorbar(plt.cm.ScalarMappable(norm=norm,cmap=cmap),ax=ax,shrink=.65,pad=.04,label='Element von Mises stress (MPa)')
- fig.suptitle('3D landing FEM • 500 N washer compression' if landing else '3D bracket FEM • 12 kg equivalent load',fontsize=17,fontweight='bold')
+ fig.suptitle('3D landing FEM • 500 N washer compression' if landing else f'E9 3D FEM • {name.split("-")[2]} • 12 kg equivalent load',fontsize=17,fontweight='bold')
  fig.supxlabel('Actual 3.6 mm land with flat rear support; nominal Ø13 / Ø5.5 washer patch.\nConstant force scenario; installed preload can relax.' if landing else 'Actual chamfered exterior, ideal contour walls and four 1.2 mm plates; sparse infill removed.\nCompression-only wall; rigid washer and shank restraints. Undeformed geometry. Peaks are not allowables.',fontsize=9)
  fig.savefig(D/output,dpi=160);plt.close(fig)
 def raised_front():
@@ -87,15 +87,15 @@ def main():
  fig.supxlabel('Short-time spectrum: Stankevics et al. (2025), Fig. 26. Temperature shifts and long-time tails are uncalibrated.\nA fitted finite Prony series plateaus by construction; this does not prove the printed bracket stops creeping.',fontsize=9)
  fig.savefig(D/'creep-sensitivity.png',dpi=160);plt.close(fig)
  land='landing-8w-h0.65' if (D/'landing-8w-h0.65-results.json').exists() else 'landing-8w-h1'
- render2('plane-8w-h2');render3(best(8),'fem-3d.png');render3(land,'fem-landing.png',True)
+ render2('plane-8w-h1');render3(best(8),'fem-3d.png');render3(land,'fem-landing.png',True)
  (D/'engineering-summary.json').write_text(json.dumps(summary,indent=2))
- text='# Solved E9 engineering results\n\nThese results apply to the raised-front E9 prototype. Raised-front statics are a separate study.\n\n'
+ text='# Solved E9 engineering results\n\nThese results apply to the raised-front E9 prototype, including its reshaped back arm and 2 mm broad-face chamfers. The rail-statics comparison isolates the effect of the 12 mm height change.\n\n'
  text+='| Material | Walls | Reference E (MPa) | Initial front movement (mm) | One 1.25 kg roll (mm) | Creep modulus needed for 5 mm (MPa) | Compliance limit |\n|---|---:|---:|---:|---:|---:|---:|\n'+'\n'.join(rows)
  text+='\n\nModuli are room-temperature reference values. The creep-modulus limits apply to bracket movement alone; subtract dowel and wall movement from the 5 mm system allowance. The one-roll column assigns the entire roll reaction to one bracket, for the stated simple/two-equal-span arrangement, and uses the reference instantaneous modulus. It is not a measured aged unloading modulus.\n\n'
  text+='## Numerical checks\n\n'
  for c in summary['mesh_checks']:text+=f'- {c["walls"]} walls: {c["coarse_tets"]:,} → {c["fine_tets"]:,} tetrahedra; front movement changes {c["front_displacement_change_percent"]:.2f}%. Volume p99 stress: {c["coarse_VM_p99_MPa"]:.2f} → {c["fine_VM_p99_MPa"]:.2f} MPa. Raw peak: {c["coarse_VM_max_MPa"]:.2f} → {c["fine_VM_max_MPa"]:.2f} MPa.\n'
  if not summary['mesh_checks']:text+='Whole-bracket refinement is pending.\n'
- text+='\nA percentile is a field summary, not a stress allowable. Global displacement changes by about 5–6% in this comparison; this is not proof of asymptotic convergence. Rear-seat regional p99 stresses change more than global percentiles. Tiny cells at tunnel/chamfer intersections, sharp analysis-core transitions and restraint edges affect peaks; actual sliced radii and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.\n\n![2D FEM](fem-2d.png)\n\n![3D FEM](fem-3d.png)\n\n![Landing FEM](fem-landing.png)\n\n![Creep sensitivity](creep-sensitivity.png)\n\n![Raised-front study](raised-front-statics.png)\n\n'
+ text+='\nA percentile is a field summary, not a stress allowable. The refinement changes listed above do not establish asymptotic convergence. Regional stress changes must also be considered; global percentiles can hide local changes. Tiny cells at tunnel/chamfer intersections, sharp analysis-core transitions and restraint edges affect peaks; actual sliced radii and FFF anisotropy require separate interpretation. See individual result JSON files for force/moment balance, residuals, patch movements and regional stresses.\n\n![2D FEM](fem-2d.png)\n\n![3D FEM](fem-3d.png)\n\n![Landing FEM](fem-landing.png)\n\n![Creep sensitivity](creep-sensitivity.png)\n\n![Raised-front study](raised-front-statics.png)\n\n'
  text+='## Conditional one-, five- and ten-year calculation\n\n| Years | Assumed extra compliance / year | Total compliance multiplier | PLA movement (mm) | PETG movement (mm) |\n|---:|---:|---:|---:|---:|\n'
  for c in summary['planning_scenarios']:text+=f'| {c["years"]} | {c["assumed_unmeasured_linear_compliance_tail_per_year"]:.2f} | {c["G"]:.2f} | {c["PLA_front_mm"]:.2f} | {c["PETG_front_mm"]:.2f} |\n'
  text+='\nThese curves intentionally demonstrate different long-term continuations that a short test cannot distinguish. They are neither PLA nor PETG life predictions at 85°F. No creep-rupture allowable is inferred.\n'
