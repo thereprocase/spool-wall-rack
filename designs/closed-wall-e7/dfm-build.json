@@ -1,0 +1,65 @@
+{
+  "bands": [
+    {
+      "band_z_mm": [
+        1.2,
+        7.6000000000000005
+      ],
+      "cavity_count": 106,
+      "void_volume_cm3": 46.178968205000494
+    },
+    {
+      "band_z_mm": [
+        8.8,
+        15.200000000000001
+      ],
+      "cavity_count": 97,
+      "void_volume_cm3": 44.10569519749396
+    },
+    {
+      "band_z_mm": [
+        16.4,
+        22.799999999999997
+      ],
+      "cavity_count": 106,
+      "void_volume_cm3": 45.818093611952
+    }
+  ],
+  "footprint_count": 106,
+  "cell_clear_box_mm": 10,
+  "divider_mm": 1.2,
+  "full_cell_corner_radius_mm": 2,
+  "roof_bridge_any_direction_upper_bound_mm": 14.142135623730951,
+  "screw_axes_y_mm": [
+    164,
+    40
+  ],
+  "land_from_wall_mm": 3.6,
+  "screw_clearance_diameter_mm": 5.2,
+  "tool_access_nominal_diameter_mm": 16,
+  "access_roof_cap_z_mm": 22.4,
+  "access_roof_remaining_skin_mm": 1.6,
+  "plate_z_intervals_mm": [
+    [
+      0,
+      1.2
+    ],
+    [
+      7.6,
+      8.8
+    ],
+    [
+      15.2,
+      16.4
+    ],
+    [
+      22.8,
+      24
+    ]
+  ],
+  "limitations": [
+    "Cell bound is geometry, not a measured sliced extrusion span.",
+    "No strength credit assigned to manufacturing dividers.",
+    "Access openings interrupt the plates locally; prior E6 load calculations do not validate E7."
+  ]
+}

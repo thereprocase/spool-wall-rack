@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 *.log
+
+# E7 editable STEP is distributed in bracket-step.zip; regenerated locally.
+/designs/closed-wall-e7/bracket.step

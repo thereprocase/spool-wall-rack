@@ -2,13 +2,29 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E6 — full-height wall contact and a shorter 100 mm rail span.** For a 200 mm spool, the loaded rack envelope is approximately 233 mm tall, down from 273 mm. The bracket extends 33 mm below the spool and stays below its top. Geometry checks pass; handling, internal roof printing, structural loads and creep remain unvalidated. No safe spool count is assigned.
+**Current prototype: E7 — short bridge compartments and recessed, accessible wall fixings.** Four continuous 1.2 mm plates remain. New fastener seats clamp 3.6 mm of plastic and provide Ø5.2 mm shank clearance with Ø16 mm nominal washer/driver access. Start with the bridge and fastener coupons; sliced paths, physical print quality and load capacity remain unverified.
 
-![E4 and E6 at the same scale](designs/closed-wall-e6/vertical-comparison.png)
+![E7 actual CAD cutaway](designs/closed-wall-e7/progress-cutaway.png)
+
+[Bridge coupon](designs/closed-wall-e7/bridge-coupon.stl) · [Fastener coupon](designs/closed-wall-e7/fastener-coupon.stl) · [Full prototype STL](designs/closed-wall-e7/bracket.stl) · [Finished STEP archive](designs/closed-wall-e7/bracket-step.zip).
 
 ## Design journal
 
-Latest checkpoint: **A PLA/PETG sizing study proposes 3.6 mm structural perimeters and a 34 mm-deep arm, retaining four 1.2 mm continuous plates.** The ideal straight-arm section approximately doubles I and reduces pure bending stress by 39%, for 33% more local material. E6 CAD remains the current geometry; these proposed dimensions are not yet implemented or load-qualified.
+Latest checkpoint: **E7 replaces long internal roofs with 10 × 10 mm bridge cells and moves both washer landings to 3.6 mm from the wall.** The actual solid passes shank, washer and straight-driver clearance checks. Both coupons and the full bracket pass mesh closure. Next: inspect sliced paths and print the coupons, then revisit the changed wall connection and load cases.
+
+### E7 — compartment the voids and recess the fixings
+
+Added 1.2 mm dividing walls within each air band, retaining all four continuous load-plane plates. Full cells have R2 corners and a 10 × 10 mm clear bounding box, limiting any straight geometric span to 14.14 mm. The three bands contain 106 / 97 / 106 cavities after local keepouts. This gives the internal plates short roofs to bridge; it does not establish actual sliced bridge direction or print quality.
+
+Replaced the long screw bores with flat washer seats 3.6 mm from the wall. Ø5.2 mm clearance accommodates #8/#10 wood screws and nominal M5 shanks; M5 is the tighter printed fit. The Ø16 mm nominal access opening accommodates the checked Ø13 mm washer and a Ø15.8 mm straight driver envelope. Its 45-degree roof shoulders and short rounded cap avoid another long flat internal ceiling.
+
+Raised the lower screw axis from Y = 12 to 40 mm to clear the rear dowel seat during installation. The upper stays at 164 mm. Removed the old projecting lower screw pad. Both washer landings support approximately 99.1% of the checked annulus. The full-height wall contact and compact exterior envelope remain.
+
+![E7 fixing and compartment sections](designs/closed-wall-e7/dfm-engineering.png)
+
+Solid volume increases from 94.3 to 133.8 cm³, approximately 42%, including the compartment walls and access reinforcement. The separate 34 mm arm-depth proposal is not incorporated. E6's load calculations do not validate the changed E7 connection, and the manufacturing dividers receive no assigned strength credit.
+
+[DFM revision, dimensions and rebuild instructions](designs/closed-wall-e7/README.md) · [Actual geometry checks](designs/closed-wall-e7/dfm-verification.json).
 
 ### Additional section for PLA or PETG
 
@@ -131,19 +147,20 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric profile source](designs/closed-wall-e6/bracket.scad) and [CAD finishing script](designs/closed-wall-e6/finish_cad.py)
-- [Finished bracket STEP](designs/closed-wall-e6/bracket.step)
-- [Bracket STL — prototype](designs/closed-wall-e6/bracket.stl)
-- [Snap retainer CAD](designs/closed-wall-e6/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e6/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e6/verification.json)
+- [Parametric profile source](designs/closed-wall-e7/bracket.scad) and [CAD finishing script](designs/closed-wall-e7/finish_cad.py)
+- [Finished bracket STEP archive](designs/closed-wall-e7/bracket-step.zip)
+- [Bracket STL — prototype](designs/closed-wall-e7/bracket.stl)
+- [Bridge coupon STL](designs/closed-wall-e7/bridge-coupon.stl) and [fastener coupon STL](designs/closed-wall-e7/fastener-coupon.stl)
+- [Snap retainer CAD](designs/closed-wall-e7/retainer.scad)
+- [8 mm wide snap coupon STL](designs/closed-wall-e7/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
+- [Geometric verification](designs/closed-wall-e7/verification.json)
 - [Design decisions and pending work](DESIGN.md)
 - [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E6 value |
+| Feature | E7 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
 | Seat diameter / spacing | 26 / 100 mm |
@@ -151,7 +168,10 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 | Structural perimeter in print XY | 2.4 mm; locally reinforced behind bevels |
 | Broad-face chamfer / body corner radius | 3 / 2 mm where features permit |
 | Full-height wall land | 208 mm |
-| Screw centers above rail datum | 164 and 12 mm |
+| Screw centers above rail datum | 164 and 40 mm |
+| Clamping thickness / nominal access diameter | 3.6 / 16 mm |
+| Screw clearance / washer envelope OD | 5.2 / 13 mm |
+| Internal cell box / dividing wall | 10 × 10 / 1.2 mm |
 | Chamfer runout length | 20 mm |
 | Exterior side plates | 2 × 1.2 mm |
 | Internal continuous plates | 2 × 1.2 mm |
@@ -164,26 +184,12 @@ The snap opening faces the spool contact. The thick seat lies 180° opposite tha
 
 ## Build and inspect
 
-Install OpenSCAD and Python with CadQuery 2.7, NumPy, Matplotlib, Pillow and VTK. Run from the repository root:
+Follow the [E7 rebuild instructions](designs/closed-wall-e7/README.md#rebuild). OpenSCAD provides the exterior/cavity seed; the Python builder adds final compartments, access openings, chamfers and cavity-rim reinforcement. Raw SCAD full-bracket export is disabled to avoid printing an unfinished intermediate.
 
-```sh
-openscad -o designs/closed-wall-e6/profile.svg -D 'part="profile"' designs/closed-wall-e6/bracket.scad
-openscad -o designs/closed-wall-e6/cavity-profile.svg -D 'part="cavity_profile"' designs/closed-wall-e6/bracket.scad
-openscad -o designs/closed-wall-e6/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e6/retainer.scad
-openscad -o designs/closed-wall-e6/snap-coupon-8mm.stl designs/closed-wall-e6/retainer.scad
-python designs/closed-wall-e6/finish_cad.py
-python designs/closed-wall-e6/check_and_draw.py
-python designs/closed-wall-e6/check_mesh.py
-python designs/closed-wall-e6/render_cpu.py
-python designs/closed-wall-e6/compare_vertical.py
-```
-
-`finish_cad.py` creates the authoritative E6 STEP and STL, including the variable chamfers and reinforced cavity rims. Direct bracket STL export from OpenSCAD produces an **unchamfered intermediate**, not finished E6. The script approximates the OpenSCAD contours within 0.005 mm before creating the solid; the chamfer runouts are native Bezier surfaces.
-
-The final STL lies broad-side-down in a single-part envelope of approximately 206.73 × 208 × 24 mm. Printer exclusion zones, brim clearance and actual toolpaths still require slicer inspection. The coupon prints flat with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.
+The final STL lies broad-side-down in a single-part envelope of approximately 206.73 × 208 × 24 mm. Inspect exclusion zones, brim clearance, thin solid paths, the three cavity roofs and both access tunnels in the slicer. Start with the two new DFM coupons; no validated machine/material profile is included.
 
 ## Verification limits
 
-Empty CAD cavities do not receive global slicer infill. Revision D's cavity includes an unsupported region approximately 84 mm across; the thicker perimeter does not resolve this manufacturing problem. Internal plates need a validated printing method before the full bracket is released for printing.
+Empty CAD cavities do not receive global slicer infill. E7 replaces the former long roofs with bounded compartments, but sliced paths and physical print quality remain unverified. Internal plates need a successful coupon and toolpath check before full-bracket printing.
 
 Clearance checks use rigid nominal rods and concentric flanges. They exclude wood tolerances, rod sag, spool wobble, screw heads, and deflected fingers. No slicer or physical insertion test has verified the snap features. The narrower E6 cradle also needs a handling-stability test. Main bracket loads, wall fixings, dowel spans, and long-term polymer creep still require analysis and testing.

@@ -1,0 +1,81 @@
+{
+  "revision": "E7",
+  "chamfer_mm": 3.0,
+  "body_corner_fillet_mm": 2,
+  "width_mm": 24.0,
+  "face_and_internal_plate_mm": 1.2,
+  "profile_simplification_tolerance_mm": 0.005,
+  "selected_chamfer_edges": 8,
+  "fade_run_mm": 20,
+  "fade_curve": "quintic Bezier; C2 at zero/full depth",
+  "fade_endpoints": [
+    [
+      true,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      true
+    ]
+  ],
+  "paired_outline_edges": [
+    [
+      [
+        23.9916,
+        114.192
+      ],
+      [
+        20.1212,
+        174.121
+      ]
+    ],
+    [
+      [
+        18.238,
+        175.997
+      ],
+      [
+        0.0,
+        176.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        176.0
+      ],
+      [
+        0.0,
+        -32.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        -32.0
+      ],
+      [
+        187.994,
+        -32.0
+      ]
+    ]
+  ],
+  "bevel_rim_keepout_distance_mm": 4.8,
+  "minimum_design_ligament_mm": 1.2,
+  "rim_guard_extra_mm": 1.8,
+  "valid_brep": true,
+  "solid_count": 1,
+  "material_volume_cm3": 133.82032092384247,
+  "limitations": [
+    "Compartment geometry checked; no sliced-path or physical print validation, snap-force test, structural load or creep rating.",
+    "Thin snap fingers and small functional edges are excluded from the 3 mm chamfer."
+  ]
+}

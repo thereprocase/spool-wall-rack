@@ -1,0 +1,90 @@
+{
+  "valid_brep": true,
+  "solid_count": 1,
+  "fasteners": [
+    {
+      "axis_y_mm": 164,
+      "tool_check_diameter_mm": 15.8,
+      "tool_collision_mm3": 0,
+      "washer_OD_mm": 13,
+      "washer_ID_mm": 5.5,
+      "washer_collision_mm3": 0,
+      "clamping_land_mm": 3.6,
+      "washer_land_supported_fraction": 0.9908180681863212,
+      "M5_nominal_shank_collision_mm3": 0
+    },
+    {
+      "axis_y_mm": 40,
+      "tool_check_diameter_mm": 15.8,
+      "tool_collision_mm3": 0,
+      "washer_OD_mm": 13,
+      "washer_ID_mm": 5.5,
+      "washer_collision_mm3": 0,
+      "clamping_land_mm": 3.6,
+      "washer_land_supported_fraction": 0.9908180681862995,
+      "M5_nominal_shank_collision_mm3": 0
+    }
+  ],
+  "coupons": {
+    "fastener_crop_envelope_mm": [
+      26,
+      24,
+      24
+    ],
+    "bridge_envelope_mm": [
+      36,
+      36,
+      24
+    ],
+    "bridge_cavity_roof_start_z_mm": [
+      7.6,
+      15.2,
+      22.8
+    ]
+  },
+  "meshes": {
+    "bracket.stl": {
+      "triangles": 44456,
+      "edges_with_incidence_not_two": 0,
+      "bounds_mm": [
+        43.2760009765625,
+        250.0,
+        6.0,
+        214.0,
+        -1.7763568394002505e-15,
+        24.0
+      ]
+    },
+    "fastener-coupon.stl": {
+      "triangles": 3660,
+      "edges_with_incidence_not_two": 0,
+      "bounds_mm": [
+        0.0,
+        21.549842834472656,
+        0.0,
+        24.0,
+        -1.7763568394002505e-15,
+        24.0
+      ]
+    },
+    "bridge-coupon.stl": {
+      "triangles": 14160,
+      "edges_with_incidence_not_two": 0,
+      "bounds_mm": [
+        0.0,
+        36.0,
+        0.0,
+        36.0,
+        0.0,
+        24.0
+      ]
+    }
+  },
+  "limitations": [
+    "Geometric clearance uses ideal dimensions; printed M5 clearance requires coupon confirmation.",
+    "Washer landing has a small upper screw-hole roof relief; actual supported fraction is reported.",
+    "Tool check is a straight 15.8 mm cylinder, not a drill-body or arbitrary angled-driver envelope.",
+    "Install fasteners before loading spools. Rods do not intersect either proposed driver axis.",
+    "STL closure and geometric bridge limits do not verify sliced paths, print quality or load capacity."
+  ]
+}

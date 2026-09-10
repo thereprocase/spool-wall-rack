@@ -81,3 +81,12 @@ Use 85°F (29.4°C) sustained and 100°F (37.8°C) for six hours/year at full lo
 ASA is the first prototype selection for thermal headroom and unfilled snap behavior. Reference PA6-GF data require annealing and separate dry/water-conditioned cases; do not apply dry stiffness or dry HDT to wet material. No grade-specific long-term creep allowables have been established. Preserve unknown capacity/life fields as null rather than inventing material-specific spool ratings.
 
 See [the material report](designs/closed-wall-e6/MATERIAL-CASES.md) for primary sources, assumptions, calculations and proposed qualification criteria. Geometry remains E6. Resolving internal roofs and inspecting sliced paths precede full-bracket mechanical testing.
+
+
+## E7 manufacturing revision
+
+The current geometry subdivides all three true air bands into bounded 10 × 10 mm cells with 1.2 mm dividing walls and R2 full-cell corners. It preserves the four 1.2 mm load-plane plates. This limits geometric cavity spans to 14.14 mm in any direction, with no assigned strength credit for the printing dividers. Physical roof quality and sliced paths remain unverified.
+
+Both washer landings now lie 3.6 mm from the wall. The Ø5.2 mm screw clearance accepts nominal #8/#10 and M5 shanks. Ø16 mm nominal access, verified with a Ø15.8 mm cylinder and Ø13 mm washer, replaces the narrow long bores. Raise the lower axis to Y=40 mm to clear the rear rod; upper remains Y=164 mm. Tool tunnels have 45-degree roof shoulders and short rounded caps at print Z=22.4 mm. Small bore relief gives approximately 99.1% support beneath the checked washer annulus. Remove the former protruding lower screw pad.
+
+See [E7](designs/closed-wall-e7/README.md) for dimensions, actual CAD sections, coupons and verification. The external arm remains approximately 28 mm deep with a 2.4 mm perimeter; the separate material-sizing proposal is not implemented. E7's changed connection requires renewed mechanical evaluation. Nominal volume is 133.8 cm³, approximately 42% above E6. Start with the bridge and fastener coupons.
