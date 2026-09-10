@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-09-10",
+  "physical_measurements_taken": false,
+  "rod_nominal_mm": 25.4,
+  "rod_measured_min_mm": null,
+  "rod_measured_max_mm": null,
+  "supplier_diameter_tolerance_mm": null,
+  "supplier_ovality_tolerance_mm": null,
+  "seat_CAD_diameter_mm": 26.0,
+  "status": "Provisional fit; nominal catalog sizes do not establish a production tolerance",
+  "sources": [
+    {
+      "species": "poplar",
+      "retailer": "Lowes",
+      "item": "19386",
+      "model": "436513",
+      "length_in": 48,
+      "published_actual_diameter_in": 1,
+      "url": "https://www.lowes.com/pd/Madison-Mill-Round-Wood-Poplar-Dowel-Actual-48-in-L-x-1-in-dia/3040774"
+    },
+    {
+      "species": "oak",
+      "retailer": "Lowes",
+      "item": "19425",
+      "model": "432513",
+      "length_in": 36,
+      "published_actual_diameter_in": 1,
+      "url": "https://www.lowes.com/pd/Madison-Mill-Round-Wood-Oak-Dowel-Actual-36-in-L-x-1-in-Dia/3040784"
+    }
+  ]
+}

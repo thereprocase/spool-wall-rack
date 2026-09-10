@@ -1,5 +1,7 @@
 # Spool wall rack — print setup and engineering guide
 
+**Work in progress:** E10 changes the finish to continuous 2 mm chamfers after filleting, with runouts only at the thin retainers. The E9 downloads below remain the last verified export while E10 is checked. The [new dowel fit review](fit/README.md) confirms catalog diameter but finds no published numeric supplier tolerance; physical rod fit remains unverified.
+
 **Current prototype: E9, with the front rail raised 12 mm. Both broad faces have 2 mm chamfers; exposed wall-facet direction changes have nominal R2 fillets.** Print on the broad side so principal bending loads stay in the layer plane. Two aligned helper solids create continuous internal plates through slicer modifiers.
 
 **[Download the current STEP](designs/closed-wall-e9/bracket-with-modifier-helpers.step)** · [Aligned STL fallback and rebuild](designs/closed-wall-e9/README.md) · [Solved E9 stress fields and results](analysis/e9/RESULTS.md) · [Archived level-rail E8 guide](E8-ENGINEERING-GUIDE.md)
