@@ -1,0 +1,22 @@
+{
+  "revision": "E3",
+  "root_transition_continuity": "C2 in analytic radial profile; polygonal CAD approximation",
+  "analytic_root_minimum_curvature_radius_mm": 6.756274939106598,
+  "root_blend_endpoint_first_derivatives": [
+    0.0,
+    0.0
+  ],
+  "root_blend_endpoint_second_derivatives": [
+    0.0,
+    0.0
+  ],
+  "integrated_concave_blend_radius_mm": 1.5,
+  "convex_edge_round_mm": 0.45,
+  "maximum_resolved_vertex_turn_deg_within_23mm_of_front_seat": 4.25132986787459,
+  "vertex_turn_note": "Screening only; excludes adjacent polygon edges shorter than 0.01 mm. It is not an FEA stress concentration calculation.",
+  "remaining_validation": [
+    "Slicer toolpaths for 1.35 mm curved fingers and their roots.",
+    "Curved-finger insertion/release strain and force.",
+    "Internal roof printing of the full bracket."
+  ]
+}

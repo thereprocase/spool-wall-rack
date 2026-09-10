@@ -1,0 +1,26 @@
+{
+  "bracket.stl": {
+    "triangles": 44900,
+    "edges_with_incidence_not_two": 0,
+    "bounds_mm": [
+      5.759399890899658,
+      250.0,
+      6.0,
+      245.99899291992188,
+      0.0,
+      24.0
+    ]
+  },
+  "snap-coupon-8mm.stl": {
+    "triangles": 10164,
+    "edges_with_incidence_not_two": 0,
+    "bounds_mm": [
+      6.650010108947754,
+      35.349998474121094,
+      2.0,
+      32.12689971923828,
+      0.0,
+      8.0
+    ]
+  }
+}

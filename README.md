@@ -2,13 +2,23 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E2 — smooth snap roots, rounded relief slots, and a 2.4 mm structural perimeter.** Geometry checked; internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
+**Current prototype: E3 — obsolete saddle lips removed; bearing seats connected directly to the arm.** Geometry checked; internal roof printing, snap insertion behavior, and structural/creep capacity remain unresolved. No safe spool count is assigned.
 
-![E2 engineering drawing](designs/closed-wall-e2/retainer-engineering.png)
+![E3 engineering drawing](designs/closed-wall-e3/retainer-engineering.png)
 
 ## Design journal
 
-Latest checkpoint: **E2 root correction and rebuilt snap-seat coupon.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. Full bracket printing and load ratings remain blocked by those checks.
+Latest checkpoint: **E3 removes obsolete saddle geometry and rebuilds the bearing connections.** Next: validate curved-finger insertion and resolve the unsupported internal roofs. Full bracket printing and load ratings remain blocked by those checks.
+
+### E3 — remove the vestigial saddle prong
+
+The small spur below the snap finger was leftover geometry from the original open saddle. Rounding it in E2 preserved a feature with no retaining function. Removed both the original saddle-lip sectors and their circular support nodes. Rebuilt each connection as a buttress between the arm and the rigid bearing sector, keeping the actual curved snap fingers.
+
+![Front seat: the unwanted prong is removed](designs/closed-wall-e3/root-comparison.png)
+
+The snap opening, throat, thin finger dimensions and smooth root construction remain the same. The support beneath the retainer changes, so its effective compliance still needs evaluation in the integrated part. The existing 8 mm coupon remains a local retainer fit sample, not a stiffness match for the complete bracket.
+
+The full-profile nominal clearance sweep still passes at 5.64 mm minimum over 180–220 mm flanges. The new outline is connected. [Geometric results](designs/closed-wall-e3/verification.json) · [Mesh checks](designs/closed-wall-e3/mesh-verification.json).
 
 ### E2 — replace abrupt snap roots with smooth transitions
 
@@ -46,18 +56,18 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric bracket CAD](designs/closed-wall-e2/bracket.scad)
-- [Bracket STL — prototype](designs/closed-wall-e2/bracket.stl)
-- [Snap retainer CAD](designs/closed-wall-e2/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e2/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e2/verification.json)
+- [Parametric bracket CAD](designs/closed-wall-e3/bracket.scad)
+- [Bracket STL — prototype](designs/closed-wall-e3/bracket.stl)
+- [Snap retainer CAD](designs/closed-wall-e3/retainer.scad)
+- [8 mm wide snap coupon STL](designs/closed-wall-e3/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
+- [Geometric verification](designs/closed-wall-e3/verification.json)
 - [Design decisions and pending work](DESIGN.md)
 - [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E2 value |
+| Feature | E3 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
 | Seat diameter / spacing | 26 / 150 mm |
@@ -77,11 +87,11 @@ The snap opening faces the spool contact. The thick seat lies 180° opposite tha
 Install OpenSCAD and Python with NumPy and Matplotlib. Revision D's independent mesh audit also uses VTK and SciPy.
 
 ```sh
-openscad -o designs/closed-wall-e2/bracket.stl designs/closed-wall-e2/bracket.scad
-openscad -o designs/closed-wall-e2/profile.svg -D 'part="profile"' designs/closed-wall-e2/bracket.scad
-openscad -o designs/closed-wall-e2/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e2/retainer.scad
-openscad -o designs/closed-wall-e2/snap-coupon-8mm.stl designs/closed-wall-e2/retainer.scad
-python designs/closed-wall-e2/check_and_draw.py
+openscad -o designs/closed-wall-e3/bracket.stl designs/closed-wall-e3/bracket.scad
+openscad -o designs/closed-wall-e3/profile.svg -D 'part="profile"' designs/closed-wall-e3/bracket.scad
+openscad -o designs/closed-wall-e3/retainer-profile.svg -D 'part="profile"' designs/closed-wall-e3/retainer.scad
+openscad -o designs/closed-wall-e3/snap-coupon-8mm.stl designs/closed-wall-e3/retainer.scad
+python designs/closed-wall-e3/check_and_draw.py
 ```
 
 The exported STL already lies broad-side-down. The coupon prints in a different, convenient flat orientation with the same in-plane flexure direction. A 3MF in the D checkpoint contains geometry only.

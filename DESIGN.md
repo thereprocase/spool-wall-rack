@@ -6,7 +6,7 @@ The wall mounting leg extends upward. Four continuous planes span the arm, knee 
 
 ## Structural thickness
 
-E2 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
+E3 retains a 2.4 mm perimeter around the L profile while retaining 1.2 mm side faces and internal plates. This is a prototype choice, not an optimized thickness or load rating. The arm's upper and lower perimeter bands lie far from its bending neutral axis, so thickening them is useful. External and internal side planes also carry in-plane stress; do not describe all material as equally effective or infer proportional strength gains from perimeter thickness.
 
 A modeled 2.4 mm wall does not guarantee a particular number of extrusion paths. The original three-wall setting must be revised or verified for the 2.4 mm perimeter. The snap fingers remain 1.35 mm in bending thickness. Their stiffness and strain requirements differ from those of the structural perimeter.
 
@@ -40,3 +40,9 @@ Removed the stepped annular root and intersecting circular bumps. The finger out
 The complete bracket profile receives R1.5 concave blends and R0.45 convex rounds. A 17.75 mm relief-pocket radius leaves clearance around the finger while a 6 mm radial bearing sector maintains attachment to the bracket. The coupon base also has rounded corners and blended connections. These changes remove the previous sharp re-entrant roots; they do not establish zero local stress concentration or a safe snap strain.
 
 The larger roots shorten/change the effective flexible length relative to E1. Validate the curved finger as modeled, rather than reusing the earlier straight-cantilever screening example.
+
+## E3 obsolete saddle removal
+
+The old open-saddle lip sectors and round support nodes remained in the base profile after snap retainers were added. They produced an unnecessary secondary prong beneath the working finger. Removed those old features at both rail locations. A new buttress joins a patch of the rigid bearing sector to a rounded anchor inside the arm. It does not use the old lip as a stop or load-bearing feature.
+
+The complete profile retains the concave and convex blends established in E2. The local retainer coupon is unchanged; the integrated support geometry is different and still requires its own compliance and insertion checks.
