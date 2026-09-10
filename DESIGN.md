@@ -90,3 +90,10 @@ The current geometry subdivides all three true air bands into bounded 10 × 10 m
 Both washer landings now lie 3.6 mm from the wall. The Ø5.2 mm screw clearance accepts nominal #8/#10 and M5 shanks. Ø16 mm nominal access, verified with a Ø15.8 mm cylinder and Ø13 mm washer, replaces the narrow long bores. Raise the lower axis to Y=40 mm to clear the rear rod; upper remains Y=164 mm. Tool tunnels have 45-degree roof shoulders and short rounded caps at print Z=22.4 mm. Small bore relief gives approximately 99.1% support beneath the checked washer annulus. Remove the former protruding lower screw pad.
 
 See [E7](designs/closed-wall-e7/README.md) for dimensions, actual CAD sections, coupons and verification. The external arm remains approximately 28 mm deep with a 2.4 mm perimeter; the separate material-sizing proposal is not implemented. E7's changed connection requires renewed mechanical evaluation. Nominal volume is 133.8 cm³, approximately 42% above E6. Start with the bridge and fastener coupons.
+
+
+## E8 slicer-controlled interior
+
+Supersedes E7's modeled grid. Deliver a solid bracket envelope and two separate overlapping helper slabs in STEP. The user sets the body's walls and infill, converts the helper parts to modifier geometry and sets those regions to 100% infill. Slabs occupy print Z=7.6–8.8 and 15.2–16.4 mm. Suggested top/bottom solid thickness remains 1.2 mm; sparse body infill remains 15% as the working assumption and receives zero strength credit. These settings are not encoded by STEP.
+
+E7's fastener geometry remains. Actual structural perimeter thickness now follows the selected slicer wall settings. The grid, hollow bands and 2.4 mm modeled shell are not present in E8. Do not infer printed mass from the solid CAD volume or carry the earlier hollow-CAD capacity calculations across arbitrary print settings. See [the E8 handoff](designs/closed-wall-e8/README.md).

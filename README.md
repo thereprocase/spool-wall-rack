@@ -2,15 +2,25 @@
 
 A wall-mounted filament rack using nominal 1-inch wooden dowels. The bracket prints on its side so continuous L-shaped plates carry the principal bending load in the layer plane. Spools must slide across bracket locations without contacting the plastic.
 
-**Current prototype: E7 — short bridge compartments and recessed, accessible wall fixings.** Four continuous 1.2 mm plates remain. New fastener seats clamp 3.6 mm of plastic and provide Ø5.2 mm shank clearance with Ø16 mm nominal washer/driver access. Start with the bridge and fastener coupons; sliced paths, physical print quality and load capacity remain unverified.
+**Current prototype: E8 — a solid STEP body with two helper solids for 100% infill modifiers.** The user chooses wall count and infill for the body. The slicer generates sparse support between the internal solid bands; no infill grid is modeled in CAD.
 
-![E7 actual CAD cutaway](designs/closed-wall-e7/progress-cutaway.png)
+**[Download the STEP assembly with helpers](designs/closed-wall-e8/bracket-with-modifier-helpers.step)** · [Slicer setup and dimensions](designs/closed-wall-e8/README.md).
 
-[Bridge coupon](designs/closed-wall-e7/bridge-coupon.stl) · [Fastener coupon](designs/closed-wall-e7/fastener-coupon.stl) · [Full prototype STL](designs/closed-wall-e7/bracket.stl) · [Finished STEP archive](designs/closed-wall-e7/bracket-step.zip).
+![E8 modifier locations](designs/closed-wall-e8/modifier-stack.png)
 
 ## Design journal
 
-Latest checkpoint: **E7 replaces long internal roofs with 10 × 10 mm bridge cells and moves both washer landings to 3.6 mm from the wall.** The actual solid passes shank, washer and straight-driver clearance checks. Both coupons and the full bracket pass mesh closure. Next: inspect sliced paths and print the coupons, then revisit the changed wall connection and load cases.
+Latest checkpoint: **E8 removes the modeled grid and hands infill generation back to the slicer.** The STEP contains exactly three aligned solids: the body and two 1.2 mm helper slabs. Set the body's walls/infill, convert the helpers to modifiers, and set their infill to 100%. The STEP roundtrip and retained hardware clearance checks pass; sliced paths and physical performance remain unverified.
+
+### E8 — solid body plus modifier helpers
+
+E7's compartment lattice recreated infill in CAD and increased modeled material by 42%. Replaced it with a solid exterior/functional body and two simple helper slabs at print Z = 7.6–8.8 and 15.2–16.4 mm. The user selects body wall count and infill percentage, then changes both helper parts to 100% infill modifiers. With 1.2 mm top/bottom settings, this retains the intended four solid planes while the slicer supplies sparse support between them.
+
+The STEP preserves named component geometry and alignment. It does not carry modifier status or print settings. The helpers extend 2 mm beyond the body projection and must be converted to modifiers before slicing. The final package also includes three aligned STL files as an import fallback.
+
+E7's fastener changes remain: 3.6 mm clamping lands, Ø5.2 mm shank clearance, Ø16 mm nominal access and the raised lower screw axis. The body no longer has a prescribed 2.4 mm CAD shell; actual wall thickness follows the user's slicer settings. Old hollow-section calculations do not establish the capacity of this print setup.
+
+[STEP handoff and setup](designs/closed-wall-e8/README.md) · [Roundtrip and hardware checks](designs/closed-wall-e8/verification.json).
 
 ### E7 — compartment the voids and recess the fixings
 
@@ -147,35 +157,32 @@ Archived the separate reference concept. It has no shared geometry changes or lo
 
 ## Current files
 
-- [Parametric profile source](designs/closed-wall-e7/bracket.scad) and [CAD finishing script](designs/closed-wall-e7/finish_cad.py)
-- [Finished bracket STEP archive](designs/closed-wall-e7/bracket-step.zip)
-- [Bracket STL — prototype](designs/closed-wall-e7/bracket.stl)
-- [Bridge coupon STL](designs/closed-wall-e7/bridge-coupon.stl) and [fastener coupon STL](designs/closed-wall-e7/fastener-coupon.stl)
-- [Snap retainer CAD](designs/closed-wall-e7/retainer.scad)
-- [8 mm wide snap coupon STL](designs/closed-wall-e7/snap-coupon-8mm.stl) — fit/behavior sample; the full bracket is 24 mm wide.
-- [Geometric verification](designs/closed-wall-e7/verification.json)
-- [Design decisions and pending work](DESIGN.md)
-- [Revision D checkpoint and independent audit](designs/closed-wall-d/audit/VERIFICATION.md)
+- [STEP assembly: body plus modifier helpers](designs/closed-wall-e8/bracket-with-modifier-helpers.step)
+- [Body-only STEP](designs/closed-wall-e8/body-only.step)
+- [Aligned body STL](designs/closed-wall-e8/body-only.stl), [helper 1](designs/closed-wall-e8/helper-1.stl) and [helper 2](designs/closed-wall-e8/helper-2.stl)
+- [Setup instructions and rebuild](designs/closed-wall-e8/README.md)
+- [Verification](designs/closed-wall-e8/verification.json)
+- [Design decisions](DESIGN.md)
 - [Separate future open-web reference](future/open-web/README.md)
 
 ## Geometry
 
-| Feature | E7 value |
+| Feature | E8 value |
 |---|---:|
 | Nominal dowel diameter | 25.4 mm |
 | Seat diameter / spacing | 26 / 100 mm |
 | Single-part envelope | approximately 206.73 × 208 × 24 mm |
-| Structural perimeter in print XY | 2.4 mm; locally reinforced behind bevels |
+| Structural perimeter | User-selected slicer wall count and extrusion widths |
 | Broad-face chamfer / body corner radius | 3 / 2 mm where features permit |
 | Full-height wall land | 208 mm |
 | Screw centers above rail datum | 164 and 40 mm |
 | Clamping thickness / nominal access diameter | 3.6 / 16 mm |
 | Screw clearance / washer envelope OD | 5.2 / 13 mm |
-| Internal cell box / dividing wall | 10 × 10 / 1.2 mm |
+| Internal support | User-selected slicer infill; no modeled cell grid |
 | Chamfer runout length | 20 mm |
-| Exterior side plates | 2 × 1.2 mm |
-| Internal continuous plates | 2 × 1.2 mm |
-| Intervening air-band height | 3 × 6.4 mm |
+| Exterior side plates | Slicer top/bottom layers; 1.2 mm suggested |
+| Internal continuous plates | Two 1.2 mm helper solids converted to 100% infill modifiers |
+| Intervening sparse-infill bands | 3 × 6.4 mm |
 | Snap finger bending thickness | 1.35 mm |
 | Rigid seat radial thickness | 6 mm |
 | Nominal capture wrap / throat | 218° / approximately 24.51 mm |
@@ -184,12 +191,8 @@ The snap opening faces the spool contact. The thick seat lies 180° opposite tha
 
 ## Build and inspect
 
-Follow the [E7 rebuild instructions](designs/closed-wall-e7/README.md#rebuild). OpenSCAD provides the exterior/cavity seed; the Python builder adds final compartments, access openings, chamfers and cavity-rim reinforcement. Raw SCAD full-bracket export is disabled to avoid printing an unfinished intermediate.
-
-The final STL lies broad-side-down in a single-part envelope of approximately 206.73 × 208 × 24 mm. Inspect exclusion zones, brim clearance, thin solid paths, the three cavity roofs and both access tunnels in the slicer. Start with the two new DFM coupons; no validated machine/material profile is included.
+Follow the [E8 setup and rebuild instructions](designs/closed-wall-e8/README.md). Import the STEP as one object with three aligned parts. Choose body walls and infill, change the helper parts to modifiers, and set their infill to 100%. Keep the supplied broad-side-down orientation and inspect the two internal solid bands in the sliced preview.
 
 ## Verification limits
 
-Empty CAD cavities do not receive global slicer infill. E7 replaces the former long roofs with bounded compartments, but sliced paths and physical print quality remain unverified. Internal plates need a successful coupon and toolpath check before full-bracket printing.
-
-Clearance checks use rigid nominal rods and concentric flanges. They exclude wood tolerances, rod sag, spool wobble, screw heads, and deflected fingers. No slicer or physical insertion test has verified the snap features. The narrower E6 cradle also needs a handling-stability test. Main bracket loads, wall fixings, dowel spans, and long-term polymer creep still require analysis and testing.
+E8's STEP roundtrip preserves three valid solids, and hardware envelope checks pass. STEP does not encode slicer settings. The helper overlap is intentional and must not become extra printed slabs. Actual walls, solid-band formation, sparse-infill support and physical print quality need slicer/print checks. Previous E6 section properties do not rate arbitrary E8 print settings. Main bracket loads, fasteners, dowels, snaps, handling stability and long-term creep remain unqualified.
