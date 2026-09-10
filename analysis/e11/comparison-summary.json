@@ -1,0 +1,74 @@
+{
+  "status": "Matched reduced-model numerical screening, not physical or lifetime qualification",
+  "full_load_comparison": [
+    {
+      "walls": 8,
+      "E10_near_seat_p99_MPa": 6.506212010492956,
+      "E11_near_seat_p99_MPa": 4.072740720574144,
+      "stress_reduction_percent": 37.40227471828782,
+      "E10_front_mm_at_E1000": 3.557325193571639,
+      "E11_front_mm_at_E1000": 2.2936698736849372,
+      "front_movement_reduction_percent": 35.52262588110371
+    },
+    {
+      "walls": 10,
+      "E10_near_seat_p99_MPa": 6.12843923007882,
+      "E11_near_seat_p99_MPa": 3.821700418207161,
+      "stress_reduction_percent": 37.63990675717268,
+      "E10_front_mm_at_E1000": 3.2423766646696226,
+      "E11_front_mm_at_E1000": 2.1047288765913903,
+      "front_movement_reduction_percent": 35.08684849834223
+    }
+  ],
+  "refinement_checks": [
+    {
+      "revision": "E10",
+      "walls": 8,
+      "coarse_triangles": 13900,
+      "fine_triangles": 35253,
+      "rear_p99_change_percent": 1.581186368115417,
+      "front_movement_change_percent": 0.7061178083187292,
+      "fine_residual": 1.0623950567647493e-10
+    },
+    {
+      "revision": "E11",
+      "walls": 8,
+      "coarse_triangles": 24467,
+      "fine_triangles": 51422,
+      "rear_p99_change_percent": 0.7070644181613073,
+      "front_movement_change_percent": 0.31869404208668684,
+      "fine_residual": 7.725129641546241e-11
+    },
+    {
+      "revision": "E10",
+      "walls": 10,
+      "coarse_triangles": 13900,
+      "fine_triangles": 35253,
+      "rear_p99_change_percent": 1.3729388010055965,
+      "front_movement_change_percent": 0.8565040469836749,
+      "fine_residual": 1.0791431966277201e-10
+    },
+    {
+      "revision": "E11",
+      "walls": 10,
+      "coarse_triangles": 24467,
+      "fine_triangles": 51422,
+      "rear_p99_change_percent": 1.0161373655068973,
+      "front_movement_change_percent": 0.4262181976339319,
+      "fine_residual": 7.254618097903005e-11
+    }
+  ],
+  "outer_rod_only": {
+    "rear_applied_force_N": [
+      0.0,
+      0.0
+    ],
+    "front_applied_force_N": [
+      31.293062243765473,
+      -42.59925111284059
+    ],
+    "E10_near_seat_p99_MPa": 6.611467847544399,
+    "E11_near_seat_p99_MPa": 3.7324209698965602,
+    "reduction_percent": 43.54625847144007
+  }
+}

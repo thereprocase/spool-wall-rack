@@ -1,0 +1,12 @@
+{
+  "input_tetrahedra": 33792,
+  "removed_numerically_degenerate_cells": 0,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 0.0,
+  "total_absolute_volume_mm3": 3693.486364712411,
+  "minimum_retained_normalized_determinant": 1.1559973850980215e-07,
+  "gmsh_3d_algorithm": 1,
+  "source_BREP": "landing-8w.brep",
+  "CAD_volume_mm3": 3693.486364712674,
+  "relative_mesh_CAD_volume_error": 7.116529587847253e-14
+}

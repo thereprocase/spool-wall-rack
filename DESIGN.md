@@ -1,5 +1,21 @@
 # Design decisions
 
+**Current implementation: [E11](README.md).** The inner seat uses a smooth
+38 mm underside reinforcement, R6 rigid-shoulder blends and mirrored 50°
+broad-face chamfers with 2 mm inset. The flexible fingers and relief pockets
+are preserved. Local bending I and elastic section modulus exceed both
+adjacent reference bands, and the current 2D/3D results are under
+[analysis/e11](analysis/e11/RESULTS.md).
+
+Current printable CAD is a solid envelope with two aligned 100% infill modifier
+helpers; wall count is slicer-controlled. Four continuous 1.2 mm planes remain
+the load-path intent. The OrcaSlicer audit confirms the intended paths, while
+physical fit, extrusion and sustained/hot qualification remain outstanding.
+
+The sections below retain historical E6 reasoning and dimensions. Where they
+describe modeled hollow bands, level rails, coupons or next work, use the
+current E11 guide and [design journal](DESIGN-JOURNAL.md) for their successors.
+
 ## Closed-wall load path
 
 The wall mounting leg extends upward. Four continuous planes span the arm, knee and wall leg: two exterior faces and two internal plates. Hollow bands force these internal planes into the modeled solid. They lie in printer XY. The principal installed bending load acts in those planes; local bearing, load transfer between planes and buckling still need evaluation.

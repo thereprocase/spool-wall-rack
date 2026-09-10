@@ -1,0 +1,571 @@
+{
+  "revision": "E11",
+  "status": "Numerical screening and nominal toolpath verification, not physical or lifetime qualification",
+  "load_kg_equivalent": 12,
+  "E_reference_MPa": 1000,
+  "nu": 0.35,
+  "sparse_infill_structural_credit": 0,
+  "serviceability": {
+    "total_loaded_movement_mm": 5,
+    "one_roll_change_mm": 1,
+    "roll_gross_kg": 1.25
+  },
+  "cases": [
+    {
+      "material": "PLA",
+      "reference_grade": "PolyLite PLA V5.4",
+      "walls": 8,
+      "source_mesh": "print-material-8w-h2",
+      "reference_E_MPa": 3426.9,
+      "front_K_MPa_mm": 2306.3344363474985,
+      "rear_K_MPa_mm": 333.88618113113796,
+      "initial_front_mm": 0.6730089691404764,
+      "one_roll_initial_mm": 0.07010510095213296,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 461.2668872694997,
+      "compliance_multiplier_limit_bracket_only": 7.429321493866088,
+      "linear_24kg_front_mm": 1.3460179382809527,
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_PLA_TDS_EN_V5.4.pdf?v=1731949179",
+      "source_sha256": "35e6989419080102795d87a6c5c52fd2fc2ad68fd398161d7b255e1965c26387"
+    },
+    {
+      "material": "PETG",
+      "reference_grade": "Polymaker PETG current formula",
+      "walls": 10,
+      "source_mesh": "print-material-10w-h2",
+      "reference_E_MPa": 2311.11,
+      "front_K_MPa_mm": 2098.155828541148,
+      "rear_K_MPa_mm": 298.6691218224515,
+      "initial_front_mm": 0.9078563238189216,
+      "one_roll_initial_mm": 0.09456836706447098,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 419.63116570822956,
+      "compliance_multiplier_limit_bracket_only": 5.507479398245934,
+      "linear_24kg_front_mm": 1.8157126476378431,
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PETG_TDS_Polymaker_297e875c-5d38-4d2b-ba68-eef8916de183.pdf?v=1761581533",
+      "source_sha256": "de07bbf50eba938f8a544b82bada774d5d27939435e1970674c2bb4269643c0b"
+    },
+    {
+      "material": "ASA",
+      "reference_grade": "PolyLite/Polymaker ASA",
+      "walls": 8,
+      "source_mesh": "print-material-8w-h2",
+      "reference_E_MPa": 2379,
+      "front_K_MPa_mm": 2306.3344363474985,
+      "rear_K_MPa_mm": 333.88618113113796,
+      "initial_front_mm": 0.9694554167076497,
+      "one_roll_initial_mm": 0.10098493924038017,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 461.2668872694997,
+      "compliance_multiplier_limit_bracket_only": 5.157534749746834,
+      "linear_24kg_front_mm": 1.9389108334152994,
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PolyLite_ASA_TDS_EN_V5.4.pdf?v=1731955208",
+      "source_sha256": "325c431fc97df6eccb332d3344c73fd4b4415dddb61b8adb420fab465921a663"
+    },
+    {
+      "material": "PA6-GF dry",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/dry",
+      "walls": 8,
+      "source_mesh": "print-material-8w-h2",
+      "reference_E_MPa": 5356.9,
+      "front_K_MPa_mm": 2306.3344363474985,
+      "rear_K_MPa_mm": 333.88618113113796,
+      "initial_front_mm": 0.43053527905085004,
+      "one_roll_initial_mm": 0.044847424901130216,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 461.2668872694997,
+      "compliance_multiplier_limit_bracket_only": 11.613450147506857,
+      "linear_24kg_front_mm": 0.8610705581017001,
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf",
+      "source_sha256": "90be757860575b59d2c3e70437407b94bf4206445e1302d622530b7e1544ce2a"
+    },
+    {
+      "material": "PA6-GF wet",
+      "reference_grade": "Fiberon PA6-GF25 V1.1 annealed/water-conditioned",
+      "walls": 8,
+      "source_mesh": "print-material-8w-h2",
+      "reference_E_MPa": 1793.6,
+      "front_K_MPa_mm": 2306.3344363474985,
+      "rear_K_MPa_mm": 333.88618113113796,
+      "initial_front_mm": 1.2858688873480701,
+      "one_roll_initial_mm": 0.133944675765424,
+      "minimum_creep_modulus_MPa_for_5mm_bracket_only": 461.2668872694997,
+      "compliance_multiplier_limit_bracket_only": 3.888421322886053,
+      "linear_24kg_front_mm": 2.5717377746961403,
+      "source_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/TDS_FIBERON_PA6-GF25_V1.1_EN.pdf",
+      "source_sha256": "90be757860575b59d2c3e70437407b94bf4206445e1302d622530b7e1544ce2a"
+    }
+  ],
+  "mesh_checks": [
+    {
+      "walls": 8,
+      "coarse_tets": 180806,
+      "fine_tets": 235089,
+      "coarse_front_mm_at_E1000": 2.2488225374187563,
+      "fine_front_mm_at_E1000": 2.3063344363474987,
+      "front_movement_change_percent": 2.557422738868298,
+      "near_seat_p99_coarse_MPa": 3.564371851469658,
+      "near_seat_p99_fine_MPa": 3.791422181666804,
+      "near_seat_p99_change_percent": 6.369995602549983,
+      "raw_peak_coarse_MPa": 35.31781280336462,
+      "raw_peak_fine_MPa": 37.90038061068069,
+      "fine_residual": 3.169170883662142e-08,
+      "twoD_front_vs_threeD_percent": -0.549120824064786,
+      "upper_washer_outward_N": 15.590687317868241,
+      "lower_washer_outward_N": 207.70391374363663,
+      "linear_24kg_near_seat_p99_MPa": 7.582844363333608,
+      "linear_24kg_front_mm_at_E1000": 4.612668872694997
+    },
+    {
+      "walls": 10,
+      "coarse_tets": 149156,
+      "fine_tets": 242810,
+      "coarse_front_mm_at_E1000": 2.0515706312768067,
+      "fine_front_mm_at_E1000": 2.098155828541148,
+      "front_movement_change_percent": 2.270708917067532,
+      "near_seat_p99_coarse_MPa": 3.7911629072817896,
+      "near_seat_p99_fine_MPa": 3.794904296967111,
+      "near_seat_p99_change_percent": 0.09868712521257095,
+      "raw_peak_coarse_MPa": 75.25613768030782,
+      "raw_peak_fine_MPa": 51.117967049126996,
+      "fine_residual": 3.1079376742640905e-08,
+      "twoD_front_vs_threeD_percent": 0.31327740107904845,
+      "upper_washer_outward_N": 14.756890791250726,
+      "lower_washer_outward_N": 208.46924868080436,
+      "linear_24kg_near_seat_p99_MPa": 7.589808593934222,
+      "linear_24kg_front_mm_at_E1000": 4.196311657082296
+    }
+  ],
+  "peak_diagnostics": [
+    {
+      "mesh": "print-material-8w-h3",
+      "raw_vm_peak_MPa": 35.31781280336462,
+      "cell_center_mm": [
+        24.555500949441594,
+        31.927929057743633,
+        19.860900016975755
+      ],
+      "cell_volume_mm3": 1.982364990879798e-06,
+      "solution_sha256": "66208a8bb44ea8a28cf560285561f67e0daec549500cb94cb4f93735c0c97b79"
+    },
+    {
+      "mesh": "print-material-8w-h2",
+      "raw_vm_peak_MPa": 37.90038061068069,
+      "cell_center_mm": [
+        79.41736094281637,
+        -10.818920710949604,
+        1.7890935664159935
+      ],
+      "cell_volume_mm3": 4.136021476576512e-05,
+      "solution_sha256": "f1b222a7048a657bb473c91f403b42b8d4fa092ca8505b26f8d97df3f24aac2c"
+    },
+    {
+      "mesh": "print-material-10w-h3",
+      "raw_vm_peak_MPa": 75.25613768030782,
+      "cell_center_mm": [
+        109.7980942825462,
+        -36.41424332326031,
+        21.987116930457066
+      ],
+      "cell_volume_mm3": 3.3566784013291126e-07,
+      "solution_sha256": "7aca30530c616c2e0bc16c1ba56d0a4109c26e9721949761217504ba0cd1ad7e"
+    },
+    {
+      "mesh": "print-material-10w-h2",
+      "raw_vm_peak_MPa": 51.117967049126996,
+      "cell_center_mm": [
+        95.38417232507986,
+        -12.106546334068499,
+        2.086125670973507
+      ],
+      "cell_volume_mm3": 1.5385996314918738e-07,
+      "solution_sha256": "08944f4058237930651a378f34c1e368269dfd6733d9ad908f3c2563a1d53175"
+    }
+  ],
+  "comparison_2d": {
+    "status": "Matched reduced-model numerical screening, not physical or lifetime qualification",
+    "full_load_comparison": [
+      {
+        "walls": 8,
+        "E10_near_seat_p99_MPa": 6.506212010492956,
+        "E11_near_seat_p99_MPa": 4.072740720574144,
+        "stress_reduction_percent": 37.40227471828782,
+        "E10_front_mm_at_E1000": 3.557325193571639,
+        "E11_front_mm_at_E1000": 2.2936698736849372,
+        "front_movement_reduction_percent": 35.52262588110371
+      },
+      {
+        "walls": 10,
+        "E10_near_seat_p99_MPa": 6.12843923007882,
+        "E11_near_seat_p99_MPa": 3.821700418207161,
+        "stress_reduction_percent": 37.63990675717268,
+        "E10_front_mm_at_E1000": 3.2423766646696226,
+        "E11_front_mm_at_E1000": 2.1047288765913903,
+        "front_movement_reduction_percent": 35.08684849834223
+      }
+    ],
+    "refinement_checks": [
+      {
+        "revision": "E10",
+        "walls": 8,
+        "coarse_triangles": 13900,
+        "fine_triangles": 35253,
+        "rear_p99_change_percent": 1.581186368115417,
+        "front_movement_change_percent": 0.7061178083187292,
+        "fine_residual": 1.0623950567647493e-10
+      },
+      {
+        "revision": "E11",
+        "walls": 8,
+        "coarse_triangles": 24467,
+        "fine_triangles": 51422,
+        "rear_p99_change_percent": 0.7070644181613073,
+        "front_movement_change_percent": 0.31869404208668684,
+        "fine_residual": 7.725129641546241e-11
+      },
+      {
+        "revision": "E10",
+        "walls": 10,
+        "coarse_triangles": 13900,
+        "fine_triangles": 35253,
+        "rear_p99_change_percent": 1.3729388010055965,
+        "front_movement_change_percent": 0.8565040469836749,
+        "fine_residual": 1.0791431966277201e-10
+      },
+      {
+        "revision": "E11",
+        "walls": 10,
+        "coarse_triangles": 24467,
+        "fine_triangles": 51422,
+        "rear_p99_change_percent": 1.0161373655068973,
+        "front_movement_change_percent": 0.4262181976339319,
+        "fine_residual": 7.254618097903005e-11
+      }
+    ],
+    "outer_rod_only": {
+      "rear_applied_force_N": [
+        0.0,
+        0.0
+      ],
+      "front_applied_force_N": [
+        31.293062243765473,
+        -42.59925111284059
+      ],
+      "E10_near_seat_p99_MPa": 6.611467847544399,
+      "E11_near_seat_p99_MPa": 3.7324209698965602,
+      "reduction_percent": 43.54625847144007
+    }
+  },
+  "landing_fine": {
+    "name": "landing-8w-h0.65",
+    "nodes": 20352,
+    "tetrahedra": 84237,
+    "E_reference_MPa": 1000.0,
+    "nu": 0.35,
+    "contact_converged": true,
+    "linear_iterations": [
+      -2
+    ],
+    "volume_mm3": 3693.4863647123702,
+    "applied_force_N": [
+      -500.0000000000003,
+      0.0,
+      0.0
+    ],
+    "reaction_N": [
+      499.9999999999995,
+      2.12951699363758e-12,
+      -1.610749192717826e-15
+    ],
+    "applied_moment_Nmm": [
+      0.0,
+      -5980.919768982008,
+      82002.19022672088
+    ],
+    "reaction_moment_Nmm": [
+      -4.651193523490065e-11,
+      5980.9197689819985,
+      -82002.19022672072
+    ],
+    "relative_free_residual": 8.932371210450822e-14,
+    "max_displacement_mm_at_E1000": 0.018322586856058667,
+    "vm_max_MPa_not_allowable": 5.0012372195403065,
+    "vm_volume_p99_MPa": 4.161274305745648,
+    "vm_volume_p999_MPa": 4.591795216351712,
+    "patches": {
+      "washer": {
+        "area_mm2": 108.03887122705856,
+        "facets": 650,
+        "force_N": [
+          -500.0,
+          0.0,
+          0.0
+        ],
+        "mean_displacement_mm_at_E1000": [
+          -0.01207175471060415,
+          0.005628350856948302,
+          1.4000396163908293e-06
+        ]
+      }
+    },
+    "relative_force_balance_error": 4.546715463800261e-15,
+    "linear_solver": "PARDISO with five residual-correction solves",
+    "relative_moment_balance_error": 2.0304008414204015e-15,
+    "wall_minimum_gap_mm": 0.0,
+    "wall_contact_nodes": 1389,
+    "head_164_reaction_N": [
+      7.942042856674462e-15,
+      1.557869895700891e-14,
+      -2.1098411646242043e-14
+    ],
+    "head_40_reaction_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "regions": {
+      "upper_landing": {
+        "vm_p99_MPa": 4.244657134794881,
+        "vm_max_MPa": 5.0012372195403065,
+        "max_principal_MPa": 2.310632257486832
+      }
+    }
+  },
+  "landing_refinement": {
+    "coarse_tets": 33792,
+    "fine_tets": 84237,
+    "movement_change_percent": 1.6552658842265977,
+    "fine_washer_movement_mm_at_E1000": 0.01207175471060415,
+    "fine_raw_VM_MPa": 5.0012372195403065
+  },
+  "published_PETG_example": {
+    "source": "https://doi.org/10.3390/polym17152075",
+    "tau_seconds": [
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0
+    ],
+    "A_dimensionless": [
+      0.005,
+      0.01,
+      0.015,
+      0.01,
+      0.02,
+      0.08
+    ],
+    "transcription": "Approximate Figure 26 bar heights from the retained reference study",
+    "G_5h": 1.0698724051703667,
+    "G_20h": 1.1010448878070347,
+    "formal_plateau": 1.1400000000000001,
+    "scope": "Devil Design, unidirectional 100% specimens, 21.3 C; tests to 20 h. Not a bracket-grade or service-temperature lifetime law."
+  },
+  "planning_scenarios": [
+    {
+      "years": 1,
+      "assumed_unmeasured_compliance_tail_per_year": 0,
+      "G": 1.1400000000000001,
+      "PLA_front_mm": 0.7672302248201431,
+      "PETG_front_mm": 1.0349562091535707,
+      "ASA_front_mm": 1.1051791750467208,
+      "PA6-GF dry_front_mm": 0.4908102181179691,
+      "PA6-GF wet_front_mm": 1.4658905315768
+    },
+    {
+      "years": 1,
+      "assumed_unmeasured_compliance_tail_per_year": 0.02,
+      "G": 1.1600000000000001,
+      "PLA_front_mm": 0.7806904042029527,
+      "PETG_front_mm": 1.0531133356299491,
+      "ASA_front_mm": 1.1245682833808737,
+      "PA6-GF dry_front_mm": 0.4994209236989861,
+      "PA6-GF wet_front_mm": 1.4916079093237615
+    },
+    {
+      "years": 1,
+      "assumed_unmeasured_compliance_tail_per_year": 0.1,
+      "G": 1.2400000000000002,
+      "PLA_front_mm": 0.8345311217341909,
+      "PETG_front_mm": 1.125741841535463,
+      "ASA_front_mm": 1.2021247167174858,
+      "PA6-GF dry_front_mm": 0.5338637460230541,
+      "PA6-GF wet_front_mm": 1.5944774203116072
+    },
+    {
+      "years": 5,
+      "assumed_unmeasured_compliance_tail_per_year": 0,
+      "G": 1.1400000000000001,
+      "PLA_front_mm": 0.7672302248201431,
+      "PETG_front_mm": 1.0349562091535707,
+      "ASA_front_mm": 1.1051791750467208,
+      "PA6-GF dry_front_mm": 0.4908102181179691,
+      "PA6-GF wet_front_mm": 1.4658905315768
+    },
+    {
+      "years": 5,
+      "assumed_unmeasured_compliance_tail_per_year": 0.02,
+      "G": 1.2400000000000002,
+      "PLA_front_mm": 0.8345311217341909,
+      "PETG_front_mm": 1.125741841535463,
+      "ASA_front_mm": 1.2021247167174858,
+      "PA6-GF dry_front_mm": 0.5338637460230541,
+      "PA6-GF wet_front_mm": 1.5944774203116072
+    },
+    {
+      "years": 5,
+      "assumed_unmeasured_compliance_tail_per_year": 0.1,
+      "G": 1.6400000000000001,
+      "PLA_front_mm": 1.1037347093903813,
+      "PETG_front_mm": 1.4888843710630315,
+      "ASA_front_mm": 1.5899068834005456,
+      "PA6-GF dry_front_mm": 0.7060778576433941,
+      "PA6-GF wet_front_mm": 2.108824975250835
+    },
+    {
+      "years": 10,
+      "assumed_unmeasured_compliance_tail_per_year": 0,
+      "G": 1.1400000000000001,
+      "PLA_front_mm": 0.7672302248201431,
+      "PETG_front_mm": 1.0349562091535707,
+      "ASA_front_mm": 1.1051791750467208,
+      "PA6-GF dry_front_mm": 0.4908102181179691,
+      "PA6-GF wet_front_mm": 1.4658905315768
+    },
+    {
+      "years": 10,
+      "assumed_unmeasured_compliance_tail_per_year": 0.02,
+      "G": 1.34,
+      "PLA_front_mm": 0.9018320186482384,
+      "PETG_front_mm": 1.216527473917355,
+      "ASA_front_mm": 1.2990702583882507,
+      "PA6-GF dry_front_mm": 0.5769172739281391,
+      "PA6-GF wet_front_mm": 1.7230643090464142
+    },
+    {
+      "years": 10,
+      "assumed_unmeasured_compliance_tail_per_year": 0.1,
+      "G": 2.14,
+      "PLA_front_mm": 1.4402391939606196,
+      "PETG_front_mm": 1.9428125329724923,
+      "ASA_front_mm": 2.0746345917543705,
+      "PA6-GF dry_front_mm": 0.9213454971688191,
+      "PA6-GF wet_front_mm": 2.75175941892487
+    }
+  ],
+  "thermal_shift_scenarios": [
+    {
+      "assumed_activation_kJ_mol": 50,
+      "hot_rate_factor": 1.7034240888217065,
+      "equivalent_hours_per_year": 8764.220544532931,
+      "extra_time_percent": 0.04817973211107578
+    },
+    {
+      "assumed_activation_kJ_mol": 100,
+      "hot_rate_factor": 2.901653626378061,
+      "equivalent_hours_per_year": 8771.409921758268,
+      "extra_time_percent": 0.13025024838205895
+    },
+    {
+      "assumed_activation_kJ_mol": 200,
+      "hot_rate_factor": 8.419593767472952,
+      "equivalent_hours_per_year": 8804.517562604839,
+      "extra_time_percent": 0.5081913539365036
+    }
+  ],
+  "numerical_rejections": [
+    {
+      "case": "Initial 10-wall coarse mesh",
+      "reason": "Free residual 3.17e-4 exceeded 1e-6; field rejected and remeshed after same-domain CAD face cleanup."
+    },
+    {
+      "case": "Initial 8-wall refined topology",
+      "reason": "335 MPa raw peak in a 3.10e-10 mm3 tunnel-mouth sliver; remeshed after same-domain face cleanup. Front movement changed 0.13%."
+    }
+  ],
+  "mesh_audits": {
+    "landing-8w-h0.65-mesh-quality": {
+      "input_tetrahedra": 84237,
+      "removed_numerically_degenerate_cells": 0,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 0.0,
+      "total_absolute_volume_mm3": 3693.486364712371,
+      "minimum_retained_normalized_determinant": 4.0190015413749266e-07,
+      "gmsh_3d_algorithm": 1,
+      "CAD_volume_mm3": 3693.486364712674,
+      "relative_mesh_CAD_volume_error": 8.204548151979907e-14
+    },
+    "landing-8w-h1-mesh-quality": {
+      "input_tetrahedra": 33792,
+      "removed_numerically_degenerate_cells": 0,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 0.0,
+      "total_absolute_volume_mm3": 3693.486364712411,
+      "minimum_retained_normalized_determinant": 1.1559973850980215e-07,
+      "gmsh_3d_algorithm": 1,
+      "source_BREP": "landing-8w.brep",
+      "CAD_volume_mm3": 3693.486364712674,
+      "relative_mesh_CAD_volume_error": 7.116529587847253e-14
+    },
+    "print-material-10w-h2-mesh-quality": {
+      "input_tetrahedra": 242810,
+      "removed_numerically_degenerate_cells": 0,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 0.0,
+      "total_absolute_volume_mm3": 124613.73179834516,
+      "minimum_retained_normalized_determinant": 4.702033766492259e-11,
+      "gmsh_3d_algorithm": 10,
+      "CAD_volume_mm3": 124613.731798721,
+      "relative_mesh_CAD_volume_error": 3.0160318686967003e-12
+    },
+    "print-material-10w-h3-mesh-quality": {
+      "input_tetrahedra": 149158,
+      "removed_numerically_degenerate_cells": 2,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 2.051132680965016e-15,
+      "total_absolute_volume_mm3": 124613.73179834611,
+      "minimum_retained_normalized_determinant": 8.940293880657017e-11,
+      "gmsh_3d_algorithm": 1,
+      "source_BREP": "print-material-clean-10w.brep",
+      "CAD_volume_mm3": 124613.7317986737,
+      "relative_mesh_CAD_volume_error": 2.628897100009908e-12
+    },
+    "print-material-8w-h2-mesh-quality": {
+      "input_tetrahedra": 235089,
+      "removed_numerically_degenerate_cells": 0,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 0.0,
+      "total_absolute_volume_mm3": 112024.11320705917,
+      "minimum_retained_normalized_determinant": 8.782526669916121e-10,
+      "gmsh_3d_algorithm": 1,
+      "source_BREP": "print-material-clean-8w.brep",
+      "CAD_volume_mm3": 112024.11355494642,
+      "relative_mesh_CAD_volume_error": 3.1054675497799167e-09
+    },
+    "print-material-8w-h3-mesh-quality": {
+      "input_tetrahedra": 180809,
+      "removed_numerically_degenerate_cells": 3,
+      "normalized_determinant_floor": 1e-12,
+      "removed_absolute_volume_mm3": 5.640081483806082e-15,
+      "total_absolute_volume_mm3": 112024.11320745246,
+      "minimum_retained_normalized_determinant": 8.474448773665208e-10
+    }
+  },
+  "source_geometry": [
+    {
+      "walls": 8,
+      "effective_wall_mm": 3.2695574287564275,
+      "volume_mm3": 112024.1136998349,
+      "valid": true,
+      "solid_count": 1,
+      "source_STEP_sha256": "f23448a508b6669e902322df1b323bd9993d0c562ff4b751f2270970041444cf",
+      "core_model": "Finished chamfer planes offset inward in XY; ideal tunnel surrounds; four 1.2 mm continuous plates; zero sparse-infill credit"
+    },
+    {
+      "walls": 10,
+      "effective_wall_mm": 4.083716694115407,
+      "volume_mm3": 124613.73179872216,
+      "valid": true,
+      "solid_count": 1,
+      "source_STEP_sha256": "f23448a508b6669e902322df1b323bd9993d0c562ff4b751f2270970041444cf",
+      "core_model": "Finished chamfer planes offset inward in XY; ideal tunnel surrounds; four 1.2 mm continuous plates; zero sparse-infill credit"
+    }
+  ]
+}

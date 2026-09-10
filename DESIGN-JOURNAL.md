@@ -2,6 +2,42 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## E11 — strong inner seat, 50° chamfers and refreshed FEA
+
+Deepened the underside beneath the inner rod by 38 mm, giving approximately
+57 mm center section depth. The smooth underside and R6 rigid-shoulder blends
+restore the reduced bending section while retaining the functional snap sectors,
+relief pockets, rail centers and hardware. The minimum seat-band bending I is
+1.539 times the stronger adjacent plain-arm reference; elastic section modulus
+is at least 1.282 times that reference. Both reference bands include the new
+underside runouts.
+
+The 2 mm face inset now rises 2.384 mm at 50° above the bed, mirrored on the
+opposite side. Independent STEP probes measure the angles. Complete flexible
+finger sectors match E10 through nine print depths. Delivered STEP solids,
+closed STLs, hardware access and the 322-case nominal spool sweep pass; minimum
+clearance is 3.927 mm.
+
+![E11 finished geometry](designs/closed-wall-e11/progress-exterior.png)
+
+Matched E10/E11 reduced FEM gives 37.4–37.6% lower near-seat stress and
+35.1–35.5% less front movement. The outer-rod-only diagnostic lowers stress
+under the unloaded inner seat by 43.5%, supporting reduced-section bending.
+New E11 8/10-wall 3D solves include the finished geometry and contact restraints;
+their refined K values are 2306.334 and 2098.156 MPa·mm. Material movement,
+creep sensitivities, screw demand and the landing submodel are all updated.
+Rejected numerical fields and topology cleanup are explicitly audited.
+
+![E11 solved stress sections](analysis/e11/fem-sections.png)
+
+Actual OrcaSlicer 2.4.2 audits verify 120 layers, all four intended solid bands,
+and continuous seat-wall footprints at 8/10 walls. These are nominal path checks,
+not calibrated printer profiles. The new print footprint is approximately
+207.51 × 246.00 mm. The concrete next step is to configure the delivered helpers
+in the intended filament profile, check measured rod fit, print the prototype
+and run the stated immediate/sustained/hot movement checks. No lifetime spool
+rating is assigned. [Current E11 guide](README.md) and [full results](analysis/e11/RESULTS.md).
+
 ## E10 — continuous chamfers after filleting
 
 Replaced the repeated stop/start bevel patches with continuous 2 mm chamfers around the pre-filleted body. Only the thin dowel-retainer regions use runouts. Mirroring the finished half makes the two broad-face treatments identical. The source profile, 12 mm rail lift, fasteners and modifier bands remain unchanged; E9 FEM is explicitly a prior-finish baseline.

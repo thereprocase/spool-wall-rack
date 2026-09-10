@@ -14,3 +14,10 @@ __pycache__/
 /analysis/e9/*.brep
 /analysis/e9/*w-h*.npz
 !/analysis/e9/*-solution.npz
+
+# E11 local caches and uncalibrated slicer audit projects are not print profiles.
+/analysis/e11/.work/
+/designs/closed-wall-e11/.work/
+/analysis/e11/*.brep
+/analysis/e11/*w-h*.npz
+!/analysis/e11/*-solution.npz

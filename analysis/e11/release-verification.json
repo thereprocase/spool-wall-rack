@@ -1,0 +1,828 @@
+{
+  "revision": "E11",
+  "status": "Published-artifact and numerical consistency checks pass; physical qualification is unperformed",
+  "fields_checked": [
+    {
+      "name": "e10-10w-h1-full",
+      "dimension": 2,
+      "nodes": 18216,
+      "elements": 35253,
+      "relative_free_residual": 1.0791431966277201e-10,
+      "raw_peak_MPa": 7.022980332344851
+    },
+    {
+      "name": "e10-10w-h2-full",
+      "dimension": 2,
+      "nodes": 7365,
+      "elements": 13900,
+      "relative_free_residual": 7.308142462733913e-11,
+      "raw_peak_MPa": 6.974275979028304
+    },
+    {
+      "name": "e10-8w-h1-full",
+      "dimension": 2,
+      "nodes": 18216,
+      "elements": 35253,
+      "relative_free_residual": 1.0623950567647493e-10,
+      "raw_peak_MPa": 7.432759470753919
+    },
+    {
+      "name": "e10-8w-h1-outer_only",
+      "dimension": 2,
+      "nodes": 18216,
+      "elements": 35253,
+      "relative_free_residual": 1.840472675997051e-10,
+      "raw_peak_MPa": 7.5991543914580895
+    },
+    {
+      "name": "e10-8w-h2-full",
+      "dimension": 2,
+      "nodes": 7365,
+      "elements": 13900,
+      "relative_free_residual": 7.69819390072718e-11,
+      "raw_peak_MPa": 7.3758724463277305
+    },
+    {
+      "name": "e11-10w-h1-full",
+      "dimension": 2,
+      "nodes": 26346,
+      "elements": 51422,
+      "relative_free_residual": 7.254618097903005e-11,
+      "raw_peak_MPa": 5.920645087122221
+    },
+    {
+      "name": "e11-10w-h2-full",
+      "dimension": 2,
+      "nodes": 12707,
+      "elements": 24467,
+      "relative_free_residual": 5.1777762347957623e-11,
+      "raw_peak_MPa": 5.6741283421574495
+    },
+    {
+      "name": "e11-8w-h1-full",
+      "dimension": 2,
+      "nodes": 26346,
+      "elements": 51422,
+      "relative_free_residual": 7.725129641546241e-11,
+      "raw_peak_MPa": 5.7524581209389805
+    },
+    {
+      "name": "e11-8w-h1-outer_only",
+      "dimension": 2,
+      "nodes": 26346,
+      "elements": 51422,
+      "relative_free_residual": 1.2027573641500255e-10,
+      "raw_peak_MPa": 4.461600923388191
+    },
+    {
+      "name": "e11-8w-h2-full",
+      "dimension": 2,
+      "nodes": 12707,
+      "elements": 24467,
+      "relative_free_residual": 5.4928564039653445e-11,
+      "raw_peak_MPa": 6.277063978132216
+    },
+    {
+      "name": "landing-8w-h0.65",
+      "dimension": 3,
+      "nodes": 20352,
+      "elements": 84237,
+      "relative_free_residual": 8.932371210450822e-14,
+      "raw_peak_MPa": 5.0012372195403065
+    },
+    {
+      "name": "landing-8w-h1",
+      "dimension": 3,
+      "nodes": 9395,
+      "elements": 33792,
+      "relative_free_residual": 9.597917144359391e-14,
+      "raw_peak_MPa": 4.873495837800312
+    },
+    {
+      "name": "print-material-10w-h2",
+      "dimension": 3,
+      "nodes": 80220,
+      "elements": 242810,
+      "relative_free_residual": 3.1079376742640905e-08,
+      "raw_peak_MPa": 51.117967049126996
+    },
+    {
+      "name": "print-material-10w-h3",
+      "dimension": 3,
+      "nodes": 47541,
+      "elements": 149156,
+      "relative_free_residual": 2.9610623925502326e-08,
+      "raw_peak_MPa": 75.25613768030782
+    },
+    {
+      "name": "print-material-8w-h2",
+      "dimension": 3,
+      "nodes": 73876,
+      "elements": 235089,
+      "relative_free_residual": 3.169170883662142e-08,
+      "raw_peak_MPa": 37.90038061068069
+    },
+    {
+      "name": "print-material-8w-h3",
+      "dimension": 3,
+      "nodes": 56399,
+      "elements": 180806,
+      "relative_free_residual": 4.227455516681694e-08,
+      "raw_peak_MPa": 35.31781280336462
+    }
+  ],
+  "relative_markdown_links_checked": 163,
+  "artifact_hash_method": "SHA256; LF-normalize text as marked, preserve exact CAD/binary bytes",
+  "artifacts": [
+    {
+      "path": ".gitattributes",
+      "bytes": 112,
+      "sha256": "b29f500a8e5d78ab3271f41b59c4cbac67a8fe0bff9fda42482281d77ab79e8f",
+      "normalization": "LF"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 570,
+      "sha256": "a3a697c317df2a0eaee5564ca09053a502a28e6a42faf70bfdc8fe18a56281aa",
+      "normalization": "LF"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 8024,
+      "sha256": "296795be42403b46292c12bfcd3db16c741ac4b1d5c5cf195b5b4a480cb1d984",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/analysis-topology-cleanup.json",
+      "bytes": 518,
+      "sha256": "9263d7d3410a741cd7f73af03865b4629d78f286646830aba8a46caaab408995",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/build_analysis_geometry.py",
+      "bytes": 3819,
+      "sha256": "bcc12cdefbb74feea0cc1d5eafd4476fd0de0d30e92f932db216632e93a77187",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/clean_analysis.py",
+      "bytes": 713,
+      "sha256": "f6e22a070907b0646555babdf0764728df7c1c082cd86a6dd2c249640edcfa54",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/comparison-summary.json",
+      "bytes": 2278,
+      "sha256": "71b65566b9567c91055190b77dde25fcbc6cd758f91fe17559ac3edc5a326ead",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/COMPARISON.md",
+      "bytes": 2695,
+      "sha256": "553e764c35219db848522178832351ca22e51a9312f28568e7bceb0ba3e1ca52",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/creep-sensitivity.png",
+      "bytes": 117703,
+      "sha256": "a32b0300f49c9ba84e67fbf7d2084c7006802994f122dc94d72064f7c35f8b7a",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e10-10w-h1-full-results.json",
+      "bytes": 2637,
+      "sha256": "06c364fc5c892ccf0e374e143c92968c8a65209e595c05f2607210aca259b1b7",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e10-10w-h1-full-solution.npz",
+      "bytes": 2730361,
+      "sha256": "f1d5ab3f775c77bcc54c2845c0e8f4372dbc20f123892934ee35e53016d69117",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e10-10w-h2-full-results.json",
+      "bytes": 2632,
+      "sha256": "6fbb9e38e7116e4659e65d00916d125ffad52093d993a679bdc3bbf7a9e27dc5",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e10-10w-h2-full-solution.npz",
+      "bytes": 1077574,
+      "sha256": "8e71c7ff8bfc0713a0d03a7ff55523b1572380454f4f34bf779363e3d32cf5c8",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h1-full-results.json",
+      "bytes": 2629,
+      "sha256": "9b3f65fdebb4dc4bb5f93b0e92f0923cffa15318d4193743bafeacc732b0aff0",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h1-full-solution.npz",
+      "bytes": 2730017,
+      "sha256": "9c1d5c3b7ce705a4338f8c69f76a46e2a314626850d14963f618411ecae48041",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h1-outer_only-results.json",
+      "bytes": 2607,
+      "sha256": "1594402d25330a00ffc25a07ed9c25918268580232c81c80e3a2d2455d0c6b50",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h1-outer_only-solution.npz",
+      "bytes": 2729373,
+      "sha256": "241bb4d1d9f5a5cd0d18d3ded06ef9aaa237e278c63af265d14ce3a2f48c2a40",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h2-full-results.json",
+      "bytes": 2631,
+      "sha256": "db30d024e5ffec2d9f29924fee3064e3235c672db29afcde314a0180c0a0d05e",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e10-8w-h2-full-solution.npz",
+      "bytes": 1077778,
+      "sha256": "20576653230a73c8636290cfaeb8553ac60f8b34898cf500f630041932f85cef",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e11-10w-h1-full-results.json",
+      "bytes": 2640,
+      "sha256": "e8c4dfc0d983d6ea352d69e57e7432955398c8db4d1473ed376b03c5f3859bc1",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e11-10w-h1-full-solution.npz",
+      "bytes": 3988640,
+      "sha256": "11290e18da57fe2137942263ef054d769b27fb93ddbac456b27022b7fc6e962a",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e11-10w-h2-full-results.json",
+      "bytes": 2647,
+      "sha256": "d0074bf6b2a66ddf7aed96f6f8782d3445235f1cc11ddaa46eda18c1c95c9cfd",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e11-10w-h2-full-solution.npz",
+      "bytes": 1895406,
+      "sha256": "a895df054c45088b68e9f5a4454bbeccf3b70ca4fcd49247ee611f3848fa5702",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h1-full-results.json",
+      "bytes": 2639,
+      "sha256": "a6cd23fe268d6ea2e3875845616d0f90259245eecfd39dd3cea778a74710e92f",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h1-full-solution.npz",
+      "bytes": 3988185,
+      "sha256": "af932e4b6cc0281a405503c9baf1a8a238730b46b586fceeb279dee45568c2dd",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h1-outer_only-results.json",
+      "bytes": 2609,
+      "sha256": "3d7ccb68e40cfee4afc7912f172db28b848e5c6504ffbccc7d918689aa3c2087",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h1-outer_only-solution.npz",
+      "bytes": 3986995,
+      "sha256": "d0941c42bfeb5404714ca3ee6f19e3882159328c79c97d94dbe937d12ca9148e",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h2-full-results.json",
+      "bytes": 2638,
+      "sha256": "7c01d45effb67d2bf5eba04f332741dc2df69da751dd6fa2a324405232ccada1",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/e11-8w-h2-full-solution.npz",
+      "bytes": 1895511,
+      "sha256": "5aa1d81fd53a4409eb6c40e1f28ccd1d875d7020800ebdcd51574c531bb1e3ba",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/engineering-summary.json",
+      "bytes": 20567,
+      "sha256": "54af36fc77a7a2a1e6db361223d45189422b3fc4c4f4bff71b38f2f2ea508be6",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/environment.json",
+      "bytes": 618,
+      "sha256": "6540d849457e942908b486f96e9f419353f87f6eafbd3dfac97630340a2828b4",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/fem-3d-10w.png",
+      "bytes": 430560,
+      "sha256": "bb7ba1ff3a297c58cf6c135db8940ea09e382b03298f7fde57ac4690373b9cc1",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/fem-3d.png",
+      "bytes": 435908,
+      "sha256": "3bea0660879a9807c81bb4db5295ccefbeca3b2539d63560c7dd6e0fef28a60c",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/fem-landing.png",
+      "bytes": 172310,
+      "sha256": "c8a6fa8c75ebc3f6708e9087a84e8135d8014869c15b4d13a84b45695a5ac7cc",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/fem-sections.png",
+      "bytes": 842627,
+      "sha256": "2303633cf93bf7d2c97a8e7bf04170b87405467e36ca373a41a7b46c684a5baa",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/geometry-10w.json",
+      "bytes": 370,
+      "sha256": "f7170679608adea1d19bf4693a20013727d146f16e236204881f7af1c9fd7be9",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/geometry-8w.json",
+      "bytes": 369,
+      "sha256": "17e9566a0194639a868349d4e238bae90c653360f6af0c60676e7e4e70d49ec4",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h0.65-mesh-quality.json",
+      "bytes": 398,
+      "sha256": "a117f146737d123a3c64e68fdc9f7dd0974c85dd568af2bc6e4cb6a3a2f73336",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h0.65-results.json",
+      "bytes": 1718,
+      "sha256": "2f10dc9517227f321fb29d035bcc62ddbaf75f40e45d0e7e39ffca10209b0a3a",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h0.65-solution.npz",
+      "bytes": 8648991,
+      "sha256": "06604936af95b9a76108a9cc984634733245d47e5dbc0bdf4fdf3612154a1517",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h1-mesh-quality.json",
+      "bytes": 434,
+      "sha256": "983748c2da6cf96da06df4a47f5008509ff5c99a14a59f08648c9f6eb74e6744",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h1-results.json",
+      "bytes": 1710,
+      "sha256": "e30104144e9f05a1cc1427805651425652a845e0e0415cc7f7998b7d4ee89b62",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/landing-8w-h1-solution.npz",
+      "bytes": 3441549,
+      "sha256": "9d8727ccba0995b37e85bf3872f77f73cdd71e660076ef3f3999c095f44a29d8",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/mesh_model.py",
+      "bytes": 2481,
+      "sha256": "a5368b0c56100e4ef26e5e90147e0615d512f9b751b284d11fbc3d8d8fd149e1",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/mesh_quality.py",
+      "bytes": 1080,
+      "sha256": "efdc6a501060b3518f09dc440ea4ade8d2ba461de5daea4332f806fcb83244b9",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h2-mesh-quality.json",
+      "bytes": 400,
+      "sha256": "018be07aad84c014dfd3d526dd3da5fd655210f37bcab2b826631ed7c2d59006",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h2-results.json",
+      "bytes": 2945,
+      "sha256": "ac43a50b5ca024ce2df52c784c94d9fe78e7c71cb8fa4d6faab8fad9da1263aa",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h2-solution.npz",
+      "bytes": 25027798,
+      "sha256": "08944f4058237930651a378f34c1e368269dfd6733d9ad908f3c2563a1d53175",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h3-mesh-quality.json",
+      "bytes": 467,
+      "sha256": "0c1627ec5b2a6773b89b4a4078d502e599f46aac0fd24f340d19b94873779224",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h3-results.json",
+      "bytes": 2945,
+      "sha256": "6fef2f3195c2a959446fbfef138ea213b29218b9e9d9ea898e3266db7526a5a1",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-10w-h3-solution.npz",
+      "bytes": 15469151,
+      "sha256": "7aca30530c616c2e0bc16c1ba56d0a4109c26e9721949761217504ba0cd1ad7e",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h2-mesh-quality.json",
+      "bytes": 450,
+      "sha256": "feffd897c00f6374e63beb3b77cebaba515c8961bde54fc0c90da8911a034cbc",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h2-results.json",
+      "bytes": 2914,
+      "sha256": "2a17e3892576f4eb80f7063c8898645d571371bd12091f256133f70ae7cf3086",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h2-solution.npz",
+      "bytes": 24402796,
+      "sha256": "f1b222a7048a657bb473c91f403b42b8d4fa092ca8505b26f8d97df3f24aac2c",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h3-mesh-quality.json",
+      "bytes": 293,
+      "sha256": "7b9e9e30f62c27ee718e9372b39908d5118bcd1f33f5e8ec3ae9324541488e25",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h3-results.json",
+      "bytes": 3014,
+      "sha256": "69512291806a2b955d36a4441ae0b28773a32674ea2e0505878b72763ce22eb1",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/print-material-8w-h3-solution.npz",
+      "bytes": 18687073,
+      "sha256": "66208a8bb44ea8a28cf560285561f67e0daec549500cb94cb4f93735c0c97b79",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/README.md",
+      "bytes": 6099,
+      "sha256": "2f8fca431fa894fb2f193f235805cbfea074eac6563a87d3547fd2142a91cfc0",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/render_fields.py",
+      "bytes": 5943,
+      "sha256": "c058990525d5da8f8ae8cb6228054ac9df93386c2db0c890590201a54b612c1d",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/report.py",
+      "bytes": 15986,
+      "sha256": "708e8a353e0f69ad65375efd4eac758cce1a1e0b010025253510cb8264e70fee",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/report_comparison.py",
+      "bytes": 6210,
+      "sha256": "cb32b314b7e0acf47a8b23ae4d66d98eead63dc2d8a6260f3fe9f361544b4664",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/requirements.txt",
+      "bytes": 195,
+      "sha256": "da4f92d7f701b610a1c6ff3fbbc0cbd570678afb68796eb468ce15c24571f8f0",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/RESULTS.md",
+      "bytes": 8476,
+      "sha256": "abb926c4f14cc835d50ad2159769bc09002bc536aeb510f04c39ebb2d2c511e9",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/seat-stress-comparison.png",
+      "bytes": 516189,
+      "sha256": "bbbbfcbf01bc39442fc12a1255eae4f0c1e46fd902c87ce98895f88ed5947109",
+      "normalization": "none"
+    },
+    {
+      "path": "analysis/e11/solve3d.py",
+      "bytes": 8175,
+      "sha256": "870701dee457590708801c4e3670b6ab300278280b290c01abc81af614dabd05",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/solve_comparison.py",
+      "bytes": 8163,
+      "sha256": "da9d04921da82b151c98a0e8048cb6d20056510937bd78380bf2ff8f9c2c3d19",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/solver-verification.json",
+      "bytes": 732,
+      "sha256": "c4af2cccd066b599c63e689e1c80b4f5a5e991eb5d87dff7d1a507cdcadd5d67",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/solver-verification3d.json",
+      "bytes": 321,
+      "sha256": "4e8b60fe562859c9e6a26abcb55c15ad02058f8660b3da302e73dc629854c6e9",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/verify_release.py",
+      "bytes": 6727,
+      "sha256": "0fd8b9d9e667e8ea58318158c2a231c24c5b7a7e0a8c7cae0b3f880f9fc7eedc",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/verify_solver.py",
+      "bytes": 2962,
+      "sha256": "c5d4a67d29ede3125bd08abb5afac56bd862336f6916ab3c2f7b9af140fb50f8",
+      "normalization": "LF"
+    },
+    {
+      "path": "analysis/e11/verify_solver3d.py",
+      "bytes": 1727,
+      "sha256": "ae138a5d477f5d57b26d909b65b1b291fb3710499e68abcd8d983451037ff507",
+      "normalization": "LF"
+    },
+    {
+      "path": "DESIGN-JOURNAL.md",
+      "bytes": 27584,
+      "sha256": "fb6d769d8c9d874bc3f79b7e17d2a76e2f54acaa8dad30e312eb7ce333e24b59",
+      "normalization": "LF"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 13898,
+      "sha256": "31bffa5b215a6ae1c0f651e0f36b20516cf0cadcb098194a3d8121f92aa9e225",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/body-mounted.stl",
+      "bytes": 818684,
+      "sha256": "a2a130ab35fda91bfa78819752ca8562347942841082444be1d9d2669565e784",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/body-only.step",
+      "bytes": 20188029,
+      "sha256": "f23448a508b6669e902322df1b323bd9993d0c562ff4b751f2270970041444cf",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/body-only.stl",
+      "bytes": 817084,
+      "sha256": "53625d2d47b5c8b6a9aef3ad14eabc7165c8d22b52b57615fb2890bac7b8874b",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/bracket-with-modifier-helpers.step",
+      "bytes": 20227957,
+      "sha256": "f1629c652cc7965d753d2201e57937b8c984e355520e086d1ed83fa15a05f3a4",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/bracket.scad",
+      "bytes": 3521,
+      "sha256": "13ea7111446080f9dce0cebda888b7b8525c71ec66ac862ad0593adc55909b0f",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/build-verification.json",
+      "bytes": 1863,
+      "sha256": "a237d2b10e9cc07cc89247e86904bbf98c6401bcbd266b7c0c563cb315a344be",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/build_step.py",
+      "bytes": 4846,
+      "sha256": "d67bcb617b230d31874b0286d4be2ec0c0ca948cf3dc61ec71a2389e032de05b",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/continuous_chamfer.py",
+      "bytes": 4741,
+      "sha256": "3603131d8d472497951ac97fc52e9c75e17a2697c26ae8db11ff3632c72faadf",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/draw_engineering.py",
+      "bytes": 3590,
+      "sha256": "9bb8e99960e81eedf9707008489fe694c1926de220a7fe4c31f93ea714ce1459",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/draw_helpers.py",
+      "bytes": 2218,
+      "sha256": "8dc19da813f3f4e907c5abadafec60d0748c3afc5c0113521c67baea9ad14a55",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/engineering-drawing.png",
+      "bytes": 230158,
+      "sha256": "8177f9f83e1ec990fe0903776d3d667b450843b8dc658dadae7d6166142c3f07",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/engineering-verification.json",
+      "bytes": 169036,
+      "sha256": "50cd2a4676429788298bea383d2673859bf9a43bb5111f57dc38c73cd1d12f5e",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/fastener_geometry.py",
+      "bytes": 877,
+      "sha256": "26d6e0cf5d92583eeeb8181f6163dfb090fdbaa9ddf0f30a151f7e0704c9f5b4",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/final-finish-verification.json",
+      "bytes": 9441,
+      "sha256": "50369dc4ffe58094eaa86972600527283df4b42e22efe5a009a519f4206098c8",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/final_finish_check.py",
+      "bytes": 3227,
+      "sha256": "1475ec416185df064b1d3f3ddbb834379804a2b7a23491bd9ce0571e102e7b9c",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/finish-inner-front.png",
+      "bytes": 54691,
+      "sha256": "60663c40f8b5677757006ae72553ecaaac795aaaf8acef9d41e6273b9eab5a97",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/finish-inner-reverse.png",
+      "bytes": 58138,
+      "sha256": "33e7321b3ae5484aa4537482a27d0f3bc3b0adbf3bdad6ce54f1e1e2c6ee4440",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/finish-outer-front.png",
+      "bytes": 49809,
+      "sha256": "c51b52414e33f282ade7a502b566dd6debdc311666c887483b5d461661c48e29",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/finish-outer-reverse.png",
+      "bytes": 53872,
+      "sha256": "8a8cca98b97a246b9460e18ab8fa138b708e1f5473f7876d1a23a3b8d94db4aa",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/finish-specification.json",
+      "bytes": 191283,
+      "sha256": "766f7d36d5ddd3394a9e65ce50cb2f9eb82528d8785b62abd0625ecbe031fd70",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/helper-1.stl",
+      "bytes": 684,
+      "sha256": "3a9c3364ce60eb91232ec90634f9e8d70276a94653c316c02ace98384b588536",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/helper-2.stl",
+      "bytes": 684,
+      "sha256": "4749a6f5877f911f33cc74094ec76e05c59cb427bba2be59573159f7c965fa78",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/inspect_toolpaths.py",
+      "bytes": 8631,
+      "sha256": "7076d47306b133df8d85e29066ebe0e4209d5aaa0f021f3c385f65536d23f12a",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/modifier-stack.png",
+      "bytes": 106458,
+      "sha256": "c3916cdcbc0fa8c635e1b830959e0456678ffa94388dc55cc670d5088eb71e8a",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/profile.svg",
+      "bytes": 231928,
+      "sha256": "ee28b245a3911724f3b5edb4f72da3b8158afd4c44a5513deb2be85f1680c0dc",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/progress-exterior.png",
+      "bytes": 48716,
+      "sha256": "6f20c189af95413ed14edad25aa4abcd5d1037e2bfc9f02642deb3d23bcda1e7",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/README.md",
+      "bytes": 5950,
+      "sha256": "96d237a455fabf8dd65f2567050942047e9382993d28e01cf00af221e70a9c8f",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/render_cpu.py",
+      "bytes": 3825,
+      "sha256": "8485bdfab8f398449988947fc76f81d636cb0a98185ff46f8e9a9d0ebe3d4ad0",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/repair_stl.py",
+      "bytes": 2947,
+      "sha256": "a15c393cf2ad86cbfcb2cc66b7c8432cf1560db61c1531ed7487a6e166efe4d2",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/retainer_geometry.scad",
+      "bytes": 2316,
+      "sha256": "fbcdb6f2953a4989087915c37f85b8942df4e60867516477dfbbaec45b94cd92",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/section-comparison.png",
+      "bytes": 209287,
+      "sha256": "61341aae5bebada679b5abc05ea5ec6003907f039b981b22b81060bcd3d2906f",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/section-verification.json",
+      "bytes": 202941,
+      "sha256": "78de5829d429118e7115de1f5b50cecf0adc858950b78cc39fc302d10794e127",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/slice_audit.py",
+      "bytes": 4229,
+      "sha256": "3b93d8f04f4cc0e1bd182db7894a4446f70a783f23fc99ca5fff8b6e82ad6edc",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/stl-tessellation-check.json",
+      "bytes": 1355,
+      "sha256": "da45f0d25e655ee3d4bad91dcaff6fd2e4811e6db80a1128928eb9e6b51ade46",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/toolpath-sections.png",
+      "bytes": 948697,
+      "sha256": "82065bf2a4ee7f79940bf69d1d6bfa53d954430575a61eabf1bce470de87abbc",
+      "normalization": "none"
+    },
+    {
+      "path": "designs/closed-wall-e11/toolpath-verification.json",
+      "bytes": 33810,
+      "sha256": "9e0c24ef28aaabe353b262edb7da2a180b0071955a53371d59655ed69e48a057",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/verification.json",
+      "bytes": 1144,
+      "sha256": "06ec692abee4db8c6341c0c03788ee68b88adcd5756b5321dee6d30d160154dc",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/verify_engineering.py",
+      "bytes": 7820,
+      "sha256": "e56eacf14ca9f85955077ff81bc741891139196a9542273d6ca354d50408327b",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/verify_sections.py",
+      "bytes": 6463,
+      "sha256": "bf860681632a832644c3d8d98dae37a0cb87b242602981294a751f6842a20765",
+      "normalization": "LF"
+    },
+    {
+      "path": "designs/closed-wall-e11/verify_step.py",
+      "bytes": 2597,
+      "sha256": "dba0f34c3a4fff36ea3e38eba468411cd12b65801c35097bb0f8eed55ca3e9ed",
+      "normalization": "LF"
+    },
+    {
+      "path": "E10-ENGINEERING-GUIDE.md",
+      "bytes": 27234,
+      "sha256": "10e5b703cc8ab447ec924d80b6f8429ba0501d794b97e04a262e807928707e51",
+      "normalization": "LF"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12815,
+      "sha256": "24c958721320cafc3b0e1ce7bca820440d0e57d5f21cef653999125fe2bccda5",
+      "normalization": "LF"
+    }
+  ]
+}

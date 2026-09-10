@@ -1,0 +1,9 @@
+{
+  "walls": 10,
+  "effective_wall_mm": 4.083716694115407,
+  "volume_mm3": 124613.73179872216,
+  "valid": true,
+  "solid_count": 1,
+  "source_STEP_sha256": "f23448a508b6669e902322df1b323bd9993d0c562ff4b751f2270970041444cf",
+  "core_model": "Finished chamfer planes offset inward in XY; ideal tunnel surrounds; four 1.2 mm continuous plates; zero sparse-infill credit"
+}
