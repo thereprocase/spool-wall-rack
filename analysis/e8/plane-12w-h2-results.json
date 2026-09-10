@@ -1,31 +1,31 @@
 {
-  "name": "plane-8w-h2",
+  "name": "plane-12w-h2",
   "nodes": 7743,
   "triangles": 14668,
   "E_reference_MPa": 1000.0,
   "nu": 0.35,
-  "contact_iterations": 7,
+  "contact_iterations": 8,
   "applied_force_N": [
     1.4432899320127035e-15,
     -117.72000000000003
   ],
   "reaction_N": [
-    -3.1589895282957414e-10,
-    117.72000000083989
+    7.766243551032836e-11,
+    117.72000000024684
   ],
-  "relative_free_residual": 9.006765477785684e-11,
-  "vm_max_MPa_not_allowable": 8.755989617148364,
+  "relative_free_residual": 8.060026874523424e-11,
+  "vm_max_MPa_not_allowable": 7.959145158451912,
   "patches": {
     "rear_seat": {
       "mean_displacement_mm_at_E1000": [
-        0.07241381714633482,
-        -0.2544903275768242
+        0.06650031514209762,
+        -0.20701525885637478
       ]
     },
     "front_seat": {
       "mean_displacement_mm_at_E1000": [
-        0.3587218697566334,
-        -4.054502976867429
+        0.31014145610943794,
+        -3.435907571934538
       ]
     }
   }
