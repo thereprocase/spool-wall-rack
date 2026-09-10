@@ -1,0 +1,76 @@
+{
+  "revision": "D",
+  "status": "geometry checked, no load rating, no slicing or physical validation",
+  "single_envelope_mm": [
+    242.967,
+    239.999,
+    24
+  ],
+  "p1s_xy_bounds_mm": [
+    [
+      7.032999999999987,
+      6.0
+    ],
+    [
+      250.0,
+      245.999
+    ]
+  ],
+  "front_left_exclusion_gap_mm": 134.0,
+  "min_nominal_spool_clearance_mm_approx": 5.512531025516708,
+  "checked_flange_diameters_mm": [
+    180,
+    220
+  ],
+  "sample_step_mm": 0.1,
+  "planes_z_mm": [
+    [
+      0,
+      1.2
+    ],
+    [
+      7.6,
+      8.8
+    ],
+    [
+      15.2,
+      16.4
+    ],
+    [
+      22.8,
+      24
+    ]
+  ],
+  "air_z_mm": [
+    [
+      1.2,
+      7.6
+    ],
+    [
+      8.8,
+      15.2
+    ],
+    [
+      16.4,
+      22.8
+    ]
+  ],
+  "outer_face_and_internal_plate_thickness_mm": 1.2,
+  "print_layer_mm": 0.2,
+  "through_profile_contour_areas_mm2": [
+    18787.9995112472
+  ],
+  "cavity_max_axis_aligned_clear_runs_mm": {
+    "x": 236.0,
+    "y": 232.5
+  },
+  "largest_inscribed_cavity_diameter_mm_approx": 84.0535543567314,
+  "mounting_hole_heights_mm": [
+    138,
+    12
+  ],
+  "mounting_face_depths_mm": [
+    20,
+    60
+  ]
+}

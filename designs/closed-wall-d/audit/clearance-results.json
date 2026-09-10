@@ -1,0 +1,24 @@
+{
+  "nominal_rigid_spool_diameters_mm": [
+    180,
+    220
+  ],
+  "diameter_step_mm": 0.025,
+  "min_clearance_mm": 5.512165672534891,
+  "worst_diameter_mm": 180.0,
+  "closest_bracket_point_xy_mm": [
+    92.96700000000001,
+    -6.001000000000005
+  ],
+  "actual_cavity_section_z_mm": 4.4,
+  "unsupported_inscribed_circle_center_xy_mm": [
+    43.5,
+    -46.5
+  ],
+  "unsupported_inscribed_circle_diameter_mm": 83.97250045601332,
+  "limitations": [
+    "Nominal 25.4 mm straight rods; nominal saddle settlement 0.3 mm; rigid concentric spool flanges.",
+    "No screw heads, rod bending, spool wobble, tolerance stack or actual slicer toolpaths included.",
+    "Inscribed circle demonstrates a broad unsupported area. It is not a slicer bridge-length prediction."
+  ]
+}
