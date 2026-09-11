@@ -40,6 +40,12 @@ def read_paths(folder, model_to_installed=None):
     assert np.allclose(xf[:3]@xf[:3].T, np.eye(3), atol=1e-6)
     assert np.allclose(xf[:3, 2], [0, 0, 1], atol=1e-6)
     source = (folder/'plate_1.gcode').read_text(encoding='utf-8')
+    offset_comment = re.search(r'^; extruder_offset = (.+)$',source,re.MULTILINE)
+    extruder_offset = np.zeros(3)
+    if offset_comment:
+        offsets = offset_comment.group(1).strip().split(',')
+        assert len(offsets) == 1,'Multiple extruder offsets require per-tool path mapping'
+        extruder_offset[:2] = [float(v) for v in offsets[0].split('x')]
     diameter = float(re.search(r'; filament_diameter: ([\d.]+)', source).group(1))
     area = np.pi*diameter**2/4
     pos = np.zeros(3)
@@ -91,7 +97,10 @@ def read_paths(folder, model_to_installed=None):
             if active and extrusion > 0 and np.linalg.norm(new[:2]-pos[:2]) > 1e-7:
                 assert layer_z is not None and abs(new[2]-layer_z) < 1e-3
                 assert abs(new[2]-pos[2]) < 1e-3, 'Nonplanar extruding move needs a 3D sweep'
-                model = (np.array([pos, new])-xf[3])@xf[:3].T
+                # Orca point_to_gcode subtracts the configured nozzle offset.
+                # Restore it before undoing the build placement. P1S's 0x2
+                # offset otherwise shifts installed G material by -2 mm in X.
+                model = (np.array([pos, new])+extruder_offset-xf[3])@xf[:3].T
                 installed = model@model_to_installed[:, :3].T+model_to_installed[:, 3]
                 points.append(installed[:, :2])
                 widths.append(width)
@@ -138,6 +147,7 @@ def read_paths(folder, model_to_installed=None):
                   'thick_bridge_policy': 'Spent plastic only; no stiffness, strength or bonded-connection credit.',
                   'maximum_height_comment_rounding_normalization_mm': float(np.max(abs(data['height']-data['declared_height']))),
                   'nominal_layer_height_mm': .2,
+                  'restored_extruder_offset_mm': extruder_offset.tolist(),
                   'model_to_installed_transform': model_to_installed.tolist()}
 
 

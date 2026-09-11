@@ -1,0 +1,153 @@
+{
+  "status": "PASS_NEW_P1S_PETG_SLICE",
+  "input_model_sha256": "059f51c7b58cabf247e42fff618d51f9e7513edcac406da1905b2c723550733f",
+  "orca_executable_sha256": "481c9f071fdb3cda033d1677ce7a9442c41a25cbeeb42cfc808af179b4dc85c3",
+  "source_geometry": "Supplied body and aligned helpers; source model identified by SHA256.",
+  "cad_stage": "Existing input 3MF hashed; no new geometry generation.",
+  "profile_receipt": {
+    "machine": [
+      {
+        "file": "machine/fdm_machine_common.json",
+        "sha256": "d366fabb3df7253d6e27c4cd58c9410821b407d2216164bb52b4de0f481c6f11"
+      },
+      {
+        "file": "machine/fdm_bbl_3dp_001_common.json",
+        "sha256": "12397ad3698666fa33b9a9f76b76ecfd636ce9903476266fec66c33d40f69361"
+      },
+      {
+        "file": "machine/Bambu Lab P1S 0.4 nozzle.json",
+        "sha256": "8c5eeef2a17d4d58bdc35dd4dcca74aa98464e9a8ff883cf97290c44389f7bb5"
+      }
+    ],
+    "filament": [
+      {
+        "file": "filament/fdm_filament_common.json",
+        "sha256": "93f61fc727c47158e846768f508885989c41e0d716880a7fabe7e1fdac489dbc"
+      },
+      {
+        "file": "filament/fdm_filament_pet.json",
+        "sha256": "61346a1bb88702df2f45d2fdbfff1b1330801a00e8c294b7ad03c820cb15d6df"
+      },
+      {
+        "file": "filament/Generic PETG @base.json",
+        "sha256": "ccef82308af495ec477e0278f26106cdac742e68e15cca2b52d8c9ed4a40a8b4"
+      }
+    ],
+    "scope": "Installed P1S machine and generic PETG base inheritance; process calibration is not claimed."
+  },
+  "settings_sha256": {
+    "machine.json": "592792d59f9a6c472c122feffc2f6c1dcd3ad595631b815d388e35943a3c318f",
+    "process.json": "1605657ae185678b6b089468cad2cc0439f6dddfce58edca0648786d46cac6be",
+    "filament.json": "02735b0224b95c71321b2d2eb673b7639896bfcaaf0f5245b8ae451798a0bcc7"
+  },
+  "slice_wall_seconds": 2.7715334509994136,
+  "returncode": 0,
+  "path_parse_seconds": 3.602356544997747,
+  "exact_path_replay": {
+    "paths": false,
+    "width": false,
+    "height": false,
+    "declared_height": false,
+    "top": false,
+    "role": false,
+    "volume": false,
+    "structural": false
+  },
+  "accounting": {
+    "Gcode_sha256": "10a761b5e8ee7eaf639e9a090b25d861852e977660a272f89c82b4e65c0d7d27",
+    "audit_3MF_sha256": "b60b2efd5f5a8a7fdaf70acfd2b7d56142c184081d0c1c6690b0b770338f998c",
+    "all_moving_extrusion_volume_mm3": 73482.04525956723,
+    "object_moving_extrusion_volume_mm3": 73482.04525956723,
+    "nonobject_moving_extrusion_volume_mm3": 75.52585088770712,
+    "nonobject_moving_extrusion_segments": 4,
+    "all_print_moving_extrusion_volume_mm3": 73557.57111045493,
+    "nonobject_policy": "Outside-object moving extrusion is spent plastic only, excluded from structural footprints and bonds.",
+    "Orca_footer_volume_mm3": 73560.0,
+    "object_only_relative_footer_difference": 0.0010597436165412644,
+    "relative_extrusion_footer_difference": 3.3019161841729705e-05,
+    "structurally_credited_extrusion_volume_mm3": 66867.96741247471,
+    "sacrificial_thick_bridge_extrusion_volume_mm3": 6614.077847092516,
+    "thick_bridge_segments": 5221,
+    "thick_bridge_heights_mm": [
+      0.4
+    ],
+    "thick_bridge_policy": "Spent plastic only; no stiffness, strength or bonded-connection credit.",
+    "maximum_height_comment_rounding_normalization_mm": 1.000000000001e-06,
+    "nominal_layer_height_mm": 0.2,
+    "restored_extruder_offset_mm": [
+      0.0,
+      2.0,
+      0.0
+    ],
+    "model_to_installed_transform": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        250.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        182.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "gcode_sha256": "10a761b5e8ee7eaf639e9a090b25d861852e977660a272f89c82b4e65c0d7d27",
+  "original_gcode_sha256": "ab6cdc9bc145ce140e39432573fdb89347ae66724c9fd072689a6792ba5ec02f",
+  "effective_settings_sha256": "6c8bef0358f2aa3f3fb19a3776b95339663db282772dcf1091c66a98b92bf554",
+  "original_effective_settings_sha256": "a39b20958a94b59d2f75638458f3158782b494b8c80f94c697ecedec1d17a267",
+  "effective_process_checks": {
+    "printer_model": {
+      "expected": "Bambu Lab P1S",
+      "actual": "Bambu Lab P1S",
+      "pass": true
+    },
+    "filament_type": {
+      "expected": [
+        "PETG"
+      ],
+      "actual": [
+        "PETG"
+      ],
+      "pass": true
+    },
+    "nozzle_diameter": {
+      "expected": [
+        "0.4"
+      ],
+      "actual": [
+        "0.4"
+      ],
+      "pass": true
+    },
+    "wall_loops": {
+      "expected": "2",
+      "actual": "2",
+      "pass": true
+    },
+    "top_shell_layers": {
+      "expected": "5",
+      "actual": "5",
+      "pass": true
+    },
+    "bottom_shell_layers": {
+      "expected": "5",
+      "actual": "5",
+      "pass": true
+    },
+    "sparse_infill_density": {
+      "expected": "0%",
+      "actual": "0%",
+      "pass": true
+    }
+  },
+  "shape_cache_policy": "New paths require a new raw cache and validation; historical cache is not substituted."
+}

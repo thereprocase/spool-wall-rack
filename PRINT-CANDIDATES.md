@@ -1,5 +1,19 @@
 # Printable CAD checkpoint index
 
+## G evolutionary helper variants
+
+[Screening workflow and measured timings](analysis/rev-g2/EVOLUTION.md).
+The 100 reduced proposals are parameter evaluations. These three selected
+variants have actual body/helper STEP assemblies and model-only 3MF files.
+They use the G body, two walls, five top/bottom layers, 0% base infill and
+100% helpers. These are experimental handoffs with unresolved qualification.
+
+| Candidate | Aligned assembly | Notes and individual helpers |
+|---|---|---|
+| Balanced screen leader, f9ad9cdbc331 | [STEP](designs/rev-g2/evolution/f9ad9cdbc331/bracket-with-modifiers.step) | [Handoff](designs/rev-g2/evolution/f9ad9cdbc331/README.md) |
+| Second stiffness candidate, 0c3bac68efa9 | [STEP](designs/rev-g2/evolution/0c3bac68efa9/bracket-with-modifiers.step) | [Handoff](designs/rev-g2/evolution/0c3bac68efa9/README.md) |
+| Lighter inner-seat helper, 9be1dd4d87d3 | [STEP](designs/rev-g2/evolution/9be1dd4d87d3/bracket-with-modifiers.step) | [Handoff](designs/rev-g2/evolution/9be1dd4d87d3/README.md) |
+
 Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
 
 Geometry handoffs with helper solids and notes. Keep all relative body/helper positions. Import each STEP assembly as one object with multiple parts: the body prints, helpers become 100% infill modifiers. External tabs/halos must never print. STEP carries geometry, not slicer settings. Use OrcaSlicer and a calibrated printer/material profile. These are experimental geometries, not released load ratings.
@@ -22,7 +36,8 @@ All five use the same unchanged G body and aligned helpers. Their differences ar
 | 8 walls / 2 top and bottom layers | [Handoff](designs/rev-g2/g-recheck/8w-2layers/README.md) |
 | 8 walls / 8 top and bottom layers | [Handoff](designs/rev-g2/g-recheck/8w-8layers/README.md) |
 
-The 2w/5-layer reference has a corrected 2D diagnostic. No corrected 3D strength result exists for these schedules.
+The 2w/5-layer reference has a corrected 2D diagnostic and the eroded-material
+3D contact screen linked above. Physical strength remains unqualified.
 
 [Adaptive mesh and P1S/PETG demo checkpoint](analysis/rev-g2/ADAPTIVE-MESH.md):
 the implemented coarse/fine GPU adapter passes independent fixtures and

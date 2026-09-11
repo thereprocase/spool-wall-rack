@@ -1,0 +1,47 @@
+{
+  "status": "PASS_NORMALIZED_SOURCE_CACHE_AND_BASELINE_REPLAY",
+  "setup_seconds": 14.270341047002148,
+  "baseline": {
+    "status": "PASS_REDUCED_CONTACT",
+    "nominal_material_proxy_mm3": 71890.97032310595,
+    "compliance_Nmm": 179.0519218257463,
+    "maximum_movement_mm": 3.4623268438173147,
+    "raw_peak_tensile_MPa": 13.230929664596651,
+    "inner_seat_raw_peak_MPa": 3.968390773346317,
+    "relative_force_error": 4.956440869478827e-08,
+    "relative_moment_error": 4.3228976964863444e-08,
+    "minimum_gap_mm": 0.0,
+    "minimum_active_reaction_N": 0.0,
+    "history": [
+      {
+        "step": 0,
+        "active_nodes": 32,
+        "next_active_nodes": 32,
+        "relative_free_residual": 1.7909700532243317e-07
+      }
+    ],
+    "elapsed_seconds": 0.11894174500048393,
+    "parameters": {
+      "seat_webs": true,
+      "infill_percent": 0,
+      "walls": 2,
+      "skin_mm": 1.0,
+      "plane_mm": 1.0,
+      "planes": "full",
+      "bottom_band": 1.6,
+      "diagonal_band": 1.8,
+      "seat_band": 5.0,
+      "front_seat_band": 2.0,
+      "rib_frame": 4.0,
+      "lower_tunnel_collar_mm": 3.5,
+      "upper_tunnel_collar_mm": 2.5,
+      "window_scale": 0.9,
+      "name": "g-2w-5skins-screen-reference"
+    },
+    "screen_signature": "c3a9fc963c0a6e8656ba4666a6b651d7a94d40af2fd803cb196e826318fc583f",
+    "unchanged_baseline_volume_fraction": 1.5666667706923786e-06,
+    "interpretation": "2D G-anchored helper-occupancy ranking proxy. Candidate volume is not an actual slice or spent plastic. No 3D strength or print qualification.",
+    "total_evaluation_seconds": 0.2948252429996501
+  },
+  "scope": "Cache signature now covers the parser, baseline layout and raw slice archive with normalized text dependencies. Mechanical response is unchanged."
+}

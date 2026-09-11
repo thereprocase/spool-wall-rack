@@ -1,0 +1,86 @@
+{
+  "status": "PASS_SEARCH_AND_TRANSFER_CHECKS",
+  "unique_proposals": 100,
+  "generations": [
+    25,
+    25,
+    25,
+    25
+  ],
+  "every_finite_candidate_stress_retained": 3798500,
+  "raw_field_hashes_verified": 100,
+  "bounded_mutation_and_inheritance_checks": true,
+  "positive_material_and_monotonic_helper_checks": [
+    {
+      "gene": "bottom_band",
+      "direction": -1,
+      "material_change_mm3": -418.35422322219347
+    },
+    {
+      "gene": "bottom_band",
+      "direction": 1,
+      "material_change_mm3": 491.14943772936067
+    },
+    {
+      "gene": "diagonal_band",
+      "direction": -1,
+      "material_change_mm3": -94.92245414249568
+    },
+    {
+      "gene": "diagonal_band",
+      "direction": 1,
+      "material_change_mm3": 422.7080302939636
+    },
+    {
+      "gene": "seat_band",
+      "direction": -1,
+      "material_change_mm3": -535.5444684015124
+    },
+    {
+      "gene": "seat_band",
+      "direction": 1,
+      "material_change_mm3": 554.4992100808307
+    },
+    {
+      "gene": "front_seat_band",
+      "direction": -1,
+      "material_change_mm3": -152.6179035643961
+    },
+    {
+      "gene": "front_seat_band",
+      "direction": 1,
+      "material_change_mm3": 165.8961916184112
+    },
+    {
+      "gene": "lower_tunnel_collar_mm",
+      "direction": -1,
+      "material_change_mm3": -481.9444203560389
+    },
+    {
+      "gene": "lower_tunnel_collar_mm",
+      "direction": 1,
+      "material_change_mm3": 465.2721158115941
+    },
+    {
+      "gene": "upper_tunnel_collar_mm",
+      "direction": -1,
+      "material_change_mm3": -107.76828788469456
+    },
+    {
+      "gene": "upper_tunnel_collar_mm",
+      "direction": 1,
+      "material_change_mm3": 119.27141075474535
+    }
+  ],
+  "extruder_offset_fixture_identical_installed_paths": true,
+  "bridge_fixture_zero_structural_credit": true,
+  "initial_guess_transfer_fixture": {
+    "exact_coordinate_matches": 3,
+    "target_nodes": 4,
+    "nearest_guesses": 1,
+    "maximum_nearest_distance_mm": 1.0,
+    "ambiguous_split_coordinate_guesses": 1
+  },
+  "screen_elapsed_seconds": 677.8670021880007,
+  "scope": "Implementation, mutation, numerical field and throughput checks. Predictive ranking requires subsequent actual-slice 3D comparisons."
+}

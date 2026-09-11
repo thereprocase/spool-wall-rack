@@ -1,0 +1,7 @@
+{
+  "status": "EXCLUDED_EXPLORATORY_BATCH",
+  "reason": "Initial 0.05 mm rounding could turn a nominal 10 percent change into 11.11 percent. Stopped, preserved, and replaced by quantized admissible 5-10 percent mutations.",
+  "completed_proposals": 14,
+  "ledger_sha256": "d524b79beda754f836bd38afa78b72633f7cf30afe2dc2033aad361c78033ee7",
+  "interrupted_candidate_fields": "Incomplete after explicit interrupt; completed proposals and the raw interrupt log remain local."
+}

@@ -1,0 +1,59 @@
+{
+  "status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "candidate_id": "f9ad9cdbc331",
+  "selection_role": "balanced",
+  "steps": [
+    {
+      "name": "cad",
+      "returncode": 0,
+      "seconds": 47.463005406003504
+    },
+    {
+      "name": "package",
+      "returncode": 0,
+      "seconds": 0.4683713070007798
+    },
+    {
+      "name": "slice",
+      "returncode": 0,
+      "seconds": 10.992471165001916
+    },
+    {
+      "name": "raw-shape",
+      "returncode": 0,
+      "seconds": 16.697637754001335
+    },
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 62.7195539739987
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 11.598821277999377
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 10.488779328999954
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 10.648758535000525
+    },
+    {
+      "name": "solve",
+      "returncode": 0,
+      "seconds": 211.6841426030005
+    },
+    {
+      "name": "audit",
+      "returncode": 0,
+      "seconds": 31.21837191799932
+    }
+  ],
+  "scope": "Actual helper CAD and P1S PETG slice; inscribed 0.2 mm adaptive mechanics remains a screening model.",
+  "elapsed_seconds": 414.7960805420007
+}

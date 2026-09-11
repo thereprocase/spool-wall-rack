@@ -1,0 +1,12 @@
+{
+  "exact_coordinate_matches": 4730305,
+  "target_nodes": 4731473,
+  "nearest_guesses": 1168,
+  "maximum_nearest_distance_mm": 0.20000000000000284,
+  "ambiguous_split_coordinate_guesses": 14792,
+  "status": "INITIAL_GUESS_ONLY",
+  "active_contact_guesses": 6426,
+  "source_state_sha256": "15579f756fedf479dacfa3c22dbcba881377c48b34afe2f7dfb3af3896d3c049",
+  "elapsed_seconds": 10.76909065899963,
+  "scope": "New connectivity, stiffness, load and contact must be recomputed. Nearest or duplicate-coordinate guesses confer no bond credit."
+}

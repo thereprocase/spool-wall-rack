@@ -1,0 +1,60 @@
+{
+  "status": "FAIL_LINEAR_CONVERGENCE",
+  "candidate_id": "0c3bac68efa9",
+  "selection_role": "stiffest",
+  "steps": [
+    {
+      "name": "cad",
+      "returncode": 0,
+      "seconds": 44.89062168199962
+    },
+    {
+      "name": "package",
+      "returncode": 0,
+      "seconds": 0.46625395199953346
+    },
+    {
+      "name": "slice",
+      "returncode": 0,
+      "seconds": 11.18681458500214
+    },
+    {
+      "name": "raw-shape",
+      "returncode": 0,
+      "seconds": 17.40284822399917
+    },
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 67.47827284400046
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 12.68847634699705
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 11.387024826002744
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 10.985368407000351
+    },
+    {
+      "name": "solve",
+      "returncode": 0,
+      "seconds": 247.40301836399885
+    },
+    {
+      "name": "audit",
+      "returncode": 0,
+      "seconds": 31.078565562998847
+    }
+  ],
+  "scope": "Actual helper CAD and P1S PETG slice; inscribed 0.2 mm adaptive mechanics remains a screening model.",
+  "elapsed_seconds": 455.5702641150019,
+  "timing_scope": "Active pipeline stages; time parked between prepare-only and resume is excluded."
+}

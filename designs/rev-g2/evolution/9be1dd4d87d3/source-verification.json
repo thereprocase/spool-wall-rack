@@ -1,0 +1,9 @@
+{
+  "reference": "G 2w/5-layer body",
+  "changes": "Selected helper parameters; body copied byte for byte. Helpers are rebuilt and verified separately.",
+  "copied_body_sha256": {
+    "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+    "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+    "body-mounted.stl": "444b22c70e37c8f39c25001e9bf356827798cd1e7b2f9b162221cafd2a6e799c"
+  }
+}

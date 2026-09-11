@@ -1,0 +1,18 @@
+{
+  "3mf-verification.json": "e649e5343866ee934cd4352a64febcdf3f58c8ef19668dc41ee5c8df5992229f",
+  "body-mounted.stl": "444b22c70e37c8f39c25001e9bf356827798cd1e7b2f9b162221cafd2a6e799c",
+  "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+  "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+  "bracket-with-modifiers.step": "7a05531c2fe7535e76cd49ef86b1b8bd55ab1dfba7b081b31ca460cf26a74a2b",
+  "dense-chords-and-seats.step": "e31f94c880760593c79c42811a0e5ee6a83bb18d1fbac7b626b496b6a8a4397e",
+  "dense-chords-and-seats.stl": "6ac46a8db69a773c8379413cad8900cda3a96ab9fd14aaef96ad59457a6a14dc",
+  "helper-verification.json": "5f25d5675c2613d3ab4a20bf77afd69092955129812c12e539da573872f4e63a",
+  "rev-g-model-and-modifiers.3mf": "584808f353c97d648e4b7ed651b4a47e47239470a26e23bb1f6623991617791c",
+  "rib-plane-lower.step": "3149c1351067207cda400146470e57a85867c5f2aa44cf65a01d4f47e45a7794",
+  "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+  "rib-plane-upper.step": "77be787613267195578c21f1d5b5aa183f6759cb3ed45fae1dc626fa573783fb",
+  "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+  "selected-layout.json": "49538f7734181002105bd9109dad5a69929d6f701f1a2bcfc326fff32a62995b",
+  "slice-evidence.zip": "0acaf3d015f22e57fcd52c0cfcff407a08eff2136ecf93cacf7821b410ef1f87",
+  "source-verification.json": "ba235e184a7f2c127d0332a1dd4399e08417185412e5575ea04d7ff79b8ebff6"
+}

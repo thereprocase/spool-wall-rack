@@ -1,0 +1,60 @@
+{
+  "status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "candidate_id": "9be1dd4d87d3",
+  "selection_role": "economical",
+  "steps": [
+    {
+      "name": "cad",
+      "returncode": 0,
+      "seconds": 46.994731040998886
+    },
+    {
+      "name": "package",
+      "returncode": 0,
+      "seconds": 0.46636491200115415
+    },
+    {
+      "name": "slice",
+      "returncode": 0,
+      "seconds": 10.88276853899879
+    },
+    {
+      "name": "raw-shape",
+      "returncode": 0,
+      "seconds": 16.294436103002226
+    },
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 64.23315075400023
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 12.289362976996927
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 11.037206556000456
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 11.13539972199942
+    },
+    {
+      "name": "solve",
+      "returncode": 0,
+      "seconds": 134.9442168179994
+    },
+    {
+      "name": "audit",
+      "returncode": 0,
+      "seconds": 30.57038569600263
+    }
+  ],
+  "scope": "Actual helper CAD and P1S PETG slice; inscribed 0.2 mm adaptive mechanics remains a screening model.",
+  "elapsed_seconds": 339.4730225830026,
+  "timing_scope": "Active pipeline stages; time parked between prepare-only and resume is excluded."
+}

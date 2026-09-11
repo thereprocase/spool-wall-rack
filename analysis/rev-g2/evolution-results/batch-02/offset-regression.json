@@ -1,0 +1,33 @@
+{
+  "status": "PASS_OFFSET_AND_HISTORICAL_REGRESSION",
+  "P1S_restored_installed_translation_mm": [
+    2.0,
+    0.0
+  ],
+  "all_path_translation_error_mm": 2.842170943040401e-14,
+  "other_P1S_arrays_unchanged": {
+    "width": true,
+    "height": true,
+    "declared_height": true,
+    "top": true,
+    "role": true,
+    "volume": true,
+    "structural": true
+  },
+  "all_historical_zero_offset_arrays_unchanged": {
+    "paths": true,
+    "width": true,
+    "height": true,
+    "declared_height": true,
+    "top": true,
+    "role": true,
+    "volume": true,
+    "structural": true
+  },
+  "restored_nozzle_offset_mm": [
+    0.0,
+    2.0,
+    0.0
+  ],
+  "upstream_rule": "https://github.com/OrcaSlicer/OrcaSlicer/blob/main/src/libslic3r/GCode.cpp"
+}

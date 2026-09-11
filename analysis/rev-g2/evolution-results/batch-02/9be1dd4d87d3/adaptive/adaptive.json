@@ -1,0 +1,112 @@
+{
+  "status": "PASS_TWO_LEVEL_GEOMETRY_AND_CONSTRAINTS",
+  "fine_cells": 8197021,
+  "leaf_cells": 4077290,
+  "coarse_cells": 588533,
+  "cell_reduction_fraction": 0.5025888063480624,
+  "fine_nodes": 9969195,
+  "independent_nodes": 4731473,
+  "interpolated_nodes": 5237722,
+  "duplicate_constraints_checked": 5944405,
+  "topology_protected_fine_cells": 20338,
+  "retained_volume_mm3": 65576.16800000002,
+  "added_or_removed_volume_mm3": 0.0,
+  "maximum_neighbor_size_ratio": 2,
+  "spacing_mm": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "origin_mm": [
+    -0.2,
+    -43.0,
+    0.0
+  ],
+  "preparation_seconds": 4.264367146999575,
+  "scope": "Exact same inscribed voxel union; Q1 interpolation constraints. Does not recover omitted boundary plastic or qualify mechanics.",
+  "protected_g_interfaces": true,
+  "source_geometry": {
+    "spacing_mm": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "origin_mm": [
+      -0.2,
+      -43.0,
+      0.0
+    ],
+    "grid_shape": [
+      1039,
+      1095,
+      120
+    ],
+    "grid_cells": 136524600,
+    "raw_nominal_volume_mm3": 71318.75530451616,
+    "retained_volume_mm3": 65576.16800000002,
+    "omitted_fraction": 0.0805200158078544,
+    "extra_material_volume_mm3": 0.0,
+    "material_components": 42,
+    "component_cell_counts": [
+      8196950,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      7,
+      6,
+      7,
+      7
+    ],
+    "mapping_and_components_seconds": 53.424916751002456,
+    "policy": "Only full cells covered by every intersected raw slab; no bridge, pore-fill, closing or weak-void stiffness. Every retained cell, including disconnected components, survives.",
+    "lookup_validation": {
+      "status": "PASS",
+      "local_occupancy_patterns": 255,
+      "checks": [
+        "All cell-corner bonds match original audited constructor",
+        "Oriented boundary divergence matches material volume"
+      ]
+    },
+    "layer_cache_sha256": "719bf514d454ec5317d1538856cb4c9bdf94b79798b8ef3dadfc42f7e4809bc4",
+    "nodes": 9969195,
+    "cells": 8197021,
+    "split_edge_corner_vertices": 8663,
+    "mesh_build_seconds": 3.5609769740003685,
+    "boundary_faces": 3712996,
+    "status": "ERODED_GEOMETRY_DIAGNOSTIC; NOT A QUALIFIED PRINT MODEL"
+  }
+}

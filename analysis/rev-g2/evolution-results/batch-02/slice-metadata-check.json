@@ -1,0 +1,6 @@
+{
+  "status": "PASS_SCOPED_SLICE_METADATA_SCRUB",
+  "files_and_archive_members_checked": 42,
+  "local_paths_or_credential_patterns": [],
+  "scope": "P1S finalist G-code, effective profiles and textual members of each actual Orca archive. Public experiment identifiers and upstream product URLs are retained."
+}

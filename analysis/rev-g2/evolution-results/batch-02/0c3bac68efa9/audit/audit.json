@@ -1,0 +1,100 @@
+{
+  "source_result": "solve",
+  "status": "FAIL_LINEAR_CONVERGENCE",
+  "load_N": 117.72,
+  "maximum_resultant_displacement_mm": 4.243586750843149,
+  "maximum_displacement_position_mm": [
+    207.40000000000003,
+    7.400000000000006,
+    21.6
+  ],
+  "seat_displacements": {
+    "rear_seat": {
+      "mean_displacement_mm": [
+        0.03127670418000129,
+        -0.5093356175817796,
+        -0.05280131695343003
+      ],
+      "load_weighted_displacement_mm": [
+        0.031128256899043603,
+        -0.5137850399263131,
+        -0.052934054376847194
+      ],
+      "maximum_resultant_displacement_mm": 0.6210479795563532
+    },
+    "front_seat": {
+      "mean_displacement_mm": [
+        0.7170239855263391,
+        -3.8071990312819906,
+        -0.04504061118605264
+      ],
+      "load_weighted_displacement_mm": [
+        0.7137526048192315,
+        -3.8032488593512506,
+        -0.04512372400472492
+      ],
+      "maximum_resultant_displacement_mm": 4.045281516378106
+    }
+  },
+  "force_balance_error_N": [
+    -5.4952282034516874e-05,
+    -3.8535884309466063e-07,
+    1.6202204663660034e-07
+  ],
+  "moment_balance_error_Nmm": [
+    -0.00010428754120473185,
+    -0.0004988851871861807,
+    -0.00026129146933576153
+  ],
+  "minimum_wall_gap_mm": -0.00013671517486053017,
+  "minimum_active_wall_reaction_N": -0.0018833496638902842,
+  "total_wall_reaction_N": 236.49177047912724,
+  "active_wall_nodes": 6426,
+  "compliance_Nmm": 222.31903984512098,
+  "solver_true_relative_free_residual": 0.00356996111702666,
+  "contact_steps": 1,
+  "elapsed_seconds": 246.6916553009978,
+  "geometry_omission_fraction": 0.08339334185130032,
+  "idealized_fixing_reactions": {
+    "40": {
+      "force_N": [
+        -223.83349160042553,
+        95.09568421718807,
+        0.07107423208955391
+      ],
+      "moment_about_fixing_center_Nmm": [
+        3.9552929380799693,
+        71.46803368422127,
+        85.65590698189378
+      ]
+    },
+    "164": {
+      "force_N": [
+        -12.65833383098294,
+        22.62431539745572,
+        -0.07107407006750738
+      ],
+      "moment_about_fixing_center_Nmm": [
+        4.858943431011263,
+        5.795347347735434,
+        -106.73403939640582
+      ]
+    }
+  },
+  "contact_inequality_gate_passed": false,
+  "force_balance_relative_error": 4.66818484971654e-07,
+  "moment_balance_relative_error": 3.744497418078899e-08,
+  "raw_tensile_peak": {
+    "MPa": 21.20508518883384,
+    "leaf_index": 2765251,
+    "gauss_index": 4,
+    "position_mm": [
+      108.15773502691896,
+      -3.7577350269189598,
+      22.44226497308104
+    ]
+  },
+  "retained_stress_samples": 33019496,
+  "raw_von_mises_peak_MPa": 17.603066281908575,
+  "comparison": null
+}

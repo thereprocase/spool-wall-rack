@@ -1,0 +1,17 @@
+{
+  "seat_webs": true,
+  "infill_percent": 0,
+  "walls": 2,
+  "skin_mm": 1.0,
+  "plane_mm": 1.0,
+  "planes": "full",
+  "bottom_band": 1.75,
+  "diagonal_band": 1.95,
+  "seat_band": 5.25,
+  "front_seat_band": 2.2,
+  "rib_frame": 4.0,
+  "lower_tunnel_collar_mm": 3.5,
+  "upper_tunnel_collar_mm": 2.5,
+  "window_scale": 0.9,
+  "name": "evo-0c3bac68efa9"
+}

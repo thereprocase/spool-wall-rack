@@ -35,3 +35,9 @@
 /analysis/rev-g2/g-results/**/*.npz binary
 /analysis/rev-g2/g-results/**/*.png binary
 /analysis/rev-g2/g-results/*.zip binary
+
+# Evolutionary handoffs retain the exact bytes recorded in their manifests.
+/designs/rev-g2/evolution/** -text
+/designs/rev-g2/evolution/**/*.step binary
+/analysis/rev-g2/evolution-results/** -text
+/analysis/rev-g2/evo_*.py text eol=lf

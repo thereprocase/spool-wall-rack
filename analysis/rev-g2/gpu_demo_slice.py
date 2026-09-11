@@ -10,6 +10,8 @@ import json
 import shutil
 import subprocess
 import time
+import zipfile
+import xml.etree.ElementTree as ET
 
 
 def sha(p):
@@ -36,10 +38,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--orca',type=Path,required=True)
     ap.add_argument('--output',type=Path,required=True)
+    ap.add_argument('--source',type=Path,default=Path('designs/rev-g2/g-recheck/2w-5layers'))
     ap.add_argument('--p1s-petg',action='store_true')
     args = ap.parse_args()
-    source = Path('designs/rev-g2/g-recheck/2w-5layers')
-    original = source/'.work/audit-2w'
+    source = args.source
+    original = Path('designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w')
     out = args.output
     assert not out.exists(),'Use a fresh output directory to retain previous attempts'
     out.mkdir(parents=True)
@@ -64,7 +67,7 @@ def main():
                            'scope':'Installed P1S machine and generic PETG base inheritance; process calibration is not claimed.'}
     model = source/'rev-g-model-and-modifiers.3mf'
     report = {'status':'RUNNING','input_model_sha256':sha(model),'orca_executable_sha256':sha(args.orca),
-              'source_geometry':'Unchanged Rev G body and three aligned helpers; existing 2w/5-skin-layer recheck model.',
+              'source_geometry':'Supplied body and aligned helpers; source model identified by SHA256.',
               'cad_stage':'Existing input 3MF hashed; no new geometry generation.',
               'profile_receipt':profile_receipt,
               'settings_sha256':{name:sha(out/name) for name in ['machine.json','process.json','filament.json']}}
@@ -106,7 +109,16 @@ def main():
                         'wall_loops':'2','top_shell_layers':'5','bottom_shell_layers':'5','sparse_infill_density':'0%'}
             report['effective_process_checks'] = {key:{'expected':value,'actual':effective.get(key),
                                                        'pass':effective.get(key) == value} for key,value in expected.items()}
-            report['status'] = 'PASS_NEW_P1S_PETG_SLICE' if all(v['pass'] for v in report['effective_process_checks'].values()) else 'FAIL_EFFECTIVE_PROCESS'
+            with zipfile.ZipFile(out/'audit.3mf') as archive:
+                settings=ET.fromstring(archive.read('Metadata/model_settings.config'))
+            parts=settings.findall('object/part')
+            modifiers=[p for p in parts if p.get('subtype')=='modifier_part']
+            modifier_values=[{m.get('key'):m.get('value') for m in p.findall('metadata')} for p in modifiers]
+            roles_pass=(len(parts)==4 and len(modifiers)==3 and
+                        sum(p.get('subtype')=='normal_part' for p in parts)==1 and
+                        all(v.get('sparse_infill_density')=='100%' for v in modifier_values))
+            report['actual_orca_modifier_roles']={'pass':roles_pass,'parts':len(parts),'modifiers':modifier_values}
+            report['status'] = 'PASS_NEW_P1S_PETG_SLICE' if roles_pass and all(v['pass'] for v in report['effective_process_checks'].values()) else 'FAIL_EFFECTIVE_PROCESS'
             report['shape_cache_policy'] = 'New paths require a new raw cache and validation; historical cache is not substituted.'
     else:
         report['status'] = 'FAIL_ORCA'

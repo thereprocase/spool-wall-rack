@@ -1,0 +1,8 @@
+{
+  "status": "PASS_INDEPENDENT_UNIFORM_FIXTURE",
+  "nodes": 221,
+  "cells": 112,
+  "relative_operator_error": 5.723598390818927e-16,
+  "all_cells_and_connectivity_preserved": true,
+  "initial_guess_matches_adaptive_expansion": true
+}

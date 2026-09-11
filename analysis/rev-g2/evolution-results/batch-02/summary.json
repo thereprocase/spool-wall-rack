@@ -1,0 +1,106 @@
+{
+  "status": "PASS_100_PROPOSAL_THROUGHPUT",
+  "requested_proposals": 100,
+  "evaluated_proposals": 100,
+  "baseline_control_evaluated_separately": true,
+  "elapsed_seconds": 677.8670021880007,
+  "screen_setup_seconds": 0.3556310219992156,
+  "evaluated_contact_screens": 100,
+  "numerical_failures": 0,
+  "selected_for_actual_slice_3d": [
+    {
+      "role": "balanced",
+      "id": "f9ad9cdbc331",
+      "parameters": {
+        "seat_webs": true,
+        "infill_percent": 0,
+        "walls": 2,
+        "skin_mm": 1.0,
+        "plane_mm": 1.0,
+        "planes": "full",
+        "bottom_band": 1.9,
+        "diagonal_band": 1.85,
+        "seat_band": 5.5,
+        "front_seat_band": 2.0,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 3.5,
+        "upper_tunnel_collar_mm": 2.5,
+        "window_scale": 0.9,
+        "name": "evo-f9ad9cdbc331"
+      },
+      "metrics": {
+        "nominal_material_proxy_mm3": 1.0282023484376697,
+        "maximum_movement_mm": 0.9556336222149794,
+        "raw_peak_tensile_MPa": 0.9997498317063636,
+        "inner_seat_raw_peak_MPa": 1.0148274821463916,
+        "compliance_Nmm": 0.9564868060894586,
+        "G_calibrated_movement_indicator_mm": 4.143127212280997,
+        "breeding_score": 1.0440061060627701,
+        "interpretation": "Ratios and a single-baseline movement indicator for screening only; predictive ordering requires actual-slice 3D checks."
+      }
+    },
+    {
+      "role": "stiffest",
+      "id": "0c3bac68efa9",
+      "parameters": {
+        "seat_webs": true,
+        "infill_percent": 0,
+        "walls": 2,
+        "skin_mm": 1.0,
+        "plane_mm": 1.0,
+        "planes": "full",
+        "bottom_band": 1.75,
+        "diagonal_band": 1.95,
+        "seat_band": 5.25,
+        "front_seat_band": 2.2,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 3.5,
+        "upper_tunnel_collar_mm": 2.5,
+        "window_scale": 0.9,
+        "name": "evo-0c3bac68efa9"
+      },
+      "metrics": {
+        "nominal_material_proxy_mm3": 1.0191471258796894,
+        "maximum_movement_mm": 0.9728150348208644,
+        "raw_peak_tensile_MPa": 0.998136567762874,
+        "inner_seat_raw_peak_MPa": 1.0739994261898616,
+        "compliance_Nmm": 0.9715699254283326,
+        "G_calibrated_movement_indicator_mm": 4.217616824678557,
+        "breeding_score": 1.0656167678199302,
+        "interpretation": "Ratios and a single-baseline movement indicator for screening only; predictive ordering requires actual-slice 3D checks."
+      }
+    },
+    {
+      "role": "economical",
+      "id": "9be1dd4d87d3",
+      "parameters": {
+        "seat_webs": true,
+        "infill_percent": 0,
+        "walls": 2,
+        "skin_mm": 1.0,
+        "plane_mm": 1.0,
+        "planes": "full",
+        "bottom_band": 1.6,
+        "diagonal_band": 1.8,
+        "seat_band": 4.5,
+        "front_seat_band": 2.0,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 3.5,
+        "upper_tunnel_collar_mm": 2.5,
+        "window_scale": 0.9,
+        "name": "evo-9be1dd4d87d3"
+      },
+      "metrics": {
+        "nominal_material_proxy_mm3": 0.9925506017515893,
+        "maximum_movement_mm": 1.0081828343132433,
+        "raw_peak_tensile_MPa": 0.9999061766212247,
+        "inner_seat_raw_peak_MPa": 1.058971758444799,
+        "compliance_Nmm": 1.0079394344153576,
+        "G_calibrated_movement_indicator_mm": 4.370953091956111,
+        "breeding_score": 1.102710585663582,
+        "interpretation": "Ratios and a single-baseline movement indicator for screening only; predictive ordering requires actual-slice 3D checks."
+      }
+    }
+  ],
+  "scope": "Throughput and reduced-model numerical checks only. Prediction quality, CAD, slicing, 3D ranking and a winner remain unverified until the subsequent stages."
+}

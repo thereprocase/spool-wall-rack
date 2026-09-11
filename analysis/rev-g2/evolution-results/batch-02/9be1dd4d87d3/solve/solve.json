@@ -1,0 +1,1788 @@
+{
+  "status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "load_N": 117.72,
+  "leaf_cells": 4077290,
+  "independent_nodes": 4731473,
+  "initial_guess_source": null,
+  "initial_guess_load_scale": 1.0,
+  "planning_E_MPa": 1000.0,
+  "planning_nu": 0.35,
+  "raw_tensile_peak_MPa": 19.460679635875394,
+  "raw_von_mises_peak_MPa": 17.547088000443036,
+  "maximum_resultant_displacement_mm": 4.3777822681213,
+  "total_applied_force_N": [
+    -7.562414236494952e-13,
+    -117.72000000000205,
+    0.0
+  ],
+  "total_raw_residual_force_N": [
+    -1.994157106214485e-07,
+    117.71999972956618,
+    -8.683471993990017e-08
+  ],
+  "minimum_wall_gap_mm": 0.0,
+  "contact_history": [
+    {
+      "status": "PASS_LINEAR_SOLVE",
+      "iterations": 2020,
+      "recursive_residual": 1.178209464410741e-05,
+      "tolerance": 1.1832535933495502e-05,
+      "requested_linear_rtol": 1e-05,
+      "true_residual_limit": 1.01e-05,
+      "true_residual_normalization_N": 1.1832535933495507,
+      "stopped_by_time_budget": false,
+      "true_relative_free_residual": 9.95737429315012e-06,
+      "elapsed_seconds": 63.42398348700226,
+      "contact_step": 0,
+      "active_wall_nodes": 6426,
+      "trace": [
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 0,
+          "residual": 4201.607519794617,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 20,
+          "residual": 18.08915971460226,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 40,
+          "residual": 3.4635528367488693,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 60,
+          "residual": 1.156537182992368,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 80,
+          "residual": 0.6370382456265796,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 100,
+          "residual": 0.16504124460042022,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 120,
+          "residual": 0.06720869452617972,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 140,
+          "residual": 0.05249656034001189,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 160,
+          "residual": 0.025353301199537485,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 180,
+          "residual": 0.02007644921026635,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 200,
+          "residual": 0.008992917021348561,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 220,
+          "residual": 0.005595685274782419,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 240,
+          "residual": 0.0015714094271707915,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 260,
+          "residual": 0.0007302154717453634,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 280,
+          "residual": 0.0006014794524757281,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 300,
+          "residual": 0.0007670651068942321,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 320,
+          "residual": 0.0007757486365871793,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 340,
+          "residual": 0.0007366145825021593,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 360,
+          "residual": 0.0008643964056768547,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 380,
+          "residual": 0.0006473915523415088,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 400,
+          "residual": 0.0005224294996901583,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 420,
+          "residual": 0.000481896407524505,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 440,
+          "residual": 0.0005460558625592151,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 460,
+          "residual": 0.0002822803944001198,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 480,
+          "residual": 0.0003348673548865607,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 500,
+          "residual": 0.00028007482389993087,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 520,
+          "residual": 0.00024226729989838667,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 540,
+          "residual": 0.0002397093522605626,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 560,
+          "residual": 0.00017995308263466913,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 580,
+          "residual": 0.00017235370747713716,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 600,
+          "residual": 0.0001986405486764434,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 620,
+          "residual": 0.0001304655740550724,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 640,
+          "residual": 0.00012118548448147489,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 660,
+          "residual": 0.00014769607941079077,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 680,
+          "residual": 0.00010639495495512051,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 700,
+          "residual": 0.00010824997545530014,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 720,
+          "residual": 9.731145602724617e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 740,
+          "residual": 8.151356397921281e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 760,
+          "residual": 8.457739364301364e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 780,
+          "residual": 7.457570778758219e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 800,
+          "residual": 7.006532313886708e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 820,
+          "residual": 7.34837009973135e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 840,
+          "residual": 6.242363514162813e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 860,
+          "residual": 6.031113906962898e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 880,
+          "residual": 5.1872325609438596e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 900,
+          "residual": 5.034922494013728e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 920,
+          "residual": 5.167886363325438e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 940,
+          "residual": 4.099514269413846e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 960,
+          "residual": 3.490457352079324e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 980,
+          "residual": 4.3281007512198025e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1000,
+          "residual": 4.545616873317521e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1020,
+          "residual": 4.0620292446830384e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1040,
+          "residual": 3.637728741948242e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1060,
+          "residual": 3.373026376794961e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1080,
+          "residual": 3.7225738739755034e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1100,
+          "residual": 4.238108065067189e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1120,
+          "residual": 3.9046248616580595e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1140,
+          "residual": 3.7204261388437945e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1160,
+          "residual": 3.593646826465408e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1180,
+          "residual": 3.924675296723984e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1200,
+          "residual": 4.9017531993988835e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1220,
+          "residual": 4.286448952691374e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1240,
+          "residual": 2.928905662901362e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1260,
+          "residual": 2.8220848510956393e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1280,
+          "residual": 3.09140597370322e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1300,
+          "residual": 2.6507319912567664e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1320,
+          "residual": 2.9787257675340766e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1340,
+          "residual": 4.01565411390484e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1360,
+          "residual": 4.4362231547460824e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1380,
+          "residual": 4.7305224913999766e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1400,
+          "residual": 3.945411179092973e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1420,
+          "residual": 3.445705553759421e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1440,
+          "residual": 2.845384408993821e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1460,
+          "residual": 2.57731798501363e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1480,
+          "residual": 2.5646909601231367e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1500,
+          "residual": 2.3716276698235082e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1520,
+          "residual": 1.8417375367156144e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1540,
+          "residual": 1.8252786931371856e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1560,
+          "residual": 2.3323733928805364e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1580,
+          "residual": 2.088455057185443e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1600,
+          "residual": 2.0033191214603463e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1620,
+          "residual": 2.144137808601754e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1640,
+          "residual": 2.161968378863194e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1660,
+          "residual": 2.4276889778702126e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1680,
+          "residual": 2.8268860772805356e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1700,
+          "residual": 2.564542565970161e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1720,
+          "residual": 2.2308909609107207e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1740,
+          "residual": 2.5098115060553244e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1760,
+          "residual": 2.6192443872895405e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1780,
+          "residual": 2.6483499632218526e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1800,
+          "residual": 2.2021825635749884e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1820,
+          "residual": 2.0272034012223375e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1840,
+          "residual": 2.1962315594699192e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1860,
+          "residual": 2.289866886690868e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1880,
+          "residual": 1.8602730062571492e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1900,
+          "residual": 1.6076820257258065e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1920,
+          "residual": 1.5962022211724427e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1940,
+          "residual": 1.6808788937123905e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1960,
+          "residual": 1.8302125382526524e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 1980,
+          "residual": 1.7019100198912865e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 2000,
+          "residual": 1.3161704733831414e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 2020,
+          "residual": 1.178209464410741e-05,
+          "tolerance": 1.1832535933495502e-05
+        }
+      ],
+      "coarse_correction": {
+        "coarse_nodes": 56951,
+        "coarse_cells": 34443,
+        "coarse_dofs": 170853,
+        "coarse_matrix_nnz": 10228447,
+        "ratio": 8,
+        "coarse_spacing_mm": [
+          1.6,
+          1.6,
+          1.6
+        ],
+        "represented_volume_mm3": 65575.60000000003,
+        "affected_constraint_leaves": 15352,
+        "symmetry_error_before_roundoff_symmetrization": 5.5201463678436163e-17,
+        "identically_zero_projected_coarse_dofs": [
+          2182,
+          2183,
+          2185,
+          2186,
+          8470,
+          8471,
+          8473,
+          8474,
+          14338,
+          14339,
+          14341,
+          14342,
+          18997,
+          18998,
+          19000,
+          19001
+        ],
+        "build_seconds": 10.006818341000326,
+        "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+        "amg_setup_seconds": 1.2239691989998391,
+        "levels": [
+          {
+            "dofs": 170853,
+            "nnz": 10234827
+          },
+          {
+            "dofs": 16284,
+            "nnz": 2166048
+          },
+          {
+            "dofs": 660,
+            "nnz": 93600
+          },
+          {
+            "dofs": 30,
+            "nnz": 756
+          }
+        ],
+        "pyamg_version": "5.3.0",
+        "jacobi_spectral_upper_bounds": [
+          7.796932428629162,
+          5.319478798066226,
+          5.415261820302873
+        ],
+        "total_setup_seconds": 11.858626652996463
+      }
+    },
+    {
+      "status": "PASS_LINEAR_SOLVE",
+      "iterations": 20,
+      "recursive_residual": 9.80115271918904e-06,
+      "tolerance": 1.1832535933495502e-05,
+      "requested_linear_rtol": 1e-05,
+      "true_residual_limit": 1.01e-05,
+      "true_residual_normalization_N": 1.1832535933495507,
+      "stopped_by_time_budget": false,
+      "true_relative_free_residual": 8.283222458163905e-06,
+      "elapsed_seconds": 1.1168848170018464,
+      "contact_step": 1,
+      "active_wall_nodes": 6424,
+      "trace": [
+        {
+          "stage": "cg",
+          "contact_step": 1,
+          "iterations": 0,
+          "residual": 1.3604169048105211e-05,
+          "tolerance": 1.1832535933495502e-05
+        },
+        {
+          "stage": "cg",
+          "contact_step": 1,
+          "iterations": 20,
+          "residual": 9.80115271918904e-06,
+          "tolerance": 1.1832535933495502e-05
+        }
+      ],
+      "coarse_correction": {
+        "coarse_nodes": 56951,
+        "coarse_cells": 34443,
+        "coarse_dofs": 170853,
+        "coarse_matrix_nnz": 10228447,
+        "ratio": 8,
+        "coarse_spacing_mm": [
+          1.6,
+          1.6,
+          1.6
+        ],
+        "represented_volume_mm3": 65575.60000000003,
+        "affected_constraint_leaves": 15350,
+        "symmetry_error_before_roundoff_symmetrization": 5.5201463678436163e-17,
+        "identically_zero_projected_coarse_dofs": [
+          2182,
+          2183,
+          2185,
+          2186,
+          8470,
+          8471,
+          8473,
+          8474,
+          14338,
+          14339,
+          14341,
+          14342,
+          18997,
+          18998,
+          19000,
+          19001
+        ],
+        "build_seconds": 10.126096467000025,
+        "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+        "amg_setup_seconds": 0.6931290510001418,
+        "levels": [
+          {
+            "dofs": 170853,
+            "nnz": 10234827
+          },
+          {
+            "dofs": 16284,
+            "nnz": 2166048
+          },
+          {
+            "dofs": 660,
+            "nnz": 93600
+          },
+          {
+            "dofs": 30,
+            "nnz": 756
+          }
+        ],
+        "pyamg_version": "5.3.0",
+        "jacobi_spectral_upper_bounds": [
+          7.796932428629162,
+          5.319536336760011,
+          5.4150971154649685
+        ],
+        "total_setup_seconds": 11.420168005002779
+      }
+    }
+  ],
+  "stress_fields": [
+    {
+      "file": "stress-00000000.npy",
+      "first_leaf": 0,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0becacf4c7dafa2cb62d64f735d8a21f48098cfe6bab4119d58fc449044d2191"
+    },
+    {
+      "file": "stress-00032768.npy",
+      "first_leaf": 32768,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "caccaceace0f14fec9c958d27151bdfffae8bffa13f8c46ed101e5505c2f93e9"
+    },
+    {
+      "file": "stress-00065536.npy",
+      "first_leaf": 65536,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "108b6aefc26ebd1b77e6db74a7540f195c91ceaf1d96228fdde37adfb7350d14"
+    },
+    {
+      "file": "stress-00098304.npy",
+      "first_leaf": 98304,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c7e6a363f5e467f0b7e6174e04ddfd16734cca54fb508e11519081406615a7f2"
+    },
+    {
+      "file": "stress-00131072.npy",
+      "first_leaf": 131072,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1109f6be2dd49e1576a2b4ac41991decd7f75452da2c1ad398677244150f9381"
+    },
+    {
+      "file": "stress-00163840.npy",
+      "first_leaf": 163840,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "dd1c2cd79ae178f6d36f2284597eddfe3f23fbcd6f296fccca5c14506ab315f7"
+    },
+    {
+      "file": "stress-00196608.npy",
+      "first_leaf": 196608,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6adcbcd289bd84843893ab7fef77837990ad41fe1f258c1a1b8e4919ffaa1cf4"
+    },
+    {
+      "file": "stress-00229376.npy",
+      "first_leaf": 229376,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c3ebf997ac0ea7b8f427f76115e9c80147c3931fb80759b33b265cbf83cc6c8b"
+    },
+    {
+      "file": "stress-00262144.npy",
+      "first_leaf": 262144,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "726e860b2be3f6a690a01eb5230b40412ff77b37a323582a46ddbb7d9b97c38e"
+    },
+    {
+      "file": "stress-00294912.npy",
+      "first_leaf": 294912,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "627597d4ee38171be5d4ce62241ee896d568ca79cc2ad65e795f323de561f3e1"
+    },
+    {
+      "file": "stress-00327680.npy",
+      "first_leaf": 327680,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "11e129353e21acca9b020e75d35cf9a48d5c22c96bd8c1a3968489d89e738666"
+    },
+    {
+      "file": "stress-00360448.npy",
+      "first_leaf": 360448,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e612621bb695c93e1db54a72d5d0e697695203cab14eadf52b83223f3005d42f"
+    },
+    {
+      "file": "stress-00393216.npy",
+      "first_leaf": 393216,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "dc2333fbb6502e77f7ecf77c3d75ba26e4d969575e3dd5ce2af56133815c14f2"
+    },
+    {
+      "file": "stress-00425984.npy",
+      "first_leaf": 425984,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "240c0282c267e4227481d1b55f5d5c9fc1be80aa30b7d7cf107ccd751cf4b6eb"
+    },
+    {
+      "file": "stress-00458752.npy",
+      "first_leaf": 458752,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d9a4960b62723ae1849f01992a0341dfbd4282fc63e49080e93cd15eb3395dfa"
+    },
+    {
+      "file": "stress-00491520.npy",
+      "first_leaf": 491520,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e68ff8b761d26fe3ec1e213cf628e2c2ed78b649433dfd7968bd3ee28725c90f"
+    },
+    {
+      "file": "stress-00524288.npy",
+      "first_leaf": 524288,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9438b33d21da4538d01ac80ac62fddb828cba1d7604b1693b03db059fff3aa3d"
+    },
+    {
+      "file": "stress-00557056.npy",
+      "first_leaf": 557056,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1751f467c64acb79d7b286a5b7c0a2434eae4687aa60a1834caa9003c0ee2800"
+    },
+    {
+      "file": "stress-00589824.npy",
+      "first_leaf": 589824,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "99842f748b7901fb4fd142faadd680feed8106bff19d807da02cd9a323ebbfbf"
+    },
+    {
+      "file": "stress-00622592.npy",
+      "first_leaf": 622592,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8d7493b658e5bbc0612ba489aef75c2897d16d53064c8f19b3c7b9e63b6b85de"
+    },
+    {
+      "file": "stress-00655360.npy",
+      "first_leaf": 655360,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "14934dd0d9816364b8d376683a4bd4e449d249c1df05dc0264e41dcf1c223085"
+    },
+    {
+      "file": "stress-00688128.npy",
+      "first_leaf": 688128,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c2573e659f5eca33166b780b17925a246ad9a9be60b1352589f9ca356b76e33d"
+    },
+    {
+      "file": "stress-00720896.npy",
+      "first_leaf": 720896,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "571f86174943bef34c388857d7c87330f93c5adec6c2827e803d0bc052f41ef5"
+    },
+    {
+      "file": "stress-00753664.npy",
+      "first_leaf": 753664,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "cd44ccdc312192a63a2e043ea06a7c1975ae1fe396d5997cda0254818f493a38"
+    },
+    {
+      "file": "stress-00786432.npy",
+      "first_leaf": 786432,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b0f185f796fd706fb165ba06722597daabe747077e71c5fca4f0f7173b80a227"
+    },
+    {
+      "file": "stress-00819200.npy",
+      "first_leaf": 819200,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "99a46268643f8d92ed365af2f98aa2717266d9d67e060d18d13dab45a19945ae"
+    },
+    {
+      "file": "stress-00851968.npy",
+      "first_leaf": 851968,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d1f7be3d8aa27687e12ac162c39aa2a652e9ea13bbeb25ed9b06c4cd6ec5cdb5"
+    },
+    {
+      "file": "stress-00884736.npy",
+      "first_leaf": 884736,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "84addc2316384822326952cd6f6a8f72335fb929627c58ddfd3d0954a8d4248c"
+    },
+    {
+      "file": "stress-00917504.npy",
+      "first_leaf": 917504,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8fcc602485afbdb10945c156350631ed29f8de9bab8f1f41d35314756a38c222"
+    },
+    {
+      "file": "stress-00950272.npy",
+      "first_leaf": 950272,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "cc7a41252dd341064fbc818519ff66f80a21785eafcfb9a3b992714904492393"
+    },
+    {
+      "file": "stress-00983040.npy",
+      "first_leaf": 983040,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "bf0a12412b831712869eeb13b00e7e91dd3d9a61e2ad2364aa6a673c1305a405"
+    },
+    {
+      "file": "stress-01015808.npy",
+      "first_leaf": 1015808,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "2005d3a499a94e9f34b7d0f7fffc665cc019133d273ffc5f771bd004161bbf7c"
+    },
+    {
+      "file": "stress-01048576.npy",
+      "first_leaf": 1048576,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5c0c5f489282b8f518cd020cf5e0db199ee3bc630ae0d7ee6d4b6155d406fc9d"
+    },
+    {
+      "file": "stress-01081344.npy",
+      "first_leaf": 1081344,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9e72dc8a5796a4a025fd2deb49e9c7e08631cbbba4fbfd71f3e8e1478ddc24e1"
+    },
+    {
+      "file": "stress-01114112.npy",
+      "first_leaf": 1114112,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "000b20b161325162649b50eac73124d12fdbd1dbf48dcfc0b253e3e3efdd6a9a"
+    },
+    {
+      "file": "stress-01146880.npy",
+      "first_leaf": 1146880,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "daefe5991b82ff5a9c848c5921b50248784cda3e69bd1cd9c78aa46bd4b37351"
+    },
+    {
+      "file": "stress-01179648.npy",
+      "first_leaf": 1179648,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d22c14c65d17718dd36c44fdb5f8809caaad01353ae7850ca92cc77cf645fadb"
+    },
+    {
+      "file": "stress-01212416.npy",
+      "first_leaf": 1212416,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ade1d1899ec6b6df246a317f4b598a59ea25a4d7acc9cae8e501b73f16da5200"
+    },
+    {
+      "file": "stress-01245184.npy",
+      "first_leaf": 1245184,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "aed92ca775bedbcb9babb29e0036bb51008695a5270d7645d8fc37f1cf5a4c08"
+    },
+    {
+      "file": "stress-01277952.npy",
+      "first_leaf": 1277952,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "43bf9f88ccbefabc61e07f9b64667bf99413e1bb983e512926a70c12aad98d88"
+    },
+    {
+      "file": "stress-01310720.npy",
+      "first_leaf": 1310720,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "09adc133fbf7e27ff6d468f872e3bde5c84154528fabecb459cd8fe2aafb284f"
+    },
+    {
+      "file": "stress-01343488.npy",
+      "first_leaf": 1343488,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5c26372b6b12029c76ad021a8cdc029cc25478be67ef4364d1e27196a951b964"
+    },
+    {
+      "file": "stress-01376256.npy",
+      "first_leaf": 1376256,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d2fde34eb6e2e00333f5c8afb8c161a91cb3806f91c81eb074b6738812c7ca54"
+    },
+    {
+      "file": "stress-01409024.npy",
+      "first_leaf": 1409024,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ab96f2ea88749691dbab749b5ec13ac07ac47e6ffdb57e09972d9b09a8da08a1"
+    },
+    {
+      "file": "stress-01441792.npy",
+      "first_leaf": 1441792,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0441f85f25ab34be813f534d1ca4eaf7b5d4bd571e0169110b5813c553d7af37"
+    },
+    {
+      "file": "stress-01474560.npy",
+      "first_leaf": 1474560,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "af29269b3539163c755c5c18ea1e1e2bd789f215ff640050039be992265daae9"
+    },
+    {
+      "file": "stress-01507328.npy",
+      "first_leaf": 1507328,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1992c9ea39794280a782c8429442bb59b96dbb68da63dd72f554fa64bfbcdf5c"
+    },
+    {
+      "file": "stress-01540096.npy",
+      "first_leaf": 1540096,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ec46ed6911200d2b999d941d48c2f5039e262f1219f8b60cc6882c7ea62f3076"
+    },
+    {
+      "file": "stress-01572864.npy",
+      "first_leaf": 1572864,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4159270cff3f9a59d1d91309b79de3cc3282cf5aabbc1e12b27d43c215b67593"
+    },
+    {
+      "file": "stress-01605632.npy",
+      "first_leaf": 1605632,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d8705e743a83ac902eb784f73391ccaab0794a09efe2d99f73d01776a1dd26f4"
+    },
+    {
+      "file": "stress-01638400.npy",
+      "first_leaf": 1638400,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "cc10749aebea2704cea125f5c75c479a93db45fd147755cf2d581110c921a954"
+    },
+    {
+      "file": "stress-01671168.npy",
+      "first_leaf": 1671168,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "655e0f846ccc977ce2653249345db2c1804ca8ef1d035aec50e826ccb0d76401"
+    },
+    {
+      "file": "stress-01703936.npy",
+      "first_leaf": 1703936,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0b562d7cc7e271197d83db565e58ec9eb2a925c9a63523e3156cbf8b6536d12c"
+    },
+    {
+      "file": "stress-01736704.npy",
+      "first_leaf": 1736704,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "f021bff4d2e0fdb43f50819cc3750519b9f114abbcbd6116b31abc5051e732f0"
+    },
+    {
+      "file": "stress-01769472.npy",
+      "first_leaf": 1769472,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0d980a0bdf0617292cc794cb29ff65056ef2dcde4d42854f1cb4c027c2878dac"
+    },
+    {
+      "file": "stress-01802240.npy",
+      "first_leaf": 1802240,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9a60f53e0eb7046af2030dfefbd37c0d6a3dd174b3585fbf9918214509d5231e"
+    },
+    {
+      "file": "stress-01835008.npy",
+      "first_leaf": 1835008,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0e4405595618b2f88851d89b69ea9f531e06639d67ac6bbcfb0872f923cc10b6"
+    },
+    {
+      "file": "stress-01867776.npy",
+      "first_leaf": 1867776,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9e59afe792c356412a034ca3a33858e13b2ca5098884a27ea2dd1abb9f2834bf"
+    },
+    {
+      "file": "stress-01900544.npy",
+      "first_leaf": 1900544,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a7b1e27ee962326eed2bfc6adfb5a88c1d7a0cdc14a3284d8b9817dfccd6130d"
+    },
+    {
+      "file": "stress-01933312.npy",
+      "first_leaf": 1933312,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7f16a0c220fd5b320552f7442fd8e78727a4bdf012035faf8e3235c4c2589481"
+    },
+    {
+      "file": "stress-01966080.npy",
+      "first_leaf": 1966080,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "faabdbb16cc55390d42b55098b94044dd177cc337ad0cc3e258d00c1653254da"
+    },
+    {
+      "file": "stress-01998848.npy",
+      "first_leaf": 1998848,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a5bbbc8d131f79c25288ae899d38fb6606819def0e63eeadc6bb47cfabefd192"
+    },
+    {
+      "file": "stress-02031616.npy",
+      "first_leaf": 2031616,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "83fab17073391465ae7068a72af67c8f6fb1bc352f9615807b943a31fbeda251"
+    },
+    {
+      "file": "stress-02064384.npy",
+      "first_leaf": 2064384,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "75326ab4cd089cef6bc7dc4b1fe73fe2a23515644717db8d918b41684930145e"
+    },
+    {
+      "file": "stress-02097152.npy",
+      "first_leaf": 2097152,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1aa123f33e6e8cd37ef64800ec68274edcd931eccbd6802eb95588ed31d5e292"
+    },
+    {
+      "file": "stress-02129920.npy",
+      "first_leaf": 2129920,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "118da3f314fdb058b89678fe3ff9f51491ec203dacb522e2cd2937a5043ee400"
+    },
+    {
+      "file": "stress-02162688.npy",
+      "first_leaf": 2162688,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e641def8b3ba80a76b3aa5bd13ab1edb971ae8209c0537a97f939df6a462b4af"
+    },
+    {
+      "file": "stress-02195456.npy",
+      "first_leaf": 2195456,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "f4155a59224eb6699996f12fc8939f436e711e19a21ae576e5ddf16a492ee71f"
+    },
+    {
+      "file": "stress-02228224.npy",
+      "first_leaf": 2228224,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "431e5b90ccbfd237e1c5e98541e3627453ce0eb3836e1469ae3a8cb379a0d9d2"
+    },
+    {
+      "file": "stress-02260992.npy",
+      "first_leaf": 2260992,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "13f89a5389b82c8adf09c20e94d52e4bb2905565e5d3de6d7d90092006d68aeb"
+    },
+    {
+      "file": "stress-02293760.npy",
+      "first_leaf": 2293760,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "03c510fa393b43013358176164c91c134fb4abeaabc0bed37eccdf5e0e284945"
+    },
+    {
+      "file": "stress-02326528.npy",
+      "first_leaf": 2326528,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "50d03b735f69bca141aa1acf6f073414502d470c37eb35e0df1f4f203e182549"
+    },
+    {
+      "file": "stress-02359296.npy",
+      "first_leaf": 2359296,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d1255ec8510bc427860798dc538853ad97d807d47f33267f58f6bd7bb2521d52"
+    },
+    {
+      "file": "stress-02392064.npy",
+      "first_leaf": 2392064,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0b8ea639da1ed4c0833666ec540def555fb30b0292296bd5d17ac26ef87ec605"
+    },
+    {
+      "file": "stress-02424832.npy",
+      "first_leaf": 2424832,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "27ea063a234e4e95377c8b93e287a58687421767ad6ef719b1f54ca0330c064a"
+    },
+    {
+      "file": "stress-02457600.npy",
+      "first_leaf": 2457600,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b3d97844134f07d31183b671d8c871ed55d76d802d420d6a71660808d4938638"
+    },
+    {
+      "file": "stress-02490368.npy",
+      "first_leaf": 2490368,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d469d4ab40a98997e2cedeafdf6b2f5841ca97b7032829672114ce6d8866f3ce"
+    },
+    {
+      "file": "stress-02523136.npy",
+      "first_leaf": 2523136,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d4b448813374cc5a63b4136a6fb687286f3687d16d11b36759383316637b5521"
+    },
+    {
+      "file": "stress-02555904.npy",
+      "first_leaf": 2555904,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "243464ce3359c3a85efaf93220fdc2a46ed6460789de70e8bbc06a4fa35263d5"
+    },
+    {
+      "file": "stress-02588672.npy",
+      "first_leaf": 2588672,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7ea6c614cb30b9a1bb6cb1fc7e5e09212cb334dd820efb5f29033ddf85ad45bd"
+    },
+    {
+      "file": "stress-02621440.npy",
+      "first_leaf": 2621440,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8315a40e0c19259e35f510a95fc729972815fdbe35db44f8cb3d242265030611"
+    },
+    {
+      "file": "stress-02654208.npy",
+      "first_leaf": 2654208,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "3d37c486a7c5058f0ef41ce846ca9eba3877b5dd145e348b2cfc02a8c846d6fa"
+    },
+    {
+      "file": "stress-02686976.npy",
+      "first_leaf": 2686976,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "678d833d458a31b62aa19af9d36b1d2fd843742c2ac1a89361dfc9b89904b4d2"
+    },
+    {
+      "file": "stress-02719744.npy",
+      "first_leaf": 2719744,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b44b5dc520dc197686d1790396eb8457be32087edd34d7450d50353933ca738f"
+    },
+    {
+      "file": "stress-02752512.npy",
+      "first_leaf": 2752512,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "39258e825ebd6f92344e5e0db823e3ec0958b2bd9a3a9fdfe4bc8ac5cd6776f0"
+    },
+    {
+      "file": "stress-02785280.npy",
+      "first_leaf": 2785280,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "236774bacd56cf0454658a6c1ec00393b96eb581848128597959fc84fb7bb505"
+    },
+    {
+      "file": "stress-02818048.npy",
+      "first_leaf": 2818048,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "bf01b91fc388d511f14976642f76454667b87996400a9fb60a755f02e7ca7480"
+    },
+    {
+      "file": "stress-02850816.npy",
+      "first_leaf": 2850816,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ed2a4f845b8e5a8c2fb409377b933f09542ce1e6a50341682230532803b4460c"
+    },
+    {
+      "file": "stress-02883584.npy",
+      "first_leaf": 2883584,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ff5d9d475ea050d17ed47dd04a9d7a1e2793d6dce3626fd94068cd34528b275e"
+    },
+    {
+      "file": "stress-02916352.npy",
+      "first_leaf": 2916352,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6a255acf56d5e98b6934c9df29ce81dacb8e047bd72ab9d684b1c7b82bfba77a"
+    },
+    {
+      "file": "stress-02949120.npy",
+      "first_leaf": 2949120,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "99b2bf65c40a4bfdf16c4bd29d14310af2e97f5dffd72fc83f43f49373c1c536"
+    },
+    {
+      "file": "stress-02981888.npy",
+      "first_leaf": 2981888,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "375cf2bfda3ef6cb12ea59743e59d26122c42be1d0e0c95f58b9a4bbd2cd5a8f"
+    },
+    {
+      "file": "stress-03014656.npy",
+      "first_leaf": 3014656,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8e0ffe760c1229f745be0ff6ea447d7e44071e9d086b70162db099de3afbef73"
+    },
+    {
+      "file": "stress-03047424.npy",
+      "first_leaf": 3047424,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "fc7d9ba2940a1ba630ebfe325b3d8d359b5beac44cec99338cdc01a6fe2743c6"
+    },
+    {
+      "file": "stress-03080192.npy",
+      "first_leaf": 3080192,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "877397f8c034f8a1b4bc11e84f2993f45a626ff0930275cff2ccdef8051475f3"
+    },
+    {
+      "file": "stress-03112960.npy",
+      "first_leaf": 3112960,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "499c6481b251d7687e6d6626b9a34457a7d55e823eb0fe28b818c2a67262d987"
+    },
+    {
+      "file": "stress-03145728.npy",
+      "first_leaf": 3145728,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e0e84a8a45fbf023976a81d2d09cadc29406bdd91b481c2b44529b626c16372d"
+    },
+    {
+      "file": "stress-03178496.npy",
+      "first_leaf": 3178496,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "73bdd91bf526d84fbfe259c65ac7d618725925631233826045d73e6020b9af18"
+    },
+    {
+      "file": "stress-03211264.npy",
+      "first_leaf": 3211264,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "53964d5d6c03483fd2d1774292ae407b7aba6db496383d36555a890ddaec0d4e"
+    },
+    {
+      "file": "stress-03244032.npy",
+      "first_leaf": 3244032,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1a624cc998f3396cb6b57f78639459acf980a5cadb1fa2eee97507d0079c3991"
+    },
+    {
+      "file": "stress-03276800.npy",
+      "first_leaf": 3276800,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e029a2094585ed9b6c7038233fd6db3a780fb2ebb1883727a5f09bc2cb5deaf6"
+    },
+    {
+      "file": "stress-03309568.npy",
+      "first_leaf": 3309568,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "be2b104c15a5861e7e913f20bf1077efeb16f2131da057e7a6829fd51f69e90f"
+    },
+    {
+      "file": "stress-03342336.npy",
+      "first_leaf": 3342336,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a26f198e9776c4459b8f8f980832d339dd0c3ccb059a1f2e606277dd90d3fbc0"
+    },
+    {
+      "file": "stress-03375104.npy",
+      "first_leaf": 3375104,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5481a0c857284305139f6e8e7ebd80cb606dc19684e35c689ee2ae421ae4faa3"
+    },
+    {
+      "file": "stress-03407872.npy",
+      "first_leaf": 3407872,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ebc7e8a0e7af137a29ade8d4672755c75f6e943168267ceb78799ffd2994d4bb"
+    },
+    {
+      "file": "stress-03440640.npy",
+      "first_leaf": 3440640,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e67dd68405650117b0dea83c92657b5710d4db8a1745073435a380855a5e877f"
+    },
+    {
+      "file": "stress-03473408.npy",
+      "first_leaf": 3473408,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "422ed04b9291b4a948557a65732af858f4b9240b4c72a8aa8946661640ed2696"
+    },
+    {
+      "file": "stress-03506176.npy",
+      "first_leaf": 3506176,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4039628c33ff564957ecc1de398053af0bf7086468271f6f218bb6cc8760e6eb"
+    },
+    {
+      "file": "stress-03538944.npy",
+      "first_leaf": 3538944,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "347dce4f408282c51000c522ea7587b3cfb30e1a6357b516cf9e90ac2fc999de"
+    },
+    {
+      "file": "stress-03571712.npy",
+      "first_leaf": 3571712,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "769b8c4821f66f62a6b0732c3958044f59a9ced83c878abffb19051d3294c19e"
+    },
+    {
+      "file": "stress-03604480.npy",
+      "first_leaf": 3604480,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "121d95ae1c0081d3ce6da3d92a17915d8216ba503fdbfec379ca4ad3b2c67950"
+    },
+    {
+      "file": "stress-03637248.npy",
+      "first_leaf": 3637248,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ab2f493325d3a3fe78eed42423e7011446f152db744fe7aef41a5be4f0b2bb77"
+    },
+    {
+      "file": "stress-03670016.npy",
+      "first_leaf": 3670016,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "85c2940d31945741a182476365823bfe6bd8a1f615fd1d3d55e3adc779d747cc"
+    },
+    {
+      "file": "stress-03702784.npy",
+      "first_leaf": 3702784,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6f6ff9d3242a8601efcaf36f4306e827815f37f807259f792791d89a51ff802d"
+    },
+    {
+      "file": "stress-03735552.npy",
+      "first_leaf": 3735552,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c3fc74981c2cd8f83ef9caef497939b2ca96dcfe5cf5a862fdecc6cdae99cb50"
+    },
+    {
+      "file": "stress-03768320.npy",
+      "first_leaf": 3768320,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "368ff81bcb3bab83bf28604b302bbc29e92b989c35de6837cd9d60bc987138e5"
+    },
+    {
+      "file": "stress-03801088.npy",
+      "first_leaf": 3801088,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ba02db854d2af112ed85a34445e053bcf2efee7146f8782a3a783518d0660b72"
+    },
+    {
+      "file": "stress-03833856.npy",
+      "first_leaf": 3833856,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "f99fab56e8e156985774e313e264cb201492e69c3b1b18825142661576bbe54d"
+    },
+    {
+      "file": "stress-03866624.npy",
+      "first_leaf": 3866624,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0fa7f1d334a10345ebc5401fdebc66431fb819ed1e6965a77d5a6592b523d356"
+    },
+    {
+      "file": "stress-03899392.npy",
+      "first_leaf": 3899392,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6d3b2ae9f97a20399876413ba7522f83d32df091853f14a28ad5ea87aef11b4e"
+    },
+    {
+      "file": "stress-03932160.npy",
+      "first_leaf": 3932160,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c95dee361a29d88f58b5e806572c61904026209913054e25f718890a1806c2bf"
+    },
+    {
+      "file": "stress-03964928.npy",
+      "first_leaf": 3964928,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8671bbf609c795440eb98e5bb35e0a1fd12455c1c86b64afc9ddb070f314a610"
+    },
+    {
+      "file": "stress-03997696.npy",
+      "first_leaf": 3997696,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "3a20b669e5dd1125aae0d094ac95880370c060355c0f648ccbab0fd968a4cbaf"
+    },
+    {
+      "file": "stress-04030464.npy",
+      "first_leaf": 4030464,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d6ee8ab8b177fe385a5107e01ec9efa710efea794d326e261880a92158fe02a4"
+    },
+    {
+      "file": "stress-04063232.npy",
+      "first_leaf": 4063232,
+      "cells": 14058,
+      "gauss_samples": 112464,
+      "sha256": "8914f9e928f982c0847fb6210138a75028263c333cad79e822e29b112bc2e43b"
+    }
+  ],
+  "every_leaf_retained": true,
+  "elapsed_seconds": 134.2976424030021,
+  "interpretation": "A failed linear/contact iterate is not a movement or strength prediction. CONTACT_SCREEN records equilibrium and contact at its explicitly stated tolerances; it does not pass the original stricter solver gate. Even passing numerics use eroded reference slice geometry, unmeasured isotropic properties and idealized hardware. No full-bracket qualification."
+}

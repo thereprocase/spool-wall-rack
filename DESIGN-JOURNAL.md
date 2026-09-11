@@ -4,6 +4,30 @@ Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analy
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — staged evolutionary screening pilot
+
+Established a bounded local helper search around G: paired intuition seeds,
+four generations of 25, 5–10% quantized mutations, recombination and independent
+exploration. The corrected raw-volume 2D baseline is retained; new helper
+responses are explicitly approximate and require real slicing and 3D feedback.
+All 100 new proposals passed reduced equilibrium and retained every stress
+cell in 677.87 s. A preliminary rounding-policy failure is preserved separately.
+
+The first actual finalist completed CAD, P1S PETG slicing, material mapping,
+adaptive GPU contact and all-field audit in 414.80 s. It gives 4.129457 mm
+maximum movement, versus 4.335468 mm for the fresh process control. Its raw
+peak is 20.429187 MPa versus 20.024198 MPa for the control, and the peak moves
+to another location. The movement estimate was close; the cheap global stress
+score missed the increase. This supports staged confirmation, not automatic
+acceptance of reduced-model winners.
+
+The fresh process check exposed a parser omission: Orca's P1S `0x2` nozzle
+offset must be restored before model placement is inverted. The fix leaves
+every historical neutral-reference path array identical. Earlier P1S caches
+and the failed default-grid-budget attempt remain preserved. No stopped CPU
+tetrahedral meshing job restarted. See [the loop record](analysis/rev-g2/EVOLUTION.md)
+for subsequent finalists, mesh refinement, evidence and current limits.
+
 ## September 11 — G contact results and a measured numerical tolerance study
 
 Implemented exact material-integrated Galerkin coarse correction and a GPU

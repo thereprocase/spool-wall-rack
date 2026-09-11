@@ -1,12 +1,21 @@
 # Spool wall rack — G material-model correction and G2
 
+**New: [evolutionary screening loop](analysis/rev-g2/EVOLUTION.md).** The first
+batch screened 100 helper proposals in 11 min 18 s. The leading actual-slice
+3D pass took 6 min 55 s including CAD, slicing, preparation and field audit:
+4.1295 mm movement versus 4.3355 mm for G, with a 2.02% higher raw stress peak.
+Further finalist and mesh checks are recorded on the loop page. These are
+screening results; material accuracy and physical qualification remain open.
+
+![Current helper additions and cuts](analysis/rev-g2/evolution-results/batch-02/helper-directions.png)
+
 Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
 
 [Printable STEP bodies, aligned helpers and per-idea notes](PRINT-CANDIDATES.md).
 
 **Restart checkpoint:** [complete handoff and current candidates](RESTART-2026-09-11.md).
 
-**Latest: [completed G 3D contact screen and accuracy limits](analysis/rev-g2/G-RESULTS.md).**
+**G baseline: [completed 3D contact screen and accuracy limits](analysis/rev-g2/G-RESULTS.md).**
 At 12 kg, the retained-material model gives **4.3355 mm maximum bracket movement**
 and **20.0254 MPa raw peak tensile stress**. Wall contact has settled. A tenfold
 tighter numerical check changes no nodal movement by more than 0.00000049 mm.
@@ -31,15 +40,16 @@ zero mismatches outside the stated 0.005 mm polygonization band. The two-wall,
 sacrificial bridge extrusion. A boundary-only volume mesh matches the
 reconstructed continuum volume but fails topology/quality review. The long
 whole-part CPU meshing attempts have been stopped. The replacement investigation
-now targets GPU voxel/immersed FEM; no corrected 3D stress result is claimed.
+now uses GPU adaptive hexahedra; the completed eroded-material numerical
+screen is linked above.
 
 [GPU execution checkpoint](analysis/rev-g2/GPU-VALIDATION.md): the free Warp
 runtime now passes an upstream elasticity comparison and independent 3D
 elasticity/contact fixtures on the RTX 3080 Ti. GPU patch tests also pass on
 an actual G slice crop. Conservative voxels still omit 17.12%, 8.37% and 4.31%
 of that crop at progressively finer XY grids, so they are not accepted as
-G's printed material. Whole-bracket 3D mechanics and all seven G2 architecture
-families remain unfinished. [Earlier software review](analysis/rev-g2/GPU-FEM-REVIEW.md).
+G's printed material. Material-converged whole-bracket mechanics and all seven
+G2 architecture families remain unfinished. [Earlier software review](analysis/rev-g2/GPU-FEM-REVIEW.md).
 
 ![Actual sliced material across five wall and skin schedules](analysis/rev-g2/validation/matrix-shape-sections.png)
 

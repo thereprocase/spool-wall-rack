@@ -1,0 +1,7 @@
+{
+  "status": "PASS_FITNESS_POLICY_REGRESSION",
+  "legacy_scores_reproduced": 100,
+  "maximum_legacy_score_error": 2.220446049250313e-16,
+  "new_score_does_not_treat_cheap_stress_as_strength": true,
+  "all_stress_flags_retained": true
+}
