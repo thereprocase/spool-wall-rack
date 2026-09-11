@@ -1,7 +1,8 @@
 """Matrix-free CUDA elasticity on constrained two-level hex leaves.
 
 Applies P.T K P; P interpolates hanging nodes. Every leaf contributes, with
-eight Gauss points per leaf. This adapter uses a diagonal preconditioner only.
+eight Gauss points per leaf. The default diagonal preconditioner can be
+replaced by an independently checked positive-definite coarse correction.
 """
 import time
 
@@ -98,7 +99,8 @@ class AdaptiveOperator:
         self.operator(fixed).matvec(x,result,result,1.,0.)
         return result.numpy()
 
-    def solve(self,f,fixed,prescribed=None,maxiter=1000,callback=None,max_seconds=240,initial=None):
+    def solve(self,f,fixed,prescribed=None,maxiter=1000,callback=None,max_seconds=240,initial=None,preconditioner=None,
+              linear_rtol=1e-10,true_residual_limit=1e-8):
         start = time.perf_counter()
         fixed = np.unique(fixed).astype(int)
         prescribed = np.zeros(self.ndof) if prescribed is None else prescribed
@@ -110,6 +112,8 @@ class AdaptiveOperator:
         def mv(x,y,z,alpha,beta):
             wp.launch(diagonal_multiply,dim=self.ndof,inputs=[ig,x,y,z,alpha,beta],device=self.device)
         M = LinearOperator((self.ndof,self.ndof),wp.float64,self.device,mv)
+        if preconditioner is not None:
+            M=preconditioner
         b = wp.array(rhs,dtype=wp.float64,device=self.device)
         guess = np.zeros(self.ndof) if initial is None else np.asarray(initial)-prescribed
         guess[fixed] = 0.
@@ -123,7 +127,7 @@ class AdaptiveOperator:
                 raise TimeoutError('Bounded GPU solve exceeded its time budget')
         budget_stop = False
         try:
-            iterations,error,tolerance = cg(self.operator(fixed),b,x,M=M,tol=1e-10,atol=1e-12,
+            iterations,error,tolerance = cg(self.operator(fixed),b,x,M=M,tol=linear_rtol,atol=1e-12,
                                             maxiter=maxiter,check_every=20,callback=observe)
         except TimeoutError:
             iterations,error,tolerance = latest
@@ -132,11 +136,17 @@ class AdaptiveOperator:
         reaction = self.apply(u)-f
         free = np.ones(self.ndof,dtype=bool)
         free[fixed] = False
-        relative = float(np.linalg.norm(reaction[free])/max(np.linalg.norm(rhs[free]),np.linalg.norm(f[free]),1e-30))
-        passed = bool(np.isfinite(u).all() and error <= tolerance and relative < 1e-8)
+        # When all applied load is on constrained nodes, a warm start still
+        # has roundoff-sized free residuals. Normalize by the actual load,
+        # not a zero free-load vector; ordinary G seat loading is unchanged.
+        residual_scale = max(np.linalg.norm(rhs[free]),np.linalg.norm(f),1e-30)
+        relative = float(np.linalg.norm(reaction[free])/residual_scale)
+        passed = bool(np.isfinite(u).all() and error <= tolerance and relative < true_residual_limit)
         # Failure returns the entire iterate and raw residual for preservation.
         return u,reaction,{'status':'PASS_LINEAR_SOLVE' if passed else 'FAIL_LINEAR_CONVERGENCE',
                            'iterations':iterations,'recursive_residual':error,'tolerance':tolerance,
+                           'requested_linear_rtol':linear_rtol,'true_residual_limit':true_residual_limit,
+                           'true_residual_normalization_N':float(residual_scale),
                            'stopped_by_time_budget':budget_stop,
                            'true_relative_free_residual':relative,'elapsed_seconds':time.perf_counter()-start}
 

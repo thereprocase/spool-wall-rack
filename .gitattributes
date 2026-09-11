@@ -27,3 +27,11 @@
 /analysis/rev-g2/adaptive-validation/**/*.npz binary
 /analysis/rev-g2/adaptive-validation/**/*.png binary
 /analysis/rev-g2/adaptive-validation/*.png binary
+/analysis/rev-g2/validate_gpu_coarse.py text eol=lf
+/analysis/rev-g2/validate_gpu_contact.py text eol=lf
+/analysis/rev-g2/report_gpu_g.py text eol=lf
+/analysis/rev-g2/requirements-coarse.txt text eol=lf
+/analysis/rev-g2/g-results/** text eol=lf
+/analysis/rev-g2/g-results/**/*.npz binary
+/analysis/rev-g2/g-results/**/*.png binary
+/analysis/rev-g2/g-results/*.zip binary

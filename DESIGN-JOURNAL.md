@@ -2,6 +2,27 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — G contact results and a measured numerical tolerance study
+
+Implemented exact material-integrated Galerkin coarse correction and a GPU
+V-cycle; independent operator, direct-solve beam and changed-load contact
+fixtures pass. The original full-G residual gate delayed all wall-contact
+updates. Keeping that gate explicit, a 1e-5 intermediate solve tolerance
+allowed 28 contact steps to settle in 734 seconds. Rechecking at 1e-6 took
+72 seconds and changed no original-node displacement by more than 4.894e-7 mm
+and no retained stress component by more than 5.527e-5 MPa.
+
+At 12 kg the retained-material screen gives 4.335477 mm maximum movement and
+20.025374 MPa raw tensile stress. It has no wall penetration or tensile active
+wall reactions. This model exceeds the 4 mm bracket allocation, but its 8.0177%
+material omission, idealized hardware and unmeasured isotropic material law
+prevent a printed-part pass/fail qualification. The raw peak remains unconverged
+with respect to mesh/material representation. All G stress samples and failed
+attempts survive. The coarser mesh trial failed linear convergence.
+
+[Results, fresh spool-load checks, evidence and next accuracy gate](analysis/rev-g2/G-RESULTS.md).
+Existing G STEP/helper exports are reused; G2 architectures remain unbuilt.
+
 ## September 11 — adaptive constraints, finer boundaries and bounded whole-G trials
 
 Implemented two-level hex coarsening with Q1 hanging-node constraints and a

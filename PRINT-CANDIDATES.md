@@ -2,6 +2,12 @@
 
 Geometry handoffs with helper solids and notes. Keep all relative body/helper positions. Import each STEP assembly as one object with multiple parts: the body prints, helpers become 100% infill modifiers. External tabs/halos must never print. STEP carries geometry, not slicer settings. Use OrcaSlicer and a calibrated printer/material profile. These are experimental geometries, not released load ratings.
 
+[Completed G contact screen](analysis/rev-g2/G-RESULTS.md): 4.3355 mm maximum
+movement and 20.0254 MPa raw peak tensile stress at 12 kg in the retained-material
+model. Contact and numerical sensitivity are checked; 8.02% material omission
+and physical qualification remain unresolved. The existing aligned G body and
+three helper exports below are the exact CAD handoff; no new architecture is added.
+
 ## Current G recheck schedules
 
 All five use the same unchanged G body and aligned helpers. Their differences are slicer settings. Each page links the combined STEP, individual helpers, exact settings and raw slice evidence. The old G 3MF defaults are historical; the current recheck requires at least two walls and 0% base infill.
@@ -18,7 +24,7 @@ The 2w/5-layer reference has a corrected 2D diagnostic. No corrected 3D strength
 
 [Adaptive mesh and P1S/PETG demo checkpoint](analysis/rev-g2/ADAPTIVE-MESH.md):
 the implemented coarse/fine GPU adapter passes independent fixtures and
-halves the protected 0.2 mm G mesh. Full-G convergence remains unresolved.
+halves the protected 0.2 mm G mesh. That checkpoint predates the completed contact screen linked above.
 The separate fresh PETG slice reuses G's existing body and three helpers;
 it adds no architecture or physical qualification to the handoffs below.
 

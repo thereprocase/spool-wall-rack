@@ -3,6 +3,11 @@
 **The five-case shape validation is complete; corrected G mechanics is still
 in progress. No accepted G2 architecture exists yet.**
 [Restart handoff and current results](../../RESTART-2026-09-11.md).
+[Completed G contact screen](G-RESULTS.md): 4.3355 mm maximum movement and
+20.0254 MPa raw peak tensile stress at 12 kg. A tenfold tighter numerical check
+changes no nodal movement by more than 4.894e-7 mm. This remains an eroded-material
+screen with 8.02% material omission, not a qualified printed-part result.
+
 [Adaptive mesh checkpoint](ADAPTIVE-MESH.md): verified coarse/fine constraints
 halve the protected whole-G 0.2 mm mesh. Both bounded full-G GPU solves failed
 equilibrium convergence. A separate boundary census reaches 0.025 mm XY with

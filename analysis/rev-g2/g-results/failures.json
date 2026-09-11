@@ -1,0 +1,42 @@
+[
+  {
+    "attempt": "coarse-fixtures-v1",
+    "reason": "Identically zero projected auxiliary basis columns needed exact decoupling.",
+    "preserved": {
+      "file": ".work/gpu-route/logs/coarse-fixtures-v1.log",
+      "bytes": 796,
+      "sha256": "69d9b7212120ee8687fc45367cb35f490017662a9ecb0ae63aa4aa7561db931b"
+    },
+    "field_export": "Fixture/setup failure log retained; no complete G solution was produced by this attempt."
+  },
+  {
+    "attempt": "coarse-fixtures-v2",
+    "reason": "Independent zero-column test incorrectly counted stored explicit zeros.",
+    "preserved": {
+      "file": ".work/gpu-route/logs/coarse-fixtures-v2.log",
+      "bytes": 405,
+      "sha256": "9ec7dc941240f42cdefdde16af5a9a8581edaf6b3cdfd73c689e5cef435c0138"
+    },
+    "field_export": "Fixture/setup failure log retained; no complete G solution was produced by this attempt."
+  },
+  {
+    "attempt": "g-coarse-r4-v2",
+    "reason": "Floating lattice subtraction created a spurious positive interpolation weight; exact integer lattice indices fixed it.",
+    "preserved": {
+      "file": ".work/gpu-route/logs/g-coarse-r4-v2.log",
+      "bytes": 2131,
+      "sha256": "8bf59af726895a2cb79a61986a5e003494169c695d4fb8c698fc9edacf714fd4"
+    },
+    "field_export": "Fixture/setup failure log retained; no complete G solution was produced by this attempt."
+  },
+  {
+    "attempt": "coarse-contact-v3",
+    "reason": "A warm start with all load on fixed nodes exposed normalization by zero free load; use the actual applied-load norm.",
+    "preserved": {
+      "file": ".work/gpu-route/logs/coarse-contact-v3.log",
+      "bytes": 1330,
+      "sha256": "e3ed76259fa003f8a5be3f6d36242d098521d2763fcd37bf165029cf51818e25"
+    },
+    "field_export": "Fixture/setup failure log retained; no complete G solution was produced by this attempt."
+  }
+]

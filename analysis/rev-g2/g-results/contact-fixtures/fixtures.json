@@ -1,0 +1,552 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "open",
+      "status": "PASS_CONTACT_NUMERICS",
+      "displacement_error_mm": 1.0011089179862154e-13,
+      "reaction_error_N": 8.465450562766819e-15,
+      "minimum_gap_mm": 0.011999999999945384,
+      "history": [
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 6.71519495485576e-11,
+          "tolerance": 7.5e-11,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 0.75,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 8.953594260537583e-11,
+          "elapsed_seconds": 0.02049538999926881,
+          "contact_step": 0,
+          "active_wall_nodes": 0,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 0,
+              "residual": 0.75,
+              "tolerance": 7.5e-11
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 20,
+              "residual": 2.3842054144736944e-07,
+              "tolerance": 7.5e-11
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 40,
+              "residual": 6.71519495485576e-11,
+              "tolerance": 7.5e-11
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 17,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.00654690900046262,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.0001829129996622214,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.007733533999271458
+          }
+        }
+      ],
+      "equilibrium": {
+        "force_error_N": 2.1560300461712123e-14,
+        "moment_error_Nmm": 3.0186695427493967e-15,
+        "relative_free_residual": 6.715195695403187e-11
+      }
+    },
+    {
+      "name": "closed",
+      "status": "PASS_CONTACT_NUMERICS",
+      "displacement_error_mm": 0.0,
+      "reaction_error_N": 4.884981308350689e-14,
+      "minimum_gap_mm": 0.0,
+      "history": [
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 2.68607801599577e-10,
+          "tolerance": 3.75e-10,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 3.75,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 7.162867613659192e-11,
+          "elapsed_seconds": 0.004833483999391319,
+          "contact_step": 0,
+          "active_wall_nodes": 0,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 0,
+              "residual": 3.0000000000062443,
+              "tolerance": 3.75e-10
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 20,
+              "residual": 9.536821655609781e-07,
+              "tolerance": 3.75e-10
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 40,
+              "residual": 2.68607801599577e-10,
+              "tolerance": 3.75e-10
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 17,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.0054152009997778805,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.00013218800086178817,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.006435898998461198
+          }
+        },
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 1.9927937160448704e-09,
+          "tolerance": 2.629803506684047e-09,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 26.29803506684047,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 7.577732857883099e-11,
+          "elapsed_seconds": 0.005030468999393634,
+          "contact_step": 1,
+          "active_wall_nodes": 9,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 0,
+              "residual": 26.298035066837812,
+              "tolerance": 2.629803506684047e-09
+            },
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 20,
+              "residual": 5.091575300053125e-07,
+              "tolerance": 2.629803506684047e-09
+            },
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 40,
+              "residual": 1.9927937160448704e-09,
+              "tolerance": 2.629803506684047e-09
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 18,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.005317752998962533,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.00012035600047966,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.006253959001696785
+          }
+        }
+      ],
+      "equilibrium": {
+        "force_error_N": 5.024685233582955e-14,
+        "moment_error_Nmm": 4.094265298686725e-15,
+        "relative_free_residual": 5.314119584633573e-10
+      }
+    },
+    {
+      "name": "touching_closed",
+      "status": "PASS_CONTACT_NUMERICS",
+      "displacement_error_mm": 0.0,
+      "reaction_error_N": 6.217248937900877e-15,
+      "minimum_gap_mm": 0.0,
+      "history": [
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 2.2566193729064594e-13,
+          "tolerance": 1e-12,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 0.75,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 3.004096946900471e-13,
+          "elapsed_seconds": 0.004784321999977692,
+          "contact_step": 0,
+          "active_wall_nodes": 9,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 0,
+              "residual": 26.298035066664482,
+              "tolerance": 1e-12
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 20,
+              "residual": 5.091575276603363e-07,
+              "tolerance": 1e-12
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 40,
+              "residual": 2.2566193729064594e-13,
+              "tolerance": 1e-12
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 18,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.005314587999237119,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.00018823099890141748,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.006472745000792202
+          }
+        }
+      ],
+      "equilibrium": {
+        "force_error_N": 5.832707724644377e-17,
+        "moment_error_Nmm": 3.538404822608667e-17,
+        "relative_free_residual": 2.2530727101753532e-13
+      }
+    },
+    {
+      "name": "release",
+      "status": "PASS_CONTACT_NUMERICS",
+      "displacement_error_mm": 1.0011089179862154e-13,
+      "reaction_error_N": 2.581268532253489e-15,
+      "minimum_gap_mm": 0.00799999999989989,
+      "history": [
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 0,
+          "recursive_residual": 2.2530727101753532e-13,
+          "tolerance": 1e-12,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 0.75,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 3.004096946900471e-13,
+          "elapsed_seconds": 0.0019164679997629719,
+          "contact_step": 0,
+          "active_wall_nodes": 9,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 0,
+              "residual": 2.2530727101753532e-13,
+              "tolerance": 1e-12
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 18,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.005079825999928289,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.0001195800014102133,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.006017875999532407
+          }
+        },
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 6.715195135832141e-11,
+          "tolerance": 7.5e-11,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 0.75,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 8.953642603624017e-11,
+          "elapsed_seconds": 0.004690880999987712,
+          "contact_step": 1,
+          "active_wall_nodes": 0,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 0,
+              "residual": 0.7499999999999961,
+              "tolerance": 7.5e-11
+            },
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 20,
+              "residual": 2.384205414475571e-07,
+              "tolerance": 7.5e-11
+            },
+            {
+              "stage": "cg",
+              "contact_step": 1,
+              "iterations": 40,
+              "residual": 6.715195135832141e-11,
+              "tolerance": 7.5e-11
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 17,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.005191272000956815,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.00012528700062830467,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.006128700999397552
+          }
+        }
+      ],
+      "equilibrium": {
+        "force_error_N": 1.924874231174209e-14,
+        "moment_error_Nmm": 2.0748684761808514e-15,
+        "relative_free_residual": 6.715231952718013e-11
+      }
+    },
+    {
+      "name": "exactly_touching",
+      "status": "PASS_CONTACT_NUMERICS",
+      "displacement_error_mm": 9.999293060225511e-14,
+      "reaction_error_N": 1.2712053631958042e-14,
+      "minimum_gap_mm": -5.65901492333154e-14,
+      "history": [
+        {
+          "status": "PASS_LINEAR_SOLVE",
+          "iterations": 40,
+          "recursive_residual": 9.542143001832986e-11,
+          "tolerance": 1.875e-10,
+          "requested_linear_rtol": 1e-10,
+          "true_residual_limit": 1e-08,
+          "true_residual_normalization_N": 1.875,
+          "stopped_by_time_budget": false,
+          "true_relative_free_residual": 5.089151022396072e-11,
+          "elapsed_seconds": 0.005021607999879052,
+          "contact_step": 0,
+          "active_wall_nodes": 0,
+          "trace": [
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 0,
+              "residual": 2.624999999993758,
+              "tolerance": 1.875e-10
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 20,
+              "residual": 8.344718952948701e-07,
+              "tolerance": 1.875e-10
+            },
+            {
+              "stage": "cg",
+              "contact_step": 0,
+              "iterations": 40,
+              "residual": 9.542143001832986e-11,
+              "tolerance": 1.875e-10
+            }
+          ],
+          "coarse_correction": {
+            "coarse_nodes": 20,
+            "coarse_cells": 4,
+            "coarse_dofs": 60,
+            "coarse_matrix_nnz": 1562,
+            "ratio": 2,
+            "coarse_spacing_mm": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "represented_volume_mm3": 4.0,
+            "affected_constraint_leaves": 17,
+            "symmetry_error_before_roundoff_symmetrization": 5.622870590191026e-17,
+            "identically_zero_projected_coarse_dofs": [
+              25,
+              26,
+              28,
+              32
+            ],
+            "build_seconds": 0.005321101001754869,
+            "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+            "amg_setup_seconds": 0.00011373699999239761,
+            "levels": [
+              {
+                "dofs": 60,
+                "nnz": 1872
+              }
+            ],
+            "pyamg_version": "5.3.0",
+            "jacobi_spectral_upper_bounds": [],
+            "total_setup_seconds": 0.0062103969994495856
+          }
+        }
+      ],
+      "equilibrium": {
+        "force_error_N": 5.412784894731517e-14,
+        "moment_error_Nmm": 7.591627291821658e-15,
+        "relative_free_residual": 5.089151022396072e-11
+      }
+    }
+  ],
+  "scope": "Analytic 3D frictionless contact with a nonzero gap, prescribed contact displacements and active-node release using the same loop as full G. Consecutive changed-load cases warm-start displacement and contact sets, but solve each load afresh."
+}

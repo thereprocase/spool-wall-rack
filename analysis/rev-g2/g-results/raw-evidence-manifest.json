@@ -1,0 +1,4197 @@
+{
+  "path_base": "analysis/rev-g2",
+  "scope": "Complete saved contact fields and all final stress chunks for these G runs. Stress hashes originate in their solver exports; contact fields are rehashed here. These large arrays remain local.",
+  "runs": [
+    "g-coarse-r8-v1",
+    "g-coarse-r4-v3",
+    "g-contact-screen-v1",
+    "g-contact-tight-v1",
+    "g-h0p4-contact-screen-v1"
+  ],
+  "contact_fields": [
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/active_wall_indices.npy",
+      "bytes": 729016,
+      "sha256": "0f98866182fb4b918dac5fe38a4d569d59c63f74550ade04aff439448599d38a"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/fixed_dofs.npy",
+      "bytes": 834904,
+      "sha256": "fa2b115dceebbb27b37b35dcc0a30034079c1c0dd61812a8df8eebd41c0230a2"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "ff54614ff82cfa06a7ffc7aeb3edbf223c9940b8e00681ef7754bc125ea90e62"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "ec4bd537103b8406f57a44d7a328edefd9cc8563357c3f3fdfb41008c8806baa"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "a9908e02e7015de3189d8d996aa253d34023740fabc455c1488e604ea4d84751"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/active_wall_indices.npy",
+      "bytes": 729016,
+      "sha256": "0f98866182fb4b918dac5fe38a4d569d59c63f74550ade04aff439448599d38a"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/fixed_dofs.npy",
+      "bytes": 834904,
+      "sha256": "fa2b115dceebbb27b37b35dcc0a30034079c1c0dd61812a8df8eebd41c0230a2"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "29d48cb70515b90379b00cf3ef2185d35d70e6eba58dda9b8437493f967102d9"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "50719bec0d49d9b94c1d6c5f04712012548a83ac6cef66df046c567ddf62408a"
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "b15302dda5ca859400179dc6dab24d87201689c49f52b1c027fd4199f90a18a7"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/active_wall_indices.npy",
+      "bytes": 352352,
+      "sha256": "00b8164a7f08904f9b2f1ecbebb70275866d4ad5c0255db8617ba8d685baf2fc"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/fixed_dofs.npy",
+      "bytes": 458240,
+      "sha256": "b0698380edef51789918f287404955335b368c3753557567433b8457e2ad39b4"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "a081f73785507803ff438593fe2271dcab85abbc63c2e57f1e6e721cd9d1601f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "ddb8763c074a501f3a91292ad90cd83ed99abe465ef11b036025fe2e9caeb230"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "bea3629f117a311fdcee5be58f76b7a19f74b229d496003e3625e877d8943884"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/active_wall_indices.npy",
+      "bytes": 308592,
+      "sha256": "dc56b41f58c9f7e5041a79193b9127b50a4f576e619df6b633d72d3034d9ffdf"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/fixed_dofs.npy",
+      "bytes": 414480,
+      "sha256": "123a9d9bee23eaf86206d588b8bdb8db9f57511b2d274bcc6a987a75b5a666bd"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "5b18e3db1150c5b2c071a5b8569852f94190d81919cef2e5ab0f866fdd2b5c41"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "ff09c12b6ae813588dd842996460d7b32c18f0cbdae078fd0a518a89fdde3bf5"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-01/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "6d78d49dd1abf7ad8bfd9ac1c65f23cc5ecbc7ea81039395572def1fdac8eabd"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/active_wall_indices.npy",
+      "bytes": 249072,
+      "sha256": "c01af7084dfc77990ef7598d982db81afab5f5344261bf5a9c1b4d19453ba993"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/fixed_dofs.npy",
+      "bytes": 354960,
+      "sha256": "8955ce2f375f1c8442908aba6f37f5dc7750deb125b3b0ea399b36c04a64abe1"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "9f88393f44d727252f764c2af2e079f55461012fde0ede4d57e9db035c3438a8"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "4a9e184fc8c8b8120b7ed75e692ea0ff1a645d2b9d2c38c205332f3d34971e05"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-02/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "43b78b4e9754f880661693a9db836295079fc2fdd49674fb22cb8f4c147200c9"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/active_wall_indices.npy",
+      "bytes": 199632,
+      "sha256": "a67f41a66090d73678c69865867363992c1dfcfa35df4e274958af4899cdde8e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/fixed_dofs.npy",
+      "bytes": 305520,
+      "sha256": "caffae72b78d90abcba00b834aaa4c7f021ce4aa78346bd63a1b11b9ad5351e3"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "89447963100ca8c03e9ecc1b9075bde55a3296d23c79fb4891982fc6d0d2df9f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "ca322cb8c72f189d64467a3c76b04696343794c428a939e123716ec3dc84a7f6"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-03/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "a27c7ae87271e1474d92706bd755f178ef75b5990990b80351582d4484cb5d76"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/active_wall_indices.npy",
+      "bytes": 152648,
+      "sha256": "e0ac7806b51be1e050029cbe24a4ee5cf1a4388116edd2dcd63f9ea9be474361"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/fixed_dofs.npy",
+      "bytes": 258536,
+      "sha256": "9ef9e33e54b9c507dc95d28a805473371eb1775f8ac2176dcc15e6057043a8bc"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "701ce9ad92baa6ea6cf8320f20859a3629c5a1474635a12d8bd342b580c40fac"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "387226f54797793f6c9ae3c7a82555cf2b140391327978af66cb46830b61d025"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-04/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "15a35704b151e5679945e8fe6fe41e8c9c3585b03a751b3d4c7ce6aca4b68c42"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/active_wall_indices.npy",
+      "bytes": 116184,
+      "sha256": "9bb67905b5b86e269c513e5b12c3af7f01f8917cc1201d91553171278085f957"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/fixed_dofs.npy",
+      "bytes": 222072,
+      "sha256": "153149f30a70a5e06064311e18d58b9fd257b3910ef84fcef0f0fd6592ab5d23"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "9e645a15488f1413b90bd77c70c823e77159b87dede38e86a124a6fc28f952c0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "3acbb7c84b43004b171c2d868412c38ba008aa6dcdc76aa3a6ebbab863c8d1e1"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-05/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "49e3a027c137453ba58cd82d5b6a4bcbbb18f637238335b43258107147b767e2"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/active_wall_indices.npy",
+      "bytes": 94584,
+      "sha256": "8adaec1e1e903a27e7c2a1706b599225c9aa72c1ec9cd19085381ad21a68a249"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/fixed_dofs.npy",
+      "bytes": 200472,
+      "sha256": "a42b5a2befbff36244e2bc5331b92dc4bfd34712298ac25e9b070e1d7f7c8008"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "cd002249459cfbae5a53fd50535ad1a046809f17a5c452275c2c5fd478004779"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "71d4bad35887989a6252b025e420cf122554414f4af791831d47de0e1e470aa5"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-06/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "b1447a9c94953f7eb0c3c0f7b3629dbc36ee7396dfd99a76e7552e899cfee686"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/active_wall_indices.npy",
+      "bytes": 77288,
+      "sha256": "5b3edc0ed55d79191afd58be6ebfc8c0d6129f15d5a6d22b8944f17bce654159"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/fixed_dofs.npy",
+      "bytes": 183176,
+      "sha256": "b72ea88c171514e06781bfe990f5aa688719e5c905ae23a3e587d64daff8b284"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "5cde79ba3514a5f74d765c8eefa43427bbe7ba2c3a8c44d9de561d1dd6c7fd9c"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "b541a755cec68373f09e17634dda3e5bb8b8e7442c239b183fef268ec985971d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-07/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "c85169da44fd8db6cf0c095eba8769e987daf517ed18a85b44496037272014cc"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/active_wall_indices.npy",
+      "bytes": 71824,
+      "sha256": "dc8c3e70337a18b3302b151a54af71c58484519fb2d10bfb032d861219213cc2"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/fixed_dofs.npy",
+      "bytes": 177712,
+      "sha256": "ce34148c81ac38a4f50db336ea3fda56d5ed51dc2212a3cca87e192d8b397d91"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "eeb489133626544adcf01152a258576512d48db26ce7a1c9cbaa874d1b0aa029"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "7e58727337c0d74f071225a4cd6aec0d8c74b8096e4fe89d4d65583fbc204f3b"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-08/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "0bea140ed4721c384c892bee448310f3f81dbce941d4b3a703ffc40858333157"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/active_wall_indices.npy",
+      "bytes": 66632,
+      "sha256": "07050512c34812cb123c8ea200597fd8cf718e9e7d113a9fbcb3c0568211fe0a"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/fixed_dofs.npy",
+      "bytes": 172520,
+      "sha256": "9f55985ac5f52f6e2c1e3247eddf2bc04443a6fad2335c1eb51980a5ee3bf048"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "0315c84063cfabbd57114b1a90d51cad434c855f027224dc320f57aed5a0e1a4"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "a6efe933fb050e67bf2891db23adcd6897f61a4dfb2b568ac4fb296f65b86132"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-09/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "ef10fb32f1d8f68ca53581e3b5e6a13d7607196eb757590a5af691d9752af13d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/active_wall_indices.npy",
+      "bytes": 65176,
+      "sha256": "af0e604bc7082d0e94eda9174eb4496024a729141292f769703fdec73e959802"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/fixed_dofs.npy",
+      "bytes": 171064,
+      "sha256": "f30fd57790425d33fc3abe7e2673ffe6a2eb3fe637806964c1f93be96d92dbbe"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "51964dbad807eed260da60fcb0ee060837914953bef7a3e91fff08dc5e5b849d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "df0cf1795a308cf7b78e92284055ac498f7a7cd87698c44a233b0ea16c7bbf25"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-10/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "5979521ae528cc446dded97d61813693ac24e6a5ef43f6969dd5b88ccc56021e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/active_wall_indices.npy",
+      "bytes": 63376,
+      "sha256": "7ec2e5d60f55f68a5ccb47ba64aed0d448f01b558fc46088685a8b7e3103c239"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/fixed_dofs.npy",
+      "bytes": 169264,
+      "sha256": "839225570bb39678c275137a69f696de30a2e33f2f138512c43f142aefe52402"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "d970db1727337be68abf86493fd5025b0f70131f089e674fc6355aa2cb6ee897"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "8a81e503917ff8dee76c3e81280a8cee7bdcf3c0802adad3e5692a4ce3df8b9c"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-11/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "2b1c008927e4bda996006ea88d70e97987601d40209d06a52c2447a56b26599c"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/active_wall_indices.npy",
+      "bytes": 63408,
+      "sha256": "c2c8a86eb94a9c2bf28ba9ebacb5b456451c70dc5a24953996fc9a2558f18d4d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/fixed_dofs.npy",
+      "bytes": 169296,
+      "sha256": "f26fffdca6901e8ddf4a2b0cc6735571afbe7bd28c4ef535090274b4c2a9c946"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "7e8b399edd46e8da3b277290e4b22abe06b53d8198411436fbe47570351e13fc"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "4357f579418be0a42ae35f19ca796ed95b6a78b4995a8d38c1a5cd8889b2e6a3"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-12/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "9f1dd2d1822d2b9f1796e3e91537e757ffe4fb968e2de1404d3623b7836ead01"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/active_wall_indices.npy",
+      "bytes": 62144,
+      "sha256": "c0a7b54bfb6818741b41b1823119bf53badb65297e98ad4fc6a7b0e48e836c26"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/fixed_dofs.npy",
+      "bytes": 168032,
+      "sha256": "44c3aac58c0b20a7be8e09718da403eeb3ec1257064ff706c6ad3a915f8be22a"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "6f61277392cd5e64b86e828ff957e2a46465298a1ec5a8e1544df2481cbfc334"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "3e827fff51b54de3b73d1f7e3ff7cca047bb3a17ff8b4b2e0c4b8f13de3f3e87"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-13/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "093e6fa437e93319489853f52ae8128493306d328dd05d8570d19ac50951c9d0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/active_wall_indices.npy",
+      "bytes": 60056,
+      "sha256": "5c6d3a047e4e22b4227e55ebc7502f8f25a6ab4c8a5b19e9cd680f735bb4ee60"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/fixed_dofs.npy",
+      "bytes": 165944,
+      "sha256": "af0c1e0faa3c7906f2d6658abbc8618b44a2f453a25d1f5f220c645269aff432"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "462e643ba608bc82f4b2f8a17a04be5c33879e1712becc956985ec65109e93ea"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "aaa8e108cc6e464743b08c7b568bc0932cf96f8a3eaee581c0888c1dc5454152"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-14/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "8feb16451edf6d9a6e8cc5ede7e97b1f0291b7c3d05dec5aac60e55700acaac8"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/active_wall_indices.npy",
+      "bytes": 59856,
+      "sha256": "96247d2c7f3e18ba8d77f73a09802c549e3e57351110ce256e5bc53665d0c4ae"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/fixed_dofs.npy",
+      "bytes": 165744,
+      "sha256": "b6d9b91316e7647baa6112804a23577eba605b4f86de9c704d12145b48dfea9d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "1862ea4f61e1e40527cc5737622b46ecc14f36f94ab96a86dcc6843dd62908c1"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "89a541fdcf8a5a96ea63c724e5f228040109db2bec6c7ae3537b628fe5f26696"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-15/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "80c28cfbf1daec1f5a06aa2185083df987490773506bd2891c295b0aed86cd1e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/active_wall_indices.npy",
+      "bytes": 54768,
+      "sha256": "74f825c561736e6ec41c722b36c1202822c0043f6955c258c03dc4f4efef4520"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/fixed_dofs.npy",
+      "bytes": 160656,
+      "sha256": "314f55c0cc29a9f07a8873e9903a68e56ad07322ab20ae28146170826ad97dcf"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "6b291af45a3af83a93033bdef0b17083e8c64772c3d70b37308257f73b84ad9d"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "16eda98df8dab5dece145127bb63ac832a137f8eac076e9fb4e98aee27c4ef0f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-16/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "e02e7b39826c00ca3221b9da4f12343abaea2440028b9b63f9a4bb995b74d8bb"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/active_wall_indices.npy",
+      "bytes": 53256,
+      "sha256": "dd51693bd8b9620e28a32c562285d4088c456bcf59cdc6eb691ee10a24e54182"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/fixed_dofs.npy",
+      "bytes": 159144,
+      "sha256": "55aef0d5ef8c79bcf7dd3c033eaf9a08d9c829801577e51b5a03c33fdefd1a1e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "f6c1b0d6a18a5955ad0d15d75cc26b71d4f81be7dd97b5de5dc91276c42c0497"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "0f2c37d97b3f7be44585c95d35058b8dbf195675aa73adc6f9e5d5d5637d29d4"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-17/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "e0e0260e2ca05324c48c5b61e5c301dc4c1731fa55a1491beca005f42d0b12b6"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/active_wall_indices.npy",
+      "bytes": 59032,
+      "sha256": "fa00c8c7112d0a946a564db3d670ba149faa3721ffd9fda5bc18ce9d52bdd4e0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/fixed_dofs.npy",
+      "bytes": 164920,
+      "sha256": "678d2a2cf6379ae1dc7d3452c58bde59364eb297a04ff05cdc016767b7c92acf"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "6e0fa9911339c41b38ab10e14c0d3bd44555db056a5647a60de266d054fcad3b"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "3a8e3d30b333494fd038c4413999f0164464797a8ea02109a0455fb19585f2a0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-18/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "98db09b46e7297337a48db4383ba94cbe89411e7ecc1c07f5cce1bce88092234"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/active_wall_indices.npy",
+      "bytes": 55400,
+      "sha256": "708e9c31424db896c07384ef9b0bf5f2aabe9b0a02ea2c47fe485213b1b8b109"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/fixed_dofs.npy",
+      "bytes": 161288,
+      "sha256": "76f92c6d481fb35bfad4da06276fc56241fe8e6fcc9e2faba5bec7bccb3c3dad"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "b2cdb956f47936159b3a5466b02f1c7e264adea1c24ebfbb4514bf8952d04cb3"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "ae179ac11ec6e56b49a81ccb3aea0244ff86661e642765b83384fcba3a8f173c"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-19/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "360732b26fabd9cf6f8f9d01022007a60584109b2df1bf8d128a16dc696e8b48"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/active_wall_indices.npy",
+      "bytes": 58064,
+      "sha256": "e7a1164e1543d4548062744d2c1416a5c6c14fcb1b22c8630e53e7654b179cee"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/fixed_dofs.npy",
+      "bytes": 163952,
+      "sha256": "b10356fadd73f6873c517286f92f4f7e8bd80de33860ce401161ad4ba17c3538"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "bdd4abedf97de0211efa9f8d687146f0e008a138b6fa130d5726588f958fe086"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "dc157d2a4234025d5f7e50c2cf233498577fcaa3bc3d784959d123c2c1cfc140"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-20/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "1f277d4488bcb3f33ae34defe973b6f6eec620730cdad8f607261d37f96004a1"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/active_wall_indices.npy",
+      "bytes": 57512,
+      "sha256": "5960ef9ab41026473556110888e78d873650baa2fbae5959f1886f04a977a267"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/fixed_dofs.npy",
+      "bytes": 163400,
+      "sha256": "07d704565dd6712e3155c504f379b9a16c6bb216f046e3808bf2cf224ac2a011"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "e1f71638dd5febd80e2b93e97a77168f20b79d3f4aac0e20b62071b25cb27d95"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "e40dfd75644cd8b870607ee55252e0866b04b559e24617f53f9e811e93b9608a"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-21/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "c59da32e8a6c2a3d6fefe180472d176a26ca3c78573cbf13023150515f9979c6"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/active_wall_indices.npy",
+      "bytes": 55656,
+      "sha256": "7dea23e29e27508af654e9a419b80b307c483a9747e6809be47eaa8bd7a5bb09"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/fixed_dofs.npy",
+      "bytes": 161544,
+      "sha256": "225a3cd020e7b3f52eea2190e8f344e4ec1b62bc3265b0f5b3bebf2d0ca2f957"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "46d3b9f228a4b2291a35f1bb04ee007024b5b86407287b083d8caf788568d97f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "f03e2d6f4306559d025dba044d104f44a88f44b95d2f0b9925420ef298e2d6e2"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-22/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "2d70fcb39c027a6af12e3d9411896f31c4882c4c9475632a3b8294697d5214c7"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/active_wall_indices.npy",
+      "bytes": 53560,
+      "sha256": "8e45b2e45ed91fa10c517dae43a88c1a87d4405e359ef9879f38b85944b6f776"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/fixed_dofs.npy",
+      "bytes": 159448,
+      "sha256": "7d5d1d67a50082230f6960dabb9d18fa2bcc3c52425be1eea54ef402276432d0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "74fe36d255a9d65d072949292a2a764acd710dffade3eed25750653875cf37b8"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "2c5e93ed02adac9cf50eee3b74b6006e1e19a071d79ff16c2780d49e6096b49e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-23/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "638f367e1959cfe4051f2618e2314d063f9fa2fc3a8dd917d4e895d466394d86"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/active_wall_indices.npy",
+      "bytes": 52320,
+      "sha256": "5776a07733035f0c04425d7a5c8a1846fcafbcbf9e1efa120319c6b5e1e30490"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/fixed_dofs.npy",
+      "bytes": 158208,
+      "sha256": "05eccec8226c78e9bb8f62824a80258f21510635ec5abb276ca7e3c6c479f5ef"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "d2d64e9a6397a7a2809d98b89cfbd0b6c6956f1a98a8494c6467eac1de8a030f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "541ac6afb2dc206c5840312bd5b842d8c19f018b56414bdd02b374b6a30461b9"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-24/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "8df402ca02b534677a0b2dbfe06e03f7d2829ed588b1f96521791c9442c03b16"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/active_wall_indices.npy",
+      "bytes": 51824,
+      "sha256": "9a444b1c490794213e600fe1f82d01be4050e3383ea175e9952a3105149487e0"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/fixed_dofs.npy",
+      "bytes": 157712,
+      "sha256": "0d6c27bce983c7d79627a037753df7aa145a0cd6cdcbdeb029ad83b3b098f533"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "7785f55ec3cb6601cb0c79d643662925e98395c33f4a517d8dc46502b3f75f4e"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "68f0251506b3021520053b6c3f729bf1c3f708cb420697b26a3f02f1d3950655"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-25/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "05f98a710f69c4cc46a5885df0f5d496bdb098da2c8d265f2c3d0b1a9ceea0aa"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/active_wall_indices.npy",
+      "bytes": 51568,
+      "sha256": "f71f6da8b994648c09a4bddf242b49b53c525298fcbd1019ec88891013771194"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/fixed_dofs.npy",
+      "bytes": 157456,
+      "sha256": "88fd75c59fa1e241837f28960a71affd5d5a7d93c02a0cf813f105ac656bdc0a"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "cb10eb2b7aa77cd956143ae6b7faee2314f1137b2491364b184e4ed15028fa50"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "6c672b39e15fc3c92a2d775cb34f27e020d2643677cac69fb96911309771039f"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-26/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "960fdeb1968a849060984330f71d4b96468c8988538561acf6b2ffa139047de9"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/active_wall_indices.npy",
+      "bytes": 51536,
+      "sha256": "13ff0adcb2f66512adc9ff543d61d78ea3f1a8bf51cc9a49b4a791dcd13633d3"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/fixed_dofs.npy",
+      "bytes": 157424,
+      "sha256": "54cc8c30e98279866ce4734c66d841a06c6b0f2a43333c16cc3675a0f25a59bf"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "6753b59b957c4ed726060f88cb386c4b14f1b99f6fad69252140322088deb2ec"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "659f95360a470a695b809eccc2d800046799ed30bf073ad665d77a0f04ffb473"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/contact-27/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "9bc9b65ff998b0d3ddc145c8901d907ccf6196ede70d4c97faa143cef2c07b5c"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/active_wall_indices.npy",
+      "bytes": 51536,
+      "sha256": "13ff0adcb2f66512adc9ff543d61d78ea3f1a8bf51cc9a49b4a791dcd13633d3"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/fixed_dofs.npy",
+      "bytes": 157424,
+      "sha256": "54cc8c30e98279866ce4734c66d841a06c6b0f2a43333c16cc3675a0f25a59bf"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "b2c3c018e3d2fc53b12e5c88103145faf51e23f76124042b57eaf7b705bf1fa7"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "15579f756fedf479dacfa3c22dbcba881377c48b34afe2f7dfb3af3896d3c049"
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "60e8a41f80281b4d245337563bab8dcf6596a464508a5cccdf4e8026d63a455b"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/active_wall_indices.npy",
+      "bytes": 364968,
+      "sha256": "502033b5f46d90365ad65ffd297f3214766545b3cd3719403bb52a208d7e0673"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/fixed_dofs.npy",
+      "bytes": 414696,
+      "sha256": "651e17f856efabf9eb34545c73f6339198231fbae95e86b0bad069d7134a4c59"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/master_force.npy",
+      "bytes": 36219344,
+      "sha256": "fed71998e31c0f43ccc7896666a56ea8aaf94e6d72187f288312b659b6e35075"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/master_reaction.npy",
+      "bytes": 36219344,
+      "sha256": "8f3abc6d5a0fbe5cb64978b1f6c1d737b5fbc1763446ae6da531d76c52ffda47"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/master_u.npy",
+      "bytes": 36219344,
+      "sha256": "d35028ae6cc989cb1307cc9bd2f2be677e6ffb2d170f4f5150209d11d529fa99"
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/contact-00/wall_gaps.npy",
+      "bytes": 795896,
+      "sha256": "d52dcf52dc2ac849afd5883012b5c6b5ca16de7163b8ed98ced54d13748d362e"
+    }
+  ],
+  "stress_fields": [
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "3c5f7ab305b56ad4e8b2f3618c63e503c653b2985899ee9f1a3dcc74e137161d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "68b5ec863fdba84e85fd6f7987389d41f0f57b13d5e0396dbf0732d95a7cbca9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "86401be81874263e33c0e94c8d60a8841943ed67cc35e6f52d4ea556270af3b9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "99ed5a2337c41226e976de5c8a8790a3bd6e32e50245ad0b2a430e7277c164a6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "d8422100c7765be9abf1c3b6a706d6abd8e8c5f58f382c0503a97814c4324d32",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "c32078a8ed2a271ba8ca23dee2820608c34117290df1ef4742e544bdeed5f748",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "76c249b7b05ab78c6345a0c9afced51a05db39c64e42ef1fe6b2afd8e880e281",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "8b49e70d52b00d29304d8f9601a4cad78f41fde1b3f37378a1eaf79cdbf08d61",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "9290de87ef6ff04333d4cad19234f4c26829d10c2ac763f852a01fe2fec620d4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "dfdbfe08731bf370383f0f8979c03a59dd46115a15ecd6fec5321d2860033153",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "20883c4d2bbf91190fba24662c392b6619e9eace11a74d74886135b780717697",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "a193a86690a7f5f0ccffda331adf2b27453b42ecc4449d0fdfe8e1f007b3d86a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "a906ceb7dd5d4531367bf95712548a775fe77a2c738688a02a39bce33ae79e42",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "d82cab4021a912edf809b6be64c1ed4c0f106121aa084719667bd475a97425bb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "c777c1f316161c9c50d18ccb7c3573871acf5c27cd20c9c9183288628f0f6de0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "9b75f92e87ccd191b18c03e4dc80fa48367c1af97ba115f70a585aaa9d613110",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "d7e89f095c485e4203df2d60a2ad835b6e7ee754c1c6d5feb3ee396b705f8806",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "2c18d0dd10ce3a39537690aa86a6548d4171136c93046690bf659f17e4dc705b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "c2e549a2e267fdab8534c01701dd75adca4e6059e1e689bfcceee86720dc269d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "a858c13a0139500f32940afdd2f57b32a90591db7e7388ca35fca8b2991e9476",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "cbc055d487024a81c1b7b8022eabac20d9470685a9405ee90a88d4e57623403c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "eab58172d16ce544fdbe54108e17f25c12f78eb71afa72f40864c844249d3492",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "84cffdf4e1b9903af8d90f586582c32e06725c4f6de9053ef60da49f40993578",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "b0eccc8b3a5f4af64fa8ed587b8b45353b0986eae4618ab2cf88281311b0648e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "7d8a0c75a3d169bae7938be7d9b060872c6d67c6939ee1c24c274b10d286349e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "9f95e9fd1df15a5dcdabd971c6944a90b8c6c71c906e46bcab07af6b47b3126e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "862ebcba759c0b2f80e705b116d11eb1f3037cd6c6212e570bb42187dd93cef1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "e51618c9134b6927e2477dc218731bdaa3a360304a5509aed01dd3c41af6b8ea",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "765464fe997e952f1b3eafb7346aea6621a9236c6582d5347cd49d57fb10259a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "2f0e72f08e360cf98f5339bb51e02b224a3f499afb134cbf58925017245a6a80",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "97c5fdd7e668fccc47a6e3e44d0ce8e159859adb5f25a543dcebc52f73310850",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "8946d4f95096ebda66c667ba214f0ce3f5410c0899086b8cb9f3121a60506cf3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "675cbfabbcd56812283d6ca4f9b8452ceb236edba08e3e6eed9bb6a977a4b909",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "1cf2decc8e7677caa4055ae50605f12843cf6ac01c0b1bc2eb55036bc76bf337",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "64e2260eb16aefb7223033d7f162d8afc810f3696c6f1ea201ef4f68b3cb3a02",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "37e07b25219ebc3d4c699378dd4ca3e07fb9d20b74a362576358fd50b41cf2cf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "e4ef88647515c706dc05194ebd170cd9317b4893c17bc35fcd34aef83eda1db2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "c8293dd49abdeab9f9d06552e4d8b18e508708e9a33d985afc745e3ca024c5b8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "813022284a42ac7d88bd1ad2e695bc3f491fdb5da443bd43ca3d100a248734d3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "6046166abca8214c5a2be0ffe183712ac9c5f58097a5aeb3fb637083e8645eab",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "f57a57cebc3c661004ff1c5c88b722e4e75dea1fc9859991d310ee17a4906a0d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "0b08743acb7288b3f707c24763df749934c7aded3486cc78746dc07d56904c22",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "8401f1f5616440b4d34c9e06fecd0a563bdbbbaaa77c9f0fe452c4906c3f0e5c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "74ac6437820905ca2ae5be2463b6403126aefec088651659cd664f206607dc59",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "e103891d4504f5e338db4f981b7261d2353e41fe822191b9917150bb23315814",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "f42aa8d6b6fd2a0b9f337893a0e0c245e0e076e359be99cfd4e17dd0afb811fc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "b3eacc81290cb3fffaa39770c7fbd7e7fff60c7b46dc13a70daef7afa4ba8bed",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "9dd43038faf8a221df89828564181540ddee4886e64e61821aa926d0f58dd4ee",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "36a10fabf89ed5ff3b8eec7148a3dcdee8398549290b28a6f59c2c3f6348eefe",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "29bb10dc753479d49ae936487116e69fb755986bb0ec7786b47de9f3daf56c80",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "767a0e664c5064e9e993bc523efb42b23b58d535558cb854fc7b51ab3aedb59b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "d5a044b8fca8590ccdb4952a3fa226db69f436fabde37ab2a9d547db45ce19a7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "c41200f9b9c1638ca6ae892e295e2fb9a00f7b5bc72aeed151609b885e278f78",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "c9f5e7ac5ab7f4b1ba6fb29378d60e207e83b33997558d5ff7fe2922d5b46abb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "399100be8b61a0ad94812832f54bd157957ec8e516b1b379deaf71998e8932d4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "3c2f53df85468682264b09db7234fc5edfb742c18947ddda51482efd400a1c2b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "22ebf01d330c447999a6abe3821043bf3411f41218e199353c4b525428652a3e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "c9794bbf01a53e0634f10f11ae86a1bf75d19f0fee086de14c06c2418b78a4ab",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "f493c45e8145e810fa7cbfd743b7700f5ead3a8c444558290f914891fcb5b835",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "a3a3ac6d8c574bf72ca75a098f2035a66b0c2e6682ee9acf5300cdb212a3f73d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "b893d08123a10f05e780750bfd96d567317eed2907abc35a3a93beb638809378",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "20ff18f9b2f6788058277f9dd5f6dc252676d764e92fb57bf5cfd40dbc45c0a1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "19f50720cbd1edf4e22bc2904300dafc844f181862d30a5441d3fa64246b6c79",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "39c68ab552ec67b5e2ae9ebf21ef93b1031cc96002853cc471900275a408e5bb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "52f1d6ea75061cff7b21d7d333b70a6fd48cd33c50708a9037e8e75868c26016",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "f3683e7428f4821be80c47645df6f1cfb0963272074ccae3f384133abedca01b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "aa2ae70d6c7d0a82f30ceb3c594837b35785d6f0e7739ad77625605221bde8af",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "ca8b90b5cf34517e964d665b607c0a6cc1e60bd729d37c9731a0c81d618465cc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "c483974f624d8943031c20f641583012901486972a1823e99ea6b59fe277ddd6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "36a0283c8abdd955f13f037a9ccdf54e43558d691468d2e0f427355e628b58a8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "58bf3501de142131f559fc75c4be2435f7c8490e7c4d7e40444643273af82436",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "c2f5eff199fb7136b199edef37b8afbdd993e7db2d87367b3bc07744941cf6f7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "6f56a28a96a55b6727e0e4c18daf0b196f1195602a55678aecd238efe3b30da4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "b47b533b2306573e51a31b3083272736ad9ce804898ab6b9255db115f2be8ecd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "497d8bbaf579ee56e8f0620368438dbb04ede0436ae793f11599528c0fafd4d9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "637bb7a3780bfa247a34f7450566bafaa58f75f72c8146d349df5d803f6ac53b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "f9223f7f156fe6ec3ca73b81d77eb2268fe64f4aa663184c1ff40d2ad7ac8503",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "b3c729780d522bec71ac968472d8767b55202d3da6ebc906c7491ea37c900308",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "59a0af67aac4e4547162c4ab2b12b64a76158765b5a246c021d7ced3d00f89e2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "e75c4491cc54456b2c138b27df5328c4e174fa7b44a0aef995309e36496c0ddd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "c733ecf175a007d0c0e09c67dae50a9c23d13093032cb0486e7d9f6fb69d28b3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "53407e8f69781f8a24174c2615eae0a4a3663fad5512827a99c60f00bcaf7fff",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "72e8d4de271094dca004218bbaacc6f94b551bd8ee86a05f60a38eb15fb92c1d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "3c17437166b041697ee9e4ab53b226b98c8772b1e771c60f2d2ceee436a77782",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "39df95e983a7ef93029243b11b406279756995823baf7ebd37a9f28c2f92a6ec",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "215125804ed2de9bbc26c1e0de0e52811e463cf06db342ad1ec17480bdbe87b4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "0cb1386399cf3f95d8ffbd04a0343357c34ab47e893f38dedfcfbfb8250f378b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "51d96dd9e37d26add4fd28aa92ded2b4d57ee4ee2195d541a5e9b6e1585c000c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "e355a27053f99ba596b9b61c87e08e4fdfc24e362e8a729e6394bd3700668a3b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "c50e83744f36c78db9a8960940b97e2de6cf27fbcdec521a2e30c136206b1882",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "f6a6188df98ba3bd30c401988c5dd6696211a0eb44e742139d96ae9bef24b264",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "9f6d306010ae11e458c0271241744053b48fe9cd65ee686369df8f06d6402c4d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "ff3b52c16b51f609deb55c1477ea3ad2faa6cd8129f8acb2301b8749386d8142",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "7cd45db4248e81fc25d8a0ff304aff468cdaf8326baae032343b999ad3186870",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "9806ab4e4a5f44cef929c792062dccda43abd1b8ea3f8b6648a6432f067512fc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "42f593670c671028998af878e2aaa17b2ec95bb43b78da54b57c0c32bc314db5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "8098b92245906c0f984fb5c878284e3d45756aac98d51c02108a46920817fece",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "1434a80896cb76427a8899eb3b455e57ff46c7996e6994d4cb269c8e0e6f2201",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "5827fc19c1cc697e6a7a6e2f4996da5f42a8ebc9d758ee5affba1ba3efe0eff3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "aba363152da8314d19e04067ad46868dec06b4d86cd6a485788bbd82ff69ef59",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "bbd3684612782489cf3a5375640afe632b24f30652c76adfc8cb563f99f3bfb3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "5d203173d1ebc71a729c762ca7c60a9abe2ec5b9255d74d063e5538484805645",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "51982a1c1f11789d87a2080b7b3f1869b2653ee865c407a52a6aaef3feb33daa",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "e0c7ff1addc54a10abd2f6d005d4548a2a5452ba1717a594d56ec57cdf84293a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "825311fa182cb77ad9921e793709acee66081b236dcd8ec8e286e2de0a5a1b14",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "b07b069da26a526453d91f5f65019cc3b55872ec4d79cb2f4cec61a78870af39",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "840307817e9442fbd85412af5a3d7709f01c4b0248adfac7b199e29683240e28",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "31cc5d0a72f9751624742e72d2a7be8845bd96d61ee84dd1b94541c8310c3d01",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "06a9d8dc5a33ea137d3b906197dacf4022aa302e41b7879de846abbb6dd89941",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "21642eab3a60acd456606ffa96b4724bb8d6448cb4ddd03ab733275690522677",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "dd9e070c0efa6aa44d652b85ac647ee12bb1d723c15d34a08f0f961d6e745fd9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "577d3bd4d1a392636fe287169564f3fa04142eb25d7558ee3a0f5f9a9db6a3db",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "5fa344445de3dea116141e909f95842a9195afe369bdcb35b91349ee344b60fd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "608a1584206e868c54cafb5cee011db116c0d8f2d2962fda800b089c1f3f3106",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "5931790dda8a6815aad037bd9e980ba42b1d530d24332b65dc26770a80a88379",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "3544eafd2e1333e6911ccebf6d7fd1cb41125c4c2248d76b318cafccc79f7f2f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "fc6e1fe0db79cb9fa29b85fa83a2f8508e1a78e199baffee923a3f0053becdac",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "bee8954a396f2bbf19f4997d3f151a86d13fccdeab71e10e23f1313467ed55f7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "e3f865b83795da77684fe6d3839f3cd5a4cff45f431be77a13fd6feb6af19fc6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "7648e57391560893bf1a2e8b98c16cf376521e4ccbad629c7ffe06b441963b78",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "0625e291a06726ae7299cc483c413ea1883801eeb2328a0533cca2f2c051c802",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "d9ba4f1fa48934786bafe7727593684897d76d46a7b7bc8b8c72b607c747c480",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "31be6e48763a64b212a80a36f09ce0c197ff64ac110c60ba9c0c02ce3cffd424",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "545a5eeebb9d26451891a4cc8d90d9a43918b555f8f4ca2780e6452b4bdd3b07",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "c1b9296bd3a30ada90fea72cbe93c9d93de30a4a5de1f013bc2ecadbb8d77eb6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r8-v1/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "13485ff76fea985d72b571de70a29d92ea9003b76113b5c5a022144ea36610b2",
+      "gauss_samples": 4600
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "b2649eff488091f37ff0198555fff10048dcf60a7827955915199226a568a824",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "1d3f1abf8337f782d1ab1dcca35f73bff9747d0858afc9600da15fdc33f7545c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "cb836eb5f1c6ed7c8db7e6aea9f86ee750fd35f2ab278a9ad6732b51b6b55fdf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "3b8f28adabb43c2d56b7761f6500e9b999d79042a99dd0cc64968065a08de2ae",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "03642ae521711c1b0ed8eaec4064fda646721006f19a655ea474077a9a6b1a10",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "d26d9edec9b7855bef0b14e85d73dfda9a6480a69f214e9f2566eaee5e3a307a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "59dc1bfa0d501f4e87c0853180d73b827606963eb1adb19fbdd23f65cdffc37d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "6dd54c5544c21ed7080295277a3f28b73f1d8d86c89c796618a397b123d87742",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "8f4eb8333f1b6c045b8eb2194cc679026f52272be03514111da57e30da9f86a1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "5d586a800f5a8f4493d227eaa9d8be76dce754035cc48bf45155ac55e2593ff7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "90f08f92335fca58c94147c4ed833ea9ab3607477010f36cebf18defc6cf6ecd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "20544fb22d7764768ca6941475f28784f5283207a972004874dc8c2e06b7c973",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "708261af481d3c9208f0178b21b9413ac8725ca4233c079e212a0e089d3ba7b6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "c579cb29666df6c77e2986db1e964136d6caf1b95e86b02f39ba9819d7ea970b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "5dabf2466a8222d53f9ab6ce4979d6c8b133494108df143d12b6b2f4cc8b01a6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "c437efdf8327f457f1c70ed28d081d6d8cfe71056d1651132e3b3ac054c4415e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "c12979323f2e0f2d44de114e352ec74e6954dc1b88db003c47062202325420d3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "cf0a9219ef78841ef09a39a161cfc690fe018780dc1caf1c57642624d23bff24",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "6f6015b250a48889cf8a0246ccd5c8f17364cb0ca08cbe0b43b51e7bb7b3ad1c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "dc1ddb3f2bd7aaa7e0e1f467bd123a8c64f206aad35809693f39293f465a2ece",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "5b05c0ce568fd954b286bd5460d6e8a0872d7c854cedaf2fd6fe1b7b3136c1f7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "e8c05437a67c0ceef0bf9d4cb89e318503554ea63c4baf263c613b14bf53adad",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "9bbb08a34ba2763ede1130862eea2491ea0eafddf4d46cca1b55b4fd3d4d93b2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "cb07f3797cbd72afeb5f1d7e17baf5fba513a93d2e6be91ddac874e67c29d165",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "d6bee4b3b4e8e11598713e972cc9630998fd663593255f4d59d297ccce6dc0a8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "f74ce66b9961e24bdc13668d9021d63571f1af8557aed4418d751270727eed44",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "9dcdbdbf5ab538da524c4ead1d0034c27889315dd406fe2b06f40462c591058a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "29e275f440c6d89ea92bc16014d2aa1847882f98329f9d526df5d20c19b8e9d6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "54740efd8b1ccc67154513c84152e7460094c19c991f0bfff72ea92287b1078c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "cb876f1a29dbe2bc8223c19188eb733b634fe22b1e5026c9568b8269f333c8c1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "b7b210d760a4d8fd2b6eb3b49bf54c0cea6b4ac80becbf37761638d53b51b558",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "f75f36dc128618175dd0dc86c8d76f16bdc616c880d45a751ccfca38251c6058",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "ce78ad624f3352a6db2b69198a795455fa98a9fb9d7478a88a807c9a25ab507d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "34ca8ddbae5b5e77a4fede77b7589294a22c7966e1ea6bf75ab870365145d4d9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "924932a62702e2c90f5ef7e52bbf9c9180e43c8aa8c4d7c13b7bed19928b83c1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "6b4da72a0ae3c2a2214b40f4b78f30a0a3bdf7ab185eceee7af52e8fc4b373a9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "4562a6cb964156bee93e7e88693c9225fa76038dad1839e8508c203748304857",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "19d5f3f6a78422424e2aedf88e1268cbf210938d070cec4d5d525d0233fc3c2a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "35d7ec16b174dc0bab4195534bf048e2eb1cba339f580afb8d46aedecc3c6aba",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "d105c3a8c64871cde86b91484551ded0f38456f6fb54650249bf30a1f054a479",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "86151a1bb7ba7fef271f7a3670e22ae77f0dbd1873ef6b3de8d50170af399668",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "370788798f9f38410fde5431d10a29df4e5ad72a6599ba94804eb414be0a159d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "34f9b10663469aada2896c78a27f1ed7257adb89f8acf7e1703a1dc405f57fb2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "99ed5b7a19c9cc638a363cf2074cf9f3364f6f7292c4ecc13a325f1c56284392",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "628253c790b15c85e895f61164be530a195db64965bcff4c6c1726774d4daf93",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "b32b0b127b6ddbf392ee7b7dca843aae92a7e4b0bd30bf92df84d8c77f4f8eed",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "6ae352d2d9a7800cda9b91482923df6adc5e3aa92b7a2b5a3aaf81540b3b9d76",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "99af995a54b03ebafe362110599d087672c5ba80dbb34ea646ac2b0b8597cbdd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "4d36a1e9170cc62630087460a1d5f0db2ef9d29caef5bad7e2d8c41798d4f5d3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "5d07c9fcb044f3a55f4066d2045cd8ce4d283c0ffaedfdecebc200238d3f357b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "ed4912a35bb73882c3cb241fdcab2177b45801ea2537587d94d79a007a9924b5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "f67aa7a0a5c4e7914723e356b4eb20174840fad81125043bbe88a302df637fcb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "3cb22090bc8afdf54bd761389496a9025181ffb2cd56a7e9f18f772ab513d03b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "647be7eefe87a19b816c9cbfafbac938a89440389cf7d290c80b22b10952721b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "06dc3f62856ba8aec7882801d770e8c6940f4ef36e8d5882caafe8119b5825cd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "76d197ac2e3682ab581b42c46c56dd51e6598fa31e926c1d7a6df8a20e6174eb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "1b238cae0ed76e48dd41fc16644549ae0ab90cb979f357db62772b45645ffc3d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "0a7b949a86961f3def2f73542a1852b5b1962a3bbb0cb4a55b3a3f546831f86b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "5614d2703e3b33549ba2d956066002acfdd592cc9da3b8b5cebb1bfbfcb0e19c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "bfc97b3acaeea38d5a2bc7571d0de0f9e1c5eb560240b286b3b104d269f982c1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "ef289f6a27fdfa276c7b14141dff2b019d12467cc67c3b17210453acad8de65b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "5050965b3963d6b570bcc693f52b47b1d33f502f69dfcd46baf4cb9c0f32204c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "aa680cb762eb6f8227a50888fe4105c70ac4056bb8002497c61db6816dc110b3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "24be94d4a4ae591bc42f3ae37cb60a1456affa2bfacce43befaa5722c1a432e1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "a007dcb7a2363bf40499fe435c1c1b98d0d21be0c9b1f0d047ed845821d45d5e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "f0cfed29b24594b58b8cc6988c8d2373b8c2379d17f8e8626c72626b227dc09c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "384ada593a006225b7c0ecdd4979a10d172aa87ecbf26900d56045cafee26537",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "5a43849f3589cf51d7df8aa37b2c3eab9600a5b6095eff4b6528d8690f61ce34",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "73d8760148a6a331b47e212d93f4c4edb5927b5ebaa408b8bd81819f580e2640",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "79180b476a44d8a6ac6eb4197a013eb03ed1db3c2e5a036ed8b498b2aec0e4b1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "6c5f60431965bd58274246a2adb57ab860b6e4ffecb67426d3aaf30294a47a23",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "7aa5a23d29d45061906a379cd4606acf97bb30da77a82ae12d23ab8ab375b2a7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "0cee049c465bbc0b0434bd883031e3f8972493f9840c73f0a3c378b9653d8d4f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "e19542da4d928fe564955bd6554a65389627e0bc2aea8ff20574250d28166207",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "8c0d82ba8e991b127034f987ccff6466e61afe98749d6cb846143c561d5ec008",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "627acf32bf2fb35d62bd90037f001d218fd7ca732787c37f2f3561b31cfc1d75",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "5c7bb0612f4b517c34dd4e23c40ad5ba9b3610bb5fc0f23f68cef077da7c25eb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "b9ba7c931a3d4f76c7640745c01fb3da248799724a21d695355fba141b697843",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "00a1684e5fdbf048954597a394087376ea07b8ef1f9ca080e70a1825e62828e3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "a7c0f566ecb3af34af3188d5402760ea7fb7a4a2ee25932f7dc92f5b64495dc3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "f6f4d1ceec88873d208c7dc3eb9ec41ea67f26696dbd9665e57c3b4c94ac3cc2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "c143b5784ca5b19c0d65bbf72951a29294b498a82d5f090318601fd3462957ca",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "5a5fc21942bfb123e4de4bd6d56c32bec75d7ad6b18dff6f0c185098c629e1f3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "0fd355d32af327586fc89b2538e7378e7abcec9b1d8d92a1d77ed7df4e4ff64c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "a62a4c9fb2766c6a2456b30dac0433a0a51df86bf20330e4d72a519e413e8e8c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "fb3586f39280667abc975a24d604f4e0900468dcf140377d0c64eca179f8f73d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "0d50625818574a13b0cdca7a3adc48c4641b5843c72953f478155538c1c7ba27",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "c9b41f01783f7f3246cf8a1be2c9e32891eaf0d08c47b54a19249a3969689d6e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "0987d208854186bab3b0a79779595f46655cd177a9822a93071370d871095061",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "b242c3bef6fd296ff630c021b3a4bd4ba5ac70c7a3b481e43f35f813e870f4cf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "d2f7f803a41394b6dfa4952644ed0ce1d9b59757af73c34600f0fb2187c5b1bc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "5efcf639245ab0f40a202b027eb11abc15ca3e732e867b1c9e597a1c6120d1d2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "11f77e98af0ff908be8bfdd055e605431498639981f30b1a9a8d11297a07139e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "7f9e1121da7444a7149e27d6112be65b880c1300b740c4c2c9d706f33ecb8014",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "da4596281d21e067db32629b1649f89325a2c3325374412b6514a9f2cb3790f3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "eef73391b5ff67bdb13ecd107d296ff09b0f599ca10c4d72a22f603e182109be",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "c4a22e2e024c4a0889f18db8a3fcbc8d79107dbc2b60e00e586936bc98d31545",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "ab1b6156dbcae0d963836898b197a4836dbc8252b3effecad8e04cd3786c28e4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "349b8a14679f14137eb05b64e2578352083b8dc4036d8d4e9cc41e14f2cb01ee",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "d294304104e70f4616f8df9cb7da8739149fa83f7c57f17eb1478c1b92e7f4a1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "032354305058bb5b6d9c612671e4c02087b52a575c44a14c73fe1dbf38d2ee1f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "98b69b76f679cd761e409606475cd02827fe5b51cf90a7b8cdef799eeab7c8d9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "1ce0e1a28977a8b2db9a231f27880c13fe28a9781c4da689b76da07f0c464781",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "db432e6d0bd9ef4cdaf62e00dec7e71b14efaabfc39896c527dd4866ccc738d7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "d727e9d2e283a2516cb63c3993f35864c0abfd377148f65c7a376cf6b9f63786",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "2dbaa4553669a6f2e41f761c5a3ff2c2b31de15788a6260c7136d8ff2b2ada8f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "6a06f7733e5080e5eee3dcdfd1133b6eebde2fabffe135f10e20eecc1d61ace2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "b8778c58adacccf7e356680a812ea18ceebb7d117fa0ba055f18931b68b5b152",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "95c790f6aa1e85d6a4c3ffb8038f29f85b0c4c4d4be112a17aa897d3b9efeedf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "58233220cbbd600cba6675f68e87b18f8cf11cba3490c5839668d166960cf26b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "b945ec2c884f6515979c5bddf7482438f0083be1cab6faf7fa6000206623bc0a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "1e6e50c063284524697c8b4cfc6655a27045f2ae25705209cc0a75d907ed3f61",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "dd734413b0aa25625e8976525ec19c11ac4fb9843e1bdd96c960ade13db1e20c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "990596f80c29b5369e0c2d18908d1eb99f57323d878253a7c76f5ad929096d75",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "97ef68023e760ac9abf51b9781ca5e9e87e5d1d2c07d8dfdd451c6c630161beb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "930b4e30351f0de58aa43fc433e1b4262c3be43ccdc1508a71bc7c558f891f86",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "5fe8d13c76654487a45f48adc0d61548d6715ce5b104252663f40df8f464f715",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "b13330c47b1018162d9ca2484645d2a101b5f9808e366e0647772bb7a7ccdefb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "581da8df21c5cb513800715e63f17005c475c1440731dee20dd80da85b781701",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "115dfc6bade352ab13206388c3c3bb2f90dc3cbce4554bc73ca65a332678653c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "245db611af11b1410f4e7aea9a056bfefaa08300aa7bd20bd230ada93de49c2c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "32b1da7a406191523bc8321e50f90a4af36f7fbb451b15ba4328a279257403f1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "ac35102fc1cff6b0831d57b8c7ba3b2beaed30e4a2db7d7525edaf7a606c4e8b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "b637b53fbf06483de29daf9984ebf53bb17c09f63c8b2706cefa7709f439cdd2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "e688f8b23c91dec96244525b85192fc2368507886c46c293947ea83f72531def",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-coarse-r4-v3/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "004ec541cee269c8f3913a3af482e2c1459a4510c9192f5a5dfe59d86d958fdd",
+      "gauss_samples": 4600
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "edc12bc9d43eae69cfdc261fab7dff2ce9b8acb2d5c4b0f6756495adeab74c5f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "0ae052c7932755a446171dfd0745a99c4a9872a16b6aaa6b125b47ff355e156f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "60cbc423d23125b13f1b672d9ac5ef269489201a7e7a35b35a2f9560386e84df",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "4ff58b434fac85c65d0663c737f53fca573fa9a5abd3e339cba86d1649d5c4c4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "af556dcb7656e31f018937412830e097f2a940f05c40a569a14f171b47f52fcc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "422d2db0717376dafa0dc95b6c3efd40e09ae183129c2f4df555ffb88eb19419",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "8035f5252b819cb890f8f289b5ad05d5aad9118ada32c878a6ebbf1e17a29b92",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "9af9ffbadc2e79581dde898886bf9f79f75dd98e97fa89fd199b354feda90347",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "bcaed8a685cfe2849f931cda284eb959b02775ed3409d6c9e922dff2e8c027ed",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "51091ad379fc53d2827eb980fe27d49051b35b42a98d171918db214334b806a0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "f829947c93daf01e9dd9f9c9b44588e160c1d19a538d784cbac2c7a03d7ac417",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "10a6c6455ee078c8ac61cc7069c86d369cb8801240cc830c7e6ae2af48553683",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "0b861160c3c13ed174a9e6ef8f2c448c3c860a3ac199ad4c86b8498ceb3e6e26",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "fcdaae6e0f2badc9068b0d45117b6c5146ae8673ddc1b0188fa9e8c67612c85b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "3c0bf5036fdc2c100e43e6bb9293a04c116ef677d07b23793e9f2298f076e183",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "820ef5b035ef57fcf3a4ce56c484b5824b591c82b5b899fc559b28d2e6130527",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "20f579009ea5b7bf5ea6fa08df26e138c2e9a855a147464badfa32c61901ca3b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "41c084b7686137087f75c282a4f9f1514aec400c3bb55c457ef3659dbba10e29",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "bbd0cc449384b850e4de304d28e536093fcfb0eccbf4cb70e5a61556bb521899",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "8ce453ace03bf7ef79f471cd44cea91c3f6122ea2290d8a6a42fa9f27ac1d398",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "a70ce2bad5340d370758f618b85787cc66e148c28a67abce62062c48affdb5c2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "50bd8af82d45677c8867d7b8ea1db099ac147eb2fbe5c1c0bd7098bd1009fa5f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "9392193379296783c23e92e453462231c1e56ee276ba8fdbda6783671ac7d081",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "d4fbd4a55b8d0f6df65df44efba3d1510e0896f081484b9ecda7eabb4b7cde5a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "73ee22840cc3b4fe75dab04fa3de844afbdb74477285fac01e751ba278b3e97c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "5988d19f5671aa1637973b0faf48c4b24b15484cc2b88d0ecc584d5571c3c3ac",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "013f221eb5f01ce617f6819a5c6da3ab7e7f88ab5c185b69f62a8f4aa7ad8e3c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "b61331c0a1efaf40f9d953551afa4a1eaa249ca592179cfd945b3b7a66713289",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "edafeb5c2635e9832e2e4604fea68202fb72cda8efaf6fe1af7b44c8ff111dfc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "d4d1d942aa40a92fce3aef0413da2436a15b9b800be4ac70312168bee90cd145",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "f8bcb9c2fde77492211e33bee8ebf33295bbf3dbd71ac8b643579f1925754c90",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "201d2ce1e2942ca73b078e7f7cb03e4a8c9f6d2028c52e02cf22e06be45b2e6b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "69e4a7289f4f84071bd2913c1cba68915092d801a4064eb9b292c43e6783dc7d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "c85ec515eb759b1ce53dffcbff30e1634c2594a25d4e97f15d39774a09cc8dbf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "c4cd3954bda3316322e37fb875aec2988a0a7223c084c0e67f42286e1c8d1263",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "ad498c3d0812464ab44f3ac388f8b463cb22c76536076c8ab4799aa9538b7a0c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "55ab3a261f06730ded7fccf54182d5a3254b70393412cc9b3238d5a5e5f78096",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "1c57f0d681bb152ba05ab9ca385771795f9de823a8533d0e8c1ad081bd973729",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "cd9772531a810b62922f9e333f24b0770903e4bca0ae1400245f08caa86bc000",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "da71822840c764fd2f78eee96be3ffe774a2f86cde2ea5a2df939d38e80625d1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "3d0108293e86ca4568061dd85757939b12935f6384997d3a4f701175803a3910",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "699b846e209efe8177f4740fe9062c7354fdad2541699ddc6e9172241d648192",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "91c5c0947ebc3a41531704623967726ca386d263418b29807ae008c08e978914",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "61ea7e1f8f367289a8f1b013e120886cc8f7b235da7732eaf6bd8a770cf0754e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "807c6713ec9a5ff818af920b9cdc131bfb96de343745f5d3b3c02ac41168010d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "e08411a7651f8e949974128a3c32ab699f77824eff99544369b1fc945e1ffffc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "ed582e9fb24153f3d329ceab32d1584b9ddc1df3d40a1e37ac67bd0ce60a87cb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "87de6415cce2d454f04fdd18c69d0197cbb1fcba64835ee861ee56ed84f1f6eb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "cd630f34bb3806b141711fe30bacbbd53dfeb5a61824fafb96afc859ffdc063a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "221a67ded0e8fb9bd2f20fc8d874e565e13532723a10efc60432362826a75f20",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "0511a5569c9cabd5faab7c2fb3e2a09c6a822b525d6d382d0a7a224ec816a3cf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "9c9849df6d451a546831de2ece2fb5d56ff4ddec556f9ba354f28810265293c0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "5776b96e6f87d28accbbcdc992287dfac9a8183766edd052df9fe6ff383df0f5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "87eaee4f38f6a26ebe6d6f93ae6673e909365ac48f44bcfbd18d723676101d60",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "0d311f8459c4650a0746cf95f87fd5c849fbb370c499c9f74fe1fb57e1eb5ed4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "d523cb183eefb71e8a666eb110cb2c63ef23c3b00f2e31f5b549bcf9ca5ed864",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "b354b2282da407979b5ebacd299dd3a326294799c6d68742f68b1f3ae10f1e12",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "40a7ba900d7be588ccfa9f8ee390475eb344303f8e3027b5a3657cef76f7d30c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "b9d472a47f212d234cfa10b2b3258622865db9418d8b211d4082585339a83835",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "92431dec12e1aee5892db59b346157f679c2a17079bea045f76a18538ff27f8d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "4b76ef6b708f2b5eb8fbfb447435fa4a1ef2e3400bc91ce8abcacd352f8de1ae",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "427171dd4f9f2c5db3f49e0ff37ec29a401c1399e7e711d220b89e3ad0593a14",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "f57d21af7cb5ff05e5692802e75f4ec270b817dc572becca2e0cafe62fac9b4c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "8e9df97600aa49fe2700a7a5063836ef158b480684692922f360c9fc1f44752d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "78608650600b553c8cbee944acacd35440730c5bc226c4696154e4133c318eb6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "a24eb3e46b64442fa80ee3d96fe58e38a1ca1f9b1d740d9fed523943cd3eac3f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "663ae63ff015ebd5a6b5f00f9461e49658ad4ff21b6975657a6d526b49cbb1c2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "c1660fea9a1cbc4ce79840c6cedc354a6f0066e59fc487e9b188381ab05a84e2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "aba41ccc4da92433452cefb86b5159f64d7a0ed175b1512dff23697a8b9a8d84",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "137cc1bc88947919858fd717aaec673066deef205b9e31c3b138a58959de6f21",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "7107c6bc04609d5609d27b8856193d9dbaf49dff3ba3f34be2cbf9fc9db4b07f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "4255942ff28a6261f698d14bfd0701626ebbc46311176480ae184f8b8288b756",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "aafd040b73beb84c1d6c002fbee452ff8c953dd482b9a484d75deb98e088e167",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "c7207ec6dcf4b5dc3ad748ce89efec01e2179dd547dfa970afb3b8ec9001913f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "f882af84c97109f99d2bea9a1a16a321bc47770d04ecec7a89dbec95f9787472",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "d57b09a6f80e98727099bce6640e0862f63c86e07258ccc3fc8dea9360d17601",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "634ca7e9602f452715ba6e22a6742bf9d650a71d212ea0609e3e620da4ecb317",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "83e821b7cec22fdb79603d00d69557ef65f4b9f03809a27f84cbf86995068f9a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "78625c55242449d80875325a9c9c106410f1c0b70a2454127b65a1dcfe6c12da",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "d652dba3d6562d17e97ee645d699cbae238c906ca8a49640c3b954259960bf46",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "062b752cb50e8b0f446827a0965c75aecbdc94b35a90cc0ff97e579a6e1db464",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "6cf0160e5da498e82ad12c44100ef83a8e0ec5b65c4d7173bdecf725d8398680",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "da3770f70ce5b791b556138e0f86848cfaf44c32a03c474c154f38c0594136ff",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "08d170208030f1c93c3557b7914b9bb9c04e7231918ee2e73aec25a84ab583f1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "d78d2629d37244ab98ad72bbc4ac0f9327e51c84d3ffb2f0ec139564ca3095dc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "c0c4aed330ae3e7066738e4fd8221162ebc484945bc6dddec3d46a11f05a8567",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "55f5f743d6cc1600f103ee548b7cf8c0a63f621e458f9c7e57aeb49e3402876b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "cb3f7728aea26eefc5294773b627c98313539710afef88edb491b93183e62b49",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "c94b191faa08d15e8480134245bdf6d3fc18c7c11cf1c974a7aca0df0777c9d1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "fc17fc97a8bedd1a661aff4c3f1cf8871fe2a8ff589b094304a81760cfc6e913",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "10305ccd3748ba9cd24eb7ba3fdc4dabe9a911e22445a4e5008a278b0b22d307",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "8b92ec0dbd7757df1a2f8861c4e5c2d3c01578ba04333b37236d1d3c9f13e345",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "fb6897a0d597178cbb712635184e6c5f0a5a078e06fabcb42740d7419ef7914d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "e390c4fc048bf6829b7e8d93d2647ff60dd454080e79ccf35927afe938e06740",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "376e1c37734d918d3148bd8fe6fe99dec867a1177b67513cc686305085adb424",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "e8cc598b0d589bb9f1cac8cfa410c94d39ef4a15337de56d6ce5ffd640b7cae8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "c06b87babcb5a852a0272c28e56b9bf618f2d0928a43a782de5d0bc299bba82c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "fc1b036babd50a456857e097d984b360b2924463ecc7dc4c29d7b22c59dd06a3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "24333697c1b8aa4011dfb393f41aad3985bed114b5b6e234e17b9df14df760c3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "9902edb5baf9b5711942fa4dc7297ce3f7aae8dfbcf61d6b032bf3aa2c768450",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "6c93f9dbb597d81aa1e5205daab2e1ed520cac7cb58b604b1c5413097e97d5bd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "21f896b51b58703167616233800ea77d93ba34cca87380bb073ced02a8343bc6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "0b59a465fde70f96e59dc668b71c9c4c9a770cf24311d254f2d88647db9c0cb8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "f1ad6f83b8d669f552eea84985c6eb6d1d65307e6c1928b64595b8e1ac184147",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "7f3878d44ed0675c4ae750aa64564db50125bb0e664241fd3dfbd9459bb8dbcc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "c89fd3e3e6fbec13afde4d7838d163898b05bddd23b7b15da805adf05ca11f97",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "fbe0bb735c545d311c9b91d195d042a5e63569a4afae177cb71e14eba5e12014",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "3d6971eeafae95713b79295f724d3e4c007f2dffe170abce6ab9715bd4fa12f3",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "ce7e5041cbce7ae68688e6ffa7837afeaacd7066907a4e648a3064acb442191a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "e5cbde5ff93747f38a55993a1cf6997d2f530e6e365c7239484f94bdd5c0fd98",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "ddc3158bb1bd3c9e8900a379b10ce8ec4dbadac99b72af46e7426e8699474e2a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "c5fcd92605df162f632b1c00c17095e9858e0f4085433bd2f135b3eba8cba5af",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "08525bb07b2e553166c46711e8e2c72e8b32a67546fb24361e0703f17b12209e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "fe9140351de521b924cb581329de112d53b6d78f670824908b3a387cd5b5e098",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "388071c9be9c3541cee0324bd46e79a7d240371243969a51ebe10920b618404b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "febcf9b639fba924f616de240c371992ffae93ff039ea2a83698fc98292b7358",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "2977b9ffe0cb8480effcb18522e1d6faa583a60191baf1bd76fd5ca74d515440",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "0c3374624d6b54a17bb54e175e495c2477c36e383947517ad3a5dc0e9ad44cfd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "f92b606d0aa5e0c433e0710c1abd3491dd6a1fddba4c707805fece4ecc965e64",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "96039765b9cf81b0b8d5e62ab9d9acdc703d328e992c41dfbcf318aa4e5ad3fe",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "c3cfcf8771cd36774544706dfb6900e224010d284dfe9537ef5f2bbbf29eeacc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "89b975f996066d25deb3ea621383fec830649be91a983cd5b23cb4c3c7db723c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "3c4c5f5252f0238f943e84c825a36a9cce3a99af9317d5b2cd3ea52c887ea9be",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "6c975bd8feb52432d2d8456446f74840cb6bc6b86e6c5f7aa1cf494aba4d359b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "980f208e92a21891a4a7912d7acf1a762730c62007de236aeced90fffeb4b5ef",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-screen-v1/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "9a4bf5b59ede10d4eabd1f05980e93324c1f24db73fe6e545c2460b015e2189b",
+      "gauss_samples": 4600
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "95a224977531e8c67e0d3052c40b57cf6745889053c76d6794aa5194d0c488a0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "b39d72e433d40a33576c9d6f1b7ab2475f11ab0fc9d4e64c79a0d8f4a2f04589",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "052abd63d9ce423b44c59a46ac26b71d828c6b9637ff84c87a77f061187193bb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "a4e0fd612a18648288411c6ecd134e20e36e085a46d48430427f4edff56866f6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "57b5810b74edc44fd426994c2bdddd3bd9f5d989fd4a7760d9c69549cc24429d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "c14ffbb9baf71aea280dd251a33a5f38935426bf37cf66fe7ee9b196c6735d2e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "c40b35deab121f1ef8b470f3b31acee8a942aa0748d96f896510ada45267bf4a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "40d427dce3dad1f0a18ca030c515d68f40868b79417976db1eb40616f8a07ef6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "1dca8953800ba0527266e6f13fceb61414fac851fa309b685f5414e35c02cfe9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "14e366787a5c3a8acb3d2f969aa20a78b7b5eded114b2de0b2ca34ca2302952a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "bbdb027c04f8894381e14785e9fd8ce9fb71074254eeefbaa6a6a625c6090b49",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "3216d0061d2916ae6fcf289bf9f4528412354e30305a7e47871d7040e0f2510a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "9749392413369e6bbd3f0ae2baa170466e71997565bfbaba9aaf39ec2adb9b1c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "59271300addf6f424831ed999073e4bcdbfe60f9f9f37f548bd9bf506a23e8ce",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "7ce86d9cc33f9fe203251cc4332298b79efeda0e044f60ff0aafde5f56c101cc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "10d85bd7491ba8d9db4524e8182a77c5f737512926c527dfa138380295c54ec2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "328ff2a97642aafd8fa076129946c17ca2e8695b2a7a4d06db1a64e10f3d690f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "a31e98a1d74ae1347e8fd9c7bbf491c529f99dac63814a251a184f180355a149",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "915cebb1730e6c5cc1d5cc4c47381d1c515d5b8f0e37b4bdef84dd38f2bc86ef",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "a77b73cdc1e4508d750d75a5e4452651c5284623af5a3c93587aad6475aa009b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "4cae422dc2af69d17357dcd0fd9bc0a2f508555e4f27048ced8836cb3f6e2573",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "410f2f2a97691d0db0523fcb6de936da91c540a97ff138ea85ba481db9987e44",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "df697dd0b79f5f8530be7561a3eb6171c6437e8e326fa93b283e4d0a4fae8651",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "5643302758632a0c3fca76d601e4aff7efe81596db668f42d78d7fcd67469347",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "e37b3e2263d0204aebe74f5647acc4b8e0148f2819a513b5aec09a5e1ea82471",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "3560aa697269e01ffbab878be4df53d0438576918f552fdf072aec8b1f4b730d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "cc961e79f3d76c6d489ef6dc7b70d343e90833d227d3660a9bc8504e64829684",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "eb12d2d78a8adb957cd7e8a0ac5b05406c9fac81691dda58263b30162c1e3017",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "02370bfead1c2edda9f57ea8c49662adfdb7dce4bc4f136d695a22144afe2164",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "c4abda56c1d9702dc562233ffef6225eeb5e597b6cd18f6653ad7976dfd2e6cf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "2d41d182b25544280a2090a6c8af8b4a0f56a22fb498cd1d63dc320cdd1897fd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "a28bdfcf0323f028759e3728237e56fac569ebdbe5ae42f69dd9953028a52bf9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "39688222a8f19bb6ce22d1f31127d83e6149f9625c53b944ad42da30c59c5a7f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "75e08863b6f235f2032992a6ab0256ce16b3a94318c3dc7945cdbd19ad881536",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "7bb3914737f8de3c5101a5179b2c67463c096f095a5d58befe684f805f0f10da",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "da207bbf803ed3f057db790f97227f0cc63b63e2db5bfe7f1e48fe632943653b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "b5a9d53d8125526d01bf666a7dcffb0b0174c4c099d70f870b7d61d8502fb20a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "c873773a28c47609f192b0ad7ecb7be5c93de8179b1159d9ba6a58e749195f39",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "67cc5fdcccc16eecf1cef120279cb6201b72bd4b3afc7d6778f761002363101e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "1ba75550602c6d563a05b06259dbd43c960ffc44e74c9eeada9af0143ec208e6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "df359844422c7247f192e694ae5ab3459d8f6e21a62b131b860a5454dd693691",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "d0d88ba36d1816b4004c458b7ac46d036aa21f3805ef8becd7cddae65345cdcf",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "4286c5f1aff52d43260693a1d61d0a62f7912c1bf7785bb7c01ab6e378728935",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "68a22d875985956ea33f6919753ebc0d91319d8c9fd9acbf2e556da606148064",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "0acc032cbde97fdefd9a2cd6c45349880b4f1bcb45b75dcc686b19d9acdfcecb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "e8b02889f2ab2a751b8f33a47d22f44a9fc6695c11b1297ab8677a645f006344",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "dcc685a33d92cba7408f894425fa7a3632f8dd38546ed990e10f77fe84eef1a4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "bb07aeed8054380c1126e3029fa5baf7da1d36e5e52a70737e44a3d45c437859",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "a374ea8eac01d1d6d4f3f1d125e3a0211469361bc95ca0ad96f32f3da08e999f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "805e7555fb8a622c56124dea535ed40a7357a2d3c14394e8c35f7f3ddfee08e0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "c5926b5feebddabbb69f119fc92f160a07bb6e342c09496604cf537460cd4e3a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "e283ae476c96c7b93b7f0d4f175ed295c0339e10810c791323a7de379e7f0502",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "6de3077716cc3e8a48d23e9a024f3f901adfa20b171ff8dfaf86347b6f82f389",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "63b37f5527b92d51b2693d7d3d34a11749d59aca55097bd2258edf52649e1c4f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "37ac9f57051ef05884dd1c159e76f4f7b8bf3601b634b28fd83dcc65ffd12e61",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "557ddeef171a5bbaf85f0b99323ce04b61346ab49fab1f048205f9dcbda41b1a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "e2604bcaffb75592a059e2aa86e54f236a104c8087e67b57c68b50bd32dce34f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "74967cbe85a280f2318a9cd211c20581ac84755b8faf161b211a660adea3cfe8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "610134a928e8c134fda1e67dc4d20fb6d21c5aec853c1855a8cf37901a9d260a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "aa48fe1d57e3b7793507a692af7693fa08d8804ab2c295d22dce4cc931544b19",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "4e859a37d5ef9e109b83155f06c66b61e15a1b5d1207cbef6631d9941e7a4dba",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "6dbd55ad322dd21517300ade67535e108831d4d638814b80bb4678af48d6abc4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "33d15ec5104a392ef7fc35c4946458453ed859e7256c8d739cb03f3104c1b1c5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "7c0ad8d784dd326cb53ec7c58becac972cd78deead5e1a9311240d467e26c437",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "0c6493fb1deb10e4cf1f1bc9813fd6ec9b8aa0db5d8fb19a96bcc83e394d31de",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "48f4ec0a093aea665841529851aed69b8fa958a0d1eeca2cc1c7f71df6c5bc11",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "c9937e2e155f565f2d4f21c07ef52e71d78044ff38b27f3095d26c67b164fa60",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "7532b9828d858f1be60990d1613e3e62ebb727076dacca1498ca57beecc7292a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "983615370cef63f34726af951ccb47d8a031e8a9ccc9aef1a78ea92720d65795",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "9ef1746baf79806b366a89c6ed649a3d640984a14775a2d1cb89840fd34a489a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "401c8f44ad852bea0490f55751a15f2e3db95526870e57ba4a6c24ed48f7c4a5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "049927caff9e27d15da9add2d2b383b87cbe0f902c134447067d9ab8375a3dd9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "80de392fb36a0428f8704b59db7907434d10bbf932a1ea64446a015eba798273",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "6bd7a4dfd7fdc997fbb264c94f111f577a183adcac8242c6ab63482069d01563",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "eeaf26710b92d997fd6507454e836dcc980ab8fb4387e6ae6bdd8e3b1899b8c0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "82333655840445a8067b668c5961fe351e3a1ad2e3685edad051f1c6b282ec45",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "977556a7f51a23e5db8b7caac316948ae1b64b0aa6965b7f700fd13075023339",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "6bd599b08c7cfc82eb2883cf203a8a4d7a6bd4a6473c917d1a36cc786d1bc963",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "1b7b26449ef5835aa5bf04cae7f9038f34f03fcf79a92daf41d41ecd07b74e18",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "f4f44f55cb293d1abef135edd81171508d88f6395a1c9f8bab57d92afbe97dd6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "12d3e02eaf20dbaac07a2a426143dc436cab85769e811971aa4855af3eaa4705",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "5f33e60a8821c5b9a28edcf9d205d92bda14e497fabd053ededc3728a3e396a6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "5ed4fb729b7427bfc05133e0e7303e8022c6907303c56d2efb3f9987a79c618f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "ea256bb247a2f0b0e92a28d0770257d585757c3e4209c76d4003374cdf4eaec8",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "aef9f22dafcaa6341992129b75e205dc9c8ee0074b55e967c5fb319db25517cd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "4b40a62b2fdbc4e214ec0c678c8b1151e15ad0ded3379499958767107a9c406f",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "c639bb5b051278bf243afab47becd6034d86b493a0a20f364d8b6817628014ad",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "3d3a97663feccf995c73077f200286821fc69d7c514d4cb62a365767d4208b63",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "d3e397122e91630ecce3eca3600caa3ab6aadeaeec4ea595c6831585997e11d5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "b7421b99be3e18a803d207a63457749a86106eb71e604cf80975b39db4a1f97b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "72f26c0ea59eb2508c56ff8bebc903a122ea2c7d0268bbf631fe832d0abfb8be",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "7a1f80d52bede17b09b331b96398b68a74649eaff96f01dd8904ce86a7c3e8f9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "983dc0fa04f30555904c263df235a9dabb393e54e071c62c627d74ba9e3e5cca",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "4dffc1fa052d381cf52a8a1dcc07d67d050db41855da229915d85715bbe868ed",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "11a38554ecee402a9c8c933e15285c107a23517541a47e9e2eb933a85fb2ab43",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "26d61e75fcc81796563b1f7f822299bdd53c476740b249d7561a92dc20ad700c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "06f70014bac36b752b3274cb554dc72d0a1bc6a9868083267b6ffa387e1878a5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "0a30c152c829136e6b1136ea0e97aa42231e7a4dc237c4a9b8649712990b82ee",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "9d0e83afeaeb05bd429f5c9d3cc2ca69420a206a32c1bc2b8481ff9d896cfba4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "fb6be30590ab310dd77db8ef32d27f39a1555b0805c31eeb9f148796d48b2d70",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "8b9ba2f16be91e401dd1616b311102b637a8b174c5f4fdda4ab6b64519cb059e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "165c31175d37a5336b12b8d4d00ec37220ea148d3e276808483a756df02ff381",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "a6a1d50a788fe887f7e51969b583d254c71950435bdfb8589414ef90ff4140da",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "5410a873fcb1ac48ad75e9a8d150ed3967f28d059bcd89de5d890f9e90966ac0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "04816e3087c7f82034a3d0c6e9d27eb4b006178e7e94c25137a52a904dcc37fd",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "be348a37890c946d4240883e541aaf5e96a51d070f3be193c498fa795f143f78",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "57c0c7f256147030775b79dda20899e20285d1d456918abe164a32e952ac3c87",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "51d8f161d75131f0e5eb6ab16d219514dd965ca2fc7fa9e4249636cfd929df3e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "9a4b71335aaee62498bae1465babc6a85beea78b6d673dffd4dec6ab0f598d28",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "2da94ca4cf91c923026d372b07ae72637d88c39ed89cb4c509292002fc7bf7d5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "5234ebd579529d9d4dd684e5739be4efe87ab750f1c79150f1ad451db7be862b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "4a1b6d5eb91b8ca7f0cf04c2060289d46e16e21b38ef5549946aebad953669e4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "d63253926d197ea8aae5d2e41522431d0bb234917325387b7b9c41313c2f2bf1",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "d122923b09ad248cc2ba6c6c674f8745f95b954e7b757800ab26dc766ed1ebed",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "354d79532ac27c9335cfe45a685cc18a4f139bbb0e4cf56d57158b551fa79406",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "71e5b23e6750eff241a0d053ecc8552fe329b6939848b6336da2336e7fec0c7c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "76800b1ff97f9f11ccaf0b1e42654d38104a39e68bea6d329d3dc3214a965826",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "344c7cc81121885d5613e8934f4493324310646aa44d49f69bbc9e883f04481c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "78e7b3b6ac8296418a4af6ecde40828319b49945424ee4f6c8b5ce7403037152",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "ae79931426410f7495f3d17933b2c7ce836e87e6aa43b411a4adfb26141630a9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "4c5398b50a1916f7736fbd3d7fdc9282ede65616b86f5d8569fb2b7b2ce55310",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "d329e14eeeaf90e81b8ea51290a5dda2234b07ddff25e2e2fbfee171b9a711c2",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "44218038c45fe216ccf56851037de7e5217670fbc8c9ff88b67e63d1e5777858",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "e1139bb4439288523621359c613e9874d24d2d2b36165a35d4c555ff5c332072",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "74929c957624442793546d8ba4001f25e49e8c1e3d8aa5c05536f2c18577eed0",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-contact-tight-v1/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "4b1d88f79a5eba3c6f549a0d3d909f14499963e6d4496ed3b7eaa4485c69a786",
+      "gauss_samples": 4600
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "adf934685eb1b26dc998a33b61ac7984024840f3e373ab46057c5337ac2b3335",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "c4d0eb8be632a3651181c0608133d097222e41d652e7a2157306dd73fd2a11a4",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "29c69d01c65cc466b32c82d0a9208f6fe51c36910fd651c19c9ad96aaa64c6fb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "7374560b231acbdce73bffed8e02d57fc6433fbb42fd81cca4dfa6d8d1985146",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "59fe581da10edcda87a36965ad88d64abe150f1ee0c56483611a7cb603e7802b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "948d49621e59023b87ee6596f9726331a5d4fc623ea1191cfef5c65b59954275",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "af7dcfaf5a53fc74bc29290741226ddb1e22223351ef569ce57e6d6e14fd5908",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "d2d1bc0df27b6ff0b488104ad1bc5c201cb28d8eaeb367ce423b5fe0194bbe00",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "2a83306e35b7bea3fef3699caeb62b89eb5f481c84b940fb791c1e1f104b0d1c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "cca7aea5d5631b63828c56043c5e11ce90d3550d9380b97d40d904313a57f446",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "973344bd214493c9e5626da67dbff40cd38931b9e2a0bd9df68b92391e114fa7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "adf73a862c67860094671b157135f33e9e8b0a88cf1eeb0dd08a41915b01cdef",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "7445d94d8d0a105d6d6a720e347de8c5b48f3e4818135c0b323a0dd8277c30fc",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "32b98d8d13d1dc466a5c241b3caafae07daf73073a704255aebe1b4b52e807b6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "4504693d34b9257a32e0fd60019636fbd4f275242b8d40515bc6d822e04221c5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "0fcf2cd11040074a11812669bc1c76d1b57b41d7b7003e1f6e0288b28b61d0e9",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "651018db99c26fcdee8d8b421d80575263014180b870847a40a9242f6f395c8b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "052d82ed5f5174323dde519a40ba1965c75ff9b75631331864f3a7e2e1e641ee",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "43c0f1458c83312994487fe56cef7fd010e8e7cb1ebadee9b098da10662d287c",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "c53cb5d197d1b9d19cbeb6e91a9a5583673c988bea9100d5c9d2bd8d2159afdb",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "fe99b5d1006270806335f191ffb0604492f7ee0f1cc9fc28a334eabb7f8c4ed5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "2cc1f77914d8fb4ff0ce030a80a837bb8f0d67f581230bda1659ef73f36c858e",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "b5babd4a4e1fcc525a80d31e42581ea99add25b95d874220b48413a33824418d",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "5f17d90b5f974d08e56ee201f35227a5da26ef5fe8236293b13ac7ed8e0817b7",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "2aba5cb8d51538687ae2dbac7082c9bd60879e0fee3a31c4ac5c6437dd4f8950",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "cce5231e3dee453643b15ae202d72a27f84cc4450ae8a1d48cfebf31a87cb34a",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "42fea2d58e0a474a61ec14e1cb43f1ce30488d6b7d044d7f0afb38e0fbc33411",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "ed136f7cbe43fe3861e25855a51abcbcf961ce22fb2d553c39fc5e12810b1b2b",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "b4becb8f9d0a6cf52d890711321ae91216c5c4daeaf7f547512f7c0e2c72a1d5",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "02acdf0774165e197385467417355fe9197e77db75ad8a98e07bb63dacd5f287",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "6d6324e03f1de4cf73ba08ce11353811b70e06f74cb1878579c64826510193c6",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "1c90f30e962531e1f50a03a3446ad535db93f29fe585d43f30259ead40378700",
+      "gauss_samples": 262144
+    },
+    {
+      "file": ".work/gpu-demo/g-h0p4-contact-screen-v1/stress-01048576.npy",
+      "bytes": 10830848,
+      "sha256": "203f34cf9b2d2737fdd1753c7968c522514c11bf8742e88ccf898d303f69154b",
+      "gauss_samples": 225640
+    }
+  ]
+}

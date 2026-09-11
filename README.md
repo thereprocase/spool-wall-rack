@@ -4,21 +4,23 @@
 
 **Restart checkpoint:** [complete handoff and current candidates](RESTART-2026-09-11.md).
 
-**Latest: [adaptive mesh implementation and full-G trial evidence](analysis/rev-g2/ADAPTIVE-MESH.md).**
-Tested coarse/fine constraints halve G's 0.2 mm element count while protecting
-interfaces and bonds. A separate boundary census reaches 0.025 mm XY with
-1.10% omitted nominal material. Both bounded full-G GPU trials failed linear
-convergence; no corrected movement or strength result is accepted. A fresh
-P1S/PETG slice and raw shape were also built, with priming plastic accounted
-separately. These are analysis/process checkpoints; G2 CAD remains unbuilt.
+**Latest: [completed G 3D contact screen and accuracy limits](analysis/rev-g2/G-RESULTS.md).**
+At 12 kg, the retained-material model gives **4.3355 mm maximum bracket movement**
+and **20.0254 MPa raw peak tensile stress**. Wall contact has settled. A tenfold
+tighter numerical check changes no nodal movement by more than 0.00000049 mm.
+The geometry still omits 8.02% of raw nominal plastic; this is an explicitly
+bounded numerical screen, not a qualified PETG/ASA bracket or load rating.
+All seven G2 architectures remain unbuilt.
+
+[Previous adaptive mesh and fresh P1S/PETG slicing checkpoint](analysis/rev-g2/ADAPTIVE-MESH.md).
 
 **September 11, 2026: correcting the structural material model before G2.**
 G's finalist is being rechecked against actual Orca paths with at least two
 walls, 0% base infill and the existing 100% helpers. The wall/skin validation
 matrix includes eight walls with two top/bottom layers and the reverse.
 Thick 0.4 mm bridge extrusion counts toward plastic use but receives no
-structural or bonded-connection credit. No corrected mechanical result or
-preferred G2 prototype is established yet.
+structural or bonded-connection credit. The new eroded-material contact screen is linked above; no corrected-material
+qualification or preferred G2 prototype is established yet.
 
 The reusable path-backed shape tool has passed independent occupancy and
 thickness checks across all five schedules: 50,000 occupancy samples, with

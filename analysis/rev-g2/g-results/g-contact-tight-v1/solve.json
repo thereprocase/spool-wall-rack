@@ -1,0 +1,1117 @@
+{
+  "status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "load_N": 117.72,
+  "leaf_cells": 4096575,
+  "independent_nodes": 4735742,
+  "planning_E_MPa": 1000.0,
+  "planning_nu": 0.35,
+  "raw_tensile_peak_MPa": 20.025374472458758,
+  "raw_von_mises_peak_MPa": 17.554157964105404,
+  "maximum_resultant_displacement_mm": 4.335476605226599,
+  "total_applied_force_N": [
+    -7.562414236494952e-13,
+    -117.72000000000205,
+    0.0
+  ],
+  "total_raw_residual_force_N": [
+    -1.994887308555972e-07,
+    117.71999973025115,
+    -8.669556723669449e-08
+  ],
+  "minimum_wall_gap_mm": 0.0,
+  "contact_history": [
+    {
+      "status": "PASS_LINEAR_SOLVE",
+      "iterations": 120,
+      "recursive_residual": 1.1779342161297227e-06,
+      "tolerance": 1.18325359334955e-06,
+      "requested_linear_rtol": 1e-06,
+      "true_residual_limit": 1.01e-06,
+      "true_residual_normalization_N": 1.1832535933495507,
+      "stopped_by_time_budget": false,
+      "true_relative_free_residual": 9.955046679788837e-07,
+      "elapsed_seconds": 7.713317282999924,
+      "contact_step": 0,
+      "active_wall_nodes": 6426,
+      "trace": [
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 0,
+          "residual": 1.1612616307322161e-05,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 20,
+          "residual": 6.997896254127699e-06,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 40,
+          "residual": 5.467202755432028e-06,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 60,
+          "residual": 4.747201389800217e-06,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 80,
+          "residual": 2.7340882185449167e-06,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 100,
+          "residual": 1.8453823302484142e-06,
+          "tolerance": 1.18325359334955e-06
+        },
+        {
+          "stage": "cg",
+          "contact_step": 0,
+          "iterations": 120,
+          "residual": 1.1779342161297227e-06,
+          "tolerance": 1.18325359334955e-06
+        }
+      ],
+      "coarse_correction": {
+        "coarse_nodes": 286878,
+        "coarse_cells": 190535,
+        "coarse_dofs": 860634,
+        "coarse_matrix_nnz": 53941758,
+        "ratio": 4,
+        "coarse_spacing_mm": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "represented_volume_mm3": 66126.00800000003,
+        "affected_constraint_leaves": 15352,
+        "symmetry_error_before_roundoff_symmetrization": 7.000164111458792e-17,
+        "identically_zero_projected_coarse_dofs": [
+          7366,
+          7367,
+          7369,
+          7370,
+          7441,
+          7442,
+          7444,
+          7445,
+          19870,
+          19871,
+          19873,
+          19874,
+          19945,
+          19946,
+          19948,
+          19949,
+          28954,
+          28955,
+          28957,
+          28958,
+          29035,
+          29036,
+          29038,
+          29039,
+          42388,
+          42389,
+          42391,
+          42392,
+          42469,
+          42470,
+          42472,
+          42473,
+          52096,
+          52097,
+          52099,
+          52100,
+          52183,
+          52184,
+          52186,
+          52187,
+          66460,
+          66461,
+          66463,
+          66464,
+          66547,
+          66548,
+          66550,
+          66551,
+          73165,
+          73166,
+          73168,
+          73169,
+          73252,
+          73253,
+          73255,
+          73256,
+          80887,
+          80888,
+          80890,
+          80891,
+          80974,
+          80975,
+          80977,
+          80978,
+          86416,
+          86417,
+          86419,
+          86420,
+          86503,
+          86504,
+          86506,
+          86507,
+          93400,
+          93401,
+          93403,
+          93404,
+          93487,
+          93488,
+          93490,
+          93491,
+          98719,
+          98720,
+          98722,
+          98723,
+          98806,
+          98807,
+          98809,
+          98810,
+          105334,
+          105335,
+          105337,
+          105338,
+          105421,
+          105422,
+          105424,
+          105425
+        ],
+        "build_seconds": 15.202630532001422,
+        "policy": "Exact Galerkin coarse correction over included fine components. Fine material, gaps, constraints and operator are unchanged; no void or bridge stiffness.",
+        "amg_setup_seconds": 4.3879047139998875,
+        "levels": [
+          {
+            "dofs": 860634,
+            "nnz": 54188586
+          },
+          {
+            "dofs": 77562,
+            "nnz": 11709036
+          },
+          {
+            "dofs": 2778,
+            "nnz": 461052
+          },
+          {
+            "dofs": 84,
+            "nnz": 3888
+          }
+        ],
+        "pyamg_version": "5.3.0",
+        "jacobi_spectral_upper_bounds": [
+          7.261624247271222,
+          5.672933192110266,
+          5.162908325248921
+        ],
+        "total_setup_seconds": 20.63974278599926
+      }
+    }
+  ],
+  "stress_fields": [
+    {
+      "file": "stress-00000000.npy",
+      "first_leaf": 0,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "95a224977531e8c67e0d3052c40b57cf6745889053c76d6794aa5194d0c488a0"
+    },
+    {
+      "file": "stress-00032768.npy",
+      "first_leaf": 32768,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b39d72e433d40a33576c9d6f1b7ab2475f11ab0fc9d4e64c79a0d8f4a2f04589"
+    },
+    {
+      "file": "stress-00065536.npy",
+      "first_leaf": 65536,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "052abd63d9ce423b44c59a46ac26b71d828c6b9637ff84c87a77f061187193bb"
+    },
+    {
+      "file": "stress-00098304.npy",
+      "first_leaf": 98304,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a4e0fd612a18648288411c6ecd134e20e36e085a46d48430427f4edff56866f6"
+    },
+    {
+      "file": "stress-00131072.npy",
+      "first_leaf": 131072,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "57b5810b74edc44fd426994c2bdddd3bd9f5d989fd4a7760d9c69549cc24429d"
+    },
+    {
+      "file": "stress-00163840.npy",
+      "first_leaf": 163840,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c14ffbb9baf71aea280dd251a33a5f38935426bf37cf66fe7ee9b196c6735d2e"
+    },
+    {
+      "file": "stress-00196608.npy",
+      "first_leaf": 196608,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c40b35deab121f1ef8b470f3b31acee8a942aa0748d96f896510ada45267bf4a"
+    },
+    {
+      "file": "stress-00229376.npy",
+      "first_leaf": 229376,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "40d427dce3dad1f0a18ca030c515d68f40868b79417976db1eb40616f8a07ef6"
+    },
+    {
+      "file": "stress-00262144.npy",
+      "first_leaf": 262144,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1dca8953800ba0527266e6f13fceb61414fac851fa309b685f5414e35c02cfe9"
+    },
+    {
+      "file": "stress-00294912.npy",
+      "first_leaf": 294912,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "14e366787a5c3a8acb3d2f969aa20a78b7b5eded114b2de0b2ca34ca2302952a"
+    },
+    {
+      "file": "stress-00327680.npy",
+      "first_leaf": 327680,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "bbdb027c04f8894381e14785e9fd8ce9fb71074254eeefbaa6a6a625c6090b49"
+    },
+    {
+      "file": "stress-00360448.npy",
+      "first_leaf": 360448,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "3216d0061d2916ae6fcf289bf9f4528412354e30305a7e47871d7040e0f2510a"
+    },
+    {
+      "file": "stress-00393216.npy",
+      "first_leaf": 393216,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9749392413369e6bbd3f0ae2baa170466e71997565bfbaba9aaf39ec2adb9b1c"
+    },
+    {
+      "file": "stress-00425984.npy",
+      "first_leaf": 425984,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "59271300addf6f424831ed999073e4bcdbfe60f9f9f37f548bd9bf506a23e8ce"
+    },
+    {
+      "file": "stress-00458752.npy",
+      "first_leaf": 458752,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7ce86d9cc33f9fe203251cc4332298b79efeda0e044f60ff0aafde5f56c101cc"
+    },
+    {
+      "file": "stress-00491520.npy",
+      "first_leaf": 491520,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "10d85bd7491ba8d9db4524e8182a77c5f737512926c527dfa138380295c54ec2"
+    },
+    {
+      "file": "stress-00524288.npy",
+      "first_leaf": 524288,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "328ff2a97642aafd8fa076129946c17ca2e8695b2a7a4d06db1a64e10f3d690f"
+    },
+    {
+      "file": "stress-00557056.npy",
+      "first_leaf": 557056,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a31e98a1d74ae1347e8fd9c7bbf491c529f99dac63814a251a184f180355a149"
+    },
+    {
+      "file": "stress-00589824.npy",
+      "first_leaf": 589824,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "915cebb1730e6c5cc1d5cc4c47381d1c515d5b8f0e37b4bdef84dd38f2bc86ef"
+    },
+    {
+      "file": "stress-00622592.npy",
+      "first_leaf": 622592,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a77b73cdc1e4508d750d75a5e4452651c5284623af5a3c93587aad6475aa009b"
+    },
+    {
+      "file": "stress-00655360.npy",
+      "first_leaf": 655360,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4cae422dc2af69d17357dcd0fd9bc0a2f508555e4f27048ced8836cb3f6e2573"
+    },
+    {
+      "file": "stress-00688128.npy",
+      "first_leaf": 688128,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "410f2f2a97691d0db0523fcb6de936da91c540a97ff138ea85ba481db9987e44"
+    },
+    {
+      "file": "stress-00720896.npy",
+      "first_leaf": 720896,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "df697dd0b79f5f8530be7561a3eb6171c6437e8e326fa93b283e4d0a4fae8651"
+    },
+    {
+      "file": "stress-00753664.npy",
+      "first_leaf": 753664,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5643302758632a0c3fca76d601e4aff7efe81596db668f42d78d7fcd67469347"
+    },
+    {
+      "file": "stress-00786432.npy",
+      "first_leaf": 786432,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e37b3e2263d0204aebe74f5647acc4b8e0148f2819a513b5aec09a5e1ea82471"
+    },
+    {
+      "file": "stress-00819200.npy",
+      "first_leaf": 819200,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "3560aa697269e01ffbab878be4df53d0438576918f552fdf072aec8b1f4b730d"
+    },
+    {
+      "file": "stress-00851968.npy",
+      "first_leaf": 851968,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "cc961e79f3d76c6d489ef6dc7b70d343e90833d227d3660a9bc8504e64829684"
+    },
+    {
+      "file": "stress-00884736.npy",
+      "first_leaf": 884736,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "eb12d2d78a8adb957cd7e8a0ac5b05406c9fac81691dda58263b30162c1e3017"
+    },
+    {
+      "file": "stress-00917504.npy",
+      "first_leaf": 917504,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "02370bfead1c2edda9f57ea8c49662adfdb7dce4bc4f136d695a22144afe2164"
+    },
+    {
+      "file": "stress-00950272.npy",
+      "first_leaf": 950272,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c4abda56c1d9702dc562233ffef6225eeb5e597b6cd18f6653ad7976dfd2e6cf"
+    },
+    {
+      "file": "stress-00983040.npy",
+      "first_leaf": 983040,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "2d41d182b25544280a2090a6c8af8b4a0f56a22fb498cd1d63dc320cdd1897fd"
+    },
+    {
+      "file": "stress-01015808.npy",
+      "first_leaf": 1015808,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a28bdfcf0323f028759e3728237e56fac569ebdbe5ae42f69dd9953028a52bf9"
+    },
+    {
+      "file": "stress-01048576.npy",
+      "first_leaf": 1048576,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "39688222a8f19bb6ce22d1f31127d83e6149f9625c53b944ad42da30c59c5a7f"
+    },
+    {
+      "file": "stress-01081344.npy",
+      "first_leaf": 1081344,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "75e08863b6f235f2032992a6ab0256ce16b3a94318c3dc7945cdbd19ad881536"
+    },
+    {
+      "file": "stress-01114112.npy",
+      "first_leaf": 1114112,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7bb3914737f8de3c5101a5179b2c67463c096f095a5d58befe684f805f0f10da"
+    },
+    {
+      "file": "stress-01146880.npy",
+      "first_leaf": 1146880,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "da207bbf803ed3f057db790f97227f0cc63b63e2db5bfe7f1e48fe632943653b"
+    },
+    {
+      "file": "stress-01179648.npy",
+      "first_leaf": 1179648,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b5a9d53d8125526d01bf666a7dcffb0b0174c4c099d70f870b7d61d8502fb20a"
+    },
+    {
+      "file": "stress-01212416.npy",
+      "first_leaf": 1212416,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c873773a28c47609f192b0ad7ecb7be5c93de8179b1159d9ba6a58e749195f39"
+    },
+    {
+      "file": "stress-01245184.npy",
+      "first_leaf": 1245184,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "67cc5fdcccc16eecf1cef120279cb6201b72bd4b3afc7d6778f761002363101e"
+    },
+    {
+      "file": "stress-01277952.npy",
+      "first_leaf": 1277952,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1ba75550602c6d563a05b06259dbd43c960ffc44e74c9eeada9af0143ec208e6"
+    },
+    {
+      "file": "stress-01310720.npy",
+      "first_leaf": 1310720,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "df359844422c7247f192e694ae5ab3459d8f6e21a62b131b860a5454dd693691"
+    },
+    {
+      "file": "stress-01343488.npy",
+      "first_leaf": 1343488,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d0d88ba36d1816b4004c458b7ac46d036aa21f3805ef8becd7cddae65345cdcf"
+    },
+    {
+      "file": "stress-01376256.npy",
+      "first_leaf": 1376256,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4286c5f1aff52d43260693a1d61d0a62f7912c1bf7785bb7c01ab6e378728935"
+    },
+    {
+      "file": "stress-01409024.npy",
+      "first_leaf": 1409024,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "68a22d875985956ea33f6919753ebc0d91319d8c9fd9acbf2e556da606148064"
+    },
+    {
+      "file": "stress-01441792.npy",
+      "first_leaf": 1441792,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0acc032cbde97fdefd9a2cd6c45349880b4f1bcb45b75dcc686b19d9acdfcecb"
+    },
+    {
+      "file": "stress-01474560.npy",
+      "first_leaf": 1474560,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e8b02889f2ab2a751b8f33a47d22f44a9fc6695c11b1297ab8677a645f006344"
+    },
+    {
+      "file": "stress-01507328.npy",
+      "first_leaf": 1507328,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "dcc685a33d92cba7408f894425fa7a3632f8dd38546ed990e10f77fe84eef1a4"
+    },
+    {
+      "file": "stress-01540096.npy",
+      "first_leaf": 1540096,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "bb07aeed8054380c1126e3029fa5baf7da1d36e5e52a70737e44a3d45c437859"
+    },
+    {
+      "file": "stress-01572864.npy",
+      "first_leaf": 1572864,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a374ea8eac01d1d6d4f3f1d125e3a0211469361bc95ca0ad96f32f3da08e999f"
+    },
+    {
+      "file": "stress-01605632.npy",
+      "first_leaf": 1605632,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "805e7555fb8a622c56124dea535ed40a7357a2d3c14394e8c35f7f3ddfee08e0"
+    },
+    {
+      "file": "stress-01638400.npy",
+      "first_leaf": 1638400,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c5926b5feebddabbb69f119fc92f160a07bb6e342c09496604cf537460cd4e3a"
+    },
+    {
+      "file": "stress-01671168.npy",
+      "first_leaf": 1671168,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e283ae476c96c7b93b7f0d4f175ed295c0339e10810c791323a7de379e7f0502"
+    },
+    {
+      "file": "stress-01703936.npy",
+      "first_leaf": 1703936,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6de3077716cc3e8a48d23e9a024f3f901adfa20b171ff8dfaf86347b6f82f389"
+    },
+    {
+      "file": "stress-01736704.npy",
+      "first_leaf": 1736704,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "63b37f5527b92d51b2693d7d3d34a11749d59aca55097bd2258edf52649e1c4f"
+    },
+    {
+      "file": "stress-01769472.npy",
+      "first_leaf": 1769472,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "37ac9f57051ef05884dd1c159e76f4f7b8bf3601b634b28fd83dcc65ffd12e61"
+    },
+    {
+      "file": "stress-01802240.npy",
+      "first_leaf": 1802240,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "557ddeef171a5bbaf85f0b99323ce04b61346ab49fab1f048205f9dcbda41b1a"
+    },
+    {
+      "file": "stress-01835008.npy",
+      "first_leaf": 1835008,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e2604bcaffb75592a059e2aa86e54f236a104c8087e67b57c68b50bd32dce34f"
+    },
+    {
+      "file": "stress-01867776.npy",
+      "first_leaf": 1867776,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "74967cbe85a280f2318a9cd211c20581ac84755b8faf161b211a660adea3cfe8"
+    },
+    {
+      "file": "stress-01900544.npy",
+      "first_leaf": 1900544,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "610134a928e8c134fda1e67dc4d20fb6d21c5aec853c1855a8cf37901a9d260a"
+    },
+    {
+      "file": "stress-01933312.npy",
+      "first_leaf": 1933312,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "aa48fe1d57e3b7793507a692af7693fa08d8804ab2c295d22dce4cc931544b19"
+    },
+    {
+      "file": "stress-01966080.npy",
+      "first_leaf": 1966080,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4e859a37d5ef9e109b83155f06c66b61e15a1b5d1207cbef6631d9941e7a4dba"
+    },
+    {
+      "file": "stress-01998848.npy",
+      "first_leaf": 1998848,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6dbd55ad322dd21517300ade67535e108831d4d638814b80bb4678af48d6abc4"
+    },
+    {
+      "file": "stress-02031616.npy",
+      "first_leaf": 2031616,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "33d15ec5104a392ef7fc35c4946458453ed859e7256c8d739cb03f3104c1b1c5"
+    },
+    {
+      "file": "stress-02064384.npy",
+      "first_leaf": 2064384,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7c0ad8d784dd326cb53ec7c58becac972cd78deead5e1a9311240d467e26c437"
+    },
+    {
+      "file": "stress-02097152.npy",
+      "first_leaf": 2097152,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0c6493fb1deb10e4cf1f1bc9813fd6ec9b8aa0db5d8fb19a96bcc83e394d31de"
+    },
+    {
+      "file": "stress-02129920.npy",
+      "first_leaf": 2129920,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "48f4ec0a093aea665841529851aed69b8fa958a0d1eeca2cc1c7f71df6c5bc11"
+    },
+    {
+      "file": "stress-02162688.npy",
+      "first_leaf": 2162688,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c9937e2e155f565f2d4f21c07ef52e71d78044ff38b27f3095d26c67b164fa60"
+    },
+    {
+      "file": "stress-02195456.npy",
+      "first_leaf": 2195456,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7532b9828d858f1be60990d1613e3e62ebb727076dacca1498ca57beecc7292a"
+    },
+    {
+      "file": "stress-02228224.npy",
+      "first_leaf": 2228224,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "983615370cef63f34726af951ccb47d8a031e8a9ccc9aef1a78ea92720d65795"
+    },
+    {
+      "file": "stress-02260992.npy",
+      "first_leaf": 2260992,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9ef1746baf79806b366a89c6ed649a3d640984a14775a2d1cb89840fd34a489a"
+    },
+    {
+      "file": "stress-02293760.npy",
+      "first_leaf": 2293760,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "401c8f44ad852bea0490f55751a15f2e3db95526870e57ba4a6c24ed48f7c4a5"
+    },
+    {
+      "file": "stress-02326528.npy",
+      "first_leaf": 2326528,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "049927caff9e27d15da9add2d2b383b87cbe0f902c134447067d9ab8375a3dd9"
+    },
+    {
+      "file": "stress-02359296.npy",
+      "first_leaf": 2359296,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "80de392fb36a0428f8704b59db7907434d10bbf932a1ea64446a015eba798273"
+    },
+    {
+      "file": "stress-02392064.npy",
+      "first_leaf": 2392064,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6bd7a4dfd7fdc997fbb264c94f111f577a183adcac8242c6ab63482069d01563"
+    },
+    {
+      "file": "stress-02424832.npy",
+      "first_leaf": 2424832,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "eeaf26710b92d997fd6507454e836dcc980ab8fb4387e6ae6bdd8e3b1899b8c0"
+    },
+    {
+      "file": "stress-02457600.npy",
+      "first_leaf": 2457600,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "82333655840445a8067b668c5961fe351e3a1ad2e3685edad051f1c6b282ec45"
+    },
+    {
+      "file": "stress-02490368.npy",
+      "first_leaf": 2490368,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "977556a7f51a23e5db8b7caac316948ae1b64b0aa6965b7f700fd13075023339"
+    },
+    {
+      "file": "stress-02523136.npy",
+      "first_leaf": 2523136,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "6bd599b08c7cfc82eb2883cf203a8a4d7a6bd4a6473c917d1a36cc786d1bc963"
+    },
+    {
+      "file": "stress-02555904.npy",
+      "first_leaf": 2555904,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "1b7b26449ef5835aa5bf04cae7f9038f34f03fcf79a92daf41d41ecd07b74e18"
+    },
+    {
+      "file": "stress-02588672.npy",
+      "first_leaf": 2588672,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "f4f44f55cb293d1abef135edd81171508d88f6395a1c9f8bab57d92afbe97dd6"
+    },
+    {
+      "file": "stress-02621440.npy",
+      "first_leaf": 2621440,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "12d3e02eaf20dbaac07a2a426143dc436cab85769e811971aa4855af3eaa4705"
+    },
+    {
+      "file": "stress-02654208.npy",
+      "first_leaf": 2654208,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5f33e60a8821c5b9a28edcf9d205d92bda14e497fabd053ededc3728a3e396a6"
+    },
+    {
+      "file": "stress-02686976.npy",
+      "first_leaf": 2686976,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5ed4fb729b7427bfc05133e0e7303e8022c6907303c56d2efb3f9987a79c618f"
+    },
+    {
+      "file": "stress-02719744.npy",
+      "first_leaf": 2719744,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ea256bb247a2f0b0e92a28d0770257d585757c3e4209c76d4003374cdf4eaec8"
+    },
+    {
+      "file": "stress-02752512.npy",
+      "first_leaf": 2752512,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "aef9f22dafcaa6341992129b75e205dc9c8ee0074b55e967c5fb319db25517cd"
+    },
+    {
+      "file": "stress-02785280.npy",
+      "first_leaf": 2785280,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4b40a62b2fdbc4e214ec0c678c8b1151e15ad0ded3379499958767107a9c406f"
+    },
+    {
+      "file": "stress-02818048.npy",
+      "first_leaf": 2818048,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "c639bb5b051278bf243afab47becd6034d86b493a0a20f364d8b6817628014ad"
+    },
+    {
+      "file": "stress-02850816.npy",
+      "first_leaf": 2850816,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "3d3a97663feccf995c73077f200286821fc69d7c514d4cb62a365767d4208b63"
+    },
+    {
+      "file": "stress-02883584.npy",
+      "first_leaf": 2883584,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d3e397122e91630ecce3eca3600caa3ab6aadeaeec4ea595c6831585997e11d5"
+    },
+    {
+      "file": "stress-02916352.npy",
+      "first_leaf": 2916352,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "b7421b99be3e18a803d207a63457749a86106eb71e604cf80975b39db4a1f97b"
+    },
+    {
+      "file": "stress-02949120.npy",
+      "first_leaf": 2949120,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "72f26c0ea59eb2508c56ff8bebc903a122ea2c7d0268bbf631fe832d0abfb8be"
+    },
+    {
+      "file": "stress-02981888.npy",
+      "first_leaf": 2981888,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "7a1f80d52bede17b09b331b96398b68a74649eaff96f01dd8904ce86a7c3e8f9"
+    },
+    {
+      "file": "stress-03014656.npy",
+      "first_leaf": 3014656,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "983dc0fa04f30555904c263df235a9dabb393e54e071c62c627d74ba9e3e5cca"
+    },
+    {
+      "file": "stress-03047424.npy",
+      "first_leaf": 3047424,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4dffc1fa052d381cf52a8a1dcc07d67d050db41855da229915d85715bbe868ed"
+    },
+    {
+      "file": "stress-03080192.npy",
+      "first_leaf": 3080192,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "11a38554ecee402a9c8c933e15285c107a23517541a47e9e2eb933a85fb2ab43"
+    },
+    {
+      "file": "stress-03112960.npy",
+      "first_leaf": 3112960,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "26d61e75fcc81796563b1f7f822299bdd53c476740b249d7561a92dc20ad700c"
+    },
+    {
+      "file": "stress-03145728.npy",
+      "first_leaf": 3145728,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "06f70014bac36b752b3274cb554dc72d0a1bc6a9868083267b6ffa387e1878a5"
+    },
+    {
+      "file": "stress-03178496.npy",
+      "first_leaf": 3178496,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "0a30c152c829136e6b1136ea0e97aa42231e7a4dc237c4a9b8649712990b82ee"
+    },
+    {
+      "file": "stress-03211264.npy",
+      "first_leaf": 3211264,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9d0e83afeaeb05bd429f5c9d3cc2ca69420a206a32c1bc2b8481ff9d896cfba4"
+    },
+    {
+      "file": "stress-03244032.npy",
+      "first_leaf": 3244032,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "fb6be30590ab310dd77db8ef32d27f39a1555b0805c31eeb9f148796d48b2d70"
+    },
+    {
+      "file": "stress-03276800.npy",
+      "first_leaf": 3276800,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "8b9ba2f16be91e401dd1616b311102b637a8b174c5f4fdda4ab6b64519cb059e"
+    },
+    {
+      "file": "stress-03309568.npy",
+      "first_leaf": 3309568,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "165c31175d37a5336b12b8d4d00ec37220ea148d3e276808483a756df02ff381"
+    },
+    {
+      "file": "stress-03342336.npy",
+      "first_leaf": 3342336,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "a6a1d50a788fe887f7e51969b583d254c71950435bdfb8589414ef90ff4140da"
+    },
+    {
+      "file": "stress-03375104.npy",
+      "first_leaf": 3375104,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5410a873fcb1ac48ad75e9a8d150ed3967f28d059bcd89de5d890f9e90966ac0"
+    },
+    {
+      "file": "stress-03407872.npy",
+      "first_leaf": 3407872,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "04816e3087c7f82034a3d0c6e9d27eb4b006178e7e94c25137a52a904dcc37fd"
+    },
+    {
+      "file": "stress-03440640.npy",
+      "first_leaf": 3440640,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "be348a37890c946d4240883e541aaf5e96a51d070f3be193c498fa795f143f78"
+    },
+    {
+      "file": "stress-03473408.npy",
+      "first_leaf": 3473408,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "57c0c7f256147030775b79dda20899e20285d1d456918abe164a32e952ac3c87"
+    },
+    {
+      "file": "stress-03506176.npy",
+      "first_leaf": 3506176,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "51d8f161d75131f0e5eb6ab16d219514dd965ca2fc7fa9e4249636cfd929df3e"
+    },
+    {
+      "file": "stress-03538944.npy",
+      "first_leaf": 3538944,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "9a4b71335aaee62498bae1465babc6a85beea78b6d673dffd4dec6ab0f598d28"
+    },
+    {
+      "file": "stress-03571712.npy",
+      "first_leaf": 3571712,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "2da94ca4cf91c923026d372b07ae72637d88c39ed89cb4c509292002fc7bf7d5"
+    },
+    {
+      "file": "stress-03604480.npy",
+      "first_leaf": 3604480,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "5234ebd579529d9d4dd684e5739be4efe87ab750f1c79150f1ad451db7be862b"
+    },
+    {
+      "file": "stress-03637248.npy",
+      "first_leaf": 3637248,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4a1b6d5eb91b8ca7f0cf04c2060289d46e16e21b38ef5549946aebad953669e4"
+    },
+    {
+      "file": "stress-03670016.npy",
+      "first_leaf": 3670016,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d63253926d197ea8aae5d2e41522431d0bb234917325387b7b9c41313c2f2bf1"
+    },
+    {
+      "file": "stress-03702784.npy",
+      "first_leaf": 3702784,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d122923b09ad248cc2ba6c6c674f8745f95b954e7b757800ab26dc766ed1ebed"
+    },
+    {
+      "file": "stress-03735552.npy",
+      "first_leaf": 3735552,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "354d79532ac27c9335cfe45a685cc18a4f139bbb0e4cf56d57158b551fa79406"
+    },
+    {
+      "file": "stress-03768320.npy",
+      "first_leaf": 3768320,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "71e5b23e6750eff241a0d053ecc8552fe329b6939848b6336da2336e7fec0c7c"
+    },
+    {
+      "file": "stress-03801088.npy",
+      "first_leaf": 3801088,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "76800b1ff97f9f11ccaf0b1e42654d38104a39e68bea6d329d3dc3214a965826"
+    },
+    {
+      "file": "stress-03833856.npy",
+      "first_leaf": 3833856,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "344c7cc81121885d5613e8934f4493324310646aa44d49f69bbc9e883f04481c"
+    },
+    {
+      "file": "stress-03866624.npy",
+      "first_leaf": 3866624,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "78e7b3b6ac8296418a4af6ecde40828319b49945424ee4f6c8b5ce7403037152"
+    },
+    {
+      "file": "stress-03899392.npy",
+      "first_leaf": 3899392,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "ae79931426410f7495f3d17933b2c7ce836e87e6aa43b411a4adfb26141630a9"
+    },
+    {
+      "file": "stress-03932160.npy",
+      "first_leaf": 3932160,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "4c5398b50a1916f7736fbd3d7fdc9282ede65616b86f5d8569fb2b7b2ce55310"
+    },
+    {
+      "file": "stress-03964928.npy",
+      "first_leaf": 3964928,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "d329e14eeeaf90e81b8ea51290a5dda2234b07ddff25e2e2fbfee171b9a711c2"
+    },
+    {
+      "file": "stress-03997696.npy",
+      "first_leaf": 3997696,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "44218038c45fe216ccf56851037de7e5217670fbc8c9ff88b67e63d1e5777858"
+    },
+    {
+      "file": "stress-04030464.npy",
+      "first_leaf": 4030464,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "e1139bb4439288523621359c613e9874d24d2d2b36165a35d4c555ff5c332072"
+    },
+    {
+      "file": "stress-04063232.npy",
+      "first_leaf": 4063232,
+      "cells": 32768,
+      "gauss_samples": 262144,
+      "sha256": "74929c957624442793546d8ba4001f25e49e8c1e3d8aa5c05536f2c18577eed0"
+    },
+    {
+      "file": "stress-04096000.npy",
+      "first_leaf": 4096000,
+      "cells": 575,
+      "gauss_samples": 4600,
+      "sha256": "4b1d88f79a5eba3c6f549a0d3d909f14499963e6d4496ed3b7eaa4485c69a786"
+    }
+  ],
+  "every_leaf_retained": true,
+  "elapsed_seconds": 72.44888143900062,
+  "interpretation": "A failed linear/contact iterate is not a movement or strength prediction. Even passing numerics use eroded reference slice geometry, unmeasured isotropic properties and idealized hardware. No full-bracket qualification."
+}

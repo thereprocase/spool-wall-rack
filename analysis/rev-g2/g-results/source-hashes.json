@@ -1,0 +1,61 @@
+{
+  "scope": "Source files delivered in this checkpoint. Prior trial source variants are preserved separately; timing and numerical reports retain their individual attempt identities.",
+  "files": [
+    {
+      "file": "gpu_coarse_geometry.py",
+      "sha256": "285658de0cdadab49d18c6af64082b273def6b6b3cc6594d316614370e30b2c7"
+    },
+    {
+      "file": "gpu_multigrid.py",
+      "sha256": "4b541e64259004c512c8ab420f2b177f2892c59394b4909879109b45c8008be6"
+    },
+    {
+      "file": "gpu_contact.py",
+      "sha256": "668a5606334a80a365c428ae753b20ab3e0227db18141cec8c480d9c3bf89176"
+    },
+    {
+      "file": "gpu_demo_adaptive_operator.py",
+      "sha256": "61c600d117fae97b19135cbd342002981b16e455e240a2408262967ac318bcf4"
+    },
+    {
+      "file": "gpu_demo_solve.py",
+      "sha256": "645ee9a6e490e1ce333b6e4a4124a2419fa8f0dffd103aa64af760e34ce5cb6d"
+    },
+    {
+      "file": "gpu_hex.py",
+      "sha256": "8460497de066ad36b6e90bf92dae01b5106c28f52e9bb1037886e2ce327637d2"
+    },
+    {
+      "file": "gpu_demo_geometry.py",
+      "sha256": "fddea2c24ef07ecaf93c6797766f3228727c2a598c0dba66248aa9b7dbbad203"
+    },
+    {
+      "file": "gpu_demo_adaptive.py",
+      "sha256": "e20c9ea4975ca21274b233988359d7e5a8bfbdad94feae2f63559f5c72b160f3"
+    },
+    {
+      "file": "gpu_demo_interfaces.py",
+      "sha256": "b9ce689b83eb3b1917417f47bf0123b163bcdcfeb6594ba94020d28dff3e42d8"
+    },
+    {
+      "file": "validate_gpu_coarse.py",
+      "sha256": "7080ebf235b0d8dc4a4666c6416167c1c2ebd26c5d3bfb6e48d9885163923da6"
+    },
+    {
+      "file": "validate_gpu_contact.py",
+      "sha256": "95280df289e82d0b4b15f3130f89f88c54b2c5da7003720e907b905b4952c92e"
+    },
+    {
+      "file": "report_gpu_g.py",
+      "sha256": "556f1614f77fec0d53a218198a7ff1627f2d524cef4c0c9b8eace1a2d22ca701"
+    },
+    {
+      "file": "requirements-coarse.txt",
+      "sha256": "7d8510a0d1e9d22642d04499ed194f3c37a8df37573bef41783745a7fc782bf6"
+    },
+    {
+      "file": "requirements-gpu.txt",
+      "sha256": "a3c07e3f031aa5dcf35beda3e379e2d812545727a1c2a71b8bb10652ab42c344"
+    }
+  ]
+}
