@@ -1,5 +1,11 @@
 # G2 architecture family worksheet (provisional)
 
+**Current update:** [six broad XY sketches](shape-seeds/README.md) now make the
+body-shape directions visible. They are not CAD/STEP or mechanical results.
+The [current interface contract](INTERFACE-CONTRACT.md) fixes rod and mounting
+positions and leaves two envelope datums pending. It supersedes older relocation
+and 8 mm envelope assumptions in the preparatory notes below.
+
 This is a preparatory architecture screen for G2. It does not select a family,
 change E13 or Rev G, or claim mass, strength, movement, fit, or print tests.
 The corrected Rev G material mapping and mechanical recheck are prerequisites
@@ -140,7 +146,7 @@ contact, continuous seat backing, and capture-stop formation. Use the same
 orientation and bed-exclusion audit as the G recheck. A multipart concept must
 also carry assembly alignment, fastener, tolerance, and part-separation cases.
 
-The next concrete step is to wait for corrected G material/mesh feedback,
-choose representatives only after that evidence is available, and build
-reproducible coarse models from this matrix. This worksheet intentionally does
-not rank or select a family.
+The corrected G contact screen and local helper pilot now provide initial
+numerical feedback. Continue with the broad body seeds, resolve the two precise
+envelope anchors, and build fresh CAD/slice/3D representatives. The local helper
+calibration cannot establish rankings across these different architectures.

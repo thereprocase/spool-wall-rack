@@ -1,5 +1,12 @@
 # Printable CAD checkpoint index
 
+**Current architecture direction: [six broader body sketches](designs/rev-g2/shape-seeds/README.md).**
+These change the outer body and load paths while retaining rod/mount positions
+and nominal spool clearance. They are unbuilt XY concepts, not printable STEP
+handoffs. The bottom-corner and 15 mm outboard datums remain pending in the
+[current contract](designs/rev-g2/INTERFACE-CONTRACT.md). Existing CAD downloads
+below remain available unchanged.
+
 ## G evolutionary helper variants
 
 [Screening workflow and measured timings](analysis/rev-g2/EVOLUTION.md).

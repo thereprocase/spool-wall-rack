@@ -1,0 +1,104 @@
+{
+  "status": "ALL_ORIGINAL_FINE_CELLS_WITH_IDENTITY_CONSTRAINTS",
+  "fine_cells": 8467566,
+  "leaf_cells": 8467566,
+  "fine_nodes": 10234400,
+  "independent_nodes": 10234400,
+  "cell_reduction_fraction": 0.0,
+  "added_or_removed_volume_mm3": 0.0,
+  "retained_volume_mm3": 67740.52800000002,
+  "spacing_mm": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "origin_mm": [
+    -0.2,
+    -43.0,
+    0.0
+  ],
+  "source_geometry": {
+    "spacing_mm": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "origin_mm": [
+      -0.2,
+      -43.0,
+      0.0
+    ],
+    "grid_shape": [
+      1039,
+      1095,
+      120
+    ],
+    "grid_cells": 136524600,
+    "raw_nominal_volume_mm3": 73729.5539291803,
+    "retained_volume_mm3": 67740.52800000002,
+    "omitted_fraction": 0.08122965093391099,
+    "extra_material_volume_mm3": 0.0,
+    "material_components": 40,
+    "component_cell_counts": [
+      8467497,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      7,
+      6,
+      7,
+      7
+    ],
+    "mapping_and_components_seconds": 51.948224471001595,
+    "policy": "Only full cells covered by every intersected raw slab; no bridge, pore-fill, closing or weak-void stiffness. Every retained cell, including disconnected components, survives.",
+    "lookup_validation": {
+      "status": "PASS",
+      "local_occupancy_patterns": 255,
+      "checks": [
+        "All cell-corner bonds match original audited constructor",
+        "Oriented boundary divergence matches material volume"
+      ]
+    },
+    "layer_cache_sha256": "4fa28c789910df327a885de1e6c4afac3aa2ac676340369a9597cdf350283074",
+    "nodes": 10234400,
+    "cells": 8467566,
+    "split_edge_corner_vertices": 7701,
+    "mesh_build_seconds": 3.6429377130007197,
+    "boundary_faces": 3714960,
+    "status": "ERODED_GEOMETRY_DIAGNOSTIC; NOT A QUALIFIED PRINT MODEL"
+  },
+  "elapsed_seconds": 9.540184854999097,
+  "scope": "Same exact inscribed material and split-bond connectivity. Independent solve required. Does not recover omitted boundary material."
+}

@@ -41,3 +41,7 @@
 /designs/rev-g2/evolution/**/*.step binary
 /analysis/rev-g2/evolution-results/** -text
 /analysis/rev-g2/evo_*.py text eol=lf
+
+# Reproducible broad-architecture sketches and their source checksums.
+/designs/rev-g2/shape-seeds/** text eol=lf
+/designs/rev-g2/shape-seeds/*.png binary

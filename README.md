@@ -1,13 +1,22 @@
 # Spool wall rack — G material-model correction and G2
 
-**New: [evolutionary screening loop](analysis/rev-g2/EVOLUTION.md).** The first
+**Current direction: [six broader G2 bodies](designs/rev-g2/shape-seeds/README.md).**
+The outer shape, depth, braces, windows and material placement are open design
+variables. Rod and mounting coordinates stay fixed under the
+[current interface contract](designs/rev-g2/INTERFACE-CONTRACT.md). The exact
+bottom-corner and 15 mm outboard datums are pending. These are reproducible
+geometry sketches, with nominal spool clearance checked; CAD and mechanics
+are unbuilt.
+
+![Six broader body directions](designs/rev-g2/shape-seeds/architecture-directions.png)
+
+**Completed local pilot: [evolutionary screening loop](analysis/rev-g2/EVOLUTION.md).** The first
 batch screened 100 helper proposals in 11 min 18 s. The leading actual-slice
 3D pass took 6 min 55 s including CAD, slicing, preparation and field audit:
 4.1295 mm movement versus 4.3355 mm for G, with a 2.02% higher raw stress peak.
-Further finalist and mesh checks are recorded on the loop page. These are
+Its full-cell leader refinement took another 5 min 18 s and gives 4.1547 mm
+maximum movement. Further finalist and mesh checks are recorded on the loop page. These are
 screening results; material accuracy and physical qualification remain open.
-
-![Current helper additions and cuts](analysis/rev-g2/evolution-results/batch-02/helper-directions.png)
 
 Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
 
@@ -58,9 +67,10 @@ G2 architecture families remain unfinished. [Earlier software review](analysis/r
 [Slicer-backed shape tool](analysis/rev-g2/plastic_shape.py) ·
 [Meshing progress and sources](analysis/rev-g2/MESHING-NOTES.md)
 
-The new study may change the actual architecture, rail/fixing positions and
-density strategy. It retains compact spool-relative elevation and permits up
-to 8 mm useful additional downward extension. P1S, 0.4 mm nozzle; PETG or ASA.
+The new study changes actual architecture and density strategy while preserving
+the specified interfaces. The current contract supersedes the earlier permission
+to move rods or fixings and the old silhouette restrictions. P1S, 0.4 mm nozzle;
+PETG or ASA.
 
 ## Preserved Rev G numerical study
 

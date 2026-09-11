@@ -1,0 +1,7 @@
+{
+  "file": "evo-leader-uniform-audit-v1.log",
+  "method": "Native log creation to final write; includes interpreter startup and report export.",
+  "seconds": 59.021706099999996,
+  "created": "2026-09-11T19:00:32.3351069Z",
+  "finished": "2026-09-11T19:01:31.3568130Z"
+}

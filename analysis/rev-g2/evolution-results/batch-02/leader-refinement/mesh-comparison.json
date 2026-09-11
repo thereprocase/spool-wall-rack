@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED_SAME_MATERIAL_MESH_SENSITIVITY",
+  "all_fine_nodes_compared": 10234400,
+  "maximum_nodal_movement_change_mm": 0.02529295754294616,
+  "relative_displacement_l2_change": 0.005891791285647012,
+  "adaptive_maximum_movement_mm": 4.129457002853453,
+  "uniform_maximum_movement_mm": 4.154744907492717,
+  "adaptive_raw_tensile_peak_MPa": 20.429186816638346,
+  "uniform_raw_tensile_peak_MPa": 19.67921718380905,
+  "adaptive_stress_samples": 32864288,
+  "uniform_stress_samples": 67740528,
+  "adaptive_compliance_Nmm": 216.7043435749298,
+  "uniform_compliance_Nmm": 217.97927814101138,
+  "compliance_monotonicity_check": true,
+  "elapsed_seconds": 5.2513167609977245,
+  "scope": "Every shared fine-node displacement and both full raw stress maxima are retained. Gauss sampling differs between meshes. This measures coarsening sensitivity on the same inscribed material, not boundary-material convergence or physical qualification."
+}

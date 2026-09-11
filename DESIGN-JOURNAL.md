@@ -4,6 +4,35 @@ Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analy
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — reopen the outer body and finish the local pilot
+
+The helper-only pilot was too narrow for the architecture objective. The next
+study varies the actual body, depth, braces, windows and through-width material
+arrangement. Rod and mounting positions are fixed again. The matching bottom
+corner and 15 mm outboard relationship are required, with their exact datums
+pending. The old local silhouette floor is not an imposed search boundary.
+
+Published [six reproducible XY body sketches](designs/rev-g2/shape-seeds/README.md):
+open triangular frame, curved braces, deep keel, independent arms, seat portals,
+and reshaped shear panels. All are connected in projection, add and remove
+substantial projected area relative to G, and pass the nominal spool-clearance
+sweep. They are unbuilt concepts: CAD, arbitrary helpers, sliced mass, actual
+connectivity, manufacturing checks and mechanical ranking remain unfinished.
+
+The local helper pilot's final same-material mesh check is complete. Releasing
+adaptive constraints changes its leader from 4.129457 to 4.154745 mm maximum
+movement. All 10,234,400 fine-node displacements are compared; maximum nodal
+change is 0.025293 mm. The raw tensile peak moves and changes from 20.429187
+to 19.679217 MPa; all 67,740,528 uniform-mesh samples are retained. Preparation,
+solve/export, audit and comparison take 318.10 active seconds. The 8.12% boundary
+material omission persists. This supports the pilot's local movement screen;
+small stress differences and transfer to broad architectures remain unresolved.
+
+The second stiffness candidate failed its bounded retry as well as its initial
+solve; total active treatment including both audits was 9 min 55 s. No failed
+field is promoted to a prediction. All evidence remains preserved in the
+[completed loop record](analysis/rev-g2/EVOLUTION.md).
+
 ## September 11 — staged evolutionary screening pilot
 
 Established a bounded local helper search around G: paired intuition seeds,

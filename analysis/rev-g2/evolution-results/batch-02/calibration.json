@@ -1,0 +1,79 @@
+{
+  "status": "LOCAL_MOVEMENT_SCREEN_SUPPORTED_BY_TWO_3D_CASES; STRENGTH_PROXY_UNVALIDATED",
+  "pilot_fitness_policy": "legacy-stress-proxy",
+  "next_cycle_default_fitness_policy": "movement-material",
+  "fresh_baseline_movement_mm": 4.335468164754953,
+  "cases": [
+    {
+      "id": "f9ad9cdbc331",
+      "role": "balanced",
+      "numerical_status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+      "active_pipeline_seconds": 414.7960805420007,
+      "predicted_movement_indicator_mm": 4.143127212280997,
+      "nominal_raw_material_change_percent": 2.5573090428383294,
+      "all_spent_extrusion_change_percent": 2.266331680719924,
+      "qualified": false,
+      "actual_3d_movement_mm": 4.129457002853453,
+      "movement_indicator_error_mm": -0.013670209427544044,
+      "movement_change_percent": -4.751762764083045,
+      "raw_tensile_peak_MPa": 20.429186816638346,
+      "raw_tensile_change_percent": 2.022496856828737
+    },
+    {
+      "id": "0c3bac68efa9",
+      "role": "stiffest",
+      "numerical_status": "FAIL_LINEAR_CONVERGENCE",
+      "active_pipeline_seconds": 455.5702641150019,
+      "predicted_movement_indicator_mm": 4.217616824678557,
+      "nominal_raw_material_change_percent": 1.604508325733045,
+      "all_spent_extrusion_change_percent": 1.4036469590813283,
+      "qualified": false,
+      "retry_status": "FAIL_LINEAR_CONVERGENCE",
+      "retry_solve_and_export_seconds": 106.61893343599877,
+      "retry_audit_seconds": 33.1438261,
+      "total_active_with_retry_seconds": 595.3330236510006
+    },
+    {
+      "id": "9be1dd4d87d3",
+      "role": "economical",
+      "numerical_status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+      "active_pipeline_seconds": 339.4730225830026,
+      "predicted_movement_indicator_mm": 4.370953091956111,
+      "nominal_raw_material_change_percent": -0.7960954796848441,
+      "all_spent_extrusion_change_percent": -0.7315826774596634,
+      "qualified": false,
+      "actual_3d_movement_mm": 4.3777822681213,
+      "movement_indicator_error_mm": 0.006829176165188855,
+      "movement_change_percent": 0.9759984794799781,
+      "raw_tensile_peak_MPa": 19.460679635875394,
+      "raw_tensile_change_percent": -2.8141871331933133
+    }
+  ],
+  "stiffness_leader": "f9ad9cdbc331",
+  "leader_uniform_refinement": {
+    "status": "COMPLETED_SAME_MATERIAL_MESH_SENSITIVITY",
+    "all_fine_nodes_compared": 10234400,
+    "maximum_nodal_movement_change_mm": 0.02529295754294616,
+    "relative_displacement_l2_change": 0.005891791285647012,
+    "adaptive_maximum_movement_mm": 4.129457002853453,
+    "uniform_maximum_movement_mm": 4.154744907492717,
+    "adaptive_raw_tensile_peak_MPa": 20.429186816638346,
+    "uniform_raw_tensile_peak_MPa": 19.67921718380905,
+    "adaptive_stress_samples": 32864288,
+    "uniform_stress_samples": 67740528,
+    "adaptive_compliance_Nmm": 216.7043435749298,
+    "uniform_compliance_Nmm": 217.97927814101138,
+    "compliance_monotonicity_check": true,
+    "elapsed_seconds": 5.2513167609977245,
+    "scope": "Every shared fine-node displacement and both full raw stress maxima are retained. Gauss sampling differs between meshes. This measures coarsening sensitivity on the same inscribed material, not boundary-material convergence or physical qualification."
+  },
+  "leader_refinement_timing": {
+    "preparation_seconds": 9.540184854999097,
+    "solve_and_all_stress_export_seconds": 244.2898155059993,
+    "audit_and_plot_seconds": 59.021706099999996,
+    "all_node_comparison_seconds": 5.2513167609977245,
+    "scope": "Sum of measured active stages. Queue time and the pause for publishing visuals before the final audit are excluded. The solve itself was capped at 450 s before final stress export.",
+    "total_active_seconds": 318.1030232219961
+  },
+  "scope": "Two completed nearby helper cases support local movement ranking only. The unresolved case gives no mechanical conclusion. One same-material mesh sensitivity check and remaining boundary omission do not establish general prediction error bounds or physical strength."
+}

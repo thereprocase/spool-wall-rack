@@ -1,5 +1,10 @@
 # G evolutionary screening loop
 
+**Continuation: [broader G2 body directions](../../designs/rev-g2/shape-seeds/README.md).**
+This completed pilot varied G's helpers only. The next study opens the body
+outline and structural family while fixing the interfaces in the
+[current contract](../../designs/rev-g2/INTERFACE-CONTRACT.md).
+
 ![Three G helper directions with additions and cuts](evolution-results/batch-02/helper-directions.png)
 
 [A: stiffness leader and CAD](../../designs/rev-g2/evolution/f9ad9cdbc331/README.md) ·
@@ -20,15 +25,31 @@ slices and 3D checks described below.
 |---|---:|---:|---:|
 | Fresh G control | 4.33547 mm | 20.02420 MPa | 2 min 21 s solve/export; preparation separate |
 | A: f9ad9cdbc331 | 4.12946 mm | 20.42919 MPa | 6 min 55 s |
-| B: 0c3bac68efa9 | Unresolved | Failed fields retained | 7 min 36 s, plus 1 min 47 s bounded retry |
+| B: 0c3bac68efa9 | Unresolved | Failed fields retained | 9 min 55 s including retry and its field audit |
 | C: 9be1dd4d87d3 | 4.37778 mm | 19.46068 MPa | 5 min 39 s |
 
 A's movement indicator was 4.14313 mm; C's was 4.37095 mm. Agreement in these
 two nearby cases supports local movement screening, not a general error bound.
 Cheap stress trends were unreliable. B failed both the initial 6,000-iteration
 solve and the stronger-preconditioner retry; no failed iterate is promoted.
-A is the current stiffness leader, with a complete-cell mesh refinement in
-progress. It still exceeds the provisional 4 mm bracket allocation.
+A is the local pilot's stiffness leader. Its completed full-cell refinement
+gives **4.154745 mm** maximum movement and **19.679217 MPa** raw tensile peak.
+It still exceeds the provisional 4 mm bracket allocation.
+
+The full-cell treatment took **5 min 18 s** of active preparation, solve,
+all-field audit and comparison. It releases the adaptive constraints on the
+same 8,467,566 retained 0.2 mm cells. All 10,234,400 nodal displacements were
+compared; the largest change was 0.025293 mm. All 67,740,528 Gauss stress
+samples survive. Compliance increases as expected when the constraints are
+released; contact, force and moment checks pass at the stated screen tolerance.
+This measures coarsening sensitivity on the same eroded material. It does not
+recover the 8.12% omitted boundary volume. The peak changes location and drops
+about 3.67%, so small stress differences between candidates remain unresolved.
+
+[Final mesh comparison](evolution-results/batch-02/leader-refinement/mesh-comparison.json) ·
+[Final field audit](evolution-results/batch-02/leader-refinement/audit.json) ·
+[Measured timing](evolution-results/batch-02/leader-refinement/timings.json) ·
+[Pilot calibration and all outcomes](evolution-results/batch-02/calibration.json).
 
 ![A movement and unfiltered stress](evolution-results/batch-02/f9ad9cdbc331/audit/g-results.png)
 

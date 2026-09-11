@@ -5,7 +5,21 @@ strength robustness, stiffness, practical printing and installation outrank
 minimum mass. E13 and Rev G CAD, scripts, fields and published conclusions
 remain unchanged historical records.
 
-## Current prerequisite: correct the G material mapping
+## Current scope: broad bodies with fixed interfaces
+
+[The current interface contract](designs/rev-g2/INTERFACE-CONTRACT.md) supersedes
+older permission to move mounting holes or rods. Preserve their reference
+coordinates and spool clearance, plus the specified matching bottom corner
+and 15 mm outboard relationship once those two datums are resolved. All other
+body geometry and material allocation are open design variables. The old local
+silhouette floor is not a mandatory material boundary.
+
+The [G helper pilot](analysis/rev-g2/EVOLUTION.md) completed 100 cheap proposals,
+actual-slice finalist feedback and a leader mesh check. Its narrow body scope
+does not satisfy the broad architecture study. Proceed with different body
+families while retaining the material-accuracy and qualification limits.
+
+## Preserved material-mapping prerequisite and evidence
 
 The next action is to recheck G's full-plane finalist using structural material
 derived from actual Orca paths. The former hand-built shell/core and its
@@ -55,19 +69,17 @@ from any homogenized shape approximation and bound the difference explicitly.
 ## Geometry and density freedoms
 
 E13's outline, arm depth, underside, knee, chamfers, windows, internal planes,
-ribs and modifiers are soft. Wall-plate shape and fixing positions, local
-seat/arm/wall transitions, rail spacing and rail elevation may change if the
-functional requirements are re-established. No existing solid region is
+ribs and modifiers are soft. Wall-plate shape and local seat/arm/wall transitions
+may change. Rod and fixing positions now stay fixed under the current interface
+contract. No existing solid region is
 mandatory. Material may be removed anywhere. Helpers have no fixed count,
 shape or placement; their effective union is clipped to the body and counted
 once. Integrated reinforcement is equally acceptable.
 
-Keep the bracket and spools generally in the same vertical band. Permit up
-to 8 mm additional downward projection relative to the preferred arrangement's
-spool-relative lower envelope, only where it improves the load path. Changing
-rail positions requires recomputing that reference comparison. The initial
-post-G draft's fixed rails, local E13 silhouette floor and fixed fixing axes
-are superseded; its drawing is a reference, not G2's mandatory design space.
+The latest bottom-corner and 15 mm outboard requirements control the new outer
+envelope once their datums are clarified. The earlier 8 mm spool-relative drop
+allowance and initial draft's local E13 silhouette floor remain historical
+reference dimensions; do not silently apply either as the new body restriction.
 
 Retained chamfers need sufficient continuous structural backing. Compare
 actual slicer-generated backing before adding a helper. If a feature changes,
@@ -78,7 +90,7 @@ separate geometric changes from density changes in the evidence.
 1. Correct and validate the slicer-material representation, then re-solve G.
 2. Build at least six materially different, parameterized architecture
    families. Show sections, primary load paths, print orientation, interfaces
-   and rough mass. Include useful use of the lower 8 mm allowance and a family
+   and rough mass. Explore depth within the current interface contract and a family
    without the thin forearm chamfer/inner-seat transition dependency.
 3. Compare viable families with the same auditable reduced model for ranking
    only. Record geometry, contact, loads, material assumptions and failures.

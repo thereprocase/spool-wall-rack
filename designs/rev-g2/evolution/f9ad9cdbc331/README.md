@@ -23,6 +23,17 @@ Individual helpers: [dense chords and seats](dense-chords-and-seats.step), [lowe
 
 At 12 kg, the retained-material screen gives **4.1295 mm** maximum movement and **20.4292 MPa** raw tensile stress. Contact and equilibrium pass at the stated 1e-5 screen tolerance. The model omits 8.12% of nominal raw plastic.
 
+The completed full-cell refinement on the same retained material gives
+**4.1547 mm** maximum movement and **19.6792 MPa** raw tensile peak. The maximum
+change across all 10,234,400 compared nodes is 0.025293 mm. All 67,740,528
+stress samples are retained. Active preparation, solve, audit and comparison
+take 5 min 18 s. This checks adaptive coarsening error; boundary omission and
+physical qualification remain unresolved. Small raw-stress differences are
+not a demonstrated strength ranking.
+
+[Full-cell audit](../../../../analysis/rev-g2/evolution-results/batch-02/leader-refinement/audit.json) ·
+[Mesh comparison](../../../../analysis/rev-g2/evolution-results/batch-02/leader-refinement/mesh-comparison.json).
+
 [Detailed 3D audit](../../../../analysis/rev-g2/evolution-results/batch-02/f9ad9cdbc331/audit/audit.json) · [Search workflow and qualification limits](../../../../analysis/rev-g2/EVOLUTION.md).
 
 ![Retained-material movement and raw stress](../../../../analysis/rev-g2/evolution-results/batch-02/f9ad9cdbc331/audit/g-results.png)

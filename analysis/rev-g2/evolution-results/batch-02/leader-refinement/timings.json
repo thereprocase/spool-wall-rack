@@ -1,0 +1,8 @@
+{
+  "preparation_seconds": 9.540184854999097,
+  "solve_and_all_stress_export_seconds": 244.2898155059993,
+  "audit_and_plot_seconds": 59.021706099999996,
+  "all_node_comparison_seconds": 5.2513167609977245,
+  "scope": "Sum of measured active stages. Queue time and the pause for publishing visuals before the final audit are excluded. The solve itself was capped at 450 s before final stress export.",
+  "total_active_seconds": 318.1030232219961
+}
