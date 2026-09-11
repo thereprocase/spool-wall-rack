@@ -1,0 +1,89 @@
+{
+  "revision": "Post-G design-space contract, 2026-09-11",
+  "purpose": "Minimize actual printed mass within functional, serviceability, fracture, stability and manufacturing constraints.",
+  "coordinates": {
+    "X": "Projection outward from the wall, mm",
+    "Y": "Installed vertical height, mm; rear rail center is Y=0",
+    "Z": "Across bracket width and printer build direction, mm"
+  },
+  "space_limits": {
+    "wall_plane_X_mm": 0.0,
+    "maximum_projection_X_mm": 215.0,
+    "maximum_height_Y_mm": 180.0,
+    "width_Z_interval_mm": [0.0, 24.0],
+    "maximum_extra_downward_drop_mm": 8.0,
+    "extra_drop_source": "Explicitly selected for this envelope",
+    "underside_reference_profile": "designs/closed-wall-e13/profile.svg",
+    "underside_rule": "At each X within the reference profile span, Y must be at least the reference's lowest material Y at that X minus 8 mm. Beyond the reference's forward tip, continue its final lower-limit height to X=215 mm.",
+    "reference_lowest_Y_mm": -43.0,
+    "absolute_lowest_Y_mm": -51.0
+  },
+  "spool_clearance": {
+    "diameter_interval_mm": [180.0, 220.0],
+    "effective_rail_radius_interval_mm": [12.4, 12.7],
+    "minimum_nominal_clearance_mm": 3.5,
+    "diameter_sampling_step_mm": 0.25,
+    "continuous_sweep_guard_mm": 0.14,
+    "circle_quadrant_segments": 128,
+    "interpretation": "Seated rigid-flange clearance only; loaded movement and insertion paths need separate checks. The guard conservatively covers the continuous diameter interval between samples."
+  },
+  "functional_requirements": {
+    "rail_centers_XY_mm": [[90.0, 0.0], [190.0, 12.0]],
+    "nominal_rod_diameter_mm": 25.4,
+    "nominal_seat_radius_mm": 13.0,
+    "positive_retention_required": true,
+    "retention_geometry": "May change; fit, capture, insertion force, strain and fatigue must be reverified rather than inherited.",
+    "fixing_axes_YZ_mm": [[164.0, 12.0], [40.0, 12.0]],
+    "screw_clearance_diameter_mm": 5.2,
+    "washer_support_diameter_mm": 13.0,
+    "washer_landing_X_mm": 3.6,
+    "minimum_nominal_washer_support_fraction": 0.98,
+    "driver_clearance_diameter_mm": 15.8,
+    "driver_access_from_X_mm": 3.61,
+    "wall_contact": "Contact must remain coplanar at X=0 and be sufficient for the solved load path; no requirement to preserve the old full-height strip.",
+    "no_fixed_solid_regions": true,
+    "verification": "These are functional targets, not frozen CAD masks. Candidate-specific contact, fit, mounting and retention checks are required."
+  },
+  "material_freedom": {
+    "removal_allowed_everywhere_in_design_space": true,
+    "addition_allowed_anywhere_inside_envelope": true,
+    "frozen_solid_regions": [],
+    "outer_contours_variable": true,
+    "fillets_and_chamfers_variable": true,
+    "wall_count_variable": true,
+    "skin_geometry_and_thickness_variable": true,
+    "internal_plate_geometry_and_thickness_variable": true,
+    "fixed_internal_plate_count": null,
+    "ribs_and_windows_variable": true,
+    "mandatory_E13_or_G_material": false,
+    "printed_body_must_form_connected_load_paths": true
+  },
+  "density_helpers": {
+    "count_limit": null,
+    "shape_restriction": null,
+    "placement_restriction": "Any 3D placement; effective dense material is the union of helpers intersected with the printable body.",
+    "target_infill_percent": 100,
+    "may_overlap": true,
+    "may_have_disconnected_regions": true,
+    "may_extend_outside_body_for_selection": true,
+    "must_not_be_printable_parts": true,
+    "material_outside_body_must_not_extrude": true,
+    "effective_mass_counted_once": true,
+    "sparse_infill_percent_variable": true,
+    "sparse_infill_structural_credit": 0,
+    "acceptance": "Every emitted dense region must be checked against the selected density field. All printable mass, including walls, skins and automatic caps, is measured from actual sliced paths."
+  },
+  "mechanical_limits": {
+    "reference_load_kg": 12.0,
+    "reference_load_N": 117.72,
+    "effective_planning_modulus_MPa": 1000.0,
+    "maximum_total_loaded_movement_mm": 5.0,
+    "maximum_change_per_1p25kg_spool_mm": 1.0,
+    "provisional_rail_mount_reserve_mm": 1.0,
+    "required_nominal_fracture_factor": 4.0,
+    "all_finite_3D_stress_cells_retained": true,
+    "buckling_and_printability_checks_required": true,
+    "E13_stiffness_is_a_constraint": false
+  },
+  "implementation_status": "Spatial envelope builder and spatial checks supplied. The published G optimizer remains an immutable prior study; expanded shape/density search and new mechanical qualification have not run."
+}

@@ -1,4 +1,12 @@
-# Next study after Rev G — resolve local strength before reducing mass further
+# Current work: correct G's material mapping, then explore G2
+
+**Superseding scope:** [G2-BRIEF.md](G2-BRIEF.md) governs. First recheck the G
+finalist using material from actual Orca paths, at least two walls, zero base
+infill and 100% helpers. Validate two/eight-wall versus two/eight-skin-layer
+contrasts. Count 0.4 mm bridge extrusion in plastic use, but give it zero
+structural or bonded-connection credit. Re-solve the corrected domain before
+using G's stress peaks to choose G2 architecture. The sequence below preserves
+the earlier proposal; its exterior-preservation assumptions are superseded.
 
 Rev G's [original genetic-search sprint](REV-G-SPRINT-BRIEF.md) is complete.
 It evaluated 1,458 distinct parameter sets, verified deterministic replay and
@@ -20,6 +28,15 @@ This does not prove the peaks are artifacts, nor does it establish the
 part's physical rupture load. It identifies the geometry and material
 evidence needed before an automated mass optimum can be trusted.
 
+## Authorized design freedom
+
+The [post-G design envelope](designs/design-envelope/README.md) replaces exact
+exterior preservation. It permits up to **8 mm extra local downward drop**,
+with a lowest point at Y = -51 mm. Material may be removed anywhere; outer
+shape, walls, skins, ribs and planes may change. Any number and shape of 100%
+density helpers may redistribute material. Fit, retention, mounting, spool
+clearance and the mechanical gates remain functional requirements.
+
 ## Proposed sequence
 
 1. **Reproduce the local mechanism.** Build a displacement-driven submodel
@@ -27,10 +44,11 @@ evidence needed before an automated mass optimum can be trusted.
    Compare actual STEP facets, nominal emitted bead boundaries and a
    physically justified printed corner geometry. Require mesh refinement and
    balanced reactions; retain the existing unmodified model as a control.
-2. **Resolve the geometry boundary.** E13's exterior is protected by the F/G
-   scope. Any exterior smoothing or larger local blend is a new design-scope
-   decision, not an implicit optimizer mutation. First determine whether
-   a modifier-only reinforcement can pass with that exterior unchanged.
+2. **Use the expanded design envelope.** Implement variable outer shape and
+   unrestricted material removal inside the spatial contract. Generalize the
+   density representation and packager to arbitrary helper collections. Let
+   contours, fillets, chamfers and local thickness change; enforce functional
+   contact/retention/mounting requirements rather than frozen CAD regions.
 3. **Establish material/process evidence.** Select the actual grade and print
    process, measure printed sections and test representative layer-bond,
    corner and fixing coupons. Keep the 85°F sustained and brief 100°F service

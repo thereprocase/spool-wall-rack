@@ -53,3 +53,10 @@ __pycache__/
 /analysis/rev-g/*.brep
 /analysis/rev-g/*w-h*.npz
 !/analysis/rev-g/*-solution.npz
+
+# G2 and the slicer-derived G material-model correction.
+/analysis/rev-g2/.work/
+/designs/rev-g2/.work/
+/designs/rev-g2/**/.work/
+/analysis/rev-g2/**/*.brep
+/analysis/rev-g2/**/mesh-*.npz

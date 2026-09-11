@@ -1,9 +1,31 @@
-# Spool wall rack — Rev G genetic-study results
+# Spool wall rack — G material-model correction and G2
+
+**September 11, 2026: correcting the structural material model before G2.**
+G's finalist is being rechecked against actual Orca paths with at least two
+walls, 0% base infill and the existing 100% helpers. The wall/skin validation
+matrix includes eight walls with two top/bottom layers and the reverse.
+Thick 0.4 mm bridge extrusion counts toward plastic use but receives no
+structural or bonded-connection credit. No corrected mechanical result or
+preferred G2 prototype is established yet.
+
+[G2 scope and acceptance gates](G2-BRIEF.md) ·
+[Slicer-backed shape tool](analysis/rev-g2/plastic_shape.py) ·
+[Wall/skin case preparation](designs/rev-g2/prepare_g_recheck.py)
+
+The new study may change the actual architecture, rail/fixing positions and
+density strategy. It retains compact spool-relative elevation and permits up
+to 8 mm useful additional downward extension. P1S, 0.4 mm nozzle; PETG or ASA.
+
+## Preserved Rev G numerical study
 
 **September 10, 2026: Rev G's evolutionary-search sprint is complete.
 1,458 distinct parameter sets were evaluated. No tested finalist demonstrates
 the requested 4× fracture margin; no qualified minimum-mass winner is selected.**
 E13 remains the established prototype handoff, with its existing validation limits.
+
+The results below belong to G's former material approximation. They are
+preserved as regression evidence while the slice-to-FEM mapping is corrected;
+they do not establish failure of the actual printed bracket.
 
 [Current Rev G research CAD](designs/rev-g/README.md) ·
 [Search, 3D results and limiting mechanism](analysis/rev-g/README.md) ·

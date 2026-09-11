@@ -1,0 +1,1512 @@
+{
+  "status": "DIAGNOSTIC: archived FEM versus emitted material",
+  "G_Gcode_sha256": "538c9a8d771c6efbb77e75f333168a603de4b95d86032cd5e65ee4ffc5a537fe",
+  "G_field_sha256": "4461f6fd9cf25691afbf1652fabeea5a1076692b2f811f9699eafa2c9737c260",
+  "source_reader": "designs/closed-wall-e13/inspect_toolpaths.py",
+  "slice_transform": [
+    [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      12.5,
+      274.2465,
+      5.32907052e-15
+    ]
+  ],
+  "effective_settings": {
+    "ensure_vertical_shell_thickness": "ensure_all",
+    "wall_loops": "1",
+    "top_shell_layers": "5",
+    "top_shell_thickness": "1",
+    "bottom_shell_layers": "5",
+    "bottom_shell_thickness": "1",
+    "infill_wall_overlap": "15%",
+    "top_bottom_infill_wall_overlap": "25%",
+    "thick_internal_bridges": "1"
+  },
+  "ROI_XY_mm": [
+    130.0,
+    -37.0,
+    160.0,
+    -19.0
+  ],
+  "raw_G_peak_cell": 606314,
+  "raw_G_peak_tensile_MPa": 55.04696702358847,
+  "raw_G_peak_cell_center_XYZ_mm": [
+    144.84294318449167,
+    -30.696938841432306,
+    23.199943787701145
+  ],
+  "sum_emitted_nonsparse_footprint_area_times_layer_height_mm3": 2547.8732401099132,
+  "sum_FEM_cross_section_area_times_layer_height_mm3": 2542.4474513084733,
+  "sum_emitted_extra_area_times_layer_height_mm3": 18.09929364267417,
+  "sum_FEM_uncovered_area_times_layer_height_mm3": 1.3995514006080847,
+  "layers": [
+    {
+      "layer_number": 1,
+      "z_mid_mm": 0.1,
+      "FEM_structural_area_mm2": 312.2379614297776,
+      "emitted_nonsparse_footprint_area_mm2": 312.07063155563077,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.001988402412754066,
+      "emitted_roles": [
+        "Bottom surface",
+        "Gap infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 2,
+      "z_mid_mm": 0.30000000000000004,
+      "FEM_structural_area_mm2": 321.25433501347067,
+      "emitted_nonsparse_footprint_area_mm2": 320.5040435280799,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.25876314033193065,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 3,
+      "z_mid_mm": 0.5,
+      "FEM_structural_area_mm2": 330.2086919539589,
+      "emitted_nonsparse_footprint_area_mm2": 329.84627565062414,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.03800076573776044,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 4,
+      "z_mid_mm": 0.7000000000000001,
+      "FEM_structural_area_mm2": 339.101032251231,
+      "emitted_nonsparse_footprint_area_mm2": 338.2891193911447,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.23890761724364512,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 5,
+      "z_mid_mm": 0.9,
+      "FEM_structural_area_mm2": 344.50394650069717,
+      "emitted_nonsparse_footprint_area_mm2": 344.08475673442655,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.05296139472930202,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 6,
+      "z_mid_mm": 1.1,
+      "FEM_structural_area_mm2": 25.503048551936764,
+      "emitted_nonsparse_footprint_area_mm2": 50.15849457946797,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 25.50289103977442,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.65569318253367,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 7,
+      "z_mid_mm": 1.3,
+      "FEM_structural_area_mm2": 30.624980240376964,
+      "emitted_nonsparse_footprint_area_mm2": 43.74557769484626,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 12.19118386996306,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 8,
+      "z_mid_mm": 1.5,
+      "FEM_structural_area_mm2": 35.74706180436346,
+      "emitted_nonsparse_footprint_area_mm2": 36.407586047608035,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 9,
+      "z_mid_mm": 1.7000000000000002,
+      "FEM_structural_area_mm2": 40.86929324389773,
+      "emitted_nonsparse_footprint_area_mm2": 41.53250113429257,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 10,
+      "z_mid_mm": 1.9000000000000001,
+      "FEM_structural_area_mm2": 45.99167455899278,
+      "emitted_nonsparse_footprint_area_mm2": 46.64270096325769,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 11,
+      "z_mid_mm": 2.1,
+      "FEM_structural_area_mm2": 51.11420574964172,
+      "emitted_nonsparse_footprint_area_mm2": 51.8869561978255,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 12,
+      "z_mid_mm": 2.3000000000000003,
+      "FEM_structural_area_mm2": 56.23700554400219,
+      "emitted_nonsparse_footprint_area_mm2": 56.85336936299026,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 13,
+      "z_mid_mm": 2.5,
+      "FEM_structural_area_mm2": 58.37733317959753,
+      "emitted_nonsparse_footprint_area_mm2": 58.98205998717988,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 14,
+      "z_mid_mm": 2.7,
+      "FEM_structural_area_mm2": 58.377333179600136,
+      "emitted_nonsparse_footprint_area_mm2": 58.97931124689516,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 15,
+      "z_mid_mm": 2.9000000000000004,
+      "FEM_structural_area_mm2": 58.377333179601244,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 16,
+      "z_mid_mm": 3.1,
+      "FEM_structural_area_mm2": 58.37733317960069,
+      "emitted_nonsparse_footprint_area_mm2": 58.98842479175432,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 17,
+      "z_mid_mm": 3.3000000000000003,
+      "FEM_structural_area_mm2": 58.37733317959946,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 18,
+      "z_mid_mm": 3.5,
+      "FEM_structural_area_mm2": 58.37733317959907,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 19,
+      "z_mid_mm": 3.7,
+      "FEM_structural_area_mm2": 58.377333179598814,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 20,
+      "z_mid_mm": 3.9000000000000004,
+      "FEM_structural_area_mm2": 58.377333179598665,
+      "emitted_nonsparse_footprint_area_mm2": 58.97484817666015,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 21,
+      "z_mid_mm": 4.1000000000000005,
+      "FEM_structural_area_mm2": 58.37733317959871,
+      "emitted_nonsparse_footprint_area_mm2": 58.96351496691263,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 22,
+      "z_mid_mm": 4.3,
+      "FEM_structural_area_mm2": 58.37733317959918,
+      "emitted_nonsparse_footprint_area_mm2": 58.96351496691263,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 23,
+      "z_mid_mm": 4.5,
+      "FEM_structural_area_mm2": 58.377333179599745,
+      "emitted_nonsparse_footprint_area_mm2": 58.96351496691263,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 24,
+      "z_mid_mm": 4.7,
+      "FEM_structural_area_mm2": 58.37733317960004,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 25,
+      "z_mid_mm": 4.9,
+      "FEM_structural_area_mm2": 58.377333179600086,
+      "emitted_nonsparse_footprint_area_mm2": 58.96351496691263,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 26,
+      "z_mid_mm": 5.1000000000000005,
+      "FEM_structural_area_mm2": 58.37733317959996,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 27,
+      "z_mid_mm": 5.300000000000001,
+      "FEM_structural_area_mm2": 58.37733317959954,
+      "emitted_nonsparse_footprint_area_mm2": 58.96351496691263,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 28,
+      "z_mid_mm": 5.5,
+      "FEM_structural_area_mm2": 58.37733317959915,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 29,
+      "z_mid_mm": 5.7,
+      "FEM_structural_area_mm2": 58.377333179599,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 30,
+      "z_mid_mm": 5.9,
+      "FEM_structural_area_mm2": 58.37733317959896,
+      "emitted_nonsparse_footprint_area_mm2": 58.97662829350251,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 31,
+      "z_mid_mm": 6.1000000000000005,
+      "FEM_structural_area_mm2": 58.37733317959927,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 32,
+      "z_mid_mm": 6.300000000000001,
+      "FEM_structural_area_mm2": 58.37733317959979,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 33,
+      "z_mid_mm": 6.5,
+      "FEM_structural_area_mm2": 58.37733317960012,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 34,
+      "z_mid_mm": 6.7,
+      "FEM_structural_area_mm2": 58.37733317960025,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 35,
+      "z_mid_mm": 6.9,
+      "FEM_structural_area_mm2": 58.37733317960016,
+      "emitted_nonsparse_footprint_area_mm2": 58.96188851746798,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 36,
+      "z_mid_mm": 7.1000000000000005,
+      "FEM_structural_area_mm2": 58.37733317959975,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 37,
+      "z_mid_mm": 7.300000000000001,
+      "FEM_structural_area_mm2": 58.37733317959905,
+      "emitted_nonsparse_footprint_area_mm2": 58.98350196475205,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 38,
+      "z_mid_mm": 7.5,
+      "FEM_structural_area_mm2": 58.377333179598665,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 39,
+      "z_mid_mm": 7.7,
+      "FEM_structural_area_mm2": 58.37733317959858,
+      "emitted_nonsparse_footprint_area_mm2": 67.23496716153376,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 7.54161032121589,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 40,
+      "z_mid_mm": 7.9,
+      "FEM_structural_area_mm2": 382.50001294125354,
+      "emitted_nonsparse_footprint_area_mm2": 344.35996874505224,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.4916896020723426,
+      "emitted_roles": [
+        "Internal Bridge",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 41,
+      "z_mid_mm": 8.1,
+      "FEM_structural_area_mm2": 382.5000129412538,
+      "emitted_nonsparse_footprint_area_mm2": 382.15178793184805,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.035274754338433696,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 42,
+      "z_mid_mm": 8.3,
+      "FEM_structural_area_mm2": 382.50001294125406,
+      "emitted_nonsparse_footprint_area_mm2": 381.6453258102092,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.25328353648423735,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 43,
+      "z_mid_mm": 8.5,
+      "FEM_structural_area_mm2": 382.5000129412541,
+      "emitted_nonsparse_footprint_area_mm2": 382.15178793184805,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.035274754338433696,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 44,
+      "z_mid_mm": 8.700000000000001,
+      "FEM_structural_area_mm2": 382.5000129412542,
+      "emitted_nonsparse_footprint_area_mm2": 381.6453258102092,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.25328353648423735,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 45,
+      "z_mid_mm": 8.9,
+      "FEM_structural_area_mm2": 58.377333179599376,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 46,
+      "z_mid_mm": 9.1,
+      "FEM_structural_area_mm2": 58.37733317959951,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 47,
+      "z_mid_mm": 9.3,
+      "FEM_structural_area_mm2": 58.3773331795997,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 48,
+      "z_mid_mm": 9.5,
+      "FEM_structural_area_mm2": 58.37733317959976,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 49,
+      "z_mid_mm": 9.700000000000001,
+      "FEM_structural_area_mm2": 58.37733317959976,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 50,
+      "z_mid_mm": 9.9,
+      "FEM_structural_area_mm2": 58.37733317959978,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 51,
+      "z_mid_mm": 10.100000000000001,
+      "FEM_structural_area_mm2": 58.37733317959981,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 52,
+      "z_mid_mm": 10.3,
+      "FEM_structural_area_mm2": 58.377333179599816,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 53,
+      "z_mid_mm": 10.5,
+      "FEM_structural_area_mm2": 58.37733317959987,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 54,
+      "z_mid_mm": 10.700000000000001,
+      "FEM_structural_area_mm2": 58.377333179599844,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 55,
+      "z_mid_mm": 10.9,
+      "FEM_structural_area_mm2": 58.37733317959982,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 56,
+      "z_mid_mm": 11.100000000000001,
+      "FEM_structural_area_mm2": 58.37733317959973,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 57,
+      "z_mid_mm": 11.3,
+      "FEM_structural_area_mm2": 58.377333179599724,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 58,
+      "z_mid_mm": 11.5,
+      "FEM_structural_area_mm2": 58.37733317959961,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 59,
+      "z_mid_mm": 11.700000000000001,
+      "FEM_structural_area_mm2": 58.37733317959962,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 60,
+      "z_mid_mm": 11.9,
+      "FEM_structural_area_mm2": 58.377333179599475,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 61,
+      "z_mid_mm": 12.100000000000001,
+      "FEM_structural_area_mm2": 58.377333179599255,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 62,
+      "z_mid_mm": 12.3,
+      "FEM_structural_area_mm2": 58.37733317959912,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 63,
+      "z_mid_mm": 12.5,
+      "FEM_structural_area_mm2": 58.3773331795991,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 64,
+      "z_mid_mm": 12.700000000000001,
+      "FEM_structural_area_mm2": 58.377333179599056,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 65,
+      "z_mid_mm": 12.9,
+      "FEM_structural_area_mm2": 58.37733317959899,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 66,
+      "z_mid_mm": 13.100000000000001,
+      "FEM_structural_area_mm2": 58.37733317959895,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 67,
+      "z_mid_mm": 13.3,
+      "FEM_structural_area_mm2": 58.37733317959889,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 68,
+      "z_mid_mm": 13.5,
+      "FEM_structural_area_mm2": 58.37733317959889,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 69,
+      "z_mid_mm": 13.700000000000001,
+      "FEM_structural_area_mm2": 58.377333179598914,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 70,
+      "z_mid_mm": 13.9,
+      "FEM_structural_area_mm2": 58.37733317959886,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 71,
+      "z_mid_mm": 14.100000000000001,
+      "FEM_structural_area_mm2": 58.37733317959882,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 72,
+      "z_mid_mm": 14.3,
+      "FEM_structural_area_mm2": 58.37733317959874,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 73,
+      "z_mid_mm": 14.5,
+      "FEM_structural_area_mm2": 58.37733317959879,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 74,
+      "z_mid_mm": 14.700000000000001,
+      "FEM_structural_area_mm2": 58.37733317959898,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 75,
+      "z_mid_mm": 14.9,
+      "FEM_structural_area_mm2": 58.37733317959941,
+      "emitted_nonsparse_footprint_area_mm2": 58.96420047864582,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 76,
+      "z_mid_mm": 15.100000000000001,
+      "FEM_structural_area_mm2": 58.37733317959981,
+      "emitted_nonsparse_footprint_area_mm2": 67.25099779987814,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 7.565843056275208,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 77,
+      "z_mid_mm": 15.3,
+      "FEM_structural_area_mm2": 382.50001294125497,
+      "emitted_nonsparse_footprint_area_mm2": 342.9354917780488,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 1.9838119756523998,
+      "emitted_roles": [
+        "Internal Bridge",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 78,
+      "z_mid_mm": 15.5,
+      "FEM_structural_area_mm2": 382.5000129412549,
+      "emitted_nonsparse_footprint_area_mm2": 381.6513360840938,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.2502778886279542,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 79,
+      "z_mid_mm": 15.700000000000001,
+      "FEM_structural_area_mm2": 382.5000129412547,
+      "emitted_nonsparse_footprint_area_mm2": 382.15178793184805,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.035274754338433696,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 80,
+      "z_mid_mm": 15.9,
+      "FEM_structural_area_mm2": 382.500012941254,
+      "emitted_nonsparse_footprint_area_mm2": 381.6453258102092,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.25328353648423735,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 81,
+      "z_mid_mm": 16.1,
+      "FEM_structural_area_mm2": 382.50001294125354,
+      "emitted_nonsparse_footprint_area_mm2": 382.1517929203213,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.03527475397431954,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 82,
+      "z_mid_mm": 16.3,
+      "FEM_structural_area_mm2": 58.377333179598544,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 83,
+      "z_mid_mm": 16.5,
+      "FEM_structural_area_mm2": 58.37733317959866,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 84,
+      "z_mid_mm": 16.7,
+      "FEM_structural_area_mm2": 58.37733317959902,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 85,
+      "z_mid_mm": 16.900000000000002,
+      "FEM_structural_area_mm2": 58.37733317959959,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 86,
+      "z_mid_mm": 17.1,
+      "FEM_structural_area_mm2": 58.37733317959989,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 87,
+      "z_mid_mm": 17.3,
+      "FEM_structural_area_mm2": 58.3773331796,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 88,
+      "z_mid_mm": 17.5,
+      "FEM_structural_area_mm2": 58.377333179599816,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 89,
+      "z_mid_mm": 17.7,
+      "FEM_structural_area_mm2": 58.37733317959943,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 90,
+      "z_mid_mm": 17.900000000000002,
+      "FEM_structural_area_mm2": 58.37733317959887,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 91,
+      "z_mid_mm": 18.1,
+      "FEM_structural_area_mm2": 58.37733317959864,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 92,
+      "z_mid_mm": 18.3,
+      "FEM_structural_area_mm2": 58.377333179598715,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 93,
+      "z_mid_mm": 18.5,
+      "FEM_structural_area_mm2": 58.37733317959894,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 94,
+      "z_mid_mm": 18.7,
+      "FEM_structural_area_mm2": 58.37733317959932,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 95,
+      "z_mid_mm": 18.900000000000002,
+      "FEM_structural_area_mm2": 58.37733317959972,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 96,
+      "z_mid_mm": 19.1,
+      "FEM_structural_area_mm2": 58.377333179599816,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 97,
+      "z_mid_mm": 19.3,
+      "FEM_structural_area_mm2": 58.37733317959965,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 98,
+      "z_mid_mm": 19.5,
+      "FEM_structural_area_mm2": 58.37733317959933,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 99,
+      "z_mid_mm": 19.700000000000003,
+      "FEM_structural_area_mm2": 58.377333179598885,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 100,
+      "z_mid_mm": 19.900000000000002,
+      "FEM_structural_area_mm2": 58.37733317959856,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 101,
+      "z_mid_mm": 20.1,
+      "FEM_structural_area_mm2": 58.377333179598544,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 102,
+      "z_mid_mm": 20.3,
+      "FEM_structural_area_mm2": 58.37733317959875,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 103,
+      "z_mid_mm": 20.5,
+      "FEM_structural_area_mm2": 58.377333179599006,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 104,
+      "z_mid_mm": 20.700000000000003,
+      "FEM_structural_area_mm2": 58.37733317959586,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 105,
+      "z_mid_mm": 20.900000000000002,
+      "FEM_structural_area_mm2": 58.37733317956096,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 106,
+      "z_mid_mm": 21.1,
+      "FEM_structural_area_mm2": 58.37733317952288,
+      "emitted_nonsparse_footprint_area_mm2": 58.97477495605675,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 107,
+      "z_mid_mm": 21.3,
+      "FEM_structural_area_mm2": 58.377333179483,
+      "emitted_nonsparse_footprint_area_mm2": 58.97305261728033,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 108,
+      "z_mid_mm": 21.5,
+      "FEM_structural_area_mm2": 58.37733317944186,
+      "emitted_nonsparse_footprint_area_mm2": 58.9758069076006,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 109,
+      "z_mid_mm": 21.700000000000003,
+      "FEM_structural_area_mm2": 56.23700554384939,
+      "emitted_nonsparse_footprint_area_mm2": 56.85581434926536,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 110,
+      "z_mid_mm": 21.900000000000002,
+      "FEM_structural_area_mm2": 51.11420574954852,
+      "emitted_nonsparse_footprint_area_mm2": 51.888545546132384,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 111,
+      "z_mid_mm": 22.1,
+      "FEM_structural_area_mm2": 45.99167455895788,
+      "emitted_nonsparse_footprint_area_mm2": 46.63318738339461,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 112,
+      "z_mid_mm": 22.3,
+      "FEM_structural_area_mm2": 40.869293243897665,
+      "emitted_nonsparse_footprint_area_mm2": 41.51577302002987,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 113,
+      "z_mid_mm": 22.5,
+      "FEM_structural_area_mm2": 35.74706180436304,
+      "emitted_nonsparse_footprint_area_mm2": 36.40595711318533,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 114,
+      "z_mid_mm": 22.700000000000003,
+      "FEM_structural_area_mm2": 30.624980240376356,
+      "emitted_nonsparse_footprint_area_mm2": 43.75003621639898,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 12.19234347783769,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 115,
+      "z_mid_mm": 22.900000000000002,
+      "FEM_structural_area_mm2": 25.503048551936285,
+      "emitted_nonsparse_footprint_area_mm2": 50.15757661608167,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 25.502596448304573,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.6481219801617585,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 116,
+      "z_mid_mm": 23.1,
+      "FEM_structural_area_mm2": 344.5039465006969,
+      "emitted_nonsparse_footprint_area_mm2": 308.256208190484,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 1.1609589763154777,
+      "emitted_roles": [
+        "Internal Bridge",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 117,
+      "z_mid_mm": 23.3,
+      "FEM_structural_area_mm2": 339.101032251231,
+      "emitted_nonsparse_footprint_area_mm2": 338.7534318158129,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.03489082323123525,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 118,
+      "z_mid_mm": 23.5,
+      "FEM_structural_area_mm2": 330.2086919539959,
+      "emitted_nonsparse_footprint_area_mm2": 329.3756726187177,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.24458125057772556,
+      "emitted_roles": [
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 119,
+      "z_mid_mm": 23.700000000000003,
+      "FEM_structural_area_mm2": 321.25433501355775,
+      "emitted_nonsparse_footprint_area_mm2": 320.980208642024,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0361603769701343,
+      "emitted_roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 120,
+      "z_mid_mm": 23.900000000000002,
+      "FEM_structural_area_mm2": 312.23796142991586,
+      "emitted_nonsparse_footprint_area_mm2": 312.23535490139363,
+      "emitted_area_outside_FEM_beyond_0p03mm_mm2": 0.0,
+      "FEM_area_uncovered_beyond_0p03mm_mm2": 0.0,
+      "emitted_roles": [
+        "Outer wall",
+        "Top surface"
+      ]
+    }
+  ],
+  "limitations": "Nominal widths define footprint occupancy, not microscopic bead shape or bond quality. Sparse infill is excluded. Integrals use layer midplanes. This diagnoses mapping and cannot reuse old stress as corrected-domain strength."
+}

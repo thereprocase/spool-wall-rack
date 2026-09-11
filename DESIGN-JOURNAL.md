@@ -2,6 +2,35 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — correct slicer-to-FEM material mapping before G2
+
+The hand-built G shell/core and one-direction footprint coverage audit did
+not establish equality with emitted material. The current recheck uses the
+same body and helpers, zero base infill and two walls minimum. A two/eight-wall
+by two/eight-skin-layer matrix tests the new representation. Thick 0.4 mm
+bridge paths remain in plastic use but receive no structural credit.
+
+![Archived G paths compared with its former FEM section](analysis/rev-g2/g-slicer-mapping/mapping-sections.png)
+
+This initial overlay is diagnostic; it is not a corrected strength result.
+The broad architecture brief also supersedes the draft's fixed rail/fixing
+positions and local E13 silhouette constraint. [Current brief](G2-BRIEF.md).
+
+
+## Post-G — September 11 design envelope
+
+Replaced exact exterior preservation with an explicit admissible volume and
+functional fit/retention/mounting requirements. The underside may extend up
+to 8 mm below its current local profile, with an absolute floor of Y=-51 mm.
+Material may be removed anywhere; walls, skins, plates, ribs and windows are
+variables. Helpers have no fixed count, shape or placement; their union is
+clipped to the body before mass and toolpath checks.
+
+![Design envelope and permitted underside growth](designs/design-envelope/design-envelope.png)
+
+The envelope builder verifies accepted removal/addition probes and rejects
+excessive drop and wall penetration. No expanded optimization or new bracket
+qualification has run. [Contract and evidence](designs/design-envelope/README.md).
 
 ## Rev G — repeatable genetic study completed; no accepted finalist
 

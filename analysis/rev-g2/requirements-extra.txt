@@ -1,0 +1,2 @@
+# Add to the established analysis/e13 environment, or use an isolated target.
+manifold3d==3.5.3

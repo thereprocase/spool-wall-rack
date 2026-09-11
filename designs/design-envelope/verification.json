@@ -1,0 +1,55 @@
+{
+  "status": "PASS: envelope construction and spatial probes only",
+  "hash_representation": "UTF-8 text with LF line endings",
+  "definition_sha256": "2ee13e27a1d10787a18e42f665c3738cb463740c53842671df78ca137c352fcd",
+  "reference_profile_sha256": "b6666cdd0406a285366253ea8768dacca70bdb9c67379f5f1e175799324760f3",
+  "builder_sha256": "e947a87492d6c57ee6e0835a10143a03894206019d845320b055f5ec9edbab01",
+  "reference_profile_bounds_XY_mm": [
+    0.0,
+    -43.0,
+    207.51,
+    176.0
+  ],
+  "allowed_domain_bounds_XY_mm": [
+    0.0,
+    -51.0,
+    215.0,
+    180.0
+  ],
+  "maximum_extra_local_drop_mm": 8.0,
+  "absolute_lowest_Y_mm": -51.0,
+  "required_continuous_diameter_guard_mm": 0.13427991920243743,
+  "applied_continuous_diameter_guard_mm": 0.14,
+  "spatial_probes": {
+    "existing_E13_profile": {
+      "outside_allowed_XY_area_mm2": 0.0,
+      "passes_spatial_XY_gate": true,
+      "scope": "Spatial occupancy only. Fit, retention, fixings, connected load paths, density coverage and mechanics remain separate gates."
+    },
+    "remove_material_inside_arm": {
+      "outside_allowed_XY_area_mm2": 0.0,
+      "passes_spatial_XY_gate": true,
+      "scope": "Spatial occupancy only. Fit, retention, fixings, connected load paths, density coverage and mechanics remain separate gates."
+    },
+    "add_material_6mm_below_wall_end": {
+      "outside_allowed_XY_area_mm2": 0.0,
+      "passes_spatial_XY_gate": true,
+      "scope": "Spatial occupancy only. Fit, retention, fixings, connected load paths, density coverage and mechanics remain separate gates."
+    },
+    "reject_9mm_drop_at_wall_end": {
+      "outside_allowed_XY_area_mm2": 10.0,
+      "passes_spatial_XY_gate": false,
+      "scope": "Spatial occupancy only. Fit, retention, fixings, connected load paths, density coverage and mechanics remain separate gates."
+    },
+    "reject_wall_penetration": {
+      "outside_allowed_XY_area_mm2": 5.0,
+      "passes_spatial_XY_gate": false,
+      "scope": "Spatial occupancy only. Fit, retention, fixings, connected load paths, density coverage and mechanics remain separate gates."
+    }
+  },
+  "frozen_material_regions": 0,
+  "helper_count_limit": null,
+  "new_bracket_optimized": false,
+  "expanded_shape_search_implemented": false,
+  "limitations": "The XY domain is extruded through Z=0..24 for spatial occupancy. Screw/driver clearance and washer support are 3D functional requirements, not removed from this side-view drawing. No strength, retention or physical qualification is inferred."
+}

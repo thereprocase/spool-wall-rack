@@ -1,0 +1,15 @@
+{
+  "input_tetrahedra": 17,
+  "removed_numerically_degenerate_cells": 0,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 0.0,
+  "total_absolute_volume_mm3": 480.0,
+  "minimum_retained_normalized_determinant": 0.0803590570772334,
+  "reference_surface_signed_volume_mm3": 480.0,
+  "relative_surface_volume_error": 0.0,
+  "h_mm": 2.0,
+  "surface_sha256": null,
+  "status": "PASS: closed surface and volume mesh",
+  "nodes": 10,
+  "tetrahedra": 17
+}
