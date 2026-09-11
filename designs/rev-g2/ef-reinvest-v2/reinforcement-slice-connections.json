@@ -1,0 +1,1535 @@
+{
+  "status": "REVIEW_UNCOVERED_CENTERLINE_INTERVALS",
+  "raw_credited_structural_components": 1,
+  "paths": [
+    {
+      "name": "seat-to-forearm-flare",
+      "centerline_length_mm": 27.315681913621535,
+      "layers_checked": 100,
+      "maximum_uncovered_interval_mm": 1.2526201116251015,
+      "centerline_covered_all_checked_layers": false,
+      "layer_results": [
+        {
+          "z_mid_mm": 2.1,
+          "uncovered_length_mm": 1.2422946443566714,
+          "largest_uncovered_interval_mm": 1.2422946443566714
+        },
+        {
+          "z_mid_mm": 2.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 2.5,
+          "uncovered_length_mm": 1.2426044746140923,
+          "largest_uncovered_interval_mm": 1.2426044746140923
+        },
+        {
+          "z_mid_mm": 2.7,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 2.9,
+          "uncovered_length_mm": 1.2425965410106847,
+          "largest_uncovered_interval_mm": 1.2425965410106847
+        },
+        {
+          "z_mid_mm": 3.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 3.3,
+          "uncovered_length_mm": 1.2426054663145218,
+          "largest_uncovered_interval_mm": 1.2426054663145218
+        },
+        {
+          "z_mid_mm": 3.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 3.7,
+          "uncovered_length_mm": 1.242605466314536,
+          "largest_uncovered_interval_mm": 1.242605466314536
+        },
+        {
+          "z_mid_mm": 3.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 4.1,
+          "uncovered_length_mm": 1.2425975327111143,
+          "largest_uncovered_interval_mm": 1.2425975327111143
+        },
+        {
+          "z_mid_mm": 4.300000000000001,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 4.5,
+          "uncovered_length_mm": 1.2425975327111143,
+          "largest_uncovered_interval_mm": 1.2425975327111143
+        },
+        {
+          "z_mid_mm": 4.699999999999999,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 4.9,
+          "uncovered_length_mm": 1.2425975327111143,
+          "largest_uncovered_interval_mm": 1.2425975327111143
+        },
+        {
+          "z_mid_mm": 5.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 5.300000000000001,
+          "uncovered_length_mm": 1.242585632306003,
+          "largest_uncovered_interval_mm": 1.242585632306003
+        },
+        {
+          "z_mid_mm": 5.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 5.699999999999999,
+          "uncovered_length_mm": 1.2425806738038696,
+          "largest_uncovered_interval_mm": 1.2425806738038696
+        },
+        {
+          "z_mid_mm": 5.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 6.1,
+          "uncovered_length_mm": 1.2425796821034403,
+          "largest_uncovered_interval_mm": 1.2425796821034403
+        },
+        {
+          "z_mid_mm": 6.300000000000001,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 6.5,
+          "uncovered_length_mm": 1.2425876157068334,
+          "largest_uncovered_interval_mm": 1.2425876157068334
+        },
+        {
+          "z_mid_mm": 6.699999999999999,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 6.9,
+          "uncovered_length_mm": 1.242588607407263,
+          "largest_uncovered_interval_mm": 1.242588607407263
+        },
+        {
+          "z_mid_mm": 7.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 7.300000000000001,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 7.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 7.699999999999999,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 7.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 8.1,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 8.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 8.5,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 8.7,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 8.9,
+          "uncovered_length_mm": 1.2425796821034403,
+          "largest_uncovered_interval_mm": 1.2425796821034403
+        },
+        {
+          "z_mid_mm": 9.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 9.3,
+          "uncovered_length_mm": 1.2425876157068478,
+          "largest_uncovered_interval_mm": 1.2425876157068478
+        },
+        {
+          "z_mid_mm": 9.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 9.7,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 9.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 10.1,
+          "uncovered_length_mm": 1.2425786904030105,
+          "largest_uncovered_interval_mm": 1.2425786904030105
+        },
+        {
+          "z_mid_mm": 10.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 10.5,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 10.7,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 10.9,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 11.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 11.3,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 11.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 11.7,
+          "uncovered_length_mm": 1.0296412378877848,
+          "largest_uncovered_interval_mm": 1.0296412378877848
+        },
+        {
+          "z_mid_mm": 11.9,
+          "uncovered_length_mm": 0.75563233387399,
+          "largest_uncovered_interval_mm": 0.75563233387399
+        },
+        {
+          "z_mid_mm": 12.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.5,
+          "uncovered_length_mm": 1.2425796821034258,
+          "largest_uncovered_interval_mm": 1.2425796821034258
+        },
+        {
+          "z_mid_mm": 12.7,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.9,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 13.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 13.3,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 13.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 13.7,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 13.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 14.1,
+          "uncovered_length_mm": 1.2425786904030247,
+          "largest_uncovered_interval_mm": 1.2425786904030247
+        },
+        {
+          "z_mid_mm": 14.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 14.5,
+          "uncovered_length_mm": 1.2425786904030105,
+          "largest_uncovered_interval_mm": 1.2425786904030105
+        },
+        {
+          "z_mid_mm": 14.7,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 14.9,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 15.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 15.3,
+          "uncovered_length_mm": 1.2425796821034403,
+          "largest_uncovered_interval_mm": 1.2425796821034403
+        },
+        {
+          "z_mid_mm": 15.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 15.7,
+          "uncovered_length_mm": 1.2425876157068478,
+          "largest_uncovered_interval_mm": 1.2425876157068478
+        },
+        {
+          "z_mid_mm": 15.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 16.1,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 16.299999999999997,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 16.5,
+          "uncovered_length_mm": 1.2425786904030105,
+          "largest_uncovered_interval_mm": 1.2425786904030105
+        },
+        {
+          "z_mid_mm": 16.700000000000003,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 16.9,
+          "uncovered_length_mm": 1.2425796821034258,
+          "largest_uncovered_interval_mm": 1.2425796821034258
+        },
+        {
+          "z_mid_mm": 17.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 17.299999999999997,
+          "uncovered_length_mm": 1.2425786904030105,
+          "largest_uncovered_interval_mm": 1.2425786904030105
+        },
+        {
+          "z_mid_mm": 17.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 17.700000000000003,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 17.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 18.1,
+          "uncovered_length_mm": 1.2526111863212501,
+          "largest_uncovered_interval_mm": 1.2526111863212501
+        },
+        {
+          "z_mid_mm": 18.299999999999997,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 18.5,
+          "uncovered_length_mm": 1.2425786904030105,
+          "largest_uncovered_interval_mm": 1.2425786904030105
+        },
+        {
+          "z_mid_mm": 18.700000000000003,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 18.9,
+          "uncovered_length_mm": 1.2425806738038412,
+          "largest_uncovered_interval_mm": 1.2425806738038412
+        },
+        {
+          "z_mid_mm": 19.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 19.299999999999997,
+          "uncovered_length_mm": 1.2526201116251015,
+          "largest_uncovered_interval_mm": 1.2526201116251015
+        },
+        {
+          "z_mid_mm": 19.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 19.700000000000003,
+          "uncovered_length_mm": 1.252613169722095,
+          "largest_uncovered_interval_mm": 1.252613169722095
+        },
+        {
+          "z_mid_mm": 19.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 20.1,
+          "uncovered_length_mm": 1.252612178021694,
+          "largest_uncovered_interval_mm": 1.252612178021694
+        },
+        {
+          "z_mid_mm": 20.299999999999997,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 20.5,
+          "uncovered_length_mm": 1.2526131697221092,
+          "largest_uncovered_interval_mm": 1.2526131697221092
+        },
+        {
+          "z_mid_mm": 20.700000000000003,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 20.9,
+          "uncovered_length_mm": 1.2425806738038556,
+          "largest_uncovered_interval_mm": 1.2425806738038556
+        },
+        {
+          "z_mid_mm": 21.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 21.299999999999997,
+          "uncovered_length_mm": 1.2425796821034403,
+          "largest_uncovered_interval_mm": 1.2425796821034403
+        },
+        {
+          "z_mid_mm": 21.5,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 21.700000000000003,
+          "uncovered_length_mm": 1.242279768850243,
+          "largest_uncovered_interval_mm": 1.242279768850243
+        },
+        {
+          "z_mid_mm": 21.9,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        }
+      ]
+    },
+    {
+      "name": "bearing-to-keel-tie",
+      "centerline_length_mm": 40.1245154965971,
+      "layers_checked": 100,
+      "maximum_uncovered_interval_mm": 0.7071869806338489,
+      "centerline_covered_all_checked_layers": false,
+      "layer_results": [
+        {
+          "z_mid_mm": 2.1,
+          "uncovered_length_mm": 0.21733221556719684,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 2.3,
+          "uncovered_length_mm": 0.21433308760138203,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 2.5,
+          "uncovered_length_mm": 0.2153368942249756,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 2.7,
+          "uncovered_length_mm": 0.21433308760139624,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 2.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 3.1,
+          "uncovered_length_mm": 0.21433308760138203,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 3.3,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 3.5,
+          "uncovered_length_mm": 0.21433308760138203,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 3.7,
+          "uncovered_length_mm": 0.21633689422498747,
+          "largest_uncovered_interval_mm": 0.1377289170207021
+        },
+        {
+          "z_mid_mm": 3.9,
+          "uncovered_length_mm": 0.21433308760138203,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 4.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 4.300000000000001,
+          "uncovered_length_mm": 0.21433308760136782,
+          "largest_uncovered_interval_mm": 0.13673259567850948
+        },
+        {
+          "z_mid_mm": 4.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 4.699999999999999,
+          "uncovered_length_mm": 0.21433308760138203,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 4.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 5.1,
+          "uncovered_length_mm": 0.21433308760137493,
+          "largest_uncovered_interval_mm": 0.1367325956785166
+        },
+        {
+          "z_mid_mm": 5.300000000000001,
+          "uncovered_length_mm": 0.21633689422498747,
+          "largest_uncovered_interval_mm": 0.1377289170207021
+        },
+        {
+          "z_mid_mm": 5.5,
+          "uncovered_length_mm": 0.21433308760137493,
+          "largest_uncovered_interval_mm": 0.1367325956785166
+        },
+        {
+          "z_mid_mm": 5.699999999999999,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 5.9,
+          "uncovered_length_mm": 0.21433308760137493,
+          "largest_uncovered_interval_mm": 0.1367325956785166
+        },
+        {
+          "z_mid_mm": 6.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 6.300000000000001,
+          "uncovered_length_mm": 0.21532840894356298,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 6.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 6.699999999999999,
+          "uncovered_length_mm": 0.21532840894356298,
+          "largest_uncovered_interval_mm": 0.13672891702068313
+        },
+        {
+          "z_mid_mm": 6.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 7.1,
+          "uncovered_length_mm": 0.2143284089435653,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 7.300000000000001,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 7.5,
+          "uncovered_length_mm": 0.2143284089435511,
+          "largest_uncovered_interval_mm": 0.13672891702068313
+        },
+        {
+          "z_mid_mm": 7.699999999999999,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 7.9,
+          "uncovered_length_mm": 0.2143284089435582,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 8.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 8.3,
+          "uncovered_length_mm": 0.2143284089435653,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 8.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 8.7,
+          "uncovered_length_mm": 0.2143284089435582,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 8.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 9.1,
+          "uncovered_length_mm": 0.2143284089435582,
+          "largest_uncovered_interval_mm": 0.13672891702069023
+        },
+        {
+          "z_mid_mm": 9.3,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 9.5,
+          "uncovered_length_mm": 0.1797529742366777,
+          "largest_uncovered_interval_mm": 0.09913763307139334
+        },
+        {
+          "z_mid_mm": 9.7,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 9.9,
+          "uncovered_length_mm": 0.48501978392068873,
+          "largest_uncovered_interval_mm": 0.271421474630917
+        },
+        {
+          "z_mid_mm": 10.1,
+          "uncovered_length_mm": 0.21633221556719917,
+          "largest_uncovered_interval_mm": 0.13772523836291128
+        },
+        {
+          "z_mid_mm": 10.3,
+          "uncovered_length_mm": 0.21934891504020726,
+          "largest_uncovered_interval_mm": 0.1377289170206737
+        },
+        {
+          "z_mid_mm": 10.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 10.7,
+          "uncovered_length_mm": 0.2153366231352578,
+          "largest_uncovered_interval_mm": 0.13673259567849527
+        },
+        {
+          "z_mid_mm": 10.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 11.1,
+          "uncovered_length_mm": 0.180748295578816,
+          "largest_uncovered_interval_mm": 0.10013395441352912
+        },
+        {
+          "z_mid_mm": 11.3,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 11.5,
+          "uncovered_length_mm": 0.2190910648891986,
+          "largest_uncovered_interval_mm": 0.13772891702064527
+        },
+        {
+          "z_mid_mm": 11.7,
+          "uncovered_length_mm": 0.20951275537101566,
+          "largest_uncovered_interval_mm": 0.13294041702069137
+        },
+        {
+          "z_mid_mm": 11.9,
+          "uncovered_length_mm": 1.3656558342057237,
+          "largest_uncovered_interval_mm": 0.7071869806338489
+        },
+        {
+          "z_mid_mm": 12.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 12.7,
+          "uncovered_length_mm": 0.2173514723777501,
+          "largest_uncovered_interval_mm": 0.13673259567856633
+        },
+        {
+          "z_mid_mm": 12.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 13.1,
+          "uncovered_length_mm": 0.21613577956227203,
+          "largest_uncovered_interval_mm": 0.1365263881444747
+        },
+        {
+          "z_mid_mm": 13.3,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 13.5,
+          "uncovered_length_mm": 0.4706910215293246,
+          "largest_uncovered_interval_mm": 0.25736756233322045
+        },
+        {
+          "z_mid_mm": 13.7,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 13.9,
+          "uncovered_length_mm": 0.2158751890610091,
+          "largest_uncovered_interval_mm": 0.13653160623067606
+        },
+        {
+          "z_mid_mm": 14.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 14.3,
+          "uncovered_length_mm": 0.21834820793336718,
+          "largest_uncovered_interval_mm": 0.1367289170206476
+        },
+        {
+          "z_mid_mm": 14.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 14.7,
+          "uncovered_length_mm": 0.46604027114064245,
+          "largest_uncovered_interval_mm": 0.25199272383436316
+        },
+        {
+          "z_mid_mm": 14.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 15.1,
+          "uncovered_length_mm": 0.21551344194963917,
+          "largest_uncovered_interval_mm": 0.13663859951656576
+        },
+        {
+          "z_mid_mm": 15.3,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 15.5,
+          "uncovered_length_mm": 0.18165297106338585,
+          "largest_uncovered_interval_mm": 0.10103580147098512
+        },
+        {
+          "z_mid_mm": 15.7,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 15.9,
+          "uncovered_length_mm": 0.214328408943544,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 16.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 16.299999999999997,
+          "uncovered_length_mm": 0.214328408943544,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 16.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 16.700000000000003,
+          "uncovered_length_mm": 0.2143284089435511,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 16.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 17.1,
+          "uncovered_length_mm": 0.2143284089435511,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 17.299999999999997,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 17.5,
+          "uncovered_length_mm": 0.214328408943544,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 17.700000000000003,
+          "uncovered_length_mm": 0.21633221556718496,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 17.9,
+          "uncovered_length_mm": 0.2143337947081676,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 18.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 18.299999999999997,
+          "uncovered_length_mm": 0.2143337947081676,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 18.5,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 18.700000000000003,
+          "uncovered_length_mm": 0.2143337947081676,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 18.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 19.1,
+          "uncovered_length_mm": 0.2143337947081605,
+          "largest_uncovered_interval_mm": 0.1367325956785166
+        },
+        {
+          "z_mid_mm": 19.299999999999997,
+          "uncovered_length_mm": 0.21633221556718496,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 19.5,
+          "uncovered_length_mm": 0.2143337947081676,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 19.700000000000003,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 19.9,
+          "uncovered_length_mm": 0.2143337947081676,
+          "largest_uncovered_interval_mm": 0.1367325956785237
+        },
+        {
+          "z_mid_mm": 20.1,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 20.299999999999997,
+          "uncovered_length_mm": 0.2143337947081605,
+          "largest_uncovered_interval_mm": 0.1367325956785166
+        },
+        {
+          "z_mid_mm": 20.5,
+          "uncovered_length_mm": 0.21633221556719917,
+          "largest_uncovered_interval_mm": 0.13772523836291128
+        },
+        {
+          "z_mid_mm": 20.700000000000003,
+          "uncovered_length_mm": 0.21432911605032245,
+          "largest_uncovered_interval_mm": 0.13672891702066892
+        },
+        {
+          "z_mid_mm": 20.9,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 21.1,
+          "uncovered_length_mm": 0.21432911605032956,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        },
+        {
+          "z_mid_mm": 21.299999999999997,
+          "uncovered_length_mm": 0.21633221556719207,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 21.5,
+          "uncovered_length_mm": 0.21432911605032245,
+          "largest_uncovered_interval_mm": 0.13672891702066892
+        },
+        {
+          "z_mid_mm": 21.700000000000003,
+          "uncovered_length_mm": 0.21733221556719684,
+          "largest_uncovered_interval_mm": 0.13772523836290418
+        },
+        {
+          "z_mid_mm": 21.9,
+          "uncovered_length_mm": 0.21432911605032956,
+          "largest_uncovered_interval_mm": 0.13672891702067602
+        }
+      ]
+    },
+    {
+      "name": "continuous-lower-rail",
+      "centerline_length_mm": 69.52497283785013,
+      "layers_checked": 100,
+      "maximum_uncovered_interval_mm": 1.457274697588801,
+      "centerline_covered_all_checked_layers": false,
+      "layer_results": [
+        {
+          "z_mid_mm": 2.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 2.3,
+          "uncovered_length_mm": 2.956869158537354,
+          "largest_uncovered_interval_mm": 1.4560228756246139
+        },
+        {
+          "z_mid_mm": 2.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 2.7,
+          "uncovered_length_mm": 2.9551733103718374,
+          "largest_uncovered_interval_mm": 1.455090083804413
+        },
+        {
+          "z_mid_mm": 2.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 3.1,
+          "uncovered_length_mm": 2.955173310371987,
+          "largest_uncovered_interval_mm": 1.4550900838044862
+        },
+        {
+          "z_mid_mm": 3.3,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 3.5,
+          "uncovered_length_mm": 2.9551733103718374,
+          "largest_uncovered_interval_mm": 1.455090083804413
+        },
+        {
+          "z_mid_mm": 3.7,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 3.9,
+          "uncovered_length_mm": 2.9551733103718374,
+          "largest_uncovered_interval_mm": 1.455090083804413
+        },
+        {
+          "z_mid_mm": 4.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 4.300000000000001,
+          "uncovered_length_mm": 2.9551733103719515,
+          "largest_uncovered_interval_mm": 1.4550900838044507
+        },
+        {
+          "z_mid_mm": 4.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 4.699999999999999,
+          "uncovered_length_mm": 2.95517432329576,
+          "largest_uncovered_interval_mm": 1.4550906010057478
+        },
+        {
+          "z_mid_mm": 4.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 5.1,
+          "uncovered_length_mm": 2.9551743232957635,
+          "largest_uncovered_interval_mm": 1.455090601005783
+        },
+        {
+          "z_mid_mm": 5.300000000000001,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 5.5,
+          "uncovered_length_mm": 2.9551743232957945,
+          "largest_uncovered_interval_mm": 1.455090601005783
+        },
+        {
+          "z_mid_mm": 5.699999999999999,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 5.9,
+          "uncovered_length_mm": 2.955173806094498,
+          "largest_uncovered_interval_mm": 1.4550900838044862
+        },
+        {
+          "z_mid_mm": 6.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 6.300000000000001,
+          "uncovered_length_mm": 2.9563010092413795,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 6.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 6.699999999999999,
+          "uncovered_length_mm": 2.9563010092413795,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 6.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 7.1,
+          "uncovered_length_mm": 2.956301009241382,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 7.300000000000001,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 7.5,
+          "uncovered_length_mm": 2.9563010092413795,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 7.699999999999999,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 7.9,
+          "uncovered_length_mm": 2.956301009241446,
+          "largest_uncovered_interval_mm": 1.4562467353819297
+        },
+        {
+          "z_mid_mm": 8.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 8.3,
+          "uncovered_length_mm": 2.9563010092413795,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 8.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 8.7,
+          "uncovered_length_mm": 2.9563010092413795,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 8.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 9.1,
+          "uncovered_length_mm": 2.956301009241382,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 9.3,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 9.5,
+          "uncovered_length_mm": 2.9410876395143815,
+          "largest_uncovered_interval_mm": 1.4566380619038444
+        },
+        {
+          "z_mid_mm": 9.7,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 9.9,
+          "uncovered_length_mm": 2.99027214648845,
+          "largest_uncovered_interval_mm": 1.457274697588801
+        },
+        {
+          "z_mid_mm": 10.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 10.3,
+          "uncovered_length_mm": 3.007624233552026,
+          "largest_uncovered_interval_mm": 1.456521248016696
+        },
+        {
+          "z_mid_mm": 10.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 10.7,
+          "uncovered_length_mm": 2.9563004340963612,
+          "largest_uncovered_interval_mm": 1.456194169132658
+        },
+        {
+          "z_mid_mm": 10.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 11.1,
+          "uncovered_length_mm": 2.9410876395143464,
+          "largest_uncovered_interval_mm": 1.456638061903809
+        },
+        {
+          "z_mid_mm": 11.3,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 11.5,
+          "uncovered_length_mm": 3.025480874599992,
+          "largest_uncovered_interval_mm": 1.456509566627953
+        },
+        {
+          "z_mid_mm": 11.7,
+          "uncovered_length_mm": 0.06391533842997617,
+          "largest_uncovered_interval_mm": 0.06391533842997617
+        },
+        {
+          "z_mid_mm": 11.9,
+          "uncovered_length_mm": 1.898666893228093,
+          "largest_uncovered_interval_mm": 1.0416260486557376
+        },
+        {
+          "z_mid_mm": 12.1,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.3,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 12.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 12.7,
+          "uncovered_length_mm": 2.9891399344448404,
+          "largest_uncovered_interval_mm": 1.4565796549602537
+        },
+        {
+          "z_mid_mm": 12.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 13.1,
+          "uncovered_length_mm": 2.8995028388184965,
+          "largest_uncovered_interval_mm": 1.4560423110793594
+        },
+        {
+          "z_mid_mm": 13.3,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 13.5,
+          "uncovered_length_mm": 2.99274051795404,
+          "largest_uncovered_interval_mm": 1.4560831959398188
+        },
+        {
+          "z_mid_mm": 13.7,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 13.9,
+          "uncovered_length_mm": 2.904930704193583,
+          "largest_uncovered_interval_mm": 1.4570060256483501
+        },
+        {
+          "z_mid_mm": 14.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 14.3,
+          "uncovered_length_mm": 3.00567778687066,
+          "largest_uncovered_interval_mm": 1.4565387700997503
+        },
+        {
+          "z_mid_mm": 14.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 14.7,
+          "uncovered_length_mm": 2.9892984176964186,
+          "largest_uncovered_interval_mm": 1.4560773552455413
+        },
+        {
+          "z_mid_mm": 14.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 15.1,
+          "uncovered_length_mm": 2.9212170122944636,
+          "largest_uncovered_interval_mm": 1.4561123994116185
+        },
+        {
+          "z_mid_mm": 15.3,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 15.5,
+          "uncovered_length_mm": 2.9731654216415815,
+          "largest_uncovered_interval_mm": 1.4565913363489928
+        },
+        {
+          "z_mid_mm": 15.7,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 15.9,
+          "uncovered_length_mm": 2.961094750251495,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 16.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 16.299999999999997,
+          "uncovered_length_mm": 2.9682838932136484,
+          "largest_uncovered_interval_mm": 1.4559897448301133
+        },
+        {
+          "z_mid_mm": 16.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 16.700000000000003,
+          "uncovered_length_mm": 2.961094750251495,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 16.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 17.1,
+          "uncovered_length_mm": 2.961095245974035,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 17.299999999999997,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 17.5,
+          "uncovered_length_mm": 2.9682838932136484,
+          "largest_uncovered_interval_mm": 1.4559897448301133
+        },
+        {
+          "z_mid_mm": 17.700000000000003,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 17.9,
+          "uncovered_length_mm": 2.9610947502514815,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 18.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 18.299999999999997,
+          "uncovered_length_mm": 2.961094750251584,
+          "largest_uncovered_interval_mm": 1.4562467353819297
+        },
+        {
+          "z_mid_mm": 18.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 18.700000000000003,
+          "uncovered_length_mm": 2.9682843889362482,
+          "largest_uncovered_interval_mm": 1.4559897448301549
+        },
+        {
+          "z_mid_mm": 18.9,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 19.1,
+          "uncovered_length_mm": 2.9610947502515867,
+          "largest_uncovered_interval_mm": 1.4562467353819297
+        },
+        {
+          "z_mid_mm": 19.299999999999997,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 19.5,
+          "uncovered_length_mm": 2.9682838932136897,
+          "largest_uncovered_interval_mm": 1.4559897448301549
+        },
+        {
+          "z_mid_mm": 19.700000000000003,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 19.9,
+          "uncovered_length_mm": 2.961095245974035,
+          "largest_uncovered_interval_mm": 1.456246735381863
+        },
+        {
+          "z_mid_mm": 20.1,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 20.299999999999997,
+          "uncovered_length_mm": 2.968284388936226,
+          "largest_uncovered_interval_mm": 1.4559897448301549
+        },
+        {
+          "z_mid_mm": 20.5,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 20.700000000000003,
+          "uncovered_length_mm": 2.9610947502515734,
+          "largest_uncovered_interval_mm": 1.4562467353819297
+        },
+        {
+          "z_mid_mm": 20.9,
+          "uncovered_length_mm": 0.0004973237292951183,
+          "largest_uncovered_interval_mm": 0.0004973237292951183
+        },
+        {
+          "z_mid_mm": 21.1,
+          "uncovered_length_mm": 2.962785502060805,
+          "largest_uncovered_interval_mm": 1.4571754057847484
+        },
+        {
+          "z_mid_mm": 21.299999999999997,
+          "uncovered_length_mm": 0.0005115570941107705,
+          "largest_uncovered_interval_mm": 0.0005115570941107705
+        },
+        {
+          "z_mid_mm": 21.5,
+          "uncovered_length_mm": 2.9627855020607665,
+          "largest_uncovered_interval_mm": 1.4571754057847386
+        },
+        {
+          "z_mid_mm": 21.700000000000003,
+          "uncovered_length_mm": 0,
+          "largest_uncovered_interval_mm": 0
+        },
+        {
+          "z_mid_mm": 21.9,
+          "uncovered_length_mm": 2.9627855020607954,
+          "largest_uncovered_interval_mm": 1.4571754057847386
+        }
+      ]
+    }
+  ],
+  "shape_verification_sha256": "4cabdea1f890188f0b09fbb6b4de0daee6507e158ae4f07e9b27b787a77eb193",
+  "scope": "Exact line coverage in every nominal raw structural slab between Z=2 and Z=22, plus full nominal layer-bond connectivity. Sacrificial bridges are excluded. This tests intended helper load paths; no pore closing, filled gaps or sacrificial bond credit is used. Physical bonding and the eroded solver geometry remain separate."
+}

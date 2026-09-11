@@ -1,0 +1,106 @@
+{
+  "source_result": "discovery",
+  "status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "load_N": 117.72,
+  "maximum_resultant_displacement_mm": 10.493240447727484,
+  "maximum_displacement_position_mm": [
+    203.60000000000002,
+    13.199999999999996,
+    0.4
+  ],
+  "seat_displacements": {
+    "rear_seat": {
+      "mean_displacement_mm": [
+        -0.9861911211942594,
+        -2.6384217807232124,
+        -0.07557959014831792
+      ],
+      "load_weighted_displacement_mm": [
+        -0.9892057206246063,
+        -2.646939541681683,
+        -0.07616251518231759
+      ],
+      "maximum_resultant_displacement_mm": 3.0266235720403416
+    },
+    "front_seat": {
+      "mean_displacement_mm": [
+        0.22074397122431316,
+        -7.402318311977334,
+        -0.05891057158930562
+      ],
+      "load_weighted_displacement_mm": [
+        0.21531877120709736,
+        -7.395749418786933,
+        -0.059421991304095916
+      ],
+      "maximum_resultant_displacement_mm": 7.715039461695819
+    }
+  },
+  "force_balance_error_N": [
+    -1.2559803906007612e-05,
+    -8.814437503861482e-07,
+    -3.2182323621288145e-07
+  ],
+  "moment_balance_error_Nmm": [
+    1.2040906888593356e-05,
+    3.253274692729263e-05,
+    -0.00016677892958255613
+  ],
+  "minimum_wall_gap_mm": 0.0,
+  "minimum_active_wall_reaction_N": 4.801383651512178e-05,
+  "total_wall_reaction_N": 212.57038478288388,
+  "active_wall_nodes": 2636,
+  "compliance_Nmm": 551.7320768919304,
+  "solver_true_relative_free_residual": 9.625595419693303e-05,
+  "contact_steps": 13,
+  "elapsed_seconds": 323.44798438200087,
+  "geometry_omission_fraction": 0.13510016927717472,
+  "idealized_fixing_reactions": {
+    "40": {
+      "force_N": [
+        -210.98352673235922,
+        111.79996928139035,
+        -0.006402396432386784
+      ],
+      "moment_about_fixing_center_Nmm": [
+        -53.99755128059889,
+        156.70769662824793,
+        517.2253721248107
+      ]
+    },
+    "164": {
+      "force_N": [
+        -1.586870610329044,
+        5.9200298371625255,
+        0.006402074609158327
+      ],
+      "moment_about_fixing_center_Nmm": [
+        53.18871641799243,
+        17.131037414302227,
+        -59.384501457306925
+      ]
+    }
+  },
+  "contact_inequality_gate_passed": true,
+  "force_balance_relative_error": 1.0698953411124193e-07,
+  "moment_balance_relative_error": 1.113707313690545e-08,
+  "raw_tensile_peak": {
+    "MPa": 59.75935505411576,
+    "leaf_index": 1382718,
+    "gauss_index": 7,
+    "position_mm": [
+      56.757735026918965,
+      -4.842264973081037,
+      11.957735026918963
+    ]
+  },
+  "retained_stress_samples": 27395296,
+  "raw_von_mises_peak_MPa": 47.27745106836376,
+  "comparison": {
+    "previous_result": "solve",
+    "maximum_nodal_displacement_change_mm": 0.005267396262067458,
+    "relative_displacement_l2_change": 1.0524055780244091e-05,
+    "maximum_stress_component_change_MPa": 0.043758987872934085,
+    "interpretation": "Observed iterate or load sensitivity, not a certified discretization error bound."
+  }
+}

@@ -4,7 +4,7 @@ Implemented experimental CAD and actual Orca slice. Physical print and strength 
 
 Spent extrusion is **52.454 cm3**, versus matched P1S G at 74.100 cm3: **29.211% less**. This includes sacrificial bridges and startup extrusion; it is not CAD volume or a weighed print.
 
-Numerical screening is pending. Sliced mass and CAD checks are not a load rating.
+Retained-material contact screen: 11.434463 mm maximum movement and 69.397705 MPa raw tensile peak at 12 kg. Stated linear tolerance: 1e-04. Status: CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY. Material omission: 15.255%. All finite stress samples and failed attempts remain preserved. Isotropic planning properties, boundary omission and physical qualification remain unresolved. This is the intermediate 1e-4 diagnostic; it does not establish the tighter 1e-5 gate. See the retained tighter attempts separately.
 
 The body retains the verified E+F outer geometry. Its protected G bearing and capture geometry has zero CAD symmetric difference. Mounting axes stay fixed, washer-land support is 99.08%, and driver clearance is checked. The locating underside stays at Y=-32 mm for the first 25.4 mm from the wall. Moulding supplies no assumed structural support.
 

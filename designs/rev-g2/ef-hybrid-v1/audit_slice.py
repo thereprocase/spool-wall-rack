@@ -21,9 +21,11 @@ import generate as seeds
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--attempt',type=Path,required=True)
     ap.add_argument('--output',type=Path,default=D)
+    ap.add_argument('--baseline-shape',type=Path)
+    ap.add_argument('--label',default='E + F')
     args=ap.parse_args(); folder=args.attempt; output=args.output
     replay=json.loads((folder/'slice/replay.json').read_text())
-    assert replay['status']=='PASS_NEW_P1S_PETG_SLICE'
+    assert replay['status'] in ['PASS_NEW_P1S_PETG_SLICE','PASS_NEW_P1S_ASA_SLICE']
     material=PlasticShape.load(folder/'shape')
     data=np.load(folder/'shape/extrusion-paths.npz')
     with zipfile.ZipFile(folder/'slice/audit.3mf') as z:
@@ -39,7 +41,11 @@ def main():
     excluded=(lower[:,0]<18)&(upper[:,0]>0)&(lower[:,1]<28)&(upper[:,1]>0)
     assert not outside.any() and not excluded.any()
     assert material.report['bond_connectivity']['connected_structural_components']==1
-    baseline=json.loads((ROOT/'analysis/rev-g2/evolution-results/batch-02/p1s-baseline/shape-verification.json').read_text())
+    baseline_file=args.baseline_shape/'shape-verification.json' if args.baseline_shape else ROOT/'analysis/rev-g2/evolution-results/batch-02/p1s-baseline/shape-verification.json'
+    baseline=json.loads(baseline_file.read_text())
+    filament=json.loads((folder/'slice/filament.json').read_text())
+    polymer=replay['effective_process_checks']['filament_type']['actual'][0]
+    walls=replay['effective_process_checks']['wall_loops']['actual']
     keys=['all_print_moving_extrusion_volume_mm3','structurally_credited_extrusion_volume_mm3',
           'sacrificial_thick_bridge_extrusion_volume_mm3','nominal_footprint_union_volume_mm3']
     comparison={key:dict(G=baseline[key],EF=material.report[key],change_percent=100*(material.report[key]/baseline[key]-1)) for key in keys}
@@ -54,8 +60,10 @@ def main():
                 coordinate_note='Deposited bed coordinates restored from parsed installed paths through the actual 3MF placement. Nozzle offset is already corrected by the material parser.',
                 material_connectivity=material.report['bond_connectivity'],comparison_with_matched_P1S_G=comparison,
                 Orca_estimated_filament_mass_g=mass,
-                estimated_mass_note='Orca estimate using Generic PETG density 1.27 g/cm3; not a weighed print.',
+                estimated_mass_note=f'Orca estimate using Generic {polymer} density {filament["filament_density"][0]} g/cm3; not a weighed print.',
                 scope='Nominal deposited paths, effective settings, modifier roles, bed clearance and geometric connectivity. Unsupported-roof quality, physical fit, warm material behavior and strength are not certified.')
+    record['comparison_reference_shape_sha256']=__import__('hashlib').sha256(baseline_file.read_bytes()).hexdigest()
+    record['comparison_reference_note']='Explicitly supplied control shape' if args.baseline_shape else 'Historical P1S G, two walls and 1.0 mm skins'
     (output/'slice-verification.json').write_text(json.dumps(record,indent=2)+'\n')
     fig,axes=plt.subplots(1,3,figsize=(15,6),facecolor='#f4f2ed',layout='constrained')
     for ax,z in zip(axes,[3.1,8.1,12.1]):
@@ -64,10 +72,10 @@ def main():
         ax.set(aspect='equal',xlim=(-3,212),ylim=(-63,180),title=f'Actual credited plastic / Z = {z:.1f} mm')
         ax.set_xlabel('Projection from wall / mm'); ax.set_ylabel('Height / mm')
         ax.spines[['top','right']].set_visible(False)
-    fig.suptitle('E + F / actual P1S PETG sliced material',fontsize=18,fontweight='bold')
+    fig.suptitle(f'{args.label} / actual P1S {polymer} sliced material',fontsize=18,fontweight='bold')
     layers=replay['effective_process_checks']['top_shell_layers']['actual']
     modifiers=len(replay['actual_orca_modifier_roles']['modifiers'])
-    fig.supxlabel(f'Two walls · {layers} top/bottom layers · zero base infill · {modifiers} 100% modifier parts\nSacrificial 0.4 mm bridges are excluded from these structural sections and receive no bond or stiffness credit.',fontsize=10)
+    fig.supxlabel(f'{walls} walls · {layers} top/bottom layers · zero base infill · {modifiers} 100% modifier parts\nSacrificial 0.4 mm bridges are excluded from these structural sections and receive no bond or stiffness credit.',fontsize=10)
     fig.savefig(output/'toolpath-sections.png',dpi=160);plt.close(fig)
     print(json.dumps(record,indent=2),flush=True)
 

@@ -1,0 +1,37 @@
+{
+  "parts": [
+    {
+      "name": "body-only",
+      "role": "normal_part",
+      "vertices": 5482,
+      "triangles": 10980,
+      "STL_sha256": "83b06a131b4213a6174afe77d10a654a91c2f0129e1e1e1a7a5f47f949131d89"
+    },
+    {
+      "name": "dense-chords-and-seats",
+      "role": "modifier_part",
+      "vertices": 6186,
+      "triangles": 12392,
+      "STL_sha256": "f7e64c67f81cd30a7c350298e45a679bd008a364e55d45b12e68a00fc17cb741"
+    },
+    {
+      "name": "central-rib-plane",
+      "role": "modifier_part",
+      "vertices": 1728,
+      "triangles": 3464,
+      "STL_sha256": "e3f64ff049dd0fbca4329b30d6b0ef8855251633c041b98dd1cf2cb90bd5e26c"
+    },
+    {
+      "name": "local-transition-backing",
+      "role": "modifier_part",
+      "vertices": 418,
+      "triangles": 828,
+      "STL_sha256": "6b54d2d26791bbc9adb1d14af634d87519ef82f690d8643f54ba9d0010afc2a3"
+    }
+  ],
+  "modifier_count": 3,
+  "sha256": "0648f70e24cb1f12b0e049187c82f4c0a09ae943058507ec4e341319abf88835",
+  "includes_machine_or_filament_profile": false,
+  "includes_Gcode": false,
+  "status": "Requires actual Orca role and path audit"
+}

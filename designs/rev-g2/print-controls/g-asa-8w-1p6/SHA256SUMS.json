@@ -1,0 +1,20 @@
+{
+  "3mf-verification.json": "a4641a4199745702ad733ad9304c587e4c0d6b08969708006decfdf04b7c67a3",
+  "README.md": "f83d0068d9c1e49c197305220dbf6ee1974015444ac89a115892708cf10131ae",
+  "body-mounted.stl": "444b22c70e37c8f39c25001e9bf356827798cd1e7b2f9b162221cafd2a6e799c",
+  "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+  "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+  "bracket-with-modifiers.step": "8a4d315be43645de5bc013394f0c07dbc0a6f2a7870964f7369f2bb36788f61d",
+  "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+  "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+  "part-model-and-modifiers.3mf": "54fc18c395d3481773fb8686755c40743990b2e2bd955c421c35af444b0189ff",
+  "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+  "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+  "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f",
+  "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+  "selected-layout.json": "1b02fe741e04ba463653a34355aa0e9de37dc033f2e8d5029ffa2d7a346af758",
+  "slice-evidence.zip": "de43698009c3856274f4227668b6e7a7524ffb2752fc705fb7815bff42572013",
+  "slice-verification.json": "2834360091dc8df66a6eea53d0d2fbf7646714b28a6db72e7c44f56622a24126",
+  "source-verification.json": "b232514619434f421337f267ab9c08608d824fa121b366a1ab7a19b759e844db",
+  "toolpath-sections.png": "ce4ec2f39308f8b82a264599a29079238c7f932b7f8bcf637555e29dcb968739"
+}

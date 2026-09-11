@@ -40,10 +40,16 @@ def main():
     ap.add_argument('--output',type=Path,required=True)
     ap.add_argument('--source',type=Path,default=Path('designs/rev-g2/g-recheck/2w-5layers'))
     ap.add_argument('--p1s-petg',action='store_true')
+    ap.add_argument('--p1s-material',choices=['PETG','ASA'])
+    ap.add_argument('--walls',type=int,default=2)
     ap.add_argument('--skin-layers',type=int,default=5)
     ap.add_argument('--expected-modifiers',type=int,default=3)
     ap.add_argument('--model-name',default='rev-g-model-and-modifiers.3mf')
     args = ap.parse_args()
+    material=args.p1s_material or 'PETG'
+    assert not (args.p1s_petg and material!='PETG')
+    p1s=args.p1s_petg or args.p1s_material is not None
+    assert args.walls>=2
     source = args.source
     original = Path('designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w')
     out = args.output
@@ -54,10 +60,10 @@ def main():
     for name in ['machine.json','process.json','filament.json']:
         shutil.copyfile(original/name,out/name)
     profile_receipt = None
-    if args.p1s_petg:
+    if p1s:
         profiles = args.orca.parent/'resources/profiles/BBL'
         machine,machine_receipt = installed_profile(profiles,'Bambu Lab P1S 0.4 nozzle')
-        filament,filament_receipt = installed_profile(profiles,'Generic PETG @base')
+        filament,filament_receipt = installed_profile(profiles,f'Generic {material} @base')
         filament.update({'name':'G PETG analysis demo','filament_settings_id':['G PETG analysis demo'],
                          'instantiation':'true','version':'2.4.2.0',
                          'compatible_printers':[machine['name']]})
@@ -70,10 +76,14 @@ def main():
                             'print_settings_id':f'Part P1S PETG 2w {args.skin_layers}-skin screen',
                             'top_shell_layers':str(args.skin_layers),'bottom_shell_layers':str(args.skin_layers),
                             'top_shell_thickness':str(args.skin_layers*.2),'bottom_shell_thickness':str(args.skin_layers*.2)})
+        if material!='PETG' or args.walls!=2:
+            label=f'Part P1S {material} {args.walls}w {args.skin_layers}-skin screen'
+            process.update(name=label,print_settings_id=label,wall_loops=str(args.walls))
+            filament.update(name=f'{material} print-control screen',filament_settings_id=[f'{material} print-control screen'])
         for name,value in [('machine',machine),('filament',filament),('process',process)]:
             (out/(name+'.json')).write_text(json.dumps(value,indent=2)+'\n')
         profile_receipt = {'machine':machine_receipt,'filament':filament_receipt,
-                           'scope':'Installed P1S machine and generic PETG base inheritance; process calibration is not claimed.'}
+                           'scope':f'Installed P1S machine and generic {material} base inheritance; process calibration is not claimed.'}
     model = source/args.model_name
     report = {'status':'RUNNING','input_model_sha256':sha(model),'orca_executable_sha256':sha(args.orca),
               'source_geometry':'Supplied body and aligned helpers; source model identified by SHA256.',
@@ -112,10 +122,10 @@ def main():
         # raw polygon cache remains the same mechanical input. No need to
         # polygonize an identical slice again just to manufacture a timing.
         report['status'] = 'PASS_EXACT_PATH_REPLAY' if all(comparisons.values()) else 'FAIL_PATH_REPLAY'
-        if args.p1s_petg:
+        if p1s:
             effective = json.loads((out/'effective-settings.json').read_text())
-            expected = {'printer_model':'Bambu Lab P1S','filament_type':['PETG'],'nozzle_diameter':['0.4'],
-                        'wall_loops':'2','top_shell_layers':str(args.skin_layers),'bottom_shell_layers':str(args.skin_layers),'sparse_infill_density':'0%'}
+            expected = {'printer_model':'Bambu Lab P1S','filament_type':[material],'nozzle_diameter':['0.4'],
+                        'wall_loops':str(args.walls),'top_shell_layers':str(args.skin_layers),'bottom_shell_layers':str(args.skin_layers),'sparse_infill_density':'0%'}
             report['effective_process_checks'] = {key:{'expected':value,'actual':effective.get(key),
                                                        'pass':effective.get(key) == value} for key,value in expected.items()}
             with zipfile.ZipFile(out/'audit.3mf') as archive:
@@ -127,13 +137,13 @@ def main():
                         sum(p.get('subtype')=='normal_part' for p in parts)==1 and
                         all(v.get('sparse_infill_density')=='100%' for v in modifier_values))
             report['actual_orca_modifier_roles']={'pass':roles_pass,'parts':len(parts),'modifiers':modifier_values}
-            report['status'] = 'PASS_NEW_P1S_PETG_SLICE' if roles_pass and all(v['pass'] for v in report['effective_process_checks'].values()) else 'FAIL_EFFECTIVE_PROCESS'
+            report['status'] = f'PASS_NEW_P1S_{material}_SLICE' if roles_pass and all(v['pass'] for v in report['effective_process_checks'].values()) else 'FAIL_EFFECTIVE_PROCESS'
             report['shape_cache_policy'] = 'New paths require a new raw cache and validation; historical cache is not substituted.'
     else:
         report['status'] = 'FAIL_ORCA'
     (out/'replay.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2),flush=True)
-    if report['status'] not in ['PASS_EXACT_PATH_REPLAY','PASS_NEW_P1S_PETG_SLICE']:
+    if report['status'] not in ['PASS_EXACT_PATH_REPLAY','PASS_NEW_P1S_PETG_SLICE','PASS_NEW_P1S_ASA_SLICE']:
         raise SystemExit(1)
 
 

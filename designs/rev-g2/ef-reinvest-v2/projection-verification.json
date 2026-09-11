@@ -1,0 +1,62 @@
+{
+  "status": "PASS_XY_GEOMETRY; CAD_AND_SLICING_REQUIRED",
+  "fixed_rod_centers_XY_mm": [
+    [
+      90,
+      0
+    ],
+    [
+      190,
+      12
+    ]
+  ],
+  "fixed_mounting_axes_YZ_mm": [
+    [
+      164,
+      12
+    ],
+    [
+      40,
+      12
+    ]
+  ],
+  "moulding_clearance": {
+    "status": "CURRENT_DESIGN_CLEARANCE",
+    "wall_plane_X_mm": 0.0,
+    "matching_lower_wall_corner_XY_mm": [
+      0.0,
+      -32.0
+    ],
+    "moulding_top_Y_mm": -32.0,
+    "measured_moulding_projection_mm": 19.05,
+    "design_horizontal_reach_mm": 25.4,
+    "additional_horizontal_allowance_mm": 6.35,
+    "locating_underside_Y_mm": -32.0,
+    "minimum_locating_underside_X_interval_mm": [
+      0.0,
+      25.4
+    ],
+    "below_moulding_top_rule": "For X from 0 to 25.4 mm, no bracket material may extend below Y=-32 mm. Farther out, downward design space is free of this moulding constraint.",
+    "interpretation": "Preserve G's lower wall locating corner and a horizontal underside for at least one inch from the wall. This replaces the earlier 15 mm estimate; it is not extra projection beyond the front rod or bracket tip.",
+    "scope": "Nominal spatial clearance only. Contact with moulding supplies no assumed structural support. Physical fit remains to be checked."
+  },
+  "projected_connected_components": 1,
+  "projected_body_area_mm2": 7441.667119280994,
+  "area_added_to_E_mm2": 581.8700768450724,
+  "area_removed_from_E_mm2": 0.5435535735866466,
+  "minimum_sampled_nominal_spool_clearance_mm": 4.670272202904513,
+  "moulding_overlap_mm2": 0.0,
+  "matching_locating_edge_mm": 25.4,
+  "bounds_XY_mm": [
+    0.0,
+    -57.48241899292357,
+    207.5060449219181,
+    176.0
+  ],
+  "source_text_hashes": {
+    "designs/rev-g2/shape-seeds/seeds.geojson": "fd1febf4722e9f323f496a04c25700fa945011532f391dfff6c616a3475270cb",
+    "designs/rev-g2/shape-seeds/moulding-clearance.json": "7b44f312743f6f9b84ffeef4c0deb67d1ca316397d6dab84b50236ea43207a5a",
+    "designs/rev-g2/ef-hybrid-v1/prepare.py": "668e96dff14d378722a2e6b564567c0ab5ccf77053d93c9f46b6db0e591698c3"
+  },
+  "note": "Projected area is not printed mass. Moulding is a locating datum, with no assumed structural support."
+}

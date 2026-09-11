@@ -1,0 +1,41 @@
+{
+  "status": "PREPARED_FOR_3D",
+  "candidate": "ef-reinvest-v2",
+  "input_model_sha256": "0648f70e24cb1f12b0e049187c82f4c0a09ae943058507ec4e341319abf88835",
+  "steps": [
+    {
+      "name": "slice",
+      "returncode": 0,
+      "seconds": 13.245246284001041
+    },
+    {
+      "name": "raw-shape",
+      "returncode": 0,
+      "seconds": 25.276802328000485
+    },
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 70.08631448899905
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 9.441842554999312
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 9.484012734999851
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 10.485213118001411
+    }
+  ],
+  "scope": "Fresh actual sliced material on a new CAD body. Fixed G interface coordinates; inscribed 0.2 mm material and isotropic planning law remain screening approximations.",
+  "current_stage": "transfer",
+  "elapsed_seconds": 138.0487750909997,
+  "timing_scope": "Active stages only. CAD/package and parked time before resume are separate."
+}

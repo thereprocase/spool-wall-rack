@@ -1,8 +1,27 @@
 # Printable CAD checkpoint index
 
+## Current print controls and connected brace
+
+Eight deliberate print controls have aligned body/helper STEP, model-only 3MF, actual Orca slices, settings audits and source hashes. The successful recovered ASA print is associated with E13 and seven walls, not the eight-wall G control used as this study's denominator.
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/print-controls
+
+https://github.com/thereprocase/spool-wall-rack/blob/main/designs/rev-g2/print-controls/RECOVERED-PRINTS.md
+
+The direct-core E+F trial cuts 27.048% before reinvestment, adds back 5.406 cm3, and retains 22.492% net saving. Its 4.9818 mm intermediate movement diagnostic exceeds the 4 mm allocation. Numerical tightening fails its bound. The complete handoff is retained as an implemented, rejected stiffness trial.
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/print-controls/ef-core-asa-4w-1p6
+
+The upper-mast cut and earlier connected helper trial also have complete CAD/slice handoffs. Their percentages use the older two-wall, 1.0 mm skin G reference.
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-cut-v4
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-reinvest-v2
+
+
 ## Implemented E + F material-allocation trials
 
-All five have aligned body/helper STEP files, model-only 3MF, actual P1S PETG
+These historical thin-reference schedules have aligned body/helper STEP files, model-only 3MF, actual P1S PETG
 slicing, checks and hashes. They are experimental and physically unqualified.
 The matched G slice spends 74.100 cm3. Sacrificial bridges count in these totals
 and receive no structural or bond credit.
@@ -12,8 +31,8 @@ and receive no structural or bond credit.
 | ef-hybrid-v1 | 73.007 | 1.475% | First reinforced reference; accepted numerical screen is worse than G |
 | ef-lean-v1 | 65.966 | 10.977% | Intermediate material trial; mechanics untested |
 | ef-lean-v2 | 61.613 | 16.851% | Intermediate material trial; mechanics untested |
-| ef-cut-v3 | 52.454 | 29.211% | Cut baseline; numerical screen underway |
-| ef-reinvest-v1 | 58.796 | 20.653% | Adds 6.342 cm3 at three transitions; numerical screen pending |
+| ef-cut-v3 | 52.454 | 29.211% | Intermediate 1e-4 diagnostic; tight check failed |
+| ef-reinvest-v1 | 58.796 | 20.653% | Adds 6.342 cm3; stiffness remains inadequate |
 
 Browse each handoff for direct STEP/helper/3MF downloads and verification.
 

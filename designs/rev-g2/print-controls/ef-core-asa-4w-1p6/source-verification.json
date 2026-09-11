@@ -1,0 +1,15 @@
+{
+  "status": "EXACT_BODY_AND_EXISTING_HELPER_COPY; ADDITIONAL_CORE_HELPER",
+  "source": "designs/rev-g2/print-controls/ef-triangulated-asa-4w-1p6",
+  "copied_files_sha256": {
+    "body-mounted.stl": "bd942d21cf4de6f2aff83633654ec81774ef0b77f8a53bfa02835ab63230882e",
+    "body-only.step": "72590f93adf8914794a2f70a08b3ce27589f56e56fcb49cfaf94dc41d7ef784f",
+    "body-only.stl": "565d0e8fb8d452e3d1b86352be97a980f85ba8a97ce2bbe915292db0fdb63843",
+    "central-rib-plane.step": "61ac0d2fee78a5ca263b422965a29febaf928cadbb038b75937a08fc4ee771a6",
+    "central-rib-plane.stl": "c4459b93767b5f6f17791c29f21680b45a435798ce7d63e742871358ca490d9c",
+    "dense-chords-and-seats.step": "4217680193e7f6b541320195db0f79aa8804cbd7a3e7cf49c636242b016eb900",
+    "dense-chords-and-seats.stl": "f7e64c67f81cd30a7c350298e45a679bd008a364e55d45b12e68a00fc17cb741",
+    "local-transition-backing.step": "766d6bbf6535dbfdcaec552772698c910f630a98a519f53b92987371cd5a8e28",
+    "local-transition-backing.stl": "198c80cc129b33496d4d0c788f2bea3af9f266583399bce3fc61d536bd4f9f5c"
+  }
+}

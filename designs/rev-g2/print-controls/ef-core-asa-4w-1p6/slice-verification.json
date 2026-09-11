@@ -1,0 +1,152 @@
+{
+  "status": "PASS_ACTUAL_SLICE_PROCESS_AND_BED_CHECKS; PHYSICAL_PRINT_UNQUALIFIED",
+  "effective_process_checks": {
+    "printer_model": {
+      "expected": "Bambu Lab P1S",
+      "actual": "Bambu Lab P1S",
+      "pass": true
+    },
+    "filament_type": {
+      "expected": [
+        "ASA"
+      ],
+      "actual": [
+        "ASA"
+      ],
+      "pass": true
+    },
+    "nozzle_diameter": {
+      "expected": [
+        "0.4"
+      ],
+      "actual": [
+        "0.4"
+      ],
+      "pass": true
+    },
+    "wall_loops": {
+      "expected": "4",
+      "actual": "4",
+      "pass": true
+    },
+    "top_shell_layers": {
+      "expected": "8",
+      "actual": "8",
+      "pass": true
+    },
+    "bottom_shell_layers": {
+      "expected": "8",
+      "actual": "8",
+      "pass": true
+    },
+    "sparse_infill_density": {
+      "expected": "0%",
+      "actual": "0%",
+      "pass": true
+    }
+  },
+  "actual_orca_modifier_roles": {
+    "pass": true,
+    "parts": 5,
+    "modifiers": [
+      {
+        "name": "dense-chords-and-seats MODIFIER 100%",
+        "matrix": "1 0 0 153.6469783782959 0 1 0 122.74115610122681 0 0 1 12 0 0 0 1",
+        "source_file": "dense-chords-and-seats.stl",
+        "source_object_id": "-1",
+        "source_volume_id": "-1",
+        "source_offset_x": "0",
+        "source_offset_y": "0",
+        "source_offset_z": "0",
+        "sparse_infill_density": "100%",
+        "sparse_infill_pattern": "rectilinear"
+      },
+      {
+        "name": "central-rib-plane MODIFIER 100%",
+        "matrix": "1 0 0 154.24697685241699 0 1 0 122.7412109375 0 0 1 12.099999904632568 0 0 0 1",
+        "source_file": "central-rib-plane.stl",
+        "source_object_id": "-1",
+        "source_volume_id": "-1",
+        "source_offset_x": "0",
+        "source_offset_y": "0",
+        "source_offset_z": "0",
+        "sparse_infill_density": "100%",
+        "sparse_infill_pattern": "rectilinear"
+      },
+      {
+        "name": "local-transition-backing MODIFIER 100%",
+        "matrix": "1 0 0 154.40000152587891 0 1 0 214.5 0 0 1 12 0 0 0 1",
+        "source_file": "local-transition-backing.stl",
+        "source_object_id": "-1",
+        "source_volume_id": "-1",
+        "source_offset_x": "0",
+        "source_offset_y": "0",
+        "source_offset_z": "0",
+        "sparse_infill_density": "100%",
+        "sparse_infill_pattern": "rectilinear"
+      },
+      {
+        "name": "direct-brace-core MODIFIER 100%",
+        "matrix": "1 0 0 211 0 1 0 192.5 0 0 1 12 0 0 0 1",
+        "source_file": "direct-brace-core.stl",
+        "source_object_id": "-1",
+        "source_volume_id": "-1",
+        "source_offset_x": "0",
+        "source_offset_y": "0",
+        "source_offset_z": "0",
+        "sparse_infill_density": "100%",
+        "sparse_infill_pattern": "rectilinear"
+      }
+    ]
+  },
+  "deposited_object_bed_bounds_with_nominal_width_mm": [
+    18.50200049999999,
+    24.24600049999999,
+    251.9719995,
+    231.7519995
+  ],
+  "object_paths_outside_bed": 0,
+  "object_paths_intersecting_exclusion": 0,
+  "bed_exclusion_rect_mm": [
+    0,
+    0,
+    18,
+    28
+  ],
+  "object_path_count": 392958,
+  "coordinate_note": "Deposited bed coordinates restored from parsed installed paths through the actual 3MF placement. Nozzle offset is already corrected by the material parser.",
+  "material_connectivity": {
+    "connected_structural_components": 1,
+    "component_volumes_mm3": [
+      95319.55555051159
+    ],
+    "connection_definition": "Positive-area overlap of credited material on consecutive layer interfaces; no thick-bridge connection."
+  },
+  "comparison_with_matched_P1S_G": {
+    "all_print_moving_extrusion_volume_mm3": {
+      "G": 118660.02778776054,
+      "EF": 91970.65245093548,
+      "change_percent": -22.492304977850342
+    },
+    "structurally_credited_extrusion_volume_mm3": {
+      "G": 113749.19791369661,
+      "EF": 89656.17482499672,
+      "change_percent": -21.180828990969825
+    },
+    "sacrificial_thick_bridge_extrusion_volume_mm3": {
+      "G": 4835.304023176226,
+      "EF": 2238.9517750510627,
+      "change_percent": -53.695739413292685
+    },
+    "nominal_footprint_union_volume_mm3": {
+      "G": 120769.76763835736,
+      "EF": 95319.55555051152,
+      "change_percent": -21.073330342123352
+    }
+  },
+  "Orca_estimated_filament_mass_g": 95.65,
+  "estimated_mass_note": "Orca estimate using Generic ASA density 1.04 g/cm3; not a weighed print.",
+  "scope": "Nominal deposited paths, effective settings, modifier roles, bed clearance and geometric connectivity. Unsupported-roof quality, physical fit, warm material behavior and strength are not certified.",
+  "comparison_reference_shape_sha256": "9b44f21b06c677b2c7995fd979f6d09d8c47c37ddd9f21991adf043c92618d1a",
+  "comparison_reference_note": "Explicitly supplied control shape"
+}

@@ -29,10 +29,12 @@ def main():
         p=folder/name
         if p.exists():
             clean(json.loads(p.read_text()));target=out/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
-    for result in ['solve','retry-coarse4','contact-discovery','contact-tight']:
-        p=folder/result/'solve.json'
-        if p.exists():
-            clean(json.loads(p.read_text()));target=out/result/'solve.json';target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
+    numerical_reports=[]
+    for p in folder.rglob('solve.json'):
+        data=json.loads(p.read_text());clean(data);numerical_reports.append(data)
+        target=out/p.relative_to(folder);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
+    for p in folder.rglob('completion.json'):
+        clean(json.loads(p.read_text()));target=out/p.relative_to(folder);target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,target)
     audit=folder/args.audit/'audit.json';accepted=None
     if audit.exists():
         accepted=json.loads(audit.read_text());clean(accepted)
@@ -41,9 +43,14 @@ def main():
     printed=comp['EF']/1000;baseline=comp['G']/1000
     mechanics='Numerical screening is pending. Sliced mass and CAD checks are not a load rating.'
     if accepted:
+        source=json.loads((folder/args.result/'solve.json').read_text())
+        assert accepted['source_result']==(folder/args.result).name
+        tolerance=source['contact_history'][-1]['requested_linear_rtol']
         mechanics=(f"Retained-material contact screen: {accepted['maximum_resultant_displacement_mm']:.6f} mm maximum movement and {accepted['raw_tensile_peak']['MPa']:.6f} MPa raw tensile peak at 12 kg. "
-                   f"Status: {accepted['status']}. Material omission: {100*accepted['geometry_omission_fraction']:.3f}%. "
+                   f"Stated linear tolerance: {tolerance:.0e}. Status: {accepted['status']}. Material omission: {100*accepted['geometry_omission_fraction']:.3f}%. "
                    'All finite stress samples and failed attempts remain preserved. Isotropic planning properties, boundary omission and physical qualification remain unresolved.')
+        if tolerance>1e-5:
+            mechanics+=' This is the intermediate 1e-4 diagnostic; it does not establish the tighter 1e-5 gate. See the retained tighter attempts separately.'
     reinvest=''
     if params.get('cut_baseline'):
         cut=json.loads((cad.parent/params['cut_baseline']/'slice-verification.json').read_text())['comparison_with_matched_P1S_G']['all_print_moving_extrusion_volume_mm3']
@@ -52,6 +59,9 @@ def main():
     raw='https://raw.githubusercontent.com/thereprocase/spool-wall-rack/main/designs/rev-g2/'+args.candidate
     model=params.get('model_file','rev-g-model-and-modifiers.3mf')
     helpers=params.get('modifier_names',['dense-chords-and-seats','rib-plane-lower','rib-plane-upper'])
+    body_description='The body retains the verified E+F outer geometry.'
+    if params.get('mast_relief') or params.get('body_source')=='ef-cut-v4' or args.candidate=='ef-reinvest-v2':
+        body_description='The upper mast has a six-millimetre web on the print base, with tapered shoulders returning to full width before either mounting region. This removes low-energy material in the current planning load case. The outer XY projection is retained.'
     text=f'''# {params['name']}
 
 Implemented experimental CAD and actual Orca slice. Physical print and strength are unqualified.
@@ -60,7 +70,7 @@ Spent extrusion is **{printed:.3f} cm3**, versus matched P1S G at {baseline:.3f}
 {reinvest}
 {mechanics}
 
-The body retains the verified E+F outer geometry. Its protected G bearing and capture geometry has zero CAD symmetric difference. Mounting axes stay fixed, washer-land support is 99.08%, and driver clearance is checked. The locating underside stays at Y=-32 mm for the first 25.4 mm from the wall. Moulding supplies no assumed structural support.
+{body_description} Its protected G bearing and capture geometry has zero CAD symmetric difference. Mounting axes stay fixed, washer-land support is 99.08%, and driver clearance is checked. The locating underside stays at Y=-32 mm for the first 25.4 mm from the wall. Moulding supplies no assumed structural support.
 
 Use OrcaSlicer, P1S, 0.4 mm nozzle, calibrated PETG or ASA, two walls, {round(params['skin_mm']/.2)} top/bottom layers at 0.2 mm, zero base infill and 100% rectilinear helpers. This receipt is the PETG slice; ASA requires a fresh process check. Import one object with aligned parts. Only the body prints. Every helper and its external tabs/halos must remain an infill modifier. STEP preserves alignment but does not encode slicer roles. The model-only 3MF records roles but carries no printer/filament calibration. The slice archive is engineering evidence, not machine-ready G-code.
 

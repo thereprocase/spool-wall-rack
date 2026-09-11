@@ -1,0 +1,27 @@
+{
+  "status": "PASS_CONTINUOUS_CORE_CAD_AND_REAL_BODY_JUNCTIONS",
+  "body_clipped_core_solids": 1,
+  "body_clipped_core_volume_mm3": 15178.611791044963,
+  "core_overlap_with_existing_dense_material_mm3": 1341.7079838445927,
+  "core_overlap_with_bearing_to_keel_helper_mm3": 691.9653078330393,
+  "assembly_solid_count": 8,
+  "STL_check": {
+    "file": "direct-brace-core.stl",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 0.0,
+    "input_boundary_edges": 0,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "expected_CAD_solids": 1,
+    "input_triangles": 260,
+    "output_triangles": 260,
+    "signed_volume_change_mm3": 0.0,
+    "input_sha256": "2a861c638b997495da24e31e3a0cb72fea01707ac93eec8f1f96f5270102e001",
+    "output_sha256": "fc9738bf40dce0ca60d17f6254decd2ddd23b7788f51e08a6a2dd4a9b212a066",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false,
+    "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+  },
+  "elapsed_seconds": 54.45127990000037,
+  "scope": "Body geometry is unchanged. The core is a 100 percent infill modifier, not additional geometry. Both overlaps are inside the real body. Actual extrusion, credited layer bonds and mechanics are checked separately."
+}

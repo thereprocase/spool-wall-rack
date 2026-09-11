@@ -1,0 +1,101 @@
+{
+  "protected_interface_symmetric_difference_mm3": 0.0,
+  "crown_moulding_keepout_overlap_mm3": 0.0,
+  "fixed_rod_centers_XY_mm": [
+    [
+      90,
+      0
+    ],
+    [
+      190,
+      12
+    ]
+  ],
+  "fixing_checks": [
+    {
+      "axis_YZ_mm": [
+        164,
+        12
+      ],
+      "support_fraction": 0.9908180681862984,
+      "driver_overlap_mm3": 0.0
+    },
+    {
+      "axis_YZ_mm": [
+        40,
+        12
+      ],
+      "support_fraction": 0.9908180681862987,
+      "driver_overlap_mm3": 0.0
+    }
+  ],
+  "installed_bounds_mm": [
+    0.0,
+    -57.48241899292357,
+    -7.034373084024992e-12,
+    207.5060449219181,
+    176.0,
+    24.000000000007034
+  ],
+  "status": "PASS_SUBTRACTIVE_BODY_AND_RETAINED_INTERFACE_CHECKS; PHYSICAL_AND_MECHANICAL_QUALIFICATION_OPEN",
+  "body_valid": true,
+  "body_solids": 1,
+  "body_source": "ef-cut-v3",
+  "body_CAD_envelope_volume_mm3": 158723.68981804402,
+  "removed_upper_mast_CAD_volume_mm3": 14685.543298144386,
+  "new_removed_material_inside_protected_guard_mm3": 0.0,
+  "removed_material_below_Z6_mm3": 0.0,
+  "body_STL_check": {
+    "file": "body-only.stl",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.984819338637192e-05,
+    "input_boundary_edges": 3,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "expected_CAD_solids": 1,
+    "input_triangles": 11617,
+    "output_triangles": 10980,
+    "signed_volume_change_mm3": 0.0035480539372656494,
+    "input_sha256": "27bdbf6d480bf1fc8f304d8c9f69be3e90f68a54fbbfab0b1c78a7def6f9eb9e",
+    "output_sha256": "83b06a131b4213a6174afe77d10a654a91c2f0129e1e1e1a7a5f47f949131d89",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false,
+    "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+  },
+  "mounted_STL_check": {
+    "file": "body-mounted.stl",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.982948303222656e-05,
+    "input_boundary_edges": 6,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "expected_CAD_solids": 1,
+    "input_triangles": 11618,
+    "output_triangles": 10984,
+    "signed_volume_change_mm3": 0.0036570283118635416,
+    "input_sha256": "a8ac2e57d23a609b1dcccb89d1a1c98d24f500ba75c588218efec829422825db",
+    "output_sha256": "3853f3fc04a023bafb8de408cf27dd826ce85cdffbda62cc04bb3d2396be951a",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false,
+    "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+  },
+  "helpers": [
+    {
+      "name": "dense-chords-and-seats",
+      "solid_count": 3,
+      "body_intersection_mm3": 34643.26869253621,
+      "role": "100% infill modifier; never a printable part",
+      "copied_STEP_sha256": "4217680193e7f6b541320195db0f79aa8804cbd7a3e7cf49c636242b016eb900"
+    },
+    {
+      "name": "central-rib-plane",
+      "solid_count": 1,
+      "body_intersection_mm3": 3775.239202039458,
+      "role": "100% infill modifier; never a printable part",
+      "copied_STEP_sha256": "b00905d8d0ff93b7a72048ca6b2633c6c2947b85cc62ad12ae802ca73478146a"
+    }
+  ],
+  "assembly_solid_count": 5,
+  "elapsed_seconds": 72.6755290000001,
+  "scope": "Only upper mast through-width material is removed. XY projection, moulding, rods and hardware are retained. CAD removed volume is not saved filament. The 6 mm web lies on the print base; its sloped top has no unsupported roof. Current-load low energy is an allocation clue, not qualification for other loads."
+}

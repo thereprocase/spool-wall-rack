@@ -1,0 +1,30 @@
+{
+  "candidate": "ef-core-asa-4w-1p6",
+  "comparison_control": "g-asa-8w-1p6",
+  "spent_volume_mm3": 91970.65245093548,
+  "reference_volume_mm3": 118660.02778776054,
+  "saving_percent": 22.492304977850342,
+  "Orca_estimated_mass_g": 95.65,
+  "polymer": "ASA",
+  "walls": 4,
+  "skin_mm": 1.6,
+  "mechanics_status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "scope": "Deliberate G slicer controls, not the recovered successful ASA print. Recovery associates that print with E13, seven walls and 10 percent infill. No measured material calibration is claimed.",
+  "linear_rtol": 0.0001,
+  "maximum_resultant_displacement_mm": 4.981787338967296,
+  "raw_tensile_peak": {
+    "MPa": 32.195513189086434,
+    "leaf_index": 2828781,
+    "gauss_index": 3,
+    "position_mm": [
+      141.04226497308107,
+      -16.042264973081032,
+      12.157735026918962
+    ]
+  },
+  "geometry_omission_fraction": 0.08902009143354594,
+  "audit": "finish-01/discovery-audit/audit.json",
+  "gross_cut_percent": 27.04816864234283,
+  "added_back_mm3": 5405.989090259274,
+  "reserve_to_20_percent_target_mm3": 2957.3697792729654
+}

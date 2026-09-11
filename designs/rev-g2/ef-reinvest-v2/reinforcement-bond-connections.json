@@ -1,0 +1,56 @@
+{
+  "status": "PASS_LOCAL_CREDITED_BOND_ROUTES",
+  "regions": [
+    {
+      "name": "seat-to-forearm-flare",
+      "regional_material_components": 1,
+      "all_component_volumes_mm3": [
+        4120.767392468182
+      ],
+      "main_component_fraction": 1.0,
+      "anchor_volume_fraction_in_main_component": [
+        1.0,
+        1.0
+      ],
+      "main_component_connects_both_anchors": true,
+      "raw_region_volume_mm3": 4120.767392468182,
+      "layer_bond_links": 120,
+      "minimum_bond_overlap_area_mm2": 1e-08
+    },
+    {
+      "name": "bearing-to-keel-tie",
+      "regional_material_components": 1,
+      "all_component_volumes_mm3": [
+        3838.8925614696013
+      ],
+      "main_component_fraction": 1.0,
+      "anchor_volume_fraction_in_main_component": [
+        1.0,
+        1.0
+      ],
+      "main_component_connects_both_anchors": true,
+      "raw_region_volume_mm3": 3838.8925614696013,
+      "layer_bond_links": 121,
+      "minimum_bond_overlap_area_mm2": 1e-08
+    },
+    {
+      "name": "continuous-lower-rail",
+      "regional_material_components": 1,
+      "all_component_volumes_mm3": [
+        5605.173368921448
+      ],
+      "main_component_fraction": 1.0,
+      "anchor_volume_fraction_in_main_component": [
+        1.0,
+        1.0
+      ],
+      "main_component_connects_both_anchors": true,
+      "raw_region_volume_mm3": 5605.173368921448,
+      "layer_bond_links": 125,
+      "minimum_bond_overlap_area_mm2": 1e-08
+    }
+  ],
+  "all_raw_material_components": 1,
+  "shape_verification_sha256": "4cabdea1f890188f0b09fbb6b4de0daee6507e158ae4f07e9b27b787a77eb193",
+  "scope": "Positive-area bonds between touching raw structural layers, restricted separately to each designed helper footprint. At least 99 percent of each endpoint anchor and local credited volume must lie in the same connected route. All regional components are retained and reported. No filled pores, closing, remote routes through the rest of the bracket, or sacrificial bridge bonds are used. Straight centerline coverage is a separate stricter diagnostic and can encounter pores even when this material route remains connected. Physical bond strength and the inscribed numerical mesh remain separate."
+}

@@ -1,0 +1,125 @@
+{
+  "name": "EF reinvest v2 / tapered lower rail and bearing-to-keel tie",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 0.6,
+  "internal_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "bottom_band": 1.2,
+  "diagonal_band": 1.2,
+  "seat_band": 4.5,
+  "front_seat_band": 2.4,
+  "lower_tunnel_collar_mm": 3.0,
+  "upper_tunnel_collar_mm": 2.0,
+  "window_scale": 0,
+  "modifier_names": [
+    "dense-chords-and-seats",
+    "central-rib-plane",
+    "local-transition-backing"
+  ],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 20.0,
+  "target_note": "Reinvest the mast-trimmed cut in a continuous lower rail, a bearing-to-keel tie and a tapered forearm root. Check actual credited joins and recompute the complete sliced material.",
+  "cut_baseline": "ef-cut-v4",
+  "local_reinforcement": [
+    {
+      "name": "seat-to-forearm-flare",
+      "points_XY_mm": [
+        [
+          98,
+          -14
+        ],
+        [
+          105,
+          -18
+        ],
+        [
+          115,
+          -16
+        ],
+        [
+          124,
+          -15
+        ]
+      ],
+      "radii_mm": [
+        3.0,
+        4.0,
+        2.5,
+        1.2
+      ]
+    },
+    {
+      "name": "bearing-to-keel-tie",
+      "points_XY_mm": [
+        [
+          85,
+          -16
+        ],
+        [
+          84,
+          -24
+        ],
+        [
+          84,
+          -37
+        ],
+        [
+          84,
+          -48
+        ],
+        [
+          92,
+          -49
+        ]
+      ],
+      "radii_mm": [
+        2.8,
+        1.3,
+        1.4,
+        2.8,
+        1.2
+      ]
+    },
+    {
+      "name": "continuous-lower-rail",
+      "points_XY_mm": [
+        [
+          20,
+          -30
+        ],
+        [
+          30,
+          -30
+        ],
+        [
+          43,
+          -38
+        ],
+        [
+          59,
+          -47
+        ],
+        [
+          69,
+          -51
+        ],
+        [
+          84,
+          -49
+        ]
+      ],
+      "radii_mm": [
+        1.2,
+        2.6,
+        1.2,
+        1.2,
+        2.6,
+        1.4
+      ]
+    }
+  ],
+  "body_source": "ef-cut-v4"
+}

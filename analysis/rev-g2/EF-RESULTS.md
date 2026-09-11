@@ -1,3 +1,13 @@
+# Current continuation: thicker print controls and continuous brace core
+
+The newer controls and reinvestment handoffs are under the following page. Historical percentages below use the two-wall, 1.0 mm skin digital G reference, not a recovered physical print.
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/print-controls
+
+The thin cut and helper trials now have intermediate 1e-4 contact diagnostics. Each tighter 1e-5 attempt missed its bound and is preserved: cut-v3 11.434463 mm / 69.397705 MPa; reinvest-v1 10.765244 mm / 67.948735 MPa; connected reinvest-v2 10.493240 mm / 59.759355 MPa. These did not become winners. No percentile stress substitution was used.
+
+Upper-mast relief frees 2.090 cm3 of actual extrusion in cut-v4, which saves 32.032% against the thin digital G. Connected tapered helpers then spend 10.318 cm3, leaving 18.108% saving in reinvest-v2. Local raw-layer routes pass connectivity, but improved connection alone did not recover G stiffness. The next body adds a direct diagonal and retains thicker skins.
+
 # E + F material reserve and local reinforcement
 
 The implemented cut removes **29.211% of matched G spent extrusion**.

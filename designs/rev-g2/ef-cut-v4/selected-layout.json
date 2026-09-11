@@ -1,0 +1,32 @@
+{
+  "name": "EF cut v4 / thin upper mast with a flat print base",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 0.6,
+  "internal_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "bottom_band": 1.2,
+  "diagonal_band": 1.2,
+  "seat_band": 4.5,
+  "front_seat_band": 2.4,
+  "lower_tunnel_collar_mm": 3.0,
+  "upper_tunnel_collar_mm": 2.0,
+  "window_scale": 0,
+  "modifier_names": [
+    "dense-chords-and-seats",
+    "central-rib-plane"
+  ],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 30.0,
+  "target_note": "Retain the v3 cut and remove low-energy upper-mast material through width. Reinvest separately using continuous tapered load paths.",
+  "mast_relief": {
+    "Y_start_mm": 62,
+    "Y_lower_flat_mm": 78,
+    "Y_upper_flat_mm": 130,
+    "Y_end_mm": 146,
+    "remaining_Z_thickness_mm": 6,
+    "original_Z_thickness_mm": 24
+  }
+}

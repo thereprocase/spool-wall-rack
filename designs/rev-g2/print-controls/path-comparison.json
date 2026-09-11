@@ -1,0 +1,34 @@
+{
+  "status": "PASS_IDENTICAL_NUMERIC_PATH_INPUTS",
+  "comparisons": [
+    {
+      "walls": 4,
+      "arrays": {
+        "paths": true,
+        "width": true,
+        "height": true,
+        "declared_height": true,
+        "top": true,
+        "role": true,
+        "volume": true,
+        "structural": true
+      },
+      "all_identical": true
+    },
+    {
+      "walls": 8,
+      "arrays": {
+        "paths": true,
+        "width": true,
+        "height": true,
+        "declared_height": true,
+        "top": true,
+        "role": true,
+        "volume": true,
+        "structural": true
+      },
+      "all_identical": true
+    }
+  ],
+  "scope": "ASA/PETG generic profiles compared at the same wall and skin settings. Equal deposited geometry does not imply equal material properties, print bonding, creep or physical performance. The planning modulus remains unchanged and uncalibrated."
+}

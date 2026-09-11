@@ -1,0 +1,13 @@
+{
+  "candidate": "ef-triangulated-asa-6w-1p6",
+  "comparison_control": "g-asa-8w-1p6",
+  "spent_volume_mm3": 104336.43346263029,
+  "reference_volume_mm3": 118660.02778776054,
+  "saving_percent": 12.071119982164447,
+  "Orca_estimated_mass_g": 108.51,
+  "polymer": "ASA",
+  "walls": 6,
+  "skin_mm": 1.6,
+  "mechanics_status": "PENDING",
+  "scope": "Deliberate G slicer controls, not the recovered successful ASA print. Recovery associates that print with E13, seven walls and 10 percent infill. No measured material calibration is claimed."
+}

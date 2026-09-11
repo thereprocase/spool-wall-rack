@@ -1,22 +1,20 @@
-# Spool wall rack — G material-model correction and G2
+# Spool wall rack: recovered print settings and E + F trials
 
-**Current design: E + F, cut first and reinforce locally.** The implemented cut
-uses 29.21% less spent extrusion than the matched P1S G slice. Adding 6.34 cm3
-back at the seat, wall-brace and keel-post transitions leaves **20.65% net
-saving**. This is measured slicing evidence; cut and reinforced mechanics are
-being checked. The first heavier EF reference was more flexible than G.
+**Recovered print evidence changes the reference.** The completed overnight ASA archive uses seven walls, 10% base infill and 1.6 mm minimum top/bottom thickness. Its associated downloaded STEP matches E13 exactly. The newer STEP matches G; its saved PETG project uses two walls and the same 1.6 mm thickness settings, but the exact earlier PETG submission is not recovered. Geometry, walls and material changed together.
 
-The G bearing/capture geometry, rod positions and mounting axes stay fixed.
-The bottom underside stays at Y=-32 mm for at least 25.4 mm outward from the
-wall before descending. Moulding is a locating datum, with no assumed support.
+https://github.com/thereprocase/spool-wall-rack/blob/main/designs/rev-g2/print-controls/RECOVERED-PRINTS.md
 
-Current results and downloads
+**Current E + F result: material budget achieved; stiffness target missed.** A direct diagonal with a continuous solid helper core uses 22.49% less extrusion than the deliberate eight-wall G control, with 1.6 mm skins retained. Intermediate contact diagnostics give 4.9818 mm movement versus 2.6730 mm for that G control. Both tighter 1e-5 checks miss their time bounds. This is not a winning or physically qualified design.
 
-https://github.com/thereprocase/spool-wall-rack/blob/main/analysis/rev-g2/EF-RESULTS.md
+The G rod/mount positions and protected bearing/capture geometry remain fixed. The locating underside stays at Y=-32 mm for at least 25.4 mm from the wall. No moulding support is assumed.
 
-https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-reinvest-v1
+All current controls, actual slices, aligned STEP/helpers and numerical limitations
 
-![Cut and local reinforcement](analysis/rev-g2/ef-hybrid-results/material-allocation.png)
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/print-controls
+
+![Actual sliced brace reinvestment](designs/rev-g2/print-controls/reinvestment.png)
+
+## Preserved earlier screening work
 
 **Completed local pilot: [evolutionary screening loop](analysis/rev-g2/EVOLUTION.md).** The first
 batch screened 100 helper proposals in 11 min 18 s. The leading actual-slice

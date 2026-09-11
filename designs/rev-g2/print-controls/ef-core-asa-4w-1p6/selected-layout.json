@@ -1,0 +1,105 @@
+{
+  "name": "EF solid brace core / ASA / 4 walls / 1.6 mm skins",
+  "walls": 4,
+  "infill_percent": 0,
+  "skin_mm": 1.6,
+  "internal_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "bottom_band": 1.2,
+  "diagonal_band": 1.2,
+  "seat_band": 4.5,
+  "front_seat_band": 2.4,
+  "lower_tunnel_collar_mm": 3.0,
+  "upper_tunnel_collar_mm": 2.0,
+  "window_scale": 0,
+  "modifier_names": [
+    "dense-chords-and-seats",
+    "central-rib-plane",
+    "local-transition-backing",
+    "direct-brace-core"
+  ],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 20.0,
+  "target_note": "Starting from the 27.048 percent lighter 1.6 mm skin, four-wall ASA direct-brace body, use the reserve for a continuous 100 percent dense brace core and retain the bearing/post ties. Target 20 percent less spent extrusion than the reconstructed eight-wall G ASA control.",
+  "cut_baseline": "ef-triangulated-asa-4w-1p6",
+  "local_reinforcement": [
+    {
+      "name": "seat-to-forearm-flare",
+      "points_XY_mm": [
+        [
+          98,
+          -14
+        ],
+        [
+          105,
+          -18
+        ],
+        [
+          115,
+          -16
+        ],
+        [
+          124,
+          -15
+        ]
+      ],
+      "radii_mm": [
+        3.0,
+        4.0,
+        2.5,
+        1.2
+      ]
+    },
+    {
+      "name": "bearing-to-keel-tie",
+      "points_XY_mm": [
+        [
+          85,
+          -16
+        ],
+        [
+          84,
+          -24
+        ],
+        [
+          84,
+          -37
+        ],
+        [
+          84,
+          -48
+        ],
+        [
+          69,
+          -51
+        ]
+      ],
+      "radii_mm": [
+        2.8,
+        1.3,
+        1.4,
+        2.8,
+        3.0
+      ]
+    }
+  ],
+  "body_source": "ef-cut-v4",
+  "direct_brace": {
+    "points_XY_mm": [
+      [
+        9,
+        30
+      ],
+      [
+        69,
+        -51
+      ]
+    ],
+    "radius_mm": 3.0
+  },
+  "filament_type": "ASA",
+  "comparison_control": "g-asa-8w-1p6",
+  "direct_brace_core": true
+}

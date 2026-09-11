@@ -4,6 +4,18 @@ Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analy
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — continuous brace, thicker controls and recovered originals
+
+Replaced disconnected reinforcement patches with rounded, tapered paths reaching the actual seat/forearm and bearing/keel endpoints. Raw credited layers form one local component on each route; no pores or sacrificial bridges are used to invent connections. CAD verifies body-clipped overlap. Nonetheless, the thin connected helper trial remains much more flexible than G.
+
+Added a direct six-millimetre diagonal between the lower mounting region and keel, retaining the upper-mast relief, fixed interfaces and one-inch moulding underside. In ASA with four walls and 1.6 mm skins, it cuts 27.048% versus a deliberate eight-wall G control. Filling the diagonal with a 100% helper spends 5.406 cm3, leaving 22.492% saving and 2.957 cm3 of reserve before the 20% target. Actual core and adjacent tapered-helper routes each contain all their regional material and endpoint anchors in a single connected component.
+
+The thicker G intermediate contact result is 2.672976 mm / 21.000368 MPa. The reinforced EF intermediate result is 4.981787 mm / 32.195513 MPa. Both retain every stress sample; both miss their bounded 1e-5 check. The EF part exceeds the 4 mm movement allocation and is not a winner. Material omissions remain approximately 4.734% for G and 8.902% for EF. Connectivity and material saving are not enough to demonstrate an effective architecture.
+
+Recovered the actual overnight ASA archive through the existing printer bridge route, with read-only direct transfer after its buffered download stalled. The archive has two brackets, seven walls, 10% base infill and 1.6 mm minimum skins. Its associated downloaded STEP matches E13 byte for byte; the newer downloaded STEP matches G. The saved G PETG project has two walls, 10% infill and all three expected dense helpers, but was saved after the morning job began. The original PETG submission is unavailable: both current printer archive and cached G-code contain a newer PLA profile. The successful physical ASA print therefore must not be called a validated eight-wall G reference. No print, service or printer-setting changes were made during recovery.
+
+Original private archives and job records remain local. Public recovery receipts include selected settings, source hashes and the limits of matching a stripped sliced archive to CAD. Future comparisons should preserve actual submitted files under unique names and separate architecture, wall/skin schedule and polymer.
+
 ## September 11 — build E plus F, cut 29%, then reinvest locally
 
 Resolved the crown-moulding interface: preserve the G lower wall corner at

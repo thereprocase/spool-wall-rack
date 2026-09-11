@@ -1,0 +1,28 @@
+{
+  "status": "PREPARED_FOR_3D",
+  "steps": [
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 93.957996025998
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 13.990350596999633
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 13.841559844000585
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 27.221258429002773
+    }
+  ],
+  "initial_displacement_scale": 0.6,
+  "initial_scale_scope": "Initial guess only. All loads, stiffness and contact are recomputed; scaling is not a result or a material modulus.",
+  "elapsed_seconds": 150.20569280799828
+}

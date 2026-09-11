@@ -1,0 +1,115 @@
+{
+  "status": "PASS_DIRECT_BRACE_CAD_AND_INTERFACE_CHECKS; PRINT_AND_MECHANICS_UNQUALIFIED",
+  "body_valid": true,
+  "body_solids": 1,
+  "body_source": "ef-cut-v4",
+  "added_body_CAD_volume_mm3": 13054.091263956507,
+  "body_CAD_envelope_volume_mm3": 171777.78108200556,
+  "protected_interface_symmetric_difference_mm3": 0.0,
+  "crown_moulding_keepout_overlap_mm3": 0.0,
+  "fixing_checks": [
+    {
+      "axis_YZ_mm": [
+        164,
+        12
+      ],
+      "support_fraction": 0.9908180681862989,
+      "driver_overlap_mm3": 0.0
+    },
+    {
+      "axis_YZ_mm": [
+        40,
+        12
+      ],
+      "support_fraction": 0.9908180681862777,
+      "driver_overlap_mm3": 0.0
+    }
+  ],
+  "fixed_rod_centers_XY_mm": [
+    [
+      90,
+      0
+    ],
+    [
+      190,
+      12
+    ]
+  ],
+  "helpers": [
+    {
+      "name": "dense-chords-and-seats",
+      "solid_count": 3,
+      "body_intersection_mm3": 35351.234349053535,
+      "STL_check": {
+        "copied_from": "ef-cut-v4"
+      },
+      "role": "100% infill modifier; never an additional printable part"
+    },
+    {
+      "name": "central-rib-plane",
+      "solid_count": 1,
+      "body_intersection_mm3": 4101.591483641056,
+      "STL_check": {
+        "file": "central-rib-plane.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 1,
+        "expected_CAD_solids": 1,
+        "input_triangles": 3416,
+        "output_triangles": 3416,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "6103f482c6332e629f9d2090445ad3c0f210b48bfe0eac61e84fa8b9d7608e64",
+        "output_sha256": "c4459b93767b5f6f17791c29f21680b45a435798ce7d63e742871358ca490d9c",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      },
+      "role": "100% infill modifier; never an additional printable part"
+    },
+    {
+      "name": "local-transition-backing",
+      "solid_count": 2,
+      "body_intersection_mm3": 9571.279505270388,
+      "STL_check": {
+        "file": "local-transition-backing.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 2,
+        "expected_CAD_solids": 2,
+        "input_triangles": 660,
+        "output_triangles": 660,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "1b0da7a019930197580e91f46d2c2298b801aeea3d120b069c2ed645b2810e8e",
+        "output_sha256": "198c80cc129b33496d4d0c788f2bea3af9f266583399bce3fc61d536bd4f9f5c",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      },
+      "role": "100% infill modifier; never an additional printable part"
+    }
+  ],
+  "assembly_solid_count": 7,
+  "body_STL_check": {
+    "file": "body-only.stl",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.984819338637192e-05,
+    "input_boundary_edges": 3,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "expected_CAD_solids": 1,
+    "input_triangles": 11853,
+    "output_triangles": 11216,
+    "signed_volume_change_mm3": 0.003548054024577141,
+    "input_sha256": "f2563e0ce1266d9fbfbe98175b45bf69522a2a477203b4bdc1d1b5f4622bc95d",
+    "output_sha256": "565d0e8fb8d452e3d1b86352be97a980f85ba8a97ce2bbe915292db0fdb63843",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false,
+    "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+  },
+  "elapsed_seconds": 72.4641475999997,
+  "scope": "The upper-mast relief is retained. A hollow diagonal joins the lower mounting region to the keel, bypassing the bent locating ledge. The original background dense helper is reused; added material is measured by a fresh slice. G interfaces and moulding constraints are independently checked."
+}

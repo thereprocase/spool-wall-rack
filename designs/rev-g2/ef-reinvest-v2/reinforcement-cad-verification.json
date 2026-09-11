@@ -1,0 +1,37 @@
+{
+  "status": "PASS_REAL_CAD_REINFORCEMENT_CONNECTIONS; SLICED_BONDS_CHECKED_SEPARATELY",
+  "regions": [
+    {
+      "name": "seat-to-forearm-flare",
+      "valid": true,
+      "body_clipped_solid_count": 1,
+      "body_clipped_volume_mm3": 4163.137503094977,
+      "overlap_with_existing_dense_body_mm3": 550.8027871762537
+    },
+    {
+      "name": "bearing-to-keel-tie",
+      "valid": true,
+      "body_clipped_solid_count": 1,
+      "body_clipped_volume_mm3": 3889.062936336641,
+      "overlap_with_existing_dense_body_mm3": 405.51537606475085
+    },
+    {
+      "name": "continuous-lower-rail",
+      "valid": true,
+      "body_clipped_solid_count": 1,
+      "body_clipped_volume_mm3": 5656.216667062038,
+      "overlap_with_existing_dense_body_mm3": 874.5967299930737
+    }
+  ],
+  "post_to_lower_rail_overlap_mm3": 238.49807984563176,
+  "joined_rail_and_post_solid_count": 1,
+  "delivered_local_helper_body_intersection_solid_count": 2,
+  "delivered_helper_symmetric_difference_mm3": 0.0,
+  "STEP_sha256": {
+    "body-only.step": "45f7800bb521e24760b1a9e9e90a677c4fef01132a654efb351c68132b9af4a9",
+    "dense-chords-and-seats.step": "bda8271aa528fa9d965e218501753ba92f1b68beff014aa54b999ee0ed015dd6",
+    "local-transition-backing.step": "eaf35341b2ec2629f09682461efff3fa02f2adfc681e4edb3d2be55601d6d362"
+  },
+  "elapsed_seconds": 20.199224500000128,
+  "scope": "Checks clipped printable-body material, not connections through an external modifier halo. These are CAD overlap checks; actual credited deposited paths, layer bonds and load response require separate checks."
+}

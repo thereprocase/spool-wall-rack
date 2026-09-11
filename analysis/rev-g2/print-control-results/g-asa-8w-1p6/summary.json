@@ -1,0 +1,27 @@
+{
+  "candidate": "g-asa-8w-1p6",
+  "comparison_control": "g-asa-8w-1p6",
+  "spent_volume_mm3": 118660.02778776054,
+  "reference_volume_mm3": 118660.02778776054,
+  "saving_percent": 0.0,
+  "Orca_estimated_mass_g": 123.41,
+  "polymer": "ASA",
+  "walls": 8,
+  "skin_mm": 1.6,
+  "mechanics_status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "scope": "Deliberate G slicer controls, not the recovered successful ASA print. Recovery associates that print with E13, seven walls and 10 percent infill. No measured material calibration is claimed.",
+  "linear_rtol": 0.0001,
+  "maximum_resultant_displacement_mm": 2.672976096884293,
+  "raw_tensile_peak": {
+    "MPa": 21.000367859994924,
+    "leaf_index": 2947444,
+    "gauss_index": 4,
+    "position_mm": [
+      71.95773502691895,
+      0.24226497308104025,
+      22.242264973081042
+    ]
+  },
+  "geometry_omission_fraction": 0.047338069370778224,
+  "audit": "finish-02/discovery-audit/audit.json"
+}

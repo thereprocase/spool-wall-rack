@@ -1,0 +1,78 @@
+{
+  "spacing_mm": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "origin_mm": [
+    -0.2,
+    -43.0,
+    0.0
+  ],
+  "grid_shape": [
+    1039,
+    1095,
+    120
+  ],
+  "grid_cells": 136524600,
+  "raw_nominal_volume_mm3": 120769.76763835736,
+  "retained_volume_mm3": 115052.76000000002,
+  "omitted_fraction": 0.047338069370778224,
+  "extra_material_volume_mm3": 0.0,
+  "material_components": 36,
+  "component_cell_counts": [
+    14381532,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    7,
+    6,
+    7,
+    7
+  ],
+  "mapping_and_components_seconds": 60.67461973399986,
+  "policy": "Only full cells covered by every intersected raw slab; no bridge, pore-fill, closing or weak-void stiffness. Every retained cell, including disconnected components, survives.",
+  "lookup_validation": {
+    "status": "PASS",
+    "local_occupancy_patterns": 255,
+    "checks": [
+      "All cell-corner bonds match original audited constructor",
+      "Oriented boundary divergence matches material volume"
+    ]
+  },
+  "layer_cache_sha256": "d7e9a5fcf5380538e46d3d5c3b915d434adc56880a2109c3cc6eb8e5b62af815",
+  "nodes": 15950463,
+  "cells": 14381595,
+  "split_edge_corner_vertices": 6036,
+  "mesh_build_seconds": 4.705300682999223,
+  "boundary_faces": 3282218,
+  "status": "ERODED_GEOMETRY_DIAGNOSTIC; NOT A QUALIFIED PRINT MODEL"
+}

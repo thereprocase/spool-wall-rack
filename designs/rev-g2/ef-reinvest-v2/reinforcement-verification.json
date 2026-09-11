@@ -1,0 +1,12 @@
+{
+  "status": "PASS_PROJECTED_TAPER_AND_ANCHOR_CHECKS; 3D_AND_SLICE_CHECKS_REQUIRED",
+  "rail_and_post_connected": true,
+  "seat_overlap_with_background_dense_mm2": 23.394481286965746,
+  "post_overlap_with_background_dense_mm2": 17.017491207504268,
+  "region_intersection_with_body_area_mm2": [
+    173.90842778361733,
+    162.16530621880352,
+    235.67569446118918
+  ],
+  "scope": "Continuous projected regions with overlapping dense anchors. Actual CAD and credited sliced connectivity are checked separately."
+}

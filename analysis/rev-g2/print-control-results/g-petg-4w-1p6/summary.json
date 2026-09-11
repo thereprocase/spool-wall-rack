@@ -1,0 +1,13 @@
+{
+  "candidate": "g-petg-4w-1p6",
+  "comparison_control": "g-asa-8w-1p6",
+  "spent_volume_mm3": 93086.53997058957,
+  "reference_volume_mm3": 118660.02778776054,
+  "saving_percent": 21.55189771479963,
+  "Orca_estimated_mass_g": 118.22,
+  "polymer": "PETG",
+  "walls": 4,
+  "skin_mm": 1.6,
+  "mechanics_status": "PENDING",
+  "scope": "Deliberate G slicer controls, not the recovered successful ASA print. Recovery associates that print with E13, seven walls and 10 percent infill. No measured material calibration is claimed."
+}

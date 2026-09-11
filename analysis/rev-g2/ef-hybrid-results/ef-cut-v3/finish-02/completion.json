@@ -1,0 +1,16 @@
+{
+  "status": "FAIL_COMPLETION_ATTEMPT",
+  "steps": [
+    {
+      "name": "discovery",
+      "returncode": 0,
+      "seconds": 143.9317873120017
+    },
+    {
+      "name": "solve",
+      "returncode": 0,
+      "seconds": 149.60775189299966
+    }
+  ],
+  "elapsed_seconds": 293.55565809799737
+}

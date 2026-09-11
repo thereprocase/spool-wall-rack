@@ -67,3 +67,15 @@
 /designs/rev-g2/ef-lean-*/*.step binary
 /designs/rev-g2/ef-cut-*/*.step binary
 /designs/rev-g2/ef-reinvest-*/*.step binary
+
+# Reconstructed print controls and continuous brace handoffs retain exact bytes.
+/designs/rev-g2/ef-triangulated-v1/** -text
+/designs/rev-g2/ef-triangulated-v1/*.step binary
+/designs/rev-g2/print-controls/** -text
+/designs/rev-g2/print-controls/**/*.step binary
+/analysis/rev-g2/print-control-results/** -text
+/analysis/rev-g2/prepare_print_control.py text eol=lf
+/analysis/rev-g2/checkpoint_print_controls.py text eol=lf
+/analysis/rev-g2/render_print_control.py text eol=lf
+/analysis/rev-g2/audit_ef*.py text eol=lf
+/analysis/rev-g2/ef_energy_map.py text eol=lf

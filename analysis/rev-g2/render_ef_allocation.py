@@ -23,7 +23,12 @@ def main():
         dense=layout.dense_at_z(outline,p,12.1)
         seeds.envelope.draw(ax,dense,'#c39b44',edgecolor='none')
         if p.get('local_reinforcement'):
-            extra=union_all([LineString(v['points_XY_mm']).buffer(v['radius_mm'],quad_segs=12) for v in p['local_reinforcement']]).intersection(outline)
+            if 'radii_mm' in p['local_reinforcement'][0]:
+                import importlib.util
+                spec=importlib.util.spec_from_file_location('tapered_helper',folder/'reinforcement.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+                extra=union_all(module.tapered_regions(p)).intersection(outline)
+            else:
+                extra=union_all([LineString(v['points_XY_mm']).buffer(v['radius_mm'],quad_segs=12) for v in p['local_reinforcement']]).intersection(outline)
             seeds.envelope.draw(ax,extra,'#bd4936',edgecolor='none')
         seeds.draw_moulding(ax)
         verification=folder/'slice-verification.json'
