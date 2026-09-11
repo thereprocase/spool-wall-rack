@@ -16,6 +16,11 @@ All five use the same unchanged G body and aligned helpers. Their differences ar
 
 The 2w/5-layer reference has a corrected 2D diagnostic. No corrected 3D strength result exists for these schedules.
 
+[GPU validation checkpoint](analysis/rev-g2/GPU-VALIDATION.md): an installed
+free GPU backend passes small 3D fixtures and an actual-slice crop patch test.
+The crop's voxel material loss remains unresolved. This adds analysis evidence;
+the eight implemented handoffs and five slicing schedules below are unchanged.
+
 ## Implemented recent architecture alternatives
 
 | Idea | Aligned STEP body plus helpers | Notes |

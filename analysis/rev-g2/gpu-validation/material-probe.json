@@ -1,0 +1,153 @@
+{
+  "status": "PASS_NUMERICAL_PATCH_ONLY",
+  "source_layer_sha256": "1cbf1c14c3c325b4fc9093178793c821ea0d5afc0350fd7993dc105f62cd70e8",
+  "bridge_fixture": {
+    "status": "PASS",
+    "material_components": 2,
+    "bridge_only_cells": 0,
+    "note": "Supplied credited-path mask exercises the existing layer_shapes exclusion; upstream G-code classification is covered by the preserved slice validation.",
+    "spacing_mm": [
+      0.1,
+      0.1,
+      0.2
+    ],
+    "crop_lower_mm": [
+      0.0,
+      -0.2,
+      0.0
+    ],
+    "crop_upper_mm": [
+      3.0,
+      0.2,
+      0.4
+    ],
+    "candidate_cells": 240,
+    "retained_cells": 63,
+    "raw_slice_crop_volume_mm3": 0.184846628329842,
+    "inscribed_volume_mm3": 0.12600000000000003,
+    "omitted_boundary_material_mm3": 0.05884662832984197,
+    "omitted_fraction": 0.3183538096504282,
+    "extra_material_volume_mm3": 0.0,
+    "mapping_seconds": 0.0006234960001165746,
+    "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+    "split_edge_corner_vertices": 0
+  },
+  "probes": [
+    {
+      "status": "PASS_NUMERICAL_PATCH_ONLY",
+      "spacing_mm": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "crop_lower_mm": [
+        140.0,
+        -34.0,
+        0.0
+      ],
+      "crop_upper_mm": [
+        148.0,
+        -26.0,
+        24.0
+      ],
+      "candidate_cells": 48000,
+      "retained_cells": 10765,
+      "raw_slice_crop_volume_mm3": 415.6267170891072,
+      "inscribed_volume_mm3": 344.4800000000001,
+      "omitted_boundary_material_mm3": 71.14671708910714,
+      "omitted_fraction": 0.17117936399130432,
+      "extra_material_volume_mm3": 0.0,
+      "mapping_seconds": 0.14518901400060713,
+      "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+      "split_edge_corner_vertices": 68,
+      "mesh_build_seconds": 0.3885155859998122,
+      "cells": 10765,
+      "nodes": 15817,
+      "finite_stress_samples": 86120,
+      "raw_maximum_principal_MPa": 1.8682734644452172,
+      "maximum_displacement_mm": 0.015409088227406576,
+      "interior_free_dofs": 18075,
+      "max_displacement_error_mm": 1.1488006726456668e-11,
+      "max_stress_error_MPa": 1.9346438673295552e-08,
+      "solve": {
+        "iterations": 90,
+        "recursive_residual": 4.3438965117477754e-08,
+        "true_relative_free_residual": 9.654605216492118e-11,
+        "elapsed_seconds": 0.05106419499952608
+      },
+      "equilibrium": {
+        "force_error_N": 3.101678837248677e-11,
+        "moment_error_Nmm": 4.581889129316528e-09,
+        "relative_free_residual": 4.343896783895237e-08
+      },
+      "memory": {
+        "device_total_used_baseline_bytes": 1384353792,
+        "device_total_used_sampled_peak_bytes": 1386450944,
+        "sample_interval_seconds": 0.02,
+        "samples": 4,
+        "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+      },
+      "warp_cuda_mempool_used_high_bytes": 6783880,
+      "load_scope": "Manufactured affine displacement on all material surfaces of an 8x8x24 mm G crop. Not bracket seat loads or physical fixing/contact conditions.",
+      "geometry_scope": "Inscribed voxel approximation omits the reported boundary material; it is not accepted as the complete printed shape."
+    },
+    {
+      "status": "PASS_NUMERICAL_PATCH_ONLY",
+      "spacing_mm": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "crop_lower_mm": [
+        140.0,
+        -34.0,
+        0.0
+      ],
+      "crop_upper_mm": [
+        148.0,
+        -26.0,
+        24.0
+      ],
+      "candidate_cells": 192000,
+      "retained_cells": 47606,
+      "raw_slice_crop_volume_mm3": 415.6267170891072,
+      "inscribed_volume_mm3": 380.84800000000007,
+      "omitted_boundary_material_mm3": 34.77871708910715,
+      "omitted_fraction": 0.08367777060311272,
+      "extra_material_volume_mm3": 0.0,
+      "mapping_seconds": 0.19443386800048756,
+      "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+      "split_edge_corner_vertices": 54,
+      "mesh_build_seconds": 1.779881854999985,
+      "cells": 47606,
+      "nodes": 59762,
+      "finite_stress_samples": 380848,
+      "raw_maximum_principal_MPa": 1.8682734591293424,
+      "maximum_displacement_mm": 0.015409088227406576,
+      "interior_free_dofs": 106380,
+      "max_displacement_error_mm": 9.987460511395874e-12,
+      "max_stress_error_MPa": 1.510250924319223e-08,
+      "solve": {
+        "iterations": 100,
+        "recursive_residual": 2.603801878198781e-08,
+        "true_relative_free_residual": 9.169716595320894e-11,
+        "elapsed_seconds": 0.10084149300018908
+      },
+      "equilibrium": {
+        "force_error_N": 4.7340016911533736e-11,
+        "moment_error_Nmm": 5.935432496014525e-09,
+        "relative_free_residual": 2.60380163762094e-08
+      },
+      "memory": {
+        "device_total_used_baseline_bytes": 1386450944,
+        "device_total_used_sampled_peak_bytes": 1386450944,
+        "sample_interval_seconds": 0.02,
+        "samples": 7,
+        "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+      },
+      "warp_cuda_mempool_used_high_bytes": 29586316,
+      "load_scope": "Manufactured affine displacement on all material surfaces of an 8x8x24 mm G crop. Not bracket seat loads or physical fixing/contact conditions.",
+      "geometry_scope": "Inscribed voxel approximation omits the reported boundary material; it is not accepted as the complete printed shape."
+    }
+  ]
+}

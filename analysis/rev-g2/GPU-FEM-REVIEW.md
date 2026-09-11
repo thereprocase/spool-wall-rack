@@ -1,5 +1,11 @@
 # GPU replacement for the whole-part tetrahedral meshing route
 
+**Follow-up:** [tested GPU execution checkpoint](GPU-VALIDATION.md) selects
+Warp 1.17.0 with verified Apache-2.0 licensing, successful local GPU execution,
+independent small 3D fixtures and raw-slice crop patch tests. DTU reuse permission
+was not established. Whole-G material fidelity and mechanics remain unresolved.
+The research review below preserves the pre-installation findings.
+
 Reviewed September 11, 2026. Both long G fTetWild attempts have been stopped;
 their existing inputs and diagnostics are preserved. No replacement solver
 has been installed or run on G. The local GPU is an RTX 3080 Ti with 12 GiB.

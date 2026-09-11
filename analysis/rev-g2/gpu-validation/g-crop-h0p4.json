@@ -1,0 +1,58 @@
+{
+  "status": "PASS_NUMERICAL_PATCH_ONLY",
+  "spacing_mm": [
+    0.4,
+    0.4,
+    0.2
+  ],
+  "crop_lower_mm": [
+    140.0,
+    -34.0,
+    0.0
+  ],
+  "crop_upper_mm": [
+    148.0,
+    -26.0,
+    24.0
+  ],
+  "candidate_cells": 48000,
+  "retained_cells": 10765,
+  "raw_slice_crop_volume_mm3": 415.6267170891072,
+  "inscribed_volume_mm3": 344.4800000000001,
+  "omitted_boundary_material_mm3": 71.14671708910714,
+  "omitted_fraction": 0.17117936399130432,
+  "extra_material_volume_mm3": 0.0,
+  "mapping_seconds": 0.14518901400060713,
+  "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+  "split_edge_corner_vertices": 68,
+  "mesh_build_seconds": 0.3885155859998122,
+  "cells": 10765,
+  "nodes": 15817,
+  "finite_stress_samples": 86120,
+  "raw_maximum_principal_MPa": 1.8682734644452172,
+  "maximum_displacement_mm": 0.015409088227406576,
+  "interior_free_dofs": 18075,
+  "max_displacement_error_mm": 1.1488006726456668e-11,
+  "max_stress_error_MPa": 1.9346438673295552e-08,
+  "solve": {
+    "iterations": 90,
+    "recursive_residual": 4.3438965117477754e-08,
+    "true_relative_free_residual": 9.654605216492118e-11,
+    "elapsed_seconds": 0.05106419499952608
+  },
+  "equilibrium": {
+    "force_error_N": 3.101678837248677e-11,
+    "moment_error_Nmm": 4.581889129316528e-09,
+    "relative_free_residual": 4.343896783895237e-08
+  },
+  "memory": {
+    "device_total_used_baseline_bytes": 1384353792,
+    "device_total_used_sampled_peak_bytes": 1386450944,
+    "sample_interval_seconds": 0.02,
+    "samples": 4,
+    "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+  },
+  "warp_cuda_mempool_used_high_bytes": 6783880,
+  "load_scope": "Manufactured affine displacement on all material surfaces of an 8x8x24 mm G crop. Not bracket seat loads or physical fixing/contact conditions.",
+  "geometry_scope": "Inscribed voxel approximation omits the reported boundary material; it is not accepted as the complete printed shape."
+}

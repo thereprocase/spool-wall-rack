@@ -3,6 +3,10 @@
 **The five-case shape validation is complete; corrected G mechanics is still
 in progress. No accepted G2 architecture exists yet.**
 [Restart handoff and current results](../../RESTART-2026-09-11.md).
+[GPU execution and validation checkpoint](GPU-VALIDATION.md): Warp now runs on
+the RTX 3080 Ti and passes independent small 3D fixtures plus manufactured patch
+tests on a raw G slice crop. Conservative voxel material loss remains 4.31%
+even at 0.1 mm XY spacing in that crop. No full-G GPU result is accepted.
 [G2-BRIEF.md](../../G2-BRIEF.md) defines the broader study. E13 and G files
 remain unchanged.
 
@@ -79,8 +83,10 @@ the continuum volume and all 39 enclosed voids. The
 [independent mesh audit](validation/mesh-audit-tetgen-boundary-only.json)
 still rejects that mesh for topology/quality. A bounded-envelope mesher passed
 the [hollow-box fixture](validation/ftetwild-hollow-box-h1.json). The two long G
-jobs were stopped without a mesh; [GPU alternatives](GPU-FEM-REVIEW.md) are now
-the next route. [Attempts, rejected results and sources](MESHING-NOTES.md).
+jobs were stopped without a mesh. The [tested GPU route](GPU-VALIDATION.md)
+now replaces solver discovery; material fidelity and whole-part scaling remain
+open. [Earlier GPU alternatives](GPU-FEM-REVIEW.md) and
+[meshing attempts, rejected results and sources](MESHING-NOTES.md).
 
 ![Production load and fixing classifier on the rejected diagnostic mesh](validation/interfaces-rejected-tetgen.png)
 

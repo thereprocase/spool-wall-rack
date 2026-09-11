@@ -1,0 +1,18 @@
+{
+  "warp_version": "1.17.0",
+  "warp_upstream_commit": "f4c57f26f1e3936a89afd283e39fcabf6d548dc7",
+  "warp_tag": "v1.17.0",
+  "upstream_example_sha256": "8e6d9ce8e913eae44cb8f94c6769acee0c2ec0fb93ee5b4c292636fda60acc7b",
+  "python_version": "3.11.15",
+  "platform": "Linux under WSL2",
+  "runtime": "Warp wheel JIT compiles CUDA kernels; no source build of the Warp runtime performed.",
+  "dependencies": {
+    "warp-lang": "1.17.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "shapely": "2.1.2",
+    "scikit-fem": "12.0.2",
+    "nvidia-ml-py": "13.610.43",
+    "matplotlib": "3.11.1"
+  }
+}

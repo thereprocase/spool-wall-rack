@@ -21,10 +21,13 @@ reconstructed continuum volume but fails topology/quality review. The long
 whole-part CPU meshing attempts have been stopped. The replacement investigation
 now targets GPU voxel/immersed FEM; no corrected 3D stress result is claimed.
 
-[GPU replacement review and software evidence](analysis/rev-g2/GPU-FEM-REVIEW.md)
-identifies Ansys Discovery Explore as the closest existing application and DTU's
-published GPU Cartesian elasticity implementations as a source-based starting
-point. Neither has been run on this bracket yet.
+[GPU execution checkpoint](analysis/rev-g2/GPU-VALIDATION.md): the free Warp
+runtime now passes an upstream elasticity comparison and independent 3D
+elasticity/contact fixtures on the RTX 3080 Ti. GPU patch tests also pass on
+an actual G slice crop. Conservative voxels still omit 17.12%, 8.37% and 4.31%
+of that crop at progressively finer XY grids, so they are not accepted as
+G's printed material. Whole-bracket 3D mechanics and all seven G2 architecture
+families remain unfinished. [Earlier software review](analysis/rev-g2/GPU-FEM-REVIEW.md).
 
 ![Actual sliced material across five wall and skin schedules](analysis/rev-g2/validation/matrix-shape-sections.png)
 

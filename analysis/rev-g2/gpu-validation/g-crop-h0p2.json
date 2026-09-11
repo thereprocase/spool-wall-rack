@@ -1,0 +1,58 @@
+{
+  "status": "PASS_NUMERICAL_PATCH_ONLY",
+  "spacing_mm": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "crop_lower_mm": [
+    140.0,
+    -34.0,
+    0.0
+  ],
+  "crop_upper_mm": [
+    148.0,
+    -26.0,
+    24.0
+  ],
+  "candidate_cells": 192000,
+  "retained_cells": 47606,
+  "raw_slice_crop_volume_mm3": 415.6267170891072,
+  "inscribed_volume_mm3": 380.84800000000007,
+  "omitted_boundary_material_mm3": 34.77871708910715,
+  "omitted_fraction": 0.08367777060311272,
+  "extra_material_volume_mm3": 0.0,
+  "mapping_seconds": 0.19443386800048756,
+  "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+  "split_edge_corner_vertices": 54,
+  "mesh_build_seconds": 1.779881854999985,
+  "cells": 47606,
+  "nodes": 59762,
+  "finite_stress_samples": 380848,
+  "raw_maximum_principal_MPa": 1.8682734591293424,
+  "maximum_displacement_mm": 0.015409088227406576,
+  "interior_free_dofs": 106380,
+  "max_displacement_error_mm": 9.987460511395874e-12,
+  "max_stress_error_MPa": 1.510250924319223e-08,
+  "solve": {
+    "iterations": 100,
+    "recursive_residual": 2.603801878198781e-08,
+    "true_relative_free_residual": 9.169716595320894e-11,
+    "elapsed_seconds": 0.10084149300018908
+  },
+  "equilibrium": {
+    "force_error_N": 4.7340016911533736e-11,
+    "moment_error_Nmm": 5.935432496014525e-09,
+    "relative_free_residual": 2.60380163762094e-08
+  },
+  "memory": {
+    "device_total_used_baseline_bytes": 1386450944,
+    "device_total_used_sampled_peak_bytes": 1386450944,
+    "sample_interval_seconds": 0.02,
+    "samples": 7,
+    "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+  },
+  "warp_cuda_mempool_used_high_bytes": 29586316,
+  "load_scope": "Manufactured affine displacement on all material surfaces of an 8x8x24 mm G crop. Not bracket seat loads or physical fixing/contact conditions.",
+  "geometry_scope": "Inscribed voxel approximation omits the reported boundary material; it is not accepted as the complete printed shape."
+}

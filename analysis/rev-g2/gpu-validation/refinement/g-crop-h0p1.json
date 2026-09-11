@@ -1,0 +1,58 @@
+{
+  "status": "PASS_NUMERICAL_PATCH_ONLY",
+  "spacing_mm": [
+    0.1,
+    0.1,
+    0.2
+  ],
+  "crop_lower_mm": [
+    140.0,
+    -34.0,
+    0.0
+  ],
+  "crop_upper_mm": [
+    148.0,
+    -26.0,
+    24.0
+  ],
+  "candidate_cells": 768000,
+  "retained_cells": 198853,
+  "raw_slice_crop_volume_mm3": 415.6267170891072,
+  "inscribed_volume_mm3": 397.7060000000001,
+  "omitted_boundary_material_mm3": 17.920717089107143,
+  "omitted_fraction": 0.04311733666838621,
+  "extra_material_volume_mm3": 0.0,
+  "mapping_seconds": 0.7053966330004187,
+  "policy": "Every retained XY cell is covered by every raw slab intersecting its Z interval; no centroid rule, closing, pore fill, density floor, or thick-bridge credit.",
+  "split_edge_corner_vertices": 127,
+  "mesh_build_seconds": 7.660358654999982,
+  "cells": 198853,
+  "nodes": 232445,
+  "finite_stress_samples": 1590824,
+  "raw_maximum_principal_MPa": 1.8682734584930836,
+  "maximum_displacement_mm": 0.015409088227406576,
+  "interior_free_dofs": 495660,
+  "max_displacement_error_mm": 8.999291763178707e-12,
+  "max_stress_error_MPa": 1.467047494596585e-08,
+  "solve": {
+    "iterations": 200,
+    "recursive_residual": 1.969434340977477e-08,
+    "true_relative_free_residual": 9.120612332561518e-11,
+    "elapsed_seconds": 0.43688201699933416
+  },
+  "equilibrium": {
+    "force_error_N": 5.478816984451393e-11,
+    "moment_error_Nmm": 7.700361315441534e-09,
+    "relative_free_residual": 1.9694341725052027e-08
+  },
+  "memory": {
+    "device_total_used_baseline_bytes": 1417908224,
+    "device_total_used_sampled_peak_bytes": 1487114240,
+    "sample_interval_seconds": 0.02,
+    "samples": 27,
+    "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+  },
+  "warp_cuda_mempool_used_high_bytes": 122921176,
+  "load_scope": "Manufactured affine displacement on all material surfaces of an 8x8x24 mm G crop. Not bracket seat loads or physical fixing/contact conditions.",
+  "geometry_scope": "Inscribed voxel approximation omits the reported boundary material; it is not accepted as the complete printed shape."
+}

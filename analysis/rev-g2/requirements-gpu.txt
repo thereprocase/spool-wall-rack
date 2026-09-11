@@ -1,0 +1,8 @@
+# Isolated GPU validation runtime; independent of the preserved native CAD environment.
+warp-lang==1.17.0
+numpy==2.4.6
+scipy==1.17.1
+shapely==2.1.2
+scikit-fem==12.0.2
+nvidia-ml-py==13.610.43
+matplotlib==3.11.1

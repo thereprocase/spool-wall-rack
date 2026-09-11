@@ -10,3 +10,12 @@
 
 /designs/rev-g/*.step binary
 /designs/rev-g/**/*.step binary
+
+# Reproducible GPU source/evidence hashes across Windows and WSL checkouts.
+/analysis/rev-g2/gpu_*.py text eol=lf
+/analysis/rev-g2/validate_gpu_hex.py text eol=lf
+/analysis/rev-g2/plot_gpu_material_probe.py text eol=lf
+/analysis/rev-g2/requirements-gpu.txt text eol=lf
+/analysis/rev-g2/gpu-validation/** text eol=lf
+/analysis/rev-g2/gpu-validation/**/*.npz binary
+/analysis/rev-g2/gpu-validation/**/*.png binary

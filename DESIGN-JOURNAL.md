@@ -2,6 +2,33 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — test the free GPU route on real hardware and raw slices
+
+Installed Warp 1.17.0 in an isolated WSL environment and verified its explicit
+Apache-2.0 license and tagged upstream example hash. The DTU snapshots did not
+establish reuse permission and were not incorporated. The upstream nonlinear
+2D example passes CPU/GPU agreement after an explicit tighter CG tolerance;
+the default-tolerance failures remain preserved with full fields.
+
+A new matrix-free GPU Q1 hex adapter passes independent analytic stress/energy,
+rigid-motion, scikit-fem operator/displacement, 0.4 mm hollow-wall and 3D
+nonzero-gap opening/closing/release contact fixtures. It gives no void or thick
+bridge stiffness and splits edge/corner-only nodal bonds. All finite Gauss
+stress samples and raw sampled peaks are retained.
+
+An 8x8x24 mm crop of G's actual raw two-wall/five-skin-layer material passes
+manufactured GPU patch tests at 0.4, 0.2 and 0.1 mm XY spacing. The finest has
+198,853 cells, takes 0.437 s for its patch solve and reaches 117.2 MiB in the
+CUDA allocation pool. These surface-prescribed patch timings do not predict
+whole-bracket or long-beam performance. Conservative voxelization still removes
+17.12%, 8.37% and 4.31% of the crop, respectively; this representation is not
+accepted for G. Geometry/bond preservation and preconditioning are next.
+
+[Complete evidence, failures and reproduction](analysis/rev-g2/GPU-VALIDATION.md).
+No corrected G 3D load solution or new G2 CAD candidate is claimed. Existing
+STEP/helper handoffs, earlier numerical evidence and stopped CPU meshing jobs
+remain preserved.
+
 ## September 11 — correct slicer-to-FEM material mapping before G2
 
 The long whole-part CPU tetrahedral meshing attempts were stopped without an

@@ -1,0 +1,67 @@
+{
+  "status": "FAIL_BACKEND_AGREEMENT",
+  "warp_version": "1.17.0",
+  "device": "NVIDIA GeForce RTX 3080 Ti",
+  "upstream_module": "warp.examples.fem.example_mixed_elasticity",
+  "upstream_source_sha256": "8e6d9ce8e913eae44cb8f94c6769acee0c2ec0fb93ee5b4c292636fda60acc7b",
+  "cg_tolerance_override": null,
+  "backend_relative_l2_gate": 0.0001,
+  "parameters": {
+    "resolution": 25,
+    "degree": 2,
+    "displacement": -0.5,
+    "poisson_ratio": 0.99,
+    "mesh": "grid"
+  },
+  "gpu_runs": [
+    {
+      "repeat": 0,
+      "setup_seconds": 0.07033511899953737,
+      "step_seconds": 0.4148240220001753,
+      "total_seconds": 0.4851591409997127
+    },
+    {
+      "repeat": 1,
+      "setup_seconds": 0.000417692999690189,
+      "step_seconds": 0.13849878600012744,
+      "total_seconds": 0.13891647899981763
+    }
+  ],
+  "cpu_runs": [
+    {
+      "repeat": 0,
+      "setup_seconds": 0.00035552800000004936,
+      "step_seconds": 40.77930152299996,
+      "total_seconds": 40.77965705099996
+    }
+  ],
+  "timing_note": "Wall times include synchronization. First calls include uncached JIT work; persistent caches may already be warm. CPU/GPU timings are not a controlled speedup comparison.",
+  "memory": {
+    "device_total_used_baseline_bytes": 1089363968,
+    "device_total_used_sampled_peak_bytes": 1415811072,
+    "sample_interval_seconds": 0.02,
+    "samples": 49,
+    "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+  },
+  "warp_cuda_mempool_used_high_bytes": 21712658,
+  "comparison": {
+    "displacement": {
+      "shape": [
+        1976,
+        2
+      ],
+      "max_abs_difference": 3.662053495645523e-05,
+      "relative_l2_difference": 5.7866203860612586e-05
+    },
+    "stress_coefficients": {
+      "shape": [
+        5625,
+        2,
+        2
+      ],
+      "max_abs_difference": 0.0026882048696279526,
+      "relative_l2_difference": 0.0005125424358993769
+    }
+  },
+  "scope": "Upstream 2D nonlinear example, CPU/GPU comparison; source unchanged, runtime CG tolerance override recorded explicitly. Not a 3D bracket or contact validation. Upstream stress coefficients are exported as produced, not interpreted as bracket stresses."
+}

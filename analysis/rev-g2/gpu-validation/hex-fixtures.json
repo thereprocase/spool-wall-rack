@@ -1,0 +1,252 @@
+{
+  "status": "PASS",
+  "warp_version": "1.17.0",
+  "device": "NVIDIA GeForce RTX 3080 Ti",
+  "no_false_bonds": {
+    "status": "PASS",
+    "cases": [
+      {
+        "cell_offset": [
+          1,
+          0,
+          0
+        ],
+        "shared_nodes": 4,
+        "split_edge_corner_vertices": 0
+      },
+      {
+        "cell_offset": [
+          1,
+          1,
+          0
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 2
+      },
+      {
+        "cell_offset": [
+          1,
+          1,
+          1
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 1
+      },
+      {
+        "cell_offset": [
+          2,
+          0,
+          0
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 0
+      }
+    ]
+  },
+  "affine": {
+    "status": "PASS",
+    "stress_max_error_MPa": 1.1333156635373598e-12,
+    "energy_Nmm": 0.08661333333218613,
+    "analytic_energy_Nmm": 0.08661333333333332,
+    "independent_matrix_relative_error": 3.0003828246705885e-16,
+    "rigid_internal_force_norms_N": [
+      2.0986071931617826e-13,
+      2.905251515715991e-13
+    ],
+    "cells": 12,
+    "nodes": 36,
+    "finite_stress_samples": 96,
+    "raw_maximum_principal_MPa": 18.682734472748223,
+    "maximum_displacement_mm": 0.8485069298479535,
+    "split_edge_corner_vertices": 0
+  },
+  "hollow": {
+    "status": "PASS",
+    "wall_thickness_mm": 0.4,
+    "cells_through_wall": 2,
+    "void_stiffness": 0,
+    "independent_displacement_relative_error": 2.4348863911769666e-13,
+    "force_error_N": 1.1059155406749652e-12,
+    "moment_error_Nmm": 2.8980200088438874e-12,
+    "relative_free_residual": 1.1895500848720456e-11,
+    "iterations": 140,
+    "recursive_residual": 1.188677101744079e-11,
+    "true_relative_free_residual": 8.615744351106551e-11,
+    "elapsed_seconds": 0.0246476120000807,
+    "cells": 400,
+    "nodes": 660,
+    "finite_stress_samples": 3200,
+    "raw_maximum_principal_MPa": 10.302982202736262,
+    "maximum_displacement_mm": 0.06183753472013778,
+    "split_edge_corner_vertices": 0
+  },
+  "contact": {
+    "status": "PASS",
+    "cases": [
+      {
+        "name": "open",
+        "expected_displacement_mm": -0.008,
+        "max_displacement_error_mm": 3.196228004487267e-14,
+        "expected_reaction_N": 0,
+        "reaction_N": 1.5057399771478686e-14,
+        "minimum_gap_mm": 0.011999999999968038,
+        "history": [
+          {
+            "step": 0,
+            "active": 0,
+            "next_active": 0,
+            "iterations": 50,
+            "recursive_residual": 3.990920435081429e-11,
+            "true_relative_free_residual": 5.321459301071596e-11,
+            "elapsed_seconds": 0.005384766000133823
+          }
+        ],
+        "force_error_N": 3.6585352425380895e-14,
+        "moment_error_Nmm": 2.3155620161619185e-15,
+        "relative_free_residual": 3.991094475803697e-11,
+        "cells": 32,
+        "nodes": 81,
+        "finite_stress_samples": 256,
+        "raw_maximum_principal_MPa": 2.000000000088494,
+        "maximum_displacement_mm": 0.008061017305556086
+      },
+      {
+        "name": "closed",
+        "expected_displacement_mm": -0.02,
+        "max_displacement_error_mm": 0.0,
+        "expected_reaction_N": 5.0,
+        "reaction_N": 4.999999999999957,
+        "minimum_gap_mm": 0.0,
+        "history": [
+          {
+            "step": 0,
+            "active": 0,
+            "next_active": 9,
+            "iterations": 50,
+            "recursive_residual": 1.9954997357210445e-10,
+            "true_relative_free_residual": 5.321315740425374e-11,
+            "elapsed_seconds": 0.005255095999928017
+          },
+          {
+            "step": 1,
+            "active": 9,
+            "next_active": 9,
+            "iterations": 40,
+            "recursive_residual": 2.033373398179862e-09,
+            "true_relative_free_residual": 7.73202353133348e-11,
+            "elapsed_seconds": 0.005008434000046691
+          }
+        ],
+        "force_error_N": 8.824785453787025e-14,
+        "moment_error_Nmm": 1.0832706472309797e-14,
+        "relative_free_residual": 5.422320692390496e-10,
+        "cells": 32,
+        "nodes": 81,
+        "finite_stress_samples": 256,
+        "raw_maximum_principal_MPa": 5.000000003879749,
+        "maximum_displacement_mm": 0.020152543263884357
+      },
+      {
+        "name": "touching_closed",
+        "expected_displacement_mm": -0.0,
+        "max_displacement_error_mm": 0.0,
+        "expected_reaction_N": 2.0,
+        "reaction_N": 2.0,
+        "minimum_gap_mm": 0.0,
+        "history": [
+          {
+            "step": 0,
+            "active": 9,
+            "next_active": 9,
+            "iterations": 0,
+            "recursive_residual": 0.0,
+            "true_relative_free_residual": 0.0,
+            "elapsed_seconds": 0.001823380999667279
+          }
+        ],
+        "force_error_N": 0.0,
+        "moment_error_Nmm": 0.0,
+        "relative_free_residual": 0.0,
+        "cells": 32,
+        "nodes": 81,
+        "finite_stress_samples": 256,
+        "raw_maximum_principal_MPa": 0.0,
+        "maximum_displacement_mm": 0.0
+      },
+      {
+        "name": "release",
+        "expected_displacement_mm": 0.008,
+        "max_displacement_error_mm": 3.196228004487267e-14,
+        "expected_reaction_N": 0,
+        "reaction_N": -1.5057399771478686e-14,
+        "minimum_gap_mm": 0.007999999999975355,
+        "history": [
+          {
+            "step": 0,
+            "active": 9,
+            "next_active": 0,
+            "iterations": 0,
+            "recursive_residual": 0.0,
+            "true_relative_free_residual": 0.0,
+            "elapsed_seconds": 0.0018538119993536384
+          },
+          {
+            "step": 1,
+            "active": 0,
+            "next_active": 0,
+            "iterations": 50,
+            "recursive_residual": 3.990920435081429e-11,
+            "true_relative_free_residual": 5.321459301071596e-11,
+            "elapsed_seconds": 0.005015659000491723
+          }
+        ],
+        "force_error_N": 3.6585352425380895e-14,
+        "moment_error_Nmm": 2.3155620161619185e-15,
+        "relative_free_residual": 3.991094475803697e-11,
+        "cells": 32,
+        "nodes": 81,
+        "finite_stress_samples": 256,
+        "raw_maximum_principal_MPa": 7.382802088051356e-11,
+        "maximum_displacement_mm": 0.008061017305556086
+      },
+      {
+        "name": "exactly_touching",
+        "expected_displacement_mm": -0.02,
+        "max_displacement_error_mm": 7.991524109129955e-14,
+        "expected_reaction_N": 0.0,
+        "reaction_N": 3.7636560534792807e-14,
+        "minimum_gap_mm": -7.991524109129955e-14,
+        "history": [
+          {
+            "step": 0,
+            "active": 0,
+            "next_active": 0,
+            "iterations": 50,
+            "recursive_residual": 9.977498678605223e-11,
+            "true_relative_free_residual": 5.321315740425374e-11,
+            "elapsed_seconds": 0.005188140000427666
+          }
+        ],
+        "force_error_N": 8.595430509131039e-14,
+        "moment_error_Nmm": 4.405051079802163e-15,
+        "relative_free_residual": 5.321315740425374e-11,
+        "cells": 32,
+        "nodes": 81,
+        "finite_stress_samples": 256,
+        "raw_maximum_principal_MPa": 5.000000000221252,
+        "maximum_displacement_mm": 0.020152543263890224
+      }
+    ],
+    "split_edge_corner_vertices": 0
+  },
+  "memory": {
+    "device_total_used_baseline_bytes": 1089363968,
+    "device_total_used_sampled_peak_bytes": 1386450944,
+    "sample_interval_seconds": 0.02,
+    "samples": 24,
+    "scope": "Device-wide sampled memory includes display/other processes; not process-only VRAM."
+  },
+  "warp_cuda_mempool_used_high_bytes": 267988,
+  "elapsed_seconds": 0.4945680529999663,
+  "scope": "Small 3D isotropic elastic numerical fixtures only. No actual G bracket result or material/process qualification."
+}

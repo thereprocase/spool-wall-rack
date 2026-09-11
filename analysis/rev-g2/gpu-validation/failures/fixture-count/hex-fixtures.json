@@ -1,0 +1,65 @@
+{
+  "status": "INCOMPLETE",
+  "warp_version": "1.17.0",
+  "device": "NVIDIA GeForce RTX 3080 Ti",
+  "no_false_bonds": {
+    "status": "PASS",
+    "cases": [
+      {
+        "cell_offset": [
+          1,
+          0,
+          0
+        ],
+        "shared_nodes": 4,
+        "split_edge_corner_vertices": 0
+      },
+      {
+        "cell_offset": [
+          1,
+          1,
+          0
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 2
+      },
+      {
+        "cell_offset": [
+          1,
+          1,
+          1
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 1
+      },
+      {
+        "cell_offset": [
+          2,
+          0,
+          0
+        ],
+        "shared_nodes": 0,
+        "split_edge_corner_vertices": 0
+      }
+    ]
+  },
+  "affine": {
+    "status": "PASS",
+    "stress_max_error_MPa": 1.1333156635373598e-12,
+    "energy_Nmm": 0.08661333333218613,
+    "analytic_energy_Nmm": 0.08661333333333332,
+    "independent_matrix_relative_error": 3.0003828246705885e-16,
+    "rigid_internal_force_norms_N": [
+      2.0986071931617826e-13,
+      2.905251515715991e-13
+    ],
+    "cells": 12,
+    "nodes": 36,
+    "finite_stress_samples": 96,
+    "raw_maximum_principal_MPa": 18.682734472748223,
+    "maximum_displacement_mm": 0.8485069298479535,
+    "split_edge_corner_vertices": 0
+  },
+  "elapsed_seconds": 2.1563713770001414,
+  "scope": "Small 3D isotropic elastic numerical fixtures only. No actual G bracket result or material/process qualification."
+}
