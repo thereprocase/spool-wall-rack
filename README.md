@@ -1,5 +1,7 @@
 # Spool wall rack — G material-model correction and G2
 
+Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
+
 [Printable STEP bodies, aligned helpers and per-idea notes](PRINT-CANDIDATES.md).
 
 **Restart checkpoint:** [complete handoff and current candidates](RESTART-2026-09-11.md).

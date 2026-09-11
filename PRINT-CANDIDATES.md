@@ -1,5 +1,7 @@
 # Printable CAD checkpoint index
 
+Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
+
 Geometry handoffs with helper solids and notes. Keep all relative body/helper positions. Import each STEP assembly as one object with multiple parts: the body prints, helpers become 100% infill modifiers. External tabs/halos must never print. STEP carries geometry, not slicer settings. Use OrcaSlicer and a calibrated printer/material profile. These are experimental geometries, not released load ratings.
 
 [Completed G contact screen](analysis/rev-g2/G-RESULTS.md): 4.3355 mm maximum

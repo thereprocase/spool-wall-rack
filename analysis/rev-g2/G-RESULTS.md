@@ -71,6 +71,18 @@ Its complete fields are retained separately as a failed iterate. The stated
 1e-6 screen and its measured quantity sensitivity are the basis of the
 reference numbers above; this retry does not upgrade them to the original gate.
 
+## Adding and removing one 1.25 kg spool
+
+| Load | Maximum movement, mm | Maximum movement change from 12 kg, mm | Raw tensile peak, MPa |
+|---|---:|---:|---:|
+| 10.75 kg | 3.883864 | 0.451612 | 17.939398 |
+| 12 kg | 4.335477 | 0.000000 | 20.025374 |
+| 13.25 kg | 4.787089 | 0.451612 | 22.111351 |
+
+[Removed-spool audit](g-results/minus-spool/audit.json) and [added-spool audit](g-results/plus-spool/audit.json) retain the force, moment, gaps, reactions and all-sample comparisons. Both keep the 6,426-node contact set. The bracket-only change is about 0.452 mm, leaving about 0.548 mm of the 1 mm change budget for rails/mounts and other effects; those contributions remain unqualified.
+
+The first added-spool attempt with an unscaled initial guess failed its 1e-6 residual target after 1,800 iterations and is preserved. For the successful cases, the converged reference displacement was scaled only as an initial guess. Each case independently assembled the new force, applied the full operator, recomputed reactions and nonzero wall gaps, checked contact and recovered every stress sample. The guesses already satisfied the stated tolerance, so CG accepted them at iteration zero. This demonstrates the same-contact linear response for these loads; it is not a claim that future contact changes can be handled by scaling alone.
+
 ## Method and independent checks
 
 The fine physics is the existing constrained adaptive Q1 operator `P.T K P`.
