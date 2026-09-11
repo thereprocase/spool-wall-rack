@@ -63,3 +63,7 @@
 
 /analysis/rev-g2/finish_contact.py text eol=lf
 /analysis/rev-g2/EF-RESULTS.md text eol=lf
+
+/designs/rev-g2/ef-lean-*/*.step binary
+/designs/rev-g2/ef-cut-*/*.step binary
+/designs/rev-g2/ef-reinvest-*/*.step binary
