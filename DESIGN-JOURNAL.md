@@ -4,6 +4,13 @@ These entries preserve earlier reasoning and superseded values. Use the current 
 
 ## September 11 — correct slicer-to-FEM material mapping before G2
 
+The long whole-part CPU tetrahedral meshing attempts were stopped without an
+accepted G mesh. The next route is GPU voxel/immersed FEM. A
+[primary-source software review](analysis/rev-g2/GPU-FEM-REVIEW.md) distinguishes
+existing GPU applications, published elasticity kernels and incomplete research
+frameworks. No replacement solver or GPU result is established yet; the raw
+slicer-material representation and earlier failures remain preserved.
+
 The five-case shape validation is now complete: 50,000 independent
 variable-width capsule occupancy samples and through-thickness checks agree
 within the explicitly bounded polygonization uncertainty. All effective

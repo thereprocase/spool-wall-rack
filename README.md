@@ -13,8 +13,14 @@ thickness checks across all five schedules: 50,000 occupancy samples, with
 zero mismatches outside the stated 0.005 mm polygonization band. The two-wall,
 1 mm skin reference uses 77.920 cm³ of plastic, of which 6.940 cm³ is excluded
 sacrificial bridge extrusion. A boundary-only volume mesh matches the
-reconstructed continuum volume but fails topology/quality review. Better
-meshing is in progress; no corrected stress result is claimed.
+reconstructed continuum volume but fails topology/quality review. The long
+whole-part CPU meshing attempts have been stopped. The replacement investigation
+now targets GPU voxel/immersed FEM; no corrected 3D stress result is claimed.
+
+[GPU replacement review and software evidence](analysis/rev-g2/GPU-FEM-REVIEW.md)
+identifies Ansys Discovery Explore as the closest existing application and DTU's
+published GPU Cartesian elasticity implementations as a source-based starting
+point. Neither has been run on this bracket yet.
 
 ![Actual sliced material across five wall and skin schedules](analysis/rev-g2/validation/matrix-shape-sections.png)
 
