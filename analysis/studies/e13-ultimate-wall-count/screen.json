@@ -1,0 +1,127 @@
+{
+  "load_kg_per_bracket": 12,
+  "four_1p2mm_plates_preserved": true,
+  "zero_sparse_infill_credit": true,
+  "cases": [
+    {
+      "walls": 2,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 7.748728604754257,
+      "tensile_peak_xy": [
+        81.8995200964324,
+        -11.53703646715659
+      ],
+      "raw_peak_VM_MPa": 7.579667745679812,
+      "VM_peak_xy": [
+        90.7862476501988,
+        -13.107568240715922
+      ],
+      "whole_body_VM_p99_MPa": 4.496139321784566,
+      "whole_body_tensile_p99_MPa": 4.5618528762446475,
+      "seat_VM_p99_MPa": 7.107458267263075,
+      "reference_XY_PLA_UTS_over_tensile_peak": 6.7494943580694216,
+      "reference_XY_PETG_UTS_over_tensile_peak": 6.189402474436127,
+      "relative_free_residual": 6.050353565747729e-11
+    },
+    {
+      "walls": 3,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 6.383855913984963,
+      "tensile_peak_xy": [
+        91.24682373283905,
+        -13.06105761542373
+      ],
+      "raw_peak_VM_MPa": 6.306076812016248,
+      "VM_peak_xy": [
+        91.24682373283905,
+        -13.06105761542373
+      ],
+      "whole_body_VM_p99_MPa": 4.1667164612021566,
+      "whole_body_tensile_p99_MPa": 4.098320546824624,
+      "seat_VM_p99_MPa": 5.967097732354599,
+      "reference_XY_PLA_UTS_over_tensile_peak": 8.192540794260037,
+      "reference_XY_PETG_UTS_over_tensile_peak": 7.512700888961977,
+      "relative_free_residual": 6.090936643463901e-11
+    },
+    {
+      "walls": 4,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 5.602516815510733,
+      "tensile_peak_xy": [
+        90.7862476501988,
+        -13.107568240715922
+      ],
+      "raw_peak_VM_MPa": 5.5518806732135495,
+      "VM_peak_xy": [
+        90.7862476501988,
+        -13.107568240715922
+      ],
+      "whole_body_VM_p99_MPa": 3.853932085133957,
+      "whole_body_tensile_p99_MPa": 3.705307958435553,
+      "seat_VM_p99_MPa": 5.21763803720344,
+      "reference_XY_PLA_UTS_over_tensile_peak": 9.335090232162427,
+      "reference_XY_PETG_UTS_over_tensile_peak": 8.560438384981072,
+      "relative_free_residual": 6.278536953303579e-11
+    },
+    {
+      "walls": 6,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 5.238590608482094,
+      "tensile_peak_xy": [
+        74.3337091164845,
+        0.8804020367175589
+      ],
+      "raw_peak_VM_MPa": 5.236896304539319,
+      "VM_peak_xy": [
+        74.16637850465031,
+        0.6642846809749495
+      ],
+      "whole_body_VM_p99_MPa": 3.2447428688181916,
+      "whole_body_tensile_p99_MPa": 3.1627496858356725,
+      "seat_VM_p99_MPa": 4.337449480941713,
+      "reference_XY_PLA_UTS_over_tensile_peak": 9.983601298280142,
+      "reference_XY_PETG_UTS_over_tensile_peak": 9.155134192457279,
+      "relative_free_residual": 6.222124905496324e-11
+    },
+    {
+      "walls": 8,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 4.608152044164957,
+      "tensile_peak_xy": [
+        73.2734445919031,
+        -0.0032667976903225566
+      ],
+      "raw_peak_VM_MPa": 5.007660103809187,
+      "VM_peak_xy": [
+        73.2734445919031,
+        -0.0032667976903225566
+      ],
+      "whole_body_VM_p99_MPa": 2.8713826576659995,
+      "whole_body_tensile_p99_MPa": 2.770183756776294,
+      "seat_VM_p99_MPa": 3.8911660434679027,
+      "reference_XY_PLA_UTS_over_tensile_peak": 11.349451905829483,
+      "reference_XY_PETG_UTS_over_tensile_peak": 10.407642703701377,
+      "relative_free_residual": 5.919797667334863e-11
+    },
+    {
+      "walls": 10,
+      "model": "layer-integrated plane stress; does not resolve 3D hot spots",
+      "raw_peak_tensile_principal_MPa": 4.8054284809323695,
+      "tensile_peak_xy": [
+        72.78938614255264,
+        -0.2120111874038942
+      ],
+      "raw_peak_VM_MPa": 4.967127336936993,
+      "VM_peak_xy": [
+        72.60309720776671,
+        -0.4277422578560199
+      ],
+      "whole_body_VM_p99_MPa": 2.5615986292374835,
+      "whole_body_tensile_p99_MPa": 2.495450640778364,
+      "seat_VM_p99_MPa": 3.6064707129689775,
+      "reference_XY_PLA_UTS_over_tensile_peak": 10.883524790249824,
+      "reference_XY_PETG_UTS_over_tensile_peak": 9.980379520848597,
+      "relative_free_residual": 5.919196493111992e-11
+    }
+  ]
+}

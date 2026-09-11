@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "walls": 2,
+      "source": "analysis/studies/e13-ultimate-wall-count/e13-2w-h1-full-solution.npz",
+      "sha256": "72eae2e6f3f01288d1185264b373d1cd2ac9457bb644676f5c3c258f41f67a7d",
+      "status": "PASS"
+    },
+    {
+      "walls": 3,
+      "source": "analysis/studies/e13-ultimate-wall-count/e13-3w-h1-full-solution.npz",
+      "sha256": "655792208c4abe86cabe3b80ae01d20f2eacfc44bc20797c0f978ebc5702259a",
+      "status": "PASS"
+    },
+    {
+      "walls": 4,
+      "source": "analysis/studies/e13-ultimate-wall-count/e13-4w-h1-full-solution.npz",
+      "sha256": "96e9c048567a3b041b8c92637471b7843f37ae6a86b39bfd91338e9e882881fb",
+      "status": "PASS"
+    },
+    {
+      "walls": 6,
+      "source": "analysis/studies/e13-ultimate-wall-count/e13-6w-h1-full-solution.npz",
+      "sha256": "9eace9b18798e35e2cda6d0afcd1f760ca44a8ea59dea16b48b688f38b9e0820",
+      "status": "PASS"
+    },
+    {
+      "walls": 8,
+      "source": "analysis/e13/e13-8w-h1-full-solution.npz",
+      "sha256": "76163065af6d9ab97535e19eb8360ffe748980dff7170390fc0311873f1147b0",
+      "status": "PASS"
+    },
+    {
+      "walls": 10,
+      "source": "analysis/e13/e13-10w-h1-full-solution.npz",
+      "sha256": "eb747f2bcfffd506f0d8635d1d353681ab8ea8f10f6fb46f86351ff42acb4407",
+      "status": "PASS"
+    }
+  ]
+}
