@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import hashlib
 import json
+import os
 import sys
 import time
 
@@ -13,6 +14,20 @@ D = Path(__file__).resolve().parent
 ROOT = D.parents[1]
 sys.path.insert(0, str(ROOT/'analysis/rev-g'))
 from mesh_quality import clean
+
+
+def archive_and_clean(nodes, cells, raw_output=None):
+    """Retain the native result before any cleanup or acceptance assertion."""
+    if raw_output is not None:
+        np.savez_compressed(raw_output, p=nodes, t=cells)
+    nodes, cells, report = clean(nodes, cells)
+    q = nodes[cells]
+    det = np.einsum('ij,ij->i', q[:, 1]-q[:, 0],
+                    np.cross(q[:, 2]-q[:, 0], q[:, 3]-q[:, 0]))
+    reverse = det < 0
+    cells[reverse, :2] = cells[reverse, 1::-1]
+    report['cells_reoriented_without_geometric_change'] = int(reverse.sum())
+    return nodes, cells, report
 
 
 def cavity_seeds(layers):
@@ -61,7 +76,7 @@ def cavity_seeds(layers):
     return records
 
 
-def tetrahedralize(p, triangles, h, layers=None, quality=True):
+def tetrahedralize(p, triangles, h, layers=None, quality=True, raw_output=None):
     """Keep the PLC, seed every enclosed air component, audit the full output."""
     sys.path.insert(0, str(D/'.work/python'))
     import tetgen
@@ -85,14 +100,14 @@ def tetrahedralize(p, triangles, h, layers=None, quality=True):
                                maxvolume=h**3/6 if quality else -1., fixedvolume=quality,
                                steinerleft=1000000, docheck=True, quiet=False)
     nodes, cells = result[:2]
-    nodes, cells, audit = clean(nodes, cells)
+    nodes, cells, audit = archive_and_clean(nodes, cells, raw_output)
     audit['enclosed_void_seeds'] = seeds
     audit['surface_component_signed_volumes_mm3'] = volumes.tolist()
     audit['requested_maximum_tetrahedron_volume_mm3'] = h**3/6 if quality else None
     return nodes, cells, audit
 
 
-def wild_mesh(p, triangles, h, epsilon_mm, iterations, simplify_input=False):
+def wild_mesh(p, triangles, h, epsilon_mm, iterations, simplify_input=False, raw_output=None):
     sys.path.insert(0, str(D/'.work/python'))
     import pytetwild
     diagonal = np.linalg.norm(p.max(axis=0)-p.min(axis=0))
@@ -103,9 +118,9 @@ def wild_mesh(p, triangles, h, epsilon_mm, iterations, simplify_input=False):
         # the source Manifold mesh is a contiguous read-only view.
         np.array(p, dtype=np.float64, order='C', copy=True), np.array(triangles, dtype=np.uint32, order='C', copy=True), edge_length_abs=float(h),
         epsilon=float(epsilon), simplify=simplify_input, optimize=True,
-        num_threads=4, num_opt_iter=iterations, loglevel=2,
+        num_threads=4, num_opt_iter=iterations, loglevel=2, quiet=False,
         disable_filtering=False)
-    nodes, cells, audit = clean(nodes, cells)
+    nodes, cells, audit = archive_and_clean(nodes, cells, raw_output)
     audit['requested_absolute_surface_envelope_mm'] = epsilon_mm
     audit['bounding_box_diagonal_mm'] = float(diagonal)
     audit['epsilon_relative_to_bounding_diagonal'] = float(epsilon)
@@ -116,7 +131,7 @@ def wild_mesh(p, triangles, h, epsilon_mm, iterations, simplify_input=False):
     return nodes, cells, audit
 
 
-def mesh(p, triangles, h, algorithm=1, remesh_surface=False):
+def mesh(p, triangles, h, algorithm=1, remesh_surface=False, raw_output=None):
     gmsh.initialize()
     try:
         gmsh.option.setNumber('General.NumThreads', 4)
@@ -150,7 +165,7 @@ def mesh(p, triangles, h, algorithm=1, remesh_surface=False):
         t = np.asarray(cells[list(kinds).index(4)]).reshape(-1, 4)
         lookup = np.zeros(int(max(tags))+1, dtype=int)
         lookup[tags] = np.arange(len(tags))
-        p, t, audit = clean(p, lookup[t])
+        p, t, audit = archive_and_clean(p, lookup[t], raw_output)
         return p, t, audit
     finally:
         gmsh.finalize()
@@ -171,6 +186,9 @@ def main():
     parser.add_argument('--simplify-input', action='store_true', help='Use fTetWild surface preprocessing within its requested envelope; output still needs an independent geometry audit.')
     parser.add_argument('--no-quality', action='store_true', help='Boundary-recovery diagnostic only, no size or quality claim.')
     args = parser.parse_args()
+    args.output = args.output.resolve()
+    if args.surface is not None:
+        args.surface = args.surface.resolve()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     if args.validate_box or args.validate_hollow_box:
         sys.path.insert(0, str(D/'.work/python'))
@@ -188,14 +206,24 @@ def main():
         expected = np.einsum('ij,ij->i', v[:, 0], np.cross(v[:, 1], v[:, 2])).sum()/6
         assert expected > 0
     start = time.perf_counter()
-    if args.backend == 'ftetwild':
-        p, t, report = wild_mesh(p, tri, args.h, args.epsilon_mm, args.opt_iterations, args.simplify_input)
-    elif args.backend == 'tetgen':
-        from plastic_shape import PlasticShape
-        layers = None if args.validate_box else PlasticShape.load(args.surface.parent).layers
-        p, t, report = tetrahedralize(p, tri, args.h, layers, not args.no_quality)
-    else:
-        p, t, report = mesh(p, tri, args.h, args.algorithm, args.remesh_surface)
+    runtime = args.output.parent/'.work'/args.output.name
+    runtime.mkdir(parents=True, exist_ok=True)
+    old_cwd = Path.cwd()
+    try:
+        # Native debug files and raw meshes belong to this attempt. Concurrent
+        # runs must not overwrite each other's fixed-name backend artifacts.
+        os.chdir(runtime)
+        raw_output = runtime/'native-result.npz'
+        if args.backend == 'ftetwild':
+            p, t, report = wild_mesh(p, tri, args.h, args.epsilon_mm, args.opt_iterations, args.simplify_input, raw_output)
+        elif args.backend == 'tetgen':
+            from plastic_shape import PlasticShape
+            layers = None if args.validate_box else PlasticShape.load(args.surface.parent).layers
+            p, t, report = tetrahedralize(p, tri, args.h, layers, not args.no_quality, raw_output)
+        else:
+            p, t, report = mesh(p, tri, args.h, args.algorithm, args.remesh_surface, raw_output)
+    finally:
+        os.chdir(old_cwd)
     report['reference_surface_signed_volume_mm3'] = float(expected)
     report['relative_surface_volume_error'] = abs(report['total_absolute_volume_mm3']/expected-1)
     report['h_mm'] = args.h
@@ -205,13 +233,15 @@ def main():
     report['quality_refinement_requested'] = not args.no_quality
     report['elapsed_seconds'] = time.perf_counter()-start
     report['surface_sha256'] = hashlib.sha256(args.surface.read_bytes()).hexdigest() if args.surface else None
-    assert report['relative_surface_volume_error'] < .001
     np.savez_compressed(args.output.with_suffix('.npz'), p=p, t=t)
-    report['status'] = 'BOUNDARY VOLUME CHECK PASSED; mesh quality and mechanics require independent review.'
+    passed = report['relative_surface_volume_error'] < .001
+    report['status'] = ('BOUNDARY VOLUME CHECK PASSED; mesh quality and mechanics require independent review.'
+                        if passed else 'FAILED BOUNDARY VOLUME CHECK; retained for diagnostic review only.')
     report['nodes'] = len(p)
     report['tetrahedra'] = len(t)
     args.output.with_suffix('.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({key: report[key] for key in ['status', 'backend', 'nodes', 'tetrahedra', 'relative_surface_volume_error', 'elapsed_seconds']}, indent=2), flush=True)
+    assert passed, 'Boundary volume mismatch; diagnostic mesh and report were retained'
 
 
 if __name__ == '__main__':

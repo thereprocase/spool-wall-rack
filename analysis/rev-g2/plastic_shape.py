@@ -192,6 +192,34 @@ class PlasticShape:
     def volume(self, continuum=False):
         return sum((simple if continuum else raw).area*(z1-z0) for z0, z1, raw, simple in self.layers)
 
+    def integrated_volume(self, regions, continuum=False, workers=4):
+        """Return material volume intersecting each supplied XY polygon.
+
+        Each result is independently accumulated through all cached Z slabs;
+        overlapping input regions therefore intentionally count in each
+        corresponding result.  Full containment uses prepared ``covers`` and
+        only partial intersections invoke exact polygon intersection areas.
+        Defaults remain raw printed footprints; request ``continuum=True``
+        explicitly for simplified footprints.
+        """
+        regions = np.asarray(tuple(regions), dtype=object)
+        if not len(regions):
+            return np.zeros(0, dtype=float)
+        assert np.all(shapely.is_valid(regions))
+        region_areas = shapely.area(regions)
+        def one(layer):
+            z0, z1, raw, simple = layer
+            material = simple if continuum else raw
+            covered = np.asarray(shapely.covers(material, regions), dtype=bool)
+            partial = np.asarray(shapely.intersects(material, regions), dtype=bool) & ~covered
+            areas = np.zeros(len(regions), dtype=float)
+            areas[covered] = region_areas[covered]
+            areas[partial] = shapely.area(shapely.intersection(material, regions[partial]))
+            return areas*(z1-z0)
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            parts = list(pool.map(one, self.layers))
+        return np.sum(parts, axis=0)
+
 
 def layer_shapes(data, workers=4, simplify_mm=.01, close_gap_mm=0., homogenize_holes_mm2=0., coordinate_grid_mm=0.):
     """Union actual credited footprints. No body mask or rectangular core cutter."""

@@ -1,5 +1,9 @@
 # Spool wall rack — G material-model correction and G2
 
+[Printable STEP bodies, aligned helpers and per-idea notes](PRINT-CANDIDATES.md).
+
+**Restart checkpoint:** [complete handoff and current candidates](RESTART-2026-09-11.md).
+
 **September 11, 2026: correcting the structural material model before G2.**
 G's finalist is being rechecked against actual Orca paths with at least two
 walls, 0% base infill and the existing 100% helpers. The wall/skin validation

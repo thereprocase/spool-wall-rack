@@ -1,0 +1,64 @@
+{
+  "analytic_two_slab_fixture": {
+    "raw_workers_1": [
+      10.0,
+      1.0,
+      3.0,
+      4.0,
+      0.0,
+      0.0
+    ],
+    "raw_workers_4": [
+      10.0,
+      1.0,
+      3.0,
+      4.0,
+      0.0,
+      0.0
+    ],
+    "continuum_workers_4": [
+      15.0,
+      1.0,
+      3.0,
+      9.0,
+      0.0,
+      0.0
+    ],
+    "expected_raw": [
+      10.0,
+      1.0,
+      3.0,
+      4.0,
+      0.0,
+      0.0
+    ],
+    "expected_continuum": [
+      15.0,
+      1.0,
+      3.0,
+      9.0,
+      0.0,
+      0.0
+    ],
+    "overlap_queries_independent": true,
+    "status": "PASS"
+  },
+  "real_reference": {
+    "cache": "g-recheck/2w-5layers/validated-shape",
+    "whole_projection_volume_mm3": 71890.97032310569,
+    "shape_volume_mm3": 71890.97032312615,
+    "whole_projection_abs_error_mm3": 2.0459992811083794e-08,
+    "roi_box_mm": [
+      130.0,
+      -37.0,
+      160.0,
+      -19.0
+    ],
+    "roi_volume_mm3": 2603.774794254281,
+    "whole_projection_seconds_workers4": 0.8628864000202157,
+    "roi_seconds_workers1": 0.16168800002196804,
+    "status": "PASS"
+  },
+  "scope": "Exact 2D polygon intersection area integrated over cached Z slabs. Per-query results are independent for overlapping regions; no quadrature, stiffness, strength, or print qualification.",
+  "status": "PASS"
+}

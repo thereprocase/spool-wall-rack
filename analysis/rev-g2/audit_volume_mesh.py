@@ -57,7 +57,7 @@ def mesh_metrics(points, cells, chunk=50000):
             radius = np.full(b-a, np.inf)
         ratio[a:b] = radius / np.maximum(minedge, np.finfo(float).tiny)
         finite[a:b] = np.isfinite(q).all(axis=(1, 2)) & np.isfinite(volume[a:b])
-        distinct[a:b] = np.array([len(set(row.tolist())) == 4 for row in cells[a:b]])
+        distinct[a:b] = np.all(np.diff(np.sort(cells[a:b], axis=1), axis=1) > 0, axis=1)
     return volume, signed, normvol, ratio, finite, distinct
 
 
@@ -133,6 +133,17 @@ def main():
     expected = float(shape.volume(continuum=True))
     raw_expected = float(shape.volume(continuum=False))
     total = float(volume[valid].sum())
+    relative_volume_error = abs(total/expected-1) if expected else None
+    gates = {
+        'finite_coordinates': bool(np.isfinite(points).all()),
+        'finite_distinct_positive_absolute_volume_cells': bool(valid.all()),
+        'consistent_signed_orientation': bool(np.all(signed > 0) or np.all(signed < 0)),
+        'one_shared_face_material_component': topo['shared_face_components'] == 1,
+        'manifold_volume_faces': topo['nonmanifold_faces_incidence_gt_two'] == 0,
+        'closed_manifold_boundary': topo['boundary_edges_incidence_one'] == 0 and topo['nonmanifold_edges_incidence_gt_two'] == 0,
+        'volume_matches_layers_within_0p1_percent': relative_volume_error is not None and relative_volume_error < .001,
+        'sampled_material_occupancy': occupancy['occupancy_status'] == 'PASS',
+    }
     result = {
         "audit": "independent volume mesh audit; diagnostic evidence only",
         "mesh": str(args.mesh.name), "mesh_sha256": hashlib.sha256(args.mesh.read_bytes()).hexdigest(),
@@ -142,19 +153,18 @@ def main():
         "signed_volume_positive_cells": int((signed > 0).sum()), "signed_volume_negative_cells": int((signed < 0).sum()),
         "total_absolute_tet_volume_mm3": total, "shape_continuum_layer_volume_mm3": expected,
         "shape_raw_layer_volume_mm3": raw_expected,
-        "relative_volume_error_vs_continuum_layers": abs(total/expected-1) if expected else None,
+        "relative_volume_error_vs_continuum_layers": relative_volume_error,
         "volume_histogram_mm3": hist(volume, np.geomspace(max(volume[volume>0].min(),1e-15), max(volume.max(),1e-14), 16)) if np.any(volume>0) else {},
         "normalized_volume_histogram_volume_over_max_edge_cubed": hist(normvol, np.geomspace(max(normvol[normvol>0].min(),1e-15), max(normvol.max(),1e-14), 16)) if np.any(normvol>0) else {},
-        "radius_edge_ratio_histogram": hist(ratio, [1,1.2,1.4143,1.6,2,3,5,10,25,100,np.inf]),
+        "radius_edge_ratio_histogram": hist(ratio, [0,.7,1,1.2,1.4143,1.6,2,3,5,10,25,100,np.inf]),
         "quality_counts": {"ratio_gt_2": int(np.count_nonzero(ratio > 2)), "ratio_gt_5": int(np.count_nonzero(ratio > 5)),
                            "normalized_volume_lt_1e-4": int(np.count_nonzero(normvol < 1e-4)),
                            "normalized_volume_lt_1e-6": int(np.count_nonzero(normvol < 1e-6))},
         "topology": topo,
         "occupancy": occupancy,
+        "numerical_geometry_gates": gates,
         "quality_qualification": "NOT ASSESSED: no solver, convergence, material law, or stress claim",
-        "status": ("PASS_NUMERICAL_BOUNDARY_VOLUME_ONLY" if valid.all() and occupancy["occupancy_status"] == "PASS"
-                    and topo["nonmanifold_edges_incidence_gt_two"] == 0 else
-                    "FAIL_TOPOLOGY_OR_OCCUPANCY" if valid.all() else "FAIL_FINITE_OR_VOLUME"),
+        "status": "PASS_NUMERICAL_BOUNDARY_VOLUME_ONLY" if all(gates.values()) else "FAIL_NUMERICAL_GEOMETRY_GATES",
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2)+"\n", encoding="utf-8")

@@ -1,0 +1,175 @@
+{
+  "status": "DIAGNOSTIC_2D_RANKING_ONLY",
+  "E_planning_MPa": 1000.0,
+  "nu": 0.35,
+  "nodes": 20204,
+  "triangles": 37985,
+  "projection_bounds_XY_mm": [
+    -0.0004995000000370953,
+    -42.999999499999994,
+    207.5053753311993,
+    175.9999995
+  ],
+  "mesh_audit": {
+    "input_triangles": 37985,
+    "removed_numerically_degenerate_triangles": 0,
+    "normalized_twice_area_floor": 1e-12,
+    "removed_absolute_area_mm2": 0.0,
+    "removed_material_volume_upper_bound_at_24_mm_mm3": 0.0
+  },
+  "projection_mesh_hash": "fe4aaa6859fb19653237744f961ae90b89be89aa2d332b9a7869b6fff075a94b",
+  "integrated_structural_volume_mm3": 71890.97032310595,
+  "plastic_shape_union_volume_mm3": 71890.97032312615,
+  "relative_integrated_volume_difference": 2.809974475326271e-13,
+  "volume_integration": {
+    "method": "Exact layer-polygon / element intersections; constant P1 strain.",
+    "signature": "0a902c6fffcbaf2442d8f8e8eb3234a2673fb3d30bf346d2b1cfa3bf5f21e79f",
+    "cache_hit": false,
+    "elapsed_seconds": 50.50979250000091
+  },
+  "sampled_quadrature_volume_mm3": 71795.02035822687,
+  "zero_sampled_thickness_quadrature_points": 3,
+  "front_movement_mm": 3.097759725073623,
+  "rear_movement_mm": 0.3937817966888085,
+  "maximum_resultant_displacement_mm": 3.4623268438173147,
+  "raw_peak_tensile_MPa": 13.230929664596651,
+  "raw_peak_centroid_XY_mm": [
+    0.03434462609902348,
+    37.45562070801645
+  ],
+  "raw_peak_element_area_mm2": 0.004390359888481796,
+  "relative_free_residual": 1.7909700532243317e-07,
+  "relative_force_balance_error": 6.968516027130668e-09,
+  "relative_moment_balance_error": 2.9414758653122158e-09,
+  "contact_iterations": [
+    {
+      "step": 0,
+      "active_nodes": 177,
+      "next_active_nodes": 51,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 1,
+      "active_nodes": 51,
+      "next_active_nodes": 43,
+      "minimum_gap_mm": -0.00010161903099288521
+    },
+    {
+      "step": 2,
+      "active_nodes": 43,
+      "next_active_nodes": 41,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 3,
+      "active_nodes": 41,
+      "next_active_nodes": 45,
+      "minimum_gap_mm": -2.292213626911693e-05
+    },
+    {
+      "step": 4,
+      "active_nodes": 45,
+      "next_active_nodes": 47,
+      "minimum_gap_mm": -0.0007145850483900203
+    },
+    {
+      "step": 5,
+      "active_nodes": 47,
+      "next_active_nodes": 35,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 6,
+      "active_nodes": 35,
+      "next_active_nodes": 34,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 7,
+      "active_nodes": 34,
+      "next_active_nodes": 33,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 8,
+      "active_nodes": 33,
+      "next_active_nodes": 32,
+      "minimum_gap_mm": 0.0
+    },
+    {
+      "step": 9,
+      "active_nodes": 32,
+      "next_active_nodes": 32,
+      "minimum_gap_mm": 0.0
+    }
+  ],
+  "active_wall_nodes": 32,
+  "wall_minimum_gap_mm": 0.0,
+  "active_wall_minimum_reaction_N": 0.14515964994771213,
+  "wall_plane_x_mm": -0.0004995000000370953,
+  "maximum_initial_wall_gap_mm": 0.02818151517085407,
+  "applied_force_N": [
+    7.771561172376096e-15,
+    -117.72000000000001
+  ],
+  "reaction_N": [
+    -6.382271143981597e-07,
+    117.72000051537711
+  ],
+  "applied_moment_Nmm": -15236.685840586606,
+  "reaction_moment_Nmm": 15236.68588540495,
+  "patches": {
+    "rear": {
+      "center_XY_mm": [
+        90.0,
+        0.0
+      ],
+      "force_XY_N": [
+        -31.293062243765473,
+        -75.1207488871594
+      ],
+      "radius_mm": 13.0,
+      "radius_tolerance_mm": 0.17,
+      "arc_degrees": 50.0,
+      "edge_count": 72,
+      "total_edge_length_mm": 11.037366990926373,
+      "distribution": "Uniform per projected edge length; 3D distributes over actual face area.",
+      "load_weighted_mean_displacement_XY_mm": [
+        0.02557585369012772,
+        -0.3937817966888085
+      ],
+      "maximum_resultant_displacement_mm": 0.4673761266039571
+    },
+    "front": {
+      "center_XY_mm": [
+        190.0,
+        12.0
+      ],
+      "force_XY_N": [
+        31.293062243765473,
+        -42.59925111284059
+      ],
+      "radius_mm": 13.0,
+      "radius_tolerance_mm": 0.17,
+      "arc_degrees": 50.0,
+      "edge_count": 50,
+      "total_edge_length_mm": 11.503993373737186,
+      "distribution": "Uniform per projected edge length; 3D distributes over actual face area.",
+      "load_weighted_mean_displacement_XY_mm": [
+        0.5850766723798939,
+        -3.097759725073623
+      ],
+      "maximum_resultant_displacement_mm": 3.2895704488589437
+    }
+  },
+  "wall_model": "Projected 2D fixings at the wall boundary; initial X gaps retained. The 3D washer plane at X=3.6 and through-width restraint are collapsed in this model.",
+  "material_policy": "Exact triangle/layer intersections of credited nominal footprints. Thick bridges excluded. P1 strain is constant in each element; no artificial stiffness is added at empty quadrature points.",
+  "scope": "Isotropic E=1000 MPa plane-stress ranking diagnostic; displacement is assumed uniform through Z. 3D fracture, buckling, physical process and lifetime qualification remain separate.",
+  "solve_elapsed_seconds": 36.414120899979025,
+  "shape_dir": "analysis/rev-g2/g-recheck/2w-5layers/validated-shape",
+  "shape_verification_sha256": "de29dd732a16c3752080cc1d39706e7a5b536141314010396f34d6ef35bfedfc",
+  "G_body_STL_sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+  "mesh_h_mm": 2.0,
+  "field_sha256": "98edcf1def9b0715b46db8319f2959e1f79180d60cc96b9842ed7f7c95e74587",
+  "total_elapsed_seconds": 98.91492519999156
+}

@@ -1,0 +1,51 @@
+{
+  "mesh_sha256": "e0b6e18a9fe06d4b3f24d6e4ecff737813f099d0cfd7018c0d1fa8cab94f728c",
+  "nodes": 203070,
+  "tetrahedra": 662332,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "load_N": 117.72,
+  "load_model": "G 180 mm spool statics, distributed over a 50 degree seat-bearing arc.",
+  "fastener_model": "Rigid washer axial restraint and rigid shank lateral bearing; hardware and substrate capacity are separate.",
+  "wall_model": "Frictionless unilateral plane at rear-most reconstructed wall point; initial geometric gaps retained.",
+  "wall_plane_x_mm": 0.0,
+  "maximum_initial_wall_gap_mm": 0.06000000238418579,
+  "surface_classification_tolerance_mm": 0.05,
+  "fastener_interfaces": {
+    "164": {
+      "washer_nodes": 142,
+      "bore_nodes": 574,
+      "washer_clipped_face_area_mm2": 104.56163942900574,
+      "bore_face_area_mm2": 62.40325841299626
+    },
+    "40": {
+      "washer_nodes": 137,
+      "bore_nodes": 550,
+      "washer_clipped_face_area_mm2": 100.56550868989314,
+      "bore_face_area_mm2": 62.215939484920625
+    }
+  },
+  "bearing_interfaces": {
+    "rear_seat": {
+      "area_mm2": 218.9867489253478,
+      "facets": 2397,
+      "force_N": [
+        -31.293062243765473,
+        -75.1207488871594,
+        0.0
+      ]
+    },
+    "front_seat": {
+      "area_mm2": 221.96394655018383,
+      "facets": 2391,
+      "force_N": [
+        31.293062243765473,
+        -42.59925111284059,
+        0.0
+      ]
+    }
+  },
+  "sacrificial_bridge_structural_credit": 0,
+  "element": "Constant-strain tetrahedron; all finite cells retained.",
+  "material_basis": "E=1 GPa effective-modulus planning screen. Isotropic surrogate; no lifetime strength claim."
+}

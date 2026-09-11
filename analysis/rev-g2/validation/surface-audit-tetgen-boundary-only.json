@@ -1,0 +1,34 @@
+{
+  "reference_sha256": "9e0724d10cf4b76d974ef79bcc95077c13a47378b72095aad787e7f1ee097728",
+  "mesh_sha256": "e0b6e18a9fe06d4b3f24d6e4ecff737813f099d0cfd7018c0d1fa8cab94f728c",
+  "sampling": "Every boundary vertex and triangle centroid, plus area-weighted deterministic samples in each direction.",
+  "is_global_Hausdorff_bound": false,
+  "tolerance_mm": 0.03,
+  "random_area_samples_per_direction": 50000,
+  "reference_to_mesh": {
+    "query_count": 655374,
+    "maximum_distance_mm": 5.268356691898775e-09,
+    "maximum_query_mm": [
+      6.950000002980232,
+      152.04999999701977,
+      7.4
+    ],
+    "mean_distance_mm": 6.993068176837935e-13,
+    "p99_distance_mm": 1.0658141036401503e-14,
+    "samples_beyond_tolerance": 0
+  },
+  "mesh_to_reference": {
+    "query_count": 655224,
+    "maximum_distance_mm": 0.40000000000000036,
+    "maximum_query_mm": [
+      149.56830125769113,
+      -22.06604573819405,
+      8.4
+    ],
+    "mean_distance_mm": 1.0989647370811115e-05,
+    "p99_distance_mm": 1.4238583238573986e-14,
+    "samples_beyond_tolerance": 54
+  },
+  "elapsed_seconds": 13.23606570000993,
+  "status": "FAIL_SAMPLED_SURFACE_DISTANCE"
+}

@@ -2,6 +2,7 @@
 
 **The five-case shape validation is complete; corrected G mechanics is still
 in progress. No accepted G2 architecture exists yet.**
+[Restart handoff and current results](../../RESTART-2026-09-11.md).
 [G2-BRIEF.md](../../G2-BRIEF.md) defines the broader study. E13 and G files
 remain unchanged.
 
@@ -53,6 +54,21 @@ cache loads take 1.10–2.28 s. These are recorded timings on the analysis
 machine, not universal performance guarantees. Creating a new shape requires
 an actual slice and the one-time path/polygon build.
 
+The new `integrated_volume(regions)` API computes credited material volume
+within supplied XY polygons by exact polygon intersections through the layer
+stack. It passes independent two-slab analytic fixtures, including different
+raw/continuum geometry, empty regions and overlapping queries. The whole G
+projection agrees with the cached volume within 0.000000021 mm³.
+[API validation](validation/integrated-volume-api.json).
+
+For a constant-strain P1 triangle, this integration also supplies its exact
+material-weighted stiffness under the reduced plane-stress assumptions. The
+new [reduced recheck](reduced_plastic.py) retains all 37,985 coarse triangles;
+it introduces no stiffness at empty sample points. Exact integration took
+50.5 s for that mesh and is cached for reuse. The reduced model collapses
+the washer plane and through-width deformation, so it remains a ranking
+diagnostic pending the 3D comparison.
+
 ## Corrected 3D mechanics: unresolved
 
 The [archived comparison](g-slicer-mapping/comparison.json) checks G's saved h1
@@ -62,8 +78,18 @@ component without thick-bridge credit. TetGen boundary recovery now reproduces
 the continuum volume and all 39 enclosed voids. The
 [independent mesh audit](validation/mesh-audit-tetgen-boundary-only.json)
 still rejects that mesh for topology/quality. A bounded-envelope mesher passed
-the [hollow-box fixture](validation/ftetwild-hollow-box-h1.json); G is in
-progress. [Attempts, rejected results and sources](MESHING-NOTES.md).
+the [hollow-box fixture](validation/ftetwild-hollow-box-h1.json). The two long G
+jobs were stopped without a mesh; [GPU alternatives](GPU-FEM-REVIEW.md) are now
+the next route. [Attempts, rejected results and sources](MESHING-NOTES.md).
+
+![Production load and fixing classifier on the rejected diagnostic mesh](validation/interfaces-rejected-tetgen.png)
+
+The colored nodes in this diagram come directly from the production interface
+classifier. Its grey geometry is the layer projection and washer-plane section.
+This checks interface placement on a rejected diagnostic mesh. The actual
+contact routine separately passes analytic opening, closing, touching and
+release fixtures; elastic assembly and stress recovery pass affine and rigid-
+motion checks. [Numerical fixtures](validation/mechanics-fixtures.json).
 
 The raw nominal footprint reference is retained separately from continuum
 meshing experiments. Those experiments explicitly report gap closing,

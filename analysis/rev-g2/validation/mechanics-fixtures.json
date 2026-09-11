@@ -1,0 +1,139 @@
+{
+  "elastic_affine_tetra": {
+    "tetra_volume_mm3": 0.16666666666666666,
+    "E_MPa": 1000.0,
+    "nu": 0.35,
+    "analytic_energy_Nmm": 0.02148148148148148,
+    "assembled_energy_Nmm": 0.02148148148150192,
+    "max_recovered_stress_error_MPa": 1.4210854715202004e-14,
+    "translation_energy_Nmm": 1.1191048088221578e-14,
+    "rotation_energy_Nmm": 0.0,
+    "status": "pass"
+  },
+  "unilateral_contact": {
+    "spring_k_N_per_mm": 10.0,
+    "initial_gap_mm": 0.2,
+    "cases": [
+      {
+        "case": "open",
+        "force_N": -1.0,
+        "displacement_mm": -0.1,
+        "initial_gap_mm": 0.2,
+        "expected_displacement_mm": -0.1,
+        "expected_reaction_N": 0.0,
+        "gap_mm": 0.1,
+        "reaction_N": 0.0,
+        "equilibrium_residual_N": 0.0,
+        "active_nodes": [],
+        "iterations": [
+          {
+            "step": 0,
+            "active_wall_nodes": 0,
+            "next_active_wall_nodes": 0,
+            "minimum_gap_mm": 0.1
+          }
+        ]
+      },
+      {
+        "case": "closed",
+        "force_N": -5.0,
+        "displacement_mm": -0.2,
+        "initial_gap_mm": 0.2,
+        "expected_displacement_mm": -0.2,
+        "expected_reaction_N": 3.0,
+        "gap_mm": 0.0,
+        "reaction_N": 3.0,
+        "equilibrium_residual_N": 0.0,
+        "active_nodes": [
+          1
+        ],
+        "iterations": [
+          {
+            "step": 0,
+            "active_wall_nodes": 0,
+            "next_active_wall_nodes": 1,
+            "minimum_gap_mm": -0.3
+          },
+          {
+            "step": 1,
+            "active_wall_nodes": 1,
+            "next_active_wall_nodes": 1,
+            "minimum_gap_mm": 0.0
+          }
+        ]
+      },
+      {
+        "case": "touching_closed",
+        "force_N": -1.0,
+        "displacement_mm": -0.0,
+        "initial_gap_mm": 0.0,
+        "expected_displacement_mm": -0.0,
+        "expected_reaction_N": 1.0,
+        "gap_mm": 0.0,
+        "reaction_N": 1.0,
+        "equilibrium_residual_N": 0.0,
+        "active_nodes": [
+          1
+        ],
+        "iterations": [
+          {
+            "step": 0,
+            "active_wall_nodes": 1,
+            "next_active_wall_nodes": 1,
+            "minimum_gap_mm": 0.0
+          }
+        ]
+      },
+      {
+        "case": "release_zero_gap",
+        "force_N": 2.0,
+        "displacement_mm": 0.2,
+        "initial_gap_mm": 0.0,
+        "expected_displacement_mm": 0.2,
+        "expected_reaction_N": 0.0,
+        "gap_mm": 0.2,
+        "reaction_N": 0.0,
+        "equilibrium_residual_N": 0.0,
+        "active_nodes": [],
+        "iterations": [
+          {
+            "step": 0,
+            "active_wall_nodes": 1,
+            "next_active_wall_nodes": 0,
+            "minimum_gap_mm": 0.0
+          },
+          {
+            "step": 1,
+            "active_wall_nodes": 0,
+            "next_active_wall_nodes": 0,
+            "minimum_gap_mm": 0.2
+          }
+        ]
+      },
+      {
+        "case": "exactly_touching",
+        "force_N": -2.0,
+        "displacement_mm": -0.2,
+        "initial_gap_mm": 0.2,
+        "expected_displacement_mm": -0.2,
+        "expected_reaction_N": 0.0,
+        "gap_mm": 0.0,
+        "reaction_N": 0.0,
+        "equilibrium_residual_N": 0.0,
+        "active_nodes": [],
+        "iterations": [
+          {
+            "step": 0,
+            "active_wall_nodes": 0,
+            "next_active_wall_nodes": 0,
+            "minimum_gap_mm": 0.0
+          }
+        ]
+      }
+    ],
+    "complementarity": "gap >= 0, reaction >= 0, gap*reaction = 0",
+    "status": "pass"
+  },
+  "scope": "Manufactured constitutive and contact-kernel assumptions only; full 3D mesh solve, patch classification, and physical strength remain separate.",
+  "status": "PASS"
+}

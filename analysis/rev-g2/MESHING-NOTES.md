@@ -40,8 +40,9 @@ Thick sacrificial bridges contribute only to the plastic ledger.
 | Gmsh classified surface remeshing | Repeated partition failure on a two-triangle patch | Worker stopped; no result |
 | TetGen with quality refinement | Boundary recovered; `split_segment` failed during refinement | No accepted mesh |
 | TetGen boundary-only run | Volume and cavity occupancy matched; poor cells and nonmanifold boundary edges remained after numerical-degeneracy audit | Diagnostic mesh, unsuitable for stress acceptance |
+| Gmsh/Netgen optimization of raw TetGen mesh | Access violation during optimization; no output | Rejected repair attempt |
 | fTetWild hollow box | Enclosed void retained; volume error about 0.0002% | Small-fixture check only |
-| fTetWild G material | In progress at this checkpoint | No stress result yet |
+| fTetWild G material | Both long CPU jobs stopped without a returned mesh | No stress result; GPU voxel/immersed FEM investigation supersedes this route |
 
 The reference continuum experiment uses a 0.03 mm closing radius, 0.16 mm²
 maximum homogenized planar pore area, 0.02 mm XY simplification and 0.01 mm
@@ -55,6 +56,27 @@ component. Its tetrahedral volume matched the layer continuum to numerical
 precision. The independent audit nevertheless rejected its boundary topology
 and recorded poor element quality. Successful volume accounting is not enough
 to justify a stress solve.
+
+A raw-versus-cleaned repeat found no nonmanifold boundary edges before removing
+268 numerically collapsed tetrahedra. All 67 resulting incidence-four edges
+adjoin removed cells. The two-way surface audit also finds new internal boundary
+faces: 54 of 655,224 mesh-boundary samples lie beyond the 0.03 mm envelope,
+with a maximum distance of 0.4 mm from the intended surface. Reference-to-mesh
+samples match to numerical precision. These are additional reasons to reject
+the cleaned mesh for mechanics; its nearly exact total volume is insufficient.
+[Distance report](validation/surface-audit-tetgen-boundary-only.json).
+
+New meshing attempts archive their native result before cleanup and retain
+failed-volume outputs for diagnosis. Each attempt has its own directory for
+native debug files. The independent audit checks finite cells, orientation,
+one material component, closed boundary topology, volume and sampled occupancy.
+Surface distance and element quality remain separate checks.
+
+The actual unilateral-contact routine now passes analytic spring fixtures for
+initially open, closing, touching and releasing contact. Elastic assembly and
+stress recovery pass an affine tetrahedron fixture and rigid-motion checks.
+[Numerical fixture report](validation/mechanics-fixtures.json). These checks
+do not replace the G mesh solve or physical qualification.
 
 Dependencies are isolated from the established CAD environment. The meshing
 wrapper needs writable contiguous arrays; Manifold may return read-only views.

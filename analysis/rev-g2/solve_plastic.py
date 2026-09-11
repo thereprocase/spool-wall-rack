@@ -35,6 +35,50 @@ def interface_loads(total):
             'front_seat': np.array([horizontal, -front, 0.])}
 
 
+def solve_contact(K, f, base, wall, gap0, solver='pardiso'):
+    """Production unilateral wall active-set loop, factored for regression tests."""
+    wall = np.asarray(wall, dtype=int)
+    gap0 = np.asarray(gap0, dtype=float)
+    base = np.asarray(base, dtype=int)
+    assert len(gap0) == len(wall) and np.all(np.diff(wall) >= 0)
+    diagonal = K.diagonal()
+    active = wall[gap0 < 1e-9]
+    u = np.zeros(len(f)); iterations = []; converged = False
+    for step in range(40):
+        fixed = np.union1d(base, 3*active)
+        free = np.setdiff1d(np.arange(len(f)), fixed)
+        u[:] = 0.
+        active_index = np.searchsorted(wall, active)
+        u[3*active] = -gap0[active_index]
+        A = K[free][:, free]
+        rhs = f[free]-K[free][:, fixed]@u[fixed]
+        if solver == 'pardiso':
+            from pypardiso import PyPardisoSolver
+            factor = PyPardisoSolver(); factor.factorize(A); sol = factor.solve(A, rhs)
+            for _ in range(5):
+                sol += factor.solve(A, rhs-A@sol)
+            factor.free_memory(everything=True)
+        else:
+            factor = splu(A.tocsc(), permc_spec='MMD_AT_PLUS_A', options={'Equil': True})
+            sol = factor.solve(rhs)
+            for _ in range(3):
+                sol += factor.solve(rhs-A@sol)
+        u[free] = sol
+        reaction = K@u-f
+        gaps = u[3*wall]+gap0
+        new = wall[(reaction[3*wall]-diagonal[3*wall]*gaps) > 1e-7]
+        iterations.append({'step': step, 'active_wall_nodes': len(active), 'next_active_wall_nodes': len(new),
+                           'minimum_gap_mm': float(gaps.min())})
+        print('contact', step, len(active), '->', len(new), 'min gap', gaps.min(), flush=True)
+        if np.array_equal(new, active):
+            converged = True; active = new; break
+        active = new
+    assert converged, 'Contact active set did not converge'
+    fixed = np.union1d(base, 3*active)
+    free = np.setdiff1d(np.arange(len(f)), fixed)
+    return u, reaction, free, active, gaps, iterations
+
+
 def solve(args):
     start = time.perf_counter()
     data = np.load(args.mesh)
@@ -73,6 +117,7 @@ def solve(args):
                           'force_N': force.tolist(), 'nodes': np.unique(ids)}
     fixed_base = []
     heads = {}
+    bores = {}
     interfaces = {}
     tol = args.surface_tolerance_mm
     for y in [164., 40.]:
@@ -88,6 +133,7 @@ def solve(args):
         fixed_base.extend(3*bore+1)
         fixed_base.extend(3*bore+2)
         heads[str(int(y))] = head
+        bores[str(int(y))] = bore
         import shapely
         from shapely.geometry import Point
         washer_ring = Point(y, 12).buffer(6.5, quad_segs=64).difference(Point(y, 12).buffer(2.75, quad_segs=64))
@@ -115,6 +161,8 @@ def solve(args):
               'wall_plane_x_mm': wall_plane_x,
               'maximum_initial_wall_gap_mm': float(gap0.max()),
               'surface_classification_tolerance_mm': tol, 'fastener_interfaces': interfaces,
+              'bearing_interfaces': {label: {key: value for key, value in patch.items() if key != 'nodes'}
+                                     for label, patch in patches.items()},
               'sacrificial_bridge_structural_credit': 0,
               'element': 'Constant-strain tetrahedron; all finite cells retained.',
               'material_basis': 'E=1 GPa effective-modulus planning screen. Isotropic surrogate; no lifetime strength claim.'}
@@ -122,47 +170,12 @@ def solve(args):
     args.output.with_name(args.output.name+'-interfaces.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
     if args.interfaces_only:
         print(json.dumps(report, indent=2), flush=True)
-        return
+        return {'report': report, 'points': p, 'patches': patches,
+                'wall': wall, 'heads': heads, 'bores': bores}
     print('assemble', n, len(t), flush=True)
     K = asm(linear_elasticity(lam, mu), basis).tocsr()
-    diagonal = K.diagonal()
-    active = wall[gap0 < 1e-9]
-    u = np.zeros(3*n)
-    iterations = []
-    converged = False
-    for step in range(40):
-        fixed = np.union1d(base, 3*active)
-        free = np.setdiff1d(np.arange(3*n), fixed)
-        u[:] = 0.
-        active_index = np.searchsorted(wall, active)
-        u[3*active] = -gap0[active_index]
-        A = K[free][:, free]
-        rhs = f[free]-K[free][:, fixed]@u[fixed]
-        if args.solver == 'pardiso':
-            from pypardiso import PyPardisoSolver
-            factor = PyPardisoSolver()
-            factor.factorize(A)
-            sol = factor.solve(A, rhs)
-            for k in range(5):
-                sol += factor.solve(A, rhs-A@sol)
-            factor.free_memory(everything=True)
-        else:
-            factor = splu(A.tocsc(), permc_spec='MMD_AT_PLUS_A', options={'Equil': True})
-            sol = factor.solve(rhs)
-            for k in range(3):
-                sol += factor.solve(rhs-A@sol)
-        u[free] = sol
-        reaction = K@u-f
-        gaps = u[3*wall]+gap0
-        new = wall[(reaction[3*wall]-diagonal[3*wall]*gaps) > 1e-7]
-        iterations.append({'step': step, 'active_wall_nodes': len(active), 'next_active_wall_nodes': len(new),
-                           'minimum_gap_mm': float(gaps.min())})
-        print('contact', step, len(active), '->', len(new), 'min gap', gaps.min(), flush=True)
-        if np.array_equal(new, active):
-            converged = True
-            break
-        active = new
-    assert converged, 'Contact active set did not converge'
+    u, reaction, free, active, gaps, iterations = solve_contact(K, f, base, wall, gap0, args.solver)
+    converged = True
     residual = np.linalg.norm(reaction[free])/max(np.linalg.norm(f[free]), 1e-30)
     applied = f.reshape(-1, 3)
     reacted = reaction.reshape(-1, 3)
