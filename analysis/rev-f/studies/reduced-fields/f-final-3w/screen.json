@@ -1,0 +1,40 @@
+{
+  "name": "f-final-3w",
+  "parameters": {
+    "window_scale": 1.0,
+    "bottom_band": 6.0,
+    "diagonal_band": 6.0,
+    "seat_band": 12.0,
+    "front_seat_band": 3.0,
+    "planes": "shaped",
+    "rib_frame": 6.0,
+    "seat_webs": true,
+    "infill_percent": 8,
+    "name": "f-final-3w",
+    "walls": 3
+  },
+  "structural_layer_volume_mm3": 106081.68918576775,
+  "body_envelope_volume_mm3": 231234.9293122975,
+  "nominal_print_volume_mm3": 116093.94839589013,
+  "new_void_area_mm2": 1486.573343895578,
+  "layout_sha256": "ba09e5791da1e0e8da5ac332061f03ac6e7c49f34f36535c300e5020baa5deb8",
+  "mesh_h_mm": 1,
+  "load_cases": {
+    "full": {
+      "front_movement_mm_at_E1000": 1.9970082523125656,
+      "rear_movement_mm_at_E1000": 0.2731722072253066,
+      "load_compliance_Nmm_at_E1000": 117.29749737298732,
+      "raw_peak_tensile_MPa": 4.507075911512941,
+      "raw_peak_VM_MPa": 4.288412841187708,
+      "relative_free_residual": 6.00784752600449e-11
+    },
+    "outer_only": {
+      "front_movement_mm_at_E1000": 1.8003072621199199,
+      "rear_movement_mm_at_E1000": 0.13117596902830594,
+      "load_compliance_Nmm_at_E1000": 90.81102099678003,
+      "raw_peak_tensile_MPa": 4.507119386059351,
+      "raw_peak_VM_MPa": 4.2884541238636205,
+      "relative_free_residual": 9.951089973353927e-11
+    }
+  }
+}

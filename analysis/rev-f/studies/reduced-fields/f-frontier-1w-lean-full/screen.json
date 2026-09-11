@@ -1,0 +1,44 @@
+{
+  "name": "f-frontier-1w-lean-full",
+  "parameters": {
+    "window_scale": 1.0,
+    "walls": 1,
+    "skin_mm": 0.8,
+    "plane_mm": 0.8,
+    "bottom_band": 1.2,
+    "diagonal_band": 1.2,
+    "seat_band": 2.5,
+    "front_seat_band": 2.0,
+    "planes": "full",
+    "rib_frame": 4.0,
+    "seat_webs": true,
+    "infill_percent": 5,
+    "lower_tunnel_collar_mm": 3.5,
+    "upper_tunnel_collar_mm": 2.0,
+    "name": "f-frontier-1w-lean-full"
+  },
+  "structural_layer_volume_mm3": 57589.94467096574,
+  "body_envelope_volume_mm3": 231234.9293122975,
+  "nominal_print_volume_mm3": 66272.19390303233,
+  "new_void_area_mm2": 1486.573343895578,
+  "layout_sha256": "f463e96756c4d932987ffe98f4c66bfd3c1ecee1ba1ad91c6be6401f0da87050",
+  "mesh_h_mm": 1,
+  "load_cases": {
+    "full": {
+      "front_movement_mm_at_E1000": 4.0426683876793135,
+      "rear_movement_mm_at_E1000": 0.48287131778467046,
+      "load_compliance_Nmm_at_E1000": 231.68971359062806,
+      "raw_peak_tensile_MPa": 9.401580197786263,
+      "raw_peak_VM_MPa": 10.054185135576217,
+      "relative_free_residual": 7.380907036749443e-11
+    },
+    "outer_only": {
+      "front_movement_mm_at_E1000": 3.640974066644678,
+      "rear_movement_mm_at_E1000": 0.25316819184482686,
+      "load_compliance_Nmm_at_E1000": 181.39814702704774,
+      "raw_peak_tensile_MPa": 7.391167325911448,
+      "raw_peak_VM_MPa": 7.913419394145419,
+      "relative_free_residual": 1.2499661333749906e-10
+    }
+  }
+}

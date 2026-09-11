@@ -1,0 +1,28 @@
+{
+  "revision": "F",
+  "parameters": {
+    "name": "f-final-3w",
+    "walls": 3,
+    "window_scale": 1.0,
+    "bottom_band": 6.0,
+    "diagonal_band": 6.0,
+    "seat_band": 12.0,
+    "front_seat_band": 3.0,
+    "planes": "shaped",
+    "rib_frame": 6.0,
+    "seat_webs": true,
+    "infill_percent": 8
+  },
+  "layout_sha256": "ba09e5791da1e0e8da5ac332061f03ac6e7c49f34f36535c300e5020baa5deb8",
+  "body_STEP_sha256": "a019f764d45f9bd1ba395619e67d351ae1fc55eba99454ef7fcc8434816b1c2f",
+  "effective_wall_mm": 1.2341592653589792,
+  "volume_mm3": 106730.06796881327,
+  "valid": true,
+  "solid_count": 1,
+  "cleanup": {
+    "faces_before": 9243,
+    "faces_after": 5769,
+    "volume_change_mm3": 7.226044544950128e-07
+  },
+  "model": "Finished E13 perimeter/chamfer/tunnel guards intersected with Rev F body; new window collars and full-width dense regions; two shaped internal 1.2 mm rib planes; zero sparse-infill credit."
+}

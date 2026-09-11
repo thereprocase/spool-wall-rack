@@ -1,0 +1,244 @@
+[
+  {
+    "name": "f-chords-3",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 3.0,
+      "diagonal_band": 3.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-chords-3"
+    },
+    "structural_layer_volume_mm3": 96319.33927803692,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 109810.89828146299,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "da274a62695418932d062d303757096416c53be4107d214a7ff89560c146fda9",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.235507881788746,
+        "rear_movement_mm_at_E1000": 0.3024570262199486,
+        "load_compliance_Nmm_at_E1000": 130.2430419062333,
+        "raw_peak_tensile_MPa": 6.0496521377283115,
+        "raw_peak_VM_MPa": 6.025298512201457,
+        "relative_free_residual": 4.9754289205300506e-11
+      }
+    }
+  },
+  {
+    "name": "f-chords-4",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 4.0,
+      "diagonal_band": 4.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-chords-4"
+    },
+    "structural_layer_volume_mm3": 101397.51230170872,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 114381.2540027676,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "c8f77c2b7fcdeba156a7769c1e8a8dc7669b80a03dba1bf00699c6c838581dae",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.065767899682823,
+        "rear_movement_mm_at_E1000": 0.27723029103792984,
+        "load_compliance_Nmm_at_E1000": 120.51799651846858,
+        "raw_peak_tensile_MPa": 5.620119686347845,
+        "raw_peak_VM_MPa": 5.736906763425936,
+        "relative_free_residual": 4.6654929925472634e-11
+      }
+    }
+  },
+  {
+    "name": "f-chords-5",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-chords-5"
+    },
+    "structural_layer_volume_mm3": 106436.4587315306,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 118916.30578960729,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "f93857c6ed45785b02a7d345168f7d04545b03ac67a4235269f75c3ed4311dc7",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 1.9404483669732016,
+        "rear_movement_mm_at_E1000": 0.2584711137688623,
+        "load_compliance_Nmm_at_E1000": 113.3357889123052,
+        "raw_peak_tensile_MPa": 6.234719921065171,
+        "raw_peak_VM_MPa": 6.133261487134892,
+        "relative_free_residual": 4.400699063600877e-11
+      }
+    }
+  },
+  {
+    "name": "f-chords-6",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 6.0,
+      "diagonal_band": 6.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-chords-6"
+    },
+    "structural_layer_volume_mm3": 111437.54528287797,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 123417.28368581992,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "48228b2284c95c05cbd4d2a0d4596101cd3cba1770f7e7e87c1d16c77c33c18c",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 1.8506808719651897,
+        "rear_movement_mm_at_E1000": 0.24462993601423969,
+        "load_compliance_Nmm_at_E1000": 108.17081444251812,
+        "raw_peak_tensile_MPa": 5.354755848818809,
+        "raw_peak_VM_MPa": 5.3145712664793,
+        "relative_free_residual": 4.211311116609707e-11
+      }
+    }
+  },
+  {
+    "name": "f-window-0.75",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 0.75,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-window-0.75"
+    },
+    "structural_layer_volume_mm3": 107690.87452254769,
+    "body_envelope_volume_mm3": 246869.35601900995,
+    "nominal_print_volume_mm3": 121608.72267219391,
+    "new_void_area_mm2": 836.1975059412628,
+    "layout_sha256": "7ffba25f9228ab1b55bec116c596d5d0c75f61a81d8fd9209597d9dad9e90887",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 1.8204227437610252,
+        "rear_movement_mm_at_E1000": 0.2535543912706654,
+        "load_compliance_Nmm_at_E1000": 107.23346327024963,
+        "raw_peak_tensile_MPa": 4.455822858700056,
+        "raw_peak_VM_MPa": 4.857713915077813,
+        "relative_free_residual": 4.0178805649921235e-11
+      }
+    }
+  },
+  {
+    "name": "f-window-1.15",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.15,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 10,
+      "name": "f-window-1.15"
+    },
+    "structural_layer_volume_mm3": 105217.97945808459,
+    "body_envelope_volume_mm3": 219713.6076730603,
+    "nominal_print_volume_mm3": 116667.54227958217,
+    "new_void_area_mm2": 1965.9932473019016,
+    "layout_sha256": "a8cb8b6304c31b1db17b5701eea3109d2f34ceb3a9232b959f985445ab96bdfe",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.08024660798695,
+        "rear_movement_mm_at_E1000": 0.2644076265039493,
+        "load_compliance_Nmm_at_E1000": 120.44217070994365,
+        "raw_peak_tensile_MPa": 4.832639033144215,
+        "raw_peak_VM_MPa": 4.968008537247442,
+        "relative_free_residual": 4.7496511969051755e-11
+      }
+    }
+  },
+  {
+    "name": "f-rib-planes-4",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 10,
+      "name": "f-rib-planes-4",
+      "rib_frame": 4.0
+    },
+    "structural_layer_volume_mm3": 95654.48449698415,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 109212.52897851549,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "d2a2aad11ffeaf8b99389a7c243bcea03f95cd0619e87974d6174c258fb41ff7",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.287531411623133,
+        "rear_movement_mm_at_E1000": 0.29421814646834976,
+        "load_compliance_Nmm_at_E1000": 132.861143084577,
+        "raw_peak_tensile_MPa": 11.474294018256165,
+        "raw_peak_VM_MPa": 10.867373932529572,
+        "relative_free_residual": 5.2310328914313505e-11
+      }
+    }
+  },
+  {
+    "name": "f-rib-planes-6",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 10,
+      "name": "f-rib-planes-6",
+      "rib_frame": 6.0
+    },
+    "structural_layer_volume_mm3": 98683.9217362436,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 111939.022493849,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "8f70f426d64fdf3bf8c966e240303eed0b6253242fa580b5efe8529d940074bd",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.2203293382436025,
+        "rear_movement_mm_at_E1000": 0.28607604346903137,
+        "load_compliance_Nmm_at_E1000": 128.93372743511418,
+        "raw_peak_tensile_MPa": 8.049247964964529,
+        "raw_peak_VM_MPa": 7.934410287563889,
+        "relative_free_residual": 5.1783401247685534e-11
+      }
+    }
+  }
+]

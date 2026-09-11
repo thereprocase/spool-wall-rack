@@ -1,0 +1,34 @@
+[
+  {
+    "file": "body-only.stl",
+    "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.984819338637192e-05,
+    "input_boundary_edges": 3,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "input_triangles": 14305,
+    "output_triangles": 13508,
+    "signed_volume_change_mm3": 0.01553806578158401,
+    "input_sha256": "030086e5a33b03b495cdd01de57448186a9e6ffc224242493df4eef5cb4506d6",
+    "output_sha256": "ee61c261878d3345c75c2b5d8ca1c4c4ce102f647dd4dafde29e1e769beb8077",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false
+  },
+  {
+    "file": "body-mounted.stl",
+    "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.9920090974053956e-05,
+    "input_boundary_edges": 6,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "input_triangles": 14306,
+    "output_triangles": 13520,
+    "signed_volume_change_mm3": 0.015299004968255758,
+    "input_sha256": "992e5c8b626a8655143c1ca0b769f50ba3cd5372c2d56bad3ba8d769dc776564",
+    "output_sha256": "5ca2a91f708b298b2a3d03f4eedc6fecf37961b84d04693dbf30c19f68634c56",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false
+  }
+]

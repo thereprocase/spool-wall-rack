@@ -1,0 +1,22 @@
+{
+  "revision": "F",
+  "valid_body": true,
+  "body_solid_count": 1,
+  "source_E13_STEP_sha256": "1ad58a235ff095b0d7fc581318630d07eb878d440193612e16e687946f18ee88",
+  "source_window_parameters": {
+    "window_scale": 1.0
+  },
+  "original_CAD_volume_mm3": 267017.69726107037,
+  "body_CAD_volume_mm3": 231235.7743184109,
+  "new_window_chamfer_inset_mm": 0.6,
+  "new_window_chamfer_angle_deg": 50,
+  "body_print_bounds_mm": [
+    42.492999999999604,
+    5.999999999999994,
+    -1.0000000786523624e-07,
+    250.00000000000003,
+    225.00000000000003,
+    24.000000100000012
+  ],
+  "note": "CAD envelope volume is not printed volume. Only the two specified angular windows and their mouth chamfers are removed."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "f-final-3w",
+  "walls": 3,
+  "window_scale": 1.0,
+  "bottom_band": 6.0,
+  "diagonal_band": 6.0,
+  "seat_band": 12.0,
+  "front_seat_band": 3.0,
+  "planes": "shaped",
+  "rib_frame": 6.0,
+  "seat_webs": true,
+  "infill_percent": 8
+}

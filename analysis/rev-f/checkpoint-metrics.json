@@ -1,0 +1,126 @@
+{
+  "checkpoint_local_date": "2026-09-10",
+  "reference_load_kg": 12,
+  "reference_force_N": 117.72,
+  "reference_modulus_MPa": 1000,
+  "strength_screen_MPa": 40.5,
+  "required_strength_ratio": 4,
+  "strength_note": "Conservative typical coupon screen, not a qualified part allowable. No finite stress cells excluded.",
+  "fields": [
+    {
+      "field": "analysis/rev-f/print-material-3w-h2-solution.npz",
+      "field_sha256": "86fd09ffd6c421a918ddcfe2f8ffc55eaad395170d8669352d30b9f619ff1421",
+      "nodes": 63296,
+      "tetrahedra": 202610,
+      "front_movement_mm_at_E1000": 2.1907063408113863,
+      "rear_movement_mm_at_E1000": 0.33417045997241396,
+      "remaining_5mm_movement_budget_mm": 2.8092936591886137,
+      "proportional_1p25kg_front_change_mm": 0.22819857716785275,
+      "max_principal_MPa_all_finite_cells": 51.68533614227431,
+      "conservative_40p5MPa_strength_ratio": 0.7835878224437891,
+      "passes_requested_4x_screen": false,
+      "peak_cell_centroid_mm": [
+        28.692051960000263,
+        46.8036642092316,
+        23.740791776687104
+      ],
+      "peak_cell_volume_mm3": 1.2873048850452958e-08,
+      "volume_over_10p125MPa_mm3": 0.01140654891181987,
+      "relative_free_residual": 1.2117260538764313e-08,
+      "relative_force_balance_error": 6.909005478457617e-10,
+      "relative_moment_balance_error": 5.206086262750927e-10
+    },
+    {
+      "field": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1-solution.npz",
+      "field_sha256": "6ccc8d7bee9bff32947dd339e88fb06ff0a346391ea7698087600e40fe682a03",
+      "nodes": 207471,
+      "tetrahedra": 726544,
+      "front_movement_mm_at_E1000": 2.156495331190991,
+      "rear_movement_mm_at_E1000": 0.3154775283900601,
+      "remaining_5mm_movement_budget_mm": 2.843504668809009,
+      "proportional_1p25kg_front_change_mm": 0.2246349303323949,
+      "max_principal_MPa_all_finite_cells": 17.598216851196558,
+      "conservative_40p5MPa_strength_ratio": 2.3013695275181405,
+      "passes_requested_4x_screen": false,
+      "peak_cell_centroid_mm": [
+        21.639430412627945,
+        30.884621462772262,
+        8.863193341985335
+      ],
+      "peak_cell_volume_mm3": 3.151628542118084e-05,
+      "volume_over_10p125MPa_mm3": 0.01063965939537773,
+      "relative_free_residual": 5.933035676749429e-09,
+      "relative_force_balance_error": 1.495106580056742e-10,
+      "relative_moment_balance_error": 2.0339717196444102e-10
+    },
+    {
+      "field": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1.5-solution.npz",
+      "field_sha256": "1b2580453100c0bb30e1dc35b191a5bb7f7a1c7e68b173015ee13086544d008e",
+      "nodes": 100548,
+      "tetrahedra": 330547,
+      "front_movement_mm_at_E1000": 2.107029869414646,
+      "rear_movement_mm_at_E1000": 0.30383867400747927,
+      "remaining_5mm_movement_budget_mm": 2.892970130585354,
+      "proportional_1p25kg_front_change_mm": 0.21948227806402562,
+      "max_principal_MPa_all_finite_cells": 21.18486636065272,
+      "conservative_40p5MPa_strength_ratio": 1.9117420573028419,
+      "passes_requested_4x_screen": false,
+      "peak_cell_centroid_mm": [
+        3.372840315033071,
+        33.06215397818602,
+        8.069057297264308
+      ],
+      "peak_cell_volume_mm3": 3.821276345520282e-06,
+      "volume_over_10p125MPa_mm3": 0.0422216606335816,
+      "relative_free_residual": 4.597376932287335e-09,
+      "relative_force_balance_error": 2.0245341760585938e-10,
+      "relative_moment_balance_error": 3.6524002994828477e-10
+    },
+    {
+      "field": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h2-solution.npz",
+      "field_sha256": "8910ccdca9217d35ac34cd8a28bfb86e6ab302f6413c8a80b1f54f44b5c46733",
+      "nodes": 62683,
+      "tetrahedra": 190361,
+      "front_movement_mm_at_E1000": 2.0624793663406877,
+      "rear_movement_mm_at_E1000": 0.3004571073292508,
+      "remaining_5mm_movement_budget_mm": 2.9375206336593123,
+      "proportional_1p25kg_front_change_mm": 0.2148416006604883,
+      "max_principal_MPa_all_finite_cells": 30.570736308164303,
+      "conservative_40p5MPa_strength_ratio": 1.3247963539950447,
+      "passes_requested_4x_screen": false,
+      "peak_cell_centroid_mm": [
+        35.41662700117484,
+        -30.28621881916862,
+        23.730944440948548
+      ],
+      "peak_cell_volume_mm3": 1.3638580658624083e-08,
+      "volume_over_10p125MPa_mm3": 0.05496422309137328,
+      "relative_free_residual": 8.963739274264328e-09,
+      "relative_force_balance_error": 7.808200006591851e-10,
+      "relative_moment_balance_error": 1.1395880904607919e-09
+    },
+    {
+      "field": "analysis/rev-f/studies/light-full-1w/print-material-1w-h2-solution.npz",
+      "field_sha256": "f3ff40a7814acb2880e287ce159a9c4aaf9637e97e946ca4b09dc4438ae030ad",
+      "nodes": 68327,
+      "tetrahedra": 215266,
+      "front_movement_mm_at_E1000": 3.5822934012150105,
+      "rear_movement_mm_at_E1000": 0.46837064539265505,
+      "remaining_5mm_movement_budget_mm": 1.4177065987849895,
+      "proportional_1p25kg_front_change_mm": 0.37315556262656363,
+      "max_principal_MPa_all_finite_cells": 47.41693783305628,
+      "conservative_40p5MPa_strength_ratio": 0.8541251681538532,
+      "passes_requested_4x_screen": false,
+      "peak_cell_centroid_mm": [
+        3.162633982262915,
+        46.006483588001565,
+        7.112923959982582
+      ],
+      "peak_cell_volume_mm3": 7.357363654057423e-06,
+      "volume_over_10p125MPa_mm3": 0.3502355821846277,
+      "relative_free_residual": 1.0200698467712662e-08,
+      "relative_force_balance_error": 6.964949920197999e-10,
+      "relative_moment_balance_error": 5.51848362358552e-10
+    }
+  ]
+}

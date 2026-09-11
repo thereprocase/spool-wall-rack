@@ -1,0 +1,194 @@
+[
+  {
+    "name": "f-tuned-2w-5",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-2w-5",
+      "walls": 2
+    },
+    "structural_layer_volume_mm3": 95899.953045221,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 106726.75114658712,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "95b3003078f35024bfff60e851a10cf79505d2010a0c60e5b42d35c204f49647",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.144628548551815,
+        "rear_movement_mm_at_E1000": 0.29731898924063443,
+        "load_compliance_Nmm_at_E1000": 126.27114014817448,
+        "raw_peak_tensile_MPa": 5.358408267481471,
+        "raw_peak_VM_MPa": 5.014175054665405,
+        "relative_free_residual": 4.734996209380985e-11
+      }
+    }
+  },
+  {
+    "name": "f-tuned-2w-6",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 6.0,
+      "diagonal_band": 6.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-2w-6",
+      "walls": 2
+    },
+    "structural_layer_volume_mm3": 100834.39298518523,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 111266.43589135421,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "b50c932f6fb9048d95a8edbb4bd14814dcb8c43014653c77555bb7adcccacbcb",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.051629601124752,
+        "rear_movement_mm_at_E1000": 0.2813330292948582,
+        "load_compliance_Nmm_at_E1000": 120.80738951752308,
+        "raw_peak_tensile_MPa": 5.306076707979864,
+        "raw_peak_VM_MPa": 4.965455347243753,
+        "relative_free_residual": 4.458848179355753e-11
+      }
+    }
+  },
+  {
+    "name": "f-tuned-3w-5",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-3w-5",
+      "walls": 3
+    },
+    "structural_layer_volume_mm3": 101163.20129947257,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 111568.93954049856,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "af53f5cb5d5d420aad5f99ccf29dd26547972e43d28b9d20b352386e31ec75e4",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.0752168003935867,
+        "rear_movement_mm_at_E1000": 0.28605881425977886,
+        "load_compliance_Nmm_at_E1000": 121.90007257870809,
+        "raw_peak_tensile_MPa": 4.875241701044335,
+        "raw_peak_VM_MPa": 4.5651446779435165,
+        "relative_free_residual": 4.4156439057120626e-11
+      }
+    }
+  },
+  {
+    "name": "f-tuned-3w-6",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 6.0,
+      "diagonal_band": 6.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-3w-6",
+      "walls": 3
+    },
+    "structural_layer_volume_mm3": 106081.68918576775,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 116093.94839589013,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "d5696a58ed9ad2fde2f37b86653fbd2f322ca262ee9b95b5f23eb29c404c0191",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 1.9832323012617803,
+        "rear_movement_mm_at_E1000": 0.27052153786154104,
+        "load_compliance_Nmm_at_E1000": 116.51533948111184,
+        "raw_peak_tensile_MPa": 4.827862078036602,
+        "raw_peak_VM_MPa": 4.520937838762992,
+        "relative_free_residual": 4.4629203088404544e-11
+      }
+    }
+  },
+  {
+    "name": "f-tuned-4w-5",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-4w-5",
+      "walls": 4
+    },
+    "structural_layer_volume_mm3": 106445.07652567809,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 116428.26474860765,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "bec7c40167c9c55217cc67c338649091ec1a029e000a632b6d34e8e4cfdd75fc",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.0062581356926206,
+        "rear_movement_mm_at_E1000": 0.2760068824142194,
+        "load_compliance_Nmm_at_E1000": 117.56078786261128,
+        "raw_peak_tensile_MPa": 4.431482034760034,
+        "raw_peak_VM_MPa": 4.14013098498756,
+        "relative_free_residual": 4.5380135942866794e-11
+      }
+    }
+  },
+  {
+    "name": "f-tuned-4w-6",
+    "parameters": {
+      "window_scale": 1.0,
+      "bottom_band": 6.0,
+      "diagonal_band": 6.0,
+      "seat_band": 12.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "rib_frame": 6.0,
+      "seat_webs": true,
+      "infill_percent": 8,
+      "name": "f-tuned-4w-6",
+      "walls": 4
+    },
+    "structural_layer_volume_mm3": 111347.67747005465,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 120938.65761743407,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "dcc8ccae8bd0113ac91201e4230ec838b206011d833a861b3694233f44eda70a",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 1.9151392010079984,
+        "rear_movement_mm_at_E1000": 0.2609787847308616,
+        "load_compliance_Nmm_at_E1000": 112.25249321916232,
+        "raw_peak_tensile_MPa": 4.667156598177441,
+        "raw_peak_VM_MPa": 4.400082482320422,
+        "relative_free_residual": 4.5447494824449026e-11
+      }
+    }
+  }
+]

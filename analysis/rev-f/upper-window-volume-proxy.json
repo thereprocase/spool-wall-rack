@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "walls": 4,
+    "window_scale": 1.0,
+    "bottom_band": 5.0,
+    "diagonal_band": 5.0,
+    "seat_band": 7.0,
+    "front_seat_band": 3.0,
+    "planes": "full",
+    "infill_percent": 8,
+    "name": "f-upper-window-proxy",
+    "upper_window": true
+  },
+  "structural_layer_volume_mm3": 109475.60637439751,
+  "body_envelope_volume_mm3": 222438.50873440228,
+  "nominal_print_volume_mm3": 118512.63856319789,
+  "new_void_area_mm2": 1850.3611539185713,
+  "layout_sha256": "1cf7a73747a67edd50fb5aa52575c80a179c5cef7beeba92808c9b208f3544a0",
+  "note": "Initial h2 solve failed contact convergence; no structural result accepted."
+}

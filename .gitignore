@@ -35,3 +35,13 @@ __pycache__/
 /analysis/e13/*.brep
 /analysis/e13/*w-h*.npz
 !/analysis/e13/*-solution.npz
+
+# Rev F design and slicing experiments. Final fields and handoff files are retained.
+/analysis/rev-f/.work/
+/designs/rev-f/.work/
+/analysis/rev-f/*.brep
+/analysis/rev-f/*w-h*.npz
+!/analysis/rev-f/*-solution.npz
+
+# OrcaSlicer CLI writes a transient status file in its working directory.
+/result.json

@@ -1,0 +1,120 @@
+{
+  "name": "print-material-4w-h1",
+  "nodes": 207471,
+  "tetrahedra": 726544,
+  "E_reference_MPa": 1000.0,
+  "nu": 0.35,
+  "contact_converged": true,
+  "linear_iterations": [
+    -2,
+    -2,
+    -2,
+    -2
+  ],
+  "volume_mm3": 103830.33865532154,
+  "applied_force_N": [
+    4.2787821896705935e-14,
+    -117.71999999999957,
+    0.0
+  ],
+  "reaction_N": [
+    -5.541293696193923e-09,
+    117.71999999261531,
+    -1.4984697408280628e-08
+  ],
+  "applied_moment_Nmm": [
+    1412.721369848063,
+    0.005922243950935505,
+    -15237.34434852665
+  ],
+  "reaction_moment_Nmm": [
+    -1412.7213694399363,
+    -0.005919410102228011,
+    15237.344347305772
+  ],
+  "relative_free_residual": 5.933035676749429e-09,
+  "max_displacement_mm_at_E1000": 2.4045590749150723,
+  "vm_max_MPa_not_allowable": 24.503831642442947,
+  "vm_volume_p99_MPa": 2.5564988490047607,
+  "vm_volume_p999_MPa": 3.506862755727259,
+  "patches": {
+    "rear_seat": {
+      "area_mm2": 219.66474136479476,
+      "facets": 2182,
+      "force_N": [
+        -31.293062243765473,
+        -75.1207488871594,
+        0.0
+      ],
+      "mean_displacement_mm_at_E1000": [
+        0.037637839100213434,
+        -0.3154775283900601,
+        -0.022196101932663956
+      ]
+    },
+    "front_seat": {
+      "area_mm2": 224.5331612242851,
+      "facets": 2300,
+      "force_N": [
+        31.293062243765473,
+        -42.59925111284059,
+        0.0
+      ],
+      "mean_displacement_mm_at_E1000": [
+        0.429805281665965,
+        -2.156495331190991,
+        -0.030858641720397435
+      ]
+    }
+  },
+  "relative_force_balance_error": 1.495106580056742e-10,
+  "source_mesh": "print-material-4w-h1",
+  "load_case": "full",
+  "load_compliance_Nmm_at_E1000": 127.64510966705618,
+  "linear_solver": "PARDISO with five residual-correction solves",
+  "relative_moment_balance_error": 2.0339717196444102e-10,
+  "wall_minimum_gap_mm": 0.0,
+  "wall_contact_nodes": 728,
+  "head_164_reaction_N": [
+    -16.204724212309237,
+    2.2113072340738698,
+    -0.1805557319437186
+  ],
+  "head_40_reaction_N": [
+    -217.58602402881385,
+    12.510648840487073,
+    -3.5144346863801488
+  ],
+  "regions": {
+    "rear_seat": {
+      "vm_p99_MPa": 3.0663591650613213,
+      "vm_max_MPa": 4.968399777279983,
+      "max_principal_MPa": 8.184036951913937
+    },
+    "forearm": {
+      "vm_p99_MPa": 2.266805390196333,
+      "vm_max_MPa": 6.490700201911479,
+      "max_principal_MPa": 6.157756110492848
+    },
+    "upper_landing": {
+      "vm_p99_MPa": 0.9732488224565797,
+      "vm_max_MPa": 1.8689747005911275,
+      "max_principal_MPa": 2.2335965440425127
+    },
+    "lower_landing": {
+      "vm_p99_MPa": 4.045776951063462,
+      "vm_max_MPa": 9.10732134779174,
+      "max_principal_MPa": 14.276172720772129
+    },
+    "knee": {
+      "vm_p99_MPa": 2.670288287281697,
+      "vm_max_MPa": 8.644427000602326,
+      "max_principal_MPa": 8.45189229939161
+    },
+    "near_rear_seat_fixed_window": {
+      "vm_p99_MPa": 3.2899269226331067,
+      "vm_max_MPa": 4.968399777279983,
+      "max_principal_MPa": 8.184036951913937
+    }
+  }
+}

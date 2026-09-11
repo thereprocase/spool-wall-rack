@@ -1,0 +1,190 @@
+[
+  {
+    "name": "f-balanced",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 4.3,
+      "diagonal_band": 4.3,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 8,
+      "name": "f-balanced"
+    },
+    "structural_layer_volume_mm3": 102913.25966083803,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 113178.99323295479,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "1e1d0f42f694f4e0fd15c598d90c1ec0843d99e79d1cf8b6cf60b70b4e176000",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.024321670979821,
+        "rear_movement_mm_at_E1000": 0.27103166317902055,
+        "load_compliance_Nmm_at_E1000": 118.14300093870038,
+        "raw_peak_tensile_MPa": 6.5329998439884225,
+        "raw_peak_VM_MPa": 6.327155653919862,
+        "relative_free_residual": 4.6735150140047865e-11
+      }
+    }
+  },
+  {
+    "name": "f-wide-window",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.12,
+      "bottom_band": 5.4,
+      "diagonal_band": 5.4,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "full",
+      "infill_percent": 8,
+      "name": "f-wide-window"
+    },
+    "structural_layer_volume_mm3": 107499.08314804544,
+    "body_envelope_volume_mm3": 222146.3119378202,
+    "nominal_print_volume_mm3": 116670.86145122742,
+    "new_void_area_mm2": 1864.7576025826136,
+    "layout_sha256": "fb3e59cd1374dabc4a8714ebaf0d9718f30cfb37012f0de5b396a3f09fe741b1",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.0036180567453785,
+        "rear_movement_mm_at_E1000": 0.256487602867558,
+        "load_compliance_Nmm_at_E1000": 116.27643246997,
+        "raw_peak_tensile_MPa": 5.496730484935859,
+        "raw_peak_VM_MPa": 5.472933188136957,
+        "relative_free_residual": 4.3910762062339013e-11
+      }
+    }
+  },
+  {
+    "name": "f-shaped-webs",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 8,
+      "name": "f-shaped-webs",
+      "rib_frame": 6.0,
+      "seat_webs": true
+    },
+    "structural_layer_volume_mm3": 99614.68686642619,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 110144.3062620959,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "de10aa23d4de5f079627d25978632f18302bc83a05bd479a7ba85f84709c40e0",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.15350656379487,
+        "rear_movement_mm_at_E1000": 0.2847052105378886,
+        "load_compliance_Nmm_at_E1000": 125.54813031726694,
+        "raw_peak_tensile_MPa": 7.466217562749366,
+        "raw_peak_VM_MPa": 7.307794420669932,
+        "relative_free_residual": 4.9583371186061334e-11
+      }
+    }
+  },
+  {
+    "name": "f-shaped-seat9",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 9.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 8,
+      "name": "f-shaped-seat9",
+      "rib_frame": 6.0,
+      "seat_webs": true
+    },
+    "structural_layer_volume_mm3": 102099.5266758459,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 112430.35888676203,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "610abae258b50366cbdfdecae88ccb9777e76087105832f4062b0dce5e92df0a",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.090027566525618,
+        "rear_movement_mm_at_E1000": 0.2801413061897333,
+        "load_compliance_Nmm_at_E1000": 122.05127425369287,
+        "raw_peak_tensile_MPa": 5.751944263601462,
+        "raw_peak_VM_MPa": 5.925216004762233,
+        "relative_free_residual": 4.756672639171009e-11
+      }
+    }
+  },
+  {
+    "name": "f-shaped-seat11",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 5.0,
+      "diagonal_band": 5.0,
+      "seat_band": 11.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 8,
+      "name": "f-shaped-seat11",
+      "rib_frame": 6.0,
+      "seat_webs": true
+    },
+    "structural_layer_volume_mm3": 104901.83427039417,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 115008.48187374644,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "51e915f55d7c72a8e891863d395dc8f78af044ed07376cc564b6932204dc2e65",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.032522209170425,
+        "rear_movement_mm_at_E1000": 0.27697361509251284,
+        "load_compliance_Nmm_at_E1000": 118.9498147850951,
+        "raw_peak_tensile_MPa": 4.432179906109432,
+        "raw_peak_VM_MPa": 4.27053485926384,
+        "relative_free_residual": 4.544436009719851e-11
+      }
+    }
+  },
+  {
+    "name": "f-shaped-chords6",
+    "parameters": {
+      "walls": 4,
+      "window_scale": 1.0,
+      "bottom_band": 6.0,
+      "diagonal_band": 6.0,
+      "seat_band": 7.0,
+      "front_seat_band": 3.0,
+      "planes": "shaped",
+      "infill_percent": 8,
+      "name": "f-shaped-chords6",
+      "rib_frame": 6.0,
+      "seat_webs": true
+    },
+    "structural_layer_volume_mm3": 104615.77341777355,
+    "body_envelope_volume_mm3": 231234.9293122975,
+    "nominal_print_volume_mm3": 114745.30588933548,
+    "new_void_area_mm2": 1486.573343895578,
+    "layout_sha256": "d7516679e73cece1ecda065c9bb71949fc37346882908231972bb123a135e9ae",
+    "mesh_h_mm": 2,
+    "load_cases": {
+      "full": {
+        "front_movement_mm_at_E1000": 2.05487659817973,
+        "rear_movement_mm_at_E1000": 0.2685340304596345,
+        "load_compliance_Nmm_at_E1000": 119.81481381269353,
+        "raw_peak_tensile_MPa": 7.984855057225719,
+        "raw_peak_VM_MPa": 7.720513874683043,
+        "relative_free_residual": 4.70650505549322e-11
+      }
+    }
+  }
+]

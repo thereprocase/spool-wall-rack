@@ -1,0 +1,809 @@
+{
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes_in_hashed_representation": 11418,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "291baefd3d89e7388b52cf054b44ea3317f4ed89d1f585864e6bc8d50f7a2528"
+    },
+    {
+      "path": "analysis/rev-f/audit_checkpoint.py",
+      "bytes_in_hashed_representation": 6522,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "05b93ab729e45e229a8e14268ce39fe05a538186d3fd9ab255cd5bd6826f178b"
+    },
+    {
+      "path": "analysis/rev-f/baseline-energy-map.png",
+      "bytes_in_hashed_representation": 908785,
+      "representation": "exact file bytes",
+      "sha256": "26b424af8e521926ca95748e1c9243dfdbb8322fcbb0cf5d65213765ff376047"
+    },
+    {
+      "path": "analysis/rev-f/build_analysis_geometry.py",
+      "bytes_in_hashed_representation": 3400,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "79e5f090a61bf8231a456f1b53683e20b69f3495bf8a7d6a79cc6df12868e71f"
+    },
+    {
+      "path": "analysis/rev-f/build_outer_shell.py",
+      "bytes_in_hashed_representation": 4018,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "48d8690d1b148228e68a45c5d9e810a74a78a959c5ca458fee3677b7022a061e"
+    },
+    {
+      "path": "analysis/rev-f/checkpoint-metrics.json",
+      "bytes_in_hashed_representation": 5631,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "1bcaed11ff9732045c733f902cf4d5374f8d7ad26cad241f6cc6a60d52df4135"
+    },
+    {
+      "path": "analysis/rev-f/checkpoint-verification.json",
+      "bytes_in_hashed_representation": 816,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "34891ffbde296eb1e8e1a53780a49509a69db4a97d35ca5910af60da94ef1e6b"
+    },
+    {
+      "path": "analysis/rev-f/constrained-screening.json",
+      "bytes_in_hashed_representation": 23976,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dfe4cebc7de0abfc01bab30f45136a0714b801e4b6ea587e6343afc6bdbde4b3"
+    },
+    {
+      "path": "analysis/rev-f/constrained_screen.py",
+      "bytes_in_hashed_representation": 2688,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "b20fefe300339f1ae5d87062255aee30247c343b8e6e0c0244bd1b5f77cce648"
+    },
+    {
+      "path": "analysis/rev-f/exploration-sources/layout-baseline-match.py.txt",
+      "bytes_in_hashed_representation": 3518,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "73d6d8e252115bbe98be0863091f9309f35a31fe3434539ece45d0b77a839c4d"
+    },
+    {
+      "path": "analysis/rev-f/exploration-sources/layout-constraint-screen.py.txt",
+      "bytes_in_hashed_representation": 4841,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "900dee7235973862c4fa5ff8c4351060f0988f758a0b77ae5fa463618724bae7"
+    },
+    {
+      "path": "analysis/rev-f/finalist-screening.json",
+      "bytes_in_hashed_representation": 5591,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dcc5d98f57a823de52519874ade13941a8a1901211959e5fb941bf02945bc2cb"
+    },
+    {
+      "path": "analysis/rev-f/frontier-screening.json",
+      "bytes_in_hashed_representation": 7682,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "11ceaa9e3d32674186adb2f1af10b50233d2472197f556bf0def78fa986cccb1"
+    },
+    {
+      "path": "analysis/rev-f/frontier_screen.py",
+      "bytes_in_hashed_representation": 1194,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "8506c8d802e5ad6216419d02a7369135f158020bc43605db081e8cc9a8999f96"
+    },
+    {
+      "path": "analysis/rev-f/full-plane-layout.json",
+      "bytes_in_hashed_representation": 204,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "ad5602a446e81ee2050bdffb3b8c7d6e8394b0422be156b1b718692d52c3c499"
+    },
+    {
+      "path": "analysis/rev-f/geometry-3w.json",
+      "bytes_in_hashed_representation": 920,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "1042461b5c0f62f9ee7b42c68eabd434b5fa0f36150fdbac4ed6a72221f7b03e"
+    },
+    {
+      "path": "analysis/rev-f/inputs/e13-layer-outlines.json",
+      "bytes_in_hashed_representation": 7947617,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "1ae4920f99f4b8f92850548ea88ca52451d93ceb3778132a61a7d0a2e6839d78"
+    },
+    {
+      "path": "analysis/rev-f/light-full-layout.json",
+      "bytes_in_hashed_representation": 348,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0e6004693c08059584349c1602246c6e2861d0b3ae41bdb12aa954e23d725c4c"
+    },
+    {
+      "path": "analysis/rev-f/local-tuning.json",
+      "bytes_in_hashed_representation": 4197,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "710edc23c6688736cca6b9277021cc4b7e9d2270542b7cd6d0242611c28b2f7a"
+    },
+    {
+      "path": "analysis/rev-f/local_tuning.py",
+      "bytes_in_hashed_representation": 611,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "5576dd662e0209492b8f551c4620254c9e6a1a43a311cd80a4d71156e8998242"
+    },
+    {
+      "path": "analysis/rev-f/map_baseline.py",
+      "bytes_in_hashed_representation": 1275,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "75407aca0f69dd53d7769ac5729f2fc0238819d2c4cc458aaa7930c5423371a7"
+    },
+    {
+      "path": "analysis/rev-f/mesh_model.py",
+      "bytes_in_hashed_representation": 2972,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "e0ea1b82c7cb9e0a559b9339d67088c8821a20c4ea370dbb0671368928fac729"
+    },
+    {
+      "path": "analysis/rev-f/mesh_quality.py",
+      "bytes_in_hashed_representation": 1080,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "efdc6a501060b3518f09dc440ea4ade8d2ba461de5daea4332f806fcb83244b9"
+    },
+    {
+      "path": "analysis/rev-f/print-material-3w-h2-mesh-quality.json",
+      "bytes_in_hashed_representation": 536,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "152b07311c7406975bb83bee8977739f46eaa8c973ac38716b853478af1323e6"
+    },
+    {
+      "path": "analysis/rev-f/print-material-3w-h2-results.json",
+      "bytes_in_hashed_representation": 3133,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "6050aa9fc7873c8be1b97b94c4bc741ce19283b80197046c9910a5e59fbf265a"
+    },
+    {
+      "path": "analysis/rev-f/print-material-3w-h2-solution.npz",
+      "bytes_in_hashed_representation": 20997408,
+      "representation": "exact file bytes",
+      "sha256": "86fd09ffd6c421a918ddcfe2f8ffc55eaad395170d8669352d30b9f619ff1421"
+    },
+    {
+      "path": "analysis/rev-f/README.md",
+      "bytes_in_hashed_representation": 9105,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "5bc3a2d930d940137bf65c737f3f8d1ec0c7b0dee4453351d4870be417a3b90a"
+    },
+    {
+      "path": "analysis/rev-f/refine_finalists.py",
+      "bytes_in_hashed_representation": 1114,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dff9043b7268ed087ace6ff5b91ed130e32db2e2a4522a31676965fdee4f718f"
+    },
+    {
+      "path": "analysis/rev-f/refine_layouts.py",
+      "bytes_in_hashed_representation": 1717,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "47b07909adb8e5b0d85e430589939af67a024f150c6dc3cec50ff37464dfd2ae"
+    },
+    {
+      "path": "analysis/rev-f/run_native.py",
+      "bytes_in_hashed_representation": 2533,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "229a74a153a4468dec21370a854c90f954030cab2d502c5b9dcc51f0de78b0b9"
+    },
+    {
+      "path": "analysis/rev-f/screen_layouts.py",
+      "bytes_in_hashed_representation": 5720,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "377cd11c5af17573678eef31a6d2f0eaa8fe20a9b93b91636907c351897b4842"
+    },
+    {
+      "path": "analysis/rev-f/screening-refinement.json",
+      "bytes_in_hashed_representation": 6133,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "5825eb1a28324bfcd3a5bc8becb68558e62df5501c7fde1ecedcbdf042aa07a2"
+    },
+    {
+      "path": "analysis/rev-f/screening-tuned.json",
+      "bytes_in_hashed_representation": 6233,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "6b58128dca0053db9e0c91c8b442c1d2b7c523ac2be68a9d7236b62f62098d37"
+    },
+    {
+      "path": "analysis/rev-f/screening.json",
+      "bytes_in_hashed_representation": 7945,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "9dd0bf42aa5b230a168ad8c555948dd1bce696f21d2ca8992402f7f917e999e6"
+    },
+    {
+      "path": "analysis/rev-f/solve3d.py",
+      "bytes_in_hashed_representation": 8880,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "f724e6f80d0693f865278c48b37619d8a46c788f858f75e02833bcbd04dcc2c3"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/geometry-4w.json",
+      "bytes_in_hashed_representation": 1285,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0750f9549242abb5a58576e2d7e798804f6570907972405c398e68d9020be768"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1-mesh-quality.json",
+      "bytes_in_hashed_representation": 560,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "f77f1906d1a9ce2d311efbc0c55c0e14250a5e4bcb51cdb7a043825ca35321da"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1-results.json",
+      "bytes_in_hashed_representation": 3051,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "1d788c4db01d169bff6b1425c7c143f2f02127c9a5dd7bb03a2452285c1b53a1"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1-solution.npz",
+      "bytes_in_hashed_representation": 76190334,
+      "representation": "exact file bytes",
+      "sha256": "6ccc8d7bee9bff32947dd339e88fb06ff0a346391ea7698087600e40fe682a03"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1.5-mesh-quality.json",
+      "bytes_in_hashed_representation": 544,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "ed91b4c4ecceb759cadbe0f10f1ab6f4723ef273d61204618bcc103c019c37a0"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1.5-results.json",
+      "bytes_in_hashed_representation": 3050,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "f6b24dbcb72a9135659e195b2582ab7e4815435b625bbcb508dd8163a0e4103c"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h1.5-solution.npz",
+      "bytes_in_hashed_representation": 34489687,
+      "representation": "exact file bytes",
+      "sha256": "1b2580453100c0bb30e1dc35b191a5bb7f7a1c7e68b173015ee13086544d008e"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h2-mesh-quality.json",
+      "bytes_in_hashed_representation": 547,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "512c5f653d73213064a27dbfe9cc86c7a7985b4b5ca51c8eb7056c99031ca127"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h2-results.json",
+      "bytes_in_hashed_representation": 3125,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "ac4b0e044d5ef75b7feebfd77944d81ce67c42879f0e761c917d732fdbdd36c8"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/print-material-4w-h2-solution.npz",
+      "bytes_in_hashed_representation": 19443350,
+      "representation": "exact file bytes",
+      "sha256": "8910ccdca9217d35ac34cd8a28bfb86e6ab302f6413c8a80b1f54f44b5c46733"
+    },
+    {
+      "path": "analysis/rev-f/studies/full-plane-4w/selected-layout.json",
+      "bytes_in_hashed_representation": 204,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "ad5602a446e81ee2050bdffb3b8c7d6e8394b0422be156b1b718692d52c3c499"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/geometry-1w.json",
+      "bytes_in_hashed_representation": 1373,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "c760842a09482672334cb3ff855b8a960dd559c16fe4436d5ba2a1190707f6bf"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/print-material-1w-h2-mesh-quality.json",
+      "bytes_in_hashed_representation": 542,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "d8cad9125c233eb07a41a7fdfbb012f589efe7096c6b83375c02fe58fb8c2c4c"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/print-material-1w-h2-results.json",
+      "bytes_in_hashed_representation": 3152,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "96b9cff4df9ffd5aabc4d52ff792d059a1476246a1fb9824487efe9174987d21"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/print-material-1w-h2-solution.npz",
+      "bytes_in_hashed_representation": 22309645,
+      "representation": "exact file bytes",
+      "sha256": "f3ff40a7814acb2880e287ce159a9c4aaf9637e97e946ca4b09dc4438ae030ad"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/README.md",
+      "bytes_in_hashed_representation": 1114,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "3674e282fd9daf72a081bcd1aa7e409cfade86fd8b1459ff67376a0e06a635f0"
+    },
+    {
+      "path": "analysis/rev-f/studies/light-full-1w/selected-layout.json",
+      "bytes_in_hashed_representation": 348,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0e6004693c08059584349c1602246c6e2861d0b3ae41bdb12aa954e23d725c4c"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/f-final-3w-3w-h1-full-results.json",
+      "bytes_in_hashed_representation": 2635,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "422f4eb8aae34fe2cee5a123a81419c648c23cf7538931bf9a6ce8fc8b73304d"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/f-final-3w-3w-h1-full-solution.npz",
+      "bytes_in_hashed_representation": 3237113,
+      "representation": "exact file bytes",
+      "sha256": "6693f555f5f95cad889fb2308c2ccb2c3031b9a8a295937a6bbf94b305ddc62e"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/f-final-3w-3w-h1-outer_only-results.json",
+      "bytes_in_hashed_representation": 2623,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0990c9560f485f22666ddb9273b85b1ea7dec43f3d3655af757a7222a5c0fac1"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/f-final-3w-3w-h1-outer_only-solution.npz",
+      "bytes_in_hashed_representation": 3235415,
+      "representation": "exact file bytes",
+      "sha256": "45fb814a49bc19b6cbe9117b5b7ab46dbc9974bdfe385621483632957301e5f2"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/screen-h1.json",
+      "bytes_in_hashed_representation": 1312,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "06de096de26a383d249ec807c3fb5c566dbb1d0041b4e33d3a082b05315dbfd7"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-3w/screen.json",
+      "bytes_in_hashed_representation": 1312,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "06de096de26a383d249ec807c3fb5c566dbb1d0041b4e33d3a082b05315dbfd7"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/f-final-full-planes-4w-h1-full-results.json",
+      "bytes_in_hashed_representation": 2653,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "b16a779b7c53b253473b90d4ec2551c6d887776f1cafbff50a339fd8e0487a23"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/f-final-full-planes-4w-h1-full-solution.npz",
+      "bytes_in_hashed_representation": 3229265,
+      "representation": "exact file bytes",
+      "sha256": "cfd77729fb79517ad78f6fa523eb0b2511420ffc2f6169cbc5dd501b6d939f03"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/f-final-full-planes-4w-h1-outer_only-results.json",
+      "bytes_in_hashed_representation": 2637,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "011b1a66f20956e6c918b0dcd49720fca65ec1c313e0aaedb8dc9c690ab7c68d"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/f-final-full-planes-4w-h1-outer_only-solution.npz",
+      "bytes_in_hashed_representation": 3228451,
+      "representation": "exact file bytes",
+      "sha256": "e39bc481f664c8dcc9c29801e10a6d006ba84f5bca938fc27175083c69c5dfb1"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/screen-h1.json",
+      "bytes_in_hashed_representation": 1325,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "b3ba3081ba23b4b7dfeb43efe23ce17dae37a27335099dbc19de847b7a78b3d0"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-final-full-planes/screen.json",
+      "bytes_in_hashed_representation": 1325,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "b3ba3081ba23b4b7dfeb43efe23ce17dae37a27335099dbc19de847b7a78b3d0"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/f-frontier-1w-lean-full-1w-h1-full-results.json",
+      "bytes_in_hashed_representation": 2658,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "879fac0489927ffb54fabd4753d846cefa13515497ba2422ec2e747438df588b"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/f-frontier-1w-lean-full-1w-h1-full-solution.npz",
+      "bytes_in_hashed_representation": 3234681,
+      "representation": "exact file bytes",
+      "sha256": "f68dfb738d63c9554ec606a42486ce90e3b85502f580f30e5f8c41563d239440"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/f-frontier-1w-lean-full-1w-h1-outer_only-results.json",
+      "bytes_in_hashed_representation": 2641,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "3c79b14d4aed32d7644c41e895334f80ebc6db3f82d5b070bead13c70f13074a"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/f-frontier-1w-lean-full-1w-h1-outer_only-solution.npz",
+      "bytes_in_hashed_representation": 3234992,
+      "representation": "exact file bytes",
+      "sha256": "385c8c4c26cf54a0fc24504fc090787cb42d31de428562d58507b14598295794"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/screen-h1.json",
+      "bytes_in_hashed_representation": 1447,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dfd2cbc373daa15fbcaea21138caaa5acf756bb0764e93f38f5f64ff7d1118b1"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-full/screen.json",
+      "bytes_in_hashed_representation": 1447,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dfd2cbc373daa15fbcaea21138caaa5acf756bb0764e93f38f5f64ff7d1118b1"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/f-frontier-1w-lean-skin06-1w-h1-full-results.json",
+      "bytes_in_hashed_representation": 2659,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "b007f6d5aed75d764308c7c6a731e3eab3f1b88cd95be8a5193e9da601505837"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/f-frontier-1w-lean-skin06-1w-h1-full-solution.npz",
+      "bytes_in_hashed_representation": 3234821,
+      "representation": "exact file bytes",
+      "sha256": "7a5099cd4c757dad77f50a6b0d38ffd7a0b55b358dfb52c2df5003e3392f1ebd"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/f-frontier-1w-lean-skin06-1w-h1-outer_only-results.json",
+      "bytes_in_hashed_representation": 2642,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "974aa15c1935589c9df15a27773931c5f4b333ffb2500e71da8004e57a43def1"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/f-frontier-1w-lean-skin06-1w-h1-outer_only-solution.npz",
+      "bytes_in_hashed_representation": 3234887,
+      "representation": "exact file bytes",
+      "sha256": "58a4b1f689cc34aefc6196e913918c3b7cf363739100a7b0950ea3d08c07ac72"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/screen-h1.json",
+      "bytes_in_hashed_representation": 1445,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "9aef4396dbe728e479c597c42e920b664dcc50a9acc31273ec26d7d374f52125"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-frontier-1w-lean-skin06/screen.json",
+      "bytes_in_hashed_representation": 1445,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "9aef4396dbe728e479c597c42e920b664dcc50a9acc31273ec26d7d374f52125"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-limit-1w-full/f-limit-1w-full-1w-h2-full-results.json",
+      "bytes_in_hashed_representation": 2638,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "53ee08edb18afe7d2157893275f66b916347cd58d4cf9b7c1c48b0ebca232d9d"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-limit-1w-full/f-limit-1w-full-1w-h2-full-solution.npz",
+      "bytes_in_hashed_representation": 1337393,
+      "representation": "exact file bytes",
+      "sha256": "7da52a2f1292478886260d7e58289342c23ffae62d689128d1dd9bc2a3566c94"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-limit-1w-full/screen-h2.json",
+      "bytes_in_hashed_representation": 1084,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "cbca97c4e265f59cd73dc2744cbf61f2c59ef8dbd79c7d637b4ecb1b6ece3a21"
+    },
+    {
+      "path": "analysis/rev-f/studies/reduced-fields/f-limit-1w-full/screen.json",
+      "bytes_in_hashed_representation": 1084,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "cbca97c4e265f59cd73dc2744cbf61f2c59ef8dbd79c7d637b4ecb1b6ece3a21"
+    },
+    {
+      "path": "analysis/rev-f/tune_layouts.py",
+      "bytes_in_hashed_representation": 807,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "5a4840c55289b19dcd09e49751bf9313c196b10a675559d2bf64c8beb98ad50d"
+    },
+    {
+      "path": "analysis/rev-f/upper-window-volume-proxy.json",
+      "bytes_in_hashed_representation": 647,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "bc0c0fd5bc05c578a9c051f5f40f57fb887dc95fa82b34516799fd399242eb18"
+    },
+    {
+      "path": "DESIGN-JOURNAL.md",
+      "bytes_in_hashed_representation": 32418,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0f44c37e7337a4852044b189a7ee3a8a95b3907f755501f63a197e1d323b3e53"
+    },
+    {
+      "path": "designs/rev-f/3mf-verification.json",
+      "bytes_in_hashed_representation": 1095,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "264ca6dd33e5e76c52a2868d7a508e677b053422553b6fbbafc05d66cbec8c95"
+    },
+    {
+      "path": "designs/rev-f/body-build-verification.json",
+      "bytes_in_hashed_representation": 708,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "28337dec1837cd0137c8b2c9b021cdd2a206751762731e6e0272f49c0d48e137"
+    },
+    {
+      "path": "designs/rev-f/body-mounted.stl",
+      "bytes_in_hashed_representation": 676084,
+      "representation": "exact file bytes",
+      "sha256": "5ca2a91f708b298b2a3d03f4eedc6fecf37961b84d04693dbf30c19f68634c56"
+    },
+    {
+      "path": "designs/rev-f/body-only.step",
+      "bytes_in_hashed_representation": 15374127,
+      "representation": "exact file bytes",
+      "sha256": "a019f764d45f9bd1ba395619e67d351ae1fc55eba99454ef7fcc8434816b1c2f"
+    },
+    {
+      "path": "designs/rev-f/body-only.stl",
+      "bytes_in_hashed_representation": 675484,
+      "representation": "exact file bytes",
+      "sha256": "ee61c261878d3345c75c2b5d8ca1c4c4ce102f647dd4dafde29e1e769beb8077"
+    },
+    {
+      "path": "designs/rev-f/bracket-with-modifiers.step",
+      "bytes_in_hashed_representation": 27647191,
+      "representation": "exact file bytes",
+      "sha256": "bc0d5ede20ed41659263853849a11d8de7cbdb7c62881c0e10f4c03673125d40"
+    },
+    {
+      "path": "designs/rev-f/build_body.py",
+      "bytes_in_hashed_representation": 3890,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "307026c4e2aeba56e05fc2a06cc60c6a440e657fe4ad3671334a25fc245257a0"
+    },
+    {
+      "path": "designs/rev-f/build_helpers.py",
+      "bytes_in_hashed_representation": 3683,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "fb7aa6696d5b77c898547a2a962f539387b8b63d7c9789b73b185b95bc2159e1"
+    },
+    {
+      "path": "designs/rev-f/dense-chords-and-seats.step",
+      "bytes_in_hashed_representation": 4783073,
+      "representation": "exact file bytes",
+      "sha256": "cb6b1acad9aaa0b755885ce67a759dcd394bdebb1725760fcf6ffe5a0bec49b4"
+    },
+    {
+      "path": "designs/rev-f/dense-chords-and-seats.stl",
+      "bytes_in_hashed_representation": 239884,
+      "representation": "exact file bytes",
+      "sha256": "3618de75a0f09e608b3df694d4ebfc260434eacf44a13c70fdd9f9c5901f4352"
+    },
+    {
+      "path": "designs/rev-f/geometry-verification.json",
+      "bytes_in_hashed_representation": 30689,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "c05667fe7b5b19441416eb57b1e5423c54225131f2a49d08e09db8ad40f8dd6f"
+    },
+    {
+      "path": "designs/rev-f/helper-verification.json",
+      "bytes_in_hashed_representation": 3323,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "2719487af631d7d2339085aa1b5cd234688e62b41eafd5634eb275edd536b10d"
+    },
+    {
+      "path": "designs/rev-f/inspect_toolpaths.py",
+      "bytes_in_hashed_representation": 8506,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "2aaeff77a30d0e38d1e4f47299e22fe2c0de09fed47163297f34d88a9586c436"
+    },
+    {
+      "path": "designs/rev-f/layout.py",
+      "bytes_in_hashed_representation": 4841,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "900dee7235973862c4fa5ff8c4351060f0988f758a0b77ae5fa463618724bae7"
+    },
+    {
+      "path": "designs/rev-f/modifier-layout.png",
+      "bytes_in_hashed_representation": 237296,
+      "representation": "exact file bytes",
+      "sha256": "387daaddfd0083ba60fe4ebcc9c5894d09befe3ba3189df7854dc1e30b6b2ad0"
+    },
+    {
+      "path": "designs/rev-f/package_3mf.py",
+      "bytes_in_hashed_representation": 6252,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "6f463bec1d666d26e6db891c5d4a1b6b0b6e9719df0182d017d4c7b7fd399947"
+    },
+    {
+      "path": "designs/rev-f/progress-exterior.png",
+      "bytes_in_hashed_representation": 52020,
+      "representation": "exact file bytes",
+      "sha256": "141f47d6b3514f96be840446eedce207be356b1ef973fa6b6a572de848cbbe3f"
+    },
+    {
+      "path": "designs/rev-f/README.md",
+      "bytes_in_hashed_representation": 6209,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "4887281eefe38336d721e3a10a597a9fa2041b5ec000a77a67877a5645b993bf"
+    },
+    {
+      "path": "designs/rev-f/render_cpu.py",
+      "bytes_in_hashed_representation": 3828,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "13120e24edb0a9933b98d7fe03132b5873c77da3bf26d628715055a56069d017"
+    },
+    {
+      "path": "designs/rev-f/render_layout.py",
+      "bytes_in_hashed_representation": 2625,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "dd12ac898f40cd97d449f155e476541e611713113f31ccc684aff143d12d267b"
+    },
+    {
+      "path": "designs/rev-f/repair_stl.py",
+      "bytes_in_hashed_representation": 2947,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "a15c393cf2ad86cbfcb2cc66b7c8432cf1560db61c1531ed7487a6e166efe4d2"
+    },
+    {
+      "path": "designs/rev-f/rev-f-model-and-modifiers.3mf",
+      "bytes_in_hashed_representation": 251175,
+      "representation": "exact file bytes",
+      "sha256": "278cb2a4b94a12a9262cf521dc9fb3e0fb1d7d22d6e89bfe80fbe8b38c6b195b"
+    },
+    {
+      "path": "designs/rev-f/rib-plane-lower.step",
+      "bytes_in_hashed_representation": 3448065,
+      "representation": "exact file bytes",
+      "sha256": "e6c5fb73ecff2f5f96c7f08a6b1172c0e1e3c61cdcb249f5d7331dee8e62861f"
+    },
+    {
+      "path": "designs/rev-f/rib-plane-lower.stl",
+      "bytes_in_hashed_representation": 176484,
+      "representation": "exact file bytes",
+      "sha256": "c01b8d91ab5c578677cd451d97970bca0668f065acdffe9acdee34f8121452a5"
+    },
+    {
+      "path": "designs/rev-f/rib-plane-upper.step",
+      "bytes_in_hashed_representation": 3453253,
+      "representation": "exact file bytes",
+      "sha256": "e386d27677dc9f3bc094a892f8ec1d09d8ae04e594a012214371753bfa64576a"
+    },
+    {
+      "path": "designs/rev-f/rib-plane-upper.stl",
+      "bytes_in_hashed_representation": 176484,
+      "representation": "exact file bytes",
+      "sha256": "07d13988478edea6969743ad81bd290ca2957776d9c5db54f798192a50e91818"
+    },
+    {
+      "path": "designs/rev-f/selected-layout.json",
+      "bytes_in_hashed_representation": 243,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "95e9168fd0c81ebb0471f2c8d822f9b62044f02815dde4e245035dcf16ede0fa"
+    },
+    {
+      "path": "designs/rev-f/slice_audit.py",
+      "bytes_in_hashed_representation": 2166,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "87f3578e715c9f44d4b210d31ba6493863d3b4dda0d1517ac5ca898fa3f12411"
+    },
+    {
+      "path": "designs/rev-f/stl-tessellation-check.json",
+      "bytes_in_hashed_representation": 1350,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "2914b38834da3cb5b23128fda9fc839ab2c66fa7ef5c7d76a6e6f919ae49cf69"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/3mf-verification.json",
+      "bytes_in_hashed_representation": 1095,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "6417f8fdc30d17027482095a23dd08a36a57b7dd7ee56ecb3b0485e2fb7e3daa"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/body-only.step",
+      "bytes_in_hashed_representation": 15374127,
+      "representation": "exact file bytes",
+      "sha256": "a019f764d45f9bd1ba395619e67d351ae1fc55eba99454ef7fcc8434816b1c2f"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/body-only.stl",
+      "bytes_in_hashed_representation": 675484,
+      "representation": "exact file bytes",
+      "sha256": "ee61c261878d3345c75c2b5d8ca1c4c4ce102f647dd4dafde29e1e769beb8077"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/bracket-with-modifiers.step",
+      "bytes_in_hashed_representation": 24712468,
+      "representation": "exact file bytes",
+      "sha256": "c491d572e59d578b2637dcf7910b3ccae091901f21e7a7df34ddc2d6063aa887"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/dense-chords-and-seats.step",
+      "bytes_in_hashed_representation": 4903912,
+      "representation": "exact file bytes",
+      "sha256": "a0524337f58c30e621d65244262aad4edd469b1d3a015b385ec451cb265e6012"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/dense-chords-and-seats.stl",
+      "bytes_in_hashed_representation": 245884,
+      "representation": "exact file bytes",
+      "sha256": "7608c0dcc6b308d40519ca895689a00de56901554af991f858812ccc3410e070"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/helper-verification.json",
+      "bytes_in_hashed_representation": 3326,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "f944521b069d9008fa79ea0d73f4a9358332474813b35fb1a4febfe4d7de35f0"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/README.md",
+      "bytes_in_hashed_representation": 1429,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "a161933aa1a00419c57da6313bd83962a15f47955861fb484334f3516b1cd573"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/rev-f-model-and-modifiers.3mf",
+      "bytes_in_hashed_representation": 223813,
+      "representation": "exact file bytes",
+      "sha256": "8e01d80f6dd3605cb524c7e8c2a17f57d890da15d1bbc99901fd6c290f254144"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/rib-plane-lower.step",
+      "bytes_in_hashed_representation": 1982407,
+      "representation": "exact file bytes",
+      "sha256": "ab984bbd079b2a6541a12a364ec0319f2fd20f81b6489a76aaa0fe711cf241ab"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/rib-plane-lower.stl",
+      "bytes_in_hashed_representation": 101684,
+      "representation": "exact file bytes",
+      "sha256": "2cccfc511bacd3bde2069c973ce724530a2ce7f81db78c975a8b1aa51cd5deee"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/rib-plane-upper.step",
+      "bytes_in_hashed_representation": 1985413,
+      "representation": "exact file bytes",
+      "sha256": "07aa7104997ec69f34560a4a6e12aff664bf76cef6d601e7b56be78703334d7d"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/rib-plane-upper.stl",
+      "bytes_in_hashed_representation": 101684,
+      "representation": "exact file bytes",
+      "sha256": "3016ae416c10e7712031009da9548930ada4195584a6a8f7bafde1dce47a4c12"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/selected-layout.json",
+      "bytes_in_hashed_representation": 204,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "ad5602a446e81ee2050bdffb3b8c7d6e8394b0422be156b1b718692d52c3c499"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/toolpath-sections.png",
+      "bytes_in_hashed_representation": 704932,
+      "representation": "exact file bytes",
+      "sha256": "b66f472d34f47ddc7164a9fc261b0c686fe866205051f626a86f829496c7e8c6"
+    },
+    {
+      "path": "designs/rev-f/studies/full-plane-4w/toolpath-verification.json",
+      "bytes_in_hashed_representation": 13777,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "acf9344d56613c9a45e90e4edb22e074d26718a994f73b168c5a34263cc1a9bb"
+    },
+    {
+      "path": "designs/rev-f/toolpath-sections.png",
+      "bytes_in_hashed_representation": 729492,
+      "representation": "exact file bytes",
+      "sha256": "b83cdc91cd164ba0626dd02718b6e908c91785d91807a0ff479ba0081657bc1c"
+    },
+    {
+      "path": "designs/rev-f/toolpath-verification.json",
+      "bytes_in_hashed_representation": 14095,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "581b46ba9d2c436ee3eca537ae4b25c6edb6ad1a77e4717c543cc752ee981fc0"
+    },
+    {
+      "path": "designs/rev-f/verify_geometry.py",
+      "bytes_in_hashed_representation": 3243,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "e5e0157900c0f0f17c31bacf40e40eab81869be0faef24eab009d2b5ff74862c"
+    },
+    {
+      "path": "E13-ENGINEERING-GUIDE.md",
+      "bytes_in_hashed_representation": 12411,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "9180eb00bc81af8aade339a1d8e96d279801ea95286ca01957d71816fc31997e"
+    },
+    {
+      "path": "NEXT-SPRINT.md",
+      "bytes_in_hashed_representation": 5464,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "99bb647bc5fbfd93eabaa5010620eb6695a21211348051b72e607f88cd1d7345"
+    },
+    {
+      "path": "README.md",
+      "bytes_in_hashed_representation": 15472,
+      "representation": "LF-normalized UTF-8",
+      "sha256": "0c68a8bf9a0c6e2ed0f1164560f904edc77430c57ddd93a330a81f1676ddaf1f"
+    }
+  ],
+  "note": "Published Rev F evidence and checkpoint documents; generated meshes/caches omitted. No optimization or solve rerun."
+}

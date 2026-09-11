@@ -1,0 +1,36 @@
+{
+  "revision": "F",
+  "parameters": {
+    "window_scale": 1.0,
+    "walls": 1,
+    "skin_mm": 0.8,
+    "plane_mm": 0.8,
+    "bottom_band": 1.8,
+    "diagonal_band": 1.8,
+    "seat_band": 4.0,
+    "front_seat_band": 2.0,
+    "planes": "full",
+    "rib_frame": 4.0,
+    "seat_webs": true,
+    "infill_percent": 5,
+    "lower_tunnel_collar_mm": 3.5,
+    "upper_tunnel_collar_mm": 2.0,
+    "name": "f-limit-1w-full"
+  },
+  "layout_sha256": "70c8972ee21b576ff049daabfbaf2ac4719785eecbf998a0b53d49aaeb073c38",
+  "body_STEP_sha256": "a019f764d45f9bd1ba395619e67d351ae1fc55eba99454ef7fcc8434816b1c2f",
+  "effective_wall_mm": 0.42,
+  "volume_mm3": 62374.663560793386,
+  "valid": true,
+  "solid_count": 1,
+  "cleanup": {
+    "faces_before": 10455,
+    "faces_after": 6333,
+    "volume_change_mm3": 3.49543770425953e-05
+  },
+  "model": "Finished E13 perimeter/chamfer/tunnel guards intersected with Rev F body; window collars and dense regions; two full internal 0.8 mm planes and 0.8 mm broad skins; zero sparse-infill credit.",
+  "checkpoint_metadata_correction": {
+    "original_model_description": "Finished E13 perimeter/chamfer/tunnel guards intersected with Rev F body; new window collars and full-width dense regions; two full internal 1.2 mm planes; zero sparse-infill credit.",
+    "reason": "Description was hardcoded; parameters and geometry were already correct."
+  }
+}

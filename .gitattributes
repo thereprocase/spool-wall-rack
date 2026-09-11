@@ -3,3 +3,7 @@
 /designs/closed-wall-e12/*.step binary
 
 /designs/closed-wall-e13/*.step binary
+
+# Preserve the audited Rev F CAD bytes, including archived experiments.
+/designs/rev-f/**/*.step binary
+/designs/rev-f/*.step binary

@@ -1,0 +1,40 @@
+{
+  "name": "f-final-full-planes",
+  "parameters": {
+    "window_scale": 1.0,
+    "bottom_band": 4.3,
+    "diagonal_band": 4.3,
+    "seat_band": 7.0,
+    "front_seat_band": 3.0,
+    "planes": "full",
+    "rib_frame": 6.0,
+    "seat_webs": true,
+    "infill_percent": 8,
+    "name": "f-final-full-planes",
+    "walls": 4
+  },
+  "structural_layer_volume_mm3": 102913.25966083803,
+  "body_envelope_volume_mm3": 231234.9293122975,
+  "nominal_print_volume_mm3": 113178.99323295479,
+  "new_void_area_mm2": 1486.573343895578,
+  "layout_sha256": "eea5fb0b76757e651ee834b29fdaba975c3d3ffa3149a1f7bb5233c4bd2e5059",
+  "mesh_h_mm": 1,
+  "load_cases": {
+    "full": {
+      "front_movement_mm_at_E1000": 2.044112987339515,
+      "rear_movement_mm_at_E1000": 0.27412692255261417,
+      "load_compliance_Nmm_at_E1000": 119.33636387093244,
+      "raw_peak_tensile_MPa": 6.074134698586876,
+      "raw_peak_VM_MPa": 6.052080101063205,
+      "relative_free_residual": 5.968155745769949e-11
+    },
+    "outer_only": {
+      "front_movement_mm_at_E1000": 1.829671612300595,
+      "rear_movement_mm_at_E1000": 0.139612255479385,
+      "load_compliance_Nmm_at_E1000": 91.56022140897572,
+      "raw_peak_tensile_MPa": 4.773205819585321,
+      "raw_peak_VM_MPa": 4.7428691331891955,
+      "relative_free_residual": 9.873507796061412e-11
+    }
+  }
+}

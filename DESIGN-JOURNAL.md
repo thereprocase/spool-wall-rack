@@ -2,6 +2,41 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+
+## Rev F — September 10 checkpoint; evolutionary search next
+
+Added two angular windows inside E13's unchanged exterior outline and protected
+functional interfaces. Explored shaped internal planes and three precise infill
+helpers with selection tabs outside the body. The three-wall shaped and
+four-wall full-plane packages pass geometry and real Orca toolpath checks;
+external tabs do not print.
+
+![Rev F actual CAD checkpoint](designs/rev-f/progress-exterior.png)
+
+The four-wall full-plane slice uses 147.02 g versus E13 eight walls at 167.11 g
+(neutral 1.24 g/cm³), with 2.1565 mm versus 2.1480 mm front movement at E = 1 GPa
+on matched h1 meshes. The objective was then clarified to minimum mass within
+5 mm total movement, 1 mm change per spool and 4× nominal fracture margin;
+matching baseline stiffness is no longer a constraint.
+
+The new one-wall light candidate estimates 87.81 g and gives 3.582 mm bracket
+movement in 3D, but its conservative raw-peak strength ratio is only 0.85.
+Its modifier STL connectivity check also fails, so its mass remains unsliced.
+No Rev F candidate demonstrates the required 4× fracture margin. All finite
+peaks and the checked fields are retained in the checkpoint.
+
+![Three local modifier regions and selection tabs](designs/rev-f/modifier-layout.png)
+
+The incomplete-native-project Orca CLI crash was traced to missing preset
+metadata on the wrong import path; truthful model-only metadata and fixed
+orientation now pass repeated slicing. E13 remains the established prototype
+handoff. [Rev F status and evidence](analysis/rev-f/README.md) ·
+[Experimental CAD](designs/rev-f/README.md).
+
+**Next sprint:** a seeded evolutionary optimizer with cached candidate results,
+actual Orca mass and hard serviceability, 3D strength and manufacturing gates.
+No optimizer is implemented in this checkpoint. [Sprint brief](NEXT-SPRINT.md).
+
 ## E13 — angular reinforcement and finer stress meshes
 
 Replaced the broad curved underside with straight 11 mm-deep flanks into a
