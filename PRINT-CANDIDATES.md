@@ -1,11 +1,36 @@
 # Printable CAD checkpoint index
 
-**Current architecture direction: [six broader body sketches](designs/rev-g2/shape-seeds/README.md).**
-These change the outer body and load paths while retaining rod/mount positions
-and nominal spool clearance. They are unbuilt XY concepts, not printable STEP
-handoffs. The bottom-corner and 15 mm outboard datums remain pending in the
-[current contract](designs/rev-g2/INTERFACE-CONTRACT.md). Existing CAD downloads
-below remain available unchanged.
+## Implemented E + F material-allocation trials
+
+All five have aligned body/helper STEP files, model-only 3MF, actual P1S PETG
+slicing, checks and hashes. They are experimental and physically unqualified.
+The matched G slice spends 74.100 cm3. Sacrificial bridges count in these totals
+and receive no structural or bond credit.
+
+| Candidate | Spent extrusion, cm3 | Saving versus G | Role |
+|---|---:|---:|---|
+| ef-hybrid-v1 | 73.007 | 1.475% | First reinforced reference; accepted numerical screen is worse than G |
+| ef-lean-v1 | 65.966 | 10.977% | Intermediate material trial; mechanics untested |
+| ef-lean-v2 | 61.613 | 16.851% | Intermediate material trial; mechanics untested |
+| ef-cut-v3 | 52.454 | 29.211% | Cut baseline; numerical screen underway |
+| ef-reinvest-v1 | 58.796 | 20.653% | Adds 6.342 cm3 at three transitions; numerical screen pending |
+
+Browse each handoff for direct STEP/helper/3MF downloads and verification.
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-hybrid-v1
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-lean-v1
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-lean-v2
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-cut-v3
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-reinvest-v1
+
+The six broader architecture seeds remain XY sketches. The selected E+F hybrid
+is now built separately. Preserve G's lower locating datum and the 25.4 mm
+horizontal underside from the wall; keep the fixed rod/mount positions and
+spool clearance. Previous CAD handoffs remain preserved below.
 
 ## G evolutionary helper variants
 

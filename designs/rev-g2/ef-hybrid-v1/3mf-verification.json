@@ -1,0 +1,38 @@
+{
+  "parts": [
+    {
+      "name": "body-only",
+      "role": "normal_part",
+      "vertices": 5475,
+      "triangles": 10966,
+      "STL_sha256": "4ee01971e3c102128eb721cd3af4ac5583e054570fc1c258866637d0a7b61101"
+    },
+    {
+      "name": "dense-chords-and-seats",
+      "role": "modifier_part",
+      "vertices": 6183,
+      "triangles": 12386,
+      "STL_sha256": "82ab5a2fdb235a39046146095199030046b50035b7d3814b09b8a9aba92523bb"
+    },
+    {
+      "name": "rib-plane-lower",
+      "role": "modifier_part",
+      "vertices": 1728,
+      "triangles": 3464,
+      "STL_sha256": "8d2bed69554ee426ae9485928784ce467f8ddaa0d25e9e2634919932b5a3ad4d"
+    },
+    {
+      "name": "rib-plane-upper",
+      "role": "modifier_part",
+      "vertices": 1728,
+      "triangles": 3464,
+      "STL_sha256": "06ba421838958838cf8c1d16c9b7add52b0000b2ef0e3c2ab07315ccf93b5a75"
+    }
+  ],
+  "sha256": "5069f8a4eadda16ccc5c23de6f632f71f09843744979c609c2e13c478c056089",
+  "includes_machine_or_filament_profile": false,
+  "includes_Gcode": false,
+  "status": "Requires Orca round-trip and toolpath verification.",
+  "model_title": "EF hybrid geometry and modifiers",
+  "filename_note": "Legacy model filename retained for the tested slice runner; metadata identifies the new EF body."
+}

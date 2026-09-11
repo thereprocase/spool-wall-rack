@@ -1,0 +1,69 @@
+{
+  "Gcode_sha256": "5c5fe49ba0847edcbb71d412835ca1df68c47a0cc9518ad02ed3ffb3426da8f3",
+  "audit_3MF_sha256": "b82dd1802e88f243ed0ad703394358928284bd740b985ba764d5143049e9253d",
+  "all_moving_extrusion_volume_mm3": 65890.02352995965,
+  "object_moving_extrusion_volume_mm3": 65890.02352995965,
+  "nonobject_moving_extrusion_volume_mm3": 75.52585088770712,
+  "nonobject_moving_extrusion_segments": 4,
+  "all_print_moving_extrusion_volume_mm3": 65965.54938084735,
+  "nonobject_policy": "Outside-object moving extrusion is spent plastic only, excluded from structural footprints and bonds.",
+  "Orca_footer_volume_mm3": 65970.0,
+  "object_only_relative_footer_difference": 0.001212315750194759,
+  "relative_extrusion_footer_difference": 6.746428911086344e-05,
+  "structurally_credited_extrusion_volume_mm3": 62960.06517997693,
+  "sacrificial_thick_bridge_extrusion_volume_mm3": 2929.9583499827304,
+  "thick_bridge_segments": 4467,
+  "thick_bridge_heights_mm": [
+    0.4
+  ],
+  "thick_bridge_policy": "Spent plastic only; no stiffness, strength or bonded-connection credit.",
+  "maximum_height_comment_rounding_normalization_mm": 1.000000000001e-06,
+  "nominal_layer_height_mm": 0.2,
+  "restored_extruder_offset_mm": [
+    0.0,
+    2.0,
+    0.0
+  ],
+  "model_to_installed_transform": [
+    [
+      -1.0,
+      0.0,
+      0.0,
+      250.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      182.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "layer_cache_sha256": "14c5e740b908e97aa749e259bc4f12ec9e5f891b38cbcd65c942af7c7cb3d2ec",
+  "nominal_footprint_union_volume_mm3": 67551.3877602646,
+  "layer_polygon_volume_mm3": 67551.3877602646,
+  "shape_relative_difference_from_credited_extrusion_volume": 0.07292436192946994,
+  "layers": 120,
+  "polygon_simplification_tolerance_mm": 0.0,
+  "homogenization_gap_closing_radius_mm": 0.0,
+  "printed_material_homogenized_void_area_limit_mm2": 0.0,
+  "coordinate_grid_mm": 0.0,
+  "integrated_shape_reference_symmetric_difference_mm3": 0.0,
+  "source_sha256_LF_UTF8": "929e9f1cb0a3cb5e497e5943fde12a09ebaf7086cd2d54c76715ec6e4cce3fca",
+  "shape_model": "Union of emitted nominal bead-width footprints extruded through their declared heights. Thick bridges are excluded. No inherited CAD core or shell approximation.",
+  "volume_interpretation": "G-code E gives spent and credited extrusion volumes. Footprint union gives the homogenized structural envelope; its measured difference from E is reported, never silently equated.",
+  "bond_connectivity": {
+    "connected_structural_components": 1,
+    "component_volumes_mm3": [
+      67551.38776026464
+    ],
+    "connection_definition": "Positive-area overlap of credited material on consecutive layer interfaces; no thick-bridge connection."
+  },
+  "elapsed_seconds": 18.86325441700319,
+  "status": "GEOMETRY BUILT; mechanics and approximation validation are separate."
+}

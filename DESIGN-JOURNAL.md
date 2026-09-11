@@ -4,6 +4,39 @@ Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analy
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — build E plus F, cut 29%, then reinvest locally
+
+Resolved the crown-moulding interface: preserve the G lower wall corner at
+X=0, Y=-32 mm and a horizontal underside for at least 25.4 mm outward. Rod and
+mount heights stay fixed. Actual moulding projection is 19.05 mm. No moulding
+support is credited by the mechanics model.
+
+Built E's deeper frame with F-derived seat-root backing, retaining exact G
+bearing/capture geometry. The first full actual-slice contact screen is
+5.660824 mm maximum movement and 39.997226 MPa raw tensile peak, with 11.09%
+nominal material omitted by the inscribed 0.2 mm grid. It is worse than G,
+despite a small 1.475% extrusion saving; this is not a winning design.
+
+The objective is now a substantial material reserve. Successive actual slices
+save 10.977%, 16.851%, then 29.211% of matched G spent extrusion. The 29.211%
+cut retains two walls, three 0.2 mm top/bottom layers, a 0.6 mm central helper
+plate and reduced broad dense bands. Sacrificial bridges remain spent plastic
+with zero stiffness or bond credit.
+
+Added a separate local helper at three stressed transitions identified in the
+accepted EF reference: inner seat into forearm, upper brace into wall, and
+seat into lower post. The actual slice adds back 6.342 cm3 and retains 20.653%
+net saving. Cut-versus-reinforced mechanics are underway. Further material
+needed for reinforcement should come from low-stress/low-energy areas, with
+new structural and slicing checks. Low stress alone is not an unconditional
+permission to remove a connection or print support.
+
+The original strict contact solve and stronger coarse retry failed. Settling
+contact first at 1e-4 and then independently checking 1e-5 succeeds. Every
+finite stress sample, contact iterate, failed preparation and raw cache is
+preserved. See `analysis/rev-g2/EF-RESULTS.md` for the current result rather
+than treating historical failure fields as predictions.
+
 ## September 11 — reopen the outer body and finish the local pilot
 
 The helper-only pilot was too narrow for the architecture objective. The next

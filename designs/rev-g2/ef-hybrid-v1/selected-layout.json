@@ -1,0 +1,15 @@
+{
+  "name": "EF deep frame with backed seat roots",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 1.0,
+  "plane_mm": 1.0,
+  "planes": "full",
+  "bottom_band": 1.8,
+  "diagonal_band": 1.8,
+  "seat_band": 5.5,
+  "front_seat_band": 3.0,
+  "lower_tunnel_collar_mm": 3.5,
+  "upper_tunnel_collar_mm": 2.5,
+  "window_scale": 0
+}

@@ -14,8 +14,8 @@ rods and mounting holes:
 | Rear and front rod axes | Keep `(X,Y) = (90,0)` and `(190,12)` mm; axes run along Z. |
 | Mounting holes | Keep axes at `(Y,Z) = (164,12)` and `(40,12)` mm. Preserve the reference 5.2 mm screw clearance and functional washer/driver access. |
 | Spool clearance | Preserve axial flange sliding for 180–220 mm spools, with at least 3.5 mm nominal clearance over the effective rail-radius interval 12.4–12.7 mm. |
-| Matching bottom corner | Required. The exact corner/datum remains to be identified before finalizing new body dimensions. |
-| 15 mm outboard | Required. The measurement origin remains to be identified before finalizing new body dimensions. |
+| Matching bottom corner | Preserve G's lower wall corner at X=0, Y=-32 mm. The printed bracket slides down the wall until this underside touches the top of the closet crown moulding. Rod and mounting heights relative to that datum stay unchanged. |
+| Horizontal moulding clearance | Keep the underside at Y=-32 mm for at least 25.4 mm outward from the wall. Moulding projects 19.05 mm; the one-inch design reach includes 6.35 mm extra allowance. No bracket material may descend below that level for X from 0 to 25.4 mm. Beyond it, this moulding imposes no downward limit. |
 
 Installed X points out from the wall, Y is vertical relative to the rear rod,
 and Z runs across the bracket and along the rods. The original wall plane is
@@ -24,15 +24,21 @@ rod fit and positive capture still need physical verification.
 
 The old local E13 underside floor and its 8 mm offset are not imposed as a
 mandatory silhouette. The old 215 mm projection and 24 mm width are reference
-dimensions, not substitutes for the pending 15 mm datum. Sketches may explore
-depth and width while those anchors are clarified; they must carry a provisional
-dimension label and cannot pass a completed envelope check yet.
+dimensions. The earlier 15 mm estimate is replaced by the one-inch reach from
+the wall along the bottom edge. It is not measured from the front rod or outer
+tip. The moulding locates the bracket; no structural support from the moulding
+is assumed in analysis. The exact nominal geometry is recorded in
+`shape-seeds/moulding-clearance.json`.
 
 Manufacturing and mechanical requirements in [G2-BRIEF](../../G2-BRIEF.md)
 remain: P1S/0.4 mm, PETG or ASA, at least two walls, 0% base infill, 100%
 helper regions, realistic hardware/contact and the stated load/movement gates.
 Sacrificial bridges receive no structural or bond credit. All finite stress
 samples and raw peaks survive. These requirements do not freeze material islands.
+
+E plus F is the selected next implementation: E's deeper frame with F-derived
+backing around the seat roots. A remains a comparison direction and D a visually
+distinct exploratory alternative. This is design intent, not a solved ranking.
 
 [Six initial body sketches](shape-seeds/README.md) are reproducible XY concepts,
 not STEP handoffs or mechanically ranked candidates. Broader architectures need

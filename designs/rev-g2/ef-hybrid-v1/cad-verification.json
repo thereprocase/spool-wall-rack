@@ -1,0 +1,155 @@
+{
+  "status": "PASS_CAD_AND_NOMINAL_INTERFACE_CHECKS; PRINT_AND_MECHANICS_UNQUALIFIED",
+  "body_valid": true,
+  "body_solids": 1,
+  "body_CAD_envelope_volume_mm3": 173409.23311622787,
+  "G_source_STEP_sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+  "protected_interface_symmetric_difference_mm3": 0.0,
+  "crown_moulding_keepout_overlap_mm3": 0.0,
+  "fixed_rod_centers_XY_mm": [
+    [
+      90,
+      0
+    ],
+    [
+      190,
+      12
+    ]
+  ],
+  "fixing_checks": [
+    {
+      "axis_YZ_mm": [
+        164,
+        12
+      ],
+      "support_fraction": 0.9908180681862984,
+      "driver_overlap_mm3": 0.0
+    },
+    {
+      "axis_YZ_mm": [
+        40,
+        12
+      ],
+      "support_fraction": 0.9908180681862987,
+      "driver_overlap_mm3": 0.0
+    }
+  ],
+  "installed_bounds_mm": [
+    0.0,
+    -57.48241899292357,
+    -7.034373084024992e-12,
+    207.5060449219181,
+    176.0,
+    24.000000000007034
+  ],
+  "body_print_bounds_mm": [
+    42.49395507808191,
+    6.0,
+    -7.034373084024992e-12,
+    250.0,
+    239.48241899292358,
+    24.000000000007034
+  ],
+  "body_STL_check": {
+    "file": "body-only.stl",
+    "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+    "weld_tolerance_mm": 5e-05,
+    "maximum_vertex_movement_mm": 4.984819338637192e-05,
+    "input_boundary_edges": 3,
+    "output_boundary_edges": 0,
+    "connected_components": 1,
+    "input_triangles": 11603,
+    "output_triangles": 10966,
+    "signed_volume_change_mm3": 0.0035617224930319935,
+    "input_sha256": "a7c8e74f14f7c5ac187a50c128b0e2973a9388e25184d2dbb925a97e1a82bf36",
+    "output_sha256": "4ee01971e3c102128eb721cd3af4ac5583e054570fc1c258866637d0a7b61101",
+    "closed_after_roundtrip": true,
+    "STEP_modified": false
+  },
+  "helpers": [
+    {
+      "name": "dense-chords-and-seats",
+      "valid": true,
+      "solid_count": 3,
+      "helper_volume_mm3": 110855.12198369394,
+      "body_intersection_mm3": 45967.203004782474,
+      "z_min_mm": 0,
+      "z_max_mm": 24,
+      "role": "100% infill modifier; never a printable part",
+      "STL_check": {
+        "file": "dense-chords-and-seats.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 3,
+        "expected_CAD_solids": 3,
+        "input_triangles": 12386,
+        "output_triangles": 12386,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "dc7a517240cd5aed05e2b7515ef13d2fbe0368f704ba7223316e9e141a8d2305",
+        "output_sha256": "82ab5a2fdb235a39046146095199030046b50035b7d3814b09b8a9aba92523bb",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      }
+    },
+    {
+      "name": "rib-plane-lower",
+      "valid": true,
+      "solid_count": 1,
+      "helper_volume_mm3": 7601.675102975154,
+      "body_intersection_mm3": 7126.951953083325,
+      "z_min_mm": 7.800000000000001,
+      "z_max_mm": 8.8,
+      "role": "100% infill modifier; never a printable part",
+      "STL_check": {
+        "file": "rib-plane-lower.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 1,
+        "expected_CAD_solids": 1,
+        "input_triangles": 3464,
+        "output_triangles": 3464,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "341441fc833701eb05f7bfed2804e9ee5976db0cc38a440640aac34862234f48",
+        "output_sha256": "8d2bed69554ee426ae9485928784ce467f8ddaa0d25e9e2634919932b5a3ad4d",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      }
+    },
+    {
+      "name": "rib-plane-upper",
+      "valid": true,
+      "solid_count": 1,
+      "helper_volume_mm3": 7601.672682172952,
+      "body_intersection_mm3": 7125.314458856119,
+      "z_min_mm": 15.2,
+      "z_max_mm": 16.2,
+      "role": "100% infill modifier; never a printable part",
+      "STL_check": {
+        "file": "rib-plane-upper.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 1,
+        "expected_CAD_solids": 1,
+        "input_triangles": 3464,
+        "output_triangles": 3464,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "10a485ead437727098c735cbcaea96d559f06ee8cce4871e018c97c18d6e7153",
+        "output_sha256": "06ba421838958838cf8c1d16c9b7add52b0000b2ef0e3c2ab07315ccf93b5a75",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      }
+    }
+  ],
+  "assembly_solid_count": 6,
+  "elapsed_seconds": 96.49860600000102,
+  "note": "The frame and seat backing are new. Original G bearing bores and upper capture geometry are preserved by exact STEP intersection. CAD volume is not printed volume. New member broad faces are unchamfered in this first prototype."
+}

@@ -3,7 +3,8 @@
 **Current update:** [six broad XY sketches](shape-seeds/README.md) now make the
 body-shape directions visible. They are not CAD/STEP or mechanical results.
 The [current interface contract](INTERFACE-CONTRACT.md) fixes rod and mounting
-positions and leaves two envelope datums pending. It supersedes older relocation
+positions, G's moulding locating height, and a one-inch horizontal underside
+from the wall before descending. E plus F is the selected next body. This supersedes older relocation
 and 8 mm envelope assumptions in the preparatory notes below.
 
 This is a preparatory architecture screen for G2. It does not select a family,
@@ -147,6 +148,6 @@ orientation and bed-exclusion audit as the G recheck. A multipart concept must
 also carry assembly alignment, fastener, tolerance, and part-separation cases.
 
 The corrected G contact screen and local helper pilot now provide initial
-numerical feedback. Continue with the broad body seeds, resolve the two precise
-envelope anchors, and build fresh CAD/slice/3D representatives. The local helper
+numerical feedback. Continue with the selected E plus F body and the resolved
+moulding interface, then build fresh CAD/slice/3D representatives. The local helper
 calibration cannot establish rankings across these different architectures.

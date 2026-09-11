@@ -1,0 +1,24 @@
+{
+  "name": "EF lean v2 / reduced central plate and chord bands",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 0.8,
+  "internal_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "bottom_band": 1.6,
+  "diagonal_band": 1.6,
+  "seat_band": 5.5,
+  "front_seat_band": 3.0,
+  "lower_tunnel_collar_mm": 3.5,
+  "upper_tunnel_collar_mm": 2.5,
+  "window_scale": 0,
+  "modifier_names": [
+    "dense-chords-and-seats",
+    "central-rib-plane"
+  ],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 15.0,
+  "target_note": "15 percent reduction is an experiment target. Retain the EF body and 0.8 mm skins; use a 0.6 mm central helper plate and 1.6 mm chord bands. Actual slicing and mechanics decide the outcome."
+}

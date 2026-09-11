@@ -1,0 +1,41 @@
+{
+  "status": "PREPARED_FOR_3D",
+  "candidate": "ef-cut-v3",
+  "input_model_sha256": "a4f0dc1f7ae89933c64cc8fe469608ec3372f5c862ab87f8007214c30646ca86",
+  "steps": [
+    {
+      "name": "slice",
+      "returncode": 0,
+      "seconds": 13.04347210999913
+    },
+    {
+      "name": "raw-shape",
+      "returncode": 0,
+      "seconds": 17.664137674000813
+    },
+    {
+      "name": "geometry",
+      "returncode": 0,
+      "seconds": 59.51898123100182
+    },
+    {
+      "name": "interfaces",
+      "returncode": 0,
+      "seconds": 8.643310302999453
+    },
+    {
+      "name": "adaptive",
+      "returncode": 0,
+      "seconds": 7.234371711998392
+    },
+    {
+      "name": "transfer",
+      "returncode": 0,
+      "seconds": 11.344866900999477
+    }
+  ],
+  "scope": "Fresh actual sliced material on a new CAD body. Fixed G interface coordinates; inscribed 0.2 mm material and isotropic planning law remain screening approximations.",
+  "current_stage": "contact-discovery",
+  "elapsed_seconds": 117.50338599999668,
+  "timing_scope": "Active stages only. CAD/package and parked time before resume are separate."
+}

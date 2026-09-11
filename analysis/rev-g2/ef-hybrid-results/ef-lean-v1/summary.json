@@ -1,0 +1,8 @@
+{
+  "candidate": "ef-lean-v1",
+  "spent_volume_mm3": 65965.54938084735,
+  "G_spent_volume_mm3": 74099.67147099122,
+  "saving_percent": 10.977271462435889,
+  "mechanics_status": "PENDING",
+  "scope": "CAD, slicer and numerical evidence remain separate from physical qualification."
+}

@@ -1,14 +1,22 @@
 # Spool wall rack — G material-model correction and G2
 
-**Current direction: [six broader G2 bodies](designs/rev-g2/shape-seeds/README.md).**
-The outer shape, depth, braces, windows and material placement are open design
-variables. Rod and mounting coordinates stay fixed under the
-[current interface contract](designs/rev-g2/INTERFACE-CONTRACT.md). The exact
-bottom-corner and 15 mm outboard datums are pending. These are reproducible
-geometry sketches, with nominal spool clearance checked; CAD and mechanics
-are unbuilt.
+**Current design: E + F, cut first and reinforce locally.** The implemented cut
+uses 29.21% less spent extrusion than the matched P1S G slice. Adding 6.34 cm3
+back at the seat, wall-brace and keel-post transitions leaves **20.65% net
+saving**. This is measured slicing evidence; cut and reinforced mechanics are
+being checked. The first heavier EF reference was more flexible than G.
 
-![Six broader body directions](designs/rev-g2/shape-seeds/architecture-directions.png)
+The G bearing/capture geometry, rod positions and mounting axes stay fixed.
+The bottom underside stays at Y=-32 mm for at least 25.4 mm outward from the
+wall before descending. Moulding is a locating datum, with no assumed support.
+
+Current results and downloads
+
+https://github.com/thereprocase/spool-wall-rack/blob/main/analysis/rev-g2/EF-RESULTS.md
+
+https://github.com/thereprocase/spool-wall-rack/tree/main/designs/rev-g2/ef-reinvest-v1
+
+![Cut and local reinforcement](analysis/rev-g2/ef-hybrid-results/material-allocation.png)
 
 **Completed local pilot: [evolutionary screening loop](analysis/rev-g2/EVOLUTION.md).** The first
 batch screened 100 helper proposals in 11 min 18 s. The leading actual-slice

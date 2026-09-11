@@ -1,0 +1,8 @@
+{
+  "candidate": "ef-cut-v3",
+  "spent_volume_mm3": 52454.39329634698,
+  "G_spent_volume_mm3": 74099.67147099122,
+  "saving_percent": 29.211031229899586,
+  "mechanics_status": "PENDING",
+  "scope": "CAD, slicer and numerical evidence remain separate from physical qualification."
+}

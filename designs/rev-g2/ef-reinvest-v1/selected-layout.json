@@ -1,0 +1,70 @@
+{
+  "name": "EF reinvest v1 / local seat, wall-brace and keel transitions",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 0.6,
+  "internal_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "bottom_band": 1.2,
+  "diagonal_band": 1.2,
+  "seat_band": 4.5,
+  "front_seat_band": 2.4,
+  "lower_tunnel_collar_mm": 3.0,
+  "upper_tunnel_collar_mm": 2.0,
+  "window_scale": 0,
+  "modifier_names": [
+    "dense-chords-and-seats",
+    "central-rib-plane",
+    "local-transition-backing"
+  ],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 20.0,
+  "target_note": "Reinvest the 29.211 percent gross cut at transitions identified in the accepted EF reference stress field. Seek at least 20 percent net saving; actual slicing and the cut-vs-reinforced solve decide.",
+  "cut_baseline": "ef-cut-v3",
+  "local_reinforcement": [
+    {
+      "name": "inner-seat-to-forearm",
+      "points_XY_mm": [
+        [
+          102,
+          -19
+        ],
+        [
+          121,
+          -16
+        ]
+      ],
+      "radius_mm": 4.0
+    },
+    {
+      "name": "wall-to-upper-brace",
+      "points_XY_mm": [
+        [
+          11,
+          38
+        ],
+        [
+          23,
+          29
+        ]
+      ],
+      "radius_mm": 3.0
+    },
+    {
+      "name": "seat-to-keel-post",
+      "points_XY_mm": [
+        [
+          84,
+          -34
+        ],
+        [
+          84,
+          -43
+        ]
+      ],
+      "radius_mm": 3.0
+    }
+  ]
+}

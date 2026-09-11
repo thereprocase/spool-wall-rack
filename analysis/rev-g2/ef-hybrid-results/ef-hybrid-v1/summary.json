@@ -1,0 +1,8 @@
+{
+  "candidate": "ef-hybrid-v1",
+  "spent_volume_mm3": 73006.69945660922,
+  "G_spent_volume_mm3": 74099.67147099122,
+  "saving_percent": 1.475002510382084,
+  "mechanics_status": "CONTACT_SCREEN_AT_STATED_TOLERANCE_ERODED_MATERIAL_ONLY",
+  "scope": "CAD, slicer and numerical evidence remain separate from physical qualification."
+}

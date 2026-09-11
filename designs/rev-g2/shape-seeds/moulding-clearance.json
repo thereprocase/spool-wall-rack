@@ -1,0 +1,14 @@
+{
+  "status": "CURRENT_DESIGN_CLEARANCE",
+  "wall_plane_X_mm": 0.0,
+  "matching_lower_wall_corner_XY_mm": [0.0, -32.0],
+  "moulding_top_Y_mm": -32.0,
+  "measured_moulding_projection_mm": 19.05,
+  "design_horizontal_reach_mm": 25.4,
+  "additional_horizontal_allowance_mm": 6.35,
+  "locating_underside_Y_mm": -32.0,
+  "minimum_locating_underside_X_interval_mm": [0.0, 25.4],
+  "below_moulding_top_rule": "For X from 0 to 25.4 mm, no bracket material may extend below Y=-32 mm. Farther out, downward design space is free of this moulding constraint.",
+  "interpretation": "Preserve G's lower wall locating corner and a horizontal underside for at least one inch from the wall. This replaces the earlier 15 mm estimate; it is not extra projection beyond the front rod or bracket tip.",
+  "scope": "Nominal spatial clearance only. Contact with moulding supplies no assumed structural support. Physical fit remains to be checked."
+}

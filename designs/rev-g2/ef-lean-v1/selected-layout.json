@@ -1,0 +1,18 @@
+{
+  "name": "EF lean v1 / one internal plate and 0.8 mm skins",
+  "walls": 2,
+  "infill_percent": 0,
+  "skin_mm": 0.8,
+  "internal_plate_z_interval_mm": [11.6, 12.6],
+  "bottom_band": 1.8,
+  "diagonal_band": 1.8,
+  "seat_band": 5.5,
+  "front_seat_band": 3.0,
+  "lower_tunnel_collar_mm": 3.5,
+  "upper_tunnel_collar_mm": 2.5,
+  "window_scale": 0,
+  "modifier_names": ["dense-chords-and-seats", "central-rib-plane"],
+  "model_file": "part-model-and-modifiers.3mf",
+  "target_spent_plastic_reduction_vs_G_percent": 15.0,
+  "target_note": "Experiment target, not a measured saving or strength result. Body and reinforcement bands are retained from the EF reference; only skins and internal plate allocation change."
+}

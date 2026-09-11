@@ -45,3 +45,21 @@
 # Reproducible broad-architecture sketches and their source checksums.
 /designs/rev-g2/shape-seeds/** text eol=lf
 /designs/rev-g2/shape-seeds/*.png binary
+
+# Preserve delivered EF CAD and mixed native/WSL evidence bytes.
+/designs/rev-g2/ef-hybrid-v1/** -text
+/designs/rev-g2/ef-hybrid-v1/*.step binary
+/analysis/rev-g2/ef-hybrid-results/** -text
+/analysis/rev-g2/check_part.py text eol=lf
+
+# EF material reserve and localized helper trials retain manifest bytes.
+/designs/rev-g2/ef-lean-*/** -text
+/designs/rev-g2/ef-cut-*/** -text
+/designs/rev-g2/ef-reinvest-*/** -text
+/analysis/rev-g2/package_part.py text eol=lf
+/analysis/rev-g2/render_ef_allocation.py text eol=lf
+/analysis/rev-g2/checkpoint_ef.py text eol=lf
+/analysis/rev-g2/reduced_plastic.py text eol=lf
+
+/analysis/rev-g2/finish_contact.py text eol=lf
+/analysis/rev-g2/EF-RESULTS.md text eol=lf

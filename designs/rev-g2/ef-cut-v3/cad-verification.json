@@ -1,0 +1,117 @@
+{
+  "status": "PASS_CAD_AND_COPIED_BODY_PROVENANCE; PRINT_AND_MECHANICS_UNQUALIFIED",
+  "body_valid": true,
+  "body_solids": 1,
+  "body_source": "ef-hybrid-v1",
+  "copied_files_sha256": {
+    "body-only.step": "0feadd23570a9b7473147b6b9fa9496863eacae7f01d49f6f3a70ea079ff029c",
+    "body-only.stl": "4ee01971e3c102128eb721cd3af4ac5583e054570fc1c258866637d0a7b61101",
+    "body-mounted.stl": "4a90d7946e95965ddda71bee08b1fd1af811bd615b2f64e2f813d29e596cb719",
+    "geometry.geojson": "e37408d10583873a06c13c7246e4c3dc44edec68c0ba357f80fd1e3c4df63987",
+    "projection-verification.json": "5fb11f4c2f96340edca8f9fc057e1fe6cd13a464b223438bcf2b11db53eaf4f9"
+  },
+  "inherited_body_checks": {
+    "protected_interface_symmetric_difference_mm3": 0.0,
+    "crown_moulding_keepout_overlap_mm3": 0.0,
+    "fixed_rod_centers_XY_mm": [
+      [
+        90,
+        0
+      ],
+      [
+        190,
+        12
+      ]
+    ],
+    "fixing_checks": [
+      {
+        "axis_YZ_mm": [
+          164,
+          12
+        ],
+        "support_fraction": 0.9908180681862984,
+        "driver_overlap_mm3": 0.0
+      },
+      {
+        "axis_YZ_mm": [
+          40,
+          12
+        ],
+        "support_fraction": 0.9908180681862987,
+        "driver_overlap_mm3": 0.0
+      }
+    ],
+    "installed_bounds_mm": [
+      0.0,
+      -57.48241899292357,
+      -7.034373084024992e-12,
+      207.5060449219181,
+      176.0,
+      24.000000000007034
+    ]
+  },
+  "helpers": [
+    {
+      "name": "dense-chords-and-seats",
+      "valid": true,
+      "solid_count": 3,
+      "z_min_mm": 0,
+      "z_max_mm": 24,
+      "body_intersection_mm3": 34770.05439964714,
+      "helper_volume_mm3": 98353.90525050471,
+      "role": "100% infill modifier; never a printable part",
+      "STL_check": {
+        "file": "dense-chords-and-seats.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 3,
+        "expected_CAD_solids": 3,
+        "input_triangles": 12392,
+        "output_triangles": 12392,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "03a93eaa91ddca8b3c912e4bb62f1a5f0a0b38f7a8b1f2c06b6eada23c4dac25",
+        "output_sha256": "f7e64c67f81cd30a7c350298e45a679bd008a364e55d45b12e68a00fc17cb741",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      }
+    },
+    {
+      "name": "central-rib-plane",
+      "valid": true,
+      "solid_count": 1,
+      "z_min_mm": 11.8,
+      "z_max_mm": 12.4,
+      "body_intersection_mm3": 4227.643520635975,
+      "helper_volume_mm3": 4561.005061785086,
+      "role": "100% infill modifier; never a printable part",
+      "STL_check": {
+        "file": "central-rib-plane.stl",
+        "weld_tolerance_mm": 5e-05,
+        "maximum_vertex_movement_mm": 0.0,
+        "input_boundary_edges": 0,
+        "output_boundary_edges": 0,
+        "connected_components": 1,
+        "expected_CAD_solids": 1,
+        "input_triangles": 3464,
+        "output_triangles": 3464,
+        "signed_volume_change_mm3": 0.0,
+        "input_sha256": "4a06f9789dff41c182782fd8dfc6572ca88ffa8253eab4331b373a62d16830a9",
+        "output_sha256": "e3f64ff049dd0fbca4329b30d6b0ef8855251633c041b98dd1cf2cb90bd5e26c",
+        "closed_after_roundtrip": true,
+        "STEP_modified": false,
+        "scope": "Modifier solids only. Disconnected dense regions are allowed; the printable body must remain one component."
+      }
+    }
+  ],
+  "assembly_solid_count": 5,
+  "skin_layers": 3,
+  "central_plate_z_interval_mm": [
+    11.8,
+    12.4
+  ],
+  "elapsed_seconds": 66.66437189999851,
+  "scope": "The outer EF body is retained byte for byte. Internal plate, skin and reinforcement parameters are recorded in selected-layout.json; actual saving and mechanics require a fresh slice and solve."
+}

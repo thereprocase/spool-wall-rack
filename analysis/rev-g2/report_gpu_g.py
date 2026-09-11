@@ -6,7 +6,7 @@ from scipy.sparse import load_npz
 from gpu_hex import element, stress_tensors
 
 
-def audit(geometry, adaptive, result, output, compare=None):
+def audit(geometry, adaptive, result, output, compare=None, label='Rev G'):
     output.mkdir(parents=True, exist_ok=False)
     report = json.loads((result/'solve.json').read_text())
     with np.load(geometry/'geometry.npz') as d:
@@ -115,7 +115,7 @@ def audit(geometry, adaptive, result, output, compare=None):
     axes[0].plot(*p[imax,:2],marker='x',color='cyan',ms=8)
     axes[1].plot(*evidence['raw_tensile_peak']['position_mm'][:2],marker='x',color='cyan',ms=8)
     mesh_label=' x '.join(f'{v:g}' for v in spacing)
-    fig.suptitle(f"Rev G, {report['load_N']/9.81:.2f} kg | retained {mesh_label} mm sliced material, adaptive Q1\n"
+    fig.suptitle(f"{label}, {report['load_N']/9.81:.2f} kg | retained {mesh_label} mm sliced material, adaptive Q1\n"
                  'Maximum through width; E = 1 GPa planning model; mesh/material accuracy unqualified',fontsize=12)
     fig.savefig(output/'g-results.png',dpi=170)
     plt.close(fig)
@@ -127,5 +127,6 @@ if __name__=='__main__':
     for name in ['geometry','adaptive','result','output']:
         ap.add_argument('--'+name,type=Path,required=True)
     ap.add_argument('--compare',type=Path)
+    ap.add_argument('--label',default='Rev G')
     args=ap.parse_args()
-    audit(args.geometry,args.adaptive,args.result,args.output,args.compare)
+    audit(args.geometry,args.adaptive,args.result,args.output,args.compare,args.label)

@@ -1,0 +1,8 @@
+{
+  "candidate": "ef-reinvest-v1",
+  "spent_volume_mm3": 58796.097408713766,
+  "G_spent_volume_mm3": 74099.67147099122,
+  "saving_percent": 20.652688140821983,
+  "mechanics_status": "PENDING",
+  "scope": "CAD, slicer and numerical evidence remain separate from physical qualification."
+}

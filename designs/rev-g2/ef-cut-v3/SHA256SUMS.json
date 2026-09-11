@@ -1,0 +1,21 @@
+{
+  "3mf-verification.json": "bd1ba55aca09126cfa0f833d358bca76300367dcfedd6992a5fccb0e3dac137f",
+  "README.md": "b21a9b88982bb85aa0c80cace99d7ea0e0ee26785776d35a474fccae2aef7dc7",
+  "body-mounted.stl": "4a90d7946e95965ddda71bee08b1fd1af811bd615b2f64e2f813d29e596cb719",
+  "body-only.step": "0feadd23570a9b7473147b6b9fa9496863eacae7f01d49f6f3a70ea079ff029c",
+  "body-only.stl": "4ee01971e3c102128eb721cd3af4ac5583e054570fc1c258866637d0a7b61101",
+  "bracket-with-modifiers.step": "3ec23f4c71ccfab388e3a980b155c739201e1a08a80fd85679fde8ba72da7a82",
+  "build_helpers.py": "ff192f01db5538cc37677dcb057e1b5f9934a9ecc0648bf0f925a37eec46b5ad",
+  "cad-verification.json": "658dd29ff9c9c1b7930abf48cd1de7a2d5b62470d1b10d0ea3547dfcc7a293f4",
+  "central-rib-plane.step": "b00905d8d0ff93b7a72048ca6b2633c6c2947b85cc62ad12ae802ca73478146a",
+  "central-rib-plane.stl": "e3f64ff049dd0fbca4329b30d6b0ef8855251633c041b98dd1cf2cb90bd5e26c",
+  "dense-chords-and-seats.step": "4217680193e7f6b541320195db0f79aa8804cbd7a3e7cf49c636242b016eb900",
+  "dense-chords-and-seats.stl": "f7e64c67f81cd30a7c350298e45a679bd008a364e55d45b12e68a00fc17cb741",
+  "geometry.geojson": "e37408d10583873a06c13c7246e4c3dc44edec68c0ba357f80fd1e3c4df63987",
+  "part-model-and-modifiers.3mf": "a4f0dc1f7ae89933c64cc8fe469608ec3372f5c862ab87f8007214c30646ca86",
+  "projection-verification.json": "5fb11f4c2f96340edca8f9fc057e1fe6cd13a464b223438bcf2b11db53eaf4f9",
+  "selected-layout.json": "68fb97bd5baacdea5cbc99fa8c96f580d413b3ea6d5690b1a08a4089df7c74b0",
+  "slice-evidence.zip": "72d0ee9043b3294c8ea72aa7bf7afafe0be79565563d44486fde5e16b7bc8823",
+  "slice-verification.json": "0394258449c132194cc22ae13d58804671b33e5d79f9a43e328b49f5d6adae2a",
+  "toolpath-sections.png": "db0bb5aa004fc44456135c466ba20724af8bf70e0ac2cb7019045733d74e4763"
+}

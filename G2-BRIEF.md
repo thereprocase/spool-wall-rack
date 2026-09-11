@@ -9,8 +9,10 @@ remain unchanged historical records.
 
 [The current interface contract](designs/rev-g2/INTERFACE-CONTRACT.md) supersedes
 older permission to move mounting holes or rods. Preserve their reference
-coordinates and spool clearance, plus the specified matching bottom corner
-and 15 mm outboard relationship once those two datums are resolved. All other
+coordinates and spool clearance. Preserve G's lower wall corner at Y=-32 mm,
+where the bracket locates on top of the crown moulding, with a horizontal
+underside for at least 25.4 mm outward from the wall before descending. This
+replaces the initial 15 mm estimate; the moulding projects 19.05 mm. All other
 body geometry and material allocation are open design variables. The old local
 silhouette floor is not a mandatory material boundary.
 
@@ -76,8 +78,8 @@ mandatory. Material may be removed anywhere. Helpers have no fixed count,
 shape or placement; their effective union is clipped to the body and counted
 once. Integrated reinforcement is equally acceptable.
 
-The latest bottom-corner and 15 mm outboard requirements control the new outer
-envelope once their datums are clarified. The earlier 8 mm spool-relative drop
+The matching bottom corner and one-inch horizontal moulding clearance control
+the new outer envelope. The earlier 8 mm spool-relative drop
 allowance and initial draft's local E13 silhouette floor remain historical
 reference dimensions; do not silently apply either as the new body restriction.
 

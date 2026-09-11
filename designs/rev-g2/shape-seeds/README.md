@@ -4,9 +4,19 @@
 
 These seeds change the outer body, member paths and large openings. The dashed
 outline is G for scale. Rod and mounting coordinates stay fixed; the gray
-region excludes the swept 180–220 mm spool flanges. The bottom-corner and
-15 mm outboard datums remain pending in the [interface contract](../INTERFACE-CONTRACT.md),
-so the displayed depth is provisional.
+region excludes the swept 180–220 mm spool flanges. The moulding datum is now
+resolved: retain G's lower wall corner and a horizontal underside for at least
+25.4 mm from the wall before descending. The crown moulding projects 19.05 mm.
+Brown marks the moulding; the pale band shows the extra horizontal allowance.
+This replaces the original 15 mm estimate. See the current interface contract.
+
+![E, A and F with the one-inch moulding clearance](shortlist-moulding.png)
+
+E plus F is the selected next implementation. E offers a deeper frame; F supplies
+broader seat-root transitions. A remains the principal alternative for the
+continuous-plate direction. This priority reflects engineering intuition and
+visual preference, not a calculated strength ranking. D remains an exploratory
+alternative with a different visual character.
 
 | Seed | Direction | Intended comparison |
 |---|---|---|

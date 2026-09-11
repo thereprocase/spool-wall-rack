@@ -106,6 +106,25 @@ class Reduced:
             cache.parent.mkdir(parents=True,exist_ok=True)
             np.savez_compressed(cache, signature=signature, volume=self.material_volume)
         assert self.material_volume.shape == (len(self.t),)
+        empty = self.material_volume == 0
+        if empty.any():
+            # Raw projection boundaries can leave roundoff-scale triangles.
+            # Remove only elements with exactly zero integrated plastic and
+            # negligible total area. Retain the original integration cache.
+            empty_area = float(self.area[empty].sum())
+            assert empty_area < 1e-8, f'Non-negligible empty projection elements: {empty_area}; remesh'
+            self.mesh_audit.update(zero_material_roundoff_triangles=int(empty.sum()),
+                                   zero_material_roundoff_area_mm2=empty_area,
+                                   removed_integrated_plastic_volume_mm3=0.0)
+            used, inverse = np.unique(self.t[~empty], return_inverse=True)
+            self.p = self.p[used]; self.t = inverse.reshape(-1, 3)
+            self.mesh = MeshTri(self.p.T, self.t.T)
+            self.basis = Basis(self.mesh, ElementVector(ElementTriP1()))
+            self.coords = self.basis.global_coordinates()
+            self.area = self.basis.dx.sum(axis=1)
+            self.sampled_th = self.sampled_th[~empty]
+            self.zero_thickness_quadrature = int(np.count_nonzero(self.sampled_th == 0))
+            self.material_volume = self.material_volume[~empty]
         assert np.all(np.isfinite(self.material_volume)) and np.all(self.material_volume > 0)
         # A P1 triangle has constant strain. The exact area-integrated material
         # thickness therefore gives its stiffness without quadrature sampling.
@@ -244,8 +263,8 @@ def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--shape',type=Path,default=ROOT/'analysis/rev-g2/g-recheck/2w-5layers/validated-shape'); ap.add_argument('--output',type=Path,default=ROOT/'analysis/rev-g2/reduced-plastic/2w-5layers.json'); ap.add_argument('--h',type=float,default=2.0); args=ap.parse_args()
     args.shape=args.shape.resolve(); args.output=args.output.resolve()
     started=time.perf_counter()
-    shape=PlasticShape.load(args.shape); body=ROOT/'designs/rev-g/body-only.stl'; assert body.exists()
-    reduced=Reduced(shape,args.h); solve=reduced.solve(); solve.update({'shape_dir':str(args.shape.relative_to(ROOT)).replace('\\','/'),'shape_verification_sha256':digest(args.shape/'shape-verification.json'),'G_body_STL_sha256':digest(body),'mesh_h_mm':args.h})
+    shape=PlasticShape.load(args.shape)
+    reduced=Reduced(shape,args.h); solve=reduced.solve(); solve.update({'shape_dir':str(args.shape.relative_to(ROOT)).replace('\\','/'),'shape_verification_sha256':digest(args.shape/'shape-verification.json'),'mesh_h_mm':args.h})
     args.output.parent.mkdir(parents=True,exist_ok=True)
     npz=args.output.with_suffix('.npz')
     np.savez_compressed(npz,**reduced.fields)

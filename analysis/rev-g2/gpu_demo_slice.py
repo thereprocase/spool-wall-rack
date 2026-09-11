@@ -40,6 +40,9 @@ def main():
     ap.add_argument('--output',type=Path,required=True)
     ap.add_argument('--source',type=Path,default=Path('designs/rev-g2/g-recheck/2w-5layers'))
     ap.add_argument('--p1s-petg',action='store_true')
+    ap.add_argument('--skin-layers',type=int,default=5)
+    ap.add_argument('--expected-modifiers',type=int,default=3)
+    ap.add_argument('--model-name',default='rev-g-model-and-modifiers.3mf')
     args = ap.parse_args()
     source = args.source
     original = Path('designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w')
@@ -61,11 +64,17 @@ def main():
         process = json.loads((out/'process.json').read_text())
         process.update({'name':'G P1S PETG 2w 5-skin demo','print_settings_id':'G P1S PETG 2w 5-skin demo',
                         'compatible_printers':[machine['name']],'curr_bed_type':'Textured PEI Plate'})
+        assert args.skin_layers >= 1 and args.expected_modifiers >= 0
+        if args.skin_layers != 5:
+            process.update({'name':f'Part P1S PETG 2w {args.skin_layers}-skin screen',
+                            'print_settings_id':f'Part P1S PETG 2w {args.skin_layers}-skin screen',
+                            'top_shell_layers':str(args.skin_layers),'bottom_shell_layers':str(args.skin_layers),
+                            'top_shell_thickness':str(args.skin_layers*.2),'bottom_shell_thickness':str(args.skin_layers*.2)})
         for name,value in [('machine',machine),('filament',filament),('process',process)]:
             (out/(name+'.json')).write_text(json.dumps(value,indent=2)+'\n')
         profile_receipt = {'machine':machine_receipt,'filament':filament_receipt,
                            'scope':'Installed P1S machine and generic PETG base inheritance; process calibration is not claimed.'}
-    model = source/'rev-g-model-and-modifiers.3mf'
+    model = source/args.model_name
     report = {'status':'RUNNING','input_model_sha256':sha(model),'orca_executable_sha256':sha(args.orca),
               'source_geometry':'Supplied body and aligned helpers; source model identified by SHA256.',
               'cad_stage':'Existing input 3MF hashed; no new geometry generation.',
@@ -106,7 +115,7 @@ def main():
         if args.p1s_petg:
             effective = json.loads((out/'effective-settings.json').read_text())
             expected = {'printer_model':'Bambu Lab P1S','filament_type':['PETG'],'nozzle_diameter':['0.4'],
-                        'wall_loops':'2','top_shell_layers':'5','bottom_shell_layers':'5','sparse_infill_density':'0%'}
+                        'wall_loops':'2','top_shell_layers':str(args.skin_layers),'bottom_shell_layers':str(args.skin_layers),'sparse_infill_density':'0%'}
             report['effective_process_checks'] = {key:{'expected':value,'actual':effective.get(key),
                                                        'pass':effective.get(key) == value} for key,value in expected.items()}
             with zipfile.ZipFile(out/'audit.3mf') as archive:
@@ -114,7 +123,7 @@ def main():
             parts=settings.findall('object/part')
             modifiers=[p for p in parts if p.get('subtype')=='modifier_part']
             modifier_values=[{m.get('key'):m.get('value') for m in p.findall('metadata')} for p in modifiers]
-            roles_pass=(len(parts)==4 and len(modifiers)==3 and
+            roles_pass=(len(parts)==1+args.expected_modifiers and len(modifiers)==args.expected_modifiers and
                         sum(p.get('subtype')=='normal_part' for p in parts)==1 and
                         all(v.get('sparse_infill_density')=='100%' for v in modifier_values))
             report['actual_orca_modifier_roles']={'pass':roles_pass,'parts':len(parts),'modifiers':modifier_values}
