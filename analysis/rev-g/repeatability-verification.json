@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "replays": [
+    {
+      "original_run": "seed-20260910-h2",
+      "repeat_run": "repeat-seed-20260910-h2",
+      "exact_json_equality": {
+        "summary.json": true,
+        "generations.json": true
+      },
+      "candidate_ledger_sha256": "a46b1d7bcb59e20ada9e22a4fe236495c1b94ce62edc797fe8bd1f0412afa22a"
+    },
+    {
+      "original_run": "3d-feedback-seed-20260912-h2",
+      "repeat_run": "repeat-3d-feedback-seed-20260912-h2",
+      "exact_json_equality": {
+        "summary.json": true,
+        "generations.json": true
+      },
+      "candidate_ledger_sha256": "13830412b787cc3ea9e1880944e083ade18491e0479cbe4fe71a1a3ab58c6f75"
+    }
+  ],
+  "scope": "Exact cached run replay, including populations and selections. Independent uncached physics repeat is recorded in fast-screen-validation.json."
+}

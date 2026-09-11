@@ -1,0 +1,36 @@
+{
+  "parts": [
+    {
+      "name": "body-only",
+      "role": "normal_part",
+      "vertices": 6748,
+      "triangles": 13508,
+      "STL_sha256": "ee61c261878d3345c75c2b5d8ca1c4c4ce102f647dd4dafde29e1e769beb8077"
+    },
+    {
+      "name": "dense-chords-and-seats",
+      "role": "modifier_part",
+      "vertices": 4141,
+      "triangles": 8294,
+      "STL_sha256": "436d4db68f2edaacb79c2e10b93830a65fd8e4e4b4d058fdc63e4635c863610f"
+    },
+    {
+      "name": "rib-plane-lower",
+      "role": "modifier_part",
+      "vertices": 2226,
+      "triangles": 4460,
+      "STL_sha256": "84735c76cacdde14a818ec20d18d6b607e0ce7bfe9c720c24ec7fc8e2eecb2c4"
+    },
+    {
+      "name": "rib-plane-upper",
+      "role": "modifier_part",
+      "vertices": 2226,
+      "triangles": 4460,
+      "STL_sha256": "9bfd6b24d321a5452870df3d5fecd3b937475e5ef58e3ef071bf577bc6cbcc22"
+    }
+  ],
+  "sha256": "71e7cc7ad2cd6c44b1bbe7c9a93d2ebfbe56de5021f3692465896c0ba4a8cadb",
+  "includes_machine_or_filament_profile": false,
+  "includes_Gcode": false,
+  "status": "Requires Orca round-trip and toolpath verification."
+}

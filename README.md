@@ -1,50 +1,51 @@
-# Spool wall rack — Rev F checkpoint
+# Spool wall rack — Rev G genetic-study results
 
-**September 10, 2026: Rev F geometry and modifier experiments are checkpointed.
-The required 4× fracture margin has not been demonstrated. Genetic optimization
-is the next sprint; it has not started.** E13 remains the established prototype
-handoff, with its existing physical-validation limits.
+**September 10, 2026: Rev G's evolutionary-search sprint is complete.
+1,458 distinct parameter sets were evaluated. No tested finalist demonstrates
+the requested 4× fracture margin; no qualified minimum-mass winner is selected.**
+E13 remains the established prototype handoff, with its existing validation limits.
 
-[Current Rev F CAD and helpers](designs/rev-f/README.md) ·
-[Results and unresolved constraints](analysis/rev-f/README.md) ·
-[Next sprint: evolutionary optimization](NEXT-SPRINT.md) ·
-[E13 print guide](E13-ENGINEERING-GUIDE.md) · [Design journal](DESIGN-JOURNAL.md)
+[Current Rev G research CAD](designs/rev-g/README.md) ·
+[Search, 3D results and limiting mechanism](analysis/rev-g/README.md) ·
+[Next study](NEXT-SPRINT.md) · [Preserved F checkpoint](REV-F-CHECKPOINT.md) ·
+[E13 guide](E13-ENGINEERING-GUIDE.md) · [Design journal](DESIGN-JOURNAL.md)
 
-![Rev F actual finished CAD: angular windows inside the preserved E13 outline](designs/rev-f/progress-exterior.png)
+![Actual Rev G finished CAD with preserved E13 exterior and angular windows](designs/rev-g/progress-exterior.png)
 
-The new body retains E13's exterior outline, seats, flexible fingers, screw
-lands and driver access. Two angular windows remove material from the body.
-Three separate helper modifiers place dense material in the chords and seats,
-and in two internal planes. The image below shows the **three-wall shaped-plane
-experiment**, whose actual modifier roles and nonprinting tabs pass Orca checks.
+The full-plane search finalist slices to **103.76 g per bracket: 37.9% less
+plastic than E13**. On matched fine meshes it is 51.1% more flexible and has
+**6.6% better stiffness per gram**. Its 3.306 mm mean seat translation leaves
+1.694 mm of the 5 mm total movement budget for other contributors at the
+1 GPa planning modulus. Its raw tensile peak still fails the strength screen.
 
-![Rev F three-helper layout: gold regions become 100% infill inside the body](designs/rev-f/modifier-layout.png)
-
-| Checkpoint candidate | Plastic mass per bracket | Front movement at 12 kg, E = 1 GPa | Current evidence |
+| Tested design | Actual Orca mass | Front vertical movement at 12 kg, E = 1 GPa | Outcome |
 |---|---:|---:|---|
-| E13, 8 walls | **167.11 g sliced** | 2.148 mm, h1 | Preserved reference prototype |
-| F, 3 walls, shaped planes | **151.21 g sliced** | 2.191 mm, h2 | CAD/modifier/toolpath checks pass; 4× fracture screen fails |
-| F, 4 walls, full planes | **147.02 g sliced** | 2.156 mm, h1 | 12.0% less plastic than E13; 4× fracture screen fails |
-| F, 1 wall, thin full planes | **87.81 g estimated; unsliced** | 3.582 mm, h2 | Light study; 4× fracture screen fails; modifier STL export incomplete |
+| E13, 8 walls | 167.11 g | 2.148 mm, h1 | Preserved reference prototype |
+| G, thin shaped seed-1 candidate | 84.35 g | 4.930 mm, h2 | Movement, strength and dense-path coverage failures |
+| G, full-plane search finalist | **103.76 g** | **3.246 mm, h1** | CAD/toolpaths pass; all three meshes fail fracture screen |
+| G, wider inner-seat support | 108.03 g | 2.988 mm, h2 | Improves coarse result; fracture screen still fails |
 
-Sliced masses use the same neutral density of 1.24 g/cm³; the one-wall value
-is a layer-volume proxy, not an Orca result. The mesh sizes differ where shown.
-These are modeled bracket movements, not measured rack movement. The 5 mm
-limit includes creep, rails and mounting movement; the light study leaves
-**1.418 mm** for the remaining contributors at the planning modulus.
+Masses use the same neutral density of 1.24 g/cm³. Movements are modeled,
+not measured. Mesh levels differ where stated; no physical print or sustained
+load qualification is claimed.
 
-The objective is now **minimum printed mass within 5 mm total movement,
-1 mm change per full spool and at least 4× nominal fracture margin**, with
-stiffness per gram reported. Matching E13 stiffness is not required. The light
-candidate looked acceptable in 2D, but its raw 3D peak gives only a **0.85**
-strength ratio in the conservative coupon screen. All finite peaks are retained.
-No Rev F candidate is being recommended for printing as a qualified design.
-[Full numerical context and saved fields](analysis/rev-f/README.md).
+![Sections through actual Rev G body and three modifier meshes](designs/rev-g/modifier-layout.png)
 
-**Next sprint:** implement a seeded, reproducible evolutionary search over walls,
-skins, plane shapes and local reinforcement; rank with actual Orca volume and
-reject candidates that fail the serviceability, 3D strength or manufacturing
-checks. [Scope and completion criteria](NEXT-SPRINT.md).
+The genetic optimizer is implemented. Two broad-family seeds and a second
+family informed by 3D failures were run; two cached search replays reproduced
+the complete ledgers exactly. Four uncached physics cases match the canonical
+solver. Actual Orca checks verify modifier roles, alignment and nonprinting
+tabs. [Full evidence and reproduction commands](analysis/rev-g/README.md).
+
+![Genetic search progress and estimated mass/movement frontier](analysis/rev-g/search-frontier.png)
+
+**What limits the design:** the full-plane candidate's raw tensile peak rises
+from 32.29 to 55.05 MPa with mesh refinement, above the 10.125 MPa nominal
+screen. The fine peak is adjacent to a preserved exterior forearm chamfer.
+All finite cells are retained; this is not a converged rupture prediction.
+The next study addresses that local geometry/material-model uncertainty before
+further mass optimization. [Stress evidence](analysis/rev-g/README.md#mesh-refinement-and-the-limiting-mechanism)
+· [Next study scope](NEXT-SPRINT.md).
 
 ---
 

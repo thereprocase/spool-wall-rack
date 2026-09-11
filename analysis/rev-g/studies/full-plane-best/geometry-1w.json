@@ -1,0 +1,32 @@
+{
+  "revision": "G",
+  "parameters": {
+    "seat_webs": true,
+    "infill_percent": 5,
+    "walls": 1,
+    "skin_mm": 1.0,
+    "plane_mm": 1.0,
+    "planes": "full",
+    "bottom_band": 1.6,
+    "diagonal_band": 1.8,
+    "seat_band": 5.0,
+    "front_seat_band": 2.0,
+    "rib_frame": 4.0,
+    "lower_tunnel_collar_mm": 3.5,
+    "upper_tunnel_collar_mm": 2.5,
+    "window_scale": 0.9,
+    "name": "g-full-plane-best"
+  },
+  "layout_sha256": "0bcbaa0434e0784d273bebdba099447ffce709d22bd0afcf70ad812823fbf1a7",
+  "body_STEP_sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+  "effective_wall_mm": 0.42,
+  "volume_mm3": 70226.38384248449,
+  "valid": true,
+  "solid_count": 1,
+  "cleanup": {
+    "faces_before": 10402,
+    "faces_after": 6279,
+    "volume_change_mm3": 3.468923387117684e-05
+  },
+  "model": "Finished E13 perimeter/chamfer/tunnel guards intersected with Rev G body; new window collars and full-width dense regions; two full internal 1 mm planes and 1 mm broad skins; zero sparse-infill credit."
+}

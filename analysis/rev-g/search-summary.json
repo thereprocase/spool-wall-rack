@@ -1,0 +1,106 @@
+{
+  "unique_parameter_sets_all_runs": 1458,
+  "runs": [
+    {
+      "run": "seed-20260910-h2",
+      "seed": 20260910,
+      "population_size": 32,
+      "generations": 20,
+      "search_signature": "4955d02bc617bfdd62c483e40855a4d0d6cba855f963180a53c2a7497de19049",
+      "unique_evaluated_in_run": 590,
+      "candidate_status_counts": {
+        "SCREEN_FEASIBLE": 455,
+        "SCREEN_REJECTED": 135
+      },
+      "best_candidate_id": "82e88fcf29749880c5c3",
+      "best_parameters": {
+        "seat_webs": true,
+        "infill_percent": 5,
+        "walls": 1,
+        "skin_mm": 1.0,
+        "plane_mm": 0.8,
+        "planes": "shaped",
+        "bottom_band": 1.8,
+        "diagonal_band": 1.8,
+        "seat_band": 2.5,
+        "front_seat_band": 2.0,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 1.0,
+        "upper_tunnel_collar_mm": 1.5,
+        "window_scale": 1.0
+      },
+      "best_mass_proxy_g": 78.00781586500584,
+      "best_screen_front_mm": 3.9412010047304236,
+      "best_screen_raw_tensile_MPa": 8.386380433004305,
+      "generation_ledger_sha256": "a46b1d7bcb59e20ada9e22a4fe236495c1b94ce62edc797fe8bd1f0412afa22a"
+    },
+    {
+      "run": "seed-20260911-h2",
+      "seed": 20260911,
+      "population_size": 32,
+      "generations": 20,
+      "search_signature": "4955d02bc617bfdd62c483e40855a4d0d6cba855f963180a53c2a7497de19049",
+      "unique_evaluated_in_run": 584,
+      "candidate_status_counts": {
+        "SCREEN_FEASIBLE": 442,
+        "SCREEN_REJECTED": 142
+      },
+      "best_candidate_id": "f5e32d9b1f5341aadd63",
+      "best_parameters": {
+        "seat_webs": true,
+        "infill_percent": 5,
+        "walls": 1,
+        "skin_mm": 0.8,
+        "plane_mm": 0.6,
+        "planes": "shaped",
+        "bottom_band": 2.2,
+        "diagonal_band": 2.2,
+        "seat_band": 2.5,
+        "front_seat_band": 2.0,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 2.0,
+        "upper_tunnel_collar_mm": 0.5,
+        "window_scale": 1.0
+      },
+      "best_mass_proxy_g": 76.89036642065552,
+      "best_screen_front_mm": 3.9896261033542357,
+      "best_screen_raw_tensile_MPa": 10.054596730155756,
+      "generation_ledger_sha256": "b5f6f0416941a4957ff846f4891dcc5ffa991c8f247e1376654e27ee073abc29"
+    },
+    {
+      "run": "3d-feedback-seed-20260912-h2",
+      "seed": 20260912,
+      "population_size": 24,
+      "generations": 14,
+      "search_signature": "0f3e90d9fffec45f4504cb0fabe0af9d2a04c71a5704c0cf72de59c4a20f96cd",
+      "unique_evaluated_in_run": 291,
+      "candidate_status_counts": {
+        "SCREEN_FEASIBLE": 245,
+        "SCREEN_REJECTED": 46
+      },
+      "best_candidate_id": "213f8c56151ddee40d51",
+      "best_parameters": {
+        "seat_webs": true,
+        "infill_percent": 5,
+        "walls": 1,
+        "skin_mm": 1.0,
+        "plane_mm": 1.0,
+        "planes": "full",
+        "bottom_band": 1.6,
+        "diagonal_band": 1.8,
+        "seat_band": 5.0,
+        "front_seat_band": 2.0,
+        "rib_frame": 4.0,
+        "lower_tunnel_collar_mm": 3.5,
+        "upper_tunnel_collar_mm": 2.5,
+        "window_scale": 0.9
+      },
+      "best_mass_proxy_g": 99.00752156801391,
+      "best_screen_front_mm": 2.995582815731529,
+      "best_screen_raw_tensile_MPa": 6.679664152425518,
+      "generation_ledger_sha256": "13830412b787cc3ea9e1880944e083ade18491e0479cbe4fe71a1a3ab58c6f75"
+    }
+  ],
+  "scope": "Coarse plane-stress screening only; mass is a quadrature proxy, and SCREEN_FEASIBLE is not a 3D or printing qualification.",
+  "global_optimum_proven": false
+}

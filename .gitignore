@@ -45,3 +45,11 @@ __pycache__/
 
 # OrcaSlicer CLI writes a transient status file in its working directory.
 /result.json
+
+# Rev G evolutionary search caches and regenerable meshes.
+/analysis/rev-g/.work/
+/designs/rev-g/.work/
+/designs/rev-g/**/.work/
+/analysis/rev-g/*.brep
+/analysis/rev-g/*w-h*.npz
+!/analysis/rev-g/*-solution.npz

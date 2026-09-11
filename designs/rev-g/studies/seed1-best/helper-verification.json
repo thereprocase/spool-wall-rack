@@ -1,0 +1,90 @@
+{
+  "layout_sha256": "f5bbc47b6123a4284d8fef0b3ac8f7a2451dbad70a9bd504bf3840e2ebf2201f",
+  "parts": [
+    {
+      "name": "dense-chords-and-seats",
+      "z_min_mm": 0.0,
+      "z_max_mm": 24.0,
+      "valid": true,
+      "solid_count": 1,
+      "helper_volume_mm3": 70212.44392412557,
+      "body_intersection_mm3": 24284.651807113372,
+      "tab_body_intersection_mm3": 0.0,
+      "role": "100% infill modifier; never a printable part"
+    },
+    {
+      "name": "rib-plane-lower",
+      "z_min_mm": 7.800000000000001,
+      "z_max_mm": 8.600000000000001,
+      "valid": true,
+      "solid_count": 1,
+      "helper_volume_mm3": 5545.91835650791,
+      "body_intersection_mm3": 4047.818605178388,
+      "tab_body_intersection_mm3": 0.0,
+      "role": "100% infill modifier; never a printable part"
+    },
+    {
+      "name": "rib-plane-upper",
+      "z_min_mm": 15.399999999999999,
+      "z_max_mm": 16.2,
+      "valid": true,
+      "solid_count": 1,
+      "helper_volume_mm3": 5545.918356507919,
+      "body_intersection_mm3": 4047.2663347933535,
+      "tab_body_intersection_mm3": 0.0,
+      "role": "100% infill modifier; never a printable part"
+    }
+  ],
+  "delivered_STEP_solids": 4,
+  "STL_checks": [
+    {
+      "file": "dense-chords-and-seats.stl",
+      "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+      "weld_tolerance_mm": 5e-05,
+      "maximum_vertex_movement_mm": 0.0,
+      "input_boundary_edges": 0,
+      "output_boundary_edges": 0,
+      "connected_components": 1,
+      "input_triangles": 8294,
+      "output_triangles": 8294,
+      "signed_volume_change_mm3": 0.0,
+      "input_sha256": "efd88305ba50784423a75664ba2f0e5a4ef40be8f3ee15b570545d2fbd82ae4e",
+      "output_sha256": "436d4db68f2edaacb79c2e10b93830a65fd8e4e4b4d058fdc63e4635c863610f",
+      "closed_after_roundtrip": true,
+      "STEP_modified": false
+    },
+    {
+      "file": "rib-plane-lower.stl",
+      "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+      "weld_tolerance_mm": 5e-05,
+      "maximum_vertex_movement_mm": 0.0,
+      "input_boundary_edges": 0,
+      "output_boundary_edges": 0,
+      "connected_components": 1,
+      "input_triangles": 4460,
+      "output_triangles": 4460,
+      "signed_volume_change_mm3": 0.0,
+      "input_sha256": "4da4be676432e19f6e672bf3ae7b6106211f41c7fc2fc67a75a62bda6c53ccdd",
+      "output_sha256": "84735c76cacdde14a818ec20d18d6b607e0ce7bfe9c720c24ec7fc8e2eecb2c4",
+      "closed_after_roundtrip": true,
+      "STEP_modified": false
+    },
+    {
+      "file": "rib-plane-upper.stl",
+      "method": "weld near-coincident vertices and discard collapsed triangles; no hole filling",
+      "weld_tolerance_mm": 5e-05,
+      "maximum_vertex_movement_mm": 0.0,
+      "input_boundary_edges": 0,
+      "output_boundary_edges": 0,
+      "connected_components": 1,
+      "input_triangles": 4460,
+      "output_triangles": 4460,
+      "signed_volume_change_mm3": 0.0,
+      "input_sha256": "2d4ee8bdea265c70659727ce7142b8f477eeb0e58007b277bdc1acbe7d476abb",
+      "output_sha256": "9bfd6b24d321a5452870df3d5fecd3b937475e5ef58e3ef071bf577bc6cbcc22",
+      "closed_after_roundtrip": true,
+      "STEP_modified": false
+    }
+  ],
+  "note": "STEP encodes geometry and names, not slicer behavior. The model-only 3MF supplies modifier roles."
+}

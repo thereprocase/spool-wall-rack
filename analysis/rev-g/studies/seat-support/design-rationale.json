@@ -1,0 +1,13 @@
+{
+  "parent_candidate": "213f8c56151ddee40d51",
+  "change": {
+    "seat_band_mm": {
+      "from": 5,
+      "to": 8
+    }
+  },
+  "trigger": "Raw 3D principal stress 32.2901 MPa at X109.15 Y-2.66 Z20.73, immediately beyond dense inner-seat region.",
+  "purpose": "Move the density transition beyond the shoulder while retaining the same exterior and other parameters.",
+  "selection_method": "Targeted 3D feedback perturbation; not a new genetic optimum.",
+  "body_reuse": "Identical window_scale 0.9; copied source STEP/STLs unchanged."
+}

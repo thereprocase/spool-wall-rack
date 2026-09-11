@@ -1,0 +1,36 @@
+{
+  "revision": "G",
+  "valid_body": true,
+  "body_solid_count": 1,
+  "source_E13_STEP_sha256": "1ad58a235ff095b0d7fc581318630d07eb878d440193612e16e687946f18ee88",
+  "source_window_parameters": {
+    "seat_webs": true,
+    "infill_percent": 5,
+    "walls": 1,
+    "skin_mm": 1.0,
+    "plane_mm": 1.0,
+    "planes": "full",
+    "bottom_band": 1.6,
+    "diagonal_band": 1.8,
+    "seat_band": 5.0,
+    "front_seat_band": 2.0,
+    "rib_frame": 4.0,
+    "lower_tunnel_collar_mm": 3.5,
+    "upper_tunnel_collar_mm": 2.5,
+    "window_scale": 0.9,
+    "name": "g-full-plane-best"
+  },
+  "original_CAD_volume_mm3": 267017.69726107037,
+  "body_CAD_volume_mm3": 238024.85688672814,
+  "new_window_chamfer_inset_mm": 0.6,
+  "new_window_chamfer_angle_deg": 50,
+  "body_print_bounds_mm": [
+    42.492999999999604,
+    5.999999999999994,
+    -1.0000000810809752e-07,
+    250.00000000000003,
+    225.00000000000003,
+    24.000000100000012
+  ],
+  "note": "CAD envelope volume is not printed volume. Only the two specified angular windows and their mouth chamfers are removed."
+}

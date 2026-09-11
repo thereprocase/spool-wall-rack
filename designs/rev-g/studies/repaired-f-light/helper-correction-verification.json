@@ -1,0 +1,10 @@
+{
+  "source_failed_F_helper_sha256": "82a8040287ae4d3d69ee8f20e0638d6966308b349798f484c714a18160a10d6d",
+  "corrected_G_helper_sha256": "21b85690e2cc5aded65afcca4df58b19af7cced78936cd58553ff99a1ca54341",
+  "body_intersection_original_mm3": 30712.88461419303,
+  "body_intersection_corrected_mm3": 30712.884614265444,
+  "removed_body_material_mm3": 0.0,
+  "added_body_material_mm3": 0.0,
+  "same_printed_density_domain": true,
+  "correction": "Extend the modifier saddle through air, capped to 24 mm width; slicer clips to the unchanged body. Removes unnecessary enclosed selection-helper shells without changing body material."
+}

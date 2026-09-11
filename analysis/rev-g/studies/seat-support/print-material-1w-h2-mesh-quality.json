@@ -1,0 +1,15 @@
+{
+  "input_tetrahedra": 220204,
+  "removed_numerically_degenerate_cells": 0,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 0.0,
+  "total_absolute_volume_mm3": 73934.18770241248,
+  "minimum_retained_normalized_determinant": 7.0759160103597e-09,
+  "gmsh_3d_algorithm": 1,
+  "gmsh_2d_algorithm": 6,
+  "source_BREP": "seat-support/print-material-clean-1w.brep",
+  "source_revision": "G",
+  "maximum_mesh_size_mm": 2.0,
+  "CAD_volume_mm3": 73934.1877280928,
+  "relative_mesh_CAD_volume_error": 3.4734026765903536e-10
+}

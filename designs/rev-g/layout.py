@@ -1,0 +1,101 @@
+"""Shared planar Rev G layout in installed X/Y, with Z across the 24 mm width."""
+from pathlib import Path
+import hashlib,json,re,xml.etree.ElementTree as ET
+import numpy as np
+from shapely.geometry import Polygon, Point, LineString, box
+from shapely import union_all, affinity
+from functools import lru_cache
+
+BASELINE_REVISION='E13'
+WIDTH=24.0
+PLATE_BANDS=[(0.,1.2),(7.6,8.8),(15.2,16.4),(22.8,24.)]
+WINDOW_CHAMFER_INSET=.6
+WINDOW_CHAMFER_RISE=WINDOW_CHAMFER_INSET*np.tan(np.deg2rad(50))
+
+def plate_bands(params):
+    skin=params.get('skin_mm',1.2);plane=params.get('plane_mm',1.2)
+    a=float(np.floor((8.2-plane/2)/.2+.5+1e-9)*.2);b=a+plane
+    return [(0.,skin),(a,b),(24-b,24-a),(24-skin,24.)]
+
+def outline():
+    root=Path(__file__).resolve().parents[2]
+    svg=ET.parse(root/'designs/closed-wall-e13/profile.svg').getroot()
+    text=svg.find('{http://www.w3.org/2000/svg}path').attrib['d']
+    return Polygon([(float(x),-float(y)) for x,y in re.findall(r'([-+\d.eE]+),([-+\d.eE]+)',text)]).simplify(.005,preserve_topology=True)
+
+def smooth_window(points,radius=2.0):
+    polygon=Polygon(points)
+    return polygon.buffer(-radius,quad_segs=8).buffer(radius,quad_segs=8)
+
+def windows(params):
+    shapes=[smooth_window([(7,-18),(51,-22),(20,23)]),
+            smooth_window([(123,-11),(164,-4),(176,-18),(143,-23)])]
+    scale=params.get('window_scale',1.0)
+    shapes=[affinity.scale(p,xfact=scale,yfact=scale,origin='centroid') for p in shapes]
+    if params.get('upper_window',False):
+        shapes.append(smooth_window([(5,72),(15,72),(9,100),(9,140),(5,145)],1.0))
+    return union_all(shapes) if scale>0 else Polygon()
+
+def windows_at_z(params,z):
+    base=windows(params)
+    depth=min(z,WIDTH-z)
+    d=WINDOW_CHAMFER_INSET*max(0,1-depth/WINDOW_CHAMFER_RISE)
+    return base.buffer(d,quad_segs=8) if d>0 else base
+
+def dense_region(outline,params):
+    # Dense collars and the lower/diagonal chords join, with rounded in-plane ends.
+    bottom=outline.difference(outline.buffer(-params.get('bottom_band',4.0),quad_segs=8))
+    bottom=bottom.intersection(box(-1,-60,210,-19))
+    diagonal=outline.difference(outline.buffer(-params.get('diagonal_band',4.0),quad_segs=8))
+    diagonal=diagonal.intersection(box(12,-9,77,54))
+    rear=Point(90,0).buffer(13+params.get('seat_band',7.0),quad_segs=48).intersection(box(64,-40,116,4))
+    front=Point(190,12).buffer(13+params.get('front_seat_band',3.0),quad_segs=48).intersection(box(167,-30,210,13))
+    lands=union_all([box(-1,y-12,7,y+12) for y in [40,164]])
+    rims=windows(params).buffer(params.get('window_rim',0),quad_segs=8) if params.get('window_rim',0)>0 else Polygon()
+    region=union_all([bottom,diagonal,rear,front,lands,rims])
+    return region.intersection(outline)
+
+@lru_cache(maxsize=64)
+def tunnel_collar_profile(y,thickness):
+    # Same Y/Z access profile as E13, expressed without a CAD dependency for screens.
+    r=8.;z=12.;d=r/np.sqrt(2)
+    circle=Point(y,z).buffer(r,quad_segs=24)
+    roof=Polygon([(y-d,z+d),(y+d,z+d),(y,z+r*np.sqrt(2))])
+    shape=circle.union(roof).intersection(box(y-r-1,-1,y+r+1,22.4))
+    shape=shape.buffer(-.6,quad_segs=12).buffer(.6,quad_segs=12).union(circle)
+    return shape.buffer(thickness,quad_segs=8)
+
+def tunnel_saddles(params):
+    result=[]
+    for label,y,length in [('lower',40,50),('upper',164,25)]:
+        t=params.get(label+'_tunnel_collar_mm',0)
+        if t>0:result.append((label,tunnel_collar_profile(y,t),length))
+    return result
+
+def dense_at_z(outline,params,z):
+    regions=[dense_region(outline,params)]
+    for label,profile,length in tunnel_saddles(params):
+        section=profile.intersection(LineString([(0,z),(200,z)]))
+        if not section.is_empty:
+            y0,_,y1,_=section.bounds;regions.append(box(0,y0,length,y1))
+    return union_all(regions).intersection(outline)
+
+def rib_plane_region(outline,params):
+    if params.get('planes','full')=='full':return outline
+    frame=outline.difference(outline.buffer(-params.get('rib_frame',6),quad_segs=8))
+    rims=windows(params).buffer(params.get('rib_frame',6),quad_segs=8)
+    diagonals=union_all([
+        LineString([(9,-25),(63,1)]).buffer(2.0,quad_segs=8),
+        LineString([(116,-27),(172,0)]).buffer(2.0,quad_segs=8),
+        LineString([(8,55),(12,145)]).buffer(1.8,quad_segs=8),
+    ])
+    if params.get('seat_webs',False):
+        diagonals=diagonals.union(union_all([
+            LineString([(70,-5),(86,-37)]).buffer(3,quad_segs=8),
+            LineString([(108,-5),(98,-37)]).buffer(3,quad_segs=8),
+            LineString([(83,-15),(78,-37)]).buffer(2,quad_segs=8),
+        ]))
+    return union_all([frame,rims,diagonals,dense_region(outline,params)]).intersection(outline)
+
+def layout_hash(params):
+    return hashlib.sha256((Path(__file__).read_text(encoding='utf-8')+json.dumps(params,sort_keys=True)).encode()).hexdigest()

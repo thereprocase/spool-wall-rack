@@ -1,0 +1,777 @@
+{
+  "fields": [
+    {
+      "study": "seed1-best",
+      "mesh_h_mm": 2.0,
+      "raw_field": "analysis/rev-g/studies/seed1-best/print-material-1w-h2-solution.npz",
+      "raw_field_sha256": "3fad2e1e0900d698041b60945e16c49c2d6a14bb00548bd57d5ccabf786be924",
+      "nodes": 69328,
+      "tetrahedra": 211989,
+      "E_reference_MPa": 1000.0,
+      "load_reference_kg": 12.0,
+      "front_vertical_movement_mm": 4.929884100935147,
+      "front_translation_vector_mm": [
+        1.0122687858762776,
+        -4.929884100935147,
+        -0.09669116901460159
+      ],
+      "rear_translation_vector_mm": [
+        0.10502521500885394,
+        -0.6406673533991045,
+        -0.06561447807433435
+      ],
+      "maximum_seat_mean_translation_magnitude_mm": 5.033666111859028,
+      "remaining_of_5mm_total_translation_budget_mm": -0.033666111859028014,
+      "proportional_1p25kg_spool_translation_proxy_mm": 0.5243402199853154,
+      "movement_gate_with_provisional_1mm_rail_mount_reserve": false,
+      "spool_increment_proxy_gate": true,
+      "raw_peak_tensile_MPa": 120.46400337752169,
+      "raw_peak_center_mm": [
+        40.75070392822237,
+        34.346076176907495,
+        17.6597089300855
+      ],
+      "raw_peak_cell_volume_mm3": 3.339635949004941e-07,
+      "raw_peak_40p5MPa_coupon_strength_ratio": 0.3362000171377104,
+      "passes_nominal_4x_fracture_screen": false,
+      "material_volume_above_10p125MPa_mm3": 10.224457435980833,
+      "top_12_finite_tensile_cells": [
+        {
+          "tensile_MPa": 120.46400337752169,
+          "center_mm": [
+            40.75070392822237,
+            34.346076176907495,
+            17.6597089300855
+          ],
+          "volume_mm3": 3.339635949004941e-07
+        },
+        {
+          "tensile_MPa": 48.04856320362457,
+          "center_mm": [
+            33.066935743427095,
+            39.57489716883159,
+            3.5141841320311955
+          ],
+          "volume_mm3": 0.00015108660930587362
+        },
+        {
+          "tensile_MPa": 44.74448938099219,
+          "center_mm": [
+            35.16325715345374,
+            -30.728908476926257,
+            0.8365738830485001
+          ],
+          "volume_mm3": 0.00012221727430050054
+        },
+        {
+          "tensile_MPa": 43.074945791956196,
+          "center_mm": [
+            34.125199113105126,
+            40.686155215610896,
+            3.5312944092836975
+          ],
+          "volume_mm3": 0.0002039862188368824
+        },
+        {
+          "tensile_MPa": 42.18615886148267,
+          "center_mm": [
+            35.16325715345374,
+            -30.728908476926257,
+            23.163426116951502
+          ],
+          "volume_mm3": 0.00012221727430037287
+        },
+        {
+          "tensile_MPa": 40.87546561864505,
+          "center_mm": [
+            36.027554272879804,
+            38.47091274935825,
+            3.642268516992528
+          ],
+          "volume_mm3": 0.0001842664906975093
+        },
+        {
+          "tensile_MPa": 40.16205070944008,
+          "center_mm": [
+            72.96452738624058,
+            -0.0867841075277838,
+            8.0
+          ],
+          "volume_mm3": 0.0025454118959833036
+        },
+        {
+          "tensile_MPa": 40.066784110204296,
+          "center_mm": [
+            34.77186571930059,
+            32.136360600585036,
+            7.6298581042799976
+          ],
+          "volume_mm3": 0.0003547409052524777
+        },
+        {
+          "tensile_MPa": 38.348557967547706,
+          "center_mm": [
+            73.04651753574908,
+            -0.20610802292369373,
+            8.400000000000006
+          ],
+          "volume_mm3": 0.0012281079207245769
+        },
+        {
+          "tensile_MPa": 37.333093517851026,
+          "center_mm": [
+            36.68777927251658,
+            32.136360600585036,
+            7.6298581042799976
+          ],
+          "volume_mm3": 0.0003547409052524777
+        },
+        {
+          "tensile_MPa": 36.76585923319716,
+          "center_mm": [
+            72.93938824846643,
+            -0.07943451247152031,
+            16.0
+          ],
+          "volume_mm3": 0.0025454118959833006
+        },
+        {
+          "tensile_MPa": 36.67051409456316,
+          "center_mm": [
+            73.04658330817695,
+            -0.19323318356578248,
+            15.600000000000005
+          ],
+          "volume_mm3": 0.0012281079207245753
+        }
+      ],
+      "sliced_volume_cm3": 68.02,
+      "sliced_mass_g_at_1p24": 84.35,
+      "toolpath_status": "FAIL: nominal footprint coverage",
+      "load_compliance_Nmm_at_E1000": 285.1548674659996,
+      "reference_load_per_vertical_movement_per_gram_N_per_mm_g": 0.28309256090845153,
+      "numerical_gates_pass": true,
+      "physical_qualification": false,
+      "limitations": "Isotropic ideal printed-material model; zero sparse-infill stiffness. Seat translation is modeled, rail/mount reserve is provisional, and spool increment is proportional to the same load pattern. Coupon strength is not a tested part allowable. All finite stress cells retained."
+    },
+    {
+      "study": "full-plane-best",
+      "mesh_h_mm": 1.0,
+      "raw_field": "analysis/rev-g/studies/full-plane-best/print-material-1w-h1-solution.npz",
+      "raw_field_sha256": "4461f6fd9cf25691afbf1652fabeea5a1076692b2f811f9699eafa2c9737c260",
+      "nodes": 209919,
+      "tetrahedra": 691297,
+      "E_reference_MPa": 1000.0,
+      "load_reference_kg": 12.0,
+      "front_vertical_movement_mm": 3.245751241230569,
+      "front_translation_vector_mm": [
+        0.627725283230559,
+        -3.245751241230569,
+        -0.054829892630252675
+      ],
+      "rear_translation_vector_mm": [
+        0.024883258398962382,
+        -0.44201892887376243,
+        -0.037646525804492355
+      ],
+      "maximum_seat_mean_translation_magnitude_mm": 3.3063494171491477,
+      "remaining_of_5mm_total_translation_budget_mm": 1.6936505828508523,
+      "proportional_1p25kg_spool_translation_proxy_mm": 0.3444113976197029,
+      "movement_gate_with_provisional_1mm_rail_mount_reserve": true,
+      "spool_increment_proxy_gate": true,
+      "raw_peak_tensile_MPa": 55.04696702358847,
+      "raw_peak_center_mm": [
+        144.84294318449167,
+        -30.696938841432306,
+        23.199943787701145
+      ],
+      "raw_peak_cell_volume_mm3": 5.2495667206689804e-05,
+      "raw_peak_40p5MPa_coupon_strength_ratio": 0.7357353581832243,
+      "passes_nominal_4x_fracture_screen": false,
+      "material_volume_above_10p125MPa_mm3": 0.20153948171928734,
+      "top_12_finite_tensile_cells": [
+        {
+          "tensile_MPa": 55.04696702358847,
+          "center_mm": [
+            144.84294318449167,
+            -30.696938841432306,
+            23.199943787701145
+          ],
+          "volume_mm3": 5.2495667206689804e-05
+        },
+        {
+          "tensile_MPa": 49.975869364418834,
+          "center_mm": [
+            144.84294318449167,
+            -30.696938841432306,
+            0.8000562122988548
+          ],
+          "volume_mm3": 5.249566720669562e-05
+        },
+        {
+          "tensile_MPa": 38.37289795239731,
+          "center_mm": [
+            35.17722022467416,
+            -30.705641107170216,
+            0.8070934099475422
+          ],
+          "volume_mm3": 5.4950093149832344e-05
+        },
+        {
+          "tensile_MPa": 38.22734399526735,
+          "center_mm": [
+            35.17722022467416,
+            -30.705641107170216,
+            23.19290659005246
+          ],
+          "volume_mm3": 5.495009314982364e-05
+        },
+        {
+          "tensile_MPa": 34.73443113220098,
+          "center_mm": [
+            109.5299372542433,
+            -2.7129483640669925,
+            6.558985557865214
+          ],
+          "volume_mm3": 3.5051697819379524e-05
+        },
+        {
+          "tensile_MPa": 33.756864068258025,
+          "center_mm": [
+            108.8516020443613,
+            -3.69375766251478,
+            23.474744860986586
+          ],
+          "volume_mm3": 6.198777859258449e-05
+        },
+        {
+          "tensile_MPa": 31.734583136161685,
+          "center_mm": [
+            108.9195929289948,
+            -2.6208114077393545,
+            9.412317303008768
+          ],
+          "volume_mm3": 3.5858916173164834e-05
+        },
+        {
+          "tensile_MPa": 27.67208274804455,
+          "center_mm": [
+            109.52993725424328,
+            -2.712948364066992,
+            17.441014442134787
+          ],
+          "volume_mm3": 3.5051697819379456e-05
+        },
+        {
+          "tensile_MPa": 27.62851304242186,
+          "center_mm": [
+            109.9038484843491,
+            -2.7417819493280717,
+            6.333323975674811
+          ],
+          "volume_mm3": 3.11546054109023e-05
+        },
+        {
+          "tensile_MPa": 26.284057235858434,
+          "center_mm": [
+            108.91959292899492,
+            -2.6208114077393545,
+            10.285714285714286
+          ],
+          "volume_mm3": 3.5858916173097756e-05
+        },
+        {
+          "tensile_MPa": 24.554553697730235,
+          "center_mm": [
+            109.89699714173058,
+            -2.7414792752464465,
+            9.371428571428572
+          ],
+          "volume_mm3": 3.1558974316380964e-05
+        },
+        {
+          "tensile_MPa": 24.09152409665283,
+          "center_mm": [
+            108.90388292053942,
+            -3.5232293641029497,
+            23.124748866212574
+          ],
+          "volume_mm3": 3.1214182531130296e-05
+        }
+      ],
+      "sliced_volume_cm3": 83.68,
+      "sliced_mass_g_at_1p24": 103.76,
+      "toolpath_status": "PASS",
+      "load_compliance_Nmm_at_E1000": 190.01858400705288,
+      "reference_load_per_vertical_movement_per_gram_N_per_mm_g": 0.3495465809653657,
+      "numerical_gates_pass": true,
+      "physical_qualification": false,
+      "limitations": "Isotropic ideal printed-material model; zero sparse-infill stiffness. Seat translation is modeled, rail/mount reserve is provisional, and spool increment is proportional to the same load pattern. Coupon strength is not a tested part allowable. All finite stress cells retained."
+    },
+    {
+      "study": "full-plane-best",
+      "mesh_h_mm": 1.5,
+      "raw_field": "analysis/rev-g/studies/full-plane-best/print-material-1w-h1.5-solution.npz",
+      "raw_field_sha256": "fa7389cbfae167ac3655708be9f0752e8073e76db08a006558b5ce308ce449ae",
+      "nodes": 104734,
+      "tetrahedra": 322730,
+      "E_reference_MPa": 1000.0,
+      "load_reference_kg": 12.0,
+      "front_vertical_movement_mm": 3.1669891896146343,
+      "front_translation_vector_mm": [
+        0.6067712353056323,
+        -3.1669891896146343,
+        -0.04944529170553338
+      ],
+      "rear_translation_vector_mm": [
+        0.02170738835135964,
+        -0.42243190682325094,
+        -0.03209473733000414
+      ],
+      "maximum_seat_mean_translation_magnitude_mm": 3.2249708054495816,
+      "remaining_of_5mm_total_translation_budget_mm": 1.7750291945504184,
+      "proportional_1p25kg_spool_translation_proxy_mm": 0.33593445890099805,
+      "movement_gate_with_provisional_1mm_rail_mount_reserve": true,
+      "spool_increment_proxy_gate": true,
+      "raw_peak_tensile_MPa": 37.98697225611571,
+      "raw_peak_center_mm": [
+        144.886602670195,
+        -30.96587260121502,
+        1.1252695475574999
+      ],
+      "raw_peak_cell_volume_mm3": 7.782346096338047e-05,
+      "raw_peak_40p5MPa_coupon_strength_ratio": 1.0661549893195212,
+      "passes_nominal_4x_fracture_screen": false,
+      "material_volume_above_10p125MPa_mm3": 0.07460294150695819,
+      "top_12_finite_tensile_cells": [
+        {
+          "tensile_MPa": 37.98697225611571,
+          "center_mm": [
+            144.886602670195,
+            -30.96587260121502,
+            1.1252695475574999
+          ],
+          "volume_mm3": 7.782346096338047e-05
+        },
+        {
+          "tensile_MPa": 36.50240646064163,
+          "center_mm": [
+            3.3126716926922533,
+            32.94467962149389,
+            8.272114502871363
+          ],
+          "volume_mm3": 4.833431884121586e-06
+        },
+        {
+          "tensile_MPa": 32.61622895090645,
+          "center_mm": [
+            144.886602670195,
+            -30.96587260121501,
+            22.874730452442503
+          ],
+          "volume_mm3": 7.782346096335255e-05
+        },
+        {
+          "tensile_MPa": 27.827007663050374,
+          "center_mm": [
+            3.2926044475738183,
+            34.26037844760351,
+            17.611016654611966
+          ],
+          "volume_mm3": 4.308399352750264e-07
+        },
+        {
+          "tensile_MPa": 26.775654039691645,
+          "center_mm": [
+            35.149692553018745,
+            -30.97964489880751,
+            1.1358268685467505
+          ],
+          "volume_mm3": 8.147818286695494e-05
+        },
+        {
+          "tensile_MPa": 26.543040366943238,
+          "center_mm": [
+            95.51900504798456,
+            -12.137131956472405,
+            22.01287297513077
+          ],
+          "volume_mm3": 4.318280518884714e-06
+        },
+        {
+          "tensile_MPa": 22.52352538520737,
+          "center_mm": [
+            95.4554610760176,
+            -11.98301866808722,
+            2.1855037558597887
+          ],
+          "volume_mm3": 4.285162528989243e-07
+        },
+        {
+          "tensile_MPa": 21.814363578240272,
+          "center_mm": [
+            35.149692553018745,
+            -30.979644898807507,
+            22.864173131453253
+          ],
+          "volume_mm3": 8.147818286690937e-05
+        },
+        {
+          "tensile_MPa": 21.00052528450673,
+          "center_mm": [
+            109.03527414909269,
+            -3.216794814660175,
+            1.1716042209811397
+          ],
+          "volume_mm3": 2.1530954233945982e-05
+        },
+        {
+          "tensile_MPa": 16.59399502015483,
+          "center_mm": [
+            3.202034003433569,
+            34.327634356031396,
+            6.13139435574009
+          ],
+          "volume_mm3": 6.6945772302401025e-06
+        },
+        {
+          "tensile_MPa": 15.068547225260408,
+          "center_mm": [
+            3.3440559420150295,
+            33.00246585012984,
+            15.835941980601712
+          ],
+          "volume_mm3": 0.000702721694669899
+        },
+        {
+          "tensile_MPa": 14.715569387079727,
+          "center_mm": [
+            204.74648338109085,
+            9.314440779178728,
+            0.008325068411427649
+          ],
+          "volume_mm3": 3.0677415684435405e-08
+        }
+      ],
+      "sliced_volume_cm3": 83.68,
+      "sliced_mass_g_at_1p24": 103.76,
+      "toolpath_status": "PASS",
+      "load_compliance_Nmm_at_E1000": 185.36149334636707,
+      "reference_load_per_vertical_movement_per_gram_N_per_mm_g": 0.35823969742514045,
+      "numerical_gates_pass": true,
+      "physical_qualification": false,
+      "limitations": "Isotropic ideal printed-material model; zero sparse-infill stiffness. Seat translation is modeled, rail/mount reserve is provisional, and spool increment is proportional to the same load pattern. Coupon strength is not a tested part allowable. All finite stress cells retained."
+    },
+    {
+      "study": "full-plane-best",
+      "mesh_h_mm": 2.0,
+      "raw_field": "analysis/rev-g/studies/full-plane-best/print-material-1w-h2-solution.npz",
+      "raw_field_sha256": "b53980510c52f91c01147e86a7c69fe11602a27e2ea60709e68c88bfdac58e97",
+      "nodes": 68129,
+      "tetrahedra": 214688,
+      "E_reference_MPa": 1000.0,
+      "load_reference_kg": 12.0,
+      "front_vertical_movement_mm": 3.1277766612118296,
+      "front_translation_vector_mm": [
+        0.5982730122712155,
+        -3.1277766612118296,
+        -0.09181171624610024
+      ],
+      "rear_translation_vector_mm": [
+        0.01957004287102491,
+        -0.4251136193536909,
+        -0.053496823131061674
+      ],
+      "maximum_seat_mean_translation_magnitude_mm": 3.185803953615719,
+      "remaining_of_5mm_total_translation_budget_mm": 1.8141960463842808,
+      "proportional_1p25kg_spool_translation_proxy_mm": 0.3318545785016374,
+      "movement_gate_with_provisional_1mm_rail_mount_reserve": true,
+      "spool_increment_proxy_gate": true,
+      "raw_peak_tensile_MPa": 32.29010845467178,
+      "raw_peak_center_mm": [
+        109.14982641276129,
+        -2.661472461990314,
+        20.731744618783893
+      ],
+      "raw_peak_cell_volume_mm3": 5.323609283679922e-06,
+      "raw_peak_40p5MPa_coupon_strength_ratio": 1.254254071548044,
+      "passes_nominal_4x_fracture_screen": false,
+      "material_volume_above_10p125MPa_mm3": 0.008787045178958001,
+      "top_12_finite_tensile_cells": [
+        {
+          "tensile_MPa": 32.29010845467178,
+          "center_mm": [
+            109.14982641276129,
+            -2.661472461990314,
+            20.731744618783893
+          ],
+          "volume_mm3": 5.323609283679922e-06
+        },
+        {
+          "tensile_MPa": 30.283539390387077,
+          "center_mm": [
+            109.0842731404633,
+            -2.6518260190215717,
+            20.751393616939442
+          ],
+          "volume_mm3": 3.144486516372341e-06
+        },
+        {
+          "tensile_MPa": 27.738308856899337,
+          "center_mm": [
+            109.10282641276132,
+            -2.654556211990314,
+            20.74266783420759
+          ],
+          "volume_mm3": 5.4193448374030046e-06
+        },
+        {
+          "tensile_MPa": 26.62894799758378,
+          "center_mm": [
+            109.1263264127613,
+            -2.658014336990314,
+            20.735193427445914
+          ],
+          "volume_mm3": 5.375040077933566e-06
+        },
+        {
+          "tensile_MPa": 22.746539979164048,
+          "center_mm": [
+            109.08427314046331,
+            -2.6518260190215717,
+            3.248606383060565
+          ],
+          "volume_mm3": 3.1444865163723006e-06
+        },
+        {
+          "tensile_MPa": 21.420967486657602,
+          "center_mm": [
+            109.10282641276129,
+            -2.654556211990314,
+            3.2573321657924073
+          ],
+          "volume_mm3": 5.419344837402987e-06
+        },
+        {
+          "tensile_MPa": 20.642713975505558,
+          "center_mm": [
+            108.61331709635444,
+            -3.269001576454952,
+            0.9997970957780358
+          ],
+          "volume_mm3": 3.394879347578897e-07
+        },
+        {
+          "tensile_MPa": 17.517356461825244,
+          "center_mm": [
+            108.63006616789438,
+            -3.294328345405283,
+            0.9977482225966303
+          ],
+          "volume_mm3": 2.407065633106596e-07
+        },
+        {
+          "tensile_MPa": 16.72300919183107,
+          "center_mm": [
+            108.63211867704888,
+            -3.274990736185072,
+            0.9990646755843711
+          ],
+          "volume_mm3": 2.815840161093707e-07
+        },
+        {
+          "tensile_MPa": 16.285162627210546,
+          "center_mm": [
+            109.1263264127613,
+            -2.658014336990314,
+            3.26480657255408
+          ],
+          "volume_mm3": 5.37504007793362e-06
+        },
+        {
+          "tensile_MPa": 16.073060497672756,
+          "center_mm": [
+            108.6932182635054,
+            -2.7682219011153797,
+            22.77477140018646
+          ],
+          "volume_mm3": 5.7875911670618464e-05
+        },
+        {
+          "tensile_MPa": 15.38717684510058,
+          "center_mm": [
+            109.14982641276129,
+            -2.661472461990314,
+            3.2682553812161173
+          ],
+          "volume_mm3": 5.323609283680296e-06
+        }
+      ],
+      "sliced_volume_cm3": 83.68,
+      "sliced_mass_g_at_1p24": 103.76,
+      "toolpath_status": "PASS",
+      "load_compliance_Nmm_at_E1000": 182.90722271569845,
+      "reference_load_per_vertical_movement_per_gram_N_per_mm_g": 0.3627309018274563,
+      "numerical_gates_pass": true,
+      "physical_qualification": false,
+      "limitations": "Isotropic ideal printed-material model; zero sparse-infill stiffness. Seat translation is modeled, rail/mount reserve is provisional, and spool increment is proportional to the same load pattern. Coupon strength is not a tested part allowable. All finite stress cells retained."
+    },
+    {
+      "study": "seat-support",
+      "mesh_h_mm": 2.0,
+      "raw_field": "analysis/rev-g/studies/seat-support/print-material-1w-h2-solution.npz",
+      "raw_field_sha256": "8c546e4827ecc9dbce3c866f5b2403e590bcfa9282cea0812c7634626c495960",
+      "nodes": 69333,
+      "tetrahedra": 220204,
+      "E_reference_MPa": 1000.0,
+      "load_reference_kg": 12.0,
+      "front_vertical_movement_mm": 2.9882419346751337,
+      "front_translation_vector_mm": [
+        0.5580606783160608,
+        -2.9882419346751337,
+        -0.10511067402590567
+      ],
+      "rear_translation_vector_mm": [
+        0.008655725854047416,
+        -0.4119238159018548,
+        -0.05919675408713588
+      ],
+      "maximum_seat_mean_translation_magnitude_mm": 3.041721524832237,
+      "remaining_of_5mm_total_translation_budget_mm": 1.9582784751677629,
+      "proportional_1p25kg_spool_translation_proxy_mm": 0.3168459921700247,
+      "movement_gate_with_provisional_1mm_rail_mount_reserve": true,
+      "spool_increment_proxy_gate": true,
+      "raw_peak_tensile_MPa": 21.246239671976525,
+      "raw_peak_center_mm": [
+        110.95621627142725,
+        -2.4964714917448703,
+        2.38389324488885
+      ],
+      "raw_peak_cell_volume_mm3": 9.63938616138118e-07,
+      "raw_peak_40p5MPa_coupon_strength_ratio": 1.9062196711175625,
+      "passes_nominal_4x_fracture_screen": false,
+      "material_volume_above_10p125MPa_mm3": 0.003057475036125494,
+      "top_12_finite_tensile_cells": [
+        {
+          "tensile_MPa": 21.246239671976525,
+          "center_mm": [
+            110.95621627142725,
+            -2.4964714917448703,
+            2.38389324488885
+          ],
+          "volume_mm3": 9.63938616138118e-07
+        },
+        {
+          "tensile_MPa": 21.1372180992759,
+          "center_mm": [
+            110.95621627142725,
+            -2.4964714917448703,
+            21.61610675511115
+          ],
+          "volume_mm3": 9.63938616136948e-07
+        },
+        {
+          "tensile_MPa": 18.144210076122008,
+          "center_mm": [
+            110.942240320188,
+            -2.497773708902005,
+            2.383837484862405
+          ],
+          "volume_mm3": 3.834222507863399e-06
+        },
+        {
+          "tensile_MPa": 18.068197515869898,
+          "center_mm": [
+            110.94224032018799,
+            -2.497773708902005,
+            21.616162515137603
+          ],
+          "volume_mm3": 3.834222507905394e-06
+        },
+        {
+          "tensile_MPa": 14.48622607873007,
+          "center_mm": [
+            3.144231446885286,
+            34.601103059125286,
+            6.383108401843751
+          ],
+          "volume_mm3": 7.666930854058342e-06
+        },
+        {
+          "tensile_MPa": 13.692932310199534,
+          "center_mm": [
+            28.479871759348775,
+            46.717603367457066,
+            0.25000000000000006
+          ],
+          "volume_mm3": 1.241574118089692e-08
+        },
+        {
+          "tensile_MPa": 12.53064671082284,
+          "center_mm": [
+            172.089651594456,
+            4.83921272261378,
+            21.714308613000824
+          ],
+          "volume_mm3": 6.468353533960937e-06
+        },
+        {
+          "tensile_MPa": 11.292723398424322,
+          "center_mm": [
+            27.275673812719834,
+            45.653923823102495,
+            17.6597089300855
+          ],
+          "volume_mm3": 3.320069156461534e-07
+        },
+        {
+          "tensile_MPa": 11.0227636187517,
+          "center_mm": [
+            172.12018479758098,
+            4.842876682574247,
+            2.2533864435351747
+          ],
+          "volume_mm3": 6.575219137541827e-06
+        },
+        {
+          "tensile_MPa": 11.007674389432038,
+          "center_mm": [
+            111.07247631221236,
+            -3.570760222810947,
+            1.0960140661210171
+          ],
+          "volume_mm3": 1.2507210482726708e-06
+        },
+        {
+          "tensile_MPa": 10.804154350870514,
+          "center_mm": [
+            162.63934389161628,
+            -4.775271484719818,
+            0.839381519444625
+          ],
+          "volume_mm3": 0.001301385025608776
+        },
+        {
+          "tensile_MPa": 10.725793734965828,
+          "center_mm": [
+            172.15071800070598,
+            4.846540642534715,
+            2.2157091801681448
+          ],
+          "volume_mm3": 6.584309715824762e-06
+        }
+      ],
+      "sliced_volume_cm3": 87.12,
+      "sliced_mass_g_at_1p24": 108.03,
+      "toolpath_status": "PASS",
+      "load_compliance_Nmm_at_E1000": 175.1056258416493,
+      "reference_load_per_vertical_movement_per_gram_N_per_mm_g": 0.36466167402950617,
+      "numerical_gates_pass": true,
+      "physical_qualification": false,
+      "limitations": "Isotropic ideal printed-material model; zero sparse-infill stiffness. Seat translation is modeled, rail/mount reserve is provisional, and spool increment is proportional to the same load pattern. Coupon strength is not a tested part allowable. All finite stress cells retained."
+    }
+  ],
+  "strength_screen_MPa": 10.125,
+  "fully_qualified_design_selected": false,
+  "note": "Any computational candidate selection also needs all remaining gates; no physical qualification is implied."
+}

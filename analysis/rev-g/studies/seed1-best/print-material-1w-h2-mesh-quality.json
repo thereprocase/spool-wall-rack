@@ -1,0 +1,19 @@
+{
+  "input_tetrahedra": 211989,
+  "removed_numerically_degenerate_cells": 0,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 0.0,
+  "total_absolute_volume_mm3": 52945.77129512,
+  "minimum_retained_normalized_determinant": 7.0759160103597e-09,
+  "gmsh_3d_algorithm": 1,
+  "gmsh_2d_algorithm": 6,
+  "source_BREP": "seed1-best/print-material-clean-1w.brep",
+  "source_revision": "G",
+  "maximum_mesh_size_mm": 2.0,
+  "CAD_volume_mm3": 52945.77131883051,
+  "relative_mesh_CAD_volume_error": 4.4782633157325336e-10,
+  "checkpoint_metadata_correction": {
+    "original_source_revision": "F",
+    "reason": "Copied mesh writer retained F label; actual Rev G candidate geometry hash and raw field unchanged."
+  }
+}

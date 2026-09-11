@@ -1,93 +1,60 @@
-# Next sprint — reproducible evolutionary optimization of Rev F
+# Next study after Rev G — resolve local strength before reducing mass further
 
-**Queued, not started.** The September 10 checkpoint freezes the hand-tuned
-exploration. Start from its [CAD](designs/rev-f/README.md),
-[numerical evidence](analysis/rev-f/README.md) and
-[candidate ledger](analysis/rev-f/constrained-screening.json).
-No genetic optimizer or optimized winner is included in this checkpoint.
+Rev G's [original genetic-search sprint](REV-G-SPRINT-BRIEF.md) is complete.
+It evaluated 1,458 distinct parameter sets, verified deterministic replay and
+examined actual CAD, slicing and 3D finalists. **No tested finalist satisfies
+all gates.** The optimizer is implemented; another population run alone does
+not resolve the observed 2D/3D discrepancy.
+[Completed results](analysis/rev-g/README.md).
 
-## Objective and hard constraints
+## Evidence that sets the next scope
 
-Minimize **actual OrcaSlicer plastic volume**, with mass reported at a stated
-density, within the serviceability and strength limits. Report stiffness per
-gram and the mass/movement Pareto frontier. Matching E13 stiffness is not a
-constraint.
+The 103.76 g full-plane finalist meets the provisional bracket movement
+screen but fails the raw 3D tensile screen at h2, h1.5 and h1. The peak rises
+32.29 → 37.99 → 55.05 MPa and migrates to a preserved exterior forearm
+chamfer. A CAD-face comparison locates the fine peak approximately 0.00162 mm
+from that surface. Wider inner-seat support improves the coarse result but
+does not pass strength.
 
-- Preserve E13's exterior outline, width, rod seats, flexible fingers, relief
-  pockets, screw lands and driver access. Through-windows may change only
-  inside that envelope and outside the protected interfaces.
-- At the 12 kg / 117.72 N reference load, total movement must be at most 5 mm,
-  including bracket creep, rails and mounting movement. Retain the 1.0 GPa
-  effective-modulus planning case. Start with an **explicit provisional 1 mm
-  reserve for rails/mounts**, so the bracket screen is 4 mm; replace that reserve
-  with rail/mount evidence before qualification. Also evaluate reserve sensitivity.
-- Adding/removing a 1.25 kg full spool must change total movement by at most
-  1 mm. Proportional scaling of the full-load solution is a preliminary screen;
-  re-solve the load/contact changes for finalists.
-- Requested nominal fracture factor of safety: **at least 4**. The present
-  conservative coupon screen uses 40.5 MPa / peak tensile principal stress,
-  hence a 10.125 MPa stress ceiling. It is not a measured part allowable.
-  Finalists need a material/direction-specific check, retained finite 3D peaks,
-  local mesh refinement, print bonding evidence and physical qualification.
-- CAD validity, connected structural material, preserved interfaces, slicer
-  modifier roles, empty windows and nonprinting tabs are mandatory gates.
-  Thin-plate buckling and unsupported spans need explicit checks.
+This does not prove the peaks are artifacts, nor does it establish the
+part's physical rupture load. It identifies the geometry and material
+evidence needed before an automated mass optimum can be trusted.
 
-## Search variables and initial bounds
+## Proposed sequence
 
-These are starting search bounds, not approved print settings.
+1. **Reproduce the local mechanism.** Build a displacement-driven submodel
+   around the seat and forearm hotspots using the saved full-bracket fields.
+   Compare actual STEP facets, nominal emitted bead boundaries and a
+   physically justified printed corner geometry. Require mesh refinement and
+   balanced reactions; retain the existing unmodified model as a control.
+2. **Resolve the geometry boundary.** E13's exterior is protected by the F/G
+   scope. Any exterior smoothing or larger local blend is a new design-scope
+   decision, not an implicit optimizer mutation. First determine whether
+   a modifier-only reinforcement can pass with that exterior unchanged.
+3. **Establish material/process evidence.** Select the actual grade and print
+   process, measure printed sections and test representative layer-bond,
+   corner and fixing coupons. Keep the 85°F sustained and brief 100°F service
+   envelope, dry/conditioned cases where relevant, and creep uncertainty.
+4. **Improve the acceptance evaluator.** Validate local 3D stress and
+   quadratic stability against the refined model and available tests. The
+   four-case 2D equivalence check remains a regression guard, not proof that
+   2D predicts fracture.
+5. **Resume constrained optimization.** Use the existing seeded ledger,
+   add validated 3D information, and rank only feasible finalists by actual
+   Orca volume. Keep walls, layer thicknesses and modifiers manufacturable.
+   Report the Pareto tradeoff and all rejection reasons.
 
-| Variable | Proposed range / choices |
-|---|---|
-| Wall loops | Integer 1–8 |
-| Broad skins / internal planes | Independently 3–6 layers at 0.2 mm |
-| Internal planes | Full or shaped; shaped frame width 3–10 mm |
-| Lower / diagonal dense chords | Independently 1.2–8 mm |
-| Inner / outer seat dense bands | 2.5–13 mm / 2–5 mm |
-| Tunnel reinforcement | Upper/lower collars and saddles, 0–5 mm |
-| Sparse infill | 5–15%; zero structural credit |
-| Window scale | 0.75–1.10, subject to exact interface and ligament checks |
-| Helper organization | Regional density masks; merge into selectable parts only at export |
+## Unchanged acceptance boundaries
 
-Keep material placement as explicit geometry and density variables. Extra
-selection helpers do not improve structure by themselves; their clipped,
-emitted paths must match the intended reinforcement.
+Use 5 mm total loaded movement, including rails/mounts/creep; 1 mm change per
+1.25 kg spool; and the requested nominal fracture factor of at least four at
+the 12 kg reference case. The 1 mm rail/mount reserve is provisional. The
+40.5 MPa typical coupon value is a screening input, not a tested part allowable.
+Do not substitute percentiles, remove finite stress cells or relax the
+fracture limit to select a winner. Report buckling separately, including
+imperfection and nonlinear-model limits.
 
-## Implementation sequence
-
-1. **Freeze the evaluator.** Pin code, dependencies, material inputs, slicer
-   version, process, seed and candidate ordering. Hash every candidate and
-   cache results with model/source hashes. Record failures as rejected ledger
-   entries. Never reuse a result after its physics or geometry changes.
-2. **Make the cheap screen fast and trustworthy.** Cache the fixed-window
-   planar mesh and layer masks; reuse assembly information where applicable.
-   Validate against E13, the shaped three-wall candidate, full-plane four-wall
-   candidate and light one-wall candidate. Start with the existing evaluator
-   if the accelerated version does not reproduce those cases.
-3. **Run a seeded mixed-variable evolutionary search.** Use a repeatable
-   population, crossover/mutation and discrete layer/wall variables. A fixed-seed
-   differential-evolution implementation is also suitable; reproducibility
-   requires pinned inputs and stable evaluation order, not merely a seed.
-   Compare at least two seeds after the initial repeatability check.
-4. **Validate finalists using real paths and 3D mechanics.** Replace estimated
-   mass with Orca volume. Resolve the one-wall dense-helper STL connectivity
-   failure before treating it as a slicable candidate. Reject CAD, slicing,
-   contact, residual, force/moment, buckling or strength failures. Refine real
-   hotspots; do not remove finite cells or substitute percentile stress for
-   the fracture constraint. Feed 3D failures back into the search.
-5. **Publish an evidence-backed selection.** Show actual CAD, modifier masks,
-   toolpaths, mass/movement frontier, stress refinement, movement reserve and
-   all rejected constraints. If no candidate satisfies every gate, publish
-   that outcome and the limiting mechanism rather than naming a winner.
-
-## Completion criteria
-
-Two runs with the same locked inputs reproduce the candidate ledger and
-selection within stated numerical tolerances. The selected design has actual
-sliced mass, verified CAD/helper alignment, satisfactory 3D refinement and
-explicit serviceability/strength/buckling results. Physical fit, process
-bonding, sustained/hot loading and creep remain a separate qualification gate.
-
-The current light candidate's approximately 4.6 ratio in 2D falls to 0.85
-using its raw 3D peak. This discrepancy is the central evaluator problem to
-solve before trusting an automated minimum-mass result.
+The next milestone is a reproducible, physically defensible local strength
+assessment and a candidate that passes the resulting computational gates.
+Physical fit, calibrated printing and sustained/hot qualification remain
+separate. No next-study design or test is represented as already complete.

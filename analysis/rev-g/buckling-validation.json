@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "benchmark": "20 by 1 by 1 mm simply supported beam, uniform 1 MPa compression, E1000, nu0",
+  "analytic_reference": "Euler pi^2 E I / L^2",
+  "note": "Continuum shear compliance causes a small difference from the slender-beam expression.",
+  "cases": [
+    {
+      "element_order": 1,
+      "axial_divisions": 80,
+      "transverse_divisions": 4,
+      "DOFs": 6075,
+      "Euler_load_N": 2.056167583560283,
+      "FE_load_N": 2.3598029288179623,
+      "relative_difference": 0.1476705243703582,
+      "eigenpairs": [
+        {
+          "inverse_load_multiplier": 0.42376419987787084,
+          "critical_load_multiplier": 2.3598029288179623,
+          "relative_eigen_residual": 1.5480633230949234e-09
+        },
+        {
+          "inverse_load_multiplier": 0.38317586945406884,
+          "critical_load_multiplier": 2.6097676803728627,
+          "relative_eigen_residual": 1.0186738217360333e-09
+        },
+        {
+          "inverse_load_multiplier": 0.10832609175870711,
+          "critical_load_multiplier": 9.231386305595404,
+          "relative_eigen_residual": 1.6201060435057437e-10
+        },
+        {
+          "inverse_load_multiplier": 0.09803736558326034,
+          "critical_load_multiplier": 10.200192488350051,
+          "relative_eigen_residual": 7.119926741254733e-10
+        }
+      ],
+      "factor_solves": 25
+    },
+    {
+      "element_order": 1,
+      "axial_divisions": 120,
+      "transverse_divisions": 6,
+      "DOFs": 17787,
+      "Euler_load_N": 2.056167583560283,
+      "FE_load_N": 2.183397099342075,
+      "relative_difference": 0.061877016639612537,
+      "eigenpairs": [
+        {
+          "inverse_load_multiplier": 0.4580018908614154,
+          "critical_load_multiplier": 2.183397099342075,
+          "relative_eigen_residual": 1.0933267409976788e-09
+        },
+        {
+          "inverse_load_multiplier": 0.4356652469125036,
+          "critical_load_multiplier": 2.295340303333477,
+          "relative_eigen_residual": 4.632341209026641e-09
+        },
+        {
+          "inverse_load_multiplier": 0.11692766891843052,
+          "critical_load_multiplier": 8.552295699126665,
+          "relative_eigen_residual": 1.0701525952983797e-09
+        },
+        {
+          "inverse_load_multiplier": 0.11129100114801328,
+          "critical_load_multiplier": 8.98545245962909,
+          "relative_eigen_residual": 3.1102421057708257e-10
+        }
+      ],
+      "factor_solves": 25
+    },
+    {
+      "element_order": 1,
+      "axial_divisions": 160,
+      "transverse_divisions": 8,
+      "DOFs": 39123,
+      "Euler_load_N": 2.056167583560283,
+      "FE_load_N": 2.121544139545053,
+      "relative_difference": 0.03179534416721497,
+      "eigenpairs": [
+        {
+          "inverse_load_multiplier": 0.4713547935959709,
+          "critical_load_multiplier": 2.121544139545053,
+          "relative_eigen_residual": 1.4369337097699833e-09
+        },
+        {
+          "inverse_load_multiplier": 0.457727787433201,
+          "critical_load_multiplier": 2.18470459398521,
+          "relative_eigen_residual": 4.91885986018994e-09
+        },
+        {
+          "inverse_load_multiplier": 0.12030060640938763,
+          "critical_load_multiplier": 8.312510051669742,
+          "relative_eigen_residual": 8.741391372841351e-10
+        },
+        {
+          "inverse_load_multiplier": 0.11686801224806422,
+          "critical_load_multiplier": 8.556661320442402,
+          "relative_eigen_residual": 3.3222768416595222e-09
+        }
+      ],
+      "factor_solves": 25
+    },
+    {
+      "element_order": 2,
+      "axial_divisions": 40,
+      "transverse_divisions": 2,
+      "DOFs": 6075,
+      "Euler_load_N": 2.056167583560283,
+      "FE_load_N": 2.042063677898534,
+      "relative_difference": 0.006859317195015757,
+      "eigenpairs": [
+        {
+          "inverse_load_multiplier": 0.4897006938731163,
+          "critical_load_multiplier": 2.042063677898534,
+          "relative_eigen_residual": 3.950148952194003e-10
+        },
+        {
+          "inverse_load_multiplier": 0.48966514934366145,
+          "critical_load_multiplier": 2.0422119102010474,
+          "relative_eigen_residual": 5.830614563282216e-10
+        },
+        {
+          "inverse_load_multiplier": 0.12492929291587718,
+          "critical_load_multiplier": 8.004527814572388,
+          "relative_eigen_residual": 1.7062663493683275e-10
+        },
+        {
+          "inverse_load_multiplier": 0.12489372143668868,
+          "critical_load_multiplier": 8.006807616081177,
+          "relative_eigen_residual": 3.116290685427335e-11
+        }
+      ],
+      "factor_solves": 25
+    }
+  ]
+}

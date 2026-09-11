@@ -1,0 +1,139 @@
+{
+  "raw_field": "analysis/rev-g/studies/full-plane-best/print-material-1w-h1-solution.npz",
+  "raw_field_sha256": "4461f6fd9cf25691afbf1652fabeea5a1076692b2f811f9699eafa2c9737c260",
+  "raw_peak_tensile_MPa": 55.04696702358847,
+  "raw_peak_cell_center_mm": [
+    144.84294318449167,
+    -30.696938841432306,
+    23.199943787701145
+  ],
+  "raw_peak_cell_volume_mm3": 5.2495667206689804e-05,
+  "bodies": [
+    {
+      "body": "designs/rev-g/body-only.step",
+      "STEP_sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+      "nearest_faces": [
+        {
+          "distance_from_peak_cell_center_mm": 0.0016190357469127842,
+          "face_center_mm": [
+            144.8754401094836,
+            -30.61204622762037,
+            23.298641420474688
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.08607341231600632,
+            -0.7611934422507031,
+            0.642787609686749
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.04922175309700399,
+          "face_center_mm": [
+            144.91661226830635,
+            -31.28969292118019,
+            22.487000271534324
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            -0.9788394360984219,
+            -0.2046298080400881,
+            0.0
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.04936684006170997,
+          "face_center_mm": [
+            144.89741685061375,
+            -31.35190733346647,
+            22.416028708456217
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.15675552734593345,
+            -0.749834510728682,
+            0.6427876096867273
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.08176754766520575,
+          "face_center_mm": [
+            144.8350068130784,
+            -31.362141012564056,
+            22.41578837380605
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.08607341231600632,
+            -0.7611934422507031,
+            0.642787609686749
+          ]
+        }
+      ]
+    },
+    {
+      "body": "designs/closed-wall-e13/body-only.step",
+      "STEP_sha256": "1ad58a235ff095b0d7fc581318630d07eb878d440193612e16e687946f18ee88",
+      "nearest_faces": [
+        {
+          "distance_from_peak_cell_center_mm": 0.00161903574692276,
+          "face_center_mm": [
+            144.8754401094836,
+            -30.612046227620436,
+            23.298641420474624
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.0860734123160361,
+            -0.7611934422507011,
+            0.6427876096867475
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.04922175309700399,
+          "face_center_mm": [
+            144.91661226830635,
+            -31.28969292118019,
+            22.487000271534324
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            -0.9788394360984219,
+            -0.2046298080400881,
+            0.0
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.04936684006170997,
+          "face_center_mm": [
+            144.89741685061375,
+            -31.351907333466457,
+            22.416028708456246
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.15675552734593343,
+            -0.749834510728682,
+            0.6427876096867273
+          ]
+        },
+        {
+          "distance_from_peak_cell_center_mm": 0.08176754766520575,
+          "face_center_mm": [
+            144.8350068130785,
+            -31.362141012564578,
+            22.41578837380543
+          ],
+          "surface_type": "PLANE",
+          "normal": [
+            0.0860734123160361,
+            -0.7611934422507011,
+            0.6427876096867475
+          ]
+        }
+      ]
+    }
+  ],
+  "finding": "The fine-mesh global peak is adjacent to a preserved exterior forearm chamfer face. It is not solely an internal density-transition peak.",
+  "limitation": "CAD proximity locates the peak; it does not establish a stress artifact or a physical rupture allowable. All finite cells remain in the strength screen."
+}

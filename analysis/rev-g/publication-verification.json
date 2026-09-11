@@ -1,0 +1,142 @@
+{
+  "status": "PASS: publication integrity; no qualified design selected",
+  "search": {
+    "unique_parameter_sets": 1458,
+    "runs": [
+      {
+        "run": "3d-feedback-seed-20260912-h2",
+        "signature_matches_current_sources": true,
+        "candidates": 291,
+        "ledger_hash_matches": true
+      },
+      {
+        "run": "repeat-3d-feedback-seed-20260912-h2",
+        "signature_matches_current_sources": true,
+        "candidates": 291,
+        "ledger_hash_matches": true
+      },
+      {
+        "run": "repeat-seed-20260910-h2",
+        "signature_matches_current_sources": true,
+        "candidates": 590,
+        "ledger_hash_matches": true
+      },
+      {
+        "run": "seed-20260910-h2",
+        "signature_matches_current_sources": true,
+        "candidates": 590,
+        "ledger_hash_matches": true
+      },
+      {
+        "run": "seed-20260911-h2",
+        "signature_matches_current_sources": true,
+        "candidates": 584,
+        "ledger_hash_matches": true
+      }
+    ],
+    "exact_cached_replays": 2,
+    "canonical_uncached_cases": 4
+  },
+  "sliced_candidates": [
+    {
+      "study": "seed1-best",
+      "actual_mass_g": 84.35,
+      "toolpath_status": "FAIL: nominal footprint coverage",
+      "input_bindings_match": true,
+      "local_Gcode_hash_checked": true
+    },
+    {
+      "study": "full-plane-best",
+      "actual_mass_g": 103.76,
+      "toolpath_status": "PASS",
+      "input_bindings_match": true,
+      "local_Gcode_hash_checked": true
+    },
+    {
+      "study": "seat-support",
+      "actual_mass_g": 108.03,
+      "toolpath_status": "PASS",
+      "input_bindings_match": true,
+      "local_Gcode_hash_checked": true
+    },
+    {
+      "study": "repaired-f-light",
+      "actual_mass_g": 93.76,
+      "toolpath_status": "PASS",
+      "input_bindings_match": true,
+      "local_Gcode_hash_checked": true
+    }
+  ],
+  "raw_3D_fields": [
+    {
+      "study": "seed1-best",
+      "h": 2.0,
+      "raw_field_hash_matches": true,
+      "all_finite_cells_checked": 211989,
+      "equilibrium_gates_pass": true,
+      "passes_nominal_4x_fracture_screen": false
+    },
+    {
+      "study": "full-plane-best",
+      "h": 1.0,
+      "raw_field_hash_matches": true,
+      "all_finite_cells_checked": 691297,
+      "equilibrium_gates_pass": true,
+      "passes_nominal_4x_fracture_screen": false
+    },
+    {
+      "study": "full-plane-best",
+      "h": 1.5,
+      "raw_field_hash_matches": true,
+      "all_finite_cells_checked": 322730,
+      "equilibrium_gates_pass": true,
+      "passes_nominal_4x_fracture_screen": false
+    },
+    {
+      "study": "full-plane-best",
+      "h": 2.0,
+      "raw_field_hash_matches": true,
+      "all_finite_cells_checked": 214688,
+      "equilibrium_gates_pass": true,
+      "passes_nominal_4x_fracture_screen": false
+    },
+    {
+      "study": "seat-support",
+      "h": 2.0,
+      "raw_field_hash_matches": true,
+      "all_finite_cells_checked": 220204,
+      "equilibrium_gates_pass": true,
+      "passes_nominal_4x_fracture_screen": false
+    }
+  ],
+  "buckling_fields": [
+    {
+      "study": "repaired-f-light",
+      "order": 1,
+      "source_field_matches": true,
+      "eigen_residual_gate_pass": true,
+      "first_multiplier": 14.04086217878946
+    },
+    {
+      "study": "repaired-f-light",
+      "order": 2,
+      "source_field_matches": true,
+      "eigen_residual_gate_pass": true,
+      "first_multiplier": 4.8189287132334515
+    },
+    {
+      "study": "full-plane-best",
+      "order": 2,
+      "source_field_matches": true,
+      "eigen_residual_gate_pass": true,
+      "first_multiplier": 6.770300432219377
+    }
+  ],
+  "local_document_links_checked": 291,
+  "protected_interfaces_match_delivered_CAD": true,
+  "python_sources_compile": true,
+  "all_JSON_parses": true,
+  "genetic_search_sprint_complete": true,
+  "physically_qualified_design_selected": false,
+  "computationally_accepted_finalist_selected": false
+}

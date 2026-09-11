@@ -3,6 +3,41 @@
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
 
+## Rev G — repeatable genetic study completed; no accepted finalist
+
+Implemented a cached canonical plane-stress evaluator and seeded integer
+genetic search. Four uncached reference cases reproduce the existing full
+fields. Two broad-family seeds plus a full-plane family informed by 3D
+failures evaluate 1,458 distinct parameter sets; two cached search replays
+reproduce complete population ledgers and selections exactly.
+
+![Actual Rev G CAD](designs/rev-g/progress-exterior.png)
+
+The thin first-seed candidate slices to 84.35 g but fails movement, raw 3D
+strength and dense-path coverage. The full-plane feedback candidate uses
+103.76 g, 37.9% less than E13, with 3.246 mm vertical movement at E = 1 GPa
+on h1. Matched stiffness per gram improves 6.6%. Its 3D tensile peak rises
+32.29 → 37.99 → 55.05 MPa across h2/h1.5/h1, so it fails the 4× nominal
+fracture screen. The final peak is beside a preserved E13 exterior chamfer.
+A wider inner-seat support variant costs 108.03 g and improves coarse
+movement to 2.988 mm, but remains rejected on strength.
+
+![Three-mesh stress and movement evidence](analysis/rev-g/stress-refinement.png)
+
+The F light-helper connectivity failure is repaired without changing its
+printed density domain; it now slices to 93.76 g, while its original F
+strength failure remains. Full-plane G and wider-seat toolpath gates pass.
+Quadratic buckling is benchmarked and reported separately from fracture.
+All finite stress fields, failed constraints and source hashes are retained.
+
+No tested G finalist is computationally accepted or physically qualified.
+The search sprint is complete under its explicit no-feasible-finalist outcome;
+E13 stays the established prototype handoff. The next study must resolve
+local geometry and material behavior before claiming a fracture margin.
+[Rev G evidence](analysis/rev-g/README.md) · [CAD](designs/rev-g/README.md)
+· [F checkpoint](REV-F-CHECKPOINT.md) · [Next study](NEXT-SPRINT.md).
+
+
 ## Rev F — September 10 checkpoint; evolutionary search next
 
 Added two angular windows inside E13's unchanged exterior outline and protected
@@ -35,7 +70,7 @@ handoff. [Rev F status and evidence](analysis/rev-f/README.md) ·
 
 **Next sprint:** a seeded evolutionary optimizer with cached candidate results,
 actual Orca mass and hard serviceability, 3D strength and manufacturing gates.
-No optimizer is implemented in this checkpoint. [Sprint brief](NEXT-SPRINT.md).
+No optimizer is implemented in this checkpoint. [Archived sprint brief](REV-G-SPRINT-BRIEF.md).
 
 ## E13 — angular reinforcement and finer stress meshes
 

@@ -1,0 +1,43 @@
+{
+  "source_field": "print-material-1w-h2-solution.npz",
+  "source_sha256": "f3ff40a7814acb2880e287ce159a9c4aaf9637e97e946ca4b09dc4438ae030ad",
+  "E_reference_MPa": 1000.0,
+  "element_order": 2,
+  "prestress_interpolation": "Complete constant-strain tetrahedron field, no excluded cells",
+  "modes": [
+    {
+      "inverse_load_multiplier": 0.20751500167534337,
+      "critical_load_multiplier": 4.8189287132334515,
+      "relative_eigen_residual": 4.270481722005502e-07
+    },
+    {
+      "inverse_load_multiplier": 0.20244388292390988,
+      "critical_load_multiplier": 4.939640484844177,
+      "relative_eigen_residual": 7.796676357766625e-08
+    },
+    {
+      "inverse_load_multiplier": 0.17971159735039652,
+      "critical_load_multiplier": 5.56447115680703,
+      "relative_eigen_residual": 7.878457677365669e-08
+    },
+    {
+      "inverse_load_multiplier": 0.17548052546435466,
+      "critical_load_multiplier": 5.698638053161802,
+      "relative_eigen_residual": 2.0233703133481214e-07
+    },
+    {
+      "inverse_load_multiplier": 0.17219713252214883,
+      "critical_load_multiplier": 5.807297632388711,
+      "relative_eigen_residual": 1.4021966774621276e-06
+    },
+    {
+      "inverse_load_multiplier": 0.17103699352170013,
+      "critical_load_multiplier": 5.846688364953785,
+      "relative_eigen_residual": 5.1501445315379285e-06
+    }
+  ],
+  "lowest_positive_multiplier": 4.8189287132334515,
+  "factor_solves": 81,
+  "seconds": 629.4026965000085,
+  "limitations": "Fixed converged wall contact set; conservative load direction; isotropic small-strain linear bifurcation. No geometric imperfections or nonlinear postbuckling."
+}

@@ -1,0 +1,396 @@
+{
+  "slicer": "OrcaSlicer 2.4.2",
+  "parameters": {
+    "window_scale": 1.0,
+    "walls": 1,
+    "skin_mm": 0.8,
+    "plane_mm": 0.8,
+    "bottom_band": 1.8,
+    "diagonal_band": 1.8,
+    "seat_band": 4.0,
+    "front_seat_band": 2.0,
+    "planes": "full",
+    "rib_frame": 4.0,
+    "seat_webs": true,
+    "infill_percent": 5,
+    "lower_tunnel_collar_mm": 3.5,
+    "upper_tunnel_collar_mm": 2.0,
+    "name": "f-limit-1w-full"
+  },
+  "layer_count": 120,
+  "roundtrip_parts": [
+    {
+      "part": "body-only",
+      "role": "normal_part",
+      "maximum_roundtrip_vertex_error_mm": 1.3411193165152658e-05
+    },
+    {
+      "part": "dense-chords-and-seats",
+      "role": "modifier_part",
+      "maximum_roundtrip_vertex_error_mm": 1.0066871883948421e-05
+    },
+    {
+      "part": "rib-plane-lower",
+      "role": "modifier_part",
+      "maximum_roundtrip_vertex_error_mm": 1.004174919895256e-05
+    },
+    {
+      "part": "rib-plane-upper",
+      "role": "modifier_part",
+      "maximum_roundtrip_vertex_error_mm": 1.0030620040648757e-05
+    }
+  ],
+  "gcode_sha256": "bfb59c067877550a01231601e34c9ab3a5d917f34510333bfaf980a28fd508f5",
+  "input_3MF_sha256": "b9e5b787100c355487dbccae72833a95521df0d34597fc0eb95c0f6a4992ad40",
+  "printed_volume_cm3": 75.61,
+  "neutral_density_g_cm3": 1.24,
+  "neutral_printed_mass_g": 93.76,
+  "selection_tabs_printed": false,
+  "window_extrusion_centerlines_detected": false,
+  "footprint_rounding_allowance_mm": 0.03,
+  "minimum_structural_coverage": 0.9970874613612051,
+  "minimum_dense_helper_coverage": 0.9865667643353226,
+  "layers": [
+    {
+      "layer_number": 1,
+      "z_mid_mm": 0.1,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9998966682459046,
+      "dense_helper_coverage": 0.9993907937318323,
+      "roles": [
+        "Bottom surface",
+        "Gap infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 2,
+      "z_mid_mm": 0.30000000000000004,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9996268644973537,
+      "dense_helper_coverage": 0.9987530433459638,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Overhang wall"
+      ]
+    },
+    {
+      "layer_number": 3,
+      "z_mid_mm": 0.5,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.999707798235769,
+      "dense_helper_coverage": 0.9990163358029858,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 4,
+      "z_mid_mm": 0.7000000000000001,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9993051971899793,
+      "dense_helper_coverage": 0.9962668767057482,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 10,
+      "z_mid_mm": 1.9000000000000001,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9984501402119473,
+      "dense_helper_coverage": 0.998113450513479,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 20,
+      "z_mid_mm": 3.9000000000000004,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9984759786836584,
+      "dense_helper_coverage": 0.9982305096237548,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill",
+        "Top surface"
+      ]
+    },
+    {
+      "layer_number": 30,
+      "z_mid_mm": 5.9,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9984863950739701,
+      "dense_helper_coverage": 0.9981814006157045,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 40,
+      "z_mid_mm": 7.9,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9972750690685449,
+      "dense_helper_coverage": 0.9919100621405738,
+      "roles": [
+        "Gap infill",
+        "Internal Bridge",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 41,
+      "z_mid_mm": 8.1,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9997277305482537,
+      "dense_helper_coverage": 0.9988381119760017,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 42,
+      "z_mid_mm": 8.3,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9996693919909299,
+      "dense_helper_coverage": 0.9989538761154669,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 43,
+      "z_mid_mm": 8.5,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9997315910791132,
+      "dense_helper_coverage": 0.9988709931738164,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 50,
+      "z_mid_mm": 9.9,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9983836233264687,
+      "dense_helper_coverage": 0.998024209327484,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 60,
+      "z_mid_mm": 11.9,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9990059724408542,
+      "dense_helper_coverage": 0.9987803259391147,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 70,
+      "z_mid_mm": 13.9,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9990971650749801,
+      "dense_helper_coverage": 0.9988955545471061,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 78,
+      "z_mid_mm": 15.5,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9970874613612051,
+      "dense_helper_coverage": 0.9865667643353226,
+      "roles": [
+        "Gap infill",
+        "Internal Bridge",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 79,
+      "z_mid_mm": 15.700000000000001,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9996923069980785,
+      "dense_helper_coverage": 0.9985653893130083,
+      "roles": [
+        "Bridge",
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 80,
+      "z_mid_mm": 15.9,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9996695080199418,
+      "dense_helper_coverage": 0.9989565629353285,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 81,
+      "z_mid_mm": 16.1,
+      "broad_skin": false,
+      "internal_plane": true,
+      "structural_footprint_coverage": 0.9997290009844025,
+      "dense_helper_coverage": 0.9988510043957166,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 90,
+      "z_mid_mm": 17.900000000000002,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9984688054627806,
+      "dense_helper_coverage": 0.9981574949960169,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 100,
+      "z_mid_mm": 19.900000000000002,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9984457154642018,
+      "dense_helper_coverage": 0.998142651383555,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 110,
+      "z_mid_mm": 21.900000000000002,
+      "broad_skin": false,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9985452283954211,
+      "dense_helper_coverage": 0.9982479466188724,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall",
+        "Sparse infill"
+      ]
+    },
+    {
+      "layer_number": 117,
+      "z_mid_mm": 23.3,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9973807722731673,
+      "dense_helper_coverage": 0.9879051443130605,
+      "roles": [
+        "Gap infill",
+        "Internal Bridge",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 118,
+      "z_mid_mm": 23.5,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9996769779179854,
+      "dense_helper_coverage": 0.999654930596873,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 119,
+      "z_mid_mm": 23.700000000000003,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.9997068122821678,
+      "dense_helper_coverage": 0.9992183382463751,
+      "roles": [
+        "Gap infill",
+        "Internal solid infill",
+        "Outer wall"
+      ]
+    },
+    {
+      "layer_number": 120,
+      "z_mid_mm": 23.900000000000002,
+      "broad_skin": true,
+      "internal_plane": false,
+      "structural_footprint_coverage": 0.99995958556027,
+      "dense_helper_coverage": 0.9996423676373039,
+      "roles": [
+        "Gap infill",
+        "Outer wall",
+        "Top surface"
+      ]
+    }
+  ],
+  "limitations": "Nominal emitted bead footprints only; not physical proof of extrusion, bridges, adhesion or creep. Sparse infill receives zero FEA credit."
+}

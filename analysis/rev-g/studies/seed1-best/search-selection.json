@@ -1,0 +1,7 @@
+{
+  "candidate_id": "82e88fcf29749880c5c3",
+  "search_signature": "4955d02bc617bfdd62c483e40855a4d0d6cba855f963180a53c2a7497de19049",
+  "stage": "Completed diagnostic CAD, slice and 3D evaluation; rejected by raw fracture screen",
+  "selected_as_qualified_design": false,
+  "mechanics_report": "../../mechanics-summary.json"
+}
