@@ -1,8 +1,9 @@
 # G2 prerequisite: correct the sliced-material model
 
-**In progress. No corrected G stress result or accepted G2 architecture exists
-yet.** [G2-BRIEF.md](../../G2-BRIEF.md) defines the broader study and current
-material-mapping prerequisite. E13 and G files remain unchanged.
+**The five-case shape validation is complete; corrected G mechanics is still
+in progress. No accepted G2 architecture exists yet.**
+[G2-BRIEF.md](../../G2-BRIEF.md) defines the broader study. E13 and G files
+remain unchanged.
 
 The new [plastic_shape.py](plastic_shape.py) reads actual extrusion paths,
 widths, heights and E values. It excludes 0.4 mm bridge paths from structural
@@ -16,23 +17,60 @@ bottom layers, plus the two-wall, five-layer reference. Base infill is zero;
 the original three helpers remain at 100%. The minimum is two walls. A prior
 one-wall diagnostic is not the current reference.
 
-![Archived G material-mapping diagnostic](g-slicer-mapping/mapping-sections.png)
+![Credited structural material across wall and skin schedules](validation/matrix-shape-sections.png)
+
+## Completed checks
+
+[Independent shape validation](validation/matrix-shape-validation.md) uses
+analytical distances to every potentially covering variable-width capsule,
+independent of the cached polygon union. All 50,000 occupancy samples agree
+outside a 0.005 mm polygonization band. Through-thickness differences remain
+within the independently computed sum of boundary-uncertain layer heights.
+The sample set includes the old hotspot and thousands of occupied points
+per case. This is a geometry check, not a mechanical acceptance result.
+
+The [process audit](validation/process-matrix.json) verifies effective wall
+counts, both shell layer counts and minimum thicknesses, zero base infill,
+the three 100% helper modifiers, unchanged source hashes and P1S bed/exclusion
+clearance. The neutral process is not a calibrated PETG/ASA print profile.
+
+| Schedule | Credited E volume, cm³ | Sacrificial bridge volume, cm³ | Nominal structural footprint union, cm³ | Exact slice archive |
+|---|---:|---:|---:|---|
+| 2 walls, 2 skin layers | 60.374 | 6.901 | 61.394 | [ZIP](../../designs/rev-g2/g-recheck/2w-2layers/slice-evidence.zip) |
+| 2 walls, 5 skin layers | 70.980 | 6.940 | 71.891 | [ZIP](../../designs/rev-g2/g-recheck/2w-5layers/slice-evidence.zip) |
+| 2 walls, 8 skin layers | 81.248 | 6.928 | 82.058 | [ZIP](../../designs/rev-g2/g-recheck/2w-8layers/slice-evidence.zip) |
+| 8 walls, 2 skin layers | 103.417 | 5.060 | 104.686 | [ZIP](../../designs/rev-g2/g-recheck/8w-2layers/slice-evidence.zip) |
+| 8 walls, 8 skin layers | 119.736 | 5.090 | 120.770 | [ZIP](../../designs/rev-g2/g-recheck/8w-8layers/slice-evidence.zip) |
+
+Total spent plastic is credited E plus sacrificial E. Footprint volume is a
+separate geometric quantity. Each archive retains exact G-code, audit 3MF,
+effective settings and slice result, with a hash manifest referencing G's
+published geometry. [Archive verification](validation/slice-archive-audit.json).
+
+The reference cache loads in 1.57 s and answers 10,000 occupancy queries in
+0.064 s; 4,000 through-thickness queries take 0.108 s. Across the five cases,
+cache loads take 1.10–2.28 s. These are recorded timings on the analysis
+machine, not universal performance guarantees. Creating a new shape requires
+an actual slice and the one-time path/polygon build.
+
+## Corrected 3D mechanics: unresolved
 
 The [archived comparison](g-slicer-mapping/comparison.json) checks G's saved h1
 finite cells against its original emitted paths. It is diagnostic only.
 The new reference's layer-derived material forms one connected structural
-component without thick-bridge credit. Surface-to-volume meshing is still
-being resolved: a surface simplification produced overlapping facets and
-was rejected; the subsequent unsimplified, coordinate-grid representation
-passed the surface incidence check but failed volume-boundary recovery.
-Neither failure is a strength result.
+component without thick-bridge credit. TetGen boundary recovery now reproduces
+the continuum volume and all 39 enclosed voids. The
+[independent mesh audit](validation/mesh-audit-tetgen-boundary-only.json)
+still rejects that mesh for topology/quality. A bounded-envelope mesher passed
+the [hollow-box fixture](validation/ftetwild-hollow-box-h1.json); G is in
+progress. [Attempts, rejected results and sources](MESHING-NOTES.md).
 
 The raw nominal footprint reference is retained separately from continuum
 meshing experiments. Those experiments explicitly report gap closing,
 sub-bead void homogenization, coordinate precision and geometric differences.
-No approximation has yet passed the full wall/skin validation and mechanical
-recheck. Do not equate a manifold surface, a successful slice or a coverage
-check with a verified mechanical material model.
+The path representation has passed the wall/skin geometry validation. The
+mechanical recheck is incomplete. Do not equate a manifold surface, a
+successful slice or a coverage check with a verified stress result.
 
 ## Reproduce the current work
 
@@ -47,11 +85,29 @@ python designs/rev-g2/prepare_g_recheck.py --case 2w-8layers
 python designs/rev-g2/prepare_g_recheck.py --case 2w-2layers
 python designs/rev-g2/prepare_g_recheck.py --case 8w-8layers
 python designs/rev-g2/slice_matrix.py /path/to/OrcaSlicer
-python analysis/rev-g/run_native.py analysis/rev-g2/plastic_shape.py designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w analysis/rev-g2/g-recheck/2w-5layers --solid
-python analysis/rev-g/run_native.py analysis/rev-g2/mesh_plastic.py --validate-box --output analysis/rev-g2/validation/box-mesh --h 2
+python analysis/rev-g/run_native.py analysis/rev-g2/plastic_shape.py designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w analysis/rev-g2/g-recheck/2w-5layers/validated-shape
+python analysis/rev-g/run_native.py analysis/rev-g2/validate_plastic_shape.py analysis/rev-g2/g-recheck --source-root designs/rev-g2/g-recheck --samples 10000
+python analysis/rev-g/run_native.py analysis/rev-g2/mesh_plastic.py --validate-hollow-box --output analysis/rev-g2/validation/ftetwild-hollow-box-h1 --h 1 --backend ftetwild --epsilon-mm .01
 ```
 
-The shape tool produces path data, per-layer raw and simplified polygons,
+Repeat the `plastic_shape.py` command for the other four case directories
+before the matrix validator. To replay the archived slices without reslicing,
+extract each ZIP into its case's `.work/audit-2w` or `.work/audit-8w` directory.
+The two-wall, five-skin-layer [reference cache](g-recheck/2w-5layers/validated-shape/layers.json.gz)
+is included; other caches are rebuildable from the archived inputs.
+
+```python
+import sys
+sys.path.insert(0, 'analysis/rev-g2')
+from plastic_shape import PlasticShape
+
+shape = PlasticShape.load('analysis/rev-g2/g-recheck/2w-5layers/validated-shape')
+inside = shape.contains([[145., -30., 23.2]])
+thickness_mm = shape.equivalent_thickness([[145., -30.]])
+section = shape.section(23.2)
+```
+
+The shape tool produces path data, compressed per-layer raw and simplified polygons,
 separate spent/credited volume accounting and optional structural STL/mesh.
 These are analysis artifacts. Printing uses the original body and modifiers,
 with a separately selected and calibrated P1S PETG or ASA process.

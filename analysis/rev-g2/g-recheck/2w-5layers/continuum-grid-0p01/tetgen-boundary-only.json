@@ -1,0 +1,377 @@
+{
+  "input_tetrahedra": 662600,
+  "removed_numerically_degenerate_cells": 268,
+  "normalized_determinant_floor": 1e-12,
+  "removed_absolute_volume_mm3": 2.4178467514149967e-09,
+  "total_absolute_volume_mm3": 71949.03443440527,
+  "minimum_retained_normalized_determinant": 1.0042738075370063e-12,
+  "enclosed_void_seeds": [
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.1,
+      "point_mm": [
+        103.73159090909091,
+        -2.5949999999999998,
+        0.30000000000000004
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        157.06203764176337,
+        -2.5700000000000003,
+        1.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        6.002500000000001,
+        117.975,
+        1.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09707534486912757,
+      "point_mm": [
+        99.24651234567901,
+        -13.355,
+        1.2999999999999998
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.08980791833911206,
+      "point_mm": [
+        203.8849934080422,
+        13.190000000000001,
+        1.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.0746648936713417,
+      "point_mm": [
+        6.579407894736857,
+        174.46499999999997,
+        2.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.0936916485072176,
+      "point_mm": [
+        15.202500000000004,
+        161.59,
+        3.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        4.300000000000001
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        4.699999999999999
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        5.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        5.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        5.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        6.300000000000001
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        6.699999999999999
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000009,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        7.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        7.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000053,
+      "point_mm": [
+        128.45173545966227,
+        -6.28,
+        9.3
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000053,
+      "point_mm": [
+        7.405,
+        94.66,
+        9.3
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000053,
+      "point_mm": [
+        11.804999999999994,
+        174.72500000000002,
+        9.3
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        9.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000142,
+      "point_mm": [
+        129.37619565217392,
+        -5.99,
+        16.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        16.299999999999997
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000142,
+      "point_mm": [
+        7.407499999999999,
+        94.65,
+        16.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000142,
+      "point_mm": [
+        12.00673913043478,
+        174.235,
+        16.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        16.700000000000003
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        17.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000142,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        17.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        17.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        18.299999999999997
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        18.700000000000003
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        19.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.10000000000000142,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        19.5
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        19.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        20.299999999999997
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        20.700000000000003
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        103.74183615819209,
+        -2.59,
+        21.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.08980791833911206,
+      "point_mm": [
+        203.8849934080422,
+        13.190000000000001,
+        22.1
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        99.83766666666666,
+        -12.915,
+        22.9
+      ]
+    },
+    {
+      "clearance_to_current_layer_air_boundary_mm": 0.09999999999999964,
+      "point_mm": [
+        204.6784685824896,
+        6.165,
+        23.299999999999997
+      ]
+    }
+  ],
+  "surface_component_signed_volumes_mm3": [
+    238035.51412985157,
+    -45822.7103023151,
+    -42893.860033248566,
+    -10937.191919127054,
+    -9815.963129504122,
+    -0.044839999664425284,
+    -0.03449999991059319,
+    -0.035670000189840956,
+    -0.03567000018984219,
+    -0.03567000018984117,
+    -0.035670000189840345,
+    -0.03567000018984118,
+    -0.035670000189841594,
+    -0.03567000018984009,
+    -0.03567000018984151,
+    -0.03567000018984142,
+    -0.03567000018984035,
+    -45735.56465229758,
+    -10583.935539054584,
+    -0.0356700001898414,
+    -0.035670000189840005,
+    -0.03567000018984028,
+    -0.035670000189839846,
+    -0.03567000018984212,
+    -0.035670000189841525,
+    -0.03567000018984185,
+    -0.03567000018984062,
+    -0.03567000018984096,
+    -0.03567000018983959,
+    -0.035670000189840824,
+    -0.0356700001898414,
+    -0.03567000018984165,
+    -0.03793999927252455,
+    -0.037039999364912535,
+    -0.03221000025510747,
+    -48.19959998085544,
+    -247.94625991136954,
+    -0.03269999970793751,
+    -0.03591999959379255,
+    -0.0326999997079423
+  ],
+  "requested_maximum_tetrahedron_volume_mm3": 1.3333333333333333,
+  "reference_surface_signed_volume_mm3": 71949.03443440459,
+  "relative_surface_volume_error": 9.547918011776346e-15,
+  "h_mm": 2.0,
+  "gmsh_3d_algorithm": 1,
+  "surface_remeshed": false,
+  "backend": "tetgen",
+  "quality_refinement_requested": false,
+  "elapsed_seconds": 40.454005200008396,
+  "surface_sha256": "9e0724d10cf4b76d974ef79bcc95077c13a47378b72095aad787e7f1ee097728",
+  "status": "PASS: closed surface and volume mesh",
+  "nodes": 203070,
+  "tetrahedra": 662332
+}

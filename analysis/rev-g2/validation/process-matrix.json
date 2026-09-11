@@ -1,0 +1,891 @@
+{
+  "status": "AUDIT_ONLY",
+  "root": "designs/rev-g2/g-recheck",
+  "cases": [
+    {
+      "case": "2w-5layers",
+      "work": "designs/rev-g2/g-recheck/2w-5layers/.work/audit-2w",
+      "expected": {
+        "wall_loops": 2,
+        "top_bottom_layers": 5
+      },
+      "effective_settings": {
+        "wall_loops": "2",
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "5",
+        "top_shell_thickness": "1",
+        "bottom_shell_thickness": "1",
+        "sparse_infill_density": "0%",
+        "ensure_vertical_shell_thickness": "ensure_all",
+        "wall_generator": "arachne",
+        "outer_wall_line_width": "0.42",
+        "inner_wall_line_width": "0.45",
+        "internal_solid_infill_line_width": "0.45",
+        "top_surface_line_width": "0.45",
+        "nozzle_diameter": "0.4",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "bed_exclude_area": "0x0"
+      },
+      "settings_match_expected": true,
+      "slice_result": {
+        "return_code": 0,
+        "error_string": "Success.",
+        "layer_height": 0.20000000298023224,
+        "sparse_infill_density": 0.0,
+        "wall_loops": 2
+      },
+      "gcode": {
+        "sha256": "ab6cdc9bc145ce140e39432573fdb89347ae66724c9fd072689a6792ba5ec02f",
+        "extrusion_moves": 214373,
+        "roles": [
+          "Bottom surface",
+          "Bridge",
+          "Gap infill",
+          "Inner wall",
+          "Internal Bridge",
+          "Internal solid infill",
+          "Outer wall",
+          "Overhang wall",
+          "Top surface"
+        ],
+        "height_values_mm": [
+          0.199999,
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "width_stats_mm": {
+          "min": 0.0745792,
+          "max": 0.74481,
+          "unique_count": 8868,
+          "quantiles_p0_p25_p50_p75_p100": [
+            0.074579,
+            0.419999,
+            0.449999,
+            0.449999,
+            0.74481
+          ]
+        },
+        "bridge_moves": 4952,
+        "bridge_height_values_mm": [
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "bridge_width_values_mm": [
+          0.4
+        ],
+        "thick_bridge_moves_height_gt_0p2001": 4713,
+        "thick_bridge_height_values_mm": [
+          0.4
+        ],
+        "thick_bridge_width_values_mm": [
+          0.4
+        ],
+        "bridge_policy": "Count plastic; zero stiffness, strength, and bonded-connection credit."
+      },
+      "P1S_256mm_bed": {
+        "envelope_with_path_width_mm": {
+          "xmin_mm": 18.337595,
+          "xmax_mm": 237.66240499999998,
+          "ymin_mm": 24.083595,
+          "ymax_mm": 231.914405
+        },
+        "outside_bed_path_count": 0,
+        "bed_exclusion_rect_xy_mm": [
+          0,
+          0,
+          18,
+          28
+        ],
+        "bed_exclusion_intersection_path_count": 0
+      },
+      "geometry_hashes": {
+        "case": {
+          "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+          "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+          "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+          "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+          "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+          "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+          "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+          "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        },
+        "matches_rev_g_source_package": {
+          "body-only.stl": true,
+          "body-only.step": true,
+          "dense-chords-and-seats.stl": true,
+          "dense-chords-and-seats.step": true,
+          "rib-plane-lower.stl": true,
+          "rib-plane-lower.step": true,
+          "rib-plane-upper.stl": true,
+          "rib-plane-upper.step": true
+        }
+      },
+      "3mf_model_settings": {
+        "object_process": {
+          "bottom_shell_layers": "5",
+          "bottom_shell_thickness": "1",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "5",
+          "top_shell_thickness": "1",
+          "wall_generator": "arachne",
+          "wall_loops": "2"
+        },
+        "parts": [
+          {
+            "id": "1",
+            "subtype": "normal_part",
+            "source_file_basename": "body-only.stl"
+          },
+          {
+            "id": "2",
+            "subtype": "modifier_part",
+            "source_file_basename": "dense-chords-and-seats.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "3",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-lower.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "4",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-upper.stl",
+            "sparse_infill_density": "100%"
+          }
+        ]
+      },
+      "3mf_metadata_field_names_only": {
+        "field_names": [
+          "DesignerUserId",
+          "gcode_file",
+          "p:path",
+          "profiles",
+          "source_file"
+        ],
+        "occurrence_count": 11,
+        "values_redacted": true
+      },
+      "profile_distinction": "Neutral geometry audit machine/process settings; not a P1S PETG or ASA calibrated material profile."
+    },
+    {
+      "case": "8w-2layers",
+      "work": "designs/rev-g2/g-recheck/8w-2layers/.work/audit-8w",
+      "expected": {
+        "wall_loops": 8,
+        "top_bottom_layers": 2
+      },
+      "effective_settings": {
+        "wall_loops": "8",
+        "top_shell_layers": "2",
+        "bottom_shell_layers": "2",
+        "top_shell_thickness": "0.4",
+        "bottom_shell_thickness": "0.4",
+        "sparse_infill_density": "0%",
+        "ensure_vertical_shell_thickness": "ensure_all",
+        "wall_generator": "arachne",
+        "outer_wall_line_width": "0.42",
+        "inner_wall_line_width": "0.45",
+        "internal_solid_infill_line_width": "0.45",
+        "top_surface_line_width": "0.45",
+        "nozzle_diameter": "0.4",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "bed_exclude_area": "0x0"
+      },
+      "settings_match_expected": true,
+      "slice_result": {
+        "return_code": 0,
+        "error_string": "Success.",
+        "layer_height": 0.20000000298023224,
+        "sparse_infill_density": 0.0,
+        "wall_loops": 8
+      },
+      "gcode": {
+        "sha256": "06bf5e9c4a484c08ba09e187a8df48444167e209b3d9730b7b44f44ff8536c3d",
+        "extrusion_moves": 337125,
+        "roles": [
+          "Bottom surface",
+          "Bridge",
+          "Gap infill",
+          "Inner wall",
+          "Internal Bridge",
+          "Internal solid infill",
+          "Outer wall",
+          "Overhang wall",
+          "Top surface"
+        ],
+        "height_values_mm": [
+          0.199999,
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "width_stats_mm": {
+          "min": 0.0867897,
+          "max": 0.73502,
+          "unique_count": 4576,
+          "quantiles_p0_p25_p50_p75_p100": [
+            0.08679,
+            0.449999,
+            0.449999,
+            0.449999,
+            0.73502
+          ]
+        },
+        "bridge_moves": 5547,
+        "bridge_height_values_mm": [
+          0.200001,
+          0.4
+        ],
+        "bridge_width_values_mm": [
+          0.4
+        ],
+        "thick_bridge_moves_height_gt_0p2001": 5361,
+        "thick_bridge_height_values_mm": [
+          0.4
+        ],
+        "thick_bridge_width_values_mm": [
+          0.4
+        ],
+        "bridge_policy": "Count plastic; zero stiffness, strength, and bonded-connection credit."
+      },
+      "P1S_256mm_bed": {
+        "envelope_with_path_width_mm": {
+          "xmin_mm": 18.34249,
+          "xmax_mm": 237.65751,
+          "ymin_mm": 24.08849,
+          "ymax_mm": 231.90951
+        },
+        "outside_bed_path_count": 0,
+        "bed_exclusion_rect_xy_mm": [
+          0,
+          0,
+          18,
+          28
+        ],
+        "bed_exclusion_intersection_path_count": 0
+      },
+      "geometry_hashes": {
+        "case": {
+          "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+          "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+          "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+          "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+          "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+          "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+          "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+          "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        },
+        "matches_rev_g_source_package": {
+          "body-only.stl": true,
+          "body-only.step": true,
+          "dense-chords-and-seats.stl": true,
+          "dense-chords-and-seats.step": true,
+          "rib-plane-lower.stl": true,
+          "rib-plane-lower.step": true,
+          "rib-plane-upper.stl": true,
+          "rib-plane-upper.step": true
+        }
+      },
+      "3mf_model_settings": {
+        "object_process": {
+          "bottom_shell_layers": "2",
+          "bottom_shell_thickness": "0.4",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "2",
+          "top_shell_thickness": "0.4",
+          "wall_generator": "arachne",
+          "wall_loops": "8"
+        },
+        "parts": [
+          {
+            "id": "1",
+            "subtype": "normal_part",
+            "source_file_basename": "body-only.stl"
+          },
+          {
+            "id": "2",
+            "subtype": "modifier_part",
+            "source_file_basename": "dense-chords-and-seats.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "3",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-lower.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "4",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-upper.stl",
+            "sparse_infill_density": "100%"
+          }
+        ]
+      },
+      "3mf_metadata_field_names_only": {
+        "field_names": [
+          "DesignerUserId",
+          "gcode_file",
+          "p:path",
+          "profiles",
+          "source_file"
+        ],
+        "occurrence_count": 11,
+        "values_redacted": true
+      },
+      "profile_distinction": "Neutral geometry audit machine/process settings; not a P1S PETG or ASA calibrated material profile."
+    },
+    {
+      "case": "2w-8layers",
+      "work": "designs/rev-g2/g-recheck/2w-8layers/.work/audit-2w",
+      "expected": {
+        "wall_loops": 2,
+        "top_bottom_layers": 8
+      },
+      "effective_settings": {
+        "wall_loops": "2",
+        "top_shell_layers": "8",
+        "bottom_shell_layers": "8",
+        "top_shell_thickness": "1.6",
+        "bottom_shell_thickness": "1.6",
+        "sparse_infill_density": "0%",
+        "ensure_vertical_shell_thickness": "ensure_all",
+        "wall_generator": "arachne",
+        "outer_wall_line_width": "0.42",
+        "inner_wall_line_width": "0.45",
+        "internal_solid_infill_line_width": "0.45",
+        "top_surface_line_width": "0.45",
+        "nozzle_diameter": "0.4",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "bed_exclude_area": "0x0"
+      },
+      "settings_match_expected": true,
+      "slice_result": {
+        "return_code": 0,
+        "error_string": "Success.",
+        "layer_height": 0.20000000298023224,
+        "sparse_infill_density": 0.0,
+        "wall_loops": 2
+      },
+      "gcode": {
+        "sha256": "e875644f657b3196c484c45021c192d8ae7aee7bfa19e6267d64aaa4b50cb544",
+        "extrusion_moves": 221924,
+        "roles": [
+          "Bottom surface",
+          "Bridge",
+          "Gap infill",
+          "Inner wall",
+          "Internal Bridge",
+          "Internal solid infill",
+          "Outer wall",
+          "Overhang wall",
+          "Top surface"
+        ],
+        "height_values_mm": [
+          0.199999,
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "width_stats_mm": {
+          "min": 0.0692741,
+          "max": 0.727346,
+          "unique_count": 8881,
+          "quantiles_p0_p25_p50_p75_p100": [
+            0.069274,
+            0.419999,
+            0.449999,
+            0.449999,
+            0.727346
+          ]
+        },
+        "bridge_moves": 4885,
+        "bridge_height_values_mm": [
+          0.2,
+          0.4
+        ],
+        "bridge_width_values_mm": [
+          0.4
+        ],
+        "thick_bridge_moves_height_gt_0p2001": 4646,
+        "thick_bridge_height_values_mm": [
+          0.4
+        ],
+        "thick_bridge_width_values_mm": [
+          0.4
+        ],
+        "bridge_policy": "Count plastic; zero stiffness, strength, and bonded-connection credit."
+      },
+      "P1S_256mm_bed": {
+        "envelope_with_path_width_mm": {
+          "xmin_mm": 18.346327000000002,
+          "xmax_mm": 237.653673,
+          "ymin_mm": 24.092327,
+          "ymax_mm": 231.905673
+        },
+        "outside_bed_path_count": 0,
+        "bed_exclusion_rect_xy_mm": [
+          0,
+          0,
+          18,
+          28
+        ],
+        "bed_exclusion_intersection_path_count": 0
+      },
+      "geometry_hashes": {
+        "case": {
+          "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+          "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+          "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+          "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+          "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+          "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+          "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+          "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        },
+        "matches_rev_g_source_package": {
+          "body-only.stl": true,
+          "body-only.step": true,
+          "dense-chords-and-seats.stl": true,
+          "dense-chords-and-seats.step": true,
+          "rib-plane-lower.stl": true,
+          "rib-plane-lower.step": true,
+          "rib-plane-upper.stl": true,
+          "rib-plane-upper.step": true
+        }
+      },
+      "3mf_model_settings": {
+        "object_process": {
+          "bottom_shell_layers": "8",
+          "bottom_shell_thickness": "1.6",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "8",
+          "top_shell_thickness": "1.6",
+          "wall_generator": "arachne",
+          "wall_loops": "2"
+        },
+        "parts": [
+          {
+            "id": "1",
+            "subtype": "normal_part",
+            "source_file_basename": "body-only.stl"
+          },
+          {
+            "id": "2",
+            "subtype": "modifier_part",
+            "source_file_basename": "dense-chords-and-seats.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "3",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-lower.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "4",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-upper.stl",
+            "sparse_infill_density": "100%"
+          }
+        ]
+      },
+      "3mf_metadata_field_names_only": {
+        "field_names": [
+          "DesignerUserId",
+          "gcode_file",
+          "p:path",
+          "profiles",
+          "source_file"
+        ],
+        "occurrence_count": 11,
+        "values_redacted": true
+      },
+      "profile_distinction": "Neutral geometry audit machine/process settings; not a P1S PETG or ASA calibrated material profile."
+    },
+    {
+      "case": "2w-2layers",
+      "work": "designs/rev-g2/g-recheck/2w-2layers/.work/audit-2w",
+      "expected": {
+        "wall_loops": 2,
+        "top_bottom_layers": 2
+      },
+      "effective_settings": {
+        "wall_loops": "2",
+        "top_shell_layers": "2",
+        "bottom_shell_layers": "2",
+        "top_shell_thickness": "0.4",
+        "bottom_shell_thickness": "0.4",
+        "sparse_infill_density": "0%",
+        "ensure_vertical_shell_thickness": "ensure_all",
+        "wall_generator": "arachne",
+        "outer_wall_line_width": "0.42",
+        "inner_wall_line_width": "0.45",
+        "internal_solid_infill_line_width": "0.45",
+        "top_surface_line_width": "0.45",
+        "nozzle_diameter": "0.4",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "bed_exclude_area": "0x0"
+      },
+      "settings_match_expected": true,
+      "slice_result": {
+        "return_code": 0,
+        "error_string": "Success.",
+        "layer_height": 0.20000000298023224,
+        "sparse_infill_density": 0.0,
+        "wall_loops": 2
+      },
+      "gcode": {
+        "sha256": "3acb62726e4e4e2c4c662b09deebed0f36826271dffdb8ec3d106994edc3abfb",
+        "extrusion_moves": 204466,
+        "roles": [
+          "Bottom surface",
+          "Bridge",
+          "Gap infill",
+          "Inner wall",
+          "Internal Bridge",
+          "Internal solid infill",
+          "Outer wall",
+          "Overhang wall",
+          "Top surface"
+        ],
+        "height_values_mm": [
+          0.199999,
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "width_stats_mm": {
+          "min": 0.0867913,
+          "max": 0.727346,
+          "unique_count": 7396,
+          "quantiles_p0_p25_p50_p75_p100": [
+            0.086791,
+            0.419999,
+            0.449999,
+            0.449999,
+            0.727346
+          ]
+        },
+        "bridge_moves": 5477,
+        "bridge_height_values_mm": [
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "bridge_width_values_mm": [
+          0.4
+        ],
+        "thick_bridge_moves_height_gt_0p2001": 5238,
+        "thick_bridge_height_values_mm": [
+          0.4
+        ],
+        "thick_bridge_width_values_mm": [
+          0.4
+        ],
+        "bridge_policy": "Count plastic; zero stiffness, strength, and bonded-connection credit."
+      },
+      "P1S_256mm_bed": {
+        "envelope_with_path_width_mm": {
+          "xmin_mm": 18.346327000000002,
+          "xmax_mm": 237.653673,
+          "ymin_mm": 24.092327,
+          "ymax_mm": 231.905673
+        },
+        "outside_bed_path_count": 0,
+        "bed_exclusion_rect_xy_mm": [
+          0,
+          0,
+          18,
+          28
+        ],
+        "bed_exclusion_intersection_path_count": 0
+      },
+      "geometry_hashes": {
+        "case": {
+          "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+          "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+          "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+          "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+          "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+          "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+          "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+          "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        },
+        "matches_rev_g_source_package": {
+          "body-only.stl": true,
+          "body-only.step": true,
+          "dense-chords-and-seats.stl": true,
+          "dense-chords-and-seats.step": true,
+          "rib-plane-lower.stl": true,
+          "rib-plane-lower.step": true,
+          "rib-plane-upper.stl": true,
+          "rib-plane-upper.step": true
+        }
+      },
+      "3mf_model_settings": {
+        "object_process": {
+          "bottom_shell_layers": "2",
+          "bottom_shell_thickness": "0.4",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "2",
+          "top_shell_thickness": "0.4",
+          "wall_generator": "arachne",
+          "wall_loops": "2"
+        },
+        "parts": [
+          {
+            "id": "1",
+            "subtype": "normal_part",
+            "source_file_basename": "body-only.stl"
+          },
+          {
+            "id": "2",
+            "subtype": "modifier_part",
+            "source_file_basename": "dense-chords-and-seats.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "3",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-lower.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "4",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-upper.stl",
+            "sparse_infill_density": "100%"
+          }
+        ]
+      },
+      "3mf_metadata_field_names_only": {
+        "field_names": [
+          "DesignerUserId",
+          "gcode_file",
+          "p:path",
+          "profiles",
+          "source_file"
+        ],
+        "occurrence_count": 11,
+        "values_redacted": true
+      },
+      "profile_distinction": "Neutral geometry audit machine/process settings; not a P1S PETG or ASA calibrated material profile."
+    },
+    {
+      "case": "8w-8layers",
+      "work": "designs/rev-g2/g-recheck/8w-8layers/.work/audit-8w",
+      "expected": {
+        "wall_loops": 8,
+        "top_bottom_layers": 8
+      },
+      "effective_settings": {
+        "wall_loops": "8",
+        "top_shell_layers": "8",
+        "bottom_shell_layers": "8",
+        "top_shell_thickness": "1.6",
+        "bottom_shell_thickness": "1.6",
+        "sparse_infill_density": "0%",
+        "ensure_vertical_shell_thickness": "ensure_all",
+        "wall_generator": "arachne",
+        "outer_wall_line_width": "0.42",
+        "inner_wall_line_width": "0.45",
+        "internal_solid_infill_line_width": "0.45",
+        "top_surface_line_width": "0.45",
+        "nozzle_diameter": "0.4",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "bed_exclude_area": "0x0"
+      },
+      "settings_match_expected": true,
+      "slice_result": {
+        "return_code": 0,
+        "error_string": "Success.",
+        "layer_height": 0.20000000298023224,
+        "sparse_infill_density": 0.0,
+        "wall_loops": 8
+      },
+      "gcode": {
+        "sha256": "91b09d2777a043e6b3b683273baa6555cc0491104736be3b0887ed19c823bb71",
+        "extrusion_moves": 360326,
+        "roles": [
+          "Bottom surface",
+          "Bridge",
+          "Gap infill",
+          "Inner wall",
+          "Internal Bridge",
+          "Internal solid infill",
+          "Outer wall",
+          "Overhang wall",
+          "Top surface"
+        ],
+        "height_values_mm": [
+          0.199999,
+          0.2,
+          0.200001,
+          0.4
+        ],
+        "width_stats_mm": {
+          "min": 0.0867897,
+          "max": 0.73502,
+          "unique_count": 7287,
+          "quantiles_p0_p25_p50_p75_p100": [
+            0.08679,
+            0.449999,
+            0.449999,
+            0.449999,
+            0.73502
+          ]
+        },
+        "bridge_moves": 5037,
+        "bridge_height_values_mm": [
+          0.2,
+          0.4
+        ],
+        "bridge_width_values_mm": [
+          0.4
+        ],
+        "thick_bridge_moves_height_gt_0p2001": 4851,
+        "thick_bridge_height_values_mm": [
+          0.4
+        ],
+        "thick_bridge_width_values_mm": [
+          0.4
+        ],
+        "bridge_policy": "Count plastic; zero stiffness, strength, and bonded-connection credit."
+      },
+      "P1S_256mm_bed": {
+        "envelope_with_path_width_mm": {
+          "xmin_mm": 18.34249,
+          "xmax_mm": 237.65751,
+          "ymin_mm": 24.08849,
+          "ymax_mm": 231.90951
+        },
+        "outside_bed_path_count": 0,
+        "bed_exclusion_rect_xy_mm": [
+          0,
+          0,
+          18,
+          28
+        ],
+        "bed_exclusion_intersection_path_count": 0
+      },
+      "geometry_hashes": {
+        "case": {
+          "body-only.stl": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224",
+          "body-only.step": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215",
+          "dense-chords-and-seats.stl": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908",
+          "dense-chords-and-seats.step": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3",
+          "rib-plane-lower.stl": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213",
+          "rib-plane-lower.step": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d",
+          "rib-plane-upper.stl": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f",
+          "rib-plane-upper.step": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        },
+        "matches_rev_g_source_package": {
+          "body-only.stl": true,
+          "body-only.step": true,
+          "dense-chords-and-seats.stl": true,
+          "dense-chords-and-seats.step": true,
+          "rib-plane-lower.stl": true,
+          "rib-plane-lower.step": true,
+          "rib-plane-upper.stl": true,
+          "rib-plane-upper.step": true
+        }
+      },
+      "3mf_model_settings": {
+        "object_process": {
+          "bottom_shell_layers": "8",
+          "bottom_shell_thickness": "1.6",
+          "sparse_infill_density": "0%",
+          "top_shell_layers": "8",
+          "top_shell_thickness": "1.6",
+          "wall_generator": "arachne",
+          "wall_loops": "8"
+        },
+        "parts": [
+          {
+            "id": "1",
+            "subtype": "normal_part",
+            "source_file_basename": "body-only.stl"
+          },
+          {
+            "id": "2",
+            "subtype": "modifier_part",
+            "source_file_basename": "dense-chords-and-seats.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "3",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-lower.stl",
+            "sparse_infill_density": "100%"
+          },
+          {
+            "id": "4",
+            "subtype": "modifier_part",
+            "source_file_basename": "rib-plane-upper.stl",
+            "sparse_infill_density": "100%"
+          }
+        ]
+      },
+      "3mf_metadata_field_names_only": {
+        "field_names": [
+          "DesignerUserId",
+          "gcode_file",
+          "p:path",
+          "profiles",
+          "source_file"
+        ],
+        "occurrence_count": 11,
+        "values_redacted": true
+      },
+      "profile_distinction": "Neutral geometry audit machine/process settings; not a P1S PETG or ASA calibrated material profile."
+    }
+  ],
+  "official_P1S_profile_selected_keys": {
+    "nozzle_diameter": "0.4",
+    "bed_exclude_area": [
+      "0x0",
+      "18x0",
+      "18x28",
+      "0x28"
+    ],
+    "printer_model": "Bambu Lab P1S",
+    "name": "Bambu Lab P1S 0.4 nozzle"
+  },
+  "official_P1S_profile_sha256": "3e72ef1682406940986edb1ebd7d3b2c99afe59789b9c9389ffbdf6831e07b6a",
+  "bed_assumption": "P1S nominal 256 x 256 mm; exclusion rectangle 0..18 x 0..28 mm used for envelope audit.",
+  "limitations": [
+    "Neutral machine baseline is geometry-only and not a calibrated P1S PETG/ASA profile.",
+    "G-code footprint includes declared path-width envelopes; no material qualification is inferred.",
+    "No reslicing, installation, packaging, or source edits performed."
+  ]
+}

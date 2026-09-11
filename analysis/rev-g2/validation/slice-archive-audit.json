@@ -1,0 +1,398 @@
+{
+  "archive_policy": "Five compact deterministic archives; geometry referenced by relative source hashes.",
+  "cases": [
+    {
+      "archive": "designs/rev-g2/g-recheck/2w-5layers/slice-evidence.zip",
+      "archive_bytes": 4722742,
+      "archive_sha256": "aa166e074660d303742590e34d78f72d51e601baade7471d07af5ccc28d4dd72",
+      "candidate_members": [
+        "plate_1.gcode",
+        "audit.3mf",
+        "effective-settings.json",
+        "result.json"
+      ],
+      "case": "2w-5layers",
+      "member_hashes": [
+        {
+          "bytes": 7416983,
+          "path": "plate_1.gcode",
+          "sha256": "ab6cdc9bc145ce140e39432573fdb89347ae66724c9fd072689a6792ba5ec02f"
+        },
+        {
+          "bytes": 2487829,
+          "path": "audit.3mf",
+          "sha256": "80507c401f7f967815fd2414a67ca502df0eca4724835c7384928ff59fa49bb2"
+        },
+        {
+          "bytes": 22711,
+          "path": "effective-settings.json",
+          "sha256": "a39b20958a94b59d2f75638458f3158782b494b8c80f94c697ecedec1d17a267"
+        },
+        {
+          "bytes": 346,
+          "path": "result.json",
+          "sha256": "fbd067929e932276d666290bba92a21cdaa64c52afff5af91577f0ddea84a064"
+        }
+      ],
+      "offending_fields_members_counts": [],
+      "source_geometry": [
+        {
+          "path": "designs/rev-g/body-only.stl",
+          "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+        },
+        {
+          "path": "designs/rev-g/body-only.step",
+          "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.stl",
+          "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.step",
+          "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.stl",
+          "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.step",
+          "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.stl",
+          "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.step",
+          "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        }
+      ],
+      "source_root": "designs/rev-g2/g-recheck/2w-5layers",
+      "status": "PASS",
+      "zip_members": [
+        "audit.3mf",
+        "effective-settings.json",
+        "plate_1.gcode",
+        "result.json",
+        "source-hash-manifest.json"
+      ]
+    },
+    {
+      "archive": "designs/rev-g2/g-recheck/8w-2layers/slice-evidence.zip",
+      "archive_bytes": 6975824,
+      "archive_sha256": "c96324db261dbd6c6d0b5c8c20f8d6683df0074e9a35428b3a9a43b13676b276",
+      "candidate_members": [
+        "plate_1.gcode",
+        "audit.3mf",
+        "effective-settings.json",
+        "result.json"
+      ],
+      "case": "8w-2layers",
+      "member_hashes": [
+        {
+          "bytes": 10596129,
+          "path": "plate_1.gcode",
+          "sha256": "06bf5e9c4a484c08ba09e187a8df48444167e209b3d9730b7b44f44ff8536c3d"
+        },
+        {
+          "bytes": 3615306,
+          "path": "audit.3mf",
+          "sha256": "54c817e5cfa72953182ebdc04c7490f7c90a1f2cd7a9ae083e763cc18fa949a8"
+        },
+        {
+          "bytes": 22715,
+          "path": "effective-settings.json",
+          "sha256": "6e2dad29e4774f7f3d6e71829d96ae9f18d70087140e7f01b3450842c4c2a2d7"
+        },
+        {
+          "bytes": 346,
+          "path": "result.json",
+          "sha256": "a70ab0b9ee44620f37a81a5921f37bae9d33ea385df069446aa8bf9759e204b0"
+        }
+      ],
+      "offending_fields_members_counts": [],
+      "source_geometry": [
+        {
+          "path": "designs/rev-g/body-only.stl",
+          "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+        },
+        {
+          "path": "designs/rev-g/body-only.step",
+          "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.stl",
+          "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.step",
+          "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.stl",
+          "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.step",
+          "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.stl",
+          "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.step",
+          "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        }
+      ],
+      "source_root": "designs/rev-g2/g-recheck/8w-2layers",
+      "status": "PASS",
+      "zip_members": [
+        "audit.3mf",
+        "effective-settings.json",
+        "plate_1.gcode",
+        "result.json",
+        "source-hash-manifest.json"
+      ]
+    },
+    {
+      "archive": "designs/rev-g2/g-recheck/2w-8layers/slice-evidence.zip",
+      "archive_bytes": 4867528,
+      "archive_sha256": "9740e246ef1349a59030bde175ed6cebb423be511d5078b0edfd946b5f594bda",
+      "candidate_members": [
+        "plate_1.gcode",
+        "audit.3mf",
+        "effective-settings.json",
+        "result.json"
+      ],
+      "case": "2w-8layers",
+      "member_hashes": [
+        {
+          "bytes": 7642116,
+          "path": "plate_1.gcode",
+          "sha256": "e875644f657b3196c484c45021c192d8ae7aee7bfa19e6267d64aaa4b50cb544"
+        },
+        {
+          "bytes": 2560349,
+          "path": "audit.3mf",
+          "sha256": "511c27ca97e2be2463e414c259cac9a191a4c3b09666ab873232b67ae74f243d"
+        },
+        {
+          "bytes": 22715,
+          "path": "effective-settings.json",
+          "sha256": "162da501b032b051e47282c23d18f11772d4af471aa812a2289f21aef6a88043"
+        },
+        {
+          "bytes": 346,
+          "path": "result.json",
+          "sha256": "a87c6f040fd3a68e46c5bf501e126fcae710e1b4725eedbadc609114ba06c1a0"
+        }
+      ],
+      "offending_fields_members_counts": [],
+      "source_geometry": [
+        {
+          "path": "designs/rev-g/body-only.stl",
+          "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+        },
+        {
+          "path": "designs/rev-g/body-only.step",
+          "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.stl",
+          "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.step",
+          "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.stl",
+          "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.step",
+          "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.stl",
+          "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.step",
+          "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        }
+      ],
+      "source_root": "designs/rev-g2/g-recheck/2w-8layers",
+      "status": "PASS",
+      "zip_members": [
+        "audit.3mf",
+        "effective-settings.json",
+        "plate_1.gcode",
+        "result.json",
+        "source-hash-manifest.json"
+      ]
+    },
+    {
+      "archive": "designs/rev-g2/g-recheck/2w-2layers/slice-evidence.zip",
+      "archive_bytes": 4512491,
+      "archive_sha256": "cd9ff7ea69585536269cdc808298e8ec4dc6be2629e25ce23002071053920ed5",
+      "candidate_members": [
+        "plate_1.gcode",
+        "audit.3mf",
+        "effective-settings.json",
+        "result.json"
+      ],
+      "case": "2w-2layers",
+      "member_hashes": [
+        {
+          "bytes": 7086566,
+          "path": "plate_1.gcode",
+          "sha256": "3acb62726e4e4e2c4c662b09deebed0f36826271dffdb8ec3d106994edc3abfb"
+        },
+        {
+          "bytes": 2382835,
+          "path": "audit.3mf",
+          "sha256": "cf28c51a41281bb4afad7dec6a902ddfb5933b830c0bf5aee27f8a3b42485a1f"
+        },
+        {
+          "bytes": 22715,
+          "path": "effective-settings.json",
+          "sha256": "025e4dd5e9f6cf5fc4a644008d958fb58aece4bf5aef50954391b57cde01a8bb"
+        },
+        {
+          "bytes": 346,
+          "path": "result.json",
+          "sha256": "a87c6f040fd3a68e46c5bf501e126fcae710e1b4725eedbadc609114ba06c1a0"
+        }
+      ],
+      "offending_fields_members_counts": [],
+      "source_geometry": [
+        {
+          "path": "designs/rev-g/body-only.stl",
+          "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+        },
+        {
+          "path": "designs/rev-g/body-only.step",
+          "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.stl",
+          "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.step",
+          "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.stl",
+          "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.step",
+          "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.stl",
+          "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.step",
+          "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        }
+      ],
+      "source_root": "designs/rev-g2/g-recheck/2w-2layers",
+      "status": "PASS",
+      "zip_members": [
+        "audit.3mf",
+        "effective-settings.json",
+        "plate_1.gcode",
+        "result.json",
+        "source-hash-manifest.json"
+      ]
+    },
+    {
+      "archive": "designs/rev-g2/g-recheck/8w-8layers/slice-evidence.zip",
+      "archive_bytes": 7478432,
+      "archive_sha256": "8fd05f1134f0bb0a0353712842ac4a8acbeef507f90500d1b5205f81bd57a11e",
+      "candidate_members": [
+        "plate_1.gcode",
+        "audit.3mf",
+        "effective-settings.json",
+        "result.json"
+      ],
+      "case": "8w-8layers",
+      "member_hashes": [
+        {
+          "bytes": 11396553,
+          "path": "plate_1.gcode",
+          "sha256": "91b09d2777a043e6b3b683273baa6555cc0491104736be3b0887ed19c823bb71"
+        },
+        {
+          "bytes": 3865999,
+          "path": "audit.3mf",
+          "sha256": "8ffb21be8f8ec35420522a4d3db997fc36c205cbdd1bef35d5bb199505ce2602"
+        },
+        {
+          "bytes": 22715,
+          "path": "effective-settings.json",
+          "sha256": "f35004e95eb9fc25b2e63aa62911bbbb4079ca5813a03a35b54c239dd69ede85"
+        },
+        {
+          "bytes": 346,
+          "path": "result.json",
+          "sha256": "363c9132092db19b60da3258d46944f8c09ee6a0d3b36fdb7a6487db1ba941c7"
+        }
+      ],
+      "offending_fields_members_counts": [],
+      "source_geometry": [
+        {
+          "path": "designs/rev-g/body-only.stl",
+          "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+        },
+        {
+          "path": "designs/rev-g/body-only.step",
+          "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.stl",
+          "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+        },
+        {
+          "path": "designs/rev-g/dense-chords-and-seats.step",
+          "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.stl",
+          "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-lower.step",
+          "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.stl",
+          "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+        },
+        {
+          "path": "designs/rev-g/rib-plane-upper.step",
+          "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+        }
+      ],
+      "source_root": "designs/rev-g2/g-recheck/8w-8layers",
+      "status": "PASS",
+      "zip_members": [
+        "audit.3mf",
+        "effective-settings.json",
+        "plate_1.gcode",
+        "result.json",
+        "source-hash-manifest.json"
+      ]
+    }
+  ],
+  "private_values_emitted": false,
+  "raw_inputs_preserved": true,
+  "status": "PASS"
+}

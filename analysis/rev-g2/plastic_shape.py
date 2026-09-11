@@ -6,6 +6,7 @@ extrusion is spent plastic but is excluded from the structural solid.
 from pathlib import Path
 import argparse
 import hashlib
+import gzip
 import json
 import re
 import sys
@@ -134,6 +135,64 @@ def polygons(geometry):
     return [p for p in geometry.geoms if p.geom_type == 'Polygon']
 
 
+class PlasticShape:
+    """Cached sliced-material geometry for repeated occupancy/thickness queries.
+
+    Coordinates are installed millimetres. Structural material includes only
+    credited paths. Queries default to the unmodified nominal footprints;
+    the continuum approximation must be requested explicitly.
+    """
+    def __init__(self, layers, report=None):
+        self.layers = layers
+        self.report = report or {}
+        self.z0 = np.array([v[0] for v in layers])
+        self.z1 = np.array([v[1] for v in layers])
+        for z0, z1, raw, simple in layers:
+            shapely.prepare(raw)
+            shapely.prepare(simple)
+
+    @classmethod
+    def load(cls, directory):
+        directory = Path(directory)
+        compressed = directory/'layers.json.gz'
+        if compressed.exists():
+            rows = json.loads(gzip.decompress(compressed.read_bytes()))
+        else:
+            rows = json.loads((directory/'layers.json').read_text(encoding='utf-8'))
+        layers = [(r['z0_mm'], r['z1_mm'], shapely.from_wkb(r['raw_wkb']),
+                   shapely.from_wkb(r['simplified_wkb'])) for r in rows]
+        return cls(layers, json.loads((directory/'shape-verification.json').read_text(encoding='utf-8')))
+
+    def section(self, z, continuum=False):
+        k = int(np.searchsorted(self.z1, z, side='right'))
+        if k >= len(self.layers) or z < self.z0[k]:
+            return Polygon()
+        return self.layers[k][3 if continuum else 2]
+
+    def contains(self, xyz, continuum=False):
+        xyz = np.asarray(xyz, dtype=float).reshape(-1, 3)
+        result = np.zeros(len(xyz), dtype=bool)
+        index = np.searchsorted(self.z1, xyz[:, 2], side='right')
+        for k in np.unique(index):
+            if k >= len(self.layers):
+                continue
+            selected = (index == k) & (xyz[:, 2] >= self.z0[k])
+            geometry = self.layers[k][3 if continuum else 2]
+            result[selected] = shapely.contains_xy(geometry, xyz[selected, 0], xyz[selected, 1])
+        return result
+
+    def equivalent_thickness(self, xy, continuum=False):
+        """Integrate actual bonded occupancy through print Z for reduced FEM."""
+        xy = np.asarray(xy, dtype=float).reshape(-1, 2)
+        result = np.zeros(len(xy))
+        for z0, z1, raw, simple in self.layers:
+            result += shapely.contains_xy(simple if continuum else raw, xy[:, 0], xy[:, 1])*(z1-z0)
+        return result
+
+    def volume(self, continuum=False):
+        return sum((simple if continuum else raw).area*(z1-z0) for z0, z1, raw, simple in self.layers)
+
+
 def layer_shapes(data, workers=4, simplify_mm=.01, close_gap_mm=0., homogenize_holes_mm2=0., coordinate_grid_mm=0.):
     """Union actual credited footprints. No body mask or rectangular core cutter."""
     edges = np.unique(np.round(np.r_[data['top'], data['top']-data['height']], 8))
@@ -214,6 +273,16 @@ def solid_from_layers(layers, output, tolerance_mm=0.):
     assert np.all(incidence == 2), 'Structural surface is not closed/manifold'
     np.savez_compressed(output/'surface.npz', p=p, t=t)
     write_stl(output/'structural-material.stl', p, t)
+    return {'solid_volume_before_surface_simplification_mm3': before,
+            'solid_volume_mm3': shape.volume(),
+            **bond_connectivity(layers),
+            'vertices': len(p), 'triangles': len(t),
+            'surface_edge_incidence_all_two': True,
+            'maximum_surface_simplification_tolerance_mm': tolerance_mm,
+            'surface_STL_sha256': sha(output/'structural-material.stl')}
+
+
+def bond_connectivity(layers):
     # Count bonded material through planar regions, not boundary components:
     # an enclosed air cavity adds a surface component but not another solid.
     from scipy.sparse import coo_matrix
@@ -236,15 +305,9 @@ def solid_from_layers(layers, output, tolerance_mm=0.):
     for k, (z0, z1, raw, simple) in enumerate(layers):
         for i, poly in enumerate(regions[k]):
             component_volumes[labels[offsets[k]+i]] += poly.area*(z1-z0)
-    return {'solid_volume_before_surface_simplification_mm3': before,
-            'solid_volume_mm3': shape.volume(),
-            'connected_structural_components': int(count),
+    return {'connected_structural_components': int(count),
             'component_volumes_mm3': sorted(component_volumes.tolist(), reverse=True),
-            'connection_definition': 'Positive-area overlap of credited material on consecutive layer interfaces; no thick-bridge connection.',
-            'vertices': len(p), 'triangles': len(t),
-            'surface_edge_incidence_all_two': True,
-            'maximum_surface_simplification_tolerance_mm': tolerance_mm,
-            'surface_STL_sha256': sha(output/'structural-material.stl')}
+            'connection_definition': 'Positive-area overlap of credited material on consecutive layer interfaces; no thick-bridge connection.'}
 
 
 def main():
@@ -272,7 +335,8 @@ def main():
              'connected_planar_regions': len(polygons(simple)),
              'raw_wkb': raw.wkb_hex, 'simplified_wkb': simple.wkb_hex}
             for z0, z1, raw, simple in layers]
-    (args.output/'layers.json').write_text(json.dumps(rows, separators=(',', ':'))+'\n', encoding='utf-8')
+    (args.output/'layers.json.gz').write_bytes(gzip.compress(json.dumps(rows, separators=(',', ':')).encode(), mtime=0))
+    report['layer_cache_sha256'] = sha(args.output/'layers.json.gz')
     report['nominal_footprint_union_volume_mm3'] = sum(raw.area*(z1-z0) for z0, z1, raw, simple in layers)
     report['layer_polygon_volume_mm3'] = sum(simple.area*(z1-z0) for z0, z1, raw, simple in layers)
     report['shape_relative_difference_from_credited_extrusion_volume'] = report['layer_polygon_volume_mm3']/report['structurally_credited_extrusion_volume_mm3']-1
@@ -285,6 +349,7 @@ def main():
     report['source_sha256_LF_UTF8'] = hashlib.sha256(Path(__file__).read_text(encoding='utf-8').encode()).hexdigest()
     report['shape_model'] = 'Union of emitted nominal bead-width footprints extruded through their declared heights. Thick bridges are excluded. No inherited CAD core or shell approximation.'
     report['volume_interpretation'] = 'G-code E gives spent and credited extrusion volumes. Footprint union gives the homogenized structural envelope; its measured difference from E is reported, never silently equated.'
+    report['bond_connectivity'] = bond_connectivity(layers)
     (args.output/'shape-verification.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
     if args.solid:
         report['solid'] = solid_from_layers(layers, args.output, args.surface_simplify_mm)

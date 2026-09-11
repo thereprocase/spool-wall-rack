@@ -1,0 +1,47 @@
+{
+  "reference": "Published G full-plane finalist 213f8c56151ddee40d51",
+  "changes": [
+    "Base sparse infill changed from 5% to 0%.",
+    "2 walls and 1 mm top/bottom thickness."
+  ],
+  "unchanged": [
+    "Body geometry",
+    "Three helper geometries and locations",
+    "100% helper infill"
+  ],
+  "copied_geometry": [
+    {
+      "file": "body-only.stl",
+      "sha256": "a36bc6941ca431063a1eec2e4e56016427990611592ba04cbf6559d2fd96c224"
+    },
+    {
+      "file": "body-only.step",
+      "sha256": "5237a9961cd4e89ce5332574e1231972b12063642399fea24843d30a6d060215"
+    },
+    {
+      "file": "dense-chords-and-seats.stl",
+      "sha256": "995b173049721419b0854d6e3d35b1b292fcd6d643c267c0490e3c1dfbe4f908"
+    },
+    {
+      "file": "dense-chords-and-seats.step",
+      "sha256": "8a7e92f7eff32587a783c26e6235f3bf23a061bea1ba0b80f7b67c6f4c176ce3"
+    },
+    {
+      "file": "rib-plane-lower.stl",
+      "sha256": "1953878f9edd87f8ec3328913dadab9bac452aad4f4c57947752515decb03213"
+    },
+    {
+      "file": "rib-plane-lower.step",
+      "sha256": "93424aa52cbd4a19aecfe28db1a1528ea2e382006b391d7f4b6f0e86cfa0532d"
+    },
+    {
+      "file": "rib-plane-upper.stl",
+      "sha256": "2ca9c0d12aaec99231417996a88477287ddba3745a48e16beb40bd12890b1d8f"
+    },
+    {
+      "file": "rib-plane-upper.step",
+      "sha256": "a393fe2a7f6a03453a221d66947ae570deb3d0e1d9701575abfc04b5b5ac3f5f"
+    }
+  ],
+  "status": "Prepared; slicing and corrected mechanics are separate checks."
+}

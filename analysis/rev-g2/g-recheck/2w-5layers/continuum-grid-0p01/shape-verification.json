@@ -1,0 +1,64 @@
+{
+  "Gcode_sha256": "ab6cdc9bc145ce140e39432573fdb89347ae66724c9fd072689a6792ba5ec02f",
+  "audit_3MF_sha256": "80507c401f7f967815fd2414a67ca502df0eca4724835c7384928ff59fa49bb2",
+  "all_moving_extrusion_volume_mm3": 77920.27072663784,
+  "Orca_footer_volume_mm3": 77920.0,
+  "relative_extrusion_footer_difference": 3.4744178367684952e-06,
+  "structurally_credited_extrusion_volume_mm3": 70979.8020219935,
+  "sacrificial_thick_bridge_extrusion_volume_mm3": 6940.468704644336,
+  "thick_bridge_segments": 4713,
+  "thick_bridge_heights_mm": [
+    0.4
+  ],
+  "thick_bridge_policy": "Spent plastic only; no stiffness, strength or bonded-connection credit.",
+  "maximum_height_comment_rounding_normalization_mm": 1.000000000001e-06,
+  "nominal_layer_height_mm": 0.2,
+  "model_to_installed_transform": [
+    [
+      -1.0,
+      0.0,
+      0.0,
+      250.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      182.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "nominal_footprint_union_volume_mm3": 71890.97032312615,
+  "layer_polygon_volume_mm3": 71949.03444000003,
+  "shape_relative_difference_from_credited_extrusion_volume": 0.013655045384688647,
+  "layers": 120,
+  "polygon_simplification_tolerance_mm": 0.02,
+  "homogenization_gap_closing_radius_mm": 0.03,
+  "printed_material_homogenized_void_area_limit_mm2": 0.16,
+  "coordinate_grid_mm": 0.01,
+  "integrated_shape_reference_symmetric_difference_mm3": 206.31441526178526,
+  "source_sha256_LF_UTF8": "2e0f7dd63f82e0b13ea81213c77c74b7182a98be65988045c50945e7d35da424",
+  "shape_model": "Union of emitted nominal bead-width footprints extruded through their declared heights. Thick bridges are excluded. No inherited CAD core or shell approximation.",
+  "volume_interpretation": "G-code E gives spent and credited extrusion volumes. Footprint union gives the homogenized structural envelope; its measured difference from E is reported, never silently equated.",
+  "solid": {
+    "solid_volume_before_surface_simplification_mm3": 71949.03443440527,
+    "solid_volume_mm3": 71949.03443440527,
+    "connected_structural_components": 1,
+    "component_volumes_mm3": [
+      71949.03444
+    ],
+    "connection_definition": "Positive-area overlap of credited material on consecutive layer interfaces; no thick-bridge connection.",
+    "vertices": 201830,
+    "triangles": 403544,
+    "surface_edge_incidence_all_two": true,
+    "maximum_surface_simplification_tolerance_mm": 0.0,
+    "surface_STL_sha256": "122ee1e22806a9a295dd79a52c0989f464fa551a286df13aac7a1a94e901be06"
+  },
+  "elapsed_seconds": 19.7251571000088,
+  "status": "GEOMETRY BUILT; mechanics and approximation validation are separate."
+}

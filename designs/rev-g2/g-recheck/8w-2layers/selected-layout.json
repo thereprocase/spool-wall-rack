@@ -1,0 +1,17 @@
+{
+  "seat_webs": true,
+  "infill_percent": 0,
+  "walls": 8,
+  "skin_mm": 0.4,
+  "plane_mm": 1.0,
+  "planes": "full",
+  "bottom_band": 1.6,
+  "diagonal_band": 1.8,
+  "seat_band": 5.0,
+  "front_seat_band": 2.0,
+  "rib_frame": 4.0,
+  "lower_tunnel_collar_mm": 3.5,
+  "upper_tunnel_collar_mm": 2.5,
+  "window_scale": 0.9,
+  "name": "G finalist / material-model recheck / 8w-2layers"
+}

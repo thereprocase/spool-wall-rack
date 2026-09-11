@@ -4,6 +4,21 @@ These entries preserve earlier reasoning and superseded values. Use the current 
 
 ## September 11 — correct slicer-to-FEM material mapping before G2
 
+The five-case shape validation is now complete: 50,000 independent
+variable-width capsule occupancy samples and through-thickness checks agree
+within the explicitly bounded polygonization uncertainty. All effective
+wall/skin settings, zero base infill, three 100% helpers, unchanged G geometry
+hashes and P1S bed/exclusion checks pass. Raw slice evidence is archived.
+
+![Sliced structural material, including few-wall/many-skin and reverse cases](analysis/rev-g2/validation/matrix-shape-sections.png)
+
+The reference cache loads in about 1.6 seconds; 10,000 occupancy queries take
+about 0.06 seconds on the analysis machine. Nominal footprint volume and
+extrusion E accounting remain separate. Boundary-only TetGen reproduces the
+continuum volume and cavities, but the independent topology/quality audit
+rejects it for mechanics. A bounded-envelope mesher is being checked next.
+[Validation and current state](analysis/rev-g2/README.md).
+
 The hand-built G shell/core and one-direction footprint coverage audit did
 not establish equality with emitted material. The current recheck uses the
 same body and helpers, zero base infill and two walls minimum. A two/eight-wall

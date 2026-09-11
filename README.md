@@ -8,9 +8,20 @@ Thick 0.4 mm bridge extrusion counts toward plastic use but receives no
 structural or bonded-connection credit. No corrected mechanical result or
 preferred G2 prototype is established yet.
 
+The reusable path-backed shape tool has passed independent occupancy and
+thickness checks across all five schedules: 50,000 occupancy samples, with
+zero mismatches outside the stated 0.005 mm polygonization band. The two-wall,
+1 mm skin reference uses 77.920 cm³ of plastic, of which 6.940 cm³ is excluded
+sacrificial bridge extrusion. A boundary-only volume mesh matches the
+reconstructed continuum volume but fails topology/quality review. Better
+meshing is in progress; no corrected stress result is claimed.
+
+![Actual sliced material across five wall and skin schedules](analysis/rev-g2/validation/matrix-shape-sections.png)
+
 [G2 scope and acceptance gates](G2-BRIEF.md) ·
+[Shape validation, slice evidence and reproduction](analysis/rev-g2/README.md) ·
 [Slicer-backed shape tool](analysis/rev-g2/plastic_shape.py) ·
-[Wall/skin case preparation](designs/rev-g2/prepare_g_recheck.py)
+[Meshing progress and sources](analysis/rev-g2/MESHING-NOTES.md)
 
 The new study may change the actual architecture, rail/fixing positions and
 density strategy. It retains compact spool-relative elevation and permits up
