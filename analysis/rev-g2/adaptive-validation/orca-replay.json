@@ -1,0 +1,65 @@
+{
+  "status": "FAIL_PATH_REPLAY",
+  "input_model_sha256": "6666980b93d21e6815bab97bc3663adfdfd25a12b22771c30726788ff116f6d5",
+  "orca_executable_sha256": "481c9f071fdb3cda033d1677ce7a9442c41a25cbeeb42cfc808af179b4dc85c3",
+  "source_geometry": "Unchanged Rev G body and three aligned helpers; existing 2w/5-skin-layer recheck model.",
+  "cad_stage": "Existing CAD/source hashes verified; no new geometry generation.",
+  "settings_sha256": {
+    "machine.json": "ca2ee4e07296ff5f6cb61c2b77fae2f8ee1cafc6cc0b542f43b7c47f54328c05",
+    "process.json": "94f702ae334d753c937d281d304236d8ff333b20a02da7bafaa67fde30720f35",
+    "filament.json": "e3131bfad80dbbac172f8b82c4797b1b7fc39eed91e6c6c938841de624988ad9"
+  },
+  "slice_wall_seconds": 3.222897987001488,
+  "returncode": 0,
+  "path_parse_seconds": 3.2491283510007634,
+  "exact_path_replay": {
+    "paths": false,
+    "width": false,
+    "height": false,
+    "declared_height": false,
+    "top": false,
+    "role": false,
+    "volume": false,
+    "structural": false
+  },
+  "accounting": {
+    "Gcode_sha256": "8340be3414aa6a86da0e25e44ca6eade1b54d0e9a69b161c3fc7201da05dd569",
+    "audit_3MF_sha256": "be1115a8eac30a53b59491521576f063789139396f6c4cea84d805f8478aaea0",
+    "all_moving_extrusion_volume_mm3": 77920.3206843424,
+    "Orca_footer_volume_mm3": 77920.0,
+    "relative_extrusion_footer_difference": 4.115558809081321e-06,
+    "structurally_credited_extrusion_volume_mm3": 70979.85197969807,
+    "sacrificial_thick_bridge_extrusion_volume_mm3": 6940.468704644336,
+    "thick_bridge_segments": 4713,
+    "thick_bridge_heights_mm": [
+      0.4
+    ],
+    "thick_bridge_policy": "Spent plastic only; no stiffness, strength or bonded-connection credit.",
+    "maximum_height_comment_rounding_normalization_mm": 1.000000000001e-06,
+    "nominal_layer_height_mm": 0.2,
+    "model_to_installed_transform": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        250.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        182.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "gcode_sha256": "8340be3414aa6a86da0e25e44ca6eade1b54d0e9a69b161c3fc7201da05dd569",
+  "original_gcode_sha256": "ab6cdc9bc145ce140e39432573fdb89347ae66724c9fd072689a6792ba5ec02f",
+  "effective_settings_sha256": "7e66f9a99d1b8e44bc5a233efde2af60d50386cc9afc1d94242ec76237ae3940",
+  "original_effective_settings_sha256": "a39b20958a94b59d2f75638458f3158782b494b8c80f94c697ecedec1d17a267"
+}

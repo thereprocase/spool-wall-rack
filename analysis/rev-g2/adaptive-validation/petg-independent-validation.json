@@ -1,0 +1,30 @@
+{
+  "seed": 20260911,
+  "cases": [
+    {
+      "case": "P1S-PETG",
+      "paths": 214402,
+      "structural_paths": 209689,
+      "thick_bridge_segments": 4713,
+      "sparse_infill_segments": 0,
+      "footer_volume_mm3": 74100.0,
+      "raw_union_volume_mm3": 71891.07691815836,
+      "credited_extrusion_volume_mm3": 67430.69371451871,
+      "thick_bridge_volume_mm3": 6593.451905584814,
+      "cache_volume_mm3": 71891.07691815836,
+      "cache_load_seconds": 1.412101531001099,
+      "contains_query_seconds": 0.03613814799973625,
+      "thickness_query_seconds": 0.043499497000084375,
+      "occupancy_samples": 5000,
+      "occupancy_mismatch": 0,
+      "occupancy_mismatch_outside_0p005mm_band": 0,
+      "thickness_max_error_mm": 0.0,
+      "thickness_mean_error_mm": 0.0,
+      "boundary_uncertainty_mm": 0.005,
+      "occupancy_positive_oracle_samples": 1420,
+      "occupancy_boundary_samples": 13,
+      "policy": "Thick bridges count as spent plastic and are excluded from cache structural occupancy; no strength claim."
+    }
+  ],
+  "status": "independent capsule and thickness oracle checks; mechanics unvalidated"
+}

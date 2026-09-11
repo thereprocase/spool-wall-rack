@@ -1,0 +1,18 @@
+[
+  {
+    "local_raw_log": "g-adaptive-h0p2.log",
+    "sha256": "47c7429f0446da900dc7a658ef93d8aad156e213516e343002b7c10f9f482b60",
+    "reason": "Rejected conflicting midpoint constraints in partially connected edge neighborhoods; fixed by protecting split-vertex neighborhoods."
+  },
+  {
+    "local_raw_log": "orca-p1s-petg-v2.log",
+    "sha256": "7ba8ea040b536f6e22de98323da71c6d905dd7662640f00146a714f633b271e2",
+    "reason": "Bambu G-code uses different role, width, height and Z comment names; parser aliases added and full historical arrays regression-checked."
+  },
+  {
+    "local_raw_log": "p1s-petg-raw-shape.log",
+    "sha256": "270072c087a6a095ab9e0a4597779a7d80f7d0ea3f15dd584744af4e72385cf6",
+    "reason": "Fresh PETG object extrusion and footer differ by 0.10237 percent; original 0.1 percent gate retained, new shape cache remains unbuilt.",
+    "resolution": "Four P1S startup priming moves use 75.52585 mm3 outside the object. They now count as spent plastic only. The unchanged footer gate passes and a fresh raw shape passes independent occupancy/thickness checks; initial failure retained."
+  }
+]

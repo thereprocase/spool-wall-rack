@@ -16,6 +16,12 @@ All five use the same unchanged G body and aligned helpers. Their differences ar
 
 The 2w/5-layer reference has a corrected 2D diagnostic. No corrected 3D strength result exists for these schedules.
 
+[Adaptive mesh and P1S/PETG demo checkpoint](analysis/rev-g2/ADAPTIVE-MESH.md):
+the implemented coarse/fine GPU adapter passes independent fixtures and
+halves the protected 0.2 mm G mesh. Full-G convergence remains unresolved.
+The separate fresh PETG slice reuses G's existing body and three helpers;
+it adds no architecture or physical qualification to the handoffs below.
+
 [GPU validation checkpoint](analysis/rev-g2/GPU-VALIDATION.md): an installed
 free GPU backend passes small 3D fixtures and an actual-slice crop patch test.
 The crop's voxel material loss remains unresolved. This adds analysis evidence;

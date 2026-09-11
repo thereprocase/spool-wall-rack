@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "scope": "Independent scikit-fem fine operator equals constrained adaptive operator; nested thin-beam refinement. No whole-G load or contact result.",
+  "checks": [
+    {
+      "fixture": "transition",
+      "status": "PASS_TWO_LEVEL_GEOMETRY_AND_CONSTRAINTS",
+      "fine_cells": 192,
+      "leaf_cells": 136,
+      "coarse_cells": 8,
+      "cell_reduction_fraction": 0.29166666666666663,
+      "fine_nodes": 325,
+      "independent_nodes": 227,
+      "interpolated_nodes": 98,
+      "duplicate_constraints_checked": 54,
+      "topology_protected_fine_cells": 0,
+      "retained_volume_mm3": 4.6080000000000005,
+      "added_or_removed_volume_mm3": 0.0,
+      "maximum_neighbor_size_ratio": 2,
+      "spacing_mm": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "preparation_seconds": 0.0020010059997730423,
+      "scope": "Exact same inscribed voxel union; Q1 interpolation constraints. Does not recover omitted boundary plastic or qualify mechanics.",
+      "independent_projected_operator_relative_error": 5.723598390818929e-16,
+      "random_energy_relative_error": 1.6918441949117898e-16,
+      "rigid_relative_residual": 6.548916642423288e-18,
+      "gpu_operator_relative_error": 6.2497512857633665e-16,
+      "gpu_dirichlet_operator_relative_error": 5.709522937306011e-16,
+      "affine_all_gauss_stress_max_error_MPa": 1.176836406102666e-14
+    },
+    {
+      "fixture": "hollow",
+      "status": "PASS_TWO_LEVEL_GEOMETRY_AND_CONSTRAINTS",
+      "fine_cells": 160,
+      "leaf_cells": 104,
+      "coarse_cells": 8,
+      "cell_reduction_fraction": 0.35,
+      "fine_nodes": 317,
+      "independent_nodes": 219,
+      "interpolated_nodes": 98,
+      "duplicate_constraints_checked": 54,
+      "topology_protected_fine_cells": 0,
+      "retained_volume_mm3": 3.84,
+      "added_or_removed_volume_mm3": 0.0,
+      "maximum_neighbor_size_ratio": 2,
+      "spacing_mm": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "preparation_seconds": 0.001696666000498226,
+      "scope": "Exact same inscribed voxel union; Q1 interpolation constraints. Does not recover omitted boundary plastic or qualify mechanics.",
+      "independent_projected_operator_relative_error": 3.4341590344913576e-16,
+      "random_energy_relative_error": 1.309379641397179e-16,
+      "rigid_relative_residual": 5.700733902467153e-18,
+      "gpu_operator_relative_error": 5.794439723980794e-16,
+      "gpu_dirichlet_operator_relative_error": 5.934400274748563e-16,
+      "affine_all_gauss_stress_max_error_MPa": 1.176836406102666e-14
+    },
+    {
+      "fixture": "edge_corner",
+      "status": "PASS_TWO_LEVEL_GEOMETRY_AND_CONSTRAINTS",
+      "fine_cells": 80,
+      "leaf_cells": 38,
+      "coarse_cells": 6,
+      "cell_reduction_fraction": 0.525,
+      "fine_nodes": 179,
+      "independent_nodes": 98,
+      "interpolated_nodes": 81,
+      "duplicate_constraints_checked": 33,
+      "topology_protected_fine_cells": 7,
+      "retained_volume_mm3": 1.92,
+      "added_or_removed_volume_mm3": 0.0,
+      "maximum_neighbor_size_ratio": 2,
+      "spacing_mm": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "preparation_seconds": 0.001541572999485652,
+      "scope": "Exact same inscribed voxel union; Q1 interpolation constraints. Does not recover omitted boundary plastic or qualify mechanics.",
+      "independent_projected_operator_relative_error": 7.143346786774623e-16,
+      "random_energy_relative_error": 0.0,
+      "rigid_relative_residual": 1.0414996556219322e-17,
+      "gpu_operator_relative_error": 6.593878411473477e-16,
+      "gpu_dirichlet_operator_relative_error": 5.917421251021575e-16,
+      "affine_all_gauss_stress_max_error_MPa": 9.992007221626409e-15
+    },
+    {
+      "fixture": "partial_edge_bridge",
+      "status": "PASS_TWO_LEVEL_GEOMETRY_AND_CONSTRAINTS",
+      "fine_cells": 17,
+      "leaf_cells": 17,
+      "coarse_cells": 0,
+      "cell_reduction_fraction": 0.0,
+      "fine_nodes": 54,
+      "independent_nodes": 54,
+      "interpolated_nodes": 0,
+      "duplicate_constraints_checked": 0,
+      "topology_protected_fine_cells": 2,
+      "retained_volume_mm3": 0.40800000000000003,
+      "added_or_removed_volume_mm3": 0.0,
+      "maximum_neighbor_size_ratio": 2,
+      "spacing_mm": [
+        0.3,
+        0.4,
+        0.2
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "preparation_seconds": 0.002063980000457377,
+      "scope": "Exact same inscribed voxel union; Q1 interpolation constraints. Does not recover omitted boundary plastic or qualify mechanics.",
+      "independent_projected_operator_relative_error": 2.861799195409464e-16,
+      "random_energy_relative_error": 4.167226810592494e-16,
+      "rigid_relative_residual": 1.1135652153619214e-17,
+      "gpu_operator_relative_error": 5.09143756712095e-16,
+      "gpu_dirichlet_operator_relative_error": 5.190489785838645e-16,
+      "affine_all_gauss_stress_max_error_MPa": 6.439293542825908e-15
+    }
+  ],
+  "thin_beam_refinement": [
+    {
+      "protected_root_length_mm": 0.0,
+      "cells": 128,
+      "compliance_Nmm": 14.086278377498266,
+      "tip_mean_y_mm": -14.086278377498266
+    },
+    {
+      "protected_root_length_mm": 4.0,
+      "cells": 352,
+      "compliance_Nmm": 15.014338744366366,
+      "tip_mean_y_mm": -15.014338744366363
+    },
+    {
+      "protected_root_length_mm": 8.0,
+      "cells": 576,
+      "compliance_Nmm": 15.481789460425361,
+      "tip_mean_y_mm": -15.481789460425361
+    },
+    {
+      "protected_root_length_mm": 12.0,
+      "cells": 800,
+      "compliance_Nmm": 15.656091689802773,
+      "tip_mean_y_mm": -15.656091689802771
+    },
+    {
+      "protected_root_length_mm": 16.0,
+      "cells": 1024,
+      "compliance_Nmm": 15.683283979274023,
+      "tip_mean_y_mm": -15.683283979274021
+    }
+  ],
+  "gpu_thin_beam_solve": {
+    "status": "PASS_LINEAR_SOLVE",
+    "iterations": 420,
+    "recursive_residual": 3.3208253461641455e-11,
+    "tolerance": 3.4000000000000005e-11,
+    "stopped_by_time_budget": false,
+    "true_relative_free_residual": 2.0514318467702368e-10,
+    "elapsed_seconds": 0.03276500599895371,
+    "displacement_relative_error_vs_direct_cpu": 2.0466837394501292e-11
+  }
+}

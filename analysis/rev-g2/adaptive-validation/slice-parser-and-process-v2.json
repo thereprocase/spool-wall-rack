@@ -1,0 +1,64 @@
+{
+  "status": "PASS_COMMENT_DIALECT_AND_PROCESS_AUDIT",
+  "legacy_arrays_match_preserved_cache": {
+    "paths": true,
+    "width": true,
+    "height": true,
+    "declared_height": true,
+    "top": true,
+    "role": true,
+    "volume": true,
+    "structural": true
+  },
+  "transformed_comment_dialect_arrays_match": true,
+  "independent_parser_width_and_role_match": true,
+  "fresh_object_extrusion_segments": 214402,
+  "helper_regions": 3,
+  "helper_infill_density": "100%",
+  "outside_P1S_bed_segments": 0,
+  "P1S_exclusion_intersections": 0,
+  "fresh_accounting": {
+    "Gcode_sha256": "101087367275815324b167977d0a2e83cdcdca54c9332934542147417b8a060f",
+    "audit_3MF_sha256": "4dcdb2cc05ea29ac4aa00414ce9c1cdf83d85671be534221b4271f9fcbec74e4",
+    "all_moving_extrusion_volume_mm3": 74024.14562010352,
+    "object_moving_extrusion_volume_mm3": 74024.14562010352,
+    "nonobject_moving_extrusion_volume_mm3": 75.52585088770712,
+    "nonobject_moving_extrusion_segments": 4,
+    "all_print_moving_extrusion_volume_mm3": 74099.67147099122,
+    "nonobject_policy": "Outside-object moving extrusion is spent plastic only, excluded from structural footprints and bonds.",
+    "Orca_footer_volume_mm3": 74100.0,
+    "object_only_relative_footer_difference": 0.0010236758420577585,
+    "relative_extrusion_footer_difference": 4.4335898621294945e-06,
+    "structurally_credited_extrusion_volume_mm3": 67430.69371451871,
+    "sacrificial_thick_bridge_extrusion_volume_mm3": 6593.451905584814,
+    "thick_bridge_segments": 4713,
+    "thick_bridge_heights_mm": [
+      0.4
+    ],
+    "thick_bridge_policy": "Spent plastic only; no stiffness, strength or bonded-connection credit.",
+    "maximum_height_comment_rounding_normalization_mm": 1.000000000001e-06,
+    "nominal_layer_height_mm": 0.2,
+    "model_to_installed_transform": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        250.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        182.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "fresh_shape_cache_gate": "PASS",
+  "scope": "Bambu comment support preserves old parsed data exactly. Process audit does not waive the existing extrusion/footer accounting gate."
+}

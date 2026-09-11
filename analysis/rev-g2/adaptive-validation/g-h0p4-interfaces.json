@@ -1,0 +1,120 @@
+{
+  "load_N": 117.72,
+  "applied_force_N": [
+    3.076631831244736e-13,
+    -117.72000000000249,
+    0.0
+  ],
+  "applied_moment_Nmm": [
+    1412.6400000000115,
+    -3.534533776772264e-13,
+    -15230.241858209536
+  ],
+  "bearing_interfaces": {
+    "rear_seat": {
+      "target_force_N": [
+        -31.293062243765473,
+        -75.1207488871594,
+        0.0
+      ],
+      "applied_force_N": [
+        -31.29306224376553,
+        -75.12074888715898,
+        0.0
+      ],
+      "bearing_axis_moment_Nmm": -6.1140328910802566e-15,
+      "projected_area_mm2": 227.40042099017356
+    },
+    "front_seat": {
+      "target_force_N": [
+        31.293062243765473,
+        -42.59925111284059,
+        0.0
+      ],
+      "applied_force_N": [
+        31.293062243765288,
+        -42.59925111284109,
+        0.0
+      ],
+      "bearing_axis_moment_Nmm": -3.382710778154774e-15,
+      "projected_area_mm2": 233.6476481606838
+    }
+  },
+  "hardware": {
+    "164": {
+      "washer_nodes": 1352,
+      "bore_nodes": 878,
+      "nominal_washer_plane_x_mm": 3.6,
+      "selected_material_plane_x_mm": 3.6,
+      "washer_plane_retreat_mm": 0.0,
+      "washer_face_area_mm2": 105.44000000000004,
+      "bore_face_area_mm2": 61.76000000000002
+    },
+    "40": {
+      "washer_nodes": 1352,
+      "bore_nodes": 878,
+      "nominal_washer_plane_x_mm": 3.6,
+      "selected_material_plane_x_mm": 3.6,
+      "washer_plane_retreat_mm": 0.0,
+      "washer_face_area_mm2": 105.44000000000004,
+      "bore_face_area_mm2": 61.76000000000002
+    }
+  },
+  "wall_nodes": 99471,
+  "minimum_initial_gap_mm": 0.0,
+  "maximum_initial_gap_mm": 3.6,
+  "base_fixed_dofs": 6216,
+  "loaded_components": [
+    0
+  ],
+  "unsupported_loaded_components": [],
+  "maximum_unsupported_rigid_load": 0.0,
+  "component_rigid_constraint_ranks": [
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "status": "PASS_INTERFACE_PRECHECK",
+  "model": "Rigid washer axial restraint and rigid bore lateral restraint. Radial, nonnegative dowel bearing tractions reproduce the reference force split and zero moment about each dowel axis. Wall normal contact preserves voxel surface gaps. Hardware/substrate capacity is unqualified."
+}

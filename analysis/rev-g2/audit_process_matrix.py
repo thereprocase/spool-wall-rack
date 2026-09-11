@@ -47,13 +47,13 @@ def parse_gcode(path: Path):
     for line_number, line in enumerate(text.splitlines(), 1):
         if line.startswith("; printing object"): active = True
         elif line.startswith("; stop printing object"): active = False
-        elif line.startswith(";TYPE:"): role = line[6:].strip()
-        elif line.startswith(";WIDTH:"):
-            width = float(line[7:])
-        elif line.startswith(";HEIGHT:"):
-            height = float(line[8:])
-        elif line.startswith(";Z:"):
-            z = float(line[3:])
+        elif line.startswith((";TYPE:", "; FEATURE:")): role = line.split(":", 1)[1].strip()
+        elif line.startswith((";WIDTH:", "; LINE_WIDTH:")):
+            width = float(line.split(":", 1)[1])
+        elif line.startswith((";HEIGHT:", "; LAYER_HEIGHT:")):
+            height = float(line.split(":", 1)[1])
+        elif line.startswith((";Z:", "; Z_HEIGHT:")):
+            z = float(line.split(":", 1)[1])
         code = line.split(";", 1)[0].strip()
         if not code: continue
         cmd = code.split(" ", 1)[0]

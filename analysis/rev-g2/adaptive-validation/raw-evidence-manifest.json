@@ -1,0 +1,1445 @@
+{
+  "scope": "Preserved local raw evidence. Large arrays and raw slicer files are not included in this Git checkpoint; paths are relative to the repository root.",
+  "files": [
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/adaptive-counts.json",
+      "bytes": 955,
+      "sha256": "2f85f86d1e596412de3272cadf4fada373cdaaa0d5b6cc41342edd78c455abf5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/geometry.json",
+      "bytes": 1868,
+      "sha256": "83d45e253fca4e2eaeb4a4ee2c0e838eabbb4243ee72bc87a990fb62af7c2447"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/geometry.npz",
+      "bytes": 831398074,
+      "sha256": "f225e327ae1b9b6e74d018aecfb062eccd0b702c50fe04c89bbe16163494f492"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/interfaces.json",
+      "bytes": 2780,
+      "sha256": "f655234bf1a728a12446eb12225dfb14fa25308069535e8ec6a2b89673e50cd9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/interfaces.npz",
+      "bytes": 283718624,
+      "sha256": "fe797187759f8e453ba73291d6822d9dbaa68c73be2ab5323e92a5234710c45b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2/progress.json",
+      "bytes": 96,
+      "sha256": "6b9e59bc74ae8abef0d3bf3bf4bcab8af6a00de97d6d35572da41ae62706ebca"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-adaptive-v2/adaptive.json",
+      "bytes": 2957,
+      "sha256": "02e06cde302be949f6ae29572fe01ec5c6724f0b08ea19bb46f54b1ccc74059f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-adaptive-v2/adaptive.npz",
+      "bytes": 222232795,
+      "sha256": "8f74cd69e31a64332be528cb3baa8d7d772086ac6614fe5b347b68bd7c37a257"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-adaptive-v2/prolongation.npz",
+      "bytes": 319188809,
+      "sha256": "2ba6f61ca703ba2c18c23e7073837056e239db4cc36c8665cabbc39a67b527bb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/active_wall_indices.npy",
+      "bytes": 729016,
+      "sha256": "0f98866182fb4b918dac5fe38a4d569d59c63f74550ade04aff439448599d38a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/fixed_dofs.npy",
+      "bytes": 834904,
+      "sha256": "fa2b115dceebbb27b37b35dcc0a30034079c1c0dd61812a8df8eebd41c0230a2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "82cd8e2266046a5d3a76cc543842777567774dadb30a631ed67ebc889a6e0d3d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "36154c5d3355446727afe553656ea347c35ca5729a8a1f846745be25b4b0f5f7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "ce4c299ab1dbe66379936e29ae4ddc32ee53c7f6338ac0f0c1466425a7064200"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/progress.json",
+      "bytes": 196,
+      "sha256": "48bdc016fc7ac26d0c44827884a7fd520aa6e1fbd2c17b4cf7afc108fbedf3ef"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/solve.json",
+      "bytes": 38033,
+      "sha256": "cde6637acad54d66a88097c1a587e6255e3ba92ad4a030c68db26d5f5a1568b4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "96394cef13c05654c3053f8cfc2f1aedf2157f9239aa6dc1697e0336904db2f4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "3388d69f0b3481f4675a7051d3505593388e5ca3c64ca0c2b85d3b85e08f1e6e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "8eae960090430a5835e833a6a806548e186b28379d2ae0cc2be2eb79c9674f24"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "7b9baaeff667ec89376fd4cc2acad23ed7c362d3ff99efb8e30c6b416b16ecb7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "c958b9171582ec1d83b3cf866c11f13d1456d9d51e9ba01e713380f65e67fb52"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "f23130820c80a48d83440049d132ebcad6aac5cc8272242b13d8a4f6e38d0ad9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "f7e18578cacbae04be142b84b5be594d043e00b45aa2f6b2998765afbaabcc8b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "59ac93a6ae95183577335a7144734a5cae5c2c6e0cd27f721b9a8f92ce23887b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "825a955dc53d72454dc83d5460022112a44711ac96d7a11b1914d8f87483bbb8"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "360df5661889c6fa15875ec27e870b31387b6da058bf8b36359c16f803ab0243"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "23f910f3622248e1d8cf1812caedb8cf3234731c184f9d1b69200618b8a8e0c1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "d4e7436cb35abd7a303aee8bf3b47b31cbb8818dcaff032e2ac3cf5121f636e7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "d88b553acfbbe0324c867a58b4475c24d134afd1267e005aebe436e1555b3d92"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "0b997c52358397e8082084ac42640ad5ef3e3bae8abb5fa3e388289e2412417c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "bbc68462012404b3e3678e576b8a69f83f0534af5d7d1efd2a18939eaf2baa80"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "9a31da0e9786b00b67ce7228823a1024019de874545e284927d41aba891aaf34"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "b5bf429e326dd67bff2fee86df76b7c7befc7cf4a30e88d423a456866e020657"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "309654f77c03116d5fb10fbbcbb31e4b0c5400a1a94b8530b6a46795cb3f3794"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "28badbf486ab908d051ddcc51fa6ba0971d840a1ef81412b99f8eabff4e98522"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "c39e420e5e9a332e8343e53378e1e6aeeb9e0909b5b1128297a7dbfaf11f015a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "16057055d7e3dfb25e54f03f5561d0997079f1bfb08fe7a6d8a340599a682e63"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "2a0fb4b6b9f076b4164e63b808d49bb89c8f82e8e4f91cc2fed0807ec877a104"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "9314415cdc13769fb92aedec9e1596cf0bd9253509b889e15bb684b783053110"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "29d394c52ba20496ab6d9c5e19e3ded2a2876cd1f477aa5c642d3444c47ee99f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "3320b17ed9d2221a88b168b5b9491304fa1e6c4ec132fc1b70d9d6c460181007"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "75cd6ddf4c6299c68ab2ca6a31978076b965ff3ca54f7f3645be80ed10e8c5f8"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "f47359ec17f0e31a497541b0f8f35514054f666eae884c34694a8e76f4bf0fde"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "bb9fa71fe3e24ba51ee4d18d42f308a44decfdaf992c7a845de8e842417fff65"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "c94663208a6e36a4c57fd99892770a8d1837d2573a8c16cb69a0dab7bd1f4ba3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "a1bb93ee4d84b30a019451ae2565c59bd33284c80932971f81e5e0d6af2b57d6"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "f4e5a4131022e46fda66c13ddc49b6e8f7edf5abb48282f34bbf68e4059f24ce"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "f00643f93a959626e39434268b6c42e11a9d92a9198ff989b0e4f34daa2ae709"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "020682b87c2e1eb016821be19a54c19cbd9116783bf28de29f7b4788f188f658"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "66702dcd863e8ea23e7eaceee6972242bbc097cc03502594807f18cfc3b8f998"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "6045ab85b4091a55a21eaddc8a57570b1ec6154bb40ea145b7ccc2ecbef30f93"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "5152830d70b581bb42c566e623513c6b021d7dbd578bce8c3edd088f62c1dd8f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "5e47100ed994df9e2da4c3778c7b2c40deb4183c734399b7e226399d820089a1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "fd7c0d180e0db179c5497450ded19e92314e0a5621cefc46a9c96722489c015b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "26d4fac49e491bec02bdc5767ca42e853aa52cbeb7c57873afd9866abc636ff9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "071614a0d68aefdfa56806d97bda0231af730d692f9bbdd15483a9c6a910bc79"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "82957f52916dce630e8de83e910ac96698551cd08020c3840eda23247f356ba3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "2c7fec9412ebc41fd2490cf5c0d513385fbbd6bdf87f9a005942fec04e482101"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "fc86d6e53605bfb775cb6dbbf0cd4519e76b4fa9d6ee0148bd1cd6cc6cd0fffb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "39fd7cc4f58aa9d3b0c7c97e9706064eb6c47bfcd4d53177c4ad060c5e801224"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "e3cc6d1c967c14d413f870d552b7f6e14d6c4b900047a384027831db5b9172ba"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "208ccbe968230f12238a5ef4acfb3918187b4d74b2a5c9ce6ccee7aaf5b7b61c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "6adcc5ff25d0b6160fdb4875e5118dd2b3e321c11758ade0c59046aa0efa23be"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "f1911d76b636ce1384daec166bdd4bff184462c099f30d4a16bebc1e29c07b3a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "bf95cbbeeead93f873bceb9a750b87d81564231a4ddfd98663a46206947e3d31"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "6dcced2a6f70e053d3e2dee04a96022839553177a2064f5a622f82e73e06bcbc"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "6a7f885ba3868b728892748e69a2c56c63258801c5166d67a3cdf43e127c563f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "e750fe583abe6fb53f08712a73865fe2f0525bbde308e2c2cab0e43727febbee"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "72bbb9f61d41d7a8aeb9c27d5ac650f1b9ade5b4e168931e4efa2c292e652f63"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "c546e2d0a2d32d4f600ae3c61c65ddafd2f6b4a8af6bb4e27ed396dfb982dc21"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "14824ed5be6342072fa9f891b376031d3267d90b434473251515f54333dce562"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "c039d3aab371a38123c39feb99a52c1b059ec8750de34fb7501a717f90b2ab9d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "5159e6bb826eaed85cc647ad9821a9bd578dfd343edf5d7cd2cd774475b820e3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "81bef8598771c05c316bbf61c4fbf9728459e1095e96eb866cdcc1f69cd53d37"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "e4b355b07e14f3e944fc37962a8f54dd2f2148a3e081359e1e44012957c4573c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "e4494e68af9d0519405b8c7103e5a6222311c69c64ce252d8a83d3f4895a4185"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "98a04ce5a434c533c67e7a55a49401d9d7081e63e2b6b7eaa3da3b11bd9b17ec"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "3b95418aa552d56d66bc9b917f832bd05db6d23484b315fda10c03f90bdfe6f1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "c0643a0b9221a3db0e27926482be87ddbe878a905cdd334f1d89866de8d37707"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "c86a79b7bc1d4f726a89a6c32c8c32f7ba38ea1c72502d80ac8556f611f23cfb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "59065da0438e273355ed578ef2ab90d9383851fffee9057003ddf84271b33392"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "401363760df010f1c8c16c43f7424866f7d2529c5b6a67f2ff163d6d73abc9b0"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "c811ffcd92a05b9ab3b2dc3898a38f87c9b52b9d8e6e7a266206e051c23c5665"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "1996f2ec9e271f778c6dfcf1c1703168156cb8bb45abe97a843ce589715efacb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "7e6cb944846b020b4b20149f76a0cb6f992a22365b98263f08f162972db0d6d8"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "205119bf7f473edad70982f0bb9ba93021b5236153d85206b904935b9acad4e2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "7b997ef0ccb5789107b04ccb63a114b4eff119ba1732371924cc8c90bf9bf31d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "a7290dd44d269034261eb878fc80fe49539b37e1c555a465e4d60a6f0195d56e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "808b9c509c08b1faf4f4f357d5cfd8b4da012c4093f0809ba06063777b8ea2a2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "e29677deda043c37134c57bec51b17a2b61e1d2e6436c870ba6deaba87a2686c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "b6d7501cc6c5d0e8402b976bebb116f62fb421d2b1dfd7679b92e644eb154f41"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "1cf292cfe555e6617cfe35d5b6284236994912c42b5477379607d063581a7a91"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "99ac3ffbd2005b639c43d8e61973f5624903efdcd715fff3bfa6ebeb7ed35b28"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "f8f6b45dc64f64762ed62207d43839adba478265da13221cfa623243d0a10e2b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "0e671a48979e6f52cd2ba687f9d1227e6df0fd8a8162bc9113c9651c626217e4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "f778c7b78ace6e2465e1708db7aa80d8b1a15024435c47e3f23291f3d73850ba"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "0e9afd223fada7f85cf5487b356e0cd6a30fd49724fcfcf2a65a9313f5fe3847"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "3c36376de6cc749a458a849009e040d3be9f09dd1fcdfd4b09b630fef9fc7afd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "56b6837d96f1298cf37a546aa28ada9ebe6b3b364e15cb03d1863feffd60c0e9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "ccdf3e760fac8aaf6e6cdb4b0cdf854c497810ca571cb38a20c33bf7bdfcc4fc"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "ee4c8f661a4a49fe9983218f9e76f84093258ed3ab0521c6047bddb778a57078"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "c9fb9d54ec81ab5ad313e419eab6b19dfd3fb15e499cd62e3dd0dd072debb79a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "72fc88ea21e664cd8ed4df51046fcf1e1fdc8b474fb0e3e19ad3ead645553c11"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "47f0127351358917d82c1c5c392ed8cf222dd5a8a99d195bf02f886f7d346c60"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "ecf49db17803e0fae4f6db92a3652605143b8b9326b691b015b092d2926eba48"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "e20aa0fc9827a2ca45c0375691063d92d718be8145f79d59b4a0d3136d45b3eb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "18ffea39f4e3e3825a3626f925591f89dd12bd711581781255f0e3410be390d2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "65fd1b0f59387dd6b09360f6c3eedc59a96c3e121e2f28527a525edfc105c4a5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "f16d829aacfa583f63ea6e6e6b9dbc01bec8c639de23321cc70c277c867aa02e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "0a264d8162b897dca555537c1764b5a634182544d157938fe3fc8e10475cbb36"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "87a158ed64b7f092230936fc782c4aaf32a090de9dd57138c1d51cd2387c3342"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "65d3966e7f63783a8229ffd19ec9a6f7c0b7f8954758a830baf61df003e51a84"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "84177d5472b455cdccd37180af25b4ceea6f45ce0df6971c603401bfd94662ba"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "11eea9b8e0e6dc8bc7d14a8858a8c8c9a132d4aec7103546218355dd7cc04be1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "2fb354809913acb5129f25f8af13177ad5cfd2db4aaecee5ae48b5e87a1afd31"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "f2357ac4265b488771b2a2675085e202f207aadd35cba8cf82a7b0cb4dd5b90f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "a77ae6a4d313d5f64ddf4dd42578917c96bb5080d89dc60b0c473b237d389a46"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "0fac3b847bc852ee88281bf105ba95f7cbdc8dead5cc52592762d04c1dbf8d02"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "9f0066de8fe60332314890f9a0d984ddf660cf836a2408d35d9c42012288a92a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "67c9b521f07c7122e171bfd0480b37609995f2ad3eea043747aaec5dd010d00f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "d929223ba6a631ca7286e67fb713a6381f21a9c46f65fe8e51c25fa095e80cdb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "fb061cb8d9a8592b0873664ebe589b053277ba32ea39f6a7e3ce9a2fae81fb04"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "e1722a5bed349cf2af721301cf9925a0efedd2b3b3434637d14fd0a4af6fb3fb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "98fb9455d2a4c698b5fdde09ffadac45e321edc77506593f42f66ad334203ec4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "b97d91be992ff3cdb2bacd8136e51f231e46a403ec69aafb60f650acc9c69312"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "84dd7edbe6904b48cf731bcd132879bd17c046afb8fe04083418840824e95b56"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "34044042ba65732a2c4ff8b5c0ef2d9fc85deffeb2d4ac47cada268617d49399"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "62e396a8d6e9e26478c6fdfff9eeb3c13fbb607b2bf2782ee5bf6c80fe1cc4c1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "e15e2bf8a96d932d93f78628c36787666fdf88766768c73090e937dc1118f872"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "95cc8617aedb5c682c38ad59ba081b24cd0202c0afa264b7b4555bd19fcaa05e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "a02444986e1f5beb7c55a34152c735a988380309d1cb6b946867655526d5a1d3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "d31fafdf0d90df29fa42451a5c502a2853821a28a826726242a79d345a53b478"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "27f76ebd114b8d210c0e3a4270b45a981baaa7d0ddcbb0a82c540629d942fe07"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "40e77c403715d5fd029fe53d6290d80e9d6b9435da7536e73cd751dee2a9d26e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "5cb0f7eec093cece41655d4e8b750359862b2f02575361b9492d29bc349815ed"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "db39298278ad5bbf7bdf427b3c40e2a8406130a13be45396fdea20b36e66cf2d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "4e87d867c76edb22057f026a5b950e03401d3056f0c4a29d4a32eefc80f300dd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "d0817e0f7cc1c226b8d673829f16a84a6625eee523e39ed2b08eca0a03b5f4b7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "cfe50b9bbc5f926defdd19502ad0af89b0f14ff5a834860cb94db4aaa918211d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "8089609a7202ddbfba5267d32e345495ccfed908be9dfad1dab1ca96ef7c56a9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "0e6e23f9e5c93a2cb6a0d4b8d4895d752b0979e29ffa5e9ede85c5d53ccca9d3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v1/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "b76927dc56e170d4172caed82311114bc3162661be137a7d83b0f8900acbbb0d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/active_wall_indices.npy",
+      "bytes": 729016,
+      "sha256": "0f98866182fb4b918dac5fe38a4d569d59c63f74550ade04aff439448599d38a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/fixed_dofs.npy",
+      "bytes": 834904,
+      "sha256": "fa2b115dceebbb27b37b35dcc0a30034079c1c0dd61812a8df8eebd41c0230a2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/master_force.npy",
+      "bytes": 113657936,
+      "sha256": "d0448395d2c281683db917dbd8f9c4ce82c9d87d878ddb8f7ab233632e768282"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/master_reaction.npy",
+      "bytes": 113657936,
+      "sha256": "216d5493cc093a19939d8632661cb4b96d415e179f4a6e3a2b7d9441d4ca928b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/master_u.npy",
+      "bytes": 113657936,
+      "sha256": "66139b064fbbeb92b295c7a764d0497ea0f76fcf80c61c006e62552822abc369"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/contact-00/wall_gaps.npy",
+      "bytes": 1598240,
+      "sha256": "e250f838aeb89501a6e0f9420bac76b1b497a4df9d5a29c2b7b9f4aaa5f64327"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/progress.json",
+      "bytes": 197,
+      "sha256": "e546a3252a5706b3c9a02a7297d1133116de3b5ef99119864117ab4fb3d8eb19"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/solve.json",
+      "bytes": 143332,
+      "sha256": "998dae18c6fa410b4400ca42930e44905c53a8fa5dbb9578ab1da23402027b94"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00000000.npy",
+      "bytes": 12583040,
+      "sha256": "106e80d4f631d9975d705a29067409825eab4e963b8294a020799c95997b3fcd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00032768.npy",
+      "bytes": 12583040,
+      "sha256": "077723ae7a0fad8ba66c6ef3e8fc716c04a6b881bc19825f41b6ffc2a9a1d74e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00065536.npy",
+      "bytes": 12583040,
+      "sha256": "5459faac54ca89f04ed9be1a47d387fc0d3ec9d67b57a91415b9b18837a9b10a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00098304.npy",
+      "bytes": 12583040,
+      "sha256": "9e279b85fbf3b651fe4f0a20068680e63322154c6b971024bab648a3d6f153c2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00131072.npy",
+      "bytes": 12583040,
+      "sha256": "3fddfebf66839ab8ca64d91a14607edeb2be549ebb91755c159b0d8c7ec832de"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00163840.npy",
+      "bytes": 12583040,
+      "sha256": "99a704fc3cbfac5d0c29b7fa7e11733b9170d5928c349554035a8e1bdc9c218e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00196608.npy",
+      "bytes": 12583040,
+      "sha256": "cf0fe32b0682fd02c8cdf57a017f84119eea85d20751393b725a795cc1b0080b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00229376.npy",
+      "bytes": 12583040,
+      "sha256": "b98109fda70edb69c8d8c6945a1b9aa0a64e5d6f342b2a52df36ae56abb353b3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00262144.npy",
+      "bytes": 12583040,
+      "sha256": "02389cdcd2fc3f7f92966241be3dec8d9023608fd462ca5b5d5eb78f66d2f28d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00294912.npy",
+      "bytes": 12583040,
+      "sha256": "a429f1f50f557c02d99b51c3110baf210bec6876481f4b24dbce3bc0dca28862"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00327680.npy",
+      "bytes": 12583040,
+      "sha256": "d16b3983f9297d1988ec24ebffd82a061b17cddad7bf990d85a863aa44cf7b8f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00360448.npy",
+      "bytes": 12583040,
+      "sha256": "895ab7c0f55602a584193d226c0cc5e39479a598045eabae6eed8844c08cf167"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00393216.npy",
+      "bytes": 12583040,
+      "sha256": "5a4da93de43e219574e090f979ad15b12c8b3ceb90c178fa7fad33db518ee406"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00425984.npy",
+      "bytes": 12583040,
+      "sha256": "05265beed68b00dea1c3edf3155cf77310b77b1537c33afbc87cf1ea8b06658e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00458752.npy",
+      "bytes": 12583040,
+      "sha256": "b48c101e2cd456d03db55a9cb7400aae05381f78664fba6cb51c2e519a72013b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00491520.npy",
+      "bytes": 12583040,
+      "sha256": "289743b7425f881cddb1e80317dddb06ffb9c85a42fdc1a4880a92be096b7174"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00524288.npy",
+      "bytes": 12583040,
+      "sha256": "34ebff43c0165626552d850256ebaa8726f7de75ec245f355319a02f844c27d2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00557056.npy",
+      "bytes": 12583040,
+      "sha256": "ff1e6a93e98d724bf0db9393db1bbac753325244e070b6cd08491e1e32956d43"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00589824.npy",
+      "bytes": 12583040,
+      "sha256": "9de180e6ae139266849c69b1c2274b827e9c26f82d5a8437718abb37759deb2b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00622592.npy",
+      "bytes": 12583040,
+      "sha256": "c5d234a438d0eb7d9c4d63552d3922b8af37c2706be7d3659247e639893f197a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00655360.npy",
+      "bytes": 12583040,
+      "sha256": "95ce95016aed29fbe03a8beb842cd09b1b4d7ba852ef6da4d84a3c0884614cf6"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00688128.npy",
+      "bytes": 12583040,
+      "sha256": "8d9bfc0d91f13dc0578290a6ade193cc73fcdc0c9510d45b454c89fd501a3b76"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00720896.npy",
+      "bytes": 12583040,
+      "sha256": "e8eb051bae4370a6d9603b1ad7021983fecedac01318389f6cadcf08fac961bf"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00753664.npy",
+      "bytes": 12583040,
+      "sha256": "ca7ed01146200c85d5d2f0813b8e5269cbbe0e2e57380a1185d74dfe766f75c6"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00786432.npy",
+      "bytes": 12583040,
+      "sha256": "f0e96af31917d37def203408ce1319616301f65b2c58daf27372863eb71a9da1"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00819200.npy",
+      "bytes": 12583040,
+      "sha256": "afb7dee48e7b295ed535337204037bc4f36c6aa12517a81b515bcc03bfa802c3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00851968.npy",
+      "bytes": 12583040,
+      "sha256": "5563ea9eecf4e8f7bcd3e15d241c96ceda042bed00ebab83e9ec924b3b509050"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00884736.npy",
+      "bytes": 12583040,
+      "sha256": "ecd880d823957da02d6d0868d376730de55140697b4aa51686fea2c8ff3a3394"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00917504.npy",
+      "bytes": 12583040,
+      "sha256": "6078b4db5d37167e381a4c6f32048d91fc5e17e78568c6ee5bad09e6cfb67def"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00950272.npy",
+      "bytes": 12583040,
+      "sha256": "2d5514954eccb75a3b3c30ccb8e3d797db04e8481a4adbdb17dee8422b0b1c3d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-00983040.npy",
+      "bytes": 12583040,
+      "sha256": "ee5e0f5b9a08808c1b222f9e64ec60a603acd7ebf7a291452d81e0358e2d07d6"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01015808.npy",
+      "bytes": 12583040,
+      "sha256": "af1619894184c4c67230fd4718f5d3526f0790076394d3a099ffbd0144bcc1e6"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01048576.npy",
+      "bytes": 12583040,
+      "sha256": "3ca747f9778dfdfba452ee18aacd5facb5d98207656ece9de5539f4c8565ff3c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01081344.npy",
+      "bytes": 12583040,
+      "sha256": "a39fae2102b3fb56523255048edb2fe0bb3ed470ddfdd39abbd556fb291aa2f9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01114112.npy",
+      "bytes": 12583040,
+      "sha256": "69f95e763b16a5110b6ecdd6d1469de265951187fac0192139e828bfb1019acf"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01146880.npy",
+      "bytes": 12583040,
+      "sha256": "f80fc84d69c3006f3e17465542dd6bdd783e7829ab4a98dbba2796c4e976b4fe"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01179648.npy",
+      "bytes": 12583040,
+      "sha256": "8d9ba7d0a86dea2687ff97bd39d07d724c4d3a56fd51e304452cacff343925c8"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01212416.npy",
+      "bytes": 12583040,
+      "sha256": "f4ccaef8176114e0f6a0ead55371f6eb99419082589b771fc55fcb0acbb2a1ee"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01245184.npy",
+      "bytes": 12583040,
+      "sha256": "938f0a5146ef4d742e1c6220078b9c1e6170f0b2c3782178e72fc6486880c548"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01277952.npy",
+      "bytes": 12583040,
+      "sha256": "72ec2ee093903476b7f36ce09a6b45ae8e4cf589dff1e14105e2284fc298023c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01310720.npy",
+      "bytes": 12583040,
+      "sha256": "4e390463153fe6ebf341a0e051719d1a6965d98da8beabe04a0f48af00da40f0"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01343488.npy",
+      "bytes": 12583040,
+      "sha256": "de0cb07697f18912063c46a78714deb87e0ecea5f62fe7b9a6894fc5cd112feb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01376256.npy",
+      "bytes": 12583040,
+      "sha256": "93f646e9d099df59f25011150ce19441816b0510991d46003807e000e0f55611"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01409024.npy",
+      "bytes": 12583040,
+      "sha256": "df2d543bfe4029a084186d4705baba2baaf985ed9ac8f89ace63bc35dcbe61a2"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01441792.npy",
+      "bytes": 12583040,
+      "sha256": "314964d5aff4426f7a856232149729f0e0ac5c3fb552b2fc82202ae395ec05f9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01474560.npy",
+      "bytes": 12583040,
+      "sha256": "4c2c23255e982662e41df80e4c0395698562d11dc52ccde6557bc1b7bf1c65b7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01507328.npy",
+      "bytes": 12583040,
+      "sha256": "9ad5f97ab80d52bd30bbe339ba10aa1d5564f9434b47b13d4048109ad083d97c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01540096.npy",
+      "bytes": 12583040,
+      "sha256": "343815f3b93259d3de6cf1dbebd89628ca84876b9403ff8fc210fb45e4c7559a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01572864.npy",
+      "bytes": 12583040,
+      "sha256": "ae90c05b962acfe9f086996a6e3433069f6a4d0970d9c286dfaf7de16524a7e5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01605632.npy",
+      "bytes": 12583040,
+      "sha256": "6664577cd5b01fdb89179cbb995c6444a25bf56254b5c70bbae66fb7c2756687"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01638400.npy",
+      "bytes": 12583040,
+      "sha256": "39f2e52652c4ebbd516773a6f28f6270117456b69630e050340a3b5cb7c00c68"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01671168.npy",
+      "bytes": 12583040,
+      "sha256": "e8896afa8e9b98314db67283b498a9efbcab3eb418b6edaee91775ac219a0ba7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01703936.npy",
+      "bytes": 12583040,
+      "sha256": "11fac38f47876b86f2b29902e822dd181fc8941d6f78eed392310bd5e582104c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01736704.npy",
+      "bytes": 12583040,
+      "sha256": "b5dc1edc8dd8b0def71d3d4c199574804444138bda84585ea9b5d5a99d60c43b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01769472.npy",
+      "bytes": 12583040,
+      "sha256": "d0f3dcd7a3008ff15d2a8b7e306703bd0a89df8ba313d5794cdf946d00a91270"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01802240.npy",
+      "bytes": 12583040,
+      "sha256": "b508c5eb5bad3bc88ee4a1b450efa9ecf43ed4907f5d2e76e392f89c4a0def60"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01835008.npy",
+      "bytes": 12583040,
+      "sha256": "a9f9bb38ebdb08c73d2872629590bdffd1b845c2d6046e29286d3cd2a433fdca"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01867776.npy",
+      "bytes": 12583040,
+      "sha256": "ca2ca261a8df719b15baa8ea7040143d920da2ea6e6b5e39a78bb2ac80102397"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01900544.npy",
+      "bytes": 12583040,
+      "sha256": "7a5efa1e5e4ed1d23fbc1f5bca4111b9a6c5ecef39820c07fc2dd8054ba29152"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01933312.npy",
+      "bytes": 12583040,
+      "sha256": "ad2a4ea11821b9a69bd59ba33bae5b7dc08f10b6eaf4b040e9f77f91bff0d7b9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01966080.npy",
+      "bytes": 12583040,
+      "sha256": "64b995fb6eb5864a62a9f5740f10267412449c0397e6c576b6364488fcaa99e9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-01998848.npy",
+      "bytes": 12583040,
+      "sha256": "e8547a9b823bd2fbed20acdfa8f524af1ea47d836169a7db1e6384f2b08762cf"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02031616.npy",
+      "bytes": 12583040,
+      "sha256": "897fb7a4f7b44cf1ab0938989c9f3be28b62d190da558e214dc9d10dbbca36ce"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02064384.npy",
+      "bytes": 12583040,
+      "sha256": "94f9c55499a7148832ce2769851f9076cb6a8867f387c9a2697c0abcb13d7290"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02097152.npy",
+      "bytes": 12583040,
+      "sha256": "4f4e962fcaa614ccf15ec817b8744edf9ddb2117800fddf54d9fb7076189652e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02129920.npy",
+      "bytes": 12583040,
+      "sha256": "7c3c15bab9db55c175f52950a9538b88eff40634ce6d0825ad06c45e28aabdf5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02162688.npy",
+      "bytes": 12583040,
+      "sha256": "b37683887c127dc35341207c2f2f8a174d2e973ce5a8d9a26645f5c1a5fa52dd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02195456.npy",
+      "bytes": 12583040,
+      "sha256": "14a082e7fa5eb22a039e1522654f98f768143b5d051c4a18eddcef8befab97dd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02228224.npy",
+      "bytes": 12583040,
+      "sha256": "c5e0d86eec0653bec265574c654ef902faef75967a66b2e00dc52745b704cd15"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02260992.npy",
+      "bytes": 12583040,
+      "sha256": "42e0360efcf68b4f2523bfbf06df3cad37ef39e6416e0793c9c7a9008ac2c124"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02293760.npy",
+      "bytes": 12583040,
+      "sha256": "da87d75cebafff13de4497c8e8c92cb2bf05ed6a7aaccc8ae93999cb0de07c45"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02326528.npy",
+      "bytes": 12583040,
+      "sha256": "21a578bbb9f58c043a93223e422620cdfaa37227141f14fcc29557b5c35d7385"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02359296.npy",
+      "bytes": 12583040,
+      "sha256": "cd1ad04ccd692cb37667db706acd32ae4440db21d9711c7b66e4410a02323091"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02392064.npy",
+      "bytes": 12583040,
+      "sha256": "89a53a96ce8821027ea90f92d02812cb51ba18a2247f145602320c8f72ffd38c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02424832.npy",
+      "bytes": 12583040,
+      "sha256": "e22ae4af6721c49833234c85251bb6d3260bd1639f19cd932ee6879147c0b462"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02457600.npy",
+      "bytes": 12583040,
+      "sha256": "a541469af736e6dd9d740ce602fed8e36ae6693a04f05b517d1b788047337308"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02490368.npy",
+      "bytes": 12583040,
+      "sha256": "bf52babb0f5f4a89fe412f943f833e8241284e8c22061df70351dff520ee3d3f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02523136.npy",
+      "bytes": 12583040,
+      "sha256": "e424ecc796f2895be4d0fbe2f3870bf653f28394658d3eaf918a8b8ab0a83981"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02555904.npy",
+      "bytes": 12583040,
+      "sha256": "bd2c18de625aadd91fc89b24bb89719a1474c3380aee3c7e9c25b9504f03e35c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02588672.npy",
+      "bytes": 12583040,
+      "sha256": "12454c77b512aeecca4220401f7aac42cdb6d9e16b0a0d666632b222df50ae33"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02621440.npy",
+      "bytes": 12583040,
+      "sha256": "2de2f72d587d3d1f7aaa70fddc6c1fba3b8ac74756045b35abf539997eec45fb"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02654208.npy",
+      "bytes": 12583040,
+      "sha256": "b8ab6d363f25ac16001ed8442e31d0dd374a3cf74a5a7b8730e1ad7f86b089df"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02686976.npy",
+      "bytes": 12583040,
+      "sha256": "271e2829939daca5452920dc7f2cddaa30cc9717631f15b10342e9b116ed1862"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02719744.npy",
+      "bytes": 12583040,
+      "sha256": "60741e635a4bcf98e4b6495f88362c59f5dea3fa39627df6e66777817a12bbd5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02752512.npy",
+      "bytes": 12583040,
+      "sha256": "a5a4527b58a27aa9c5480ebb7f830813bdccd21d77b7a05e2fb428418f06c88a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02785280.npy",
+      "bytes": 12583040,
+      "sha256": "62c77a4e1eccb8871ecb35822d7ea9e8c81b99580e92d664789fbc34ab228840"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02818048.npy",
+      "bytes": 12583040,
+      "sha256": "23b45f80712ba7d7240be06267cc6878a44aa21b599251ee42c1b4f57cd2d04b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02850816.npy",
+      "bytes": 12583040,
+      "sha256": "a18f2518b46c4ee05db51e563b9c3cc4a96ca2bc77166e4b0eb63a3d64976f57"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02883584.npy",
+      "bytes": 12583040,
+      "sha256": "cb697338e566cf37ee965b243ae40946d91d08dce58c87ae009135c5dff587a4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02916352.npy",
+      "bytes": 12583040,
+      "sha256": "5c65c318b150238cffbf3faf79518399fdaa0ff26456e08210a81cca38606594"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02949120.npy",
+      "bytes": 12583040,
+      "sha256": "8fd3cfbf45c42244bc4163b1b48fd029257ccf3d8d4e21e272ac74ea64a9445b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-02981888.npy",
+      "bytes": 12583040,
+      "sha256": "d854e50ac3a40abfa026d95eb8f27bc2366f0ef8a29cb145515beab323015f2d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03014656.npy",
+      "bytes": 12583040,
+      "sha256": "1421deef68136fb7db2dbb393f1b0eb5be6fcf3339c34d154edf8c24508a966e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03047424.npy",
+      "bytes": 12583040,
+      "sha256": "4da431e575165ecc478e820c10c7d3d210be4cd226bd7f4fcf9cb6bfccacc2a0"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03080192.npy",
+      "bytes": 12583040,
+      "sha256": "9381b2675815b7fb11412e608d8097831edc4cbb79d1f8aa1882ff76f5228642"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03112960.npy",
+      "bytes": 12583040,
+      "sha256": "7af2e56b47554d66b53dab439d743e6081b793c8c92b6654907d25049d67cc6f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03145728.npy",
+      "bytes": 12583040,
+      "sha256": "735296bca6f8ad55c5d9eb26acd276d2dbe5dc2463d2fac9f38f07c64615ac5b"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03178496.npy",
+      "bytes": 12583040,
+      "sha256": "e593ff6054678ffb8361c73a006a86d1624673cd215243c1c42595fdd7c1f1c5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03211264.npy",
+      "bytes": 12583040,
+      "sha256": "631969860de65785456d6149dc8dccf07e82b69ae43aa3efcdf56c63fb0bc36e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03244032.npy",
+      "bytes": 12583040,
+      "sha256": "ba1a2c19ad140dca10c0ba87a8a027e08bdc3b4e53024cfb7a3218c5d4cedc59"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03276800.npy",
+      "bytes": 12583040,
+      "sha256": "975f4d7276e30313ba73faff538c216f3dc08727a703894a3cd1868f434a1d6a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03309568.npy",
+      "bytes": 12583040,
+      "sha256": "8c4a2161a28810eb9efb1baa06b65d5f020608ff4ae6350a94b9fde8940e799a"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03342336.npy",
+      "bytes": 12583040,
+      "sha256": "387b886a24e8629947a8515f1bf65131ecd6678618c121dcf4744f9e1ca95bb8"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03375104.npy",
+      "bytes": 12583040,
+      "sha256": "b2495ca850a676972470e4decc4c07493446238d2f599c52cc597c9dc0e4dfe9"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03407872.npy",
+      "bytes": 12583040,
+      "sha256": "bb90d76f0ab89f62e020a0e0bba4e90edac84843e4e8e89e008dac40a4616c01"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03440640.npy",
+      "bytes": 12583040,
+      "sha256": "90235ccd1e6acf299bd8be05f0c786af1d71218ccdd8416cffeed06b1839bba5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03473408.npy",
+      "bytes": 12583040,
+      "sha256": "d3a3f79f0bd06eda689510a0141c1b2981703b0f37aaf1146bfd297675c48114"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03506176.npy",
+      "bytes": 12583040,
+      "sha256": "1c1044447b8fb72de03ea3eae7b4d6263d35634d716f96368d04df80de1af700"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03538944.npy",
+      "bytes": 12583040,
+      "sha256": "9def71be9c27b597fcf701d4ee738f6fe48fa1226ac5075f946ac49a35722b85"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03571712.npy",
+      "bytes": 12583040,
+      "sha256": "3d783f2890aa16305a72eeb4c817db638975b958312c0431ba2e185a4b601322"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03604480.npy",
+      "bytes": 12583040,
+      "sha256": "5ceadd4c8779d5e93bb22e06286fff4e7cc4cdfc70bd80362507c9f9657db0cc"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03637248.npy",
+      "bytes": 12583040,
+      "sha256": "a6ab724709fe682781b5229babb98e7e29543b463e596478b5619b62147804cf"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03670016.npy",
+      "bytes": 12583040,
+      "sha256": "e2d6a328d361ae27241cdfce69ef3aa5497efeb7dbd1b92239f09552c8c854cd"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03702784.npy",
+      "bytes": 12583040,
+      "sha256": "cc1a1f053bd69932c4e9f822fa45481993e6f4349cb1b7e899d2fe876dd93eaf"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03735552.npy",
+      "bytes": 12583040,
+      "sha256": "b4fe7f0ea7c29cf054ad16eb4dbda0892c484a708ac963f517734928e0e45ad7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03768320.npy",
+      "bytes": 12583040,
+      "sha256": "ab2825d261d2e633566fec8d81af3a7b31ec44eab25961a8e3ea23bec2ac94b3"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03801088.npy",
+      "bytes": 12583040,
+      "sha256": "8f24fc0a97990085acdac52ba1355a46ccb60d931ce2777737be18cd0e81ed55"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03833856.npy",
+      "bytes": 12583040,
+      "sha256": "96eef45d761bd01a3316feec3daa06811576c0f8043159daad2b7d7834621a0c"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03866624.npy",
+      "bytes": 12583040,
+      "sha256": "5ee68c58e5e5785a52f3f02b2f78677520d58f435d80e88e8fc8c0f143231702"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03899392.npy",
+      "bytes": 12583040,
+      "sha256": "8a74dfd0f7716f4de9995ca5931e9120f7d36ec90a31375d7b1f740d495467d5"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03932160.npy",
+      "bytes": 12583040,
+      "sha256": "5dd7bd8af6e311e40e6d590b18c06fea899743176bfeee9607e6d4b4b950726e"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03964928.npy",
+      "bytes": 12583040,
+      "sha256": "78e8b761ca1f8b8b0d4a734165a4251acc9abd74b486fe51cf3b0af901cf59c4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-03997696.npy",
+      "bytes": 12583040,
+      "sha256": "061225bcb05f44ea9155d1e66857d7c171ef235d3d189178e45c0502a0b4fb44"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-04030464.npy",
+      "bytes": 12583040,
+      "sha256": "1e398783bee00ba5f0ff444fc2a39c69358822bf4f35c39fabbc20c37848d1fe"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-04063232.npy",
+      "bytes": 12583040,
+      "sha256": "5fafd03ea6d1677fca56973d9482b8191ab3f37f80e5de90fbbed687c78d0e42"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/g-h0p2-solve-v2/stress-04096000.npy",
+      "bytes": 220928,
+      "sha256": "0589e4ceb06928069ed570061e05c8cf336e138ffdda9df09050a36e1fe3aec0"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/audit.3mf",
+      "bytes": 2693404,
+      "sha256": "4dcdb2cc05ea29ac4aa00414ce9c1cdf83d85671be534221b4271f9fcbec74e4"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/effective-settings.json",
+      "bytes": 40702,
+      "sha256": "6c8bef0358f2aa3f3fb19a3776b95339663db282772dcf1091c66a98b92bf554"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/filament.json",
+      "bytes": 5262,
+      "sha256": "02735b0224b95c71321b2d2eb673b7639896bfcaaf0f5245b8ae451798a0bcc7"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/machine.json",
+      "bytes": 19920,
+      "sha256": "592792d59f9a6c472c122feffc2f6c1dcd3ad595631b815d388e35943a3c318f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/orca.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/plate_1.gcode",
+      "bytes": 8260251,
+      "sha256": "101087367275815324b167977d0a2e83cdcdca54c9332934542147417b8a060f"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/process.json",
+      "bytes": 1382,
+      "sha256": "1605657ae185678b6b089468cad2cc0439f6dddfce58edca0648786d46cac6be"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/orca-p1s-petg-v3/replay.json",
+      "bytes": 4503,
+      "sha256": "cf24c0e966249a4581d57871b7735ec4673a32f75e23be7ac318d648b0ca1c2d"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/p1s-petg-raw-shape-v2/extrusion-paths.npz",
+      "bytes": 2626494,
+      "sha256": "d3a6421656991210fdef695b94898dbe2b79c84fed7e4fdcb59f2b0a58e0a335"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/p1s-petg-raw-shape-v2/layers.json.gz",
+      "bytes": 23507507,
+      "sha256": "eae6f30d58508ccc6ad0de8bb676d512e09e53bb942beafd0a3bde504eba0549"
+    },
+    {
+      "path": "analysis/rev-g2/.work/gpu-demo/p1s-petg-raw-shape-v2/shape-verification.json",
+      "bytes": 2818,
+      "sha256": "ae0ff883e0aa3cbf17b6eec2f1d518f840a38aed8ee1b16f352632ba3c52a13f"
+    }
+  ]
+}

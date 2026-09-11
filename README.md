@@ -4,6 +4,14 @@
 
 **Restart checkpoint:** [complete handoff and current candidates](RESTART-2026-09-11.md).
 
+**Latest: [adaptive mesh implementation and full-G trial evidence](analysis/rev-g2/ADAPTIVE-MESH.md).**
+Tested coarse/fine constraints halve G's 0.2 mm element count while protecting
+interfaces and bonds. A separate boundary census reaches 0.025 mm XY with
+1.10% omitted nominal material. Both bounded full-G GPU trials failed linear
+convergence; no corrected movement or strength result is accepted. A fresh
+P1S/PETG slice and raw shape were also built, with priming plastic accounted
+separately. These are analysis/process checkpoints; G2 CAD remains unbuilt.
+
 **September 11, 2026: correcting the structural material model before G2.**
 G's finalist is being rechecked against actual Orca paths with at least two
 walls, 0% base infill and the existing 100% helpers. The wall/skin validation

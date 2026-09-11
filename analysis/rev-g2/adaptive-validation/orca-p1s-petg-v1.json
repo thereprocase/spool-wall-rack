@@ -1,0 +1,45 @@
+{
+  "status": "FAIL_ORCA",
+  "input_model_sha256": "6666980b93d21e6815bab97bc3663adfdfd25a12b22771c30726788ff116f6d5",
+  "orca_executable_sha256": "481c9f071fdb3cda033d1677ce7a9442c41a25cbeeb42cfc808af179b4dc85c3",
+  "source_geometry": "Unchanged Rev G body and three aligned helpers; existing 2w/5-skin-layer recheck model.",
+  "cad_stage": "Existing input 3MF hashed; no new geometry generation.",
+  "profile_receipt": {
+    "machine": [
+      {
+        "file": "machine/fdm_machine_common.json",
+        "sha256": "d366fabb3df7253d6e27c4cd58c9410821b407d2216164bb52b4de0f481c6f11"
+      },
+      {
+        "file": "machine/fdm_bbl_3dp_001_common.json",
+        "sha256": "12397ad3698666fa33b9a9f76b76ecfd636ce9903476266fec66c33d40f69361"
+      },
+      {
+        "file": "machine/Bambu Lab P1S 0.4 nozzle.json",
+        "sha256": "8c5eeef2a17d4d58bdc35dd4dcca74aa98464e9a8ff883cf97290c44389f7bb5"
+      }
+    ],
+    "filament": [
+      {
+        "file": "filament/fdm_filament_common.json",
+        "sha256": "93f61fc727c47158e846768f508885989c41e0d716880a7fabe7e1fdac489dbc"
+      },
+      {
+        "file": "filament/fdm_filament_pet.json",
+        "sha256": "61346a1bb88702df2f45d2fdbfff1b1330801a00e8c294b7ad03c820cb15d6df"
+      },
+      {
+        "file": "filament/Generic PETG @base.json",
+        "sha256": "ccef82308af495ec477e0278f26106cdac742e68e15cca2b52d8c9ed4a40a8b4"
+      }
+    ],
+    "scope": "Installed P1S machine and generic PETG base inheritance; process calibration is not claimed."
+  },
+  "settings_sha256": {
+    "machine.json": "592792d59f9a6c472c122feffc2f6c1dcd3ad595631b815d388e35943a3c318f",
+    "process.json": "debcbc880890d21b353c9dfdc9150e7617dec37410adec4fcb38a991708f1992",
+    "filament.json": "02735b0224b95c71321b2d2eb673b7639896bfcaaf0f5245b8ae451798a0bcc7"
+  },
+  "slice_wall_seconds": 0.36760881999907724,
+  "returncode": 195
+}

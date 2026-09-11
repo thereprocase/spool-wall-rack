@@ -1,0 +1,56 @@
+{
+  "status": "PASS_GEOMETRY_CENSUS_ONLY",
+  "raw_volume_mm3": 71890.97032312617,
+  "elapsed_seconds": 122.09454796699902,
+  "levels": [
+    {
+      "boundary_xy_mm": 0.8,
+      "retained_volume_mm3": 48102.27200000001,
+      "omitted_fraction": 0.33089966954408623,
+      "fully_inside_leaf_prisms": 375799,
+      "unresolved_crossing_prisms": 388469,
+      "uniform_fine_equivalent_cells": 375799
+    },
+    {
+      "boundary_xy_mm": 0.4,
+      "retained_volume_mm3": 60111.712000000014,
+      "omitted_fraction": 0.163848926647982,
+      "fully_inside_leaf_prisms": 751094,
+      "unresolved_crossing_prisms": 774072,
+      "uniform_fine_equivalent_cells": 1878491
+    },
+    {
+      "boundary_xy_mm": 0.2,
+      "retained_volume_mm3": 66126.98400000001,
+      "omitted_fraction": 0.08017677737856288,
+      "fully_inside_leaf_prisms": 1503003,
+      "unresolved_crossing_prisms": 1530161,
+      "uniform_fine_equivalent_cells": 8265873
+    },
+    {
+      "boundary_xy_mm": 0.1,
+      "retained_volume_mm3": 68946.956,
+      "omitted_fraction": 0.040951100115825256,
+      "fully_inside_leaf_prisms": 2912989,
+      "unresolved_crossing_prisms": 3058787,
+      "uniform_fine_equivalent_cells": 34473478
+    },
+    {
+      "boundary_xy_mm": 0.05,
+      "retained_volume_mm3": 70341.84800000001,
+      "omitted_fraction": 0.021548218311192135,
+      "fully_inside_leaf_prisms": 5702773,
+      "unresolved_crossing_prisms": 6135036,
+      "uniform_fine_equivalent_cells": 140683696
+    },
+    {
+      "boundary_xy_mm": 0.025,
+      "retained_volume_mm3": 71098.33050000001,
+      "omitted_fraction": 0.01102558248363461,
+      "fully_inside_leaf_prisms": 11754633,
+      "unresolved_crossing_prisms": 12303257,
+      "uniform_fine_equivalent_cells": 568786644
+    }
+  ],
+  "scope": "Raw layer slabs and only fully covered XY cells; no added material. Counts precede mesh grading, hanging-node constraints, interface protection, and mechanical refinement. Not a mechanics-ready mesh or speedup measurement."
+}

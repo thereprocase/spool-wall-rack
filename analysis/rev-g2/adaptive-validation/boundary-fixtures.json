@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "checks": "Independent uniform full-cell coverage agrees at all six scales for an enclosed hole and a 0.01 mm separating gap. No material added.",
+  "fixtures": [
+    {
+      "status": "PASS_GEOMETRY_CENSUS_ONLY",
+      "raw_volume_mm3": 2.4000000000000004,
+      "elapsed_seconds": 0.0033279919989581686,
+      "levels": [
+        {
+          "boundary_xy_mm": 0.8,
+          "retained_volume_mm3": 2.0480000000000005,
+          "omitted_fraction": 0.1466666666666666,
+          "fully_inside_leaf_prisms": 16,
+          "unresolved_crossing_prisms": 8,
+          "uniform_fine_equivalent_cells": 16
+        },
+        {
+          "boundary_xy_mm": 0.4,
+          "retained_volume_mm3": 2.0480000000000005,
+          "omitted_fraction": 0.1466666666666666,
+          "fully_inside_leaf_prisms": 16,
+          "unresolved_crossing_prisms": 20,
+          "uniform_fine_equivalent_cells": 64
+        },
+        {
+          "boundary_xy_mm": 0.2,
+          "retained_volume_mm3": 2.4000000000000004,
+          "omitted_fraction": 0.0,
+          "fully_inside_leaf_prisms": 60,
+          "unresolved_crossing_prisms": 36,
+          "uniform_fine_equivalent_cells": 300
+        },
+        {
+          "boundary_xy_mm": 0.1,
+          "retained_volume_mm3": 2.4000000000000004,
+          "omitted_fraction": 0.0,
+          "fully_inside_leaf_prisms": 60,
+          "unresolved_crossing_prisms": 76,
+          "uniform_fine_equivalent_cells": 1200
+        },
+        {
+          "boundary_xy_mm": 0.05,
+          "retained_volume_mm3": 2.4000000000000004,
+          "omitted_fraction": 0.0,
+          "fully_inside_leaf_prisms": 60,
+          "unresolved_crossing_prisms": 156,
+          "uniform_fine_equivalent_cells": 4800
+        },
+        {
+          "boundary_xy_mm": 0.025,
+          "retained_volume_mm3": 2.4000000000000004,
+          "omitted_fraction": 0.0,
+          "fully_inside_leaf_prisms": 60,
+          "unresolved_crossing_prisms": 316,
+          "uniform_fine_equivalent_cells": 19200
+        }
+      ],
+      "scope": "Raw layer slabs and only fully covered XY cells; no added material. Counts precede mesh grading, hanging-node constraints, interface protection, and mechanical refinement. Not a mechanics-ready mesh or speedup measurement."
+    },
+    {
+      "status": "PASS_GEOMETRY_CENSUS_ONLY",
+      "raw_volume_mm3": 3.16806,
+      "elapsed_seconds": 0.004794918999323272,
+      "levels": [
+        {
+          "boundary_xy_mm": 0.8,
+          "retained_volume_mm3": 1.5360000000000005,
+          "omitted_fraction": 0.5151606977140584,
+          "fully_inside_leaf_prisms": 12,
+          "unresolved_crossing_prisms": 24,
+          "uniform_fine_equivalent_cells": 12
+        },
+        {
+          "boundary_xy_mm": 0.4,
+          "retained_volume_mm3": 2.0160000000000005,
+          "omitted_fraction": 0.36364841574970164,
+          "fully_inside_leaf_prisms": 27,
+          "unresolved_crossing_prisms": 58,
+          "uniform_fine_equivalent_cells": 63
+        },
+        {
+          "boundary_xy_mm": 0.2,
+          "retained_volume_mm3": 2.5840000000000005,
+          "omitted_fraction": 0.18435888209187945,
+          "fully_inside_leaf_prisms": 98,
+          "unresolved_crossing_prisms": 118,
+          "uniform_fine_equivalent_cells": 323
+        },
+        {
+          "boundary_xy_mm": 0.1,
+          "retained_volume_mm3": 2.8860000000000006,
+          "omitted_fraction": 0.08903240468930496,
+          "fully_inside_leaf_prisms": 249,
+          "unresolved_crossing_prisms": 238,
+          "uniform_fine_equivalent_cells": 1443
+        },
+        {
+          "boundary_xy_mm": 0.05,
+          "retained_volume_mm3": 3.0415000000000005,
+          "omitted_fraction": 0.039948738344601886,
+          "fully_inside_leaf_prisms": 560,
+          "unresolved_crossing_prisms": 478,
+          "uniform_fine_equivalent_cells": 6083
+        },
+        {
+          "boundary_xy_mm": 0.025,
+          "retained_volume_mm3": 3.1005000000000007,
+          "omitted_fraction": 0.02132535368648303,
+          "fully_inside_leaf_prisms": 1032,
+          "unresolved_crossing_prisms": 956,
+          "uniform_fine_equivalent_cells": 24804
+        }
+      ],
+      "scope": "Raw layer slabs and only fully covered XY cells; no added material. Counts precede mesh grading, hanging-node constraints, interface protection, and mechanical refinement. Not a mechanics-ready mesh or speedup measurement."
+    }
+  ]
+}

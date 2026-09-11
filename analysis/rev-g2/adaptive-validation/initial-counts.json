@@ -1,0 +1,36 @@
+{
+  "fine_cells": 8265873,
+  "spacing_mm": [
+    0.2,
+    0.2,
+    0.2
+  ],
+  "levels": [
+    {
+      "max_level": 1,
+      "leaf_cells_unbalanced": 2664907,
+      "fraction_of_uniform": 0.3223987351366274,
+      "fully_filled_cells_at_level": 800138
+    },
+    {
+      "max_level": 2,
+      "leaf_cells_unbalanced": 2230599,
+      "fraction_of_uniform": 0.2698564325873383,
+      "fully_filled_cells_at_level": 62044
+    },
+    {
+      "max_level": 3,
+      "leaf_cells_unbalanced": 2223004,
+      "fraction_of_uniform": 0.2689375943714596,
+      "fully_filled_cells_at_level": 1085
+    },
+    {
+      "max_level": 4,
+      "leaf_cells_unbalanced": 2222780,
+      "fraction_of_uniform": 0.26891049499550745,
+      "fully_filled_cells_at_level": 32
+    }
+  ],
+  "seconds": 0.07435451600031229,
+  "scope": "Geometry-preserving full-block merges only; no added material. Levels above one still require grading/constraint handling. Not a mechanics solve."
+}

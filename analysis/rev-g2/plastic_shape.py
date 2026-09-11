@@ -46,20 +46,22 @@ def read_paths(folder, model_to_installed=None):
     relative_E, absolute_XYZ, previous_E = True, True, 0.
     role, width, height, layer_z = 'Custom', .45, .2, None
     points, widths, heights, declared_heights, tops, roles, volumes = [], [], [], [], [], [], []
+    nonobject_moving_volume = 0.
+    nonobject_moving_segments = 0
     active = False
     for line in source.splitlines():
         if line.startswith('; printing object'):
             active = True
         elif line.startswith('; stop printing object'):
             active = False
-        elif line.startswith(';TYPE:'):
-            role = line[6:]
-        elif line.startswith(';WIDTH:'):
-            width = float(line[7:])
-        elif line.startswith(';HEIGHT:'):
-            height = float(line[8:])
-        elif line.startswith(';Z:'):
-            layer_z = float(line[3:])
+        elif line.startswith((';TYPE:', '; FEATURE:')):
+            role = line.split(':', 1)[1].strip()
+        elif line.startswith((';WIDTH:', '; LINE_WIDTH:')):
+            width = float(line.split(':', 1)[1])
+        elif line.startswith((';HEIGHT:', '; LAYER_HEIGHT:')):
+            height = float(line.split(':', 1)[1])
+        elif line.startswith((';Z:', '; Z_HEIGHT:')):
+            layer_z = float(line.split(':', 1)[1])
         code = line.split(';')[0].strip()
         command = code.split(' ', 1)[0]
         if command == 'M83':
@@ -102,6 +104,12 @@ def read_paths(folder, model_to_installed=None):
                 tops.append(round(float(installed[1, 2]), 6))
                 roles.append(role)
                 volumes.append(extrusion*area)
+            elif not active and extrusion > 0 and np.linalg.norm(new[:2]-pos[:2]) > 1e-7:
+                # P1S startup priming lines are included in Orca's footer but
+                # are outside the printed object. Count spent E separately;
+                # never add these paths to structural footprints or bonds.
+                nonobject_moving_volume += extrusion*area
+                nonobject_moving_segments += 1
             pos = new
     data = {'paths': np.asarray(points), 'width': np.asarray(widths),
             'height': np.asarray(heights), 'declared_height': np.asarray(declared_heights), 'top': np.asarray(tops),
@@ -115,8 +123,14 @@ def read_paths(folder, model_to_installed=None):
     return data, {'Gcode_sha256': sha(folder/'plate_1.gcode'),
                   'audit_3MF_sha256': sha(folder/'audit.3mf'),
                   'all_moving_extrusion_volume_mm3': float(data['volume'].sum()),
+                  'object_moving_extrusion_volume_mm3': float(data['volume'].sum()),
+                  'nonobject_moving_extrusion_volume_mm3': nonobject_moving_volume,
+                  'nonobject_moving_extrusion_segments': nonobject_moving_segments,
+                  'all_print_moving_extrusion_volume_mm3': float(data['volume'].sum()+nonobject_moving_volume),
+                  'nonobject_policy': 'Outside-object moving extrusion is spent plastic only, excluded from structural footprints and bonds.',
                   'Orca_footer_volume_mm3': header_volume,
-                  'relative_extrusion_footer_difference': float(abs(data['volume'].sum()/header_volume-1)),
+                  'object_only_relative_footer_difference': float(abs(data['volume'].sum()/header_volume-1)),
+                  'relative_extrusion_footer_difference': float(abs((data['volume'].sum()+nonobject_moving_volume)/header_volume-1)),
                   'structurally_credited_extrusion_volume_mm3': float(data['volume'][~thick].sum()),
                   'sacrificial_thick_bridge_extrusion_volume_mm3': float(data['volume'][thick].sum()),
                   'thick_bridge_segments': int(thick.sum()),

@@ -2,6 +2,35 @@
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.
 
+## September 11 — adaptive constraints, finer boundaries and bounded whole-G trials
+
+Implemented two-level hex coarsening with Q1 hanging-node constraints and a
+matrix-free CUDA `P.T K P` operator. Independent scikit-fem, affine/rigid,
+Dirichlet and bending fixtures pass. Real G exposed a partially connected edge
+case; its initial rejection is retained and split-bond neighborhoods now stay
+fine. Protecting those neighborhoods plus seats/fixings/wall contact reduces
+8,265,873 cells to 4,096,575 without changing the eroded material union.
+
+The 1,000-iteration and subsequent 12,000-iteration GPU trials failed linear
+equilibrium convergence. Complete failed fields and every raw stress sample
+survive; neither failure yields a movement or strength result. A useful coarse
+correction/preconditioner is still required. No old CPU meshing job restarted.
+
+A separate geometry-only boundary census reaches 0.025 mm XY with 1.10% raw
+material omission using 11.75 million prisms before grading, versus 568.79
+million uniform fine cells. Multilevel constraints and mechanical refinement
+remain unfinished; this is not a solve-time speedup measurement.
+
+An actual installed P1S/Generic PETG slice completed in 2.67 s. Bambu G-code
+comment aliases preserve the historical parsed arrays exactly. An initial
+footer accounting rejection was traced to 75.526 mm3 of startup priming lines;
+counting that spent, nonstructural plastic passes the unchanged accounting
+gate and enables a fresh raw shape. Historical neutral slices remain separate.
+
+[Full evidence, failures, limitations and reproduction](analysis/rev-g2/ADAPTIVE-MESH.md).
+G's existing aligned STEP/helpers and all seven unbuilt G2 concepts retain
+their prior status. No preferred or physically qualified prototype is added.
+
 ## September 11 — test the free GPU route on real hardware and raw slices
 
 Installed Warp 1.17.0 in an isolated WSL environment and verified its explicit

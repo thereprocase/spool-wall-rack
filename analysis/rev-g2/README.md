@@ -3,6 +3,12 @@
 **The five-case shape validation is complete; corrected G mechanics is still
 in progress. No accepted G2 architecture exists yet.**
 [Restart handoff and current results](../../RESTART-2026-09-11.md).
+[Adaptive mesh checkpoint](ADAPTIVE-MESH.md): verified coarse/fine constraints
+halve the protected whole-G 0.2 mm mesh. Both bounded full-G GPU solves failed
+equilibrium convergence. A separate boundary census reaches 0.025 mm XY with
+1.10% omitted raw plastic; multilevel grading and mechanics remain unfinished.
+The fresh P1S/PETG slice, priming accounting and independently checked raw shape
+remain distinct from the historical neutral input used in those GPU trials.
 [GPU execution and validation checkpoint](GPU-VALIDATION.md): Warp now runs on
 the RTX 3080 Ti and passes independent small 3D fixtures plus manufactured patch
 tests on a raw G slice crop. Conservative voxel material loss remains 4.31%

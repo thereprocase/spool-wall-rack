@@ -19,3 +19,11 @@
 /analysis/rev-g2/gpu-validation/** text eol=lf
 /analysis/rev-g2/gpu-validation/**/*.npz binary
 /analysis/rev-g2/gpu-validation/**/*.png binary
+/analysis/rev-g2/validate_gpu_demo_*.py text eol=lf
+/analysis/rev-g2/plot_gpu_demo_adaptive.py text eol=lf
+/analysis/rev-g2/plastic_shape.py text eol=lf
+/analysis/rev-g2/audit_process_matrix.py text eol=lf
+/analysis/rev-g2/adaptive-validation/** text eol=lf
+/analysis/rev-g2/adaptive-validation/**/*.npz binary
+/analysis/rev-g2/adaptive-validation/**/*.png binary
+/analysis/rev-g2/adaptive-validation/*.png binary
