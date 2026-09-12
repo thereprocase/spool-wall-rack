@@ -1,5 +1,9 @@
 # Historical design journal
 
+## 2026-09-12 — Plywood touches the wall
+
+V3 removes both rear stops and moves the plywood rear edge from X=10.5 mm to the wall plane X=0. Shelf depth remains 355.6 mm; front overhang decreases from 106.1 to 95.6 mm. The above-shelf triangles, handed inward ledges and three stud fixings remain. Updated source, drawing and actual CAD renders, added a zero-wall-gap assertion, and updated the underside-bearing check for the longer contact. Wall geometry in the image is reference context only. Slicing and structural qualification remain open.
+
 ## 2026-09-12 — Raise shelf triangles above the plywood
 
 Corrected the shelf arrangement to place both side triangles above the shelf. Added 32 mm inward-projecting, 12 mm thick lower ledges; moved stud axes to 24/75/125 mm above the plywood underside. The triangle rises 145 mm above the underside (125.95 mm above a 19.05 mm board). Changed plywood end clearances and the cut-length rule to stud spacing minus 33 mm. Added actual underside bearing-area checks, regenerated exports and updated drawings/renders. V2 changes the ledge load path and layer-bond demands; previous shelf volume/fit receipts are historical. Slicing and structural/physical qualification remain open.

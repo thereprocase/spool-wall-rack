@@ -8,15 +8,13 @@
   "ledge_width": 32,
   "plywood_clearance": 0.5,
   "plywood_thickness": 19.05,
-  "rear_stop_depth": 10,
-  "rear_stop_height": 6,
   "retention_pilot_depth": 8,
   "retention_pilot_diameter": 3,
   "retention_x": [
     100,
     220
   ],
-  "revision": "above-shelf-v2",
+  "revision": "above-shelf-v3-wall-flush",
   "shelf_depth": 355.6,
   "stud_hole_diameter": 6.5,
   "stud_hole_y": [

@@ -1,6 +1,6 @@
 # Plywood shelf brackets — 14-inch shelf
 
-A left and right solid triangular bracket support one continuous plywood shelf. Each bracket fixes to one stud with three screws. **The triangular bodies rise above the shelf, outside the plywood ends. Inward-facing lower ledges support the plywood; only the 12 mm ledges sit beneath it.** This v2 arrangement supersedes the earlier below-shelf prototype.
+A left and right solid triangular bracket support one continuous plywood shelf. Each bracket fixes to one stud with three screws. **The triangular bodies rise above the shelf, outside the plywood ends. Inward-facing lower ledges support the plywood; only the 12 mm ledges sit beneath it.** **V3 places the plywood rear edge directly against the wall (X=0) and removes the rear stops.**
 
 ![Actual CAD shelf assembly](exports/shelf-assembly.png)
 
@@ -23,8 +23,8 @@ A left and right solid triangular bracket support one continuous plywood shelf. 
 | Side triangle thickness along wall | 32 mm |
 | Inward ledge projection | 32 mm |
 | Total part width along wall | 64 mm |
-| Rear plywood edge from wall | 10.5 mm |
-| Unsupported front overhang | 106.1 mm / 4.18 in |
+| Rear plywood edge from wall | 0 mm — touches wall |
+| Unsupported front overhang | 95.6 mm / 3.76 in |
 | Stud screw axes above plywood underside | 24, 75, 125 mm |
 | Stud screw shank clearance | 6.5 mm nominal plus printable roof |
 | Washer bearing depth from wall | 8 mm |
@@ -32,11 +32,11 @@ A left and right solid triangular bracket support one continuous plywood shelf. 
 | Example stud centres | 812.8 mm / 32 in |
 | Example plywood cut | 779.8 × 355.6 mm, actual thickness |
 
-The 14-inch dimension describes the plywood. The one-piece bracket supports its rear 249.5 mm. A full-depth 14-inch triangular body would require a different print arrangement or a structural joint. This version deliberately retains a one-piece broad-side print on the P1S. Its analytical rotated outline is approximately 248 mm square before a brim; actual machine exclusions still require a slice.
+The 14-inch dimension describes the plywood. The one-piece bracket supports its rear 260 mm. A full-depth 14-inch triangular body would require a different print arrangement or a structural joint. This version deliberately retains a one-piece broad-side print on the P1S. Its analytical rotated outline is approximately 248 mm square before a brim; actual machine exclusions still require a slice.
 
 Shelf length is **measured stud spacing − 33 mm** between these side panels and 0.5 mm end clearances. Measure stud centres before cutting. The example uses two brackets on studs 32 inches apart. The shelf span and load have not been supplied; 32 inches is a layout example, not a verified allowable span.
 
-The raised side triangles and rear stops form an open-top plywood saddle, with 0.5 mm end clearances. There is no thickness-sensitive sliding slot. Lower the board into the pair after installing both brackets. Two 3 mm pilot holes per bracket, at 100 and 220 mm from the wall, accept optional retention screws through the plywood. Limit plastic engagement to 6–8 mm; these screws retain the board and are not assigned gravity-load capacity. Drill the board with clearance holes and avoid wedging the plastic apart.
+The raised side triangles and lower ledges form an open-top plywood saddle, with 0.5 mm end clearances. The wall locates the rear edge; no printed stop sits between the plywood and the wall. There is no thickness-sensitive sliding slot. Lower the board into the pair after installing both brackets. Two 3 mm pilot holes per bracket, at 100 and 220 mm from the wall, accept optional retention screws through the plywood. Limit plastic engagement to 6–8 mm; these screws retain the board and are not assigned gravity-load capacity. Drill the board with clearance holes and avoid wedging the plastic apart.
 
 ## CAD downloads
 
@@ -58,7 +58,7 @@ python designs/plywood-shelf/build.py
 
 The build produces left/right installed STEP, print-oriented STEP and STL, aligned whole-body helper STEP assemblies, a shelf assembly, and a JSON geometry receipt in `exports/`. The dedicated GitHub workflow runs the build on this design branch and publishes successful exports back to that branch.
 
-**V2 geometry:** the dedicated build regenerates and checks both raised triangles, lower bearing ledges, handed print exports and renders. [Current geometry receipt](exports/verification.json) records the revision, exact footprints, volume, plywood bearing area and geometry checks. Read the `above-shelf-v2` receipt; the old below-shelf receipt does not qualify this revision.
+**V3 geometry:** the dedicated build regenerates and checks both raised triangles, lower bearing ledges, handed print exports and renders. [Current geometry receipt](exports/verification.json) records the revision, exact footprints, volume, plywood bearing area and geometry checks. Read the `above-shelf-v3-wall-flush` receipt; the old below-shelf receipt does not qualify this revision.
 
 **Prototype status:** no actual Orca slice, structural analysis, physical fit or load test has been performed.
 
@@ -86,7 +86,7 @@ Before release, confirm shelf span and intended contents, actual screw assembly 
 
 ## Revision note
 
-The earlier below-shelf geometry and build evidence remain in Git history. V2 changes the load path, plywood cut length, print thickness and screw arrangement. Earlier volume and fit results are superseded. The 14-inch shelf depth, 260 mm arm projection and 106.1 mm front overhang remain.
+The earlier below-shelf geometry and build evidence remain in Git history. V2 changes the load path, plywood cut length, print thickness and screw arrangement. Earlier volume and fit results are superseded. V3 removes the rear stops and shifts the plywood back 10.5 mm to touch the wall. The 14-inch shelf depth and 260 mm arm projection remain; front overhang decreases to 95.6 mm. The current receipt explicitly checks zero rear wall gap.
 
 ## Provenance
 

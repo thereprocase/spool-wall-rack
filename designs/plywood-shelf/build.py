@@ -42,7 +42,6 @@ assert all(y > P["plywood_thickness"] for y in P["stud_hole_y"])
 outline = [(0,-T),(D,-T),(D,P["toe_depth"]),(P["toe_depth"],H),(0,H)]
 left = cq.Workplane("XY").polyline(outline).close().extrude(W)
 left = left.union(box(0,-T,W,D,T,L))
-left = left.union(box(0,0,W,P["rear_stop_depth"],P["rear_stop_height"],L))
 retention_z = W + L/2
 for y in P["stud_hole_y"]:
     left = left.cut(teardrop(-1,y,P["stud_hole_diameter"],D+2))
@@ -57,7 +56,7 @@ S = P["stud_spacing"]
 gap = P["plywood_clearance"]
 ply_start = W + gap
 ply_length = S - W - 2*gap
-ply = box(P["rear_stop_depth"]+gap,0,ply_start,
+ply = box(0,0,ply_start,
           P["shelf_depth"],P["plywood_thickness"],ply_length)
 
 def solids_volume(obj):
@@ -95,13 +94,15 @@ valid_single(right)
 assert abs(solids_volume(left)-solids_volume(right)) < 1e-5
 assert solids_volume(left.intersect(ply)) < 1e-5
 assert solids_volume(right.translate((0,0,S)).intersect(ply)) < 1e-5
+assert abs(ply.val().BoundingBox().xmin) < 1e-6, "Plywood must touch wall X=0"
+assert abs(ply.val().BoundingBox().xmax-P["shelf_depth"]) < 1e-6
 assert left.val().BoundingBox().ymin >= -T - 1e-6
 assert left.val().BoundingBox().ymax >= H - 1e-6
 # Plywood has real underside bearing on both inward-facing ledges.
 bearing_probe = ply.translate((0,-0.01,0))
 bearing_area_left = solids_volume(left.intersect(bearing_probe))/0.01
 bearing_area_right = solids_volume(right.translate((0,0,S)).intersect(bearing_probe))/0.01
-assert bearing_area_left > (D-P["rear_stop_depth"]-gap)*(L-gap)*0.98
+assert bearing_area_left > D*(L-gap)*0.98
 assert abs(bearing_area_left-bearing_area_right) < 1e-3
 # Straight driver access from the front to each recessed washer seat.
 for y in P["stud_hole_y"]:
@@ -128,7 +129,9 @@ report={"status":"CAD checks passed; unsliced and physically unqualified",
         "above_shelf_height_mm":H,"below_shelf_ledge_mm":T,
         "plywood_bearing_area_mm2":[bearing_area_left,bearing_area_right],
         "parameters":P,"plywood_cut_mm":[ply_length,P["shelf_depth"],P["plywood_thickness"]],
-        "front_overhang_mm":P["rear_stop_depth"]+gap+P["shelf_depth"]-D,
+        "front_overhang_mm":P["shelf_depth"]-D,
+        "plywood_wall_gap_mm":ply.val().BoundingBox().xmin,
+        "wall_flush_pass":True,
         "mirrored_volume_match":True,"plywood_interference_pass":True,
         "three_straight_driver_paths_pass":True,"retention_pilot_backing_pass":True,
         "parts":{}}

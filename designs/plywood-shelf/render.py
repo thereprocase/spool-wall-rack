@@ -18,8 +18,11 @@ S=P["stud_spacing"]
 W=P["body_width"]
 ply=(cq.Workplane("XY").box(P["shelf_depth"],P["plywood_thickness"],
       S-W-2*P["plywood_clearance"],centered=False)
-      .translate((P["rear_stop_depth"]+P["plywood_clearance"],0,
+      .translate((0,0,
                   W+P["plywood_clearance"])))
+# Wall is render context only; the bracket/shelf exports remain unchanged in scope.
+wall=(cq.Workplane("XY").box(8,200,S+W+60,centered=False)
+      .translate((-8,-30,-30)))
 BG="#f5f3ee"
 INK="#273a42"
 plt.rcParams.update({"font.family":"DejaVu Sans","text.color":INK,"font.size":12})
@@ -64,13 +67,13 @@ def figure(title,subtitle):
              fontsize=10,color="#61737a")
     return fig
 
-fig=figure("Triangles above. Plywood on lower ledges.",
+fig=figure("Triangles above. Plywood against the wall.",
            "14 in deep × 30.70 in long plywood shown • 32 in stud centres • 3/4 in plywood")
 ax=fig.add_axes([.02,.12,.96,.73],projection="3d")
-view(ax,[(left,"#517e88"),(right.translate((0,0,S)),"#517e88"),(ply,"#d2b07a")],
+view(ax,[(wall,"#deded8"),(left,"#517e88"),(right.translate((0,0,S)),"#517e88"),(ply,"#d2b07a")],
      elev=18,azim=61,zoom=1)
 fig.text(.05,.09,"Bracket projection: 10.24 in",fontsize=12)
-fig.text(.57,.09,"Plywood extends 4.18 in beyond the arms",fontsize=12)
+fig.text(.57,.09,"Plywood touches wall • 3.76 in front overhang",fontsize=12)
 fig.savefig(OUT/"shelf-assembly.png",dpi=180,facecolor=BG)
 plt.close(fig)
 

@@ -2,18 +2,18 @@
 <rect width="1200" height="730" fill="#f5f3ee"/>
 <style>text{font-family:Arial,sans-serif;fill:#273a42}.title{font-size:30px;font-weight:bold}.label{font-size:18px}.small{font-size:15px}.dim{stroke:#61737a;stroke-width:1.4;fill:none}</style>
 <text x="45" y="48" class="title">Above-shelf triangles · inward-facing lower ledges</text>
-<text x="45" y="80" class="label">V2 · 14-inch plywood depth · two handed brackets · three stud screws each</text>
+<text x="45" y="80" class="label">V3 · wall flush · 14-inch plywood depth · two handed brackets · three stud screws each</text>
 <text x="45" y="122" class="label">SIDE ELEVATION — plywood lies inward of the triangle</text>
 <g transform="translate(80,405) scale(1.6,-1.6)">
 <rect x="-15" y="-25" width="15" height="190" fill="#d9d9d1"/>
 <polygon points="0,-12 260,-12 260,12 12,145 0,145" fill="#517e88" stroke="#273a42"/>
-<rect x="10.5" y="0" width="355.6" height="19.05" fill="#d2b07a" opacity=".65" stroke="#795b35"/>
-<path d="M10.5 0 H260" stroke="#273a42" stroke-width="2"/>
+<rect x="0" y="0" width="355.6" height="19.05" fill="#d2b07a" opacity=".65" stroke="#795b35"/>
+<path d="M0 0 H260" stroke="#273a42" stroke-width="2"/>
 <path d="M-12 24 H237.62406015037595" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 24 H8" stroke="#273a42" stroke-width="3"/><path d="M-12 75 H142.52631578947367" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 75 H8" stroke="#273a42" stroke-width="3"/><path d="M-12 125 H49.29323308270677" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 125 H8" stroke="#273a42" stroke-width="3"/>
 </g>
 <path class="dim" d="M80 459 H496 M80 452 V467 M496 452 V467"/>
 <text x="172" y="484" class="label">260 mm bracket projection</text>
-<path class="dim" d="M97 513 H666 M97 506 V521 M666 506 V521"/>
+<path class="dim" d="M80 513 H649 M80 506 V521 M649 506 V521"/>
 <text x="270" y="546" class="label">355.6 mm / 14 in plywood depth</text>
 <text x="720" y="175" class="label">Triangle top: 145 mm above plywood underside</text>
 <text x="720" y="210" class="label">126 mm above a 19 mm plywood top</text>
@@ -23,7 +23,7 @@
 <text x="720" y="389" class="small">Measured above plywood underside.</text>
 <text x="720" y="438" class="label">Plywood cut length = stud spacing minus 33 mm</text>
 <text x="720" y="473" class="small">32-inch stud example: 779.8 mm / 30.70 in board</text>
-<text x="45" y="600" class="label">Front overhang remains 106.1 mm / 4.18 in.</text>
+<text x="45" y="600" class="label">Rear edge touches wall. Front overhang: 95.6 mm / 3.76 in.</text>
 <text x="45" y="636" class="label">Plywood bears on the inward ledges; it does not pass through the side triangles.</text>
-<text x="45" y="697" class="small">Dimensioned design illustration. See exported CAD and the v2 verification receipt. Unsliced and physically unqualified.</text>
+<text x="45" y="697" class="small">Dimensioned design illustration. See exported CAD and the v3 verification receipt. Unsliced and physically unqualified.</text>
 </svg>
