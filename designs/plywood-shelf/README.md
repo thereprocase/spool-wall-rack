@@ -2,7 +2,13 @@
 
 A left and right solid triangular bracket support one continuous plywood shelf. Each bracket fixes to one stud with three screws. The outer lips face away from the shelf; the bearing surfaces face inward.
 
-![Dimensioned shelf arrangement](shelf-layout.svg)
+![Actual CAD shelf assembly](exports/shelf-assembly.png)
+
+![Actual CAD left and right brackets](exports/bracket-pair.png)
+
+![Actual CAD section through screw access](exports/screw-access-section.png)
+
+[Dimensioned layout](shelf-layout.svg)
 
 ## Dimensions and assumptions
 
