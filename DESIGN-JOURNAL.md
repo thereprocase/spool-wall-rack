@@ -1,5 +1,21 @@
 # Historical design journal
 
+## 2026-09-12 — Checkpoint closet molding and retainer work
+
+Recorded the latest requirement for rear plywood bearing on 3/4-inch-projecting molding, a full 1-inch bracket clearance, a stepped lower ledge and drop-and-flop retainers. Saved the preliminary V4 builder and parameters in an isolated draft directory, without replacing active V3 CAD or claiming execution. The supplied Closet.zip is a 3D model, not photos; it remains uninspected because the interactive file runtime was unavailable. Added a restart handoff with assumptions, unresolved capture/load-path issues and required model inspection. No V4 exports, slices or successful checks are claimed.
+
+## 2026-09-12 — Plywood touches the wall
+
+V3 removes both rear stops and moves the plywood rear edge from X=10.5 mm to the wall plane X=0. Shelf depth remains 355.6 mm; front overhang decreases from 106.1 to 95.6 mm. The above-shelf triangles, handed inward ledges and three stud fixings remain. Updated source, drawing and actual CAD renders, added a zero-wall-gap assertion, and updated the underside-bearing check for the longer contact. Wall geometry in the image is reference context only. Slicing and structural qualification remain open.
+
+## 2026-09-12 — Raise shelf triangles above the plywood
+
+Corrected the shelf arrangement to place both side triangles above the shelf. Added 32 mm inward-projecting, 12 mm thick lower ledges; moved stud axes to 24/75/125 mm above the plywood underside. The triangle rises 145 mm above the underside (125.95 mm above a 19.05 mm board). Changed plywood end clearances and the cut-length rule to stud spacing minus 33 mm. Added actual underside bearing-area checks, regenerated exports and updated drawings/renders. V2 changes the ledge load path and layer-bond demands; previous shelf volume/fit receipts are historical. Slicing and structural/physical qualification remain open.
+
+## 2026-09-12 — Plywood shelf derivative
+
+Added parameterized mirrored solid triangular shelf brackets for a continuous 14-inch-deep plywood board, with three fasteners into each of two studs. Assumed 3/4-inch plywood and a 32-inch stud-spacing example. The 260 mm one-piece arm leaves 106.1 mm front overhang; this is a deliberate P1S envelope choice. Added a dimensioned drawing and a dedicated CAD build with geometry receipts, STEP/STL exports and whole-body 100% modifiers. The GitHub CAD build subsequently passed, publishing left/right STEP/STL, helper assemblies and a receipt: valid connected mirrored solids, no plywood interference, straight driver access and retained pilot backing. Each print footprint is 244.31 × 244.53 × 32 mm; solid CAD volume is 569.13 cm³ per bracket. Slicing, strength, substrate capacity, plywood span and sustained-load qualification remain open. Existing spool studies are preserved.
+
 Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.

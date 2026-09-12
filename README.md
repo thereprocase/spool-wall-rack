@@ -1,5 +1,9 @@
 # Spool wall rack: recovered print settings and E + F trials
 
+**Closet shelf progress:** [molding-clearance and retainer handoff](designs/plywood-shelf/PROGRESS.md). Latest V4 source is unexecuted; Closet.zip is a 3D model awaiting inspection. Published shelf images/exports remain V3.
+
+**New shelf derivative:** [mirrored brackets for 14-inch plywood](designs/plywood-shelf/README.md), with the plywood against the wall, triangles above it, lower inward-facing ledges and three stud fasteners each. STEP/STL and geometry checks complete; slicing and load qualification remain open.
+
 **Recovered print evidence changes the reference.** The completed overnight ASA archive uses seven walls, 10% base infill and 1.6 mm minimum top/bottom thickness. Its associated downloaded STEP matches E13 exactly. The newer STEP matches G; its saved PETG project uses two walls and the same 1.6 mm thickness settings, but the exact earlier PETG submission is not recovered. Geometry, walls and material changed together.
 
 https://github.com/thereprocase/spool-wall-rack/blob/main/designs/rev-g2/print-controls/RECOVERED-PRINTS.md

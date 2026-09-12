@@ -1,0 +1,29 @@
+{
+  "access_diameter": 18.5,
+  "arm_depth": 260,
+  "bed": 256,
+  "body_width": 32,
+  "brim": 3,
+  "ledge_thickness": 12,
+  "ledge_width": 32,
+  "plywood_clearance": 0.5,
+  "plywood_thickness": 19.05,
+  "retention_pilot_depth": 8,
+  "retention_pilot_diameter": 3,
+  "retention_x": [
+    100,
+    220
+  ],
+  "revision": "above-shelf-v3-wall-flush",
+  "shelf_depth": 355.6,
+  "stud_hole_diameter": 6.5,
+  "stud_hole_y": [
+    24,
+    75,
+    125
+  ],
+  "stud_spacing": 812.8,
+  "toe_depth": 12,
+  "wall_height": 145,
+  "wall_land": 8
+}

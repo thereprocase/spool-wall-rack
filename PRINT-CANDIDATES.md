@@ -1,5 +1,11 @@
 # Printable CAD checkpoint index
 
+**Latest shelf request:** [V4 progress and restart handoff](designs/plywood-shelf/PROGRESS.md). Molding clearance and drop-and-flop retainers are saved as unexecuted source, not printable candidates. V3 exports do not satisfy the new molding clearance.
+
+## Plywood shelf derivative — CAD exports complete
+
+[14-inch plywood shelf, left and right](designs/plywood-shelf/README.md). V3 places the plywood directly against the wall and solid triangular bodies above it, with lower inward-facing ledges and three stud fixings each. The earlier below-shelf geometry is superseded. The dedicated CAD workflow passed and published STEP/STL, aligned whole-body helpers and its geometry receipt. No slice or load rating yet.
+
 ## Current print controls and connected brace
 
 Eight deliberate print controls have aligned body/helper STEP, model-only 3MF, actual Orca slices, settings audits and source hashes. The successful recovered ASA print is associated with E13 and seven walls, not the eight-wall G control used as this study's denominator.
