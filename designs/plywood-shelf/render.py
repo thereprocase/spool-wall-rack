@@ -32,11 +32,11 @@ def mesh(obj,color):
     n=np.cross(tris[:,1]-tris[:,0],tris[:,2]-tris[:,0])
     n/=np.maximum(np.linalg.norm(n,axis=1)[:,None],1e-12)
     light=np.array([.4,.3,1.0]);light/=np.linalg.norm(light)
-    lum=.6+.4*np.maximum(n@light,0)
+    lum=.6+.4*np.abs(n@light)  # OCC tessellation may reverse face winding
     colors=np.clip(np.array(to_rgb(color))[None,:]*lum[:,None],0,1)
     return tris,colors,v
 
-def view(ax,objects,elev=23,azim=55):
+def view(ax,objects,elev=23,azim=55,zoom=1):
     vertices=[]
     for obj,color in objects:
         tris,colors,v=mesh(obj,color)
@@ -50,7 +50,7 @@ def view(ax,objects,elev=23,azim=55):
     ax.set_xlim(lo[0]-pad[0],hi[0]+pad[0])
     ax.set_ylim(lo[1]-pad[1],hi[1]+pad[1])
     ax.set_zlim(lo[2]-pad[2],hi[2]+pad[2])
-    ax.set_box_aspect(span+2*pad)
+    ax.set_box_aspect(span+2*pad,zoom=zoom)
     ax.set_proj_type("ortho")
     ax.view_init(elev=elev,azim=azim)
     ax.set_axis_off()
@@ -68,7 +68,7 @@ fig=figure("One plywood shelf. Two mirrored brackets.",
            "14 in deep × 32.91 in long plywood shown • 32 in stud centres • 3/4 in plywood")
 ax=fig.add_axes([.02,.12,.96,.73],projection="3d")
 view(ax,[(left,"#517e88"),(right.translate((0,0,S)),"#517e88"),(ply,"#d2b07a")],
-     elev=18,azim=61)
+     elev=14,azim=61,zoom=1.45)
 fig.text(.05,.09,"Bracket projection: 10.24 in",fontsize=12)
 fig.text(.57,.09,"Plywood extends 4.18 in beyond the arms",fontsize=12)
 fig.savefig(OUT/"shelf-assembly.png",dpi=180,facecolor=BG)
