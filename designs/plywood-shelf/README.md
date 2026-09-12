@@ -29,6 +29,15 @@ Shelf length is **measured stud spacing + 23 mm** with these lips and 0.5 mm end
 
 The low outside lip and rear stop form an open-top plywood saddle. There is no thickness-sensitive sliding slot. Lower the board into the pair after installing both brackets. Two 3 mm pilot holes per bracket, at 100 and 220 mm from the wall, accept optional retention screws through the plywood. Limit plastic engagement to 10–12 mm; these screws retain the board and are not assigned gravity-load capacity. Drill the board with clearance holes and avoid wedging the plastic apart.
 
+## CAD downloads
+
+| Hand | STEP | STL | Body and aligned modifier |
+|---|---|---|---|
+| Left | [Print STEP](exports/left-print.step) | [STL](exports/left-print.stl) | [STEP assembly](exports/left-with-helper.step) |
+| Right | [Print STEP](exports/right-print.step) | [STL](exports/right-print.stl) | [STEP assembly](exports/right-with-helper.step) |
+
+[Full shelf assembly STEP](exports/shelf-assembly.step). Use the handed body-only files for inspection; apply the 100% modifier instructions below before printing.
+
 ## Source and CAD build
 
 Edit [parameters.json](parameters.json), then run:
@@ -40,7 +49,9 @@ python designs/plywood-shelf/build.py
 
 The build produces left/right installed STEP, print-oriented STEP and STL, aligned whole-body helper STEP assemblies, a shelf assembly, and a JSON geometry receipt in `exports/`. The dedicated GitHub workflow runs the build on this design branch and publishes successful exports back to that branch.
 
-**Initial checkpoint:** source and dimensioned drawing prepared; the interactive CAD runtime was unavailable. The workflow result and generated `exports/verification.json`, when present, establish which CAD checks actually ran. No actual Orca slice, structural analysis, physical fit or load test has been performed.
+**CAD build passed:** both mirrored bodies are valid connected solids; plywood fit, straight driver access and pilot backing passed. Print footprints are **244.31 × 244.53 × 32 mm**, excluding the 3 mm brim. Each CAD body contains **569.13 cm³**; actual sliced extrusion/mass is not measured. [Build run](https://github.com/thereprocase/spool-wall-rack/actions/runs/34702065238) · [Geometry receipt](exports/verification.json).
+
+**Prototype status:** no actual Orca slice, structural analysis, physical fit or load test has been performed.
 
 Checks cover valid connected solids, mirrored volume equality, plywood interference, three straight driver paths, retained backing around the plywood pilots, and nominal bed/brim envelope. They do not qualify strength, creep, a real screw installation, or machine-specific print exclusions.
 
