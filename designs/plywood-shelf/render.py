@@ -68,7 +68,7 @@ fig=figure("One plywood shelf. Two mirrored brackets.",
            "14 in deep × 32.91 in long plywood shown • 32 in stud centres • 3/4 in plywood")
 ax=fig.add_axes([.02,.12,.96,.73],projection="3d")
 view(ax,[(left,"#517e88"),(right.translate((0,0,S)),"#517e88"),(ply,"#d2b07a")],
-     elev=14,azim=61,zoom=1.45)
+     elev=18,azim=61,zoom=1)
 fig.text(.05,.09,"Bracket projection: 10.24 in",fontsize=12)
 fig.text(.57,.09,"Plywood extends 4.18 in beyond the arms",fontsize=12)
 fig.savefig(OUT/"shelf-assembly.png",dpi=180,facecolor=BG)
