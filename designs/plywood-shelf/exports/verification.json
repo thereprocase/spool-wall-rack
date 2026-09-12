@@ -1,11 +1,11 @@
 {
   "status": "CAD checks passed; unsliced and physically unqualified",
-  "revision": "above-shelf-v2",
+  "revision": "above-shelf-v3-wall-flush",
   "above_shelf_height_mm": 145,
   "below_shelf_ledge_mm": 12,
   "plywood_bearing_area_mm2": [
-    7845.112833058736,
-    7845.112833058765
+    8175.862833057426,
+    8175.862833057426
   ],
   "parameters": {
     "access_diameter": 18.5,
@@ -17,15 +17,13 @@
     "ledge_width": 32,
     "plywood_clearance": 0.5,
     "plywood_thickness": 19.05,
-    "rear_stop_depth": 10,
-    "rear_stop_height": 6,
     "retention_pilot_depth": 8,
     "retention_pilot_diameter": 3,
     "retention_x": [
       100,
       220
     ],
-    "revision": "above-shelf-v2",
+    "revision": "above-shelf-v3-wall-flush",
     "shelf_depth": 355.6,
     "stud_hole_diameter": 6.5,
     "stud_hole_y": [
@@ -43,7 +41,9 @@
     355.6,
     19.05
   ],
-  "front_overhang_mm": 106.10000000000002,
+  "front_overhang_mm": 95.60000000000002,
+  "plywood_wall_gap_mm": 0.0,
+  "wall_flush_pass": true,
   "mirrored_volume_match": true,
   "plywood_interference_pass": true,
   "three_straight_driver_paths_pass": true,
@@ -58,7 +58,7 @@
       ],
       "nominal_bed_and_brim_pass": true,
       "machine_exclusions_and_actual_slice_checked": false,
-      "solid_CAD_volume_cm3": 762.8631402624758
+      "solid_CAD_volume_cm3": 760.9431402625036
     },
     "right": {
       "rotation_degrees": 113.6,
@@ -69,7 +69,7 @@
       ],
       "nominal_bed_and_brim_pass": true,
       "machine_exclusions_and_actual_slice_checked": false,
-      "solid_CAD_volume_cm3": 762.8631402624756
+      "solid_CAD_volume_cm3": 760.9431402625037
     }
   }
 }
