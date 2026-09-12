@@ -1,5 +1,9 @@
 # Printable CAD checkpoint index
 
+## Plywood shelf derivative — initial source checkpoint
+
+[14-inch plywood shelf, left and right](designs/plywood-shelf/README.md). Solid triangular bodies, three stud fixings each, and open-top plywood saddles. The dedicated CAD workflow builds STEP/STL and aligned whole-body helpers; review its generated receipt before treating exports as checked. No slice or load rating yet.
+
 ## Current print controls and connected brace
 
 Eight deliberate print controls have aligned body/helper STEP, model-only 3MF, actual Orca slices, settings audits and source hashes. The successful recovered ASA print is associated with E13 and seven walls, not the eight-wall G control used as this study's denominator.

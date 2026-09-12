@@ -1,5 +1,9 @@
 # Historical design journal
 
+## 2026-09-12 — Plywood shelf derivative
+
+Added parameterized mirrored solid triangular shelf brackets for a continuous 14-inch-deep plywood board, with three fasteners into each of two studs. Assumed 3/4-inch plywood and a 32-inch stud-spacing example. The 260 mm one-piece arm leaves 106.1 mm front overhang; this is a deliberate P1S envelope choice. Added a dimensioned drawing and a dedicated CAD build with geometry receipts, STEP/STL exports and whole-body 100% modifiers. Interactive CAD execution was unavailable at the source checkpoint; actual build results belong to the generated receipt. Slicing, strength, substrate capacity, plywood span and sustained-load qualification remain open. Existing spool studies are preserved.
+
 Fresh 10.75 / 12 / 13.25 kg G contact checks are documented in [G results](analysis/rev-g2/G-RESULTS.md). One spool changes bracket movement by about 0.452 mm; material accuracy and physical qualification remain open.
 
 These entries preserve earlier reasoning and superseded values. Use the current [engineering guide](README.md) and its linked results for present criteria and conclusions.

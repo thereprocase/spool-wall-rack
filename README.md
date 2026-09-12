@@ -1,5 +1,7 @@
 # Spool wall rack: recovered print settings and E + F trials
 
+**New shelf derivative:** [mirrored brackets for 14-inch plywood](designs/plywood-shelf/README.md), with three stud fasteners each. Initial CAD source checkpoint; slicing and load qualification remain open.
+
 **Recovered print evidence changes the reference.** The completed overnight ASA archive uses seven walls, 10% base infill and 1.6 mm minimum top/bottom thickness. Its associated downloaded STEP matches E13 exactly. The newer STEP matches G; its saved PETG project uses two walls and the same 1.6 mm thickness settings, but the exact earlier PETG submission is not recovered. Geometry, walls and material changed together.
 
 https://github.com/thereprocase/spool-wall-rack/blob/main/designs/rev-g2/print-controls/RECOVERED-PRINTS.md

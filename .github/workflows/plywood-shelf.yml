@@ -1,0 +1,39 @@
+name: Plywood shelf CAD
+on:
+  push:
+    branches: ['codex/plywood-shelf-14in']
+    paths:
+      - 'designs/plywood-shelf/build.py'
+      - 'designs/plywood-shelf/parameters.json'
+      - 'designs/plywood-shelf/requirements.txt'
+      - '.github/workflows/plywood-shelf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: plywood-shelf-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CAD dependencies
+        run: python -m pip install -r designs/plywood-shelf/requirements.txt
+      - name: Build and check mirrored brackets
+        run: python designs/plywood-shelf/build.py
+      - name: Publish generated CAD to the same branch
+        run: |
+          git config user.name "Rack Engineering"
+          git config user.email "rack-engineering@users.noreply.github.com"
+          git add designs/plywood-shelf/exports
+          git diff --cached --quiet || git commit -m "Build mirrored plywood shelf CAD and geometry receipt [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plywood-shelf-cad
+          path: designs/plywood-shelf/exports
