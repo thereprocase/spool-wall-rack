@@ -1,5 +1,7 @@
 # Plywood shelf brackets — 14-inch shelf
 
+**Latest requirements / paused work:** [closet model and molding-retainer handoff](PROGRESS.md). V3 exports below are historical relative to the latest request; V4 source is saved separately and has not run.
+
 A left and right solid triangular bracket support one continuous plywood shelf. Each bracket fixes to one stud with three screws. **The triangular bodies rise above the shelf, outside the plywood ends. Inward-facing lower ledges support the plywood; only the 12 mm ledges sit beneath it.** **V3 places the plywood rear edge directly against the wall (X=0) and removes the rear stops.**
 
 ![Actual CAD shelf assembly](exports/shelf-assembly.png)

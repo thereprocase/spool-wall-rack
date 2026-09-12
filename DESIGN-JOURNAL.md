@@ -1,5 +1,9 @@
 # Historical design journal
 
+## 2026-09-12 — Checkpoint closet molding and retainer work
+
+Recorded the latest requirement for rear plywood bearing on 3/4-inch-projecting molding, a full 1-inch bracket clearance, a stepped lower ledge and drop-and-flop retainers. Saved the preliminary V4 builder and parameters in an isolated draft directory, without replacing active V3 CAD or claiming execution. The supplied Closet.zip is a 3D model, not photos; it remains uninspected because the interactive file runtime was unavailable. Added a restart handoff with assumptions, unresolved capture/load-path issues and required model inspection. No V4 exports, slices or successful checks are claimed.
+
 ## 2026-09-12 — Plywood touches the wall
 
 V3 removes both rear stops and moves the plywood rear edge from X=10.5 mm to the wall plane X=0. Shelf depth remains 355.6 mm; front overhang decreases from 106.1 to 95.6 mm. The above-shelf triangles, handed inward ledges and three stud fixings remain. Updated source, drawing and actual CAD renders, added a zero-wall-gap assertion, and updated the underside-bearing check for the longer contact. Wall geometry in the image is reference context only. Slicing and structural qualification remain open.
