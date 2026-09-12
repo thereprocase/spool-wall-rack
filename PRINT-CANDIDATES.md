@@ -2,7 +2,7 @@
 
 ## Plywood shelf derivative — CAD exports complete
 
-[14-inch plywood shelf, left and right](designs/plywood-shelf/README.md). Solid triangular bodies, three stud fixings each, and open-top plywood saddles. The dedicated CAD workflow passed and published STEP/STL, aligned whole-body helpers and its geometry receipt. No slice or load rating yet.
+[14-inch plywood shelf, left and right](designs/plywood-shelf/README.md). V2 places solid triangular bodies above the plywood, with lower inward-facing ledges and three stud fixings each. The earlier below-shelf geometry is superseded. The dedicated CAD workflow passed and published STEP/STL, aligned whole-body helpers and its geometry receipt. No slice or load rating yet.
 
 ## Current print controls and connected brace
 

@@ -33,23 +33,30 @@ def teardrop(x, y, diameter, length):
             .close().extrude(length))
     return circle.union(roof)
 
-outline = [(0,-H),(P["toe_depth"],-H),(D,-P["toe_depth"]),(D,0),(0,0)]
+# Side triangles rise above Y=0, the plywood underside datum.
+# Only the 12 mm bearing ledge extends beneath the shelf.
+L, T = P["ledge_width"], P["ledge_thickness"]
+assert P["stud_spacing"] > W + 2*L
+assert 0 < P["retention_pilot_depth"] < T
+assert all(y > P["plywood_thickness"] for y in P["stud_hole_y"])
+outline = [(0,-T),(D,-T),(D,P["toe_depth"]),(P["toe_depth"],H),(0,H)]
 left = cq.Workplane("XY").polyline(outline).close().extrude(W)
-left = left.union(box(0,0,0,P["rear_stop_depth"],P["fence_height"],W))
-left = left.union(box(0,0,0,D,P["fence_height"],P["fence_thickness"]))
+left = left.union(box(0,-T,W,D,T,L))
+left = left.union(box(0,0,W,P["rear_stop_depth"],P["rear_stop_height"],L))
+retention_z = W + L/2
 for y in P["stud_hole_y"]:
     left = left.cut(teardrop(-1,y,P["stud_hole_diameter"],D+2))
     left = left.cut(teardrop(P["wall_land"],y,P["access_diameter"],D+2))
 for x in P["retention_x"]:
-    left = left.cut(cylinder((x,-P["retention_pilot_depth"],W/2),
+    left = left.cut(cylinder((x,-P["retention_pilot_depth"],retention_z),
                              (0,1,0),P["retention_pilot_diameter"],
                              P["retention_pilot_depth"]+1))
 left = left.clean()
 right = left.mirror("XY", basePointVector=(0,0,W/2))
 S = P["stud_spacing"]
 gap = P["plywood_clearance"]
-ply_start = P["fence_thickness"] + gap
-ply_length = S + W - 2*P["fence_thickness"] - 2*gap
+ply_start = W + gap
+ply_length = S - W - 2*gap
 ply = box(P["rear_stop_depth"]+gap,0,ply_start,
           P["shelf_depth"],P["plywood_thickness"],ply_length)
 
@@ -88,6 +95,14 @@ valid_single(right)
 assert abs(solids_volume(left)-solids_volume(right)) < 1e-5
 assert solids_volume(left.intersect(ply)) < 1e-5
 assert solids_volume(right.translate((0,0,S)).intersect(ply)) < 1e-5
+assert left.val().BoundingBox().ymin >= -T - 1e-6
+assert left.val().BoundingBox().ymax >= H - 1e-6
+# Plywood has real underside bearing on both inward-facing ledges.
+bearing_probe = ply.translate((0,-0.01,0))
+bearing_area_left = solids_volume(left.intersect(bearing_probe))/0.01
+bearing_area_right = solids_volume(right.translate((0,0,S)).intersect(bearing_probe))/0.01
+assert bearing_area_left > (D-P["rear_stop_depth"]-gap)*(L-gap)*0.98
+assert abs(bearing_area_left-bearing_area_right) < 1e-3
 # Straight driver access from the front to each recessed washer seat.
 for y in P["stud_hole_y"]:
     tool=cylinder((P["wall_land"]+0.01,y,W/2),(1,0,0),18.0,D+10)
@@ -96,9 +111,9 @@ for y in P["stud_hole_y"]:
     assert solids_volume(left.intersect(shank)) < 1e-5
 # A retained pilot requires continuous printed plastic around its full depth.
 for x in P["retention_x"]:
-    ring=cylinder((x,-P["retention_pilot_depth"],W/2),(0,1,0),6,
+    ring=cylinder((x,-P["retention_pilot_depth"],retention_z),(0,1,0),6,
                   P["retention_pilot_depth"]).cut(
-         cylinder((x,-P["retention_pilot_depth"],W/2),(0,1,0),
+         cylinder((x,-P["retention_pilot_depth"],retention_z),(0,1,0),
                   P["retention_pilot_diameter"],P["retention_pilot_depth"]))
     assert solids_volume(ring.cut(left)) < 1e-5
 
@@ -109,6 +124,9 @@ assembly.add(ply,name="plywood",color=cq.Color(0.72,0.55,0.33))
 assembly.save(str(OUT/"shelf-assembly.step"))
 
 report={"status":"CAD checks passed; unsliced and physically unqualified",
+        "revision":P["revision"],
+        "above_shelf_height_mm":H,"below_shelf_ledge_mm":T,
+        "plywood_bearing_area_mm2":[bearing_area_left,bearing_area_right],
         "parameters":P,"plywood_cut_mm":[ply_length,P["shelf_depth"],P["plywood_thickness"]],
         "front_overhang_mm":P["rear_stop_depth"]+gap+P["shelf_depth"]-D,
         "mirrored_volume_match":True,"plywood_interference_pass":True,

@@ -1,5 +1,9 @@
 # Historical design journal
 
+## 2026-09-12 — Raise shelf triangles above the plywood
+
+Corrected the shelf arrangement to place both side triangles above the shelf. Added 32 mm inward-projecting, 12 mm thick lower ledges; moved stud axes to 24/75/125 mm above the plywood underside. The triangle rises 145 mm above the underside (125.95 mm above a 19.05 mm board). Changed plywood end clearances and the cut-length rule to stud spacing minus 33 mm. Added actual underside bearing-area checks, regenerated exports and updated drawings/renders. V2 changes the ledge load path and layer-bond demands; previous shelf volume/fit receipts are historical. Slicing and structural/physical qualification remain open.
+
 ## 2026-09-12 — Plywood shelf derivative
 
 Added parameterized mirrored solid triangular shelf brackets for a continuous 14-inch-deep plywood board, with three fasteners into each of two studs. Assumed 3/4-inch plywood and a 32-inch stud-spacing example. The 260 mm one-piece arm leaves 106.1 mm front overhang; this is a deliberate P1S envelope choice. Added a dimensioned drawing and a dedicated CAD build with geometry receipts, STEP/STL exports and whole-body 100% modifiers. The GitHub CAD build subsequently passed, publishing left/right STEP/STL, helper assemblies and a receipt: valid connected mirrored solids, no plywood interference, straight driver access and retained pilot backing. Each print footprint is 244.31 × 244.53 × 32 mm; solid CAD volume is 569.13 cm³ per bracket. Slicing, strength, substrate capacity, plywood span and sustained-load qualification remain open. Existing spool studies are preserved.

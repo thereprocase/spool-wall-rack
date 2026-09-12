@@ -17,9 +17,9 @@ right=cq.importers.importStep(str(OUT/"right-installed.step"))
 S=P["stud_spacing"]
 W=P["body_width"]
 ply=(cq.Workplane("XY").box(P["shelf_depth"],P["plywood_thickness"],
-      S+W-2*P["fence_thickness"]-2*P["plywood_clearance"],centered=False)
+      S-W-2*P["plywood_clearance"],centered=False)
       .translate((P["rear_stop_depth"]+P["plywood_clearance"],0,
-                  P["fence_thickness"]+P["plywood_clearance"])))
+                  W+P["plywood_clearance"])))
 BG="#f5f3ee"
 INK="#273a42"
 plt.rcParams.update({"font.family":"DejaVu Sans","text.color":INK,"font.size":12})
@@ -64,8 +64,8 @@ def figure(title,subtitle):
              fontsize=10,color="#61737a")
     return fig
 
-fig=figure("One plywood shelf. Two mirrored brackets.",
-           "14 in deep × 32.91 in long plywood shown • 32 in stud centres • 3/4 in plywood")
+fig=figure("Triangles above. Plywood on lower ledges.",
+           "14 in deep × 30.70 in long plywood shown • 32 in stud centres • 3/4 in plywood")
 ax=fig.add_axes([.02,.12,.96,.73],projection="3d")
 view(ax,[(left,"#517e88"),(right.translate((0,0,S)),"#517e88"),(ply,"#d2b07a")],
      elev=18,azim=61,zoom=1)
@@ -75,7 +75,7 @@ fig.savefig(OUT/"shelf-assembly.png",dpi=180,facecolor=BG)
 plt.close(fig)
 
 fig=figure("Left and right • matching triangular bodies",
-           "Outside locating lips face away from the shelf • plywood drops onto the flat bearing surfaces")
+           "Side triangles rise above the plywood • inward-facing lower ledges carry the shelf")
 ax=fig.add_axes([.0,.12,.5,.72],projection="3d")
 view(ax,[(left,"#517e88")],elev=25,azim=53)
 ax=fig.add_axes([.5,.12,.5,.72],projection="3d")
@@ -94,7 +94,7 @@ fig=figure("Section through the three stud screws",
 ax=fig.add_axes([.0,.15,.72,.7],projection="3d")
 view(ax,[(section,"#b28157")],elev=10,azim=8)
 fig.text(.73,.68,"Main design concern",weight="bold",fontsize=14)
-fig.text(.73,.60,"Upper screw needs\nabout 230 mm of driver reach.",fontsize=12,linespacing=1.5)
+fig.text(.73,.60,"Lowest screw needs\nabout 230 mm of driver reach.",fontsize=12,linespacing=1.5)
 fig.text(.73,.43,"The holes are reachable in CAD,\nbut this is awkward to install.",fontsize=12,linespacing=1.5)
 fig.text(.73,.26,"A shorter, open access pocket\nis worth exploring.",fontsize=12,linespacing=1.5)
 fig.savefig(OUT/"screw-access-section.png",dpi=180,facecolor=BG)

@@ -1,57 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
-<rect width="1200" height="850" fill="#f5f4ef"/>
-<style>text{font-family:Arial,sans-serif;fill:#23333a}.title{font-size:30px;font-weight:700}.sub{font-size:18px}.label{font-size:16px}.dim{stroke:#47636d;stroke-width:1.4;fill:none}.small{font-size:14px}</style>
-<text x="50" y="52" class="title">Plywood shelf · mirrored solid triangles</text>
-<text x="50" y="82" class="sub">14-inch plywood depth · three stud fasteners per bracket · two brackets total</text>
-<text x="55" y="132" class="sub">SIDE ELEVATION</text>
-<g transform="translate(80,240) scale(1.65,-1.65)">
-<rect x="-15" y="-160" width="15" height="220" fill="#d9d9d1"/>
-<polygon points="0,-145 12,-145 260,-12 260,0 0,0" fill="#344b55" stroke="#182f39" stroke-width="1"/>
-<rect x="10.5" y="0" width="355.6" height="19.05" fill="#c8a470" stroke="#795b35" stroke-width="1"/>
-<path d="M10.5 5 H366.1 M10.5 10 H366.1 M10.5 15 H366.1" stroke="#a18050" stroke-width=".5"/>
-<path d="M0 0 V6 H260 V0 M10 0 V6" fill="none" stroke="#233d46" stroke-width="2"/>
-<path d="M8 -24 H237.62406015037595" stroke="#d8e7eb" stroke-width="10" opacity=".7"/>
-<path d="M-12 -24 H245.62406015037595" stroke="#7396a2" stroke-width="1" stroke-dasharray="3 2"/>
-<path d="M-12 -24 H8" stroke="#202b31" stroke-width="3"/><path d="M8 -75 H142.52631578947367" stroke="#d8e7eb" stroke-width="10" opacity=".7"/>
-<path d="M-12 -75 H150.52631578947367" stroke="#7396a2" stroke-width="1" stroke-dasharray="3 2"/>
-<path d="M-12 -75 H8" stroke="#202b31" stroke-width="3"/><path d="M8 -125 H49.29323308270677" stroke="#d8e7eb" stroke-width="10" opacity=".7"/>
-<path d="M-12 -125 H57.29323308270677" stroke="#7396a2" stroke-width="1" stroke-dasharray="3 2"/>
-<path d="M-12 -125 H8" stroke="#202b31" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730">
+<rect width="1200" height="730" fill="#f5f3ee"/>
+<style>text{font-family:Arial,sans-serif;fill:#273a42}.title{font-size:30px;font-weight:bold}.label{font-size:18px}.small{font-size:15px}.dim{stroke:#61737a;stroke-width:1.4;fill:none}</style>
+<text x="45" y="48" class="title">Above-shelf triangles · inward-facing lower ledges</text>
+<text x="45" y="80" class="label">V2 · 14-inch plywood depth · two handed brackets · three stud screws each</text>
+<text x="45" y="122" class="label">SIDE ELEVATION — plywood lies inward of the triangle</text>
+<g transform="translate(80,405) scale(1.6,-1.6)">
+<rect x="-15" y="-25" width="15" height="190" fill="#d9d9d1"/>
+<polygon points="0,-12 260,-12 260,12 12,145 0,145" fill="#517e88" stroke="#273a42"/>
+<rect x="10.5" y="0" width="355.6" height="19.05" fill="#d2b07a" opacity=".65" stroke="#795b35"/>
+<path d="M10.5 0 H260" stroke="#273a42" stroke-width="2"/>
+<path d="M-12 24 H237.62406015037595" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 24 H8" stroke="#273a42" stroke-width="3"/><path d="M-12 75 H142.52631578947367" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 75 H8" stroke="#273a42" stroke-width="3"/><path d="M-12 125 H49.29323308270677" stroke="#d8e7eb" stroke-width="5"/><path d="M-12 125 H8" stroke="#273a42" stroke-width="3"/>
 </g>
-<path class="dim" d="M97 170 H684 M97 163 V179 M684 163 V179"/>
-<text x="300" y="159" class="label">355.6 mm / 14 in plywood</text>
-<path class="dim" d="M80 508 H509 M80 501 V515 M509 501 V515"/>
-<text x="215" y="532" class="label">260 mm bracket projection</text>
-<path class="dim" d="M509 285 H684 M509 277 V293 M684 277 V293"/>
-<text x="540" y="317" class="label">106.1 mm</text>
-<text x="535" y="339" class="small">front overhang</text>
-<path class="dim" d="M40 240 V479 M32 240 H48 M32 479 H48"/>
-<text x="50" y="495" class="small">145 mm drop below shelf</text>
-<text x="740" y="145" class="sub">DETAILS</text>
-<text x="740" y="181" class="label">32 mm wide closed triangle</text>
-<text x="740" y="210" class="label">6 mm high outside locating lip</text>
-<text x="740" y="239" class="label">Open top accepts varying plywood thickness</text>
-<text x="740" y="283" class="label">Stud axes: 24 / 75 / 125 mm below shelf</text>
-<text x="740" y="312" class="label">6.5 mm nominal shank clearance</text>
-<text x="740" y="341" class="label">18.5 mm recessed driver access</text>
-<text x="740" y="370" class="label">8 mm backed washer lands</text>
-<text x="740" y="414" class="label">Install brackets before placing plywood.</text>
-<text x="740" y="443" class="label">Upper screw needs a long driver extension.</text>
-<text x="740" y="487" class="label">First trial uses whole-body 100% modifiers.</text>
-<text x="740" y="516" class="small">Closed shape is not a verified load rating.</text>
-<text x="55" y="586" class="sub">FRONT ELEVATION · 32-INCH STUD-SPACING EXAMPLE</text>
-<g transform="translate(120,636) scale(1.05)">
-<rect x="-4" y="-35" width="40" height="158" fill="#e2e0d8"/>
-<rect x="808.8" y="-35" width="40" height="158" fill="#e2e0d8"/>
-<rect x="0" y="0" width="32" height="110" fill="#344b55"/>
-<rect x="812.8" y="0" width="32" height="110" fill="#344b55"/>
-<rect x="4.5" y="-19.05" width="835.8" height="19.05" fill="#c8a470"/>
-<rect x="0" y="-6" width="4" height="6" fill="#344b55"/>
-<rect x="840.8" y="-6" width="4" height="6" fill="#344b55"/>
-<path d="M16 -30 V123 M828.8 -30 V123" stroke="#47636d" stroke-dasharray="4 4"/>
-<text x="40" y="82" class="label">LEFT</text><text x="735" y="82" class="label">RIGHT</text>
-<path class="dim" d="M16 135 H828.8 M16 127 V142 M828.8 127 V142"/>
-<text x="303" y="156" class="label">812.8 mm / 32 in stud centres</text>
-</g>
-<text x="55" y="834" class="small">Dimensioned design illustration. CAD execution, actual slicing, fastening capacity and sustained-load testing remain separate checks.</text>
+<path class="dim" d="M80 459 H496 M80 452 V467 M496 452 V467"/>
+<text x="172" y="484" class="label">260 mm bracket projection</text>
+<path class="dim" d="M97 513 H666 M97 506 V521 M666 506 V521"/>
+<text x="270" y="546" class="label">355.6 mm / 14 in plywood depth</text>
+<text x="720" y="175" class="label">Triangle top: 145 mm above plywood underside</text>
+<text x="720" y="210" class="label">126 mm above a 19 mm plywood top</text>
+<text x="720" y="258" class="label">Only the 12 mm ledge sits below the shelf.</text>
+<text x="720" y="306" class="label">32 mm side triangle + 32 mm inward ledge</text>
+<text x="720" y="354" class="label">Stud screw heights: 24 / 75 / 125 mm</text>
+<text x="720" y="389" class="small">Measured above plywood underside.</text>
+<text x="720" y="438" class="label">Plywood cut length = stud spacing minus 33 mm</text>
+<text x="720" y="473" class="small">32-inch stud example: 779.8 mm / 30.70 in board</text>
+<text x="45" y="600" class="label">Front overhang remains 106.1 mm / 4.18 in.</text>
+<text x="45" y="636" class="label">Plywood bears on the inward ledges; it does not pass through the side triangles.</text>
+<text x="45" y="697" class="small">Dimensioned design illustration. See exported CAD and the v2 verification receipt. Unsliced and physically unqualified.</text>
 </svg>

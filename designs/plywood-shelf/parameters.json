@@ -4,23 +4,25 @@
   "bed": 256,
   "body_width": 32,
   "brim": 3,
-  "fence_height": 6,
-  "fence_thickness": 4,
+  "ledge_thickness": 12,
+  "ledge_width": 32,
   "plywood_clearance": 0.5,
   "plywood_thickness": 19.05,
   "rear_stop_depth": 10,
-  "retention_pilot_depth": 12,
+  "rear_stop_height": 6,
+  "retention_pilot_depth": 8,
   "retention_pilot_diameter": 3,
   "retention_x": [
     100,
     220
   ],
+  "revision": "above-shelf-v2",
   "shelf_depth": 355.6,
   "stud_hole_diameter": 6.5,
   "stud_hole_y": [
-    -24,
-    -75,
-    -125
+    24,
+    75,
+    125
   ],
   "stud_spacing": 812.8,
   "toe_depth": 12,
