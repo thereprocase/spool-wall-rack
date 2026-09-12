@@ -1,28 +1,37 @@
 {
   "status": "CAD checks passed; unsliced and physically unqualified",
+  "revision": "above-shelf-v2",
+  "above_shelf_height_mm": 145,
+  "below_shelf_ledge_mm": 12,
+  "plywood_bearing_area_mm2": [
+    7845.112833058736,
+    7845.112833058765
+  ],
   "parameters": {
     "access_diameter": 18.5,
     "arm_depth": 260,
     "bed": 256,
     "body_width": 32,
     "brim": 3,
-    "fence_height": 6,
-    "fence_thickness": 4,
+    "ledge_thickness": 12,
+    "ledge_width": 32,
     "plywood_clearance": 0.5,
     "plywood_thickness": 19.05,
     "rear_stop_depth": 10,
-    "retention_pilot_depth": 12,
+    "rear_stop_height": 6,
+    "retention_pilot_depth": 8,
     "retention_pilot_diameter": 3,
     "retention_x": [
       100,
       220
     ],
+    "revision": "above-shelf-v2",
     "shelf_depth": 355.6,
     "stud_hole_diameter": 6.5,
     "stud_hole_y": [
-      -24,
-      -75,
-      -125
+      24,
+      75,
+      125
     ],
     "stud_spacing": 812.8,
     "toe_depth": 12,
@@ -30,7 +39,7 @@
     "wall_land": 8
   },
   "plywood_cut_mm": [
-    835.8,
+    779.8,
     355.6,
     19.05
   ],
@@ -41,26 +50,26 @@
   "retention_pilot_backing_pass": true,
   "parts": {
     "left": {
-      "rotation_degrees": 114.2,
+      "rotation_degrees": 156.4,
       "bounding_box_mm": [
-        244.31012634082217,
-        244.5298448139393,
-        32.0
+        247.86268646754777,
+        247.9596970060643,
+        64.0
       ],
       "nominal_bed_and_brim_pass": true,
       "machine_exclusions_and_actual_slice_checked": false,
-      "solid_CAD_volume_cm3": 569.1265915985354
+      "solid_CAD_volume_cm3": 762.8631402624758
     },
     "right": {
-      "rotation_degrees": 65.8,
+      "rotation_degrees": 113.6,
       "bounding_box_mm": [
-        244.31012634082214,
-        244.52984481393932,
-        32.00000000000003
+        247.9596970060643,
+        247.8626864675478,
+        64.0
       ],
       "nominal_bed_and_brim_pass": true,
       "machine_exclusions_and_actual_slice_checked": false,
-      "solid_CAD_volume_cm3": 569.1265915985355
+      "solid_CAD_volume_cm3": 762.8631402624756
     }
   }
 }
